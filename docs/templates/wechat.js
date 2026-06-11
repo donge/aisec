@@ -50,8 +50,11 @@ function itemToWeChat(item, i) {
           </h3>
         </div>
       </div>
+      ${item.englishTitle && item.englishTitle !== item.title
+        ? `<p style="font-size:13px;color:#64748b;margin:0 0 8px 32px;font-style:italic;">EN: ${escapeHtml(item.englishTitle)}</p>`
+        : ''}
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        ${escapeHtml(item.summary || item.description.slice(0, 200))}
+        ${escapeHtml(item.summary || item.description.slice(0, 300))}
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
         <a href="${escapeHtml(item.url)}" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">${escapeHtml(item.source)} ↗</a>

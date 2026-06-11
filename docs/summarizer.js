@@ -29,7 +29,7 @@ function buildSummaryPrompt(items) {
     .join('\n\n')
 
   return {
-    system: '你是一个AI+安全领域的信息分析师。请为以下资讯逐条生成中文摘要。要求：每条摘要2-3句，突出关键信息和技术要点。AI相关强调AI技术角度，安全事件强调影响范围和严重程度，CVE漏洞注明严重等级。不要编造原文没有的信息。每条摘要以 "- " 开头。返回格式：- [摘要1]\n- [摘要2]',
+    system: '你是一个AI+安全领域的信息分析师。请为以下每条资讯完成两项任务：\n\n1. 将英文标题翻译为中文（保持专业术语准确）\n2. 生成详细的中文摘要（4-5句，包含：核心事件、技术细节、影响范围、行业意义或安全建议）\n\n返回格式（严格按此格式）：\n\n1. 中文标题 | EN: 原标题\n   - 详细摘要内容...\n\n2. 中文标题 | EN: 原标题\n   - 详细摘要内容...\n\n要求：标题翻译要准确简洁；摘要要有足够信息量，不要笼统概括；CVE漏洞注明严重等级和影响版本。不要编造原文没有的信息。',
     user: `资讯列表：
 
 ${list}`,
@@ -119,13 +119,29 @@ export async function summarizeItems(items, apiKey) {
 
         const data = await resp.json()
         const text = data.choices?.[0]?.message?.content || ''
-        const summaries = text
-          .split('\n')
-          .filter((line) => line.trim().startsWith('- '))
-          .map((line) => line.replace(/^-\s*/, '').trim())
+        const lines = text.split('\n')
+        let itemIdx = 0
+
+        for (let j = 0; j < lines.length && itemIdx < batch.length; j++) {
+          const line = lines[j]
+          const titleMatch = line.match(/^\d+\.\s*(.+?)\s*\|\s*EN:\s*(.+)$/i)
+          if (titleMatch) {
+            batch[itemIdx].title = titleMatch[1].trim()
+            batch[itemIdx].englishTitle = titleMatch[2].trim()
+            const nextLine = lines[j + 1]
+            if (nextLine && nextLine.trim().startsWith('- ')) {
+              batch[itemIdx].summary = nextLine.replace(/^-\s*/, '').trim()
+            } else {
+              batch[itemIdx].summary = ''
+            }
+            itemIdx++
+          }
+        }
 
         for (let j = 0; j < batch.length; j++) {
-          batch[j].summary = summaries[j] || batch[j].description.slice(0, 200)
+          if (!batch[j].summary) {
+            batch[j].summary = batch[j].description.slice(0, 300)
+          }
         }
 
         results.push(...batch)
