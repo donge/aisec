@@ -18,12 +18,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: 安装 mdBook
+      - name: Install mdBook
         uses: peaceiris/actions-mdbook@v2
         with:
           mdbook-version: latest
 
-      - name: 准备书源码
+      - name: Prepare book source
         run: |
           mkdir -p src/daily
           if ls daily/*.md 2>/dev/null; then
@@ -32,19 +32,16 @@ jobs:
             done
           fi
 
-          cat > src/SUMMARY.md << 'EOF'
-# 目录
+          echo '# 目录' > src/SUMMARY.md
+          echo '' >> src/SUMMARY.md
+          echo '[首页](README.md)' >> src/SUMMARY.md
+          echo '[今日日报](daily/latest.md)' >> src/SUMMARY.md
+          echo '---' >> src/SUMMARY.md
+          echo '' >> src/SUMMARY.md
+          echo '- [日报归档](daily/index.md)' >> src/SUMMARY.md
 
-[首页](README.md)
-[今日日报](daily/latest.md)
----
-EOF
-
-          echo "- [日报归档](daily/index.md)" >> src/SUMMARY.md
-          echo "" >> src/SUMMARY.md
           if ls -r daily/*.md 2>/dev/null; then
-            echo "---" >> src/SUMMARY.md
-            echo "" >> src/SUMMARY.md
+            echo '---' >> src/SUMMARY.md
             for f in $(ls -r daily/*.md); do
               name=$(basename "$f" .md)
               if [ "$name" != "latest" ]; then
@@ -53,10 +50,8 @@ EOF
             done
           fi
 
-          cat > src/daily/index.md << 'EOF'
-# 📰 日报归档
-
-EOF
+          echo '# 日报归档' > src/daily/index.md
+          echo '' >> src/daily/index.md
           if ls -r daily/*.md 2>/dev/null; then
             for f in $(ls -r daily/*.md); do
               name=$(basename "$f" .md)
@@ -66,29 +61,30 @@ EOF
             done
           fi
 
-          cat > src/daily/latest.md << 'EOF'
-# 今日日报
-
-EOF
+          echo '# 今日日报' > src/daily/latest.md
+          echo '' >> src/daily/latest.md
           if [ -f daily/latest.md ]; then
             cat daily/latest.md >> src/daily/latest.md
           else
-            echo "暂无内容" >> src/daily/latest.md
+            echo '暂无内容' >> src/daily/latest.md
           fi
 
-      - name: 构建 mdBook
+      - name: Build mdBook
         run: mdbook build
 
-      - name: 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
         run: |
           git config user.name "aisec-bot"
           git config user.email "bot@aisec.dev"
-          cp -r book/* /tmp/gh-pages/
+          cp -r book/. /tmp/gh-pages/
           cd /tmp/gh-pages
           touch .nojekyll
           git init
           git checkout -b gh-pages
           git add .
           git commit -m "deploy $(date +%Y-%m-%d)"
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git remote add origin https://x-access-token:${TOKEN}@github.com/${REPO}.git
           git push -f origin gh-pages
