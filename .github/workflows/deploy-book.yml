@@ -1,0 +1,95 @@
+name: 构建 mdBook 并部署 GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装 mdBook
+        uses: peaceiris/actions-mdbook@v2
+        with:
+          mdbook-version: latest
+
+      - name: 准备书源码
+        run: |
+          # 将 daily markdown 文件链接到 src/daily/
+          mkdir -p src/daily
+          if ls daily/*.md 2>/dev/null; then
+            for f in daily/*.md; do
+              cp "$f" "src/daily/$(basename "$f")"
+            done
+          fi
+
+          # 生成 SUMMARY.md
+          cat > src/SUMMARY.md << 'EOF'
+          # 目录
+
+          [首页](README.md)
+          [今日日报](daily/latest.md)
+          ---
+          EOF
+
+          echo "- [日报归档](daily/index.md)" >> src/SUMMARY.md
+          echo "" >> src/SUMMARY.md
+          if ls -r daily/*.md 2>/dev/null; then
+            echo "---" >> src/SUMMARY.md
+            echo "" >> src/SUMMARY.md
+            for f in $(ls -r daily/*.md); do
+              name=$(basename "$f" .md)
+              if [ "$name" != "latest" ]; then
+                echo "  - [$name](daily/$name.md)" >> src/SUMMARY.md
+              fi
+            done
+          fi
+
+          # 生成日报归档页
+          cat > src/daily/index.md << 'EOF'
+          # 📰 日报归档
+
+          EOF
+          if ls -r daily/*.md 2>/dev/null; then
+            for f in $(ls -r daily/*.md); do
+              name=$(basename "$f" .md)
+              if [ "$name" != "latest" ]; then
+                echo "- [$name](daily/$name.md)" >> src/daily/index.md
+              fi
+            done
+          fi
+
+          cat > src/daily/latest.md << 'EOF'
+          # 今日日报
+
+          EOF
+
+          if [ -f daily/latest.md ]; then
+            cat daily/latest.md >> src/daily/latest.md
+          else
+            echo "暂无内容" >> src/daily/latest.md
+          fi
+
+      - name: 构建 mdBook
+        run: mdbook build
+
+      - name: 部署到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book

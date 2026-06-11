@@ -1,0 +1,7 @@
+{
+  "name": "aisec-daily",
+  "version": "1.0.0",
+  "description": "AI+安全日报 - 每日精选10条AI与安全领域重要动态",
+  "private": true,
+  "type": "module"
+}

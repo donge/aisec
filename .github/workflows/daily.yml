@@ -1,0 +1,38 @@
+name: 每日生成日报
+
+on:
+  schedule:
+    # 每天 UTC 15:00 = 北京时间 23:00
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '指定日期 (YYYY-MM-DD)，为空则使用当天'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 生成日报
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node src/daily.js
+
+      - name: 提交到仓库
+        run: |
+          git config user.name "aisec-bot"
+          git config user.email "bot@aisec.dev"
+          git add -A
+          git diff --staged --quiet || git commit -m "📰 日报 $(date +%Y-%m-%d)"
+          git push
