@@ -1,4 +1,4 @@
-import { GEMINI_CONFIG } from './config.js'
+import { LLM_CONFIG } from './config.js'
 
 const AI_SEC_KEYWORDS = [
   'ai', 'llm', 'gpt', 'chatgpt', 'machine learning', 'deep learning',
@@ -28,23 +28,12 @@ function buildSummaryPrompt(items) {
     )
     .join('\n\n')
 
-  return `你是一个AI+安全领域的信息分析师。请为以下资讯逐条生成中文摘要。
+  return {
+    system: '你是一个AI+安全领域的信息分析师。请为以下资讯逐条生成中文摘要。要求：每条摘要2-3句，突出关键信息和技术要点。AI相关强调AI技术角度，安全事件强调影响范围和严重程度，CVE漏洞注明严重等级。不要编造原文没有的信息。每条摘要以 "- " 开头。返回格式：- [摘要1]\n- [摘要2]',
+    user: `资讯列表：
 
-要求：
-- 每条摘要 2-3 句，突出关键信息和技术要点
-- AI 相关的内容强调 AI 技术角度
-- 安全事件强调影响范围和严重程度
-- CVE 漏洞注明严重等级
-- 不要编造原文没有的信息
-- 每条摘要以 "- " 开头
-
-返回格式示例：
-- [摘要1内容]
-- [摘要2内容]
-
-资讯列表：
-
-${list}`
+${list}`,
+  }
 }
 
 function buildRankPrompt(items) {
@@ -85,24 +74,29 @@ export async function summarizeItems(items, apiKey) {
 
   for (let i = 0; i < filtered.length; i += BATCH_SIZE) {
     const batch = filtered.slice(i, i + BATCH_SIZE)
-    const prompt = buildSummaryPrompt(batch)
+    const { system, user } = buildSummaryPrompt(batch)
     let retries = 0
     let success = false
 
     while (retries <= MAX_RETRIES && !success) {
       try {
-        const url = `${GEMINI_CONFIG.apiBaseUrl}/models/${GEMINI_CONFIG.model}:generateContent?key=${apiKey}`
+        const url = `${LLM_CONFIG.apiBaseUrl}/chat/completions`
         const resp = await fetch(url, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`,
+          },
           body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: {
-              temperature: GEMINI_CONFIG.temperature,
-              maxOutputTokens: GEMINI_CONFIG.maxOutputTokens,
-            },
+            model: LLM_CONFIG.model,
+            messages: [
+              { role: 'system', content: system },
+              { role: 'user', content: user },
+            ],
+            temperature: LLM_CONFIG.temperature,
+            max_tokens: LLM_CONFIG.maxTokens,
           }),
-          signal: AbortSignal.timeout(30000),
+          signal: AbortSignal.timeout(60000),
         })
 
         if (!resp.ok) {
@@ -112,19 +106,19 @@ export async function summarizeItems(items, apiKey) {
           if (resp.status === 429 && retries < MAX_RETRIES) {
             retries++
             const wait = 5 * Math.pow(2, retries)
-            console.warn(`[Gemini] Rate limited, retry ${retries}/${MAX_RETRIES} after ${wait}s...`)
+            console.warn(`[LLM] Rate limited, retry ${retries}/${MAX_RETRIES} after ${wait}s...`)
             await new Promise((r) => setTimeout(r, wait * 1000))
             continue
           }
 
-          console.warn(`[Gemini] HTTP ${resp.status}: ${errMsg}`)
+          console.warn(`[LLM] HTTP ${resp.status}: ${errMsg}`)
           batch.forEach((item) => results.push({ ...item, summary: '' }))
           success = true
           continue
         }
 
         const data = await resp.json()
-        const text = data.candidates?.[0]?.content?.parts?.[0]?.text || ''
+        const text = data.choices?.[0]?.message?.content || ''
         const summaries = text
           .split('\n')
           .filter((line) => line.trim().startsWith('- '))
@@ -135,16 +129,16 @@ export async function summarizeItems(items, apiKey) {
         }
 
         results.push(...batch)
-        console.log(`[Gemini] Batch ${Math.ceil((i + 1) / BATCH_SIZE)}/${Math.ceil(filtered.length / BATCH_SIZE)}`)
+        console.log(`[LLM] Batch ${Math.ceil((i + 1) / BATCH_SIZE)}/${Math.ceil(filtered.length / BATCH_SIZE)}`)
         success = true
       } catch (err) {
         if (retries < MAX_RETRIES) {
           retries++
-          console.warn(`[Gemini] Error: ${err.message}, retry ${retries}/${MAX_RETRIES}...`)
+          console.warn(`[LLM] Error: ${err.message}, retry ${retries}/${MAX_RETRIES}...`)
           await new Promise((r) => setTimeout(r, 3000))
           continue
         }
-        console.warn(`[Gemini] Failed: ${err.message}`)
+        console.warn(`[LLM] Failed: ${err.message}`)
         batch.forEach((item) => results.push({ ...item, summary: item.description.slice(0, 200) }))
         success = true
       }

@@ -26,7 +26,7 @@ jobs:
 
       - name: 生成日报
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: node src/daily.js
 
       - name: 提交到仓库

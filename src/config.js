@@ -81,11 +81,13 @@ export const CVE_CONFIG = {
   ],
 }
 
-export const GEMINI_CONFIG = {
-  model: 'gemini-2.0-flash',
-  apiBaseUrl: 'https://generativelanguage.googleapis.com/v1beta',
+export const LLM_CONFIG = {
+  provider: 'deepseek',
+  apiBaseUrl: 'https://api.deepseek.com/v1',
+  model: 'deepseek-chat',
+  apiKeyEnv: 'DEEPSEEK_API_KEY',
   temperature: 0.3,
-  maxOutputTokens: 4096,
+  maxTokens: 4096,
 }
 
 export const MAX_DAILY_ITEMS = 10

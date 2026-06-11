@@ -23,9 +23,9 @@ function getDateStr() {
 }
 
 async function main() {
-  const apiKey = process.env.GEMINI_API_KEY
+  const apiKey = process.env.DEEPSEEK_API_KEY
   if (!apiKey) {
-    console.error('❌ GEMINI_API_KEY 环境变量未设置')
+    console.error('❌ DEEPSEEK_API_KEY 环境变量未设置')
     process.exit(1)
   }
 
@@ -52,7 +52,7 @@ async function main() {
     process.exit(1)
   }
 
-  console.log('\n[4/5] Gemini AI 摘要生成...')
+  console.log('\n[4/5] DeepSeek AI 摘要生成...')
   const summarized = await summarizeItems(allItems, apiKey)
   const withSummary = summarized.filter((item) => item.summary)
   console.log(`       成功摘要: ${withSummary.length}/${summarized.length} 条`)
