@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI+安全日报 2026-06-12</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #fff;
+    color: #333;
+    padding: 0;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 16px 40px;
+  }
+  .header {
+    text-align: center;
+    padding: 24px 0 20px;
+    border-bottom: 2px solid #2c3e50;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 6px;
+  }
+  .header .subtitle {
+    font-size: 14px;
+    color: #95a5a6;
+  }
+  .copy-btn {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 16px auto;
+    padding: 14px 0;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s;
+  }
+  .copy-btn:hover { background: #34495e; }
+  .copy-btn:active { background: #1a252f; }
+  .copy-btn.copied { background: #27ae60; }
+  .toast {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #27ae60;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    z-index: 9999;
+  }
+  .wechat-content {
+    padding: 0 4px;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #95a5a6;
+    font-size: 12px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast">✅ 已复制到剪贴板，请粘贴到公众号编辑器</div>
+
+<div class="container">
+  <div class="header">
+    <h1>🤖🔒 AI+安全日报</h1>
+    <div class="subtitle">2026年6月12日 · 共 10 条</div>
+  </div>
+
+  <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
+
+  <div class="wechat-content" id="wechatContent">
+    <section style="font-size: 16px; line-height: 1.75; padding: 0 6px; color: #333;">
+      
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        ⚠️ 1. CVE-2026-42861 [CRITICAL 9.6] 🔬
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        Flowise is a drag &amp; drop user interface to build a customized large language model flow. Prior to version 3.1.2, a mass assignment vulnerability exists in the variable update endpoint of FlowiseAI. The endpoint allows authenticated users to modify server-controlled properties such as workspaceId, cr
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42861" style="color: #3498db; text-decoration: none;">NVD</a>
+        &nbsp;<span style="display:inline-block;background:#e74c3c;color:#fff;font-size:12px;padding:1px 8px;border-radius:3px;margin-right:4px;">CVSS 9.6</span> <span style="color:#95a5a6;font-size:13px;">#NVD</span>
+      </p>
+    </section>
+
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        📰 2. Meet Hades: The malware that lies to AI security agents
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        Threat actors are continuing their onslaught against software supply chains, now with malware named after death itself. The newly-discovered Hades Campaign is a “highly sophisticated” supply chain compromise that targets Python developer environments and runs as soon as infected packages are importe
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://www.csoonline.com/article/4182707/meet-hades-the-malware-that-lies-to-ai-security-agents-2.html" style="color: #3498db; text-decoration: none;">CSO Online</a>
+        &nbsp;<span style="color:#95a5a6;font-size:13px;">#CSO Online</span>
+      </p>
+    </section>
+
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        ⚠️ 3. CVE-2026-42863 [HIGH 8.1] 🔬
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        Flowise is a drag &amp; drop user interface to build a customized large language model flow. Prior to version 3.1.2, a mass assignment vulnerability exists in the chatflow update endpoint of FlowiseAI. The endpoint allows clients to modify server-controlled properties such as deployed, isPublic, workspa
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42863" style="color: #3498db; text-decoration: none;">NVD</a>
+        &nbsp;<span style="display:inline-block;background:#e67e22;color:#fff;font-size:12px;padding:1px 8px;border-radius:3px;margin-right:4px;">CVSS 8.1</span> <span style="color:#95a5a6;font-size:13px;">#NVD</span>
+      </p>
+    </section>
+
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        📰 4. AI red teaming comes of age
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        When Ram Shankar Siva Kumar launched Microsoft’s AI red team in 2019, the discipline barely existed. “The running joke used to be that people who used to work in AI red teaming, you can round them up in a 14-foot catamaran,” he tells CSO. At the time, Microsoft’s approach looked familiar to anyone i
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://www.csoonline.com/article/4181930/ai-red-teaming-comes-of-age.html" style="color: #3498db; text-decoration: none;">CSO Online</a>
+        &nbsp;<span style="color:#95a5a6;font-size:13px;">#CSO Online</span>
+      </p>
+    </section>
+
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        📰 5. AI worm prototype shows attackers don’t need Mythos to take over your network
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        Researchers from the University of Toronto developed a computer worm prototype powered by an AI agent that successfully self-replicated to different systems within a simulated computer network. The worm used a free large language model (LLM) running on local hardware and exploited a combination of o
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://www.csoonline.com/article/4181924/ai-worm-prototype-shows-attackers-dont-need-mythos-to-take-over-your-network.html" style="color: #3498db; text-decoration: none;">CSO Online</a>
+        &nbsp;<span style="color:#95a5a6;font-size:13px;">#CSO Online</span>
+      </p>
+    </section>
+
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        📰 6. Tenable CTO Q&amp;A: C-suite views AI as massive threat, as cyber teams adopt exposure management to counter AI attacks
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        Tenable CTO Vlad Korsunsky talks about participating in the World Economic Forum’s Annual Meeting on Cybersecurity and Tenable’s EXPOSURE 2026 conference, where he talked with global leaders about new game-changing AI threats and the groundbreaking benefits of exposure management.Key takeawaysThe pa
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://www.tenable.com/blog/tenable-cto-ai-security-threats-exposure-management" style="color: #3498db; text-decoration: none;">Tenable Blog</a>
+        &nbsp;<span style="color:#95a5a6;font-size:13px;">#Tenable Blog</span>
+      </p>
+    </section>
+
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        📰 7. Attackers Abuse Shared Content for ChatGPT Phishing Campaign
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        Push Security says threat actors are delivering malware hosted on chatgpt.com/s/ domain
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://www.infosecurity-magazine.com/news/attackers-shared-content-chatgpt/" style="color: #3498db; text-decoration: none;">Infosecurity Magazine</a>
+        &nbsp;<span style="color:#95a5a6;font-size:13px;">#Infosecurity Magazine</span>
+      </p>
+    </section>
+
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        📰 8. OpenAI Unveils ChatGPT Account Security Controls
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        OpenAI brings Lockdown Mode and Active Sessions to ChatGPT to curb prompt injection data theft
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://www.infosecurity-magazine.com/news/chatgpt-lockdown-mode-active/" style="color: #3498db; text-decoration: none;">Infosecurity Magazine</a>
+        &nbsp;<span style="color:#95a5a6;font-size:13px;">#Infosecurity Magazine</span>
+      </p>
+    </section>
+
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        ⚠️ 9. CVE-2026-36786 [HIGH 7.5]
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        Shenzhen Tenda Technology Co., Ltd Tenda FH451 V1.0.0.9 was discovered to contain a stack overflow in the list1 parameter of the fromDhcpListClient function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted HTTP request.
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36786" style="color: #3498db; text-decoration: none;">NVD</a>
+        &nbsp;<span style="display:inline-block;background:#e67e22;color:#fff;font-size:12px;padding:1px 8px;border-radius:3px;margin-right:4px;">CVSS 7.5</span> <span style="color:#95a5a6;font-size:13px;">#NVD</span>
+      </p>
+    </section>
+
+    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
+      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
+        📄 10. Multicomponent binary spreading process
+      </h3>
+      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+        I investigate numerically the phase transitions of two-component generalizations of binary spreading processes in one dimension. In these models pair annihilation: AA-&amp;gt;0, BB-&amp;gt;0, explicit particle diffusion and binary pair production processes compete with each other. Several versions with spat
+      </p>
+      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
+        <a href="https://arxiv.org/abs/" style="color: #3498db; text-decoration: none;">arXiv</a>
+        &nbsp;<span style="color:#95a5a6;font-size:13px;">#arXiv</span>
+      </p>
+    </section>
+
+      <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+      <p style="font-size: 13px; color: #95a5a6; text-align: center;">
+        📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
+        仅供学习参考，不构成投资或决策建议
+      </p>
+    </section>
+  </div>
+
+  <button class="copy-btn" id="copyBtn2" style="margin-top: 12px;">📋 一键复制（公众号格式）</button>
+
+  <div class="footer">
+    <p>AI+安全日报 · 每日精选 10 条</p>
+  </div>
+</div>
+
+<script>
+(function() {
+  function getContentHtml() {
+    var el = document.getElementById('wechatContent');
+    return el.innerHTML.trim();
+  }
+
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    return Promise.resolve();
+  }
+
+  function doCopy(btn) {
+    var html = getContentHtml();
+    copyToClipboard(html).then(function() {
+      btn.textContent = '✅ 已复制！';
+      btn.classList.add('copied');
+      var toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      setTimeout(function() {
+        toast.style.display = 'none';
+        btn.textContent = '📋 一键复制（公众号格式）';
+        btn.classList.remove('copied');
+      }, 2500);
+    }).catch(function() {
+      btn.textContent = '❌ 复制失败，请手动选择复制';
+      setTimeout(function() {
+        btn.textContent = '📋 一键复制（公众号格式）';
+      }, 2000);
+    });
+  }
+
+  var btns = document.querySelectorAll('.copy-btn');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function() { doCopy(this); });
+  }
+})();
+</script>
+</body>
+</html>
