@@ -29,7 +29,7 @@ function itemToWeChat(item, i) {
         ${icon} ${i + 1}. ${escapeHtml(item.title)}
       </h3>
       <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
-        ${escapeHtml(item.summary || item.description.slice(0, 300))}
+        ${escapeHtml(item.summary || item.description.slice(0, 200))}
       </p>
       <p style="font-size: 13px; color: #95a5a6; margin: 0;">
         <a href="${escapeHtml(item.url)}" style="color: #3498db; text-decoration: none;">${escapeHtml(item.source)}</a>

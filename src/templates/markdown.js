@@ -22,10 +22,9 @@ export function generateMarkdown(items, dateStr) {
 
     lines.push(`### ${icon} ${i + 1}. ${item.title}`)
     lines.push('')
-    if (item.summary) {
-      lines.push(`${item.summary}`)
-      lines.push('')
-    }
+    const summary = item.summary || item.description.slice(0, 200)
+    lines.push(summary)
+    lines.push('')
     const meta = []
     meta.push(`**来源**: [${item.source}](${item.url})`)
     if (tags.length > 0) meta.push(tags.join(' · '))

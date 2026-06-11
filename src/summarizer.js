@@ -80,7 +80,16 @@ export async function summarizeItems(items, apiKey) {
 
       if (!resp.ok) {
         const errText = await resp.text()
-        console.warn(`[Gemini] HTTP ${resp.status}: ${errText.slice(0, 200)}`)
+        const errMsg = errText.slice(0, 200)
+        console.warn(`[Gemini] HTTP ${resp.status}: ${errMsg}`)
+
+        if (resp.status === 429) {
+          console.warn('[Gemini] Rate limited, waiting 5s before retry...')
+          await new Promise((r) => setTimeout(r, 5000))
+          i -= BATCH_SIZE
+          continue
+        }
+
         results.push(...batch.map((item) => ({ ...item, summary: '' })))
         continue
       }
