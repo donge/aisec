@@ -7,6 +7,5 @@ title = "AI+安全日报"
 [output.html]
 no-section-label = true
 git-repository-url = "https://github.com/donge/aisec"
-output = "docs"
 
 

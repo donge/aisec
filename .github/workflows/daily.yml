@@ -70,7 +70,7 @@ jobs:
           if [ -f daily/latest.md ]; then
             cat daily/latest.md >> src/daily/latest.md
           fi
-          mdbook build
+          mdbook build -d docs
           cp -r wechat docs/
           cp -r daily docs/
 
