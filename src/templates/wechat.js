@@ -5,42 +5,63 @@ function escapeHtml(str) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
+function severityTag(item) {
+  if (item.type !== 'cve' || !item.details?.severity) return ''
+  const sev = item.details.severity
+  const map = {
+    CRITICAL: { label: 'CRITICAL', bg: '#dc2626', color: '#fff', border: '#ef4444' },
+    HIGH: { label: 'HIGH', bg: '#ea580c', color: '#fff', border: '#f97316' },
+    MEDIUM: { label: 'MEDIUM', bg: '#ca8a04', color: '#fff', border: '#eab308' },
+  }
+  const s = map[sev] || map.HIGH
+  return `<span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:${s.bg};color:${s.color};border:1px solid ${s.border};margin-right:8px;">${s.label}</span>`
+}
+
+function sourceBadge(source) {
+  const colors = {
+    'NVD': { bg: 'rgba(239,68,68,0.15)', color: '#fca5a5' },
+    'arXiv': { bg: 'rgba(167,139,250,0.15)', color: '#c4b5fd' },
+    'Krebs on Security': { bg: 'rgba(56,189,248,0.15)', color: '#7dd3fc' },
+    'Unit 42': { bg: 'rgba(34,211,238,0.15)', color: '#67e8f9' },
+    'Infosecurity Magazine': { bg: 'rgba(52,211,153,0.15)', color: '#6ee7b7' },
+  }
+  const c = colors[source] || { bg: 'rgba(255,255,255,0.06)', color: '#94a3b8' }
+  return `<span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:${c.bg};color:${c.color};">${escapeHtml(source)}</span>`
 }
 
 function itemToWeChat(item, i) {
   const catIcons = { news: '📰', paper: '📄', cve: '⚠️', project: '🛠️' }
   const icon = catIcons[item.type] || '📌'
 
-  let tagHtml = ''
-  const tags = []
-  if (item.type === 'cve' && item.details?.severity) {
-    const severityColors = { CRITICAL: '#e74c3c', HIGH: '#e67e22', MEDIUM: '#f39c12' }
-    const color = severityColors[item.details.severity] || '#95a5a6'
-    tags.push(
-      `<span style="display:inline-block;background:${color};color:#fff;font-size:12px;padding:1px 8px;border-radius:3px;margin-right:4px;">CVSS ${item.details.score}</span>`
-    )
-  }
-  tags.push(`<span style="color:#95a5a6;font-size:13px;">#${escapeHtml(item.source)}</span>`)
-  tagHtml = tags.join(' ')
-
   return `
-    <section style="margin-bottom: 25px; padding: 18px; background: #f8f9fa; border-radius: 8px;">
-      <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 10px 0; color: #2c3e50;">
-        ${icon} ${i + 1}. ${escapeHtml(item.title)}
-      </h3>
-      <p style="font-size: 15px; line-height: 1.75; color: #444; margin: 0 0 10px 0; text-indent: 2em;">
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">${icon}</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            ${severityTag(item)}
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#${String(i + 1).padStart(2, '0')}</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            ${escapeHtml(item.title)}
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
         ${escapeHtml(item.summary || item.description.slice(0, 200))}
       </p>
-      <p style="font-size: 13px; color: #95a5a6; margin: 0;">
-        <a href="${escapeHtml(item.url)}" style="color: #3498db; text-decoration: none;">${escapeHtml(item.source)}</a>
-        &nbsp;${tagHtml}
-      </p>
-    </section>`
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="${escapeHtml(item.url)}" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">${escapeHtml(item.source)} ↗</a>
+        ${sourceBadge(item.source)}
+      </div>
+    </div>`
 }
 
 export function generateWeChatHtml(items, dateStr) {
   const dateDisplay = `${dateStr.slice(0, 4)}年${parseInt(dateStr.slice(5, 7))}月${parseInt(dateStr.slice(8, 10))}日`
-
   const itemHtml = items.map((item, i) => itemToWeChat(item, i)).join('\n')
 
   return `<!DOCTYPE html>
@@ -52,74 +73,128 @@ export function generateWeChatHtml(items, dateStr) {
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    background: #fff;
-    color: #333;
-    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #0b1120;
+    color: #e2e8f0;
+    min-height: 100vh;
   }
   .container {
     max-width: 640px;
     margin: 0 auto;
-    padding: 20px 16px 40px;
+    padding: 0 16px 60px;
   }
   .header {
     text-align: center;
-    padding: 24px 0 20px;
-    border-bottom: 2px solid #2c3e50;
-    margin-bottom: 24px;
+    padding: 32px 0 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(56,189,248,0.5), transparent);
+  }
+  .header .logo {
+    font-size: 36px;
+    margin-bottom: 8px;
   }
   .header h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 6px;
+    letter-spacing: -0.02em;
   }
   .header .subtitle {
     font-size: 14px;
-    color: #95a5a6;
+    color: #64748b;
+  }
+  .header .subtitle span {
+    display: inline-block;
+    background: rgba(56,189,248,0.1);
+    color: #38bdf8;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 2px;
   }
   .copy-btn {
     display: block;
     width: 100%;
-    max-width: 360px;
-    margin: 16px auto;
+    max-width: 320px;
+    margin: 20px auto;
     padding: 14px 0;
-    background: #2c3e50;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
     color: #fff;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     text-align: center;
-    transition: background 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(56,189,248,0.25);
+    letter-spacing: 0.5px;
   }
-  .copy-btn:hover { background: #34495e; }
-  .copy-btn:active { background: #1a252f; }
-  .copy-btn.copied { background: #27ae60; }
+  .copy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(56,189,248,0.35);
+  }
+  .copy-btn:active {
+    transform: translateY(0);
+  }
+  .copy-btn.copied {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    box-shadow: 0 4px 20px rgba(34,197,94,0.25);
+  }
   .toast {
     display: none;
     position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #27ae60;
+    background: #22c55e;
     color: #fff;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-size: 14px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
     z-index: 9999;
+    box-shadow: 0 8px 32px rgba(34,197,94,0.3);
   }
-  .wechat-content {
-    padding: 0 4px;
+  .divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+    margin: 20px 0;
   }
   .footer {
     text-align: center;
-    padding: 20px 0;
-    color: #95a5a6;
+    padding: 24px 0;
+    color: #475569;
     font-size: 12px;
-    border-top: 1px solid #eee;
-    margin-top: 20px;
+    line-height: 1.8;
+    margin-top: 8px;
+  }
+  .footer .mono {
+    font-family: "SF Mono", "Fira Code", monospace;
+    font-size: 11px;
+    color: #334155;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .item-enter {
+    animation: fadeIn 0.5s ease-out both;
   }
 </style>
 </head>
@@ -129,30 +204,28 @@ export function generateWeChatHtml(items, dateStr) {
 
 <div class="container">
   <div class="header">
-    <h1>🤖🔒 AI+安全日报</h1>
-    <div class="subtitle">${dateDisplay} · 共 ${items.length} 条</div>
+    <div class="logo">🛡️</div>
+    <h1>AI+安全日报</h1>
+    <div class="subtitle">
+      ${dateDisplay} · 共 <span>${items.length}</span> 条
+    </div>
   </div>
 
   <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
 
-  <div class="wechat-content" id="wechatContent">
-    <section style="font-size: 16px; line-height: 1.75; padding: 0 6px; color: #333;">
-      ${itemHtml}
-
-      <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
-
-      <p style="font-size: 13px; color: #95a5a6; text-align: center;">
-        📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
-        仅供学习参考，不构成投资或决策建议
-      </p>
-    </section>
+  <div id="wechatContent">
+    ${itemHtml}
   </div>
 
-  <button class="copy-btn" id="copyBtn2" style="margin-top: 12px;">📋 一键复制（公众号格式）</button>
+  <hr class="divider">
 
   <div class="footer">
-    <p>AI+安全日报 · 每日精选 10 条</p>
+    📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
+    仅供学习参考，不构成投资或决策建议<br>
+    <span class="mono">// AI+Security Daily · ${items.length} items · ${dateStr}</span>
   </div>
+
+  <button class="copy-btn" id="copyBtn2" style="margin-top:4px;">📋 一键复制（公众号格式）</button>
 </div>
 
 <script>
@@ -161,7 +234,6 @@ export function generateWeChatHtml(items, dateStr) {
     var el = document.getElementById('wechatContent');
     return el.innerHTML.trim();
   }
-
   function copyToClipboard(text) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       return navigator.clipboard.writeText(text);
@@ -176,7 +248,6 @@ export function generateWeChatHtml(items, dateStr) {
     document.body.removeChild(ta);
     return Promise.resolve();
   }
-
   function doCopy(btn) {
     var html = getContentHtml();
     copyToClipboard(html).then(function() {
@@ -196,11 +267,17 @@ export function generateWeChatHtml(items, dateStr) {
       }, 2000);
     });
   }
-
   var btns = document.querySelectorAll('.copy-btn');
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click', function() { doCopy(this); });
   }
+
+  // Staggered fade-in
+  var cards = document.querySelectorAll('#wechatContent > div');
+  cards.forEach(function(card, i) {
+    card.classList.add('item-enter');
+    card.style.animationDelay = (i * 0.08) + 's';
+  });
 })();
 </script>
 </body>
