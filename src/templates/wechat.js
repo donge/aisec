@@ -211,8 +211,6 @@ export function generateWeChatHtml(items, dateStr) {
     </div>
   </div>
 
-  <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
-
   <div id="wechatContent">
     ${itemHtml}
   </div>
@@ -225,7 +223,7 @@ export function generateWeChatHtml(items, dateStr) {
     <span class="mono">// AI+Security Daily · ${items.length} items · ${dateStr}</span>
   </div>
 
-  <button class="copy-btn" id="copyBtn2" style="margin-top:4px;">📋 一键复制（公众号格式）</button>
+  <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
 </div>
 
 <script>
