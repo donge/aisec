@@ -6,18 +6,17 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,7 +27,6 @@ jobs:
 
       - name: 准备书源码
         run: |
-          # 将 daily markdown 文件链接到 src/daily/
           mkdir -p src/daily
           if ls daily/*.md 2>/dev/null; then
             for f in daily/*.md; do
@@ -36,14 +34,13 @@ jobs:
             done
           fi
 
-          # 生成 SUMMARY.md
           cat > src/SUMMARY.md << 'EOF'
-          # 目录
+# 目录
 
-          [首页](README.md)
-          [今日日报](daily/latest.md)
-          ---
-          EOF
+[首页](README.md)
+[今日日报](daily/latest.md)
+---
+EOF
 
           echo "- [日报归档](daily/index.md)" >> src/SUMMARY.md
           echo "" >> src/SUMMARY.md
@@ -58,11 +55,10 @@ jobs:
             done
           fi
 
-          # 生成日报归档页
           cat > src/daily/index.md << 'EOF'
-          # 📰 日报归档
+# 📰 日报归档
 
-          EOF
+EOF
           if ls -r daily/*.md 2>/dev/null; then
             for f in $(ls -r daily/*.md); do
               name=$(basename "$f" .md)
@@ -73,10 +69,9 @@ jobs:
           fi
 
           cat > src/daily/latest.md << 'EOF'
-          # 今日日报
+# 今日日报
 
-          EOF
-
+EOF
           if [ -f daily/latest.md ]; then
             cat daily/latest.md >> src/daily/latest.md
           else
@@ -84,10 +79,20 @@ jobs:
           fi
 
       - name: 构建 mdBook
-        run: mdbook build
+        run: mdbook build -d ../public
 
-      - name: 部署到 GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: 上传构建产物
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
