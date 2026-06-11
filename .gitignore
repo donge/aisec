@@ -2,3 +2,4 @@ node_modules/
 .book/
 *.log
 .DS_Store
+docs/
