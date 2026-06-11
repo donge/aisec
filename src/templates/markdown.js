@@ -21,16 +21,12 @@ export function generateMarkdown(items, dateStr) {
     if (item.type === 'cve') tags.push('#漏洞')
 
     lines.push(`### ${icon} ${i + 1}. ${item.title}`)
-    if (item.englishTitle && item.englishTitle !== item.title) {
-      lines.push('')
-      lines.push(`> **原文**: ${item.englishTitle}`)
-    }
     lines.push('')
     const summary = item.summary || item.description.slice(0, 300)
     lines.push(summary)
     lines.push('')
-    const meta = []
-    meta.push(`**来源**: [${item.source}](${item.url})`)
+    const linkText = item.englishTitle || item.title
+    const meta = [`**来源**: [${linkText}](${item.url})`]
     if (tags.length > 0) meta.push(tags.join(' · '))
     lines.push(`> ${meta.join('  ')}`)
     lines.push('')
