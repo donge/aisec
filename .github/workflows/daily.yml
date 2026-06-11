@@ -71,6 +71,8 @@ jobs:
             cat daily/latest.md >> src/daily/latest.md
           fi
           mdbook build
+          cp -r wechat docs/
+          cp -r daily docs/
 
       - name: 提交到仓库
         run: |
