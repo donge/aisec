@@ -80,7 +80,15 @@ EOF
         run: mdbook build
 
       - name: 部署到 GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
+        run: |
+          git config user.name "aisec-bot"
+          git config user.email "bot@aisec.dev"
+          cp -r book/* /tmp/gh-pages/
+          cd /tmp/gh-pages
+          touch .nojekyll
+          git init
+          git checkout -b gh-pages
+          git add .
+          git commit -m "deploy $(date +%Y-%m-%d)"
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push -f origin gh-pages
