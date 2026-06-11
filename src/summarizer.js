@@ -1,5 +1,25 @@
 import { GEMINI_CONFIG } from './config.js'
 
+const AI_SEC_KEYWORDS = [
+  'ai', 'llm', 'gpt', 'chatgpt', 'machine learning', 'deep learning',
+  'neural', 'adversarial', 'jailbreak', 'prompt injection',
+  'ransomware', 'malware', 'vulnerability', 'exploit', 'zero-day',
+  'attack', 'breach', 'security', 'threat', 'cyber',
+  'authentication', 'encryption', 'privacy', 'backdoor',
+  'supply chain', 'phishing', 'red team',
+]
+
+function keywordScore(item) {
+  const text = `${item.title} ${item.description}`.toLowerCase()
+  return AI_SEC_KEYWORDS.filter((kw) => text.includes(kw)).length
+}
+
+function preFilterItems(items, maxCount = 30) {
+  const scored = items.map((item) => ({ ...item, _kwScore: keywordScore(item) }))
+  scored.sort((a, b) => b._kwScore - a._kwScore)
+  return scored.slice(0, maxCount)
+}
+
 function buildSummaryPrompt(items) {
   const list = items
     .map(
@@ -56,64 +76,78 @@ function buildRankPrompt(items) {
 export async function summarizeItems(items, apiKey) {
   if (items.length === 0) return []
 
+  const filtered = preFilterItems(items)
+  console.log(`[Gemini] Pre-filtered: ${items.length} → ${filtered.length} items`)
+
   const BATCH_SIZE = 8
+  const MAX_RETRIES = 3
   const results = []
 
-  for (let i = 0; i < items.length; i += BATCH_SIZE) {
-    const batch = items.slice(i, i + BATCH_SIZE)
+  for (let i = 0; i < filtered.length; i += BATCH_SIZE) {
+    const batch = filtered.slice(i, i + BATCH_SIZE)
     const prompt = buildSummaryPrompt(batch)
+    let retries = 0
+    let success = false
 
-    try {
-      const url = `${GEMINI_CONFIG.apiBaseUrl}/models/${GEMINI_CONFIG.model}:generateContent?key=${apiKey}`
-      const resp = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: {
-            temperature: GEMINI_CONFIG.temperature,
-            maxOutputTokens: GEMINI_CONFIG.maxOutputTokens,
-          },
-        }),
-        signal: AbortSignal.timeout(30000),
-      })
+    while (retries <= MAX_RETRIES && !success) {
+      try {
+        const url = `${GEMINI_CONFIG.apiBaseUrl}/models/${GEMINI_CONFIG.model}:generateContent?key=${apiKey}`
+        const resp = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: {
+              temperature: GEMINI_CONFIG.temperature,
+              maxOutputTokens: GEMINI_CONFIG.maxOutputTokens,
+            },
+          }),
+          signal: AbortSignal.timeout(30000),
+        })
 
-      if (!resp.ok) {
-        const errText = await resp.text()
-        const errMsg = errText.slice(0, 200)
-        console.warn(`[Gemini] HTTP ${resp.status}: ${errMsg}`)
+        if (!resp.ok) {
+          const errText = await resp.text()
+          const errMsg = errText.slice(0, 200)
 
-        if (resp.status === 429) {
-          console.warn('[Gemini] Rate limited, waiting 5s before retry...')
-          await new Promise((r) => setTimeout(r, 5000))
-          i -= BATCH_SIZE
+          if (resp.status === 429 && retries < MAX_RETRIES) {
+            retries++
+            const wait = 5 * Math.pow(2, retries)
+            console.warn(`[Gemini] Rate limited, retry ${retries}/${MAX_RETRIES} after ${wait}s...`)
+            await new Promise((r) => setTimeout(r, wait * 1000))
+            continue
+          }
+
+          console.warn(`[Gemini] HTTP ${resp.status}: ${errMsg}`)
+          batch.forEach((item) => results.push({ ...item, summary: '' }))
+          success = true
           continue
         }
 
-        results.push(...batch.map((item) => ({ ...item, summary: '' })))
-        continue
+        const data = await resp.json()
+        const text = data.candidates?.[0]?.content?.parts?.[0]?.text || ''
+        const summaries = text
+          .split('\n')
+          .filter((line) => line.trim().startsWith('- '))
+          .map((line) => line.replace(/^-\s*/, '').trim())
+
+        for (let j = 0; j < batch.length; j++) {
+          batch[j].summary = summaries[j] || batch[j].description.slice(0, 200)
+        }
+
+        results.push(...batch)
+        console.log(`[Gemini] Batch ${Math.ceil((i + 1) / BATCH_SIZE)}/${Math.ceil(filtered.length / BATCH_SIZE)}`)
+        success = true
+      } catch (err) {
+        if (retries < MAX_RETRIES) {
+          retries++
+          console.warn(`[Gemini] Error: ${err.message}, retry ${retries}/${MAX_RETRIES}...`)
+          await new Promise((r) => setTimeout(r, 3000))
+          continue
+        }
+        console.warn(`[Gemini] Failed: ${err.message}`)
+        batch.forEach((item) => results.push({ ...item, summary: item.description.slice(0, 200) }))
+        success = true
       }
-
-      const data = await resp.json()
-      const text = data.candidates?.[0]?.content?.parts?.[0]?.text || ''
-      const summaries = text
-        .split('\n')
-        .filter((line) => line.trim().startsWith('- '))
-        .map((line) => line.replace(/^-\s*/, '').trim())
-
-      for (let j = 0; j < batch.length; j++) {
-        batch[j].summary = summaries[j] || ''
-      }
-
-      results.push(...batch)
-      console.log(`[Gemini] Summarized batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(items.length / BATCH_SIZE)}`)
-    } catch (err) {
-      console.warn(`[Gemini] Error: ${err.message}`)
-      results.push(...batch.map((item) => ({ ...item, summary: '' })))
-    }
-
-    if (i + BATCH_SIZE < items.length) {
-      await new Promise((r) => setTimeout(r, 500))
     }
   }
 
