@@ -23,12 +23,10 @@ export function selectTopItems(items, maxItems = 10) {
     const source = item.source
     const type = item.type
 
-    if ((seenSources[source] || 0) >= 3) continue
-    if ((seenTypes[type] || 0) >= 6) continue
+    if ((seenSources[source] || 0) >= 4) continue
 
     selected.push(item)
     seenSources[source] = (seenSources[source] || 0) + 1
-    seenTypes[type] = (seenTypes[type] || 0) + 1
   }
 
   return selected

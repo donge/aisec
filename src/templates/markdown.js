@@ -35,7 +35,7 @@ export function generateMarkdown(items, dateStr) {
   lines.push('---')
   lines.push('')
   lines.push(
-    `> 📮 本日报由 AI (Google Gemini) 自动生成，仅供参考。数据来源：RSS 聚合 + arXiv + NVD。`
+    `> 📮 本日报由 AI 自动生成，仅供参考。数据来源：RSS 聚合 + arXiv + NVD。`
   )
   lines.push('')
 
