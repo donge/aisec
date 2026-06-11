@@ -21,8 +21,12 @@ export function generateMarkdown(items, dateStr) {
     if (item.type === 'cve') tags.push('#漏洞')
 
     lines.push(`### ${icon} ${i + 1}. ${item.title}`)
+    if (item.englishTitle && item.englishTitle !== item.title) {
+      lines.push('')
+      lines.push(`> **原文**: ${item.englishTitle}`)
+    }
     lines.push('')
-    const summary = item.summary || item.description.slice(0, 200)
+    const summary = item.summary || item.description.slice(0, 300)
     lines.push(summary)
     lines.push('')
     const meta = []
