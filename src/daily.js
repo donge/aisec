@@ -13,6 +13,27 @@ import { generateWeChatHtml } from './templates/wechat.js'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '..')
 
+function loadPublishedUrls() {
+  const dailyDir = path.join(ROOT, 'daily')
+  const urls = new Set()
+  try {
+    const files = fs.readdirSync(dailyDir).filter((f) => f.endsWith('.md') && f !== 'latest.md')
+    for (const file of files) {
+      const content = fs.readFileSync(path.join(dailyDir, file), 'utf-8')
+      const linkRegex = /\]\(([^)]+)\)/g
+      let m
+      while ((m = linkRegex.exec(content)) !== null) {
+        const url = m[1].split('#')[0].split('?')[0].replace(/\/+$/, '')
+        if (url.startsWith('http')) urls.add(url)
+      }
+    }
+    console.log(`       已加载 ${files.length} 篇历史日报，${urls.size} 个已发布 URL`)
+  } catch {
+    console.log('       无历史日报数据')
+  }
+  return urls
+}
+
 function getDateStr() {
   const now = new Date()
   const beijing = new Date(now.getTime() + 8 * 60 * 60 * 1000)
@@ -52,8 +73,15 @@ async function main() {
     process.exit(1)
   }
 
+  console.log('[3.5/5] 去重: 过滤已发布内容...')
+  const publishedUrls = loadPublishedUrls()
+  const beforeDedup = allItems.length
+  const deduped = allItems.filter((item) => !publishedUrls.has(item.url.split('#')[0].split('?')[0].replace(/\/+$/, '')))
+  const removed = beforeDedup - deduped.length
+  console.log(`       去重: 移除 ${removed} 条已发布内容，剩余 ${deduped.length} 条`)
+
   console.log('\n[4/5] DeepSeek AI 摘要生成...')
-  const summarized = await summarizeItems(allItems, apiKey)
+  const summarized = await summarizeItems(deduped, apiKey)
   const withSummary = summarized.filter((item) => item.summary)
   console.log(`       成功摘要: ${withSummary.length}/${summarized.length} 条`)
 
