@@ -42,8 +42,8 @@ export const RSS_SOURCES = [
     priority: 2,
   },
   {
-    name: 'ThreatPost',
-    url: 'https://threatpost.com/feed/',
+    name: 'CyberScoop',
+    url: 'https://cyberscoop.com/feed/',
     lang: 'en',
     priority: 1,
   },

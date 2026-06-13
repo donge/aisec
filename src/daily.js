@@ -35,6 +35,11 @@ function loadPublishedUrls() {
 }
 
 function getDateStr() {
+  const dateArg = process.argv.find((a) => a.startsWith('--date='))
+  if (dateArg) {
+    const d = dateArg.split('=')[1]
+    if (/^\d{4}-\d{2}-\d{2}$/.test(d)) return d
+  }
   const now = new Date()
   const beijing = new Date(now.getTime() + 8 * 60 * 60 * 1000)
   const y = beijing.getUTCFullYear()
