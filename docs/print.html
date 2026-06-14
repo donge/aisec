@@ -36,10 +36,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-55c3999f.js";
+            window.path_to_searchindex_js = "searchindex-502816ca.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-6abc7464.js"></script>
+        <script src="toc-63098de8.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -304,6 +304,175 @@
 
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="今日日报"><a class="header" href="#今日日报">今日日报</a></h1>
+<h1 id="-ai安全日报--2026-06-15"><a class="header" href="#-ai安全日报--2026-06-15">🤖🔒 AI+安全日报 | 2026-06-15</a></h1>
+<blockquote>
+<p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
+</blockquote>
+<hr>
+<h3 id="-1-cve-2026-48546-高危-73"><a class="header" href="#-1-cve-2026-48546-高危-73">⚠️ 1. CVE-2026-48546 [高危 7.3]</a></h3>
+<ul>
+<li>KanaDojo 0.1.18之前版本存在沙箱逃逸漏洞，攻击者可通过在issue-auto-respond.yml工作流中显式将全局require函数传入Node.js vm.runInNewContext()沙箱上下文来执行任意代码。攻击者可以提交修改messages.cjs的拉取请求，导入任意Node.js模块，从而绕过沙箱限制并实现远程代码执行，获得完整的GitHub Actions运行器权限，包括访问AUT（自动化测试）环境。该漏洞CVSS评分为7.3（高危），影响所有使用KanaDojo且版本低于0.1.18的GitHub仓库。建议用户立即升级至0.1.18或更高版本，并审查工作流配置中的沙箱使用方式。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48546">CVE-2026-48546 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
+</blockquote>
+<h3 id="-2-6月补丁星期二标志新常态超过200个cve32个被评为严重"><a class="header" href="#-2-6月补丁星期二标志新常态超过200个cve32个被评为严重">📰 2. 6月补丁星期二标志“新常态”：超过200个CVE，32个被评为“严重”</a></h3>
+<ul>
+<li>6月补丁星期二更新中，SAP修复了4个严重漏洞，微软解决了超过200个CVE，创下历史新高。微软的修复清单包括3个零日漏洞、32个“严重”级别补丁，以及一批需要紧急评估的高危漏洞。此外，还有一个旧漏洞正在被利用，部分企业产品补丁被标记为“可能被利用”。Adobe也修复了企业软件中的严重漏洞。安全专家警告，漏洞数量激增已成“新常态”，组织需优先修复已知被利用的漏洞，并缩短补丁部署周期。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4183632/june-patch-tuesday-marks-a-new-normal-with-over-200-cves-32-rated-critical.html">June Patch Tuesday marks a ‘new normal’ with over 200 CVEs, 32 rated ‘critical’</a>  #CSO Online</p>
+</blockquote>
+<h3 id="-3-servicenow修复api问题此前报告可疑租户活动"><a class="header" href="#-3-servicenow修复api问题此前报告可疑租户活动">📰 3. ServiceNow修复API问题，此前报告可疑租户活动</a></h3>
+<ul>
+<li>ServiceNow在发现并修复了一个漏洞后通知客户，该漏洞可能通过受影响实例上的未认证API端点暴露数据。问题源于客户开始讨论ServiceNow的安全通知以及与其环境相关的可疑活动报告。根据公告，该漏洞最初于4月通过漏洞赏金计划报告，促使调查和后续安全更新。ServiceNow表示，托管客户已于6月收到安全更新（KB3067321）。该漏洞未分配CVE编号，但影响所有未打补丁的实例，建议客户立即应用更新。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4184082/servicenow-fixes-api-issue-after-reports-of-suspicious-tenant-activity.html">ServiceNow fixes API issue after reports of suspicious tenant activity</a>  #CSO Online</p>
+</blockquote>
+<h3 id="-4-infosecurity-europeproton如何对抗利用其服务的网络犯罪分子"><a class="header" href="#-4-infosecurity-europeproton如何对抗利用其服务的网络犯罪分子">📰 4. Infosecurity Europe：Proton如何对抗利用其服务的网络犯罪分子</a></h3>
+<ul>
+<li>安全通信服务提供商Proton在Infosecurity Europe上介绍了其利用机器学习模型检测服务滥用的方法，特别是针对网络犯罪分子使用的电子邮件地址。Proton的模型分析用户行为模式，如异常登录、大量发送垃圾邮件等，以识别并阻止恶意活动。该技术已成功拦截数千个用于钓鱼和恶意软件分发的账户，同时保护合法用户隐私。Proton强调，这种主动防御策略对于维护信任至关重要，并建议其他服务提供商采用类似AI驱动的检测机制。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/how-proton-fights-against/">Infosecurity Europe: How Proton Fights Against Cybercriminals Using Its Services</a>  #Infosecurity Magazine</p>
+</blockquote>
+<h3 id="-5-ai暴露了网络安全的最大弱点我们从未建立健康模型直到现在"><a class="header" href="#-5-ai暴露了网络安全的最大弱点我们从未建立健康模型直到现在">📰 5. AI暴露了网络安全的最大弱点：我们从未建立健康模型。直到现在！</a></h3>
+<ul>
+<li>文章指出，过去30年网络安全一直像急诊室一样运作——反应式、危机驱动、持续分诊，尽管检测和响应能力很强，但无法实现“健康”状态。AI的普及迫使行业正视这一缺陷：预防、持续监控、早期诊断和主动修复才是关键。作者提出，应借鉴医疗健康模型，建立“网络安全健康体系”，通过AI驱动的行为分析、自动化补丁和威胁预测，从被动防御转向主动健康管理。这一理念可能重塑未来安全架构。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4184138/ai-is-exposing-the-biggest-weakness-in-cybersecurity-we-never-built-a-health-model-until-now.html">AI is exposing the biggest weakness in cybersecurity: We never built a health model. Until now!</a>  #CSO Online</p>
+</blockquote>
+<h3 id="-6-openai疑似中国影响力行动试图利用chatgpt引发数据中心辩论"><a class="header" href="#-6-openai疑似中国影响力行动试图利用chatgpt引发数据中心辩论">📰 6. OpenAI：疑似中国影响力行动试图利用ChatGPT引发数据中心辩论</a></h3>
+<ul>
+<li>OpenAI报告称，一个疑似与中国有关的影响力行动试图利用其ChatGPT模型生成内容，以引发关于数据中心的政策辩论。该行动通过创建虚假社交媒体账号和发布AI生成的评论，试图放大对数据中心环境影响和能源消耗的争议。OpenAI表示，几乎没有证据表明这些活动影响了任何实际政策讨论，但已采取行动关闭相关账号。此事件反映了AI工具被用于信息操纵的潜在风险，建议平台加强内容审核和滥用检测机制。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/openai-china-influence-campaign-chatgpt/">OpenAI: ‘Likely’ Chinese influence operation tried to use ChatGPT to stir debate on data centers</a>  #CyberScoop</p>
+</blockquote>
+<h3 id="-7-谁在运营勒索软件组织绅士"><a class="header" href="#-7-谁在运营勒索软件组织绅士">📰 7. 谁在运营勒索软件组织“绅士”？</a></h3>
+<ul>
+<li>名为“The Gentlemen”的网络犯罪组织已迅速成为按受害者数量计算的第二大活跃勒索软件团伙，通过激进的招募策略（承诺向附属成员支付90%的赎金）吸引了大量技术人才。该组织采用双重勒索模式，在加密数据前窃取敏感信息，并运营一个数据泄露网站。Krebs on Security的分析通过技术痕迹、通信模式和支付记录，指向该组织管理员可能是一名来自东欧的年轻黑客。此案例表明，高分成模式正在重塑勒索软件生态系统，建议企业加强端点检测和备份策略，并关注新兴团伙的TTP（战术、技术和程序）。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/">Who Runs the Ransomware Group ‘The Gentlemen?’</a>  #Krebs on Security</p>
+</blockquote>
+<h3 id="-8-2026年6月补丁星期二创纪录"><a class="header" href="#-8-2026年6月补丁星期二创纪录">📰 8. 2026年6月补丁星期二创纪录</a></h3>
+<ul>
+<li>微软在2026年6月的补丁星期二发布了近200个安全更新，创下该公司月度补丁周期的历史记录，覆盖Windows操作系统及支持软件。其中近36个漏洞被标记为“严重”等级，至少3个漏洞的利用代码已公开可用。这些漏洞涉及远程代码执行、权限提升和拒绝服务等多种类型，影响范围包括所有受支持的Windows版本及多个关键服务器产品。鉴于漏洞数量庞大且部分已遭利用，建议IT管理员立即优先部署更新，特别是针对已公开利用代码的漏洞，并启用自动更新功能。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/">A Record-Breaking Patch Tuesday for June 2026</a>  #Krebs on Security</p>
+</blockquote>
+<h3 id="-9-2026年6月ai行政令联邦机构须知及tenable如何提供帮助"><a class="header" href="#-9-2026年6月ai行政令联邦机构须知及tenable如何提供帮助">📰 9. 2026年6月AI行政令：联邦机构须知及Tenable如何提供帮助</a></h3>
+<ul>
+<li>2026年6月2日，白宫签署了一项AI行政令，要求联邦机构在30天内加强系统安全，部署AI驱动的网络防御，并建立一个新的AI网络安全信息交换中心。该行政令优先考虑国家安全和民用联邦机构，要求其适应前沿AI模型能力带来的新威胁。Tenable公司表示，其平台能够帮助联邦机构全面了解环境（包括AI资产）并优先处理风险。此行政令标志着美国政府将AI安全提升至国家战略层面，对网络安全行业和联邦IT采购产生重大影响。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/summary-june-2026-ai-executive-order-requirements">The June 2026 AI Executive Order: What federal agencies need to know and how Tenable can help</a>  #Tenable Blog</p>
+</blockquote>
+<h3 id="-10-silent-ransom组织通过当面冒充it人员入侵系统"><a class="header" href="#-10-silent-ransom组织通过当面冒充it人员入侵系统">📰 10. Silent Ransom组织通过当面冒充IT人员入侵系统</a></h3>
+<ul>
+<li>Silent Ransom Group（又名Luna Moth）的威胁行为者正在升级攻击手段，通过电话冒充IT人员，甚至亲自到场以直接获取受害者系统的访问权限。这种社会工程攻击结合了电话钓鱼和物理入侵，攻击者会事先收集目标信息，然后以技术支持为借口诱骗员工提供凭证或直接进入办公场所。该组织此前以勒索软件攻击闻名，此次策略转变表明其攻击手法更加激进和多样化。企业应加强员工安全意识培训，特别是针对冒充IT人员的电话和现场访问的验证流程，并实施多因素认证和严格的物理访问控制。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/silent-ransom-group-it/">Silent Ransom Group Uses In-Person IT Impersonation to Breach Systems</a>  #Infosecurity Magazine</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>📮 本日报由 AI 自动生成，仅供参考。数据来源：RSS 聚合 + arXiv + NVD。</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="日报归档"><a class="header" href="#日报归档">日报归档</a></h1>
+<ul>
+<li><a href="daily/daily/2026-06-15.html">2026-06-15</a></li>
+<li><a href="daily/daily/2026-06-14.html">2026-06-14</a></li>
+<li><a href="daily/daily/2026-06-13.html">2026-06-13</a></li>
+<li><a href="daily/daily/2026-06-12.html">2026-06-12</a></li>
+<li><a href="daily/daily/2026-06-10.html">2026-06-10</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="-ai安全日报--2026-06-15-1"><a class="header" href="#-ai安全日报--2026-06-15-1">🤖🔒 AI+安全日报 | 2026-06-15</a></h1>
+<blockquote>
+<p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
+</blockquote>
+<hr>
+<h3 id="-1-cve-2026-48546-高危-73-1"><a class="header" href="#-1-cve-2026-48546-高危-73-1">⚠️ 1. CVE-2026-48546 [高危 7.3]</a></h3>
+<ul>
+<li>KanaDojo 0.1.18之前版本存在沙箱逃逸漏洞，攻击者可通过在issue-auto-respond.yml工作流中显式将全局require函数传入Node.js vm.runInNewContext()沙箱上下文来执行任意代码。攻击者可以提交修改messages.cjs的拉取请求，导入任意Node.js模块，从而绕过沙箱限制并实现远程代码执行，获得完整的GitHub Actions运行器权限，包括访问AUT（自动化测试）环境。该漏洞CVSS评分为7.3（高危），影响所有使用KanaDojo且版本低于0.1.18的GitHub仓库。建议用户立即升级至0.1.18或更高版本，并审查工作流配置中的沙箱使用方式。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48546">CVE-2026-48546 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
+</blockquote>
+<h3 id="-2-6月补丁星期二标志新常态超过200个cve32个被评为严重-1"><a class="header" href="#-2-6月补丁星期二标志新常态超过200个cve32个被评为严重-1">📰 2. 6月补丁星期二标志“新常态”：超过200个CVE，32个被评为“严重”</a></h3>
+<ul>
+<li>6月补丁星期二更新中，SAP修复了4个严重漏洞，微软解决了超过200个CVE，创下历史新高。微软的修复清单包括3个零日漏洞、32个“严重”级别补丁，以及一批需要紧急评估的高危漏洞。此外，还有一个旧漏洞正在被利用，部分企业产品补丁被标记为“可能被利用”。Adobe也修复了企业软件中的严重漏洞。安全专家警告，漏洞数量激增已成“新常态”，组织需优先修复已知被利用的漏洞，并缩短补丁部署周期。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4183632/june-patch-tuesday-marks-a-new-normal-with-over-200-cves-32-rated-critical.html">June Patch Tuesday marks a ‘new normal’ with over 200 CVEs, 32 rated ‘critical’</a>  #CSO Online</p>
+</blockquote>
+<h3 id="-3-servicenow修复api问题此前报告可疑租户活动-1"><a class="header" href="#-3-servicenow修复api问题此前报告可疑租户活动-1">📰 3. ServiceNow修复API问题，此前报告可疑租户活动</a></h3>
+<ul>
+<li>ServiceNow在发现并修复了一个漏洞后通知客户，该漏洞可能通过受影响实例上的未认证API端点暴露数据。问题源于客户开始讨论ServiceNow的安全通知以及与其环境相关的可疑活动报告。根据公告，该漏洞最初于4月通过漏洞赏金计划报告，促使调查和后续安全更新。ServiceNow表示，托管客户已于6月收到安全更新（KB3067321）。该漏洞未分配CVE编号，但影响所有未打补丁的实例，建议客户立即应用更新。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4184082/servicenow-fixes-api-issue-after-reports-of-suspicious-tenant-activity.html">ServiceNow fixes API issue after reports of suspicious tenant activity</a>  #CSO Online</p>
+</blockquote>
+<h3 id="-4-infosecurity-europeproton如何对抗利用其服务的网络犯罪分子-1"><a class="header" href="#-4-infosecurity-europeproton如何对抗利用其服务的网络犯罪分子-1">📰 4. Infosecurity Europe：Proton如何对抗利用其服务的网络犯罪分子</a></h3>
+<ul>
+<li>安全通信服务提供商Proton在Infosecurity Europe上介绍了其利用机器学习模型检测服务滥用的方法，特别是针对网络犯罪分子使用的电子邮件地址。Proton的模型分析用户行为模式，如异常登录、大量发送垃圾邮件等，以识别并阻止恶意活动。该技术已成功拦截数千个用于钓鱼和恶意软件分发的账户，同时保护合法用户隐私。Proton强调，这种主动防御策略对于维护信任至关重要，并建议其他服务提供商采用类似AI驱动的检测机制。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/how-proton-fights-against/">Infosecurity Europe: How Proton Fights Against Cybercriminals Using Its Services</a>  #Infosecurity Magazine</p>
+</blockquote>
+<h3 id="-5-ai暴露了网络安全的最大弱点我们从未建立健康模型直到现在-1"><a class="header" href="#-5-ai暴露了网络安全的最大弱点我们从未建立健康模型直到现在-1">📰 5. AI暴露了网络安全的最大弱点：我们从未建立健康模型。直到现在！</a></h3>
+<ul>
+<li>文章指出，过去30年网络安全一直像急诊室一样运作——反应式、危机驱动、持续分诊，尽管检测和响应能力很强，但无法实现“健康”状态。AI的普及迫使行业正视这一缺陷：预防、持续监控、早期诊断和主动修复才是关键。作者提出，应借鉴医疗健康模型，建立“网络安全健康体系”，通过AI驱动的行为分析、自动化补丁和威胁预测，从被动防御转向主动健康管理。这一理念可能重塑未来安全架构。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4184138/ai-is-exposing-the-biggest-weakness-in-cybersecurity-we-never-built-a-health-model-until-now.html">AI is exposing the biggest weakness in cybersecurity: We never built a health model. Until now!</a>  #CSO Online</p>
+</blockquote>
+<h3 id="-6-openai疑似中国影响力行动试图利用chatgpt引发数据中心辩论-1"><a class="header" href="#-6-openai疑似中国影响力行动试图利用chatgpt引发数据中心辩论-1">📰 6. OpenAI：疑似中国影响力行动试图利用ChatGPT引发数据中心辩论</a></h3>
+<ul>
+<li>OpenAI报告称，一个疑似与中国有关的影响力行动试图利用其ChatGPT模型生成内容，以引发关于数据中心的政策辩论。该行动通过创建虚假社交媒体账号和发布AI生成的评论，试图放大对数据中心环境影响和能源消耗的争议。OpenAI表示，几乎没有证据表明这些活动影响了任何实际政策讨论，但已采取行动关闭相关账号。此事件反映了AI工具被用于信息操纵的潜在风险，建议平台加强内容审核和滥用检测机制。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/openai-china-influence-campaign-chatgpt/">OpenAI: ‘Likely’ Chinese influence operation tried to use ChatGPT to stir debate on data centers</a>  #CyberScoop</p>
+</blockquote>
+<h3 id="-7-谁在运营勒索软件组织绅士-1"><a class="header" href="#-7-谁在运营勒索软件组织绅士-1">📰 7. 谁在运营勒索软件组织“绅士”？</a></h3>
+<ul>
+<li>名为“The Gentlemen”的网络犯罪组织已迅速成为按受害者数量计算的第二大活跃勒索软件团伙，通过激进的招募策略（承诺向附属成员支付90%的赎金）吸引了大量技术人才。该组织采用双重勒索模式，在加密数据前窃取敏感信息，并运营一个数据泄露网站。Krebs on Security的分析通过技术痕迹、通信模式和支付记录，指向该组织管理员可能是一名来自东欧的年轻黑客。此案例表明，高分成模式正在重塑勒索软件生态系统，建议企业加强端点检测和备份策略，并关注新兴团伙的TTP（战术、技术和程序）。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/">Who Runs the Ransomware Group ‘The Gentlemen?’</a>  #Krebs on Security</p>
+</blockquote>
+<h3 id="-8-2026年6月补丁星期二创纪录-1"><a class="header" href="#-8-2026年6月补丁星期二创纪录-1">📰 8. 2026年6月补丁星期二创纪录</a></h3>
+<ul>
+<li>微软在2026年6月的补丁星期二发布了近200个安全更新，创下该公司月度补丁周期的历史记录，覆盖Windows操作系统及支持软件。其中近36个漏洞被标记为“严重”等级，至少3个漏洞的利用代码已公开可用。这些漏洞涉及远程代码执行、权限提升和拒绝服务等多种类型，影响范围包括所有受支持的Windows版本及多个关键服务器产品。鉴于漏洞数量庞大且部分已遭利用，建议IT管理员立即优先部署更新，特别是针对已公开利用代码的漏洞，并启用自动更新功能。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/">A Record-Breaking Patch Tuesday for June 2026</a>  #Krebs on Security</p>
+</blockquote>
+<h3 id="-9-2026年6月ai行政令联邦机构须知及tenable如何提供帮助-1"><a class="header" href="#-9-2026年6月ai行政令联邦机构须知及tenable如何提供帮助-1">📰 9. 2026年6月AI行政令：联邦机构须知及Tenable如何提供帮助</a></h3>
+<ul>
+<li>2026年6月2日，白宫签署了一项AI行政令，要求联邦机构在30天内加强系统安全，部署AI驱动的网络防御，并建立一个新的AI网络安全信息交换中心。该行政令优先考虑国家安全和民用联邦机构，要求其适应前沿AI模型能力带来的新威胁。Tenable公司表示，其平台能够帮助联邦机构全面了解环境（包括AI资产）并优先处理风险。此行政令标志着美国政府将AI安全提升至国家战略层面，对网络安全行业和联邦IT采购产生重大影响。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/summary-june-2026-ai-executive-order-requirements">The June 2026 AI Executive Order: What federal agencies need to know and how Tenable can help</a>  #Tenable Blog</p>
+</blockquote>
+<h3 id="-10-silent-ransom组织通过当面冒充it人员入侵系统-1"><a class="header" href="#-10-silent-ransom组织通过当面冒充it人员入侵系统-1">📰 10. Silent Ransom组织通过当面冒充IT人员入侵系统</a></h3>
+<ul>
+<li>Silent Ransom Group（又名Luna Moth）的威胁行为者正在升级攻击手段，通过电话冒充IT人员，甚至亲自到场以直接获取受害者系统的访问权限。这种社会工程攻击结合了电话钓鱼和物理入侵，攻击者会事先收集目标信息，然后以技术支持为借口诱骗员工提供凭证或直接进入办公场所。该组织此前以勒索软件攻击闻名，此次策略转变表明其攻击手法更加激进和多样化。企业应加强员工安全意识培训，特别是针对冒充IT人员的电话和现场访问的验证流程，并实施多因素认证和严格的物理访问控制。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/silent-ransom-group-it/">Silent Ransom Group Uses In-Person IT Impersonation to Breach Systems</a>  #Infosecurity Magazine</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>📮 本日报由 AI 自动生成，仅供参考。数据来源：RSS 聚合 + arXiv + NVD。</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div>
 <h1 id="-ai安全日报--2026-06-14"><a class="header" href="#-ai安全日报--2026-06-14">🤖🔒 AI+安全日报 | 2026-06-14</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
@@ -373,94 +542,6 @@
 <p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/uk-firms-prioritize-ai-threat/">Infosecurity Europe: UK Firms Prioritize AI Threat Preparedness as Cyber Risks Evolve</a>  #Infosecurity Magazine</p>
 </blockquote>
 <h3 id="-10-下载泵送npm供应链攻击的新型欺骗技术"><a class="header" href="#-10-下载泵送npm供应链攻击的新型欺骗技术">📰 10. 下载泵送：npm供应链攻击的新型欺骗技术</a></h3>
-<ul>
-<li>Tenable博客揭示了攻击者如何利用自动化机器人流量在npm供应链攻击中人为抬高下载计数器，从而掩盖恶意负载。攻击者首先向注册表上传大量良性版本的包，触发镜像、扫描器和分析机器人的自动下载，人为制造高下载量。这种“下载泵送”技术使恶意包看起来像合法包，诱使开发者信任并安装。建议开发者不要仅依赖下载量判断包的安全性，应审查源代码、检查依赖关系，并使用安全扫描工具。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/how-cyberattackers-inflate-malicious-package-npm-download-counts">Download pumping: New npm deception technique for supply chain attacks</a>  #Tenable Blog</p>
-</blockquote>
-<hr>
-<blockquote>
-<p>📮 本日报由 AI 自动生成，仅供参考。数据来源：RSS 聚合 + arXiv + NVD。</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="日报归档"><a class="header" href="#日报归档">日报归档</a></h1>
-<ul>
-<li><a href="daily/daily/2026-06-14.html">2026-06-14</a></li>
-<li><a href="daily/daily/2026-06-13.html">2026-06-13</a></li>
-<li><a href="daily/daily/2026-06-12.html">2026-06-12</a></li>
-<li><a href="daily/daily/2026-06-10.html">2026-06-10</a></li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="-ai安全日报--2026-06-14-1"><a class="header" href="#-ai安全日报--2026-06-14-1">🤖🔒 AI+安全日报 | 2026-06-14</a></h1>
-<blockquote>
-<p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
-</blockquote>
-<hr>
-<h3 id="-1-oracle-peoplesoft零日漏洞助长shinyhunters勒索浪潮-1"><a class="header" href="#-1-oracle-peoplesoft零日漏洞助长shinyhunters勒索浪潮-1">📰 1. Oracle PeopleSoft零日漏洞助长ShinyHunters勒索浪潮</a></h3>
-<ul>
-<li>新披露的Oracle PeopleSoft零日漏洞被ShinyHunters勒索组织利用，主要针对大学和教育机构。该漏洞是PeopleSoft环境管理组件中的关键远程代码执行（RCE）漏洞，Oracle于2026年6月10日发布警告，但攻击早在5月27日至6月9日期间就已发生。Google Cloud威胁情报团队（GTIG）指出，攻击者利用该漏洞获取系统控制权，进而加密数据并勒索赎金。Oracle已敦促用户立即打补丁，但未确认漏洞是否被积极利用。建议教育机构优先修补PeopleSoft系统，并加强网络监控。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4184408/oracle-peoplesoft-zero%e2%80%91day-fuels-shinyhunters-extortion-spree.html">Oracle PeopleSoft zero‑day fuels ShinyHunters extortion spree</a>  #CSO Online</p>
-</blockquote>
-<h3 id="-2-cisa要求机构更智能地修补漏洞而非更费力预示行业更广泛实践-1"><a class="header" href="#-2-cisa要求机构更智能地修补漏洞而非更费力预示行业更广泛实践-1">📰 2. CISA要求机构更智能地修补漏洞，而非更费力——预示行业更广泛实践</a></h3>
-<ul>
-<li>美国网络安全和基础设施安全局（CISA）敦促机构采用更智能的漏洞修补策略，而非单纯增加修补工作量。Verizon 2026年数据泄露调查报告显示，去年组织仅完全修复了26%被攻击者积极利用的漏洞，低于前一年的38%。漏洞修复的中位时间延长至43天，而攻击者的利用时间窗口已缩短至数天。CISA建议优先修补被积极利用的漏洞，并采用自动化工具和风险优先级排序，以应对攻击者利用漏洞作为初始访问向量的趋势。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4183750/cisa-tells-agencies-to-patch-smarter-not-harder-foreshadowing-broader-industry-practice.html">CISA tells agencies to patch smarter, not harder — foreshadowing broader industry practice</a>  #CSO Online</p>
-</blockquote>
-<h3 id="-3-ivanti修复关键sentry漏洞可导致设备完全被接管-1"><a class="header" href="#-3-ivanti修复关键sentry漏洞可导致设备完全被接管-1">📰 3. Ivanti修复关键Sentry漏洞，可导致设备完全被接管</a></h3>
-<ul>
-<li>Ivanti修复了Ivanti Sentry（原MobileIron Sentry）中的两个漏洞，该设备是一种安全移动网关设备。第一个漏洞CVE-2026-10523（CVSS评分9.9）允许未认证的远程攻击者绕过认证并创建任意管理员账户。第二个漏洞CVE-2026-10520是命令注入问题，可导致以root权限执行远程代码。这两个漏洞组合使用可使攻击者完全控制部署。Ivanti已发布补丁，建议用户立即更新。该漏洞影响所有未打补丁的Sentry版本，企业应优先修复。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4183735/ivanti-patches-critical-sentry-flaws-that-lead-to-full-device-takeover.html">Ivanti patches critical Sentry flaws that lead to full device takeover</a>  #CSO Online</p>
-</blockquote>
-<h3 id="-4-openai推出chatgpt账户安全控制-1"><a class="header" href="#-4-openai推出chatgpt账户安全控制-1">📰 4. OpenAI推出ChatGPT账户安全控制</a></h3>
-<ul>
-<li>OpenAI为ChatGPT引入了锁定模式和活动会话功能，以防范提示注入数据窃取攻击。锁定模式可限制ChatGPT在特定会话中的操作权限，防止恶意提示诱导模型泄露敏感信息。活动会话功能允许用户实时查看和管理所有活跃会话，增强账户可见性和控制力。这些措施旨在应对日益增长的针对AI聊天机器人的攻击，特别是通过提示注入窃取用户数据的威胁。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/chatgpt-lockdown-mode-active/">OpenAI Unveils ChatGPT Account Security Controls</a>  #Infosecurity Magazine</p>
-</blockquote>
-<h3 id="-5-mini-shai-hulud关于teampcp-npm和pypy供应链活动的常见问题-1"><a class="header" href="#-5-mini-shai-hulud关于teampcp-npm和pypy供应链活动的常见问题-1">📰 5. Mini Shai-Hulud：关于TeamPCP npm和PyPy供应链活动的常见问题</a></h3>
-<ul>
-<li>TeamPCP发起的Mini Shai-Hulud蠕虫已感染超过170个npm和PyPI软件包，成功绕过供应链安全验证，并入侵了OpenAI和Mistral AI的系统。该活动实现了关键安全突破：首次攻破了具有有效SLSA Build Level 3来源证明的软件包，证明流程完整性控制可被击败。该蠕虫窃取开发者和云凭证，任何安装了受感染软件包的系统都必须视为完全受损。建议组织立即审查其依赖项，并实施更严格的软件供应链安全措施。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/mini-shai-hulud-frequently-asked-questions">Mini Shai-Hulud: Frequently asked questions about the TeamPCP npm and PyPI supply chain campaign</a>  #Tenable Blog</p>
-</blockquote>
-<h3 id="-6-fcc拟禁一次性手机-1"><a class="header" href="#-6-fcc拟禁一次性手机-1">📰 6. FCC拟禁一次性手机</a></h3>
-<ul>
-<li>美国联邦通信委员会（FCC）提议限制一次性手机（burner phones）的销售，以打击犯罪活动中的匿名通信。此外，微软在史上最大规模“补丁星期二”中修复了AI驱动的漏洞挖掘工具发现的多个高危漏洞；ShinyHunters勒索软件团伙利用Oracle零日漏洞发动攻击。一次性手机的禁令可能影响隐私保护需求，但有助于减少网络犯罪中的匿名工具。建议企业及时应用安全补丁，并关注Oracle等关键系统的漏洞公告。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://www.wired.com/story/security-news-this-week-the-fcc-wants-to-kill-burner-phones/">The FCC Wants to Kill Burner Phones</a>  #Wired Security</p>
-</blockquote>
-<h3 id="-7-greatxml零日漏洞声称可绕过bitlocker但尚未证实有效-1"><a class="header" href="#-7-greatxml零日漏洞声称可绕过bitlocker但尚未证实有效-1">📰 7. GreatXML零日漏洞声称可绕过BitLocker，但尚未证实有效</a></h3>
-<ul>
-<li>一名不满的研究员发布了名为GreatXML的零日漏洞，声称可通过Windows恢复环境（WinRE）绕过锁定设备上的BitLocker加密。然而，一位备受尊敬的安全专家指出，该漏洞的实际效果与描述不符，无法成功绕过加密。该漏洞似乎与Windows Defender离线扫描功能有关，但具体机制尚不明确。研究员正在寻找修复方法，但尚未发布可用的PoC。目前，该漏洞对实际系统构成的风险较低，但建议用户保持Windows更新以防范潜在威胁。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4184678/greatxml-zero-day-bitlocker-bypass-doesnt-seem-to-work-yet.html">GreatXML zero-day BitLocker bypass doesn’t seem to work, yet</a>  #CSO Online</p>
-</blockquote>
-<h3 id="-8-npm威胁格局攻击面与缓解措施6月2日更新-1"><a class="header" href="#-8-npm威胁格局攻击面与缓解措施6月2日更新-1">📰 8. npm威胁格局：攻击面与缓解措施（6月2日更新）</a></h3>
-<ul>
-<li>Unit 42分析了自Shai Hulud事件后npm供应链的演变，揭示了可蠕虫化的恶意软件、CI/CD持久化机制以及多阶段攻击等新型威胁。报告指出，攻击者通过利用npm包管理器的依赖关系，在开发环境中植入后门，并通过自动更新机制横向传播。这些攻击不仅影响单个项目，还可能通过共享的CI/CD管道感染整个组织。建议开发者启用双因素认证、审计依赖项来源，并限制npm install脚本的执行权限。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/">The npm Threat Landscape: Attack Surface and Mitigations (Updated June 2)</a>  #Unit 42</p>
-</blockquote>
-<h3 id="-9-infosecurity-europe英国企业优先考虑ai威胁准备随着网络风险演变-1"><a class="header" href="#-9-infosecurity-europe英国企业优先考虑ai威胁准备随着网络风险演变-1">📰 9. Infosecurity Europe：英国企业优先考虑AI威胁准备，随着网络风险演变</a></h3>
-<ul>
-<li>英国组织正优先投资AI驱动的网络安全，43%的企业将AI驱动的攻击列为首要风险。调查显示，这些企业正在大幅增加对高级威胁防御技术的投入，包括AI驱动的检测和响应系统。AI攻击的复杂性要求组织采用更智能的防御策略，如机器学习模型对抗和自动化威胁狩猎。专家建议企业建立跨部门AI安全团队，并定期进行红队演练以测试防御能力。</li>
-</ul>
-<blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/uk-firms-prioritize-ai-threat/">Infosecurity Europe: UK Firms Prioritize AI Threat Preparedness as Cyber Risks Evolve</a>  #Infosecurity Magazine</p>
-</blockquote>
-<h3 id="-10-下载泵送npm供应链攻击的新型欺骗技术-1"><a class="header" href="#-10-下载泵送npm供应链攻击的新型欺骗技术-1">📰 10. 下载泵送：npm供应链攻击的新型欺骗技术</a></h3>
 <ul>
 <li>Tenable博客揭示了攻击者如何利用自动化机器人流量在npm供应链攻击中人为抬高下载计数器，从而掩盖恶意负载。攻击者首先向注册表上传大量良性版本的包，触发镜像、扫描器和分析机器人的自动下载，人为制造高下载量。这种“下载泵送”技术使恶意包看起来像合法包，诱使开发者信任并安装。建议开发者不要仅依赖下载量判断包的安全性，应审查源代码、检查依赖关系，并使用安全扫描工具。</li>
 </ul>
