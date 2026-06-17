@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-04926e44.js";
+            window.path_to_searchindex_js = "../searchindex-ff39ea0e.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-a52b6a49.js"></script>
+        <script src="../toc-6e2f0646.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -178,80 +178,80 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="今日日报"><a class="header" href="#今日日报">今日日报</a></h1>
-<h1 id="-ai安全日报--2026-06-17"><a class="header" href="#-ai安全日报--2026-06-17">🤖🔒 AI+安全日报 | 2026-06-17</a></h1>
+<h1 id="-ai安全日报--2026-06-18"><a class="header" href="#-ai安全日报--2026-06-18">🤖🔒 AI+安全日报 | 2026-06-18</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-提升ctem精度tenable-one中的持续控制验证如何转变暴露管理"><a class="header" href="#-1-提升ctem精度tenable-one中的持续控制验证如何转变暴露管理">📰 1. 提升CTEM精度：Tenable One中的持续控制验证如何转变暴露管理</a></h3>
+<h3 id="-1-infosecurity-europeowasp研究员警告提示注入仍是未解难题"><a class="header" href="#-1-infosecurity-europeowasp研究员警告提示注入仍是未解难题">📰 1. Infosecurity Europe：OWASP研究员警告提示注入仍是未解难题</a></h3>
 <ul>
-<li>Tenable One引入了持续控制验证功能，旨在通过过滤警报噪音并考虑主动网络防御来改进CTEM（持续威胁暴露管理）计划。该功能将EDR、MFA和防火墙等主动安全控制直接映射到潜在攻击路径上，帮助团队专注于可访问和可利用的攻击路径。随着漏洞利用成为首要初始访问向量，以及前沿AI加速漏洞发现，组织必须从管理理论网络风险转向验证实际、可访问的暴露。Tenable One的这一功能使安全团队能够更精确地识别和修复真正的风险。</li>
+<li>在Infosecurity Europe 2026大会上，OWASP研究员Ariel Fogel警告称，提示注入（Prompt Injection）仍是生成式AI架构中“未解决的难题”。该漏洞允许攻击者通过精心设计的输入操纵AI模型输出，绕过安全限制，可能导致数据泄露或恶意内容生成。Fogel指出，当前防御手段（如输入过滤和输出验证）无法完全消除风险，因为AI模型的语义理解能力使其难以区分合法指令与恶意注入。这一问题影响所有基于大语言模型的应用，包括聊天机器人、代码助手和自动化决策系统。行业需加速研究鲁棒性更强的模型架构和运行时监控机制，以应对日益复杂的AI安全威胁。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/ctem-exposure-management-validation">Improving precision in CTEM: How continuous controls validation in Tenable One transforms exposure management</a>  #Tenable Blog</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/infosec-europe-prompt-injection/">Infosecurity Europe: Prompt Injection Remains Unsolved, OWASP Researcher Warns</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-2-思科在发现主动利用证据后修补sd-wan漏洞"><a class="header" href="#-2-思科在发现主动利用证据后修补sd-wan漏洞">📰 2. 思科在发现主动利用证据后修补SD-WAN漏洞</a></h3>
+<h3 id="-2-攻击者利用fortinet在4月披露的两个严重漏洞"><a class="header" href="#-2-攻击者利用fortinet在4月披露的两个严重漏洞">📰 2. 攻击者利用Fortinet在4月披露的两个严重漏洞</a></h3>
 <ul>
-<li>思科发布了针对其Catalyst SD-WAN Manager软件中一个漏洞的修复补丁，此前已发现该漏洞被有限利用。核心事件是漏洞CVE-2026-20262（严重等级未明确，但根据描述可能导致提权，通常为高严重性）影响Catalyst SD-WAN Manager（原SD-WAN vManage）的Web界面。技术细节显示，该漏洞源于文件上传过程中对用户提供输入的验证不足，允许经过身份验证的攻击者创建或覆盖文件，这些文件随后可能被用于获取root权限。影响范围是所有使用思科Catalyst SD-WAN Manager管理分布式网络环境的企业。行业意义在于，鉴于已有主动利用证据，组织应立即应用补丁，并审查相关系统的访问控制，防止未经授权的文件操作。</li>
+<li>多家安全公司观察到，Fortinet在4月披露的两个FortiSandbox严重漏洞正被积极利用。这些漏洞允许攻击者远程执行代码或绕过安全限制，且攻击来源多样，并非单一活动。受影响版本包括FortiSandbox 4.0.0至4.2.3等。建议用户立即升级至修复版本，并检查日志中是否存在异常访问行为。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4185525/cisco-sd-wan-flaw-puts-spotlight-on-enterprise-management-plane-risk.html">Cisco patches SD-WAN flaw amid evidence of active exploitation</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/fortinet-fortisandbox-vulnerabilities-exploits/">Attackers hit pair of critical Fortinet vulnerabilities the vendor disclosed in April</a>  #CyberScoop</p>
 </blockquote>
-<h3 id="-3-中国关联黑客利用遗留redcap漏洞攻击美加研究机构"><a class="header" href="#-3-中国关联黑客利用遗留redcap漏洞攻击美加研究机构">📰 3. 中国关联黑客利用遗留REDCap漏洞攻击美加研究机构</a></h3>
+<h3 id="-3-ai威胁与警报疲劳挑战网络安全团队"><a class="header" href="#-3-ai威胁与警报疲劳挑战网络安全团队">📰 3. AI威胁与警报疲劳挑战网络安全团队</a></h3>
 <ul>
-<li>Google威胁情报组（GTIG）警告称，一个与中国关联的威胁行为者UNC6508针对美国和加拿大的研究环境进行了长达一年多的网络间谍活动。该活动滥用了REDCap（一个广泛用于收集和管理研究数据的平台），攻击者拦截了REDCap的升级过程以注入持久性恶意软件。目标包括学术机构、医学研究中心、医疗保健提供商、军事健康网络和国防研究机构。Google表示该活动已被破坏，但强调此类针对研究基础设施的攻击对国家安全和知识产权构成严重威胁。</li>
+<li>Filigran在2026年Infosecurity Europe上发布的调查显示，AI驱动的攻击已成为网络安全团队的首要担忧，同时虚假警报、警报疲劳和手动流程正在耗尽团队资源。调查指出，AI攻击的复杂性和自动化程度使得传统防御系统难以应对，而大量误报导致安全分析师注意力分散，关键威胁可能被忽略。该现象影响了从中小企业到大型企业的各类组织，导致响应时间延长和运营成本上升。行业建议采用AI辅助的威胁检测和自动化响应工具，以减轻人工负担并提高威胁识别准确性。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4185582/china-linked-hackers-target-us-canada-research-using-legacy-redcap-exploits.html">China-linked hackers target US, Canada research using legacy REDCap exploits</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/ai-threats-alert-fatigue-challenge/">AI Threats and Alert Fatigue Challenge Cybersecurity Teams</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-4-revouninstaller-ioctl处理堆缓冲区溢出漏洞"><a class="header" href="#-4-revouninstaller-ioctl处理堆缓冲区溢出漏洞">⚠️ 4. RevoUninstaller IOCTL处理堆缓冲区溢出漏洞</a></h3>
+<h3 id="-4-google-vertex-ai-sdk存在存储桶劫持漏洞可导致远程代码执行"><a class="header" href="#-4-google-vertex-ai-sdk存在存储桶劫持漏洞可导致远程代码执行">📰 4. Google Vertex AI SDK存在存储桶劫持漏洞，可导致远程代码执行</a></h3>
 <ul>
-<li>VS Revo RevoUninstaller 2.5.x和2.6.x版本中存在高危堆缓冲区溢出漏洞（CVSS 7.8）。漏洞位于RevoDetector.sys驱动库的IOCtl_Handler函数中，本地攻击者可通过发送特制的IOCTL请求触发堆缓冲区溢出，可能导致系统崩溃或权限提升。该漏洞利用代码已公开，建议用户立即升级至2.7.0版本以修复此问题。</li>
+<li>Unit 42研究人员发现，Google Cloud的Vertex AI SDK（Python版）存在设计缺陷，攻击者可通过存储桶命名逻辑漏洞和缺失的认证机制，仅凭项目ID和区域信息即可劫持受害者的AI项目。该漏洞允许攻击者预注册存储桶名称，从而注入恶意模型或数据，导致模型中毒或远程代码执行。影响范围涉及所有使用该SDK的Google Cloud用户。建议开发者立即更新SDK至最新版本，并严格验证存储桶名称的唯一性。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12193">CVE-2026-12193 [HIGH 7.8]</a>  CVSS 7.8 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4186193/googles-vertex-ai-sdk-could-allow-rce-through-bucket-squatting.html">Google’s Vertex AI SDK could allow RCE through bucket squatting</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-5-cve-2026-12174-高严重性-88"><a class="header" href="#-5-cve-2026-12174-高严重性-88">⚠️ 5. CVE-2026-12174 [高严重性 8.8]</a></h3>
+<h3 id="-5-浏览器钓鱼攻击五分之一未被检测到"><a class="header" href="#-5-浏览器钓鱼攻击五分之一未被检测到">📰 5. 浏览器钓鱼攻击五分之一未被检测到</a></h3>
 <ul>
-<li>D-Link DCS-935L网络摄像头1.10.01版本中发现一个安全漏洞，该漏洞影响HTTP处理组件中/web/cgi-bin/greece/rhea文件的snprintf函数。技术细节显示，攻击者可以通过操纵data参数触发格式字符串漏洞，从而可能导致信息泄露或代码执行。该漏洞的CVSS评分为8.8（高严重性），攻击者可远程发起攻击。影响范围是使用D-Link DCS-935L型号摄像头的用户，且漏洞利用代码已公开披露。行业意义在于，物联网设备（如网络摄像头）的固件漏洞是常见攻击面，用户应尽快检查并安装厂商提供的固件更新，同时限制设备对公网的暴露。</li>
+<li>Menlo Security的研究警告称，随着企业应用日益转向浏览器端，传统网络安全工具在检测基于浏览器的钓鱼攻击方面存在显著漏洞，约五分之一的此类攻击未被发现。该研究指出，攻击者利用浏览器作为主要入口点，通过伪造登录页面、恶意重定向等技术手段绕过传统安全防护。这一发现凸显了企业安全架构在应对现代威胁时的不足，尤其是当员工通过浏览器访问SaaS应用和云服务时。行业建议企业采用浏览器隔离、零信任架构和AI驱动的威胁检测来弥补传统工具的盲区。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12174">CVE-2026-12174 [HIGH 8.8]</a>  CVSS 8.8 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/cybersecurity-fails-to-detect/">Cybersecurity Software Fails to Detect Fifth of Brower-Based Phishing Attacks</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-6-行业联盟应对ai威胁保障开源安全"><a class="header" href="#-6-行业联盟应对ai威胁保障开源安全">📰 6. 行业联盟应对AI威胁，保障开源安全</a></h3>
+<h3 id="-6-欧盟安全专家将在网络攻击时支持乌克兰组织"><a class="header" href="#-6-欧盟安全专家将在网络攻击时支持乌克兰组织">📰 6. 欧盟安全专家将在网络攻击时支持乌克兰组织</a></h3>
 <ul>
-<li>由Chainguard、摩根大通和纽约梅隆银行等机构共同发起的新行业联盟“Athena”正式成立，旨在修复前沿AI模型发现的开源软件漏洞，防止攻击者抢先利用。该联盟将聚焦于AI驱动的漏洞发现与自动化修复流程，通过协作共享威胁情报和补丁方案，提升开源生态系统的整体韧性。此举标志着金融与科技巨头首次联合应对AI对开源安全的系统性风险，预计将推动行业标准制定，并鼓励更多企业参与开源安全治理。</li>
+<li>乌克兰已被纳入欧盟网络安全储备（EU Cybersecurity Reserve），该机制旨在为大规模网络攻击事件提供应急响应服务。根据协议，欧盟安全专家将在乌克兰组织遭受重大网络攻击时提供技术支持、事件响应和恢复协助。此举是欧盟加强对乌克兰网络安全支持的一部分，特别是在地缘政治紧张背景下，乌克兰已成为国家级网络攻击的频繁目标。该合作将提升乌克兰关键基础设施（如能源、交通和通信）的防御能力，并促进欧盟与乌克兰之间的威胁情报共享。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/chainguard-bny-open-source-athena/">Chainguard, JPMorgan, BNY Team Up to Secure Open Source from AI Threats</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/ukraine-included-eu-cyber-reserve/">EU Security Experts to Support Ukrainian Organizations in Case of Cyber-Attacks</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-7-gl-mt3000-在线固件升级命令注入漏洞"><a class="header" href="#-7-gl-mt3000-在线固件升级命令注入漏洞">⚠️ 7. GL-MT3000 在线固件升级命令注入漏洞</a></h3>
+<h3 id="-7-fbi警告kali365钓鱼工具包无需密码即可入侵microsoft-365账户"><a class="header" href="#-7-fbi警告kali365钓鱼工具包无需密码即可入侵microsoft-365账户">📰 7. FBI警告：Kali365钓鱼工具包无需密码即可入侵Microsoft 365账户</a></h3>
 <ul>
-<li>GL.iNet GL-MT3000路由器在4.4.5及之前版本中存在高危命令注入漏洞（CVSS 8.8）。攻击者可远程利用/usr/bin/one_click_upgrade文件中的在线固件升级处理功能，通过精心构造的请求执行任意系统命令。该漏洞利用代码已公开，可能被大规模利用。建议用户立即升级至4.7版本以修复此问题，并关注厂商后续安全公告。</li>
+<li>FBI近日发出警告，名为Kali365的新型钓鱼工具包能够绕过多因素认证，无需用户输入密码即可入侵Microsoft 365账户。该工具包通过伪造登录页面，利用中间人攻击技术实时窃取会话令牌，从而直接接管账户。即使企业已启用多因素认证并培训员工识别钓鱼页面，仍可能面临威胁。建议企业采用基于证书的认证、加强会话管理监控，并部署反钓鱼解决方案。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12187">CVE-2026-12187 [HIGH 8.8]</a>  CVSS 8.8 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/fbi-kali365-phishing-kit-breaks-microsoft-365-accounts-no-password-required">FBI warns of Kali365 phishing kit that breaks into Microsoft 365 accounts – no password required</a>  #Graham Cluley</p>
 </blockquote>
-<h3 id="-8-涉嫌运营kimwolf僵尸网络的dort在美加两国被捕"><a class="header" href="#-8-涉嫌运营kimwolf僵尸网络的dort在美加两国被捕">📰 8. 涉嫌运营Kimwolf僵尸网络的“Dort”在美加两国被捕</a></h3>
+<h3 id="-8-cisa管理员在github上泄露aws-govcloud密钥"><a class="header" href="#-8-cisa管理员在github上泄露aws-govcloud密钥">📰 8. CISA管理员在GitHub上泄露AWS GovCloud密钥</a></h3>
 <ul>
-<li>加拿大警方于周三逮捕了一名23岁的渥太华男子，其涉嫌构建并运营名为Kimwolf的物联网僵尸网络。该僵尸网络在过去六个月内感染了数百万台设备，用于发动大规模分布式拒绝服务（DDoS）攻击。KrebsOnSecurity在2026年2月公开指认该嫌疑人后，其又对作者和一名安全研究员发动了DDoS、人肉搜索和报假警攻击。目前该嫌疑人面临加拿大和美国的刑事黑客指控。</li>
+<li>直到上周末，一名CISA承包商在公开的GitHub仓库中暴露了多个高权限AWS GovCloud账户凭证及大量内部系统信息。安全专家称，该仓库包含CISA内部软件构建、测试和部署的详细文档，是近年来最严重的政府数据泄露事件之一。泄露的密钥可能允许攻击者访问敏感政府云环境。CISA已紧急撤销相关凭证，并建议所有政府机构加强GitHub仓库的访问控制和密钥管理。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/05/alleged-kimwolf-botmaster-dort-arrested-charged-in-u-s-and-canada/">Alleged Kimwolf Botmaster ‘Dort’ Arrested, Charged in U.S. and Canada</a>  #Krebs on Security</p>
+<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/">CISA Admin Leaked AWS GovCloud Keys on Github</a>  #Krebs on Security</p>
 </blockquote>
-<h3 id="-9-虚假ssa邮件驱动venomoushelper钓鱼攻击"><a class="header" href="#-9-虚假ssa邮件驱动venomoushelper钓鱼攻击">📰 9. 虚假SSA邮件驱动Venomous#Helper钓鱼攻击</a></h3>
+<h3 id="-9-学校为何仍是网络犯罪分子的首选目标"><a class="header" href="#-9-学校为何仍是网络犯罪分子的首选目标">📰 9. 学校为何仍是网络犯罪分子的首选目标</a></h3>
 <ul>
-<li>Venomous#Helper攻击者冒充美国社会保障局（SSA）发送钓鱼邮件，诱骗用户下载并安装经过数字签名的远程管理软件（RMM），从而在目标网络中建立持久访问权限。该攻击利用合法签名绕过安全检测，一旦安装，攻击者可远程控制设备、窃取凭证并横向移动。安全公司指出，该活动已影响多个美国组织，建议用户警惕声称来自SSA的异常邮件，并启用应用白名单和端点检测响应（EDR）系统以阻止未授权的RMM部署。</li>
+<li>近日，大西洋两岸的多所学校接连遭到黑客攻击，再次提醒我们，勒索软件团伙全年都将教育机构视为重点目标。攻击者利用学校网络安全预算有限、系统老旧且数据敏感（如学生和员工个人信息）的特点，频繁发动攻击。这类事件不仅导致教学中断，还可能造成大量敏感数据泄露。教育机构应加强网络安全培训、定期备份数据，并部署多因素认证以降低风险。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/ssa-emails-venomous-helper-phishing/">Fake SSA Emails Drive Venomous#Helper Phishing Campaign</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/why-schools-remain-one-of-cybercriminals-favourite-targets">Why schools remain one of cybercriminals’ favourite targets</a>  #Graham Cluley</p>
 </blockquote>
-<h3 id="-10-多数网络安全团队难觅时间接受新威胁培训"><a class="header" href="#-10-多数网络安全团队难觅时间接受新威胁培训">📰 10. 多数网络安全团队难觅时间接受新威胁培训</a></h3>
+<h3 id="-10-勒索软件走向实体网络犯罪分子转向暴力威胁"><a class="header" href="#-10-勒索软件走向实体网络犯罪分子转向暴力威胁">📰 10. 勒索软件走向实体：网络犯罪分子转向暴力威胁</a></h3>
 <ul>
-<li>调查显示，尽管组织普遍认识到AI等新技术带来的安全挑战，但多数网络安全团队因日常运营压力，难以在工作时间内安排针对新威胁的培训。员工反映，持续警报响应、合规审计和补丁管理挤占了学习时间，导致技能更新滞后。这种培训缺口可能加剧防御漏洞，使组织更易受AI驱动的攻击（如深度伪造钓鱼或自动化漏洞利用）。建议企业将培训嵌入日常工作流（如微学习模块），并优先投资自动化工具以释放人力用于能力提升。</li>
+<li>网络犯罪团伙正越来越多地采用现实世界威胁手段，包括雇佣当地打手上门施压，以迫使受害者支付赎金。这种“物理勒索”模式将数字攻击与线下暴力结合，显著提高了受害者的心理压力和安全风险。攻击者通常先通过数据窃取或系统加密制造恐慌，再通过电话、邮件或直接派人威胁。企业应建立应急响应计划，与执法部门保持联系，并加强物理安全措施。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/cybersecurity-training-time/">Most Cybersecurity Teams Struggle to Find Time for Training on New Cyber Threats</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/ransomware-physical-threats-violence">When ransomware gets physical: cybercriminals turn to threats of violence</a>  #Graham Cluley</p>
 </blockquote>
 <hr>
 <blockquote>
