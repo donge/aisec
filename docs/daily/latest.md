@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-06-24
+# 🤖🔒 AI+安全日报 | 2026-06-25
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-12773 [高危 7.3] 🔬
+### 📰 1. 攻击者在补丁发布数周后利用Cisco Unified CM高危漏洞
 
-- BerriAI litellm 1.59.8及之前版本中存在身份验证绕过漏洞，影响MCP代理组件的UserAPIKeyAuth函数。攻击者可远程利用该漏洞，通过操纵认证过程绕过安全控制。漏洞利用代码已公开，可能被用于实际攻击。建议用户立即升级至1.59.9或更高版本，并审查MCP代理配置。
+- 威胁情报公司Defused于6月23日报告，Cisco Unified Communications Manager（Unified CM）中的一个高危漏洞（CVE-2026-20230，CVSS评分8.6）正被积极利用。该漏洞允许经过身份验证的攻击者通过发送特制请求获得受影响系统的root访问权限。Defused观察到攻击活动来自单一来源，使用未经验证的概念验证代码，并采用格式正确的file://文件写入载荷。Cisco已于数周前发布安全公告和补丁，但仍有大量未修补系统面临风险。建议所有使用Cisco Unified CM的组织立即应用补丁，并检查系统是否存在异常root权限活动。
 
-> **来源**: [CVE-2026-12773 [HIGH 7.3] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-12773)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Attackers exploit Cisco Unified CM flaw weeks after patch release](https://www.csoonline.com/article/4188867/attackers-exploit-cisco-unified-cm-flaw-weeks-after-patch-release.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-12782 [高危 7.8]
+### 📰 2. AI为组织带来多少网络风险？4.57亿个安全问题，以下是应对方法
 
-- EaseUS Partition Master（版本至14.5）的内核驱动组件EUEDKEPM.sys中存在访问控制不当漏洞，与CVE-2026-12781类似。攻击者需要本地访问权限，利用代码已公开。该漏洞可能导致系统权限提升或敏感数据泄露。供应商表示此问题仅影响旧版本，并已在新版本中修复。强烈建议用户升级到最新版本，并限制本地访问权限以减少风险。
+- Tenable在30天内检测到超过7000个组织中的4.57亿个AI相关安全问题，平均每个组织有6.2万个暴露点。这些暴露主要源于影子AI（未经批准的AI工具使用），包括配置错误、数据泄露风险和权限过度授予。报告强调，AI工具（无论是批准还是未批准的）正在推动每日大量暴露，组织需要可视化、映射、评估和保护所有AI资产。建议采用全面的暴露管理计划，包括持续监控AI使用、实施最小权限原则，并建立AI安全治理框架。
 
-> **来源**: [CVE-2026-12782 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-12782)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [How much cyber risk does AI create for organizations? 457 million security issues. Here’s what you can do about it.](https://www.tenable.com/blog/how-much-cyber-risk-does-ai-create-for-organizations-457-million-security-issues-heres-what)  #Tenable Blog
 
-### ⚠️ 3. CVE-2026-12781 [高危 7.8]
+### 📰 3. 广泛使用的FFmpeg编解码器漏洞可导致媒体服务器崩溃或远程代码执行
 
-- EaseUS Partition Master（版本至14.5）的内核驱动组件epmntdrv.sys中存在未知功能导致的访问控制不当漏洞。攻击者需要本地访问权限才能利用，且利用代码已公开。该漏洞可能允许攻击者提升权限或执行未授权操作。供应商确认此问题仅存在于旧版本，并已在新版本中修复。建议用户立即升级到最新版本的EaseUS Partition Master。
+- JFrog研究人员发现FFmpeg媒体处理框架中存在一个严重漏洞（CVE-2026-8461），该漏洞是MagicYUV解码器中的堆越界写入问题。攻击者可利用此漏洞导致使用该框架的应用程序崩溃，甚至实现远程代码执行。FFmpeg被集成在Kodi、mpv等桌面播放器及Linux文件管理器缩略图生成器中。建议组织立即更新FFmpeg至修复版本，并要求供应商提供软件物料清单以管理供应链风险。
 
-> **来源**: [CVE-2026-12781 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-12781)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [Hole in widely-used FFmpeg codec could crash media servers or enable RCE](https://www.csoonline.com/article/4188531/hole-in-widely-used-ffmpeg-codec-could-crash-media-servers-or-enable-rce.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-12775 [高危 7.3]
+### 📰 4. 研究人员诱骗AI浏览器泄露凭证
 
-- Montodel House-Rental-Management系统（版本至90010017b81265eb1ef3810268909f7719a33863）存在SQL注入漏洞，位于/login.php文件中，通过操纵Username参数可远程利用。该漏洞的利用代码已公开，可能被广泛使用。由于产品采用滚动发布模式，受影响或更新版本的详细信息不可用。建议用户立即检查并更新至最新版本，同时实施输入验证和参数化查询以防止SQL注入。
+- LayerX安全研究人员成功诱骗包括ChatGPT Atlas和Comet在内的AI浏览器绕过其安全护栏，泄露用户凭证。攻击利用了AI浏览器的自然语言处理能力，通过精心设计的提示注入，使AI误解用户请求并输出敏感信息。这些AI浏览器旨在提供智能搜索和自动化功能，但缺乏对恶意输入的充分过滤。该发现表明，AI浏览器面临独特的攻击面，用户应避免在AI工具中输入敏感数据，开发者需加强输入验证和输出过滤。
 
-> **来源**: [CVE-2026-12775 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-12775)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Researchers Trick AI Browsers Into Leaking Credentials](https://www.infosecurity-magazine.com/news/bioshocking-ai-browser-prompt/)  #Infosecurity Magazine
 
-### 📰 5. 微软发现未修补的SharePoint服务器被多个攻击者同时利用
+### 📰 5. macOS后门利用提示注入逃避AI分类
 
-- 微软检测与响应团队（DART）在一次勒索软件调查中发现，同一受害网络内有两个不相关的攻击者同时活动。最初调查针对Storm-2603勒索软件团伙，但随后发现另一个使用不同工具和基础设施的攻击链。两个攻击者均利用了未修补的SharePoint服务器漏洞进入网络，相互掩盖了彼此的活动。微软警告称，未修补的SharePoint服务器已成为多攻击者入侵的常见入口点，建议组织立即应用安全更新并加强网络监控。
+- SentinelLabs发现一个与朝鲜相关的macOS后门，利用提示注入技术逃避AI分类工具的检测。该后门通过伪装成合法软件传播，一旦安装，会向AI驱动的安全分析工具发送精心构造的提示，使其将恶意行为误判为正常活动。这种技术利用了AI分类器对自然语言输入的信任，从而绕过基于行为的检测。该事件凸显了AI安全工具自身的脆弱性，建议组织采用多层防御，包括行为分析和人工审查，以应对AI对抗性攻击。
 
-> **来源**: [Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds](https://www.csoonline.com/article/4188359/unpatched-sharepoint-servers-opened-the-door-to-multiple-attackers-microsoft-finds.html)  #CSO Online
+> **来源**: [macOS Backdoor Uses Prompt Injection to Evade AI Triage](https://www.infosecurity-magazine.com/news/macos-gaslight-rust-backdoor/)  #Infosecurity Magazine
 
-### 📰 6. GitHub Actions加强签出安全以阻止“pwn request”攻击
+### 📰 6. 伊朗关联组织MuddyWater伪装成勒索软件团伙掩盖网络间谍活动
 
-- GitHub宣布actions/checkout v7版本自动阻止在pull_request_target或workflow_run事件中获取未审查的分支代码，以防范“pwn request”攻击。此类攻击利用pull_request_target工作流触发器的不安全使用，使攻击者代码以工作流完整权限运行。新版本默认失败此类工作流，开发者需显式选择退出才能绕过检查。该更新于6月18日发布，旨在应对开发者环境中激增的供应链攻击。
+- NCC Group发布报告警告，伊朗支持的APT组织MuddyWater正通过伪装成勒索软件团伙来掩盖其网络间谍活动。该组织部署商业可用恶意软件（如Cobalt Strike）并模拟勒索软件行为，包括加密文件和留下勒索信，但其真实目的是窃取敏感数据而非勒索赎金。MuddyWater还利用虚假勒索软件部署作为掩护，在受害者网络中建立持久访问。报告建议安全团队不要仅依赖勒索软件特征进行检测，而应关注攻击者使用的TTP（战术、技术和程序）模式，特别是与伊朗关联APT组织相关的行为指标。
 
-> **来源**: [GitHub Actions hardens checkout security to block ‘pwn request’ attacks](https://www.csoonline.com/article/4188144/github-actions-hardens-checkout-security-to-block-pwn-request-attacks-2.html)  #CSO Online
+> **来源**: [Iran-Linked MuddyWater Poses as Ransomware Gang to Mask Cyber Espionage](https://www.infosecurity-magazine.com/news/iranlinked-muddywater-poses-as/)  #Infosecurity Magazine
 
-### 📰 7. OpenAI扩展Daybreak以帮助防御者修补漏洞
+### 📰 7. 卡尼曼、“寻找沃尔多”与Nexus通行证：CISO在AI时代的思维模型
 
-- OpenAI扩展了Daybreak项目，发布了完整的GPT-5.5-Cyber版本，旨在帮助安全防御者修补软件漏洞。Daybreak最初专注于自动化漏洞发现，现在通过AI模型增强漏洞修补能力。该工具可能加速安全团队识别和修复漏洞的过程，减少攻击窗口。这一举措标志着AI在网络安全防御中的进一步应用，可能改变传统漏洞管理流程。
+- 文章指出传统安全意识培训已失效，员工被训练成在收件箱中玩“寻找沃尔多”游戏，但无法有效识别AI生成的精准钓鱼攻击。作者提出CISO应采用基于行为经济学的新思维模型，例如利用丹尼尔·卡尼曼的“系统1/系统2”理论。建议放弃依赖用户识别的防御策略，转向零信任架构和AI驱动的威胁检测。组织需重新评估安全培训预算，投资于自动化防御而非无效的用户教育。
 
-> **来源**: [OpenAI Expands Daybreak to Help Defenders Patch Flaws](https://www.infosecurity-magazine.com/news/openai-daybreak-gpt-5-5-cyber/)  #Infosecurity Magazine
+> **来源**: [Kahneman, ‘Where’s Waldo’ and the Nexus pass: A CISO’s mental model for the AI era](https://www.csoonline.com/article/4188477/kahneman-wheres-waldo-and-the-nexus-pass-a-cisos-mental-model-for-the-ai-era.html)  #CSO Online
 
-### 📰 8. OpenAI推出AI驱动计划修复开源软件漏洞
+### 📰 8. 开源安全带来政府难以轻易解决的挑战
 
-- OpenAI与网络安全公司Trail of Bits合作启动“Patch the Planet”计划，利用AI辅助漏洞研究和人工审查，为广泛使用的开源软件发现并修复安全缺陷。该计划旨在将安全发现转化为经过测试的补丁，并通过现有项目渠道披露。首批参与项目包括Python、Go、cURL、Sigstore、NATS Server、aiohttp、freenginx、pyca/cryptography和python.org。此举旨在应对企业软件供应链中日益增长的深层漏洞风险。
+- 开源安全领域正面临一系列复杂挑战，包括分散的生态系统、高价值目标、企业投入不足、AI的影响以及美国政府努力的减弱。这些因素共同构成了不断变化的威胁格局。开源软件被广泛用于关键基础设施和商业应用，但其安全维护往往依赖志愿者，缺乏持续的资金和人力支持。AI的引入进一步加剧了风险，例如自动生成漏洞或利用开源组件进行供应链攻击。政府虽然尝试通过立法和框架（如美国行政令）加强开源安全，但面对全球化和分散化的开源社区，这些努力难以快速见效。
 
-> **来源**: [OpenAI rolls out AI-led push to fix open-source software flaws](https://www.csoonline.com/article/4188321/openai-rolls-out-ai-led-push-to-fix-open-source-software-flaws.html)  #CSO Online
+> **来源**: [Open-source security is posing challenges governments can’t easily solve](https://cyberscoop.com/open-source-software-security-crisis/)  #CyberScoop
 
-### 📰 9. 网络安全不再是关于防护，而是关于生存
+### 📰 9. Meta因数据保护失败暂停员工监控计划
 
-- 文章指出当前网络安全战略存在根本矛盾：组织口头上承认“假设被攻破”，但预算、治理和架构设计仍以预防为核心。作者认为，随着攻击手段日益复杂，完全阻止入侵已不现实，重点应转向检测、响应和恢复能力。建议企业重新分配资源，从“筑墙”转向“快速恢复”，包括投资事件响应团队、备份系统和业务连续性计划。这一观点挑战了传统安全范式，对所有CISO具有战略指导意义。
+- Meta暂停了一项大规模员工数据收集计划，该计划旨在收集员工行为数据以训练AI模型。员工多次突破安全防护措施访问受限数据，即使Meta声称已修复漏洞后仍再次发生。分析师指出，鉴于收集数据的极端敏感性，Meta的数据保护措施严重不足。此事件警示企业，在实施内部监控时必须采用分层安全控制，并定期进行渗透测试。
 
-> **来源**: [Cybersecurity is no longer about protection. It’s about survival.](https://www.csoonline.com/article/4188186/cybersecurity-is-no-longer-about-protection-its-about-survival.html)  #CSO Online
+> **来源**: [Meta pauses employee monitoring program after data protections fail](https://www.csoonline.com/article/4188623/meta-pauses-employee-monitoring-program-after-data-protections-fail.html)  #CSO Online
 
-### 📰 10. Miasma活动揭示新供应链威胁模型与开发者凭证地下市场
+### 📰 10. 法院裁定SAVE数据库非法，命令拆除
 
-- Miasma是一种自传播的npm蠕虫，源自TeamPCP于5月12日开源的Mini Shai-Hulud工具。攻击者利用被盗的会话cookie（在地下市场停留七周后）污染了npm注册表中的32个Red Hat软件包。该活动在6月1日至5日期间分三波攻击，共感染89个以上npm包，影响Red Hat、Vapi.ai和Microsoft等公司。公开的完整武器化工具链意味着任何操作者都能复制结构相同的供应链攻击，凸显了开发者凭证地下市场的严重威胁。
+- 一名联邦法官裁定，美国政府的SAVE数据库违反了《隐私法》、《社会保障法》和《行政程序法》，并命令将其拆除。SAVE数据库旨在整合移民和福利数据，但被批评为未经适当授权收集个人信息，且缺乏透明度和问责机制。该裁决对政府数据收集实践具有重大影响，可能限制未来类似大规模监控系统的部署。此案也凸显了在AI和大数据时代，隐私保护与行政效率之间的法律冲突，安全专家建议组织应审查自身数据收集合规性。
 
-> **来源**: [What the Miasma campaign reveals about the new supply chain threat model and the underground market for developer credentials](https://www.tenable.com/blog/what-the-miasma-campaign-reveals-about-the-new-supply-chain-threat-model-and-the-underground)  #Tenable Blog
+> **来源**: [Court rules SAVE database illegal, orders it dismantled](https://cyberscoop.com/court-rules-save-database-illegal-orders-dismantling/)  #CyberScoop
 
 ---
 
