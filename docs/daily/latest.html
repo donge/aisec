@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-e3fe06ea.js";
+            window.path_to_searchindex_js = "../searchindex-e2435e62.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-e65aac64.js"></script>
+        <script src="../toc-5625d907.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -178,80 +178,80 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="今日日报"><a class="header" href="#今日日报">今日日报</a></h1>
-<h1 id="-ai安全日报--2026-06-25"><a class="header" href="#-ai安全日报--2026-06-25">🤖🔒 AI+安全日报 | 2026-06-25</a></h1>
+<h1 id="-ai安全日报--2026-06-26"><a class="header" href="#-ai安全日报--2026-06-26">🤖🔒 AI+安全日报 | 2026-06-26</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-攻击者在补丁发布数周后利用cisco-unified-cm高危漏洞"><a class="header" href="#-1-攻击者在补丁发布数周后利用cisco-unified-cm高危漏洞">📰 1. 攻击者在补丁发布数周后利用Cisco Unified CM高危漏洞</a></h3>
+<h3 id="-1-提示注入探索的有趣论文"><a class="header" href="#-1-提示注入探索的有趣论文">📰 1. 提示注入探索的有趣论文</a></h3>
 <ul>
-<li>威胁情报公司Defused于6月23日报告，Cisco Unified Communications Manager（Unified CM）中的一个高危漏洞（CVE-2026-20230，CVSS评分8.6）正被积极利用。该漏洞允许经过身份验证的攻击者通过发送特制请求获得受影响系统的root访问权限。Defused观察到攻击活动来自单一来源，使用未经验证的概念验证代码，并采用格式正确的file://文件写入载荷。Cisco已于数周前发布安全公告和补丁，但仍有大量未修补系统面临风险。建议所有使用Cisco Unified CM的组织立即应用补丁，并检查系统是否存在异常root权限活动。</li>
+<li>该论文深入探讨了大型语言模型（LLMs）如何受到提示注入攻击的影响。研究发现，模型不仅识别角色/指令块中的标签，还学会了识别不同文本风格。结论指出，角色标签原本是一种格式化技巧，却演变成了现代LLMs的安全架构和认知框架，但这种架构并未在模型的实际表示中存活。角色混淆与提示注入直接相关，除非LLMs实现真正的角色感知，否则注入防御将是一场永无止境的“打地鼠”游戏。该研究对AI安全领域具有重要启示，强调了当前基于标签的安全机制的脆弱性。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4188867/attackers-exploit-cisco-unified-cm-flaw-weeks-after-patch-release.html">Attackers exploit Cisco Unified CM flaw weeks after patch release</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.schneier.com/blog/archives/2026/06/interesting-paper-exploring-prompt-injection.html">Interesting Paper Exploring Prompt Injection</a>  #Schneier on Security</p>
 </blockquote>
-<h3 id="-2-ai为组织带来多少网络风险457亿个安全问题以下是应对方法"><a class="header" href="#-2-ai为组织带来多少网络风险457亿个安全问题以下是应对方法">📰 2. AI为组织带来多少网络风险？4.57亿个安全问题，以下是应对方法</a></h3>
+<h3 id="-2-警惕勒索软件经纪人使用的新后门mistic"><a class="header" href="#-2-警惕勒索软件经纪人使用的新后门mistic">📰 2. 警惕勒索软件经纪人使用的新后门Mistic</a></h3>
 <ul>
-<li>Tenable在30天内检测到超过7000个组织中的4.57亿个AI相关安全问题，平均每个组织有6.2万个暴露点。这些暴露主要源于影子AI（未经批准的AI工具使用），包括配置错误、数据泄露风险和权限过度授予。报告强调，AI工具（无论是批准还是未批准的）正在推动每日大量暴露，组织需要可视化、映射、评估和保护所有AI资产。建议采用全面的暴露管理计划，包括持续监控AI使用、实施最小权限原则，并建立AI安全治理框架。</li>
+<li>研究人员发现了一个名为Mistic的新后门程序，自4月以来被用于企业入侵，疑似与向勒索软件团伙出售网络访问权限的初始访问经纪人有关。该恶意软件由Symantec发现，已部署在保险、教育、IT和专业服务等多个行业的网络中。在某些案例中，Mistic与ModeloRAT（一种用Python编写的恶意软件）一同使用，后者与威胁行为者Woodgnat（又名KongTuke）有关。建议组织加强网络监控，警惕异常活动，并定期更新安全补丁以防范此类后门。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/how-much-cyber-risk-does-ai-create-for-organizations-457-million-security-issues-heres-what">How much cyber risk does AI create for organizations? 457 million security issues. Here’s what you can do about it.</a>  #Tenable Blog</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4189132/be-on-the-lookout-for-mistic-a-new-backdoor-used-by-ransomware-broker.html">Be on the lookout for Mistic, a new backdoor used by ransomware broker</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-3-广泛使用的ffmpeg编解码器漏洞可导致媒体服务器崩溃或远程代码执行"><a class="header" href="#-3-广泛使用的ffmpeg编解码器漏洞可导致媒体服务器崩溃或远程代码执行">📰 3. 广泛使用的FFmpeg编解码器漏洞可导致媒体服务器崩溃或远程代码执行</a></h3>
+<h3 id="-3-报告警告称针对欧洲的勒索软件攻击大幅增加"><a class="header" href="#-3-报告警告称针对欧洲的勒索软件攻击大幅增加">📰 3. 报告警告称针对欧洲的勒索软件攻击大幅增加</a></h3>
 <ul>
-<li>JFrog研究人员发现FFmpeg媒体处理框架中存在一个严重漏洞（CVE-2026-8461），该漏洞是MagicYUV解码器中的堆越界写入问题。攻击者可利用此漏洞导致使用该框架的应用程序崩溃，甚至实现远程代码执行。FFmpeg被集成在Kodi、mpv等桌面播放器及Linux文件管理器缩略图生成器中。建议组织立即更新FFmpeg至修复版本，并要求供应商提供软件物料清单以管理供应链风险。</li>
+<li>Black Kite研究人员分析发现，过去一年针对欧洲的勒索软件攻击增加了超过50%，其中供应链攻击显著上升。报告指出，攻击者越来越多地利用第三方供应商作为跳板，以渗透大型组织。受影响行业包括医疗、金融和制造业，数据泄露和业务中断风险加剧。建议组织加强供应链安全评估，实施多因素认证和定期备份策略以减轻勒索软件影响。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4188531/hole-in-widely-used-ffmpeg-codec-could-crash-media-servers-or-enable-rce.html">Hole in widely-used FFmpeg codec could crash media servers or enable RCE</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/increase-ransomware-europe/">Major Increase in Ransomware Attacks Targeting Europe, Warns New Report</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-4-研究人员诱骗ai浏览器泄露凭证"><a class="header" href="#-4-研究人员诱骗ai浏览器泄露凭证">📰 4. 研究人员诱骗AI浏览器泄露凭证</a></h3>
+<h3 id="-4-恶意黑客利用思科零日漏洞获取通信服务商最高权限"><a class="header" href="#-4-恶意黑客利用思科零日漏洞获取通信服务商最高权限">📰 4. 恶意黑客利用思科零日漏洞获取通信服务商最高权限</a></h3>
 <ul>
-<li>LayerX安全研究人员成功诱骗包括ChatGPT Atlas和Comet在内的AI浏览器绕过其安全护栏，泄露用户凭证。攻击利用了AI浏览器的自然语言处理能力，通过精心设计的提示注入，使AI误解用户请求并输出敏感信息。这些AI浏览器旨在提供智能搜索和自动化功能，但缺乏对恶意输入的充分过滤。该发现表明，AI浏览器面临独特的攻击面，用户应避免在AI工具中输入敏感数据，开发者需加强输入验证和输出过滤。</li>
+<li>Mandiant在周三的博客文章中详细披露了这起事件，攻击者利用思科产品中的零日漏洞，成功获取了一家通信服务商的最高访问权限。目前尚不清楚幕后黑手是谁，也不确定他们是否能够广泛查看受害者的内部流量。该漏洞允许攻击者绕过身份验证，直接获得网络设备的完全控制权。这起事件凸显了关键基础设施提供商面临的严重威胁，建议相关企业立即审查思科设备的安全配置并关注官方补丁更新。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/bioshocking-ai-browser-prompt/">Researchers Trick AI Browsers Into Leaking Credentials</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/cisco-sd-wan-zero-day-exploit-communications-provider/">Malicious hackers exploit Cisco zero-day for highest access level at communications service provider</a>  #CyberScoop</p>
 </blockquote>
-<h3 id="-5-macos后门利用提示注入逃避ai分类"><a class="header" href="#-5-macos后门利用提示注入逃避ai分类">📰 5. macOS后门利用提示注入逃避AI分类</a></h3>
+<h3 id="-5-特朗普设定后量子密码截止日期启动联邦量子计划"><a class="header" href="#-5-特朗普设定后量子密码截止日期启动联邦量子计划">📰 5. 特朗普设定后量子密码截止日期，启动联邦量子计划</a></h3>
 <ul>
-<li>SentinelLabs发现一个与朝鲜相关的macOS后门，利用提示注入技术逃避AI分类工具的检测。该后门通过伪装成合法软件传播，一旦安装，会向AI驱动的安全分析工具发送精心构造的提示，使其将恶意行为误判为正常活动。这种技术利用了AI分类器对自然语言输入的信任，从而绕过基于行为的检测。该事件凸显了AI安全工具自身的脆弱性，建议组织采用多层防御，包括行为分析和人工审查，以应对AI对抗性攻击。</li>
+<li>美国总统特朗普签署了两项行政令，旨在加速联邦政府向抗量子密码（PQC）的过渡，同时扩大美国在量子技术领域的投资。其中一项行政令“保护国家免受高级密码攻击”设定了具体截止日期，另一项“引领量子创新前沿”则建立了协调战略。白宫背景文件称这些举措是为应对量子计算带来的机遇和风险。此举对全球网络安全行业具有重大意义，推动组织提前规划量子安全迁移，以防范未来量子计算机对现有加密体系的威胁。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/macos-gaslight-rust-backdoor/">macOS Backdoor Uses Prompt Injection to Evade AI Triage</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4188510/trump-sets-post-quantum-crypto-deadlines-launches-broader-federal-quantum-initiative.html">Trump sets post-quantum crypto deadlines, launches broader federal quantum initiative</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-6-伊朗关联组织muddywater伪装成勒索软件团伙掩盖网络间谍活动"><a class="header" href="#-6-伊朗关联组织muddywater伪装成勒索软件团伙掩盖网络间谍活动">📰 6. 伊朗关联组织MuddyWater伪装成勒索软件团伙掩盖网络间谍活动</a></h3>
+<h3 id="-6-五眼联盟警告cso需改变网络风险策略应对ai威胁"><a class="header" href="#-6-五眼联盟警告cso需改变网络风险策略应对ai威胁">📰 6. 五眼联盟警告CSO需改变网络风险策略应对AI威胁</a></h3>
 <ul>
-<li>NCC Group发布报告警告，伊朗支持的APT组织MuddyWater正通过伪装成勒索软件团伙来掩盖其网络间谍活动。该组织部署商业可用恶意软件（如Cobalt Strike）并模拟勒索软件行为，包括加密文件和留下勒索信，但其真实目的是窃取敏感数据而非勒索赎金。MuddyWater还利用虚假勒索软件部署作为掩护，在受害者网络中建立持久访问。报告建议安全团队不要仅依赖勒索软件特征进行检测，而应关注攻击者使用的TTP（战术、技术和程序）模式，特别是与伊朗关联APT组织相关的行为指标。</li>
+<li>五眼联盟国家网络安全机构联合警告，攻击者正利用AI绕过传统防御，要求CSO重写网络风险策略。报告指出“前沿AI模型将在数月而非数年内改变攻防格局”，强调网络韧性对业务连续性的关键作用。但专家批评该建议过于笼统，缺乏具体实施指南。建议企业立即评估AI驱动的攻击场景，部署行为分析工具，并建立跨部门AI安全团队。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/iranlinked-muddywater-poses-as/">Iran-Linked MuddyWater Poses as Ransomware Gang to Mask Cyber Espionage</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4188049/change-your-cyber-risk-strategy-to-meet-ai-threats-five-eyes-countries-warn-csos.html">Change your cyber risk strategy to meet AI threats, Five Eyes countries warn CSOs</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-7-卡尼曼寻找沃尔多与nexus通行证ciso在ai时代的思维模型"><a class="header" href="#-7-卡尼曼寻找沃尔多与nexus通行证ciso在ai时代的思维模型">📰 7. 卡尼曼、“寻找沃尔多”与Nexus通行证：CISO在AI时代的思维模型</a></h3>
+<h3 id="-7-cve-2026-42127-高危-75"><a class="header" href="#-7-cve-2026-42127-高危-75">⚠️ 7. CVE-2026-42127 [高危 7.5]</a></h3>
 <ul>
-<li>文章指出传统安全意识培训已失效，员工被训练成在收件箱中玩“寻找沃尔多”游戏，但无法有效识别AI生成的精准钓鱼攻击。作者提出CISO应采用基于行为经济学的新思维模型，例如利用丹尼尔·卡尼曼的“系统1/系统2”理论。建议放弃依赖用户识别的防御策略，转向零信任架构和AI驱动的威胁检测。组织需重新评估安全培训预算，投资于自动化防御而非无效的用户教育。</li>
+<li>该漏洞存在于公共仪表盘查询端点中，由于在处理请求前未限制请求体大小，未认证的攻击者可以通过发送任意大的JSON负载触发过度的内存分配。这会导致内存耗尽，从而造成拒绝服务攻击。利用该漏洞无需有效的仪表盘访问令牌或身份验证。受影响版本尚未明确公布，但建议使用相关组件的组织立即限制请求体大小并实施访问控制。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4188477/kahneman-wheres-waldo-and-the-nexus-pass-a-cisos-mental-model-for-the-ai-era.html">Kahneman, ‘Where’s Waldo’ and the Nexus pass: A CISO’s mental model for the AI era</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42127">CVE-2026-42127 [HIGH 7.5]</a>  CVSS 7.5 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-8-开源安全带来政府难以轻易解决的挑战"><a class="header" href="#-8-开源安全带来政府难以轻易解决的挑战">📰 8. 开源安全带来政府难以轻易解决的挑战</a></h3>
+<h3 id="-8-安全播客473黑客如何差点让整个世界杯rickroll"><a class="header" href="#-8-安全播客473黑客如何差点让整个世界杯rickroll">📰 8. 安全播客#473：黑客如何差点让整个世界杯“Rickroll”</a></h3>
 <ul>
-<li>开源安全领域正面临一系列复杂挑战，包括分散的生态系统、高价值目标、企业投入不足、AI的影响以及美国政府努力的减弱。这些因素共同构成了不断变化的威胁格局。开源软件被广泛用于关键基础设施和商业应用，但其安全维护往往依赖志愿者，缺乏持续的资金和人力支持。AI的引入进一步加剧了风险，例如自动生成漏洞或利用开源组件进行供应链攻击。政府虽然尝试通过立法和框架（如美国行政令）加强开源安全，但面对全球化和分散化的开源社区，这些努力难以快速见效。</li>
+<li>安全研究员Bob DaHacker发现2026年FIFA世界杯直播控制系统的漏洞，可劫持所有比赛画面。她本可播放恶搞视频“Rickroll”影响全球观众，但最终选择报告漏洞。同时，荷兰警方通过公开100名诈骗嫌疑人模糊照片并限期自首，成功打击银行冒充诈骗。该案例凸显大型活动直播系统的安全风险，建议主办方加强访问控制和渗透测试。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://cyberscoop.com/open-source-software-security-crisis/">Open-source security is posing challenges governments can’t easily solve</a>  #CyberScoop</p>
+<p><strong>来源</strong>: <a href="https://grahamcluley.com/smashing-security-podcast-473/">Smashing Security podcast #473: How a hacker could have Rickrolled the entire World Cup</a>  #Graham Cluley</p>
 </blockquote>
-<h3 id="-9-meta因数据保护失败暂停员工监控计划"><a class="header" href="#-9-meta因数据保护失败暂停员工监控计划">📰 9. Meta因数据保护失败暂停员工监控计划</a></h3>
+<h3 id="-9-全球网络机构发布ai供应链sbom新指南"><a class="header" href="#-9-全球网络机构发布ai供应链sbom新指南">📰 9. 全球网络机构发布AI供应链SBOM新指南</a></h3>
 <ul>
-<li>Meta暂停了一项大规模员工数据收集计划，该计划旨在收集员工行为数据以训练AI模型。员工多次突破安全防护措施访问受限数据，即使Meta声称已修复漏洞后仍再次发生。分析师指出，鉴于收集数据的极端敏感性，Meta的数据保护措施严重不足。此事件警示企业，在实施内部监控时必须采用分层安全控制，并定期进行渗透测试。</li>
+<li>G7网络安全工作组发布针对AI系统的软件物料清单（SBOM）指南，明确七项关键数据集群以提升透明度。这些集群包括训练数据来源、模型架构、依赖库版本等，旨在追踪AI供应链中的潜在风险。该指南将影响所有开发或使用AI模型的组织，尤其是金融、医疗等受监管行业。建议企业立即将SBOM纳入AI开发流程，并定期审计第三方组件。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4188623/meta-pauses-employee-monitoring-program-after-data-protections-fail.html">Meta pauses employee monitoring program after data protections fail</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/new-sboms-for-ai-guidance-2026/">Global Cyber Agencies Issue New SBOMs for AI Guidance to Tackle AI Supply Chain Risks</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-10-法院裁定save数据库非法命令拆除"><a class="header" href="#-10-法院裁定save数据库非法命令拆除">📰 10. 法院裁定SAVE数据库非法，命令拆除</a></h3>
+<h3 id="-10-澳大利亚网络安全中心发布clickfix攻击警报"><a class="header" href="#-10-澳大利亚网络安全中心发布clickfix攻击警报">📰 10. 澳大利亚网络安全中心发布ClickFix攻击警报</a></h3>
 <ul>
-<li>一名联邦法官裁定，美国政府的SAVE数据库违反了《隐私法》、《社会保障法》和《行政程序法》，并命令将其拆除。SAVE数据库旨在整合移民和福利数据，但被批评为未经适当授权收集个人信息，且缺乏透明度和问责机制。该裁决对政府数据收集实践具有重大影响，可能限制未来类似大规模监控系统的部署。此案也凸显了在AI和大数据时代，隐私保护与行政效率之间的法律冲突，安全专家建议组织应审查自身数据收集合规性。</li>
+<li>澳大利亚网络安全中心（ACSC）警告称，一场针对组织的活动正在利用ClickFix技术传播Vidar信息窃取恶意软件。ClickFix是一种社会工程攻击，通过诱使用户点击看似修复问题的链接来执行恶意代码。该活动可能通过钓鱼邮件或虚假网站传播，旨在窃取敏感信息如凭证和财务数据。ACSC建议组织加强员工安全意识培训，并部署端点检测和响应解决方案以防范此类威胁。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://cyberscoop.com/court-rules-save-database-illegal-orders-dismantling/">Court rules SAVE database illegal, orders it dismantled</a>  #CyberScoop</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/australian-cyber-security-centre/">Australian Cyber Security Centre Issues Alert Over ClickFix Attacks</a>  #Infosecurity Magazine</p>
 </blockquote>
 <hr>
 <blockquote>
