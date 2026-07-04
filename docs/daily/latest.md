@@ -1,68 +1,56 @@
-# 🤖🔒 AI+安全日报 | 2026-07-04
+# 🤖🔒 AI+安全日报 | 2026-07-05
 
-> 今日共收录 **10** 条，AI+安全领域重要动态速览
+> 今日共收录 **8** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-58165 [高危 8.8] 🔬
+### ⚠️ 1. CVE-2026-24270 [严重 9.8]
 
-- OpenZiti 2.0.0及之前版本（在提交3027fdf中修复）存在权限提升漏洞，允许具有细粒度注册管理权限的已认证非管理员身份为任何身份（包括默认管理员）创建注册。该漏洞源于controller/model/enrollment_manager.go中的ApplyCreate函数仅验证目标身份是否存在，而未执行将调用者绑定到目标身份的授权检查。攻击者可利用此漏洞获取管理员权限，CVSS评分为8.8（高危）。影响OpenZiti 2.0.0及之前版本，建议用户立即更新到修复版本。
+- NVIDIA AIStore框架存在一个认证绕过漏洞，攻击者可利用该漏洞绕过身份验证机制。成功利用此漏洞可能导致拒绝服务、权限提升、信息泄露和数据篡改。该漏洞的CVSS评分为9.8（严重等级），影响所有使用NVIDIA AIStore框架的版本。建议用户立即更新到NVIDIA发布的最新补丁版本，并实施额外的网络访问控制措施以降低风险。
 
-> **来源**: [CVE-2026-58165 [HIGH 8.8] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-58165)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-24270 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-24270)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 2. 类似CitrixBleed的NetScaler新漏洞已出现野外利用尝试
+### ⚠️ 2. CVE-2026-24264 [高危 7.5]
 
-- Citrix NetScaler设备近年来持续成为攻击目标，最近一次是通过名为CitrixBleed的信息泄露漏洞，这是自2023年以来一系列NetScaler内存越界读取漏洞中的最新一个。本周，Citrix修补了另一个类似CitrixBleed的漏洞，已有迹象表明该漏洞已被野外利用。该新内存越界读取漏洞编号为CVE-2026-8451，由安全公司watchTowr的研究人员发现，他们发布了一份详细报告，展示了未经身份验证的恶意请求如何导致受保护进程内存泄露。该漏洞影响广泛部署的NetScaler设备，建议用户立即应用补丁。
+- NVIDIA Triton Inference Server for Linux 中存在一个高危漏洞（CVE-2026-24264，CVSS评分7.5），攻击者可利用该漏洞导致对高度压缩数据的不当处理。成功利用此漏洞可能导致拒绝服务（DoS），影响模型推理服务的可用性。该漏洞影响所有使用NVIDIA Triton Inference Server的Linux部署环境，尤其对AI推理工作负载构成威胁。建议用户及时应用NVIDIA发布的安全补丁，并监控异常流量以检测潜在攻击。
 
-> **来源**: [New CitrixBleed-like NetScaler flaw sees exploit attempts in the wild](https://www.csoonline.com/article/4192741/new-citrixbleed-like-netscaler-flaw-sees-exploit-attempts-in-the-wild.html)  #CSO Online
+> **来源**: [CVE-2026-24264 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-24264)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 3. Adobe将每月发布两次安全补丁以加快修复速度
+### ⚠️ 3. CVE-2026-24260 [高危 8.5]
 
-- Adobe宣布将每月发布两次安全补丁，以应对软件漏洞发现和利用速度加快的趋势。此前，Oracle已将其季度补丁计划改为月度更新。Adobe、微软和SAP通常在每月第二个星期二发布补丁，但从7月起，Adobe将在每月第四个星期二额外发布一次补丁。作为加快节奏的早期信号，Adobe在6月30日（第五个星期二）发布了两个安全公告，涉及多个严重漏洞。这一变化表明软件行业正面临日益严峻的漏洞利用威胁，企业需加快补丁部署流程。
+- NVIDIA Container Toolkit for Linux 中存在一个高危漏洞（CVE-2026-24260，CVSS评分8.5），攻击者可利用该漏洞触发检查时间与使用时间（TOCTOU）竞争条件。成功利用此漏洞可能导致代码执行、权限提升及数据篡改。该漏洞影响所有使用NVIDIA Container Toolkit的Linux系统，尤其威胁容器化环境的安全性。建议用户立即更新至最新版本的Container Toolkit，并实施严格的访问控制以降低风险。
 
-> **来源**: [Adobe premieres a second Patch Tuesday each month to deliver fixes faster](https://www.csoonline.com/article/4192789/adobe-premieres-a-second-patch-tuesday-each-month-to-deliver-fixes-faster.html)  #CSO Online
+> **来源**: [CVE-2026-24260 [HIGH 8.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-24260)  CVSS 8.5 HIGH · #NVD · #漏洞
 
-### ⚠️ 4. CVE-2026-58169 [高危 7.5]
+### ⚠️ 4. CVE-2026-24251 [高危 7.8]
 
-- Vibe-Trading 0.1.10之前版本存在DNS重绑定认证绕过漏洞，允许远程攻击者绕过bearer-token认证。该漏洞源于服务器信任回环客户端的TCP对等地址，同时缺少Host头验证，并绑定到0.0.0.0且使用凭据CORS。攻击者可构造恶意DNS重绑定页面，向本地API服务器发出经过认证的请求，从而访问带有bash预设的shell执行端点。该漏洞CVSS评分为7.5（高危），影响Vibe-Trading 0.1.10之前所有版本，建议用户立即升级。
+- 该漏洞与 CVE-2026-24246 类似，涉及 NVIDIA Megatron Bridge for Linux 中动态管理代码资源的控制不当问题（CVSS 7.8）。攻击者可利用此漏洞执行恶意代码、提升权限、篡改数据或泄露信息。此漏洞对 AI 基础设施的稳定性和数据完整性构成严重威胁。安全团队应优先处理这些漏洞，并考虑在补丁部署前限制对 Megatron Bridge 服务的访问。
 
-> **来源**: [CVE-2026-58169 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-58169)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-24251 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-24251)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 5. 诈骗者利用委内瑞拉地震灾难牟利
+### 📰 5. Google发布已在野外被利用的Chrome漏洞补丁
 
-- 诈骗者迅速利用委内瑞拉毁灭性地震进行欺诈活动，研究人员在短短五天内发现了212个新注册的以救援为主题的域名。这些域名可能用于钓鱼攻击或虚假捐款请求，利用公众同情心窃取资金或个人信息。该事件凸显了灾难后网络犯罪的高发风险，影响范围涉及全球捐赠者。行业意义在于提醒用户仅通过官方渠道捐款，并警惕可疑链接和邮件。
+- Google已发布Chrome浏览器安全更新，修复一个已被在野利用的高危漏洞（CVE-2026-11645）。该漏洞允许远程攻击者通过精心构造的HTML页面在沙箱内执行任意代码，绕过浏览器的安全隔离机制。此漏洞影响所有Chrome桌面版和移动版用户，攻击者可能利用其进行恶意软件传播或数据窃取。建议用户立即更新Chrome至最新版本（如Chrome 130+），并启用自动更新功能以防范此类零日攻击。
 
-> **来源**: [Scammers race to cash in on Venezuelan earthquake disaster](https://www.bitdefender.com/en-us/blog/hotforsecurity/scammers-cash-in-venezuela-earthquake)  #Graham Cluley
+> **来源**: [Google Releases Patch for Chrome Vulnerability Exploited in the Wild](https://www.infosecurity-magazine.com/news/google-patch-chrome-vulnerability/)  #Infosecurity Magazine
 
-### 📰 6. 缅因州因虚假通知被迫关闭数据泄露门户
+### 📰 6. 伊朗关联黑客利用钓鱼和SEO投毒攻击美国航空业
 
-- 美国缅因州因有人冒充两家知名科技公司提交虚假数据泄露通知，被迫关闭其公共数据泄露通知门户。这些虚假通知可能旨在破坏系统或误导调查，具体技术细节未公开。该事件影响范围包括州政府和受影响公司，可能导致公众对数据泄露报告系统的信任下降。行业意义在于强调验证通知真实性的重要性，建议加强身份验证流程以防止类似欺诈。
+- 伊朗背景的威胁组织“Nimbus Manticore”针对美国航空业发起了一场复杂的网络攻击活动，结合了钓鱼邮件和搜索引擎优化（SEO）投毒技术。攻击者利用AI构建了名为“MiniFast”的后门恶意软件，通过伪装成合法航空相关内容的钓鱼链接或SEO操纵的搜索结果诱导受害者下载。该后门具备远程控制、数据窃取和持久化能力，可绕过传统安全检测。此次事件凸显了地缘政治驱动的针对性攻击对关键基础设施行业的威胁，建议航空企业加强员工安全意识培训并部署基于行为的端点检测系统。
 
-> **来源**: [Maine forced to take down data breach portal after fake notices filed with authorities](https://www.bitdefender.com/en-us/blog/hotforsecurity/maine-take-down-data-breach-portal)  #Graham Cluley
+> **来源**: [Iran-Linked Hackers Target US Aviation with Phishing and SEO Poisoning Campaign](https://www.infosecurity-magazine.com/news/iranian-hackers-us-aviation/)  #Infosecurity Magazine
 
-### 📰 7. Apple的“隐藏我的电子邮件”调整激怒隐私爱好者
+### 📰 7. FBI警告“Kali365”钓鱼工具包劫持Microsoft 365 OAuth令牌
 
-- Apple对其“隐藏我的电子邮件”功能进行了调整，使网站更容易阻止匿名注册，从而削弱用户在线隐私保护。该功能原本允许用户生成一次性电子邮件地址以保护真实邮箱，但新变化可能允许网站检测并拒绝这些地址。这一改动引发了隐私爱好者的强烈不满，因为Apple一直以隐私优先自居。技术细节未完全披露，但影响范围涉及所有iCloud+用户。行业意义在于平衡隐私与网站安全需求，建议用户关注后续更新并考虑替代方案。
+- 美国联邦调查局（FBI）发布警告称，“Kali365”钓鱼即服务平台正在被网络犯罪分子广泛使用，该工具包专门针对Microsoft 365用户的OAuth认证令牌进行劫持。攻击者通过伪造的登录页面窃取用户授权令牌，从而绕过多因素认证（MFA）并长期访问受害者的云账户。该平台降低了网络犯罪的技术门槛，使非专业黑客也能发起高级钓鱼攻击。FBI建议组织启用条件访问策略、监控异常的OAuth应用授权，并定期审查令牌使用情况。
 
-> **来源**: [Apple’s Hide My Email tweak leaves privacy fans fuming](https://www.bitdefender.com/en-us/blog/hotforsecurity/apples-hide-my-email-tweak-leaves-privacy-fans-fuming)  #Graham Cluley
+> **来源**: [FBI Warns 'Kali365' Phishing Kit Hijacks Microsoft 365 OAuth Tokens](https://www.infosecurity-magazine.com/news/fbi-kali365-phishing-kit-m365/)  #Infosecurity Magazine
 
-### 📰 8. 隐私乌龙：世界杯失误泄露梅西护照信息
+### 📰 8. DragonForce勒索软件利用Microsoft Teams隐藏攻击大型企业
 
-- 阿根廷世界杯球队的护照号码在比赛开始前被泄露，原因不是黑客攻击，而是有人未能正确编辑文档。这一失误导致梅西等球员的敏感信息暴露，类似错误在过去多次发生。技术细节显示，文档中的护照号码未进行适当遮盖，可能被公开访问。影响范围涉及球员个人隐私和阿根廷足协声誉。行业意义在于提醒组织在发布文档前进行彻底审查，并采用自动化工具检测未编辑的敏感数据。
+- DragonForce勒索软件组织在针对一家大型企业的攻击中，利用Microsoft Teams的访客令牌来隐藏其命令与控制流量。攻击者通过滥用Teams访客令牌，使恶意活动看起来像合法的通信，从而绕过安全检测。这种技术使得安全团队难以区分正常协作流量与恶意活动。该事件凸显了攻击者利用合法协作工具进行隐蔽攻击的趋势，建议企业加强对协作平台流量的监控和异常行为检测。
 
-> **来源**: [Privacy own-goal: World Cup blunder leaks Lionel Messi’s passport details](https://www.bitdefender.com/en-us/blog/hotforsecurity/privacy-own-goal-world-cup-blunder-leaks-lionel-messis-passport-details)  #Graham Cluley
-
-### 📰 9. 勒索软件团伙与TeamPCP合作引发“工业化”网络攻击警告
-
-- 研究人员警告称，一个勒索软件团伙与TeamPCP组织合作，可能导致“前所未有”的勒索攻击浪潮。FBI也发布了相关警告，指出这种合作将攻击能力提升至工业化水平。技术细节显示，TeamPCP提供初始访问权限和恶意软件分发服务，而勒索软件团伙则负责加密和勒索。影响范围可能覆盖全球企业、关键基础设施和政府机构。行业意义在于，这种分工协作模式降低了攻击门槛，安全团队需加强供应链风险管理和端点检测能力。
-
-> **来源**: [Warning Over “Industrialized” Cyber-Attacks After Ransomware Gang Partners With TeamPCP](https://www.infosecurity-magazine.com/news/industrialized-cyberattacks/)  #Infosecurity Magazine
-
-### 📰 10. FBI与谷歌联手摧毁NetNut代理网络及“Popa”僵尸网络
-
-- FBI与谷歌联合行动，成功摧毁了被网络威胁行为者利用的NetNut代理网络和“Popa”僵尸网络。这些基础设施已知感染了Mirai DDoS僵尸网络的变种，用于发起大规模分布式拒绝服务攻击。技术细节表明，NetNut提供匿名代理服务，而Popa则控制受感染设备。影响范围包括全球物联网设备、服务器和网络基础设施。行业意义在于，执法机构与科技公司的合作能有效打击恶意基础设施，建议组织及时更新固件并监控异常流量。
-
-> **来源**: [FBI, Google Take Down NetNut Proxy Network Used by Cyber Threat Actors](https://www.infosecurity-magazine.com/news/fbi-google-take-down-netnut-proxy/)  #Infosecurity Magazine
+> **来源**: [DragonForce Ransomware Exploited Microsoft Teams to Hide in Attack Against Major Company](https://www.infosecurity-magazine.com/news/dragonforce-ransomware-hidden/)  #Infosecurity Magazine
 
 ---
 
