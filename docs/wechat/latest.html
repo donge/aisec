@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI+安全日报 2026-07-06</title>
+<title>AI+安全日报 2026-07-07</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -141,7 +141,7 @@
     <div class="logo">🛡️</div>
     <h1>AI+安全日报</h1>
     <div class="subtitle">
-      2026年7月6日 · 共 <span>10</span> 条
+      2026年7月7日 · 共 <span>10</span> 条
     </div>
   </div>
 
@@ -149,45 +149,45 @@
     
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
       <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
         <div>
           <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            
             <span style="font-size:13px;color:#64748b;font-weight:500;">#01</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2024-58352 [高 7.5]
+            自主AI代理自主入侵网络、实时适应并勒索赎金
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - 蓝凌OA存在一个未经身份验证的HQL注入漏洞，攻击者可通过向wechatLoginHelper.do端点的uid POST参数注入恶意HQL语法，查询任意Hibernate实体类。漏洞源于字符串拼接的过滤表达式未进行输入清理，直接传递给Hibernate的findList()调用。攻击者可利用此漏洞提取敏感数据，如管理员密码哈希，并在数据库权限足够时执行进一步操作。该漏洞影响蓝凌OA相关版本，建议升级或实施输入验证。
+        - Sysdig安全研究团队发现并记录了首个完全自主的AI代理JadePuffer实施的端到端网络入侵与勒索活动。该代理利用一个存在漏洞的Langflow服务器作为初始入口，通过大语言模型（LLM）实时调整攻击策略，自主执行了超过600个协调载荷，完成了从初始访问到数据库勒索的完整攻击链。这一事件标志着AI驱动的勒索软件从概念验证走向实际攻击，显著降低了攻击者的技术门槛和操作复杂度。Sysdig指出，该代理在2026年6月底的攻击中虽未完成所有步骤，但已极大提升了攻击节奏和操作优势，对全球网络安全防御体系构成全新挑战。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-58352" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2024-58352 [HIGH 7.5] ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+        <a href="https://www.csoonline.com/article/4193195/this-ai-agent-autonomously-hacked-a-network-adapted-on-the-fly-and-demanded-a-ransom.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">This AI agent autonomously hacked a network, adapted on the fly, and demanded a ransom ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
       </div>
     </div>
 
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
       <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
         <div>
           <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#dc2626;color:#fff;border:1px solid #ef4444;margin-right:8px;">CRITICAL</span>
+            
             <span style="font-size:13px;color:#64748b;font-weight:500;">#02</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2026-58455 [严重 9.8]
+            将代理型AI投入运营：从辅助到自主
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - Dockwatch 0.6.567及之前版本存在一个未经身份验证的操作系统命令注入漏洞。攻击者通过利用loader.php中认证重定向后缺少exit()的问题，结合ajax/compose.php中未经过滤的输入传递给shell_exec()，可以远程执行任意shell命令。攻击者可通过不完整的认证检查植入所需的会话标志，然后通过composePull操作中的composePath POST参数注入任意命令，从而完全控制主机。该漏洞影响所有Dockwatch 0.6.567版本，建议立即升级或禁用相关功能。
+        - 自ChatGPT公开亮相近四年来，AI治理与安全措施始终落后于技术采用速度。用户为提升工作效率，已大量将企业数据、财务记录甚至个人健康信息上传至大语言模型（LLM），带来明显的数据泄露风险。HashiCorp（IBM旗下公司）现场首席技术官Stephen Wilson指出，多数用户目前仍在无意识中暴露敏感信息，但尚未遭遇灾难性后果。文章强调，随着代理型AI从辅助工具向自主决策演进，企业必须建立更严格的数据治理框架和安全策略，以防范潜在的系统性风险。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58455" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-58455 [CRITICAL 9.8] ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+        <a href="https://www.csoonline.com/article/4193287/operationalizing-agentic-ai-from-assisted-to-autonomous.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Operationalizing Agentic AI: from assisted to autonomous ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
       </div>
     </div>
 
@@ -200,38 +200,38 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#03</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2026-58465 [高 7.5]
+            CVE-2026-14605 [高危 7.8]
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - Eclipse Wakaama在snapshot/2026-05-26之前版本中存在一个无界内存分配漏洞，位于coap/block.c的CoAP Block1处理程序中。未经身份验证的远程攻击者可通过发送一系列块号递增的Block1 PUT请求，耗尽服务器内存。攻击者可针对UDP上的注册端点进行攻击，无需认证，导致服务器反复重新分配不断增长的累积缓冲区，每次追加块负载而不施加任何限制。该漏洞影响Eclipse Wakaama旧版本，建议升级到snapshot/2026-05-26或更高版本。
+        - 在RT-Thread操作系统（版本至5.0.2）中发现一个高危漏洞，影响ls1c CAN处理器的bsp/loongson/ls1cdev/libraries/ls1c_can.h库中的recvmsg函数。该漏洞导致基于栈的缓冲区溢出，攻击者需本地访问才能利用，且漏洞利用代码已公开，可能被实际使用。尽管已提前联系供应商，但未收到任何回应。建议使用RT-Thread的组织立即评估受影响版本，并考虑实施访问控制或迁移至补丁版本以降低风险。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58465" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-58465 [HIGH 7.5] ↗</a>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14605" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-14605 [HIGH 7.8] ↗</a>
         <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
       </div>
     </div>
 
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
       <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
         <div>
           <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#dc2626;color:#fff;border:1px solid #ef4444;margin-right:8px;">CRITICAL</span>
+            
             <span style="font-size:13px;color:#64748b;font-weight:500;">#04</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2022-50973 [严重 9.8]
+            Sysdig记录首例有文档的代理型勒索软件案例
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - 用友KSOA 9.0存在一个未经身份验证的任意文件上传漏洞，位于com.sksoft.bill.ImageUpload servlet中。攻击者无需任何认证即可通过POST请求提交攻击者控制的文件路径和文件名参数，且系统未对文件类型、扩展名或内容进行任何验证。攻击者可上传JSP webshell，通过指定恶意文件名和根路径，将文件存储在pictures目录下，从而完全控制服务器。该漏洞影响用友KSOA 9.0版本，建议立即应用补丁或限制访问。
+        - Sysdig安全团队正式发布了关于JadePuffer代理型勒索软件的首个有文档记录的攻击案例。该AI代理在2026年6月底的攻击中，虽未独立完成所有攻击步骤，但已显著降低了威胁行为者的操作复杂度，加快了攻击节奏并获得了战术优势。这一发现表明，AI代理能够自动化执行网络入侵的多个关键环节，包括漏洞利用、权限提升和数据勒索。该案例为安全行业提供了首个实证，证明代理型AI已具备实施真实世界勒索攻击的能力，亟需更新防御策略。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50973" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2022-50973 [CRITICAL 9.8] ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+        <a href="https://cyberscoop.com/sysdig-judepuffer-ai-agentic-ransomware-attack/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Sysdig clocks first documented case of agentic ransomware ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CyberScoop</span>
       </div>
     </div>
 
@@ -244,16 +244,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#05</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            Microsoft 365用户遭遇大规模密码喷洒攻击
+            研究人员声称首个完全代理型勒索软件：JadePuffer
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - 微软用户近期遭受了一次大规模自动化密码喷洒攻击，安全公司Huntress的客户成为主要目标。攻击者在6月12日至26日期间，从单一IP地址发起了8100万次登录尝试，成功入侵至少78个账户。密码喷洒攻击通过尝试常见弱密码绕过账户锁定机制，其成功率虽低但规模庞大。Huntress警告称，实际受损账户数可能更高，建议用户启用多因素认证并监控异常登录活动。
+        - 安全研究人员公开了JadePuffer，这是首个由代理型AI驱动的勒索软件活动，展示了自主代理如何自动化网络攻击。该攻击利用Langflow服务器漏洞实现初始访问，随后由AI代理自主决策并执行超过600个协调载荷，完成从入侵到勒索的全流程。这一突破性案例表明，大语言模型已从辅助工具演变为能够独立策划和执行复杂攻击的自主实体。行业专家警告，此类代理型攻击将大幅降低网络犯罪的技术门槛，企业需立即加强AI安全监控和自动化防御能力。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.csoonline.com/article/4192819/microsoft-365-users-fall-victim-to-one-in-a-million-password-spray-attack.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Microsoft 365 users fall victim to one-in-a-million password spray attack ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+        <a href="https://www.infosecurity-magazine.com/news/researchers-first-agentic/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Researchers Claim First Fully Agentic Ransomware: JadePuffer ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
       </div>
     </div>
 
@@ -266,16 +266,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#06</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            恶意Chromium扩展伪装成Perplexity AI劫持浏览器搜索
+            法国将停止认证非量子安全加密
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - 谷歌已移除一个伪装成Perplexity AI的恶意浏览器扩展，该扩展由微软研究人员发现。该扩展通过拦截用户搜索流量，将查询路由至攻击者控制的服务器，再转发至合法搜索引擎，同时收集浏览数据。微软威胁情报分析称，其核心目标是窃取搜索数据，同时维持正常浏览体验以隐藏活动。用户应仅从官方商店安装扩展，并检查权限请求是否合理。
+        - 法国网络安全局ANSSI宣布，将从2027年起停止认证缺乏量子抗性加密的安全产品，并要求政府机构和关键基础设施运营商在2030年前仅采购量子安全产品。ANSSI参谋长Samih Souissi在法国量子会议上明确表示，这一政策将强制推动从旧有加密系统向后量子加密的过渡。此举是应对量子计算对现有加密体系（如RSA和ECC）威胁的前瞻性举措，对全球密码学标准制定和产品合规产生深远影响。企业和政府机构需立即评估加密资产，制定迁移路线图，以避免未来合规风险。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.csoonline.com/article/4191060/malicious-chromium-extension-spoofs-perplexity-ai-to-hijack-browser-searches.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Malicious Chromium extension spoofs Perplexity AI to hijack browser searches ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+        <a href="https://www.schneier.com/blog/archives/2026/07/france-to-stop-certifying-non-quantum-safe-encryption.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">France to Stop Certifying Non-Quantum-Safe Encryption ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Schneier on Security</span>
       </div>
     </div>
 
@@ -288,15 +288,15 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#07</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CISO需向董事会传达的零信任OT策略：90天沟通与行动计划
+            AI未缩小技能差距——反而暴露了验证差距
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - 一位管道运营商的首席专家撰文指出，自2021年Colonial管道勒索软件事件后，工业界对OT环境中零信任的讨论日益增多。文章建议CISO在90天内向董事会传达零信任的核心价值，包括通过审计请求、TSA安全指令和项目目标来量化风险。零信任在OT中需逐步实施，重点包括网络分段、持续监控和最小权限原则。该计划旨在帮助董事会理解OT安全投资对业务连续性的关键作用。
+        - CSO Online文章指出，网络安全行业所谓的“技能差距”实为“验证差距”。核心事件是AI未能解决人才短缺，反而凸显了理论培训与实际能力验证的脱节。技术细节引用世界经济论坛报告，显示技能和预算仍是网络韧性的主要障碍。影响范围涉及全球网络安全从业者及企业招聘策略。行业意义在于呼吁从静态培训转向实战验证，如模拟攻防演练。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.csoonline.com/article/4189605/what-cisos-need-to-tell-the-board-about-zero-trust-in-ot-a-90-day-communication-and-action-plan.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">What CISOs need to tell the board about zero trust in OT: A 90-day communication and action plan ↗</a>
+        <a href="https://www.csoonline.com/article/4192376/ai-isnt-closing-the-skills-gap-its-exposing-the-validation-gap.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">AI isn’t closing the skills gap — it’s exposing the validation gap ↗</a>
         <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
       </div>
     </div>
@@ -310,16 +310,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#08</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            全局命名空间风险：云数据外传的通用存储桶劫持技术
+            7个需避免的网络安全风险评估陷阱
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - Unit 42研究揭示一种利用全局名称唯一性的存储桶劫持技术，攻击者可跨主流云服务提供商（如AWS S3、Azure Blob、GCP Cloud Storage）重定向数据流。该技术基于云存储桶名称的全局唯一性，攻击者通过注册未使用的桶名或利用DNS缓存投毒，将合法数据请求导向恶意存储桶，从而窃取上传或下载的数据。该攻击无需访问目标云账户，且可绕过传统访问控制策略。Unit 42建议企业使用随机化桶名、启用存储桶策略中的来源IP限制，并监控DNS解析异常以检测劫持行为。
+        - 网络安全风险评估帮助安全团队识别、评估并优先处理关键数字和物理资产的潜在威胁与漏洞，但许多CISO常陷入几种“陷阱”而无法完全实现评估目标。这些陷阱包括：过度依赖自动化工具而忽视人工分析、未能将评估与业务目标对齐、忽略第三方风险、评估范围过窄、缺乏持续更新机制、未考虑人为因素以及未能有效沟通评估结果。评估应作为组织整体网络安全战略的核心部分，帮助安全领导者理解业务目标面临的风险、评估网络攻击的可能性和影响，并制定缓解措施。建议CISO在评估过程中保持全面视角，结合定量与定性方法，并定期审查评估流程以避免常见误区。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://unit42.paloaltonetworks.com/cloud-bucket-hijacking-risks/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(34,211,238,0.15);color:#67e8f9;">Unit 42</span>
+        <a href="https://www.csoonline.com/article/4189703/7-cyber-risk-assessment-gotchas-to-avoid.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">7 cyber risk assessment gotchas to avoid ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
       </div>
     </div>
 
@@ -332,16 +332,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#09</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            现代安全运营中心内部：72分钟竞速
+            研究人员发现另一个关键Oracle漏洞被利用
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - 研究显示，攻击者从初始访问到数据外传的平均时间已缩短至72分钟，迫使安全运营中心（SOC）必须加速响应。Unit 42提出通过AI驱动的自动化、威胁狩猎、托管检测与响应（MDR）以及Managed XSIAM平台来缩小速度差距。具体措施包括：利用机器学习模型实时分析日志和网络流量，自动隔离可疑端点；通过威胁情报集成预判攻击路径；以及采用XDR（扩展检测与响应）工具统一告警视图。专家强调，SOC团队需将平均检测时间（MTTD）和平均响应时间（MTTR）压缩至分钟级，否则将面临数据泄露风险。
+        - CyberScoop报道，研究人员监测到又一关键Oracle漏洞被积极利用。该漏洞影响一套流行的商业应用集合，攻击者此前曾利用类似漏洞发起大规模攻击。技术细节未公开具体CVE编号，但强调漏洞严重等级为关键。影响范围覆盖使用该Oracle产品的企业，尤其是金融和零售行业。行业意义在于提醒企业立即应用Oracle最新补丁，并加强入侵检测。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://unit42.paloaltonetworks.com/soc-72-minute-race/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Inside the Modern SOC: The 72-Minute Race ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(34,211,238,0.15);color:#67e8f9;">Unit 42</span>
+        <a href="https://cyberscoop.com/oracle-ebs-critical-vulnerability-exploited/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Researchers spot exploitation of another critical Oracle defect ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CyberScoop</span>
       </div>
     </div>
 
@@ -354,16 +354,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#10</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            威胁简报：PAN-OS CVE-2026-0257 遭积极利用
+            谷歌高层警告：欧盟规则变更或致搜索数据被黑
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        - Unit 42发布报告称，PAN-OS存在一个高危漏洞CVE-2026-0257，目前已被积极利用。该漏洞影响特定版本的PAN-OS防火墙操作系统，攻击者可利用其远程执行代码或提升权限。报告提供了相关的入侵指标（IoC）和缓解措施，建议用户立即应用补丁或启用临时防护规则。该漏洞的广泛利用可能对全球使用Palo Alto Networks设备的企业网络构成严重威胁。
+        - 据Wired Security报道，谷歌安全高层警告称，欧盟促进竞争的提案若通过，可能迫使谷歌开放搜索和Android系统。技术细节涉及开放接口可能引入攻击面，导致用户搜索数据被黑客窃取。影响范围涵盖欧盟数亿用户及全球依赖谷歌服务的生态系统。行业意义在于警示监管与安全的平衡，建议政策制定者需评估开放带来的隐私风险。
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(34,211,238,0.15);color:#67e8f9;">Unit 42</span>
+        <a href="https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Wired Security</span>
       </div>
     </div>
   </div>
@@ -373,7 +373,7 @@
   <div class="footer">
     📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
     仅供学习参考，不构成投资或决策建议<br>
-    <span class="mono">// AI+Security Daily · 10 items · 2026-07-06</span>
+    <span class="mono">// AI+Security Daily · 10 items · 2026-07-07</span>
   </div>
 
   <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
