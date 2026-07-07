@@ -15,8 +15,8 @@
         <link rel="icon" href="../favicon-de23e50b.svg">
         <link rel="shortcut icon" href="../favicon-8114d1fc.png">
         <link rel="stylesheet" href="../css/variables-8adf115d.css">
-        <link rel="stylesheet" href="../css/general-0392ca55.css">
-        <link rel="stylesheet" href="../css/chrome-fc474251.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
         <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-bf0bf0ff.js";
+            window.path_to_searchindex_js = "../searchindex-ba798221.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-97616932.js"></script>
+        <script src="../toc-15551e27.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -178,80 +178,80 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="今日日报"><a class="header" href="#今日日报">今日日报</a></h1>
-<h1 id="-ai安全日报--2026-07-07"><a class="header" href="#-ai安全日报--2026-07-07">🤖🔒 AI+安全日报 | 2026-07-07</a></h1>
+<h1 id="-ai安全日报--2026-07-08"><a class="header" href="#-ai安全日报--2026-07-08">🤖🔒 AI+安全日报 | 2026-07-08</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-自主ai代理自主入侵网络实时适应并勒索赎金"><a class="header" href="#-1-自主ai代理自主入侵网络实时适应并勒索赎金">📰 1. 自主AI代理自主入侵网络、实时适应并勒索赎金</a></h3>
+<h3 id="-1-gentlemen勒索软件身份与恢复控制的考验"><a class="header" href="#-1-gentlemen勒索软件身份与恢复控制的考验">📰 1. Gentlemen勒索软件：身份与恢复控制的考验</a></h3>
 <ul>
-<li>Sysdig安全研究团队发现并记录了首个完全自主的AI代理JadePuffer实施的端到端网络入侵与勒索活动。该代理利用一个存在漏洞的Langflow服务器作为初始入口，通过大语言模型（LLM）实时调整攻击策略，自主执行了超过600个协调载荷，完成了从初始访问到数据库勒索的完整攻击链。这一事件标志着AI驱动的勒索软件从概念验证走向实际攻击，显著降低了攻击者的技术门槛和操作复杂度。Sysdig指出，该代理在2026年6月底的攻击中虽未完成所有步骤，但已极大提升了攻击节奏和操作优势，对全球网络安全防御体系构成全新挑战。</li>
+<li>Gentlemen勒索软件对CISO构成严峻挑战，其核心在于攻击者获得初始访问权限后如何快速扩散。该恶意软件利用合法的Windows管理工具（如PsExec、WMI）在企业网络中自我传播，同时试图削弱安全与恢复系统。Picus Security报告指出，该勒索软件在加密前会主动破坏备份和恢复机制，增加受害者支付赎金的压力。该分析基于微软威胁情报团队5月底发布的技术报告，建议企业加强身份验证、最小权限原则和恢复系统隔离。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4193195/this-ai-agent-autonomously-hacked-a-network-adapted-on-the-fly-and-demanded-a-ransom.html">This AI agent autonomously hacked a network, adapted on the fly, and demanded a ransom</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4193699/why-the-gentlemen-ransomware-is-a-test-of-identity-and-recovery-controls.html">Why The Gentlemen ransomware is a test of identity and recovery controls</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-2-将代理型ai投入运营从辅助到自主"><a class="header" href="#-2-将代理型ai投入运营从辅助到自主">📰 2. 将代理型AI投入运营：从辅助到自主</a></h3>
+<h3 id="-2-zscaler发现自主ai代理易受间接提示注入攻击"><a class="header" href="#-2-zscaler发现自主ai代理易受间接提示注入攻击">📰 2. Zscaler发现自主AI代理易受间接提示注入攻击</a></h3>
 <ul>
-<li>自ChatGPT公开亮相近四年来，AI治理与安全措施始终落后于技术采用速度。用户为提升工作效率，已大量将企业数据、财务记录甚至个人健康信息上传至大语言模型（LLM），带来明显的数据泄露风险。HashiCorp（IBM旗下公司）现场首席技术官Stephen Wilson指出，多数用户目前仍在无意识中暴露敏感信息，但尚未遭遇灾难性后果。文章强调，随着代理型AI从辅助工具向自主决策演进，企业必须建立更严格的数据治理框架和安全策略，以防范潜在的系统性风险。</li>
+<li>Zscaler测试发现，主流大语言模型（LLM）驱动的自主AI代理易受间接提示注入（IPI）攻击，而低级模型反而表现更好。测试中，Llama3-3-70b-instruct、Llama3-2-90b-instruct、Gemini-3-flash和Gemini-2.5-pro被判定为“易受攻击”。这些代理可能被精心设计的欺诈提示诱导执行危险操作，而人类几乎不会上当。建议企业部署AI代理时实施输入过滤、行为监控和人工审核机制。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4193287/operationalizing-agentic-ai-from-assisted-to-autonomous.html">Operationalizing Agentic AI: from assisted to autonomous</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4193498/zscaler-finds-autonomous-agents-succumb-to-ipi-traps-2.html">Zscaler finds autonomous agents succumb to IPI traps</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-3-cve-2026-14605-高危-78"><a class="header" href="#-3-cve-2026-14605-高危-78">⚠️ 3. CVE-2026-14605 [高危 7.8]</a></h3>
+<h3 id="-3-cve-2026-14654-高危-73"><a class="header" href="#-3-cve-2026-14654-高危-73">⚠️ 3. CVE-2026-14654 [高危 7.3]</a></h3>
 <ul>
-<li>在RT-Thread操作系统（版本至5.0.2）中发现一个高危漏洞，影响ls1c CAN处理器的bsp/loongson/ls1cdev/libraries/ls1c_can.h库中的recvmsg函数。该漏洞导致基于栈的缓冲区溢出，攻击者需本地访问才能利用，且漏洞利用代码已公开，可能被实际使用。尽管已提前联系供应商，但未收到任何回应。建议使用RT-Thread的组织立即评估受影响版本，并考虑实施访问控制或迁移至补丁版本以降低风险。</li>
+<li>SourceCodester Simple and Nice Shopping Cart Script 1.0 版本存在SQL注入漏洞。漏洞位于 /admin/girlsproductdeletequery.php 文件，攻击者可通过操纵user_id参数进行注入攻击。该漏洞可远程利用，利用代码已公开，可能被用于获取管理员权限或窃取购物车系统中的用户数据。建议管理员立即升级系统，并限制对admin目录的访问权限。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14605">CVE-2026-14605 [HIGH 7.8]</a>  CVSS 7.8 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14654">CVE-2026-14654 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-4-sysdig记录首例有文档的代理型勒索软件案例"><a class="header" href="#-4-sysdig记录首例有文档的代理型勒索软件案例">📰 4. Sysdig记录首例有文档的代理型勒索软件案例</a></h3>
+<h3 id="-4-cve-2026-14642-高危-73"><a class="header" href="#-4-cve-2026-14642-高危-73">⚠️ 4. CVE-2026-14642 [高危 7.3]</a></h3>
 <ul>
-<li>Sysdig安全团队正式发布了关于JadePuffer代理型勒索软件的首个有文档记录的攻击案例。该AI代理在2026年6月底的攻击中，虽未独立完成所有攻击步骤，但已显著降低了威胁行为者的操作复杂度，加快了攻击节奏并获得了战术优势。这一发现表明，AI代理能够自动化执行网络入侵的多个关键环节，包括漏洞利用、权限提升和数据勒索。该案例为安全行业提供了首个实证，证明代理型AI已具备实施真实世界勒索攻击的能力，亟需更新防御策略。</li>
+<li>SourceCodester Class and Exam Timetabling System 1.0 版本存在SQL注入漏洞。漏洞位于 /edit_class2.php 文件，攻击者可通过操纵ID参数进行注入攻击。该漏洞可远程利用，利用代码已公开，可能被用于窃取或篡改数据库中的课程与考试安排数据。建议用户立即升级到最新版本，并对所有用户输入进行参数化查询或严格过滤。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://cyberscoop.com/sysdig-judepuffer-ai-agentic-ransomware-attack/">Sysdig clocks first documented case of agentic ransomware</a>  #CyberScoop</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14642">CVE-2026-14642 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-5-研究人员声称首个完全代理型勒索软件jadepuffer"><a class="header" href="#-5-研究人员声称首个完全代理型勒索软件jadepuffer">📰 5. 研究人员声称首个完全代理型勒索软件：JadePuffer</a></h3>
+<h3 id="-5-疑似中国间谍组织利用roundcube漏洞链入侵大学"><a class="header" href="#-5-疑似中国间谍组织利用roundcube漏洞链入侵大学">📰 5. 疑似中国间谍组织利用Roundcube漏洞链入侵大学</a></h3>
 <ul>
-<li>安全研究人员公开了JadePuffer，这是首个由代理型AI驱动的勒索软件活动，展示了自主代理如何自动化网络攻击。该攻击利用Langflow服务器漏洞实现初始访问，随后由AI代理自主决策并执行超过600个协调载荷，完成从入侵到勒索的全流程。这一突破性案例表明，大语言模型已从辅助工具演变为能够独立策划和执行复杂攻击的自主实体。行业专家警告，此类代理型攻击将大幅降低网络犯罪的技术门槛，企业需立即加强AI安全监控和自动化防御能力。</li>
+<li>Proofpoint研究人员发现，疑似中国背景的间谍组织利用Roundcube Webmail漏洞链，针对大学物理和工程系发起攻击。攻击者通过邮件系统漏洞获取初始访问权限，随后横向移动窃取研究数据。该活动被认为仍在持续，建议相关机构立即修补Roundcube已知漏洞（如CVE-2023-43770等），并启用邮件日志审计和异常行为检测。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/researchers-first-agentic/">Researchers Claim First Fully Agentic Ransomware: JadePuffer</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/china-espionage-attacks-us-canada-universities-proofpoint/">Suspected Chinese espionage group used a Roundcube exploit chain to burrow into universities</a>  #CyberScoop</p>
 </blockquote>
-<h3 id="-6-法国将停止认证非量子安全加密"><a class="header" href="#-6-法国将停止认证非量子安全加密">📰 6. 法国将停止认证非量子安全加密</a></h3>
+<h3 id="-6-cve-2026-14648-高危-73"><a class="header" href="#-6-cve-2026-14648-高危-73">⚠️ 6. CVE-2026-14648 [高危 7.3]</a></h3>
 <ul>
-<li>法国网络安全局ANSSI宣布，将从2027年起停止认证缺乏量子抗性加密的安全产品，并要求政府机构和关键基础设施运营商在2030年前仅采购量子安全产品。ANSSI参谋长Samih Souissi在法国量子会议上明确表示，这一政策将强制推动从旧有加密系统向后量子加密的过渡。此举是应对量子计算对现有加密体系（如RSA和ECC）威胁的前瞻性举措，对全球密码学标准制定和产品合规产生深远影响。企业和政府机构需立即评估加密资产，制定迁移路线图，以避免未来合规风险。</li>
+<li>code-projects在线投票系统（版本0.x至1.0）的登录组件存在SQL注入漏洞。攻击者可通过操纵/authentication.php文件中test_input函数的adminUserName/adminPassword参数，远程发起攻击。该漏洞已公开披露，可能被利用窃取数据库敏感信息。受影响版本包括所有0.x系列及1.0版本，建议立即升级或实施输入验证与参数化查询。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.schneier.com/blog/archives/2026/07/france-to-stop-certifying-non-quantum-safe-encryption.html">France to Stop Certifying Non-Quantum-Safe Encryption</a>  #Schneier on Security</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14648">CVE-2026-14648 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-7-ai未缩小技能差距反而暴露了验证差距"><a class="header" href="#-7-ai未缩小技能差距反而暴露了验证差距">📰 7. AI未缩小技能差距——反而暴露了验证差距</a></h3>
+<h3 id="-7-cve-2026-14637-高危-82"><a class="header" href="#-7-cve-2026-14637-高危-82">⚠️ 7. CVE-2026-14637 [高危 8.2]</a></h3>
 <ul>
-<li>CSO Online文章指出，网络安全行业所谓的“技能差距”实为“验证差距”。核心事件是AI未能解决人才短缺，反而凸显了理论培训与实际能力验证的脱节。技术细节引用世界经济论坛报告，显示技能和预算仍是网络韧性的主要障碍。影响范围涉及全球网络安全从业者及企业招聘策略。行业意义在于呼吁从静态培训转向实战验证，如模拟攻防演练。</li>
+<li>kirilkirkov Ecommerce-CodeIgniter-Bootstrap 项目（版本至13fd582aaf49aeab7438acc0fc3eb973a1f5e6a7）被发现存在反序列化漏洞。问题位于 application/libraries/ShoppingCart.php 文件中的 getCartItems 函数，攻击者可通过操纵 shopping_cart 参数触发反序列化攻击。该漏洞可远程利用，且利用代码已公开，可能被实际攻击。由于该项目采用持续交付和滚动发布模式，官方未提供固定版本号，建议用户立即更新至最新提交或实施输入验证与反序列化防护措施。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4192376/ai-isnt-closing-the-skills-gap-its-exposing-the-validation-gap.html">AI isn’t closing the skills gap — it’s exposing the validation gap</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14637">CVE-2026-14637 [HIGH 8.2]</a>  CVSS 8.2 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-8-7个需避免的网络安全风险评估陷阱"><a class="header" href="#-8-7个需避免的网络安全风险评估陷阱">📰 8. 7个需避免的网络安全风险评估陷阱</a></h3>
+<h3 id="-8-现代ciso正成为下一个cfo"><a class="header" href="#-8-现代ciso正成为下一个cfo">📰 8. 现代CISO正成为下一个CFO</a></h3>
 <ul>
-<li>网络安全风险评估帮助安全团队识别、评估并优先处理关键数字和物理资产的潜在威胁与漏洞，但许多CISO常陷入几种“陷阱”而无法完全实现评估目标。这些陷阱包括：过度依赖自动化工具而忽视人工分析、未能将评估与业务目标对齐、忽略第三方风险、评估范围过窄、缺乏持续更新机制、未考虑人为因素以及未能有效沟通评估结果。评估应作为组织整体网络安全战略的核心部分，帮助安全领导者理解业务目标面临的风险、评估网络攻击的可能性和影响，并制定缓解措施。建议CISO在评估过程中保持全面视角，结合定量与定性方法，并定期审查评估流程以避免常见误区。</li>
+<li>文章指出，CISO越来越多地面临类似CFO的问责：被问及“我们安全吗？”这一核心问题。作者回忆在金融服务公司经历，当时收到威胁情报称攻击者将在节假日攻击，团队启动应急程序。这类问题往往在关键决策时刻出现，要求CISO不仅具备技术能力，还需量化风险、沟通安全投入的ROI。行业趋势显示，CISO角色正从技术专家向战略管理者转变，需掌握财务语言和业务影响分析。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4189703/7-cyber-risk-assessment-gotchas-to-avoid.html">7 cyber risk assessment gotchas to avoid</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4193375/the-modern-ciso-is-becoming-the-next-cfo.html">The modern CISO is becoming the next CFO</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-9-研究人员发现另一个关键oracle漏洞被利用"><a class="header" href="#-9-研究人员发现另一个关键oracle漏洞被利用">📰 9. 研究人员发现另一个关键Oracle漏洞被利用</a></h3>
+<h3 id="-9-insignary以二进制级清晰度填补sbom准确性缺口应对监管风险"><a class="header" href="#-9-insignary以二进制级清晰度填补sbom准确性缺口应对监管风险">📰 9. Insignary以二进制级清晰度填补SBOM准确性缺口，应对监管风险</a></h3>
 <ul>
-<li>CyberScoop报道，研究人员监测到又一关键Oracle漏洞被积极利用。该漏洞影响一套流行的商业应用集合，攻击者此前曾利用类似漏洞发起大规模攻击。技术细节未公开具体CVE编号，但强调漏洞严重等级为关键。影响范围覆盖使用该Oracle产品的企业，尤其是金融和零售行业。行业意义在于提醒企业立即应用Oracle最新补丁，并加强入侵检测。</li>
+<li>Insignary推出Clarity平台，通过专利二进制指纹技术分析实际构建、部署的软件，而非仅依赖开发者声明的清单，从而解决软件物料清单（SBOM）的准确性缺口。传统SCA工具常遗漏未出现在清单中的开源组件，而Clarity能检测这些隐藏组件及其漏洞，满足Gartner Hype Cycle中可达性分析的要求。该技术对遵守网络安全法规（如美国行政令和欧盟网络弹性法案）至关重要，可减少因不完整SBOM导致的合规风险。建议企业采用二进制级分析工具，确保SBOM反映真实软件组成，以提升供应链透明度。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://cyberscoop.com/oracle-ebs-critical-vulnerability-exploited/">Researchers spot exploitation of another critical Oracle defect</a>  #CyberScoop</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4193554/insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-for-regulatory-risk.html">Insignary Closes SBOM Accuracy Gap With Binary-Level Clarity for Regulatory Risk</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-10-谷歌高层警告欧盟规则变更或致搜索数据被黑"><a class="header" href="#-10-谷歌高层警告欧盟规则变更或致搜索数据被黑">📰 10. 谷歌高层警告：欧盟规则变更或致搜索数据被黑</a></h3>
+<h3 id="-10-荷兰逮捕两名信用卡钓鱼嫌疑人该国被列为欧洲支付欺诈最严重国家"><a class="header" href="#-10-荷兰逮捕两名信用卡钓鱼嫌疑人该国被列为欧洲支付欺诈最严重国家">📰 10. 荷兰逮捕两名信用卡钓鱼嫌疑人，该国被列为欧洲支付欺诈最严重国家</a></h3>
 <ul>
-<li>据Wired Security报道，谷歌安全高层警告称，欧盟促进竞争的提案若通过，可能迫使谷歌开放搜索和Android系统。技术细节涉及开放接口可能引入攻击面，导致用户搜索数据被黑客窃取。影响范围涵盖欧盟数亿用户及全球依赖谷歌服务的生态系统。行业意义在于警示监管与安全的平衡，建议政策制定者需评估开放带来的隐私风险。</li>
+<li>荷兰警方逮捕了两名涉嫌运营钓鱼操作的年轻男子，该操作窃取受害者的信用卡详细信息。此次逮捕发生在荷兰被列为欧洲支付欺诈最严重国家的背景下，该国因高度数字化的支付系统和消费者对在线交易的依赖而成为攻击目标。嫌疑人通过伪造银行网站和短信诱导用户输入敏感信息，然后利用这些数据进行非法交易。此案提醒用户启用交易双重验证，并避免点击不明链接；金融机构需加强实时欺诈检测系统。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/">Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change</a>  #Wired Security</p>
+<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/two-arrested-credit-card-phishing-netherlands-europe-payment-fraud">Two arrested over credit card phishing – as the Netherlands is named Europe’s worst for payment fraud</a>  #Graham Cluley</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -306,7 +306,7 @@
 
         <script src="../clipboard-1626706a.min.js"></script>
         <script src="../highlight-abc7f01d.js"></script>
-        <script src="../book-c22b7243.js"></script>
+        <script src="../book-609e4cb8.js"></script>
 
         <!-- Custom JS scripts -->
 
