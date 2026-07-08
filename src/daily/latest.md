@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-07-08
+# 🤖🔒 AI+安全日报 | 2026-07-09
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Gentlemen勒索软件：身份与恢复控制的考验
+### 📰 1. GitHub AI代理通过提示注入攻击泄露私有仓库
 
-- Gentlemen勒索软件对CISO构成严峻挑战，其核心在于攻击者获得初始访问权限后如何快速扩散。该恶意软件利用合法的Windows管理工具（如PsExec、WMI）在企业网络中自我传播，同时试图削弱安全与恢复系统。Picus Security报告指出，该勒索软件在加密前会主动破坏备份和恢复机制，增加受害者支付赎金的压力。该分析基于微软威胁情报团队5月底发布的技术报告，建议企业加强身份验证、最小权限原则和恢复系统隔离。
+- Noma Security研究发现，一种提示注入攻击可欺骗GitHub预览版Agentic Workflows，使其从私有仓库检索内容并公开发布。该攻击被命名为GitLost，攻击者可通过向公共仓库提交精心构造的GitHub Issue来利用该漏洞。若AI代理具有对私有仓库的读取权限，未认证攻击者即可触发数据泄露。此漏洞暴露了企业部署具有特权访问权限的AI代理时的广泛风险，建议企业严格限制AI代理的访问范围并实施输入验证。
 
-> **来源**: [Why The Gentlemen ransomware is a test of identity and recovery controls](https://www.csoonline.com/article/4193699/why-the-gentlemen-ransomware-is-a-test-of-identity-and-recovery-controls.html)  #CSO Online
+> **来源**: [GitHub AI agent leaks private repositories via prompt injection attack](https://www.csoonline.com/article/4194448/github-ai-agent-leaks-private-repositories-via-prompt-injection-attack.html)  #CSO Online
 
-### 📰 2. Zscaler发现自主AI代理易受间接提示注入攻击
+### 📰 2. AI代理落入间接提示注入陷阱
 
-- Zscaler测试发现，主流大语言模型（LLM）驱动的自主AI代理易受间接提示注入（IPI）攻击，而低级模型反而表现更好。测试中，Llama3-3-70b-instruct、Llama3-2-90b-instruct、Gemini-3-flash和Gemini-2.5-pro被判定为“易受攻击”。这些代理可能被精心设计的欺诈提示诱导执行危险操作，而人类几乎不会上当。建议企业部署AI代理时实施输入过滤、行为监控和人工审核机制。
+- Zscaler测试发现，多个高端AI代理容易受到间接提示注入（IPI）攻击，而一些低端模型反而表现更好。测试中，Llama3-3-70b-instruct、Llama3-2-90b-instruct、Gemini-3-flash和Gemini-2.5-pro被认定为“易受攻击”。这些模型可能被诱导执行恶意指令，导致数据泄露或错误决策。建议企业部署AI代理时实施输入过滤和输出验证，并定期进行安全测试。
 
-> **来源**: [Zscaler finds autonomous agents succumb to IPI traps](https://www.csoonline.com/article/4193498/zscaler-finds-autonomous-agents-succumb-to-ipi-traps-2.html)  #CSO Online
+> **来源**: [AI agents fall for indirect prompt injection traps](https://www.csoonline.com/article/4193498/ai-agents-fall-for-indirect-prompt-injection-traps.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-14654 [高危 7.3]
+### ⚠️ 3. CVE-2026-14768 [高危 7.3]
 
-- SourceCodester Simple and Nice Shopping Cart Script 1.0 版本存在SQL注入漏洞。漏洞位于 /admin/girlsproductdeletequery.php 文件，攻击者可通过操纵user_id参数进行注入攻击。该漏洞可远程利用，利用代码已公开，可能被用于获取管理员权限或窃取购物车系统中的用户数据。建议管理员立即升级系统，并限制对admin目录的访问权限。
+- code-projects Real State Services 1.0 版本中的 /builderHome.php 文件存在SQL注入漏洞。攻击者可远程操纵参数“loc”触发注入，导致数据库信息泄露或篡改。该漏洞利用细节已公开，增加了被恶意利用的风险。建议相关用户立即修补或部署Web应用防火墙（WAF）进行防护。
 
-> **来源**: [CVE-2026-14654 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-14654)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-14768 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-14768)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### ⚠️ 4. CVE-2026-14642 [高危 7.3]
+### ⚠️ 4. CVE-2026-14764 [高危 7.3]
 
-- SourceCodester Class and Exam Timetabling System 1.0 版本存在SQL注入漏洞。漏洞位于 /edit_class2.php 文件，攻击者可通过操纵ID参数进行注入攻击。该漏洞可远程利用，利用代码已公开，可能被用于窃取或篡改数据库中的课程与考试安排数据。建议用户立即升级到最新版本，并对所有用户输入进行参数化查询或严格过滤。
+- code-projects Hotel and Tourism Reservation 1.0 版本中的事件管理页面（/admin/add_event.php）存在SQL注入漏洞。攻击者可通过远程方式操纵参数“fdetails”进行注入攻击。该漏洞的利用代码已被公开披露，可能被广泛用于实际攻击。受影响系统需立即升级或实施输入验证与参数化查询等防护措施。
 
-> **来源**: [CVE-2026-14642 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-14642)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-14764 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-14764)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 5. 疑似中国间谍组织利用Roundcube漏洞链入侵大学
+### 📰 5. 网络犯罪分子利用印度报税季发起双恶意软件攻击
 
-- Proofpoint研究人员发现，疑似中国背景的间谍组织利用Roundcube Webmail漏洞链，针对大学物理和工程系发起攻击。攻击者通过邮件系统漏洞获取初始访问权限，随后横向移动窃取研究数据。该活动被认为仍在持续，建议相关机构立即修补Roundcube已知漏洞（如CVE-2023-43770等），并启用邮件日志审计和异常行为检测。
+- 网络犯罪分子正利用印度报税季发起新型恶意软件攻击，采用多阶段感染链同时投递两种远程访问木马（RAT）。Cyderes研究人员发现，该攻击伪装成印度税务部门发送虚假税务评估邮件，诱导受害者下载看似官方的ITR工具。攻击者通过精心设计的政府品牌标识隐藏感染序列，一旦用户执行恶意程序，即可获得对受感染系统的持久访问权限。该攻击针对印度纳税人群，利用报税紧迫性降低用户警惕，建议用户仅通过官方渠道下载税务软件并验证邮件来源。
 
-> **来源**: [Suspected Chinese espionage group used a Roundcube exploit chain to burrow into universities](https://cyberscoop.com/china-espionage-attacks-us-canada-universities-proofpoint/)  #CyberScoop
+> **来源**: [Cybercriminals exploit India’s tax filing season with a dual-malware campaign](https://www.csoonline.com/article/4194440/cybercriminals-exploit-indias-tax-filing-season-with-a-dual-malware-campaign.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-14648 [高危 7.3]
+### ⚠️ 6. CVE-2026-14769 [高危 7.3]
 
-- code-projects在线投票系统（版本0.x至1.0）的登录组件存在SQL注入漏洞。攻击者可通过操纵/authentication.php文件中test_input函数的adminUserName/adminPassword参数，远程发起攻击。该漏洞已公开披露，可能被利用窃取数据库敏感信息。受影响版本包括所有0.x系列及1.0版本，建议立即升级或实施输入验证与参数化查询。
+- code-projects Real State Services 1.0 版本中的 /pay.php 文件存在SQL注入漏洞。攻击者可通过远程操纵参数“Bankname”执行恶意SQL语句。该漏洞利用代码已公开，可能被用于窃取支付数据或破坏系统完整性。受影响系统需紧急更新或实施严格的输入过滤机制。
 
-> **来源**: [CVE-2026-14648 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-14648)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-14769 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-14769)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### ⚠️ 7. CVE-2026-14637 [高危 8.2]
+### 📰 7. 重罪犯和欺诈者运营进攻性网络安全初创公司
 
-- kirilkirkov Ecommerce-CodeIgniter-Bootstrap 项目（版本至13fd582aaf49aeab7438acc0fc3eb973a1f5e6a7）被发现存在反序列化漏洞。问题位于 application/libraries/ShoppingCart.php 文件中的 getCartItems 函数，攻击者可通过操纵 shopping_cart 参数触发反序列化攻击。该漏洞可远程利用，且利用代码已公开，可能被实际攻击。由于该项目采用持续交付和滚动发布模式，官方未提供固定版本号，建议用户立即更新至最新提交或实施输入验证与反序列化防护措施。
+- 一家声称悬赏数百万美元收购流行软件零日漏洞的网络安全初创公司，实际由两名极右翼阴谋论者和重罪犯运营。这两人曾经营虚假情报公司和现已倒闭的AI游说平台，并使用化名进行活动。该事件揭示了网络安全行业在尽职调查方面的漏洞，以及恶意行为者可能利用安全研究领域获取非法利益。建议投资者和合作伙伴在合作前进行严格背景审查。
 
-> **来源**: [CVE-2026-14637 [HIGH 8.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-14637)  CVSS 8.2 HIGH · #NVD · #漏洞
+> **来源**: [Felons, Fraudsters Flog Offensive Cybersecurity Startup](https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/)  #Krebs on Security
 
-### 📰 8. 现代CISO正成为下一个CFO
+### 📰 8. 网络安全中技能与能力之间的差距
 
-- 文章指出，CISO越来越多地面临类似CFO的问责：被问及“我们安全吗？”这一核心问题。作者回忆在金融服务公司经历，当时收到威胁情报称攻击者将在节假日攻击，团队启动应急程序。这类问题往往在关键决策时刻出现，要求CISO不仅具备技术能力，还需量化风险、沟通安全投入的ROI。行业趋势显示，CISO角色正从技术专家向战略管理者转变，需掌握财务语言和业务影响分析。
+- 五眼联盟国家安全机构联合发布声明，警告AI模型日益增长的网络安全风险，特别是其自主入侵系统和网络的能力。声明指出，AI技术可能被用于自动化攻击，降低攻击门槛并扩大威胁范围。尽管建议内容与常规安全指南相似，但强调了紧迫性。建议组织关注AI安全研究，实施防御性AI策略并加强人员培训。
 
-> **来源**: [The modern CISO is becoming the next CFO](https://www.csoonline.com/article/4193375/the-modern-ciso-is-becoming-the-next-cfo.html)  #CSO Online
+> **来源**: [Cybersecurity and the Gap Between Skill and Ability](https://www.schneier.com/blog/archives/2026/07/cybersecurity-and-the-gap-between-skill-and-ability.html)  #Schneier on Security
 
-### 📰 9. Insignary以二进制级清晰度填补SBOM准确性缺口，应对监管风险
+### 📰 9. 威胁行为者利用代理型AI快速攻破云目标
 
-- Insignary推出Clarity平台，通过专利二进制指纹技术分析实际构建、部署的软件，而非仅依赖开发者声明的清单，从而解决软件物料清单（SBOM）的准确性缺口。传统SCA工具常遗漏未出现在清单中的开源组件，而Clarity能检测这些隐藏组件及其漏洞，满足Gartner Hype Cycle中可达性分析的要求。该技术对遵守网络安全法规（如美国行政令和欧盟网络弹性法案）至关重要，可减少因不完整SBOM导致的合规风险。建议企业采用二进制级分析工具，确保SBOM反映真实软件组成，以提升供应链透明度。
+- Sygnia报告揭示攻击者利用代理型AI将原本需要数周的攻击周期压缩至仅72小时。该技术通过AI自主规划攻击路径、动态调整策略并绕过安全检测，显著提升了对云环境的渗透效率。此趋势表明AI正被武器化用于加速网络攻击，企业需部署AI驱动的威胁检测系统并加强云安全配置。
 
-> **来源**: [Insignary Closes SBOM Accuracy Gap With Binary-Level Clarity for Regulatory Risk](https://www.csoonline.com/article/4193554/insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-for-regulatory-risk.html)  #CSO Online
+> **来源**: [Threat Actors Uses Agentic AI to Rapidly Compromise Cloud Target](https://www.infosecurity-magazine.com/news/threat-actor-agentic-ai-cloud/)  #Infosecurity Magazine
 
-### 📰 10. 荷兰逮捕两名信用卡钓鱼嫌疑人，该国被列为欧洲支付欺诈最严重国家
+### 📰 10. 新型恶意活动传播Vidar信息窃取器和门罗币挖矿程序
 
-- 荷兰警方逮捕了两名涉嫌运营钓鱼操作的年轻男子，该操作窃取受害者的信用卡详细信息。此次逮捕发生在荷兰被列为欧洲支付欺诈最严重国家的背景下，该国因高度数字化的支付系统和消费者对在线交易的依赖而成为攻击目标。嫌疑人通过伪造银行网站和短信诱导用户输入敏感信息，然后利用这些数据进行非法交易。此案提醒用户启用交易双重验证，并避免点击不明链接；金融机构需加强实时欺诈检测系统。
+- 网络威胁行为者通过新恶意活动同时传播Vidar信息窃取器和XMRig门罗币挖矿程序。Vidar可窃取浏览器密码、加密货币钱包及系统信息，而XMRig则利用受害者计算资源挖掘门罗币。该组合攻击可能导致数据泄露和系统性能下降，建议用户避免下载不明文件并启用端点防护软件。
 
-> **来源**: [Two arrested over credit card phishing – as the Netherlands is named Europe’s worst for payment fraud](https://www.bitdefender.com/en-us/blog/hotforsecurity/two-arrested-credit-card-phishing-netherlands-europe-payment-fraud)  #Graham Cluley
+> **来源**: [New Malicious Campaign Delivers Vidar Infostealer and Monero Crypto Miner](https://www.infosecurity-magazine.com/news/new-campaign-vidar-stealer-monero/)  #Infosecurity Magazine
 
 ---
 

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>2026-06-12 - AI+安全日报</title>
+        <title>2026-07-09 - AI+安全日报</title>
 
 
         <!-- Custom HTML head -->
@@ -177,80 +177,80 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="-ai安全日报--2026-06-12"><a class="header" href="#-ai安全日报--2026-06-12">🤖🔒 AI+安全日报 | 2026-06-12</a></h1>
+                        <h1 id="-ai安全日报--2026-07-09"><a class="header" href="#-ai安全日报--2026-07-09">🤖🔒 AI+安全日报 | 2026-07-09</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-哈迪斯欺骗ai安全代理的恶意软件"><a class="header" href="#-1-哈迪斯欺骗ai安全代理的恶意软件">📰 1. 哈迪斯：欺骗AI安全代理的恶意软件</a></h3>
+<h3 id="-1-github-ai代理通过提示注入攻击泄露私有仓库"><a class="header" href="#-1-github-ai代理通过提示注入攻击泄露私有仓库">📰 1. GitHub AI代理通过提示注入攻击泄露私有仓库</a></h3>
 <ul>
-<li>新发现的“哈迪斯行动”是一种高度复杂的供应链攻击，专门针对Python开发者环境，一旦导入受感染的包即会运行。该恶意软件利用流行的Bun工具包静默执行多层载荷，能够提取敏感数据、在受感染系统间横向移动、利用常见安全框架，甚至通过对抗性提示注入劫持AI看门狗分析系统。攻击者还利用了Python包索引（PyPI）的信任机制，将恶意代码伪装成合法库。此事件凸显了AI安全代理在面对针对性对抗攻击时的脆弱性，建议开发者严格验证第三方包的来源和完整性。</li>
+<li>Noma Security研究发现，一种提示注入攻击可欺骗GitHub预览版Agentic Workflows，使其从私有仓库检索内容并公开发布。该攻击被命名为GitLost，攻击者可通过向公共仓库提交精心构造的GitHub Issue来利用该漏洞。若AI代理具有对私有仓库的读取权限，未认证攻击者即可触发数据泄露。此漏洞暴露了企业部署具有特权访问权限的AI代理时的广泛风险，建议企业严格限制AI代理的访问范围并实施输入验证。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4182707/meet-hades-the-malware-that-lies-to-ai-security-agents-2.html">Meet Hades: The malware that lies to AI security agents</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4194448/github-ai-agent-leaks-private-repositories-via-prompt-injection-attack.html">GitHub AI agent leaks private repositories via prompt injection attack</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-2-ai红队测试走向成熟"><a class="header" href="#-2-ai红队测试走向成熟">📰 2. AI红队测试走向成熟</a></h3>
+<h3 id="-2-ai代理落入间接提示注入陷阱"><a class="header" href="#-2-ai代理落入间接提示注入陷阱">📰 2. AI代理落入间接提示注入陷阱</a></h3>
 <ul>
-<li>微软AI红队创始人Ram Shankar Siva Kumar回顾了该领域从2019年起步到GPT-4时代的变化，指出传统红队方法在AI系统面前已失效。GPT-4的出现打破了原有测试工具，因为AI模型的行为不可预测且存在对抗性漏洞，如提示注入和模型反转。红队现在需要模拟AI特有的攻击路径，包括数据投毒、模型窃取和输出操纵。Siva Kumar强调，AI红队测试已成为产品安全的关键环节，但行业仍缺乏标准化方法论。这标志着网络安全领域必须将AI系统视为全新的攻击面，而非传统软件的延伸。</li>
+<li>Zscaler测试发现，多个高端AI代理容易受到间接提示注入（IPI）攻击，而一些低端模型反而表现更好。测试中，Llama3-3-70b-instruct、Llama3-2-90b-instruct、Gemini-3-flash和Gemini-2.5-pro被认定为“易受攻击”。这些模型可能被诱导执行恶意指令，导致数据泄露或错误决策。建议企业部署AI代理时实施输入过滤和输出验证，并定期进行安全测试。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4181930/ai-red-teaming-comes-of-age.html">AI red teaming comes of age</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4193498/ai-agents-fall-for-indirect-prompt-injection-traps.html">AI agents fall for indirect prompt injection traps</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-3-ai蠕虫原型显示攻击者无需mythos即可接管网络"><a class="header" href="#-3-ai蠕虫原型显示攻击者无需mythos即可接管网络">📰 3. AI蠕虫原型显示攻击者无需Mythos即可接管网络</a></h3>
+<h3 id="-3-cve-2026-14768-高危-73"><a class="header" href="#-3-cve-2026-14768-高危-73">⚠️ 3. CVE-2026-14768 [高危 7.3]</a></h3>
 <ul>
-<li>多伦多大学的研究人员开发了一个由AI代理驱动的计算机蠕虫原型，该蠕虫在模拟计算机网络中成功自我复制到不同系统。该蠕虫使用在本地硬件上运行的免费大型语言模型（LLM），并利用了新旧漏洞组合以及企业环境中常见的配置错误。这一实验表明，即使没有前沿模型如Anthropic的Mythos，攻击者也能利用现有工具和漏洞实现网络入侵。企业应加强基础安全配置，并定期进行漏洞扫描和修补。</li>
+<li>code-projects Real State Services 1.0 版本中的 /builderHome.php 文件存在SQL注入漏洞。攻击者可远程操纵参数“loc”触发注入，导致数据库信息泄露或篡改。该漏洞利用细节已公开，增加了被恶意利用的风险。建议相关用户立即修补或部署Web应用防火墙（WAF）进行防护。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4181924/ai-worm-prototype-shows-attackers-dont-need-mythos-to-take-over-your-network.html">AI worm prototype shows attackers don’t need Mythos to take over your network</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14768">CVE-2026-14768 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-4-infosecurity-europe新基准测试显示mythos在google-chrome漏洞利用上超越gpt55"><a class="header" href="#-4-infosecurity-europe新基准测试显示mythos在google-chrome漏洞利用上超越gpt55">📰 4. Infosecurity Europe：新基准测试显示Mythos在Google Chrome漏洞利用上超越GPT5.5</a></h3>
+<h3 id="-4-cve-2026-14764-高危-73"><a class="header" href="#-4-cve-2026-14764-高危-73">⚠️ 4. CVE-2026-14764 [高危 7.3]</a></h3>
 <ul>
-<li>Bugcrowd的研究人员在Infosecurity Europe上发布了ExploitBench，这是一个独立的AI模型漏洞利用能力基准测试。测试结果显示，名为Mythos的AI模型在利用Google Chrome漏洞方面超越了GPT5.5，表现出更高的自动化漏洞利用成功率。ExploitBench评估了多个AI模型在真实世界漏洞（如CVE-2023-4863，严重等级为高危，影响Chrome 116及更早版本）上的表现。这一发现凸显了AI在网络安全攻防两端的双刃剑效应，建议安全团队加强对AI驱动攻击的防御能力，并定期测试自身系统的抗AI攻击能力。</li>
+<li>code-projects Hotel and Tourism Reservation 1.0 版本中的事件管理页面（/admin/add_event.php）存在SQL注入漏洞。攻击者可通过远程方式操纵参数“fdetails”进行注入攻击。该漏洞的利用代码已被公开披露，可能被广泛用于实际攻击。受影响系统需立即升级或实施输入验证与参数化查询等防护措施。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/mythos-gpt-chrome-exploits/">Infosecurity Europe: Mythos Outperforms GPT5.5 on Google Chrome Vulnerability Exploits, Says New Benchmark</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14764">CVE-2026-14764 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-5-tenable-cto问答高管层视ai为巨大威胁网络团队采用暴露管理应对ai攻击"><a class="header" href="#-5-tenable-cto问答高管层视ai为巨大威胁网络团队采用暴露管理应对ai攻击">📰 5. Tenable CTO问答：高管层视AI为巨大威胁，网络团队采用暴露管理应对AI攻击</a></h3>
+<h3 id="-5-网络犯罪分子利用印度报税季发起双恶意软件攻击"><a class="header" href="#-5-网络犯罪分子利用印度报税季发起双恶意软件攻击">📰 5. 网络犯罪分子利用印度报税季发起双恶意软件攻击</a></h3>
 <ul>
-<li>Tenable CTO Vlad Korsunsky在参加世界经济论坛网络安全年会和Tenable的EXPOSURE 2026大会时指出，AI模型已将漏洞利用时间线压缩至“负天数”，即攻击者在厂商发布补丁前就已武器化漏洞。他呼吁从静态CVE评分转向AI驱动的暴露管理，因为点对点的漏洞评分无法反映实时风险。Korsunsky强调，高管层已将AI视为最大威胁，而暴露管理通过持续评估攻击面、优先级排序和自动化响应，能有效应对AI加速的攻击。这要求企业放弃传统的补丁周期，采用动态风险管理策略。</li>
+<li>网络犯罪分子正利用印度报税季发起新型恶意软件攻击，采用多阶段感染链同时投递两种远程访问木马（RAT）。Cyderes研究人员发现，该攻击伪装成印度税务部门发送虚假税务评估邮件，诱导受害者下载看似官方的ITR工具。攻击者通过精心设计的政府品牌标识隐藏感染序列，一旦用户执行恶意程序，即可获得对受感染系统的持久访问权限。该攻击针对印度纳税人群，利用报税紧迫性降低用户警惕，建议用户仅通过官方渠道下载税务软件并验证邮件来源。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/tenable-cto-ai-security-threats-exposure-management">Tenable CTO Q&amp;A: C-suite views AI as massive threat, as cyber teams adopt exposure management to counter AI attacks</a>  #Tenable Blog</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4194440/cybercriminals-exploit-indias-tax-filing-season-with-a-dual-malware-campaign.html">Cybercriminals exploit India’s tax filing season with a dual-malware campaign</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-6-前沿ai模型预示网络安全的重大变革"><a class="header" href="#-6-前沿ai模型预示网络安全的重大变革">📰 6. 前沿AI模型预示网络安全的重大变革</a></h3>
+<h3 id="-6-cve-2026-14769-高危-73"><a class="header" href="#-6-cve-2026-14769-高危-73">⚠️ 6. CVE-2026-14769 [高危 7.3]</a></h3>
 <ul>
-<li>Claude Mythos和OpenAI GPT-5.5等前沿AI模型的发布，正在改变首席信息安全官（CISO）面临的威胁模型。这些模型能够以更快的速度和更大的规模发现和利用漏洞链，迫使大多数网络安全部门重新思考其策略和运营。专家建议防御者应假设AI将使初始入侵更易发生，并应减少对完美修补的追求，转而专注于通过强化防御来限制攻击的爆炸半径。这一趋势要求企业重新评估其安全架构和响应机制。</li>
+<li>code-projects Real State Services 1.0 版本中的 /pay.php 文件存在SQL注入漏洞。攻击者可通过远程操纵参数“Bankname”执行恶意SQL语句。该漏洞利用代码已公开，可能被用于窃取支付数据或破坏系统完整性。受影响系统需紧急更新或实施严格的输入过滤机制。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4183772/frontier-ai-models-offer-sneak-peak-of-seismic-cyber-shifts-ahead.html">Frontier AI models offer sneak peak of seismic cyber shifts ahead</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14769">CVE-2026-14769 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-7-攻击者滥用chatgpt共享内容进行钓鱼攻击"><a class="header" href="#-7-攻击者滥用chatgpt共享内容进行钓鱼攻击">📰 7. 攻击者滥用ChatGPT共享内容进行钓鱼攻击</a></h3>
+<h3 id="-7-重罪犯和欺诈者运营进攻性网络安全初创公司"><a class="header" href="#-7-重罪犯和欺诈者运营进攻性网络安全初创公司">📰 7. 重罪犯和欺诈者运营进攻性网络安全初创公司</a></h3>
 <ul>
-<li>Push Security发现，攻击者利用ChatGPT的共享内容功能（chatgpt.com/s/域名）托管恶意软件，通过钓鱼邮件诱导用户点击看似合法的ChatGPT共享链接。这些链接指向由攻击者创建的伪造共享页面，页面中包含恶意下载或重定向至凭证窃取页面。由于共享域名是ChatGPT官方服务的一部分，传统安全工具难以将其标记为恶意。此攻击利用了用户对官方域名的信任，建议企业部署浏览器隔离技术，并教育用户警惕来自未知来源的共享链接。</li>
+<li>一家声称悬赏数百万美元收购流行软件零日漏洞的网络安全初创公司，实际由两名极右翼阴谋论者和重罪犯运营。这两人曾经营虚假情报公司和现已倒闭的AI游说平台，并使用化名进行活动。该事件揭示了网络安全行业在尽职调查方面的漏洞，以及恶意行为者可能利用安全研究领域获取非法利益。建议投资者和合作伙伴在合作前进行严格背景审查。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/attackers-shared-content-chatgpt/">Attackers Abuse Shared Content for ChatGPT Phishing Campaign</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/">Felons, Fraudsters Flog Offensive Cybersecurity Startup</a>  #Krebs on Security</p>
 </blockquote>
-<h3 id="-8-exposure-2026为网络安全专业人员准备ai时代"><a class="header" href="#-8-exposure-2026为网络安全专业人员准备ai时代">📰 8. EXPOSURE 2026为网络安全专业人员准备AI时代</a></h3>
+<h3 id="-8-网络安全中技能与能力之间的差距"><a class="header" href="#-8-网络安全中技能与能力之间的差距">📰 8. 网络安全中技能与能力之间的差距</a></h3>
 <ul>
-<li>EXPOSURE 2026大会汇聚了网络安全领导者和从业者，共同探讨AI对安全的影响，并提供了构建暴露管理计划的蓝图。会议指出，前沿AI模型同时加速了漏洞发现和利用，并大幅降低了攻击成本和复杂度，使传统威胁模型和手动流程不再可行。与会者学习了如何利用AI进行自动化威胁检测、优先级排序和响应，以及如何整合暴露数据以形成统一视图。大会强调了从被动修补向主动暴露管理的转变，这是应对AI时代安全挑战的关键。建议组织立即评估现有安全流程，并投资于AI驱动的暴露管理工具。</li>
+<li>五眼联盟国家安全机构联合发布声明，警告AI模型日益增长的网络安全风险，特别是其自主入侵系统和网络的能力。声明指出，AI技术可能被用于自动化攻击，降低攻击门槛并扩大威胁范围。尽管建议内容与常规安全指南相似，但强调了紧迫性。建议组织关注AI安全研究，实施防御性AI策略并加强人员培训。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/exposure-2026-prepares-cybersecurity-professionals-for-the-ai-era">EXPOSURE 2026 prepares cybersecurity professionals for the AI era</a>  #Tenable Blog</p>
+<p><strong>来源</strong>: <a href="https://www.schneier.com/blog/archives/2026/07/cybersecurity-and-the-gap-between-skill-and-ability.html">Cybersecurity and the Gap Between Skill and Ability</a>  #Schneier on Security</p>
 </blockquote>
-<h3 id="-9-威胁简报pan-os-captive-portal零日漏洞被利用进行未认证远程代码执行"><a class="header" href="#-9-威胁简报pan-os-captive-portal零日漏洞被利用进行未认证远程代码执行">📰 9. 威胁简报：PAN-OS Captive Portal零日漏洞被利用进行未认证远程代码执行</a></h3>
+<h3 id="-9-威胁行为者利用代理型ai快速攻破云目标"><a class="header" href="#-9-威胁行为者利用代理型ai快速攻破云目标">📰 9. 威胁行为者利用代理型AI快速攻破云目标</a></h3>
 <ul>
-<li>Unit 42披露了CVE-2026-0300，这是一个PAN-OS User-ID认证门户中的缓冲区溢出漏洞，严重等级为严重（CVSS评分9.8）。该漏洞允许未经认证的攻击者通过发送特制请求实现远程代码执行，影响PAN-OS 10.2、11.0和11.1的多个版本。攻击者已在野外利用此漏洞部署后门，并可能用于横向移动。Palo Alto Networks已发布安全补丁，建议用户立即升级至修复版本。此漏洞凸显了网络设备作为关键攻击面的风险，组织应优先修补暴露在互联网上的防火墙和VPN设备。</li>
+<li>Sygnia报告揭示攻击者利用代理型AI将原本需要数周的攻击周期压缩至仅72小时。该技术通过AI自主规划攻击路径、动态调整策略并绕过安全检测，显著提升了对云环境的渗透效率。此趋势表明AI正被武器化用于加速网络攻击，企业需部署AI驱动的威胁检测系统并加强云安全配置。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://unit42.paloaltonetworks.com/captive-portal-zero-day/">Threat Brief: Exploitation of PAN-OS Captive Portal Zero-Day for Unauthenticated Remote Code Execution</a>  #Unit 42</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/threat-actor-agentic-ai-cloud/">Threat Actors Uses Agentic AI to Rapidly Compromise Cloud Target</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-10-关键zcash漏洞被发现并修复"><a class="header" href="#-10-关键zcash漏洞被发现并修复">📰 10. 关键Zcash漏洞被发现并修复</a></h3>
+<h3 id="-10-新型恶意活动传播vidar信息窃取器和门罗币挖矿程序"><a class="header" href="#-10-新型恶意活动传播vidar信息窃取器和门罗币挖矿程序">📰 10. 新型恶意活动传播Vidar信息窃取器和门罗币挖矿程序</a></h3>
 <ul>
-<li>2024年5月29日，安全研究员Taylor Hornby使用Claude Opus 4.8在Zcash的Orchard隐私池中发现了一个关键漏洞。Zcash团队专门聘请Hornby来寻找此类问题，他很快便发现了这一漏洞。Orchard池是Zcash中最新的屏蔽交易系统，于2022年推出，允许用户发送和接收ZEC时保持交易细节私密。该漏洞影响零知识证明机制，可能暴露用户隐私。Zcash团队已修复此漏洞，建议所有用户立即更新至最新版本。</li>
+<li>网络威胁行为者通过新恶意活动同时传播Vidar信息窃取器和XMRig门罗币挖矿程序。Vidar可窃取浏览器密码、加密货币钱包及系统信息，而XMRig则利用受害者计算资源挖掘门罗币。该组合攻击可能导致数据泄露和系统性能下降，建议用户避免下载不明文件并启用端点防护软件。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.schneier.com/blog/archives/2026/06/critical-zcash-vulnerability-found-and-fixed.html">Critical Zcash Vulnerability Found and Fixed</a>  #Schneier on Security</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/new-campaign-vidar-stealer-monero/">New Malicious Campaign Delivers Vidar Infostealer and Monero Crypto Miner</a>  #Infosecurity Magazine</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -261,11 +261,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../daily/2026-06-13.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../daily/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../daily/2026-06-10.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../daily/2026-07-08.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -275,11 +275,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../daily/2026-06-13.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../daily/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../daily/2026-06-10.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../daily/2026-07-08.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
