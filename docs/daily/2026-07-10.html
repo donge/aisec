@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>2026-06-23 - AI+安全日报</title>
+        <title>2026-07-10 - AI+安全日报</title>
 
 
         <!-- Custom HTML head -->
@@ -177,59 +177,80 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="-ai安全日报--2026-06-23"><a class="header" href="#-ai安全日报--2026-06-23">🤖🔒 AI+安全日报 | 2026-06-23</a></h1>
+                        <h1 id="-ai安全日报--2026-07-10"><a class="header" href="#-ai安全日报--2026-07-10">🤖🔒 AI+安全日报 | 2026-07-10</a></h1>
 <blockquote>
-<p>今日共收录 <strong>7</strong> 条，AI+安全领域重要动态速览</p>
+<p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-openai启动全面修复开源漏洞计划挑战anthropic的网络安全神话"><a class="header" href="#-1-openai启动全面修复开源漏洞计划挑战anthropic的网络安全神话">📰 1. OpenAI启动全面修复开源漏洞计划，挑战Anthropic的网络安全神话</a></h3>
+<h3 id="-1-针对amazon-bedrock关联ai网关的攻击揭示新型云安全风险"><a class="header" href="#-1-针对amazon-bedrock关联ai网关的攻击揭示新型云安全风险">📰 1. 针对Amazon Bedrock关联AI网关的攻击揭示新型云安全风险</a></h3>
 <ul>
-<li>OpenAI发布改进版GPT-5.5-Cyber模型，并启动“Patch the Planet”计划，旨在系统性地修复开源软件中的安全漏洞。该计划利用AI自动扫描和修补开源项目中的缺陷，覆盖Linux内核、Web框架等关键组件。此举旨在提升AI在网络安全领域的实际应用能力，同时与Anthropic等竞争对手争夺行业话语权。建议开源社区关注AI驱动的漏洞修复工具，并评估其可靠性。</li>
+<li>网络安全公司Darktrace发现攻击者入侵了一个作为Amazon Bedrock的LiteLLM代理的AWS EC2实例，最终部署了XMRig加密货币挖矿恶意软件。该攻击不仅涉及挖矿，还试图滥用云身份和AI服务，暴露了AI网关作为集中访问云身份、权限和基础模型的高权限系统的重大风险。Darktrace研究人员指出，尽管攻击以挖矿结束，但更大的担忧是AI网关成为攻击者利用云身份和AI服务的新入口。这一事件凸显了企业在采用AI服务时需加强网关安全配置和身份管理，以防止类似横向移动和资源滥用。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/">OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos</a>  #Wired Security</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4194984/attack-on-amazon-bedrock-linked-ai-gateway-highlights-new-cloud-security-risk.html">Attack on Amazon Bedrock-linked AI gateway highlights new cloud security risk</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-2-klue数据泄露被盗oauth令牌暴露salesforce-crm数据"><a class="header" href="#-2-klue数据泄露被盗oauth令牌暴露salesforce-crm数据">📰 2. Klue数据泄露：被盗OAuth令牌暴露Salesforce CRM数据</a></h3>
+<h3 id="-2-修复数据架构比升级检测模型更重要"><a class="header" href="#-2-修复数据架构比升级检测模型更重要">📰 2. 修复数据架构比升级检测模型更重要</a></h3>
 <ul>
-<li>竞争情报供应商Klue遭遇数据泄露，攻击者通过入侵集成服务中的遗留凭证，窃取了客户用于连接Salesforce等平台的OAuth令牌。Klue CEO Jason Smith确认，攻击者利用这些令牌访问了多个客户环境中的CRM数据。Klue已撤销所有客户OAuth令牌并禁用受影响集成。此事件凸显了OAuth令牌管理的风险，建议企业实施令牌轮换、短期有效期和异常使用监控。</li>
+<li>全球AI网络安全市场预计2026年达440亿美元，2034年增至2130亿美元，但安全领导者常误判AI检测工具失效的根本原因。当AI驱动检测表现不佳时，多数组织倾向于调整算法或更换供应商，而真正问题往往是底层数据架构。数据质量、集成和治理问题导致模型无法有效工作。文章建议企业优先优化数据管道和存储，而非单纯追求模型升级，以提升安全运营效率。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4187907/klue-breach-exposed-salesforce-crm-data-through-stolen-oauth-tokens.html">Klue breach exposed Salesforce CRM data through stolen OAuth tokens</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4194544/why-fixing-your-data-architecture-matters-more-than-upgrading-your-detection-models.html">Why fixing your data architecture matters more than upgrading your detection models</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-3-微软将mastra-ai供应链攻击归因于朝鲜"><a class="header" href="#-3-微软将mastra-ai供应链攻击归因于朝鲜">📰 3. 微软将Mastra AI供应链攻击归因于朝鲜</a></h3>
+<h3 id="-3-横向移动风险因企业重便利轻隔离而上升"><a class="header" href="#-3-横向移动风险因企业重便利轻隔离而上升">📰 3. 横向移动风险因企业重便利轻隔离而上升</a></h3>
 <ul>
-<li>微软安全研究人员将针对Mastra的供应链攻击归因于朝鲜威胁组织Sapphire Sleet。该攻击通过篡改软件供应链组件，向Mastra AI平台用户分发恶意代码。微软未披露具体技术细节，但指出该组织常利用社会工程学和凭证窃取手段。此次事件凸显了AI供应链的脆弱性，建议组织加强对第三方组件的完整性验证和代码审计。</li>
+<li>Zero Networks的2026年横向移动暴露报告基于312个企业环境的54万亿活动分析发现，超过80%的企业服务器可从网络内部任意位置访问，87%的服务器接受入站远程桌面协议（RDP）连接。网络隔离不足和安全控制薄弱使攻击者在初始入侵后能自由横向移动。报告强调，企业需加强网络分段和访问控制，减少对便利性的过度依赖，以遏制攻击扩散。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/mastra-ai-supply-chain-attack/">Microsoft Attributes Mastra AI Supply Chain Attack to North Korea</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4194708/lateral-movement-risk-rises-as-enterprises-emphasize-convenience-over-containment.html">Lateral movement risk rises as enterprises emphasize convenience over containment</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-4-零售业勒索软件攻击剖析桌面推演模拟现代混乱手法"><a class="header" href="#-4-零售业勒索软件攻击剖析桌面推演模拟现代混乱手法">📰 4. 零售业勒索软件攻击剖析：桌面推演模拟现代混乱手法</a></h3>
+<h3 id="-4-github公共api成为企业侦察工具"><a class="header" href="#-4-github公共api成为企业侦察工具">📰 4. GitHub公共API成为企业侦察工具</a></h3>
 <ul>
-<li>在Infosecurity Europe会议上，安全厂商Semperis组织了一场名为“进入作战室”的桌面推演，模拟针对虚构超市连锁BlueCart的网络攻击。CSO作为红队八名成员之一参与，扮演国家背景的攻击者APT 64（代号Checkout Chaos）。该推演突出展示了针对AI系统的攻击和虚假信息作为关键元素，攻击者不仅旨在窃取数据，更注重破坏超市声誉和制造混乱。这一演习揭示了零售业面临的新型混合威胁，建议企业将AI安全与声誉风险管理纳入应急响应计划。</li>
+<li>Datadog安全研究团队发现，过去几个月存在持续性的GitHub API滥用模式，攻击者利用API映射组织及其成员信息。这些请求单独看似“不起眼”，但持续数周跨环境移动后，可能升级为完整的仓库克隆，威胁源代码、机密信息和自动化流水线。GitHub作为软件供应链的核心，为攻击者提供了源代码、机密和自动化管道三大目标。企业需监控API使用模式，实施异常检测，并限制对敏感仓库的访问权限。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4186989/anatomy-of-a-retail-ransomware-attack-tabletop-simulates-modern-mayhem-methods.html">Anatomy of a retail ransomware attack: Tabletop simulates modern mayhem methods</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4194665/githubs-public-apis-are-becoming-an-enterprise-reconnaissance-tool-2.html">GitHub’s public APIs are becoming an enterprise reconnaissance tool</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-5-gentlekiller框架禁用受害者安全软件"><a class="header" href="#-5-gentlekiller框架禁用受害者安全软件">📰 5. GentleKiller框架禁用受害者安全软件</a></h3>
+<h3 id="-5-cve-2026-9182-严重-98"><a class="header" href="#-5-cve-2026-9182-严重-98">⚠️ 5. CVE-2026-9182 [严重 9.8]</a></h3>
 <ul>
-<li>ESET安全团队披露GentleKiller框架，该工具被Gentlemen勒索软件团伙提供给附属成员使用，专门用于禁用目标系统的端点检测与响应（EDR）软件。GentleKiller通过内核级操作终止安全进程，并清除日志以逃避检测。该框架已在多起勒索攻击中被使用，建议企业部署多层安全防护，并定期测试EDR软件的韧性。</li>
+<li>Esri ArcGIS Server存在不受限制的文件上传漏洞，影响Windows和Linux平台上的所有12.0及更早版本，但ArcGIS Enterprise for Kubernetes不受影响。未经身份验证的攻击者可利用此漏洞上传恶意文件到受影响端点，可能导致任意文件上传，进而引发其他攻击。建议用户立即应用安全补丁，并配置Web应用防火墙以过滤恶意文件上传请求。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/gentlekiller-gentlemen-ransomware/">GentleKiller Framework Disables Victims’ Security Software</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9182">CVE-2026-9182 [CRITICAL 9.8]</a>  CVSS 9.8 CRITICAL · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-6-github确认通过恶意vs-code扩展入侵内部仓库"><a class="header" href="#-6-github确认通过恶意vs-code扩展入侵内部仓库">📰 6. GitHub确认通过恶意VS Code扩展入侵内部仓库</a></h3>
+<h3 id="-6-cve-2026-9181-严重-98"><a class="header" href="#-6-cve-2026-9181-严重-98">⚠️ 6. CVE-2026-9181 [严重 9.8]</a></h3>
 <ul>
-<li>GitHub证实其内部仓库遭入侵，攻击者通过恶意Visual Studio Code扩展实施攻击。知名威胁组织TeamPCP声称对此负责，并宣称已访问GitHub的私有代码库。该事件凸显了供应链攻击的严重性，尤其是针对开发者工具的恶意扩展。GitHub已移除相关扩展并加强内部安全审计，建议开发者仅从可信来源安装扩展。</li>
+<li>Esri ArcGIS Server存在目录遍历漏洞，影响Windows和Linux平台上的所有12.0及更早版本，但ArcGIS Enterprise on Kubernetes不受影响。未经身份验证的攻击者可通过发送特制的路径参数，覆盖系统上的敏感文件，进而获得ArcGIS Server的完全管理权限，严重威胁机密性、完整性和可用性。建议用户立即升级至12.0之后的补丁版本，并实施网络分段以限制对ArcGIS Server的访问。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/github-confirms-breach-vs-code/">GitHub Confirms Breach of Internal Repositories Via Malicious VS Code Extension</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9181">CVE-2026-9181 [CRITICAL 9.8]</a>  CVSS 9.8 CRITICAL · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-7-ai提升漏洞意识与安全设计软件标准"><a class="header" href="#-7-ai提升漏洞意识与安全设计软件标准">📰 7. AI提升漏洞意识与安全设计软件标准</a></h3>
+<h3 id="-7-cve-2026-13753-高危-75"><a class="header" href="#-7-cve-2026-13753-高危-75">⚠️ 7. CVE-2026-13753 [高危 7.5]</a></h3>
 <ul>
-<li>AI驱动的漏洞扫描技术正消除未修补漏洞的借口，同时欧盟《网络弹性法案》推动企业转向安全设计软件。AI工具能自动识别代码缺陷并生成修复建议，将漏洞发现时间从数周缩短至分钟级。该法案要求制造商在产品设计阶段即嵌入安全机制，否则面临高额罚款。行业分析师认为，AI与法规结合将重塑软件开发生命周期，但需警惕AI误报和过度依赖自动化。</li>
+<li>HP Deskjet 2800系列打印机固件版本&lt;=TBP1CN2612AR的嵌入式Web服务器存在授权缺失漏洞。未经身份验证的攻击者可通过网络访问，向多个管理API端点发送GET请求，从而获取明文Wi-Fi Direct凭据、设备唯一标识等敏感配置数据。该漏洞影响所有使用受影响固件版本的HP Deskjet 2800系列打印机。建议用户立即更新固件至最新版本，并限制打印机仅暴露于受信任网络。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/ai-raises-vulnerability-awareness/">AI Raises the Bar on Vulnerability Awareness and Secure-by-Design Software</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13753">CVE-2026-13753 [HIGH 7.5]</a>  CVSS 7.5 HIGH · #NVD · #漏洞</p>
+</blockquote>
+<h3 id="-8-smashing-security播客第475期jadepuffer完全自主运行勒索软件攻击的ai"><a class="header" href="#-8-smashing-security播客第475期jadepuffer完全自主运行勒索软件攻击的ai">📰 8. Smashing Security播客第475期：JadePuffer——完全自主运行勒索软件攻击的AI</a></h3>
+<ul>
+<li>研究人员记录了首例完全自主的、基于代理的AI驱动勒索软件攻击“JadePuffer”，一名15岁少年通过聊天机器人协助在4小时内取消了近47,000个动漫流媒体订阅。该事件展示了AI在网络安全中的双刃剑效应，既可能被用于自动化攻击，也预示了未来威胁的演变方向。此外，Apple的“隐藏我的电子邮件”功能被发现存在隐私漏洞，尽管苹果已知情超过一年。播客强调了AI代理在攻击中的自主性对网络安全的深远影响。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://grahamcluley.com/smashing-security-podcast-475/">Smashing Security podcast #475: JadePuffer – the AI that ran a ransomware attack all by itself</a>  #Graham Cluley</p>
+</blockquote>
+<h3 id="-9-网络犯罪分子在开源工具仓库中植入恶意ai代理"><a class="header" href="#-9-网络犯罪分子在开源工具仓库中植入恶意ai代理">📰 9. 网络犯罪分子在开源工具仓库中植入恶意AI代理</a></h3>
+<ul>
+<li>ESET网络安全研究人员发现，开源工具仓库中可疑和恶意工具集数量大幅上升，这些工具集包含恶意AI代理，使用户面临网络攻击风险。攻击者利用开源生态的信任，植入后门或数据窃取功能。用户需谨慎验证开源工具来源，使用安全扫描工具检测恶意代码，并关注官方安全公告。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/cybercriminals-plant-ai-agents/">Cybercriminals Plant Malicious AI Agents in Open Source Tool Repositories</a>  #Infosecurity Magazine</p>
+</blockquote>
+<h3 id="-10-活跃目录攻击中发现氛围编码恶意软件"><a class="header" href="#-10-活跃目录攻击中发现氛围编码恶意软件">📰 10. 活跃目录攻击中发现“氛围编码”恶意软件</a></h3>
+<ul>
+<li>安全公司Huntress发现，攻击者在一次Active Directory网络映射攻击中使用了“氛围编码”（vibe-coded）的PowerShell脚本。该脚本通过模拟合法管理操作来规避检测，成功枚举了域用户、组和权限。此事件表明，攻击者正利用AI辅助生成的代码来加速攻击工具的开发。建议企业加强对PowerShell活动的监控，启用脚本块日志记录，并实施基于行为的异常检测。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/vibe-coded-malware-ai-powershell/">Vibe-Coded Malware Caught in Active Directory Attack</a>  #Infosecurity Magazine</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -240,11 +261,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../daily/2026-06-24.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../daily/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../daily/2026-06-22.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../daily/2026-07-09.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -254,11 +275,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../daily/2026-06-24.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../daily/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../daily/2026-06-22.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../daily/2026-07-09.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
