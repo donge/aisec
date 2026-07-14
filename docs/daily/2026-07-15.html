@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>2026-07-13 - AI+安全日报</title>
+        <title>2026-07-15 - AI+安全日报</title>
 
 
         <!-- Custom HTML head -->
@@ -177,80 +177,80 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="-ai安全日报--2026-07-13"><a class="header" href="#-ai安全日报--2026-07-13">🤖🔒 AI+安全日报 | 2026-07-13</a></h1>
+                        <h1 id="-ai安全日报--2026-07-15"><a class="header" href="#-ai安全日报--2026-07-15">🤖🔒 AI+安全日报 | 2026-07-15</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-crowdstrike识别出五种新型ai提示注入威胁"><a class="header" href="#-1-crowdstrike识别出五种新型ai提示注入威胁">📰 1. CrowdStrike识别出五种新型AI提示注入威胁</a></h3>
+<h3 id="-1-ai驱动的攻击为事件响应敲响警钟"><a class="header" href="#-1-ai驱动的攻击为事件响应敲响警钟">📰 1. AI驱动的攻击为事件响应敲响警钟</a></h3>
 <ul>
-<li>安全公司CrowdStrike在其提示注入分类体系中新增了五种攻击技术，这些技术利用企业日益增长的AI使用场景，通过欺骗大型语言模型（LLM）接受人类操作员会识别为可疑的指令来实施攻击。新增类型包括：触发激活规则添加（攻击者添加看似无害但可被后期触发导致模型异常行为的规则）、认知令牌抑制（通过抑制模型正常推理所需的认知令牌来干扰输出）等。这些攻击可导致AI系统执行非授权操作、泄露敏感数据或产生恶意输出。CrowdStrike建议企业加强AI应用的输入验证、实施多层安全检测，并对LLM行为进行持续监控以防范此类新型威胁。</li>
+<li>越来越多的威胁行为者正在利用LLM驱动的智能体自动化攻击的各个阶段，包括横向移动，这严重缩短了从初始访问到深度环境入侵的时间。企业多年来为应对日益复杂的攻击而改进检测和响应时间的努力正面临AI的威胁。核心变化在于速度、规模和编排：熟悉的云攻击技术以比防御者所能协调的更快的速度在更多表面上执行。这要求安全团队必须重新评估其事件响应策略，并考虑引入AI驱动的防御工具来对抗自动化攻击。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4195670/crowdstrike-identifies-five-new-prompt-injection-threats-to-ai.html">CrowdStrike identifies five new prompt injection threats to AI</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4196409/ai-powered-breaches-provide-wake-up-call-for-incident-response.html">AI-powered breaches provide wake-up call for incident response</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-2-微软发现gigawiper按需破坏的后门程序"><a class="header" href="#-2-微软发现gigawiper按需破坏的后门程序">📰 2. 微软发现GigaWiper：按需破坏的后门程序</a></h3>
+<h3 id="-2-cve-2026-15481-高危-88"><a class="header" href="#-2-cve-2026-15481-高危-88">⚠️ 2. CVE-2026-15481 [高危 8.8]</a></h3>
 <ul>
-<li>微软威胁情报团队在技术分析中详细描述了GigaWiper，这是一种基于Golang编写的后门程序，首次于2025年10月的入侵活动中被发现。该恶意软件融合了远程管理功能与多种磁盘擦除和勒索软件例程，模糊了间谍软件与擦除器之间的界限。攻击者并非从头构建新的破坏工具，而是从多个现有恶意软件家族中提取模块，将其作为模块化命令嵌入到单一后门中。GigaWiper可执行静默间谍活动、按需擦除磁盘数据并部署勒索软件，对受感染系统构成严重威胁。微软建议组织加强端点检测、实施网络分段，并监控异常的后门通信行为。</li>
+<li>Trendnet TEW-635BRM路由器（版本至1.00.03）存在一个安全漏洞，影响IPoA WAN连接设置组件中/sbin/rc文件的ipoa_test函数。通过操纵ipoa_ipaddr参数可导致命令注入，攻击者可远程利用此漏洞。该漏洞的利用代码已公开，可能被用于实际攻击。厂商表示无法确认漏洞是否存在，且该产品已停产。建议用户立即更换或隔离受影响设备。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4195470/microsoft-uncovers-gigawiper-a-backdoor-designed-for-destruction-on-demand.html">Microsoft uncovers GigaWiper, a backdoor designed for destruction on demand</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15481">CVE-2026-15481 [HIGH 8.8]</a>  CVSS 8.8 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-3-ai编码工具漏洞揭示人在回路中的重大问题"><a class="header" href="#-3-ai编码工具漏洞揭示人在回路中的重大问题">📰 3. AI编码工具漏洞揭示“人在回路中”的重大问题</a></h3>
+<h3 id="-3-政府敦促企业改善路由器安全卫生"><a class="header" href="#-3-政府敦促企业改善路由器安全卫生">📰 3. 政府敦促企业改善路由器安全卫生</a></h3>
 <ul>
-<li>网络安全研究公司Wiz发现了一种名为GhostApproval的系统性漏洞模式，影响了六大主流AI编码助手：Amazon Q Developer、Anthropic Claude Code、Augment、Cursor、Google Antigravity和Windsurf（现更名为Devin Desktop）。该漏洞允许攻击者通过恶意仓库欺骗AI代理访问工作区沙箱之外的任意文件，从而绕过本应由人类操作员知情批准的安全机制。攻击者利用AI代理对用户指令的信任，通过误导“人在回路中”的审核流程来执行未授权操作。Wiz指出，这一漏洞暴露了当前AI开发工具中安全审核机制的缺陷，建议开发者实施更严格的沙箱隔离和权限控制。</li>
+<li>全球安全机构警告称，俄罗斯政府支持的攻击者正在利用路由器弱点进行攻击。一份来自北美、英国、欧洲和澳大利亚19个联邦机构的多国网络安全公告指出，攻击者继续通过老式手段利用保护不足或配置不当的网络设备。威胁行为者扫描弱化设备（通常是路由器），从而“机会性地”入侵关键基础设施网络，然后传输配置文件。这强调了企业必须加强路由器安全配置和补丁管理，以防范国家级攻击。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4195235/ai-coding-tool-hole-illustrates-a-big-problem-with-human-in-the-loop.html">AI coding tool hole illustrates a big problem with human in the loop</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4196447/governments-to-enterprises-improve-your-router-security-hygiene.html">Governments to enterprises: Improve your router security hygiene</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-4-英国网络机构推出ai驱动的cyber-shield以机器速度反击攻击"><a class="header" href="#-4-英国网络机构推出ai驱动的cyber-shield以机器速度反击攻击">📰 4. 英国网络机构推出AI驱动的Cyber Shield以机器速度反击攻击</a></h3>
+<h3 id="-4-cve-2026-15483-高危-88"><a class="header" href="#-4-cve-2026-15483-高危-88">⚠️ 4. CVE-2026-15483 [高危 8.8]</a></h3>
 <ul>
-<li>英国国家网络安全中心（NCSC）联合科学、创新与技术部（DSIT）发布了名为Cyber Shield的蓝图，旨在部署能够实时发现并中和国家级网络攻击的自主AI代理。该系统将利用前沿AI技术构建国家级规模的协作式自主防御体系，以机器速度识别、降低和解决国家网络风险。Cyber Shield标志着英国向主权、机器速度的网络防御系统迈进，其核心是开发能够自主决策和响应的AI安全代理。NCSC表示，该计划将整合政府、行业和学术界的资源，推动AI在网络安全领域的创新应用。</li>
+<li>TRENDnet TEW-821DAP无线接入点（版本1.12B01）存在缓冲区溢出漏洞，影响/goform/tools_nslookup文件中的sub_41EC14函数。攻击者可通过远程操纵nslookup_target参数触发溢出。供应商表示无法确认漏洞存在，且该产品已停止支持（EOL）。此漏洞仅影响不再受支持的老旧设备。建议用户立即更换该型号接入点，因为无法获得安全补丁。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4194997/uk-cyber-agency-unveils-ai-powered-cyber-shield-to-counter-attacks-at-machine-speed.html">UK cyber agency unveils AI-powered Cyber Shield to counter attacks at machine speed</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15483">CVE-2026-15483 [HIGH 8.8]</a>  CVSS 8.8 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-5-研究人员警告anthropic和openai安全工具可能助长网络攻击"><a class="header" href="#-5-研究人员警告anthropic和openai安全工具可能助长网络攻击">📰 5. 研究人员警告Anthropic和OpenAI安全工具可能助长网络攻击</a></h3>
+<h3 id="-5-cve-2026-15480-高危-88"><a class="header" href="#-5-cve-2026-15480-高危-88">⚠️ 5. CVE-2026-15480 [高危 8.8]</a></h3>
 <ul>
-<li>AI Now研究所的研究人员开发了一个概念验证漏洞利用，展示了常用于安全的AI工具（如Anthropic和OpenAI提供的安全检测模型）可能被反向利用。该漏洞利用通过精心构造的输入，使安全AI工具产生误判或执行攻击者指令，从而绕过安全防护。研究指出，这些工具在设计时未充分考虑对抗性攻击场景，导致其安全功能可能被恶意利用。这一发现凸显了AI安全工具自身的安全性问题，建议开发者在部署前进行严格的对抗性测试，并建立人工审核机制。</li>
+<li>Trendnet TEW-635BRM路由器（版本至1.00.03）存在栈缓冲区溢出漏洞，影响Web服务组件中的start_httpd函数。攻击者可通过远程操纵device_name参数触发漏洞，导致缓冲区溢出。漏洞利用代码已公开，可能被实际攻击利用。供应商表示无法确认漏洞存在，且该产品自2011年起已停止支持（EOL）。建议用户立即更换该型号路由器，因为不再接收安全更新。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/anthropic-openai-report-exploit/">Anthropic and OpenAI Security Tools Could Fuel Cyber-Attacks, Researchers Warn</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15480">CVE-2026-15480 [HIGH 8.8]</a>  CVSS 8.8 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-6-前digitalmint勒索软件谈判者因欺骗客户被判70个月监禁"><a class="header" href="#-6-前digitalmint勒索软件谈判者因欺骗客户被判70个月监禁">📰 6. 前DigitalMint勒索软件谈判者因欺骗客户被判70个月监禁</a></h3>
+<h3 id="-6-为对方工作的勒索软件谈判者"><a class="header" href="#-6-为对方工作的勒索软件谈判者">📰 6. 为对方工作的勒索软件谈判者</a></h3>
 <ul>
-<li>前DigitalMint勒索软件谈判员Angelo Martino因利用内部职位向勒索软件同谋泄露机密信息，被判70个月监禁。他协助从五家美国受害者处勒索总计7530万美元，同时欺骗客户支付更高赎金。Martino的行为暴露了勒索软件生态中的内部腐败风险。此案警示企业需谨慎选择安全服务商，并建立独立审计机制。</li>
+<li>当公司遭受勒索软件攻击时，通常会求助于专家，专业谈判公司代表受害者与犯罪团伙沟通。然而，受害者意想不到的是，他们信任的谈判者可能私下将受害者的网络安全保险政策和谈判策略细节直接分享给攻击者。这一事件揭示了勒索软件响应中的信任危机，企业应谨慎选择谈判伙伴，并考虑内部加密通信和独立审计。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://cyberscoop.com/digitalmint-ransomware-negotiator-angelo-martino-sentenced/">Former DigitalMint ransomware negotiator who duped clients sentenced to 70 months in jail</a>  #CyberScoop</p>
+<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/ransomware-negotiator-working-other-side">The ransomware negotiator who was working for the other side</a>  #Graham Cluley</p>
 </blockquote>
-<h3 id="-7-超70家网络安全公司支持新ai安全宪章"><a class="header" href="#-7-超70家网络安全公司支持新ai安全宪章">📰 7. 超70家网络安全公司支持新AI安全宪章</a></h3>
+<h3 id="-7-美国财政部制裁首个vpn服务及其他协助勒索软件团伙的实体"><a class="header" href="#-7-美国财政部制裁首个vpn服务及其他协助勒索软件团伙的实体">📰 7. 美国财政部制裁首个VPN服务及其他协助勒索软件团伙的实体</a></h3>
 <ul>
-<li>超过70家网络安全组织签署了CREST AI宪章，明确AI在安全领域的负责任使用原则。宪章涵盖透明度、问责制、数据隐私和偏见缓解等关键领域，旨在防止AI被滥用。此举标志着行业对AI安全治理的集体承诺，影响全球AI安全标准制定。建议企业参考该宪章制定内部AI使用政策，并参与行业协作。</li>
+<li>美国财政部对1VPNS VPN服务及其涉嫌乌克兰的管理员，以及一名涉嫌销售“加密器”以隐藏勒索软件和其他恶意软件的白俄罗斯人实施制裁。这是美国首次针对协助勒索软件团伙的VPN服务采取行动。制裁旨在切断勒索软件生态系统的关键支持环节，包括匿名化工具和恶意软件混淆服务。此举向全球发出信号，任何为勒索软件提供便利的实体都将面临法律后果，建议企业审查其使用的VPN和加密服务来源。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/crest-ai-security-charter-cyber/">New AI Security Charter Backed by Over 70 Cyber Firms</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/us-sanctions-first-vpn-ransomware/">Treasury sanctions First VPN Service, others for abetting ransomware gangs</a>  #CyberScoop</p>
 </blockquote>
-<h3 id="-8-ncsc宣称打造国家级ai驱动网络盾牌用于防御"><a class="header" href="#-8-ncsc宣称打造国家级ai驱动网络盾牌用于防御">📰 8. NCSC宣称打造国家级AI驱动“网络盾牌”用于防御</a></h3>
+<h3 id="-8-针对傻瓜的钓鱼forg365降低m365账户接管门槛"><a class="header" href="#-8-针对傻瓜的钓鱼forg365降低m365账户接管门槛">📰 8. 针对傻瓜的钓鱼：Forg365降低M365账户接管门槛</a></h3>
 <ul>
-<li>英国国家网络安全中心（NCSC）计划与AI合作伙伴共同构建名为“网络盾牌”的新型防御系统。该系统将利用AI技术实现全国范围的威胁检测和自动响应，旨在提升英国整体网络韧性。NCSC强调该计划将整合公共和私营部门资源。此举对英国关键基础设施保护具有战略意义，建议相关机构提前对接技术标准。</li>
+<li>一个通过Telegram分发的新钓鱼即服务平台Forg365正在降低微软365账户接管的技术门槛，为低技能攻击者提供自动化工具来规避某些身份验证控制并在入侵后保持访问权限。根据安全公司ZeroBEC的研究，该平台利用AI辅助诱饵创建，结合设备代码滥用和中间人攻击技术。Forg365提供五天免费试用，随后订阅价格为每月400美元或每年3800美元。这凸显了AI在钓鱼工具中的应用正使攻击民主化，企业需加强多因素认证和用户培训。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/ncsc-national-cyber-sheild-ai/">NCSC Touts National Scale, AI-Powered “Cyber Shield” for Defense</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4196646/phishing-for-dummies-forg365-lowers-barrier-to-m365-account-takeovers.html">Phishing for dummies: Forg365 lowers barrier to M365 account takeovers</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-9-英国政府启动网络韧性承诺称已有60多个签署方"><a class="header" href="#-9-英国政府启动网络韧性承诺称已有60多个签署方">📰 9. 英国政府启动网络韧性承诺，称已有60多个签署方</a></h3>
+<h3 id="-9-cve-2026-15479-高-73"><a class="header" href="#-9-cve-2026-15479-高-73">⚠️ 9. CVE-2026-15479 [高 7.3]</a></h3>
 <ul>
-<li>英国政府推出“网络韧性承诺”计划，已有包括M&amp;S、微软英国和沃达丰在内的60多家组织签署。该计划旨在提升英国企业的网络安全和韧性，要求签署方承诺实施基本安全措施。此举将推动中小企业安全能力建设，影响英国整体网络安全生态。建议企业评估自身安全水平，考虑加入该承诺以获取政策支持。</li>
+<li>该漏洞存在于H3C NX15路由器固件版本V100R017中，严重等级为高（7.3分）。漏洞位于组件“管理员密码修改端点”的/api/login/modify文件中，通过操纵newPass参数可导致弱密码恢复。攻击者可远程利用此漏洞，且利用代码已公开，增加了被实际攻击的风险。H3C已被告知此漏洞，但尚未发布补丁。建议用户立即限制对该端点的网络访问，并监控异常密码修改请求，同时关注厂商更新。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/uk-gov-launches-cyber-resilience/">UK Government Launches Cyber Resilience Pledge, Claiming 60+ Signatories</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15479">CVE-2026-15479 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-10-信任无技能ai代理供应链的完整性验证"><a class="header" href="#-10-信任无技能ai代理供应链的完整性验证">📰 10. 信任无技能：AI代理供应链的完整性验证</a></h3>
+<h3 id="-10-新macos恶意软件利用合法开发者id伪装成apple-crash-reporter"><a class="header" href="#-10-新macos恶意软件利用合法开发者id伪装成apple-crash-reporter">📰 10. 新MacOS恶意软件利用合法开发者ID伪装成Apple Crash Reporter</a></h3>
 <ul>
-<li>Unit 42发布报告指出，企业AI代理面临来自第三方技能（Skills）的供应链安全风险，这些技能可能包含隐藏漏洞和多阶段攻击链。攻击者可以通过向AI代理市场提交恶意技能，在看似无害的功能中植入后门，从而在代理执行任务时窃取数据或操控决策。报告详细描述了攻击者如何利用AI代理的权限提升和上下文切换机制，构建从初始访问到数据外泄的完整攻击路径。该研究建议企业实施严格的技能完整性验证流程，包括代码审计、行为沙箱测试和运行时监控，以防范供应链攻击。这一发现对依赖第三方AI组件的金融、医疗和政务系统具有重要警示意义。</li>
+<li>Jamf威胁实验室的研究人员详细描述了名为CrashStealer的恶意软件，它窃取密码、加密货币钱包等敏感信息。该恶意软件利用合法的苹果开发者ID进行签名，伪装成Apple Crash Reporter以逃避检测。它通过社会工程学手段诱导用户安装，然后收集系统凭证和钱包数据。这提醒MacOS用户不要轻易信任看似合法的系统提示，并定期检查已签名的应用程序。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://unit42.paloaltonetworks.com/ai-agent-supply-chain-risks/">Trust No Skill: Integrity Verification for AI Agent Supply Chains</a>  #Unit 42</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/macos-malware-apple-crash-reporter/">New MacOS Malware Exploits Legitimate Developer ID to Pose as Apple Crash Reporter</a>  #Infosecurity Magazine</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -261,11 +261,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../daily/2026-07-14.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../daily/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../daily/2026-07-11.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../daily/2026-07-14.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -275,11 +275,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../daily/2026-07-14.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../daily/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../daily/2026-07-11.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../daily/2026-07-14.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

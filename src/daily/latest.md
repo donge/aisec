@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-07-14
+# 🤖🔒 AI+安全日报 | 2026-07-15
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-55641 [高危 8.2] 🔬
+### 📰 1. AI驱动的攻击为事件响应敲响警钟
 
-- 9Router是一款AI路由与令牌节省工具，在0.5.2版本之前存在严重安全漏洞。该漏洞源于9router通过读取客户端控制的Host头来判断/v1 LLM代理请求是否为本地请求，远程未认证攻击者可发送Host: localhost绕过API密钥认证。在默认配置下，此漏洞会暴露/v1代理接口，攻击者可利用已存储的提供商凭证调用上游服务，并通过/v1/search接口的searxng provider_options.baseUrl参数驱动服务器端请求到内部网络。该漏洞CVSS评分为8.2，影响范围广泛，建议用户立即升级至0.5.2或更高版本。
+- 越来越多的威胁行为者正在利用LLM驱动的智能体自动化攻击的各个阶段，包括横向移动，这严重缩短了从初始访问到深度环境入侵的时间。企业多年来为应对日益复杂的攻击而改进检测和响应时间的努力正面临AI的威胁。核心变化在于速度、规模和编排：熟悉的云攻击技术以比防御者所能协调的更快的速度在更多表面上执行。这要求安全团队必须重新评估其事件响应策略，并考虑引入AI驱动的防御工具来对抗自动化攻击。
 
-> **来源**: [CVE-2026-55641 [HIGH 8.2] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-55641)  CVSS 8.2 HIGH · #NVD · #漏洞
+> **来源**: [AI-powered breaches provide wake-up call for incident response](https://www.csoonline.com/article/4196409/ai-powered-breaches-provide-wake-up-call-for-incident-response.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-55638 [高危 8.6] 🔬
+### ⚠️ 2. CVE-2026-15481 [高危 8.8]
 
-- 核心事件：9Router（AI路由与令牌节省工具）0.5.2之前版本存在API密钥绕过漏洞。技术细节：9Router在src/dashboardGuard.js中保护了/v1、/v1beta、/api/v1和/api/v1beta路径，但未保护/codex路径；在next.config.mjs中，/codex/*被重写为/api/v1/responses，导致远程未认证攻击者可绕过API密钥验证，利用操作员存储的LLM提供商凭证发起上游调用。影响范围：影响所有0.5.2之前版本的9Router用户，可能导致LLM服务滥用和费用损失。行业意义：建议用户立即升级到0.5.2版本，并审查API路由保护逻辑，确保所有入口点均经过身份验证。
+- Trendnet TEW-635BRM路由器（版本至1.00.03）存在一个安全漏洞，影响IPoA WAN连接设置组件中/sbin/rc文件的ipoa_test函数。通过操纵ipoa_ipaddr参数可导致命令注入，攻击者可远程利用此漏洞。该漏洞的利用代码已公开，可能被用于实际攻击。厂商表示无法确认漏洞是否存在，且该产品已停产。建议用户立即更换或隔离受影响设备。
 
-> **来源**: [CVE-2026-55638 [HIGH 8.6] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-55638)  CVSS 8.6 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-15481 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-15481)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 3. RabbitMQ漏洞暴露OAuth密钥，可能导致代理完全被接管
+### 📰 3. 政府敦促企业改善路由器安全卫生
 
-- 广泛使用的开源消息代理RabbitMQ被发现存在两个访问控制漏洞（CVE-2024-XXXX，严重等级：高危），影响版本为3.12.x及更早版本。漏洞允许未认证攻击者暴露OAuth密钥，低权限用户可能借此监控其他租户的数据。在特定部署中，攻击者可完全控制消息基础设施，导致订单、支付、认证事件等敏感数据泄露。Miggo Security研究人员指出，RabbitMQ是现代应用间数据流动的关键“管道”，漏洞影响范围广泛。建议用户立即升级至RabbitMQ 3.13.0或更高版本，并审查OAuth配置。
+- 全球安全机构警告称，俄罗斯政府支持的攻击者正在利用路由器弱点进行攻击。一份来自北美、英国、欧洲和澳大利亚19个联邦机构的多国网络安全公告指出，攻击者继续通过老式手段利用保护不足或配置不当的网络设备。威胁行为者扫描弱化设备（通常是路由器），从而“机会性地”入侵关键基础设施网络，然后传输配置文件。这强调了企业必须加强路由器安全配置和补丁管理，以防范国家级攻击。
 
-> **来源**: [RabbitMQ flaws expose OAuth secrets, risk complete takeover of the broker](https://www.csoonline.com/article/4196093/rabbitmq-flaws-expose-oauth-secrets-risk-complete-takeover-of-the-broker.html)  #CSO Online
+> **来源**: [Governments to enterprises: Improve your router security hygiene](https://www.csoonline.com/article/4196447/governments-to-enterprises-improve-your-router-security-hygiene.html)  #CSO Online
 
-### ⚠️ 4. CVE-2025-70796 [高危 7.5]
+### ⚠️ 4. CVE-2026-15483 [高危 8.8]
 
-- 核心事件：WTI（Wireless Technology, Inc.）版本3.5.0.r（2024/05/24）的Web管理接口存在未认证路径遍历漏洞。技术细节：未认证攻击者可构造包含遍历序列（如../）的恶意HTTP请求，访问Web根目录之外的文件，导致敏感系统文件和配置数据泄露。影响范围：影响所有运行该版本的WTI设备，可能暴露网络配置、凭据等关键信息。行业意义：建议用户立即升级到修复版本，并限制管理接口的网络访问，实施最小权限原则。
+- TRENDnet TEW-821DAP无线接入点（版本1.12B01）存在缓冲区溢出漏洞，影响/goform/tools_nslookup文件中的sub_41EC14函数。攻击者可通过远程操纵nslookup_target参数触发溢出。供应商表示无法确认漏洞存在，且该产品已停止支持（EOL）。此漏洞仅影响不再受支持的老旧设备。建议用户立即更换该型号接入点，因为无法获得安全补丁。
 
-> **来源**: [CVE-2025-70796 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2025-70796)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-15483 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-15483)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 5. 官员再次警告：俄罗斯黑客正针对网络设备
+### ⚠️ 5. CVE-2026-15480 [高危 8.8]
 
-- 美国政府官员再次发出警告，称国家支持的黑客正针对国防、通信、能源、金融、政府和医疗等关键基础设施的网络设备发起攻击。攻击者利用未修补的漏洞（如CVE-2023-XXXX，严重等级：严重）或弱密码入侵路由器、交换机等设备，用于建立持久化访问和横向移动。建议组织立即更新固件、禁用默认凭据并实施多因素认证。此次警告与近期针对乌克兰和波兰的网络攻击事件相呼应，凸显地缘政治冲突对网络空间的持续影响。
+- Trendnet TEW-635BRM路由器（版本至1.00.03）存在栈缓冲区溢出漏洞，影响Web服务组件中的start_httpd函数。攻击者可通过远程操纵device_name参数触发漏洞，导致缓冲区溢出。漏洞利用代码已公开，可能被实际攻击利用。供应商表示无法确认漏洞存在，且该产品自2011年起已停止支持（EOL）。建议用户立即更换该型号路由器，因为不再接收安全更新。
 
-> **来源**: [Officials once again warn defenders that Russian hackers are targeting network devices](https://cyberscoop.com/russian-fsb-cisco-joint-cybersecurity-advisory/)  #CyberScoop
+> **来源**: [CVE-2026-15480 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-15480)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 6. 我曾喜爱ChatGPT桌面版，直到OpenAI为Codex和Work将其阉割
+### 📰 6. 为对方工作的勒索软件谈判者
 
-- 核心事件：OpenAI将ChatGPT桌面应用与Codex合并，移除了用户喜爱的生产力功能，引发用户不满。技术细节：Codex是AI编程助手，而Work是面向企业的协作工具；合并后，桌面版失去了如快速笔记、本地文件集成等特性。影响范围：影响所有ChatGPT桌面版用户，尤其是依赖其进行日常工作的开发者和知识工作者。行业意义：此事件反映了AI产品在功能整合与用户体验之间的平衡挑战，建议用户关注更新日志并评估新功能是否符合自身需求。
+- 当公司遭受勒索软件攻击时，通常会求助于专家，专业谈判公司代表受害者与犯罪团伙沟通。然而，受害者意想不到的是，他们信任的谈判者可能私下将受害者的网络安全保险政策和谈判策略细节直接分享给攻击者。这一事件揭示了勒索软件响应中的信任危机，企业应谨慎选择谈判伙伴，并考虑内部加密通信和独立审计。
 
-> **来源**: [I loved ChatGPT Desktop until OpenAI gutted it to make room for Codex and Work](https://www.zdnet.com/article/openai-gutted-chatgpt-desktop-app-for-codex-work/)  #ZDNet Security
+> **来源**: [The ransomware negotiator who was working for the other side](https://www.bitdefender.com/en-us/blog/hotforsecurity/ransomware-negotiator-working-other-side)  #Graham Cluley
 
-### 📰 7. 澳大利亚网络机构警告全球CMS利用活动
+### 📰 7. 美国财政部制裁首个VPN服务及其他协助勒索软件团伙的实体
 
-- 澳大利亚网络安全中心（ACSC）发布警告，指出全球范围内正发生针对内容管理系统（CMS）的大规模扫描和利用活动。攻击者利用已知漏洞对未及时更新的CMS实例进行自动化扫描和入侵，可能导致网站被篡改、数据泄露或植入恶意代码。ACSC建议所有CMS用户立即检查系统版本，应用最新安全补丁，并启用多因素认证以降低风险。此次事件凸显了CMS作为常见网络基础设施的脆弱性，提醒组织加强资产管理和漏洞修复流程。
+- 美国财政部对1VPNS VPN服务及其涉嫌乌克兰的管理员，以及一名涉嫌销售“加密器”以隐藏勒索软件和其他恶意软件的白俄罗斯人实施制裁。这是美国首次针对协助勒索软件团伙的VPN服务采取行动。制裁旨在切断勒索软件生态系统的关键支持环节，包括匿名化工具和恶意软件混淆服务。此举向全球发出信号，任何为勒索软件提供便利的实体都将面临法律后果，建议企业审查其使用的VPN和加密服务来源。
 
-> **来源**: [Australian Cyber Agency Warns of Global CMS Exploitation Campaign](https://www.infosecurity-magazine.com/news/australia-warns-global-cms/)  #Infosecurity Magazine
+> **来源**: [Treasury sanctions First VPN Service, others for abetting ransomware gangs](https://cyberscoop.com/us-sanctions-first-vpn-ransomware/)  #CyberScoop
 
-### 📰 8. 欧洲对俄罗斯Turla组织的间谍活动和“破坏性攻击”采取行动
+### 📰 8. 针对傻瓜的钓鱼：Forg365降低M365账户接管门槛
 
-- 欧盟、其成员国及英国对俄罗斯政府官员及相关人员采取制裁措施，并将冬季针对波兰电网的网络攻击归因于俄罗斯联邦安全局（FSB）的Turla组织。Turla以使用复杂恶意软件（如ComRAT、Carbon）和长期潜伏能力著称，此次攻击导致波兰能源系统部分中断。欧洲行动包括冻结资产、旅行禁令和加强能源行业网络安全合作。建议关键基础设施运营商部署网络分段和入侵检测系统以防御类似APT攻击。
+- 一个通过Telegram分发的新钓鱼即服务平台Forg365正在降低微软365账户接管的技术门槛，为低技能攻击者提供自动化工具来规避某些身份验证控制并在入侵后保持访问权限。根据安全公司ZeroBEC的研究，该平台利用AI辅助诱饵创建，结合设备代码滥用和中间人攻击技术。Forg365提供五天免费试用，随后订阅价格为每月400美元或每年3800美元。这凸显了AI在钓鱼工具中的应用正使攻击民主化，企业需加强多因素认证和用户培训。
 
-> **来源**: [Europe strikes out against Russia’s Turla over espionage, ‘destructive attacks’](https://cyberscoop.com/eu-uk-russian-cyberespionage-sanctions/)  #CyberScoop
+> **来源**: [Phishing for dummies: Forg365 lowers barrier to M365 account takeovers](https://www.csoonline.com/article/4196646/phishing-for-dummies-forg365-lowers-barrier-to-m365-account-takeovers.html)  #CSO Online
 
-### 📰 9. 《侏罗纪公园》、网络安全与控制的危险神话
+### ⚠️ 9. CVE-2026-15479 [高 7.3]
 
-- 文章以《侏罗纪公园》为隐喻，批判网络安全领域对“绝对控制”的盲目追求。电影中，尽管拥有先进监控和围栏，恐龙仍逃脱控制，类比现实中复杂系统（如云基础设施、AI模型）的不可预测性。作者指出，安全团队常高估对网络边界的掌控能力，忽视内部威胁和系统级故障。建议安全策略从“防止入侵”转向“假设失陷”，并强化检测、响应和恢复能力。
+- 该漏洞存在于H3C NX15路由器固件版本V100R017中，严重等级为高（7.3分）。漏洞位于组件“管理员密码修改端点”的/api/login/modify文件中，通过操纵newPass参数可导致弱密码恢复。攻击者可远程利用此漏洞，且利用代码已公开，增加了被实际攻击的风险。H3C已被告知此漏洞，但尚未发布补丁。建议用户立即限制对该端点的网络访问，并监控异常密码修改请求，同时关注厂商更新。
 
-> **来源**: [Jurassic Park, cybersecurity and the dangerous myth of control](https://www.csoonline.com/article/4195710/jurassic-park-cybersecurity-and-the-dangerous-myth-of-control.html)  #CSO Online
+> **来源**: [CVE-2026-15479 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-15479)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 10. 你的AI风险登记册不是事件响应计划
+### 📰 10. 新MacOS恶意软件利用合法开发者ID伪装成Apple Crash Reporter
 
-- 文章指出，许多组织将AI风险登记册误当作事件响应计划，导致实际AI事故发生时缺乏明确处置流程。例如，当内部AI工具在业务工作流中产生错误推荐时，安全分析师无法确定该由谁负责停止系统。风险登记册虽记录了“输出不准确”的风险项和严重等级，但未定义决策权限和行动步骤。建议组织为AI系统制定专门的事件响应计划，明确角色分工、升级路径和应急关闭机制。
+- Jamf威胁实验室的研究人员详细描述了名为CrashStealer的恶意软件，它窃取密码、加密货币钱包等敏感信息。该恶意软件利用合法的苹果开发者ID进行签名，伪装成Apple Crash Reporter以逃避检测。它通过社会工程学手段诱导用户安装，然后收集系统凭证和钱包数据。这提醒MacOS用户不要轻易信任看似合法的系统提示，并定期检查已签名的应用程序。
 
-> **来源**: [Your AI risk register is not an incident response plan](https://www.csoonline.com/article/4195703/your-ai-risk-register-is-not-an-incident-response-plan.html)  #CSO Online
+> **来源**: [New MacOS Malware Exploits Legitimate Developer ID to Pose as Apple Crash Reporter](https://www.infosecurity-magazine.com/news/macos-malware-apple-crash-reporter/)  #Infosecurity Magazine
 
 ---
 
