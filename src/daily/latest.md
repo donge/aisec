@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-07-16
+# 🤖🔒 AI+安全日报 | 2026-07-17
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. 新型Windows绑定链接技术可规避EDR和安全控制
+### 📰 1. 单次提示即可让ChatGPT执行完整网络攻击链，研究人员称
 
-- 安全研究人员发现三种滥用Windows绑定链接（Bind Links）的新技术，该功能是合法的文件系统虚拟化能力。攻击者利用这些技术，无需利用易受攻击的驱动程序或修改受信任的二进制文件，即可绕过端点安全防护。Bitdefender研究人员警告称，这些技术可用于“致盲EDR传感器并绕过内置Windows防御机制，如AMSI和AppLocker”。攻击者通过占用安全工具处理干净文件，同时让恶意文件在无检测情况下执行，从而实现对系统的隐蔽控制。该发现对依赖EDR和Windows原生安全功能的企业构成严重威胁，建议加强管理员权限监控并部署行为分析检测。
+- 网络安全研究人员测试了OpenAI GPT 5.5的进攻性网络能力，结果显示前沿大语言模型对黑客而言极为高效。该测试表明，仅需一个精心设计的提示词，ChatGPT就能自动完成从侦察、漏洞利用到横向移动和数据窃取的完整攻击链。这凸显了AI工具在降低攻击门槛和自动化复杂攻击流程方面的潜在风险。行业需警惕LLM被恶意利用，并加强AI安全护栏和监控机制。
 
-> **来源**: [New Windows Bind Link techniques let attackers evade EDR, security controls](https://www.csoonline.com/article/4197184/new-windows-bind-link-techniques-let-attackers-evade-edr-security-controls.html)  #CSO Online
+> **来源**: [Single Prompt Enables ChatGPT to Execute Full Cyber-Attack Chain, Researchers Claim](https://www.infosecurity-magazine.com/news/chatgpt55-to-execute-full/)  #Infosecurity Magazine
 
-### ⚠️ 2. CVE-2026-15514 [高危 7.3]
+### 📰 2. 漏洞激增迫使CISO重新思考漏洞管理策略
 
-- 美特软件 MetaCRM 至 6.4.0 Beta06 版本存在一个安全弱点，影响组件 PHPRPC 远程调用接口中文件 /customizemt/xkq/rpc.jsp 的函数 RPCService.query。攻击者通过操纵参数 phprpc_args 可实施 SQL 注入攻击，且攻击可远程发起。该漏洞的利用代码已公开，可能被用于攻击。厂商在早期被通知后未作出任何回应，建议用户采取额外防护措施。
+- 安全专家呼吁企业修订漏洞管理策略，转向“即时”补丁模式以应对漏洞利用速度的加快。攻击者正利用AI提升漏洞利用和供应链入侵的速度，使传统漏洞管理方法难以跟上节奏。Huntress公司的vCISO兼EMEA网络安全顾问Muhammad Yahya Patel建议，组织需将漏洞管理计划转向基于风险的方法。这意味着企业应优先修复高风险漏洞，并采用自动化工具实现快速响应，以对抗AI驱动的攻击。
 
-> **来源**: [CVE-2026-15514 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-15514)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Flaw surge fuels need for CISOs to rethink vulnerability management](https://www.csoonline.com/article/4196435/flaw-surge-fuels-need-for-cisos-to-rethink-vulnerability-management.html)  #CSO Online
 
-### 📰 3. 白宫启动AI驱动漏洞中心以加速网络修复
+### 📰 3. SonicWall客户面临威胁，攻击者利用两个零日漏洞
 
-- 白宫宣布启动名为“金鹰”（Gold Eagle）的新计划，将AI应用从网络威胁检测扩展到漏洞管理领域。该计划旨在帮助政府机构和关键基础设施运营商更快地识别、优先级排序和修复软件漏洞。作为网络安全漏洞的集中交换中心，“金鹰”将协调联邦机构、开源软件社区和关键基础设施运营商之间的漏洞报告、验证和修复工作。此举标志着美国政府将AI技术系统性地应用于漏洞管理流程，以应对日益复杂的网络威胁环境。该计划有望显著缩短漏洞发现到修复的时间窗口，提升整体网络安全韧性。
+- 研究人员称，攻击者正在将两个零日漏洞串联利用，这些漏洞在供应商披露并修补缺陷前已被利用三周。这些漏洞影响SonicWall的防火墙产品，攻击者可能通过远程执行代码或绕过认证来入侵系统。SonicWall已发布安全更新，但用户需立即应用补丁并检查系统是否被入侵。此事件再次警示，零日漏洞的发现与修补之间存在时间窗口，企业应加强威胁情报和应急响应能力。
 
-> **来源**: [White House launches AI-driven vulnerability clearinghouse to speed cyber remediation](https://www.csoonline.com/article/4197348/white-house-launches-ai-driven-vulnerability-clearinghouse-to-speed-cyber-remediation.html)  #CSO Online
+> **来源**: [SonicWall customers under threat as attackers exploit 2 zero-days](https://cyberscoop.com/sonicwall-zero-day-vulnerabilities-exploited/)  #CyberScoop
 
-### 📰 4. Claude for Chrome新漏洞允许扩展滥用AI权限
+### ⚠️ 4. CVE-2026-49970 [高危 8.8]
 
-- Manifold Security研究发现，Anthropic的Claude for Chrome扩展存在两个未修复漏洞，影响版本1.0.80（2024年7月7日发布）。恶意浏览器扩展可利用这些漏洞，诱使Claude代表用户执行特权操作，包括读取Gmail邮件、Google Docs内容和日历条目。研究人员在报告后8个版本更新中仍未得到修复，建议用户暂时禁用该扩展或限制其权限。
+- Laravel-Mediable 7.0.0之前版本存在路径遍历漏洞，位于File::sanitizePath()函数中。攻击者可通过控制传递给MediaUploader::toDestination()的目录参数，将上传文件写入任意位置。漏洞源于宽松的字符类正则表达式允许点号和斜杠字符，结合无效的尾部trim()调用，绕过了路径清理。攻击者可利用此漏洞将文件上传到敏感位置（如文档根目录、环境配置文件），可能导致远程代码执行或数据泄露。受影响版本为7.0.0之前，建议立即升级至最新版本。
 
-> **来源**: [New bugs in Claude for Chrome allow extensions to abuse AI privileges](https://www.csoonline.com/article/4197325/new-bugs-in-claude-for-chrome-allow-extensions-to-abuse-ai-privileges.html)  #CSO Online
+> **来源**: [CVE-2026-49970 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-49970)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 5. 网络安全需要更多预防而非依赖补救
+### 📰 5. CISA敦促立即强化SharePoint，因利用漏洞事件增多
 
-- 行业观察指出，当前网络安全工具过度侧重检测而非预防，导致成本高昂且效果有限。早期系统因缺乏内置安全机制而依赖事后检测，但现代AI和自动化技术已能实现主动阻断。呼吁网络安全创新者和风险投资重新聚焦于预防性技术，如行为分析和自动补丁系统。预防性策略可降低平均事件响应时间，并减少数据泄露造成的财务损失。
+- 美国网络安全和基础设施安全局（CISA）敦促组织立即保护Microsoft SharePoint部署，警告称影响该本地协作平台的三个漏洞正在被积极利用。CISA建议管理员修补易受攻击的服务器、审查微软的缓解指南，并假设面向互联网的SharePoint实例仍是攻击者获取企业初始立足点的诱人目标。虽然应用补丁是当务之急，但CISA强调需采取多层防御措施。此建议凸显了针对广泛使用的企业软件进行主动安全加固的紧迫性。
 
-> **来源**: [Cybersecurity needs more prevention and less reliance on cure](https://www.csoonline.com/article/4196818/cybersecurity-needs-more-prevention-and-less-reliance-on-cure.html)  #CSO Online
+> **来源**: [CISA urges immediate SharePoint hardening as exploits mount](https://www.csoonline.com/article/4197775/cisa-urges-immediate-sharepoint-hardening-as-exploits-mount.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-15515 [高危 7]
+### 📰 6. NPM生态系统遭遇两次新的供应链攻击
 
-- 腾讯电脑管家 18.1.30242.301 版本被发现存在一个安全漏洞，影响组件 QMUDisk Driver 中的库 qmudisk64.sys。该漏洞可导致不受控制的搜索路径问题，攻击者需本地访问且攻击复杂度较高，利用难度较大。该漏洞的利用代码已公开披露，可能被用于攻击。厂商在早期被通知后未回应，建议用户关注官方更新。
+- 针对开发者生态系统的攻击频率和复杂性不断增加，Node.js开发者本周成为目标，多个属于开源AsyncAPI和Jscrambler代码完整性项目的npm包因开发凭证泄露而被植入恶意软件。这些事件凸显了软件供应链攻击的连锁效应，即被盗凭证被用于实施进一步的入侵。安全研究人员建议，任何安装了被污染包的开发者机器都应从干净镜像完全重建。组织需加强凭证管理和代码审查流程，以防范此类供应链威胁。
 
-> **来源**: [CVE-2026-15515 [HIGH 7]](https://nvd.nist.gov/vuln/detail/CVE-2026-15515)  CVSS 7 HIGH · #NVD · #漏洞
+> **来源**: [NPM ecosystem hit with two new supply chain compromises](https://www.csoonline.com/article/4197499/npm-ecosystem-hit-with-two-new-supply-chain-compromises.html)  #CSO Online
 
-### ⚠️ 7. CVE-2026-15506 [高危 7.8]
+### 📰 7. 最佳防御者共同构建AI代理：参加Tenable在Black Hat '26的Swarm活动
 
-- SecureAge CatchPulse 至 10.9.3 版本被发现存在一个安全漏洞，影响组件 Driver 中的 saappctl.sys 库的未知函数。该漏洞可被利用导致基于堆的缓冲区溢出，攻击者需本地访问目标系统。该漏洞的利用代码已公开披露，可能被用于实际攻击。厂商已发布版本 10.10.0 修复此问题，建议用户立即升级受影响组件。
+- Tenable宣布在Black Hat 2026举办Swarm构建活动，邀请安全从业者协作创建开源AI代理工具以推动集体防御。Gartner预测，到2028年全球财富500强企业平均将使用超过15万个AI代理（2025年不到15个），导致代理蔓延和管理挑战。当前多数安全团队孤立构建代理，缺乏协作。Swarm旨在通过开源协作开发可互操作的防御性AI代理，对抗攻击者。该活动强调共享威胁情报和自动化响应，以应对AI代理带来的新攻击面。
 
-> **来源**: [CVE-2026-15506 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-15506)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [The best defenders build AI agents together: Join Tenable for Swarm at Black Hat '26](https://www.tenable.com/blog/black-hat-2026-swarm-event-build-AI-security-agents)  #Tenable Blog
 
-### 📰 8. 忘掉模型：网络安全的关键在于“缰绳”
+### 📰 8. 8万球迷同时在线：2026年世界杯的独特网络安全挑战
 
-- 行业已开发出多种工具来引导和约束前沿大语言模型在网络安全中的应用，但攻击者也在快速跟进。所谓“缰绳”指控制模型行为的安全框架，包括输入过滤、输出审核和权限隔离。当前攻击者已开始利用模型漏洞进行提示注入和越狱攻击。安全团队应优先部署模型行为监控系统，而非仅关注模型本身的能力提升。
+- 2026年世界杯期间，北美体育场每场比赛需容纳数万名球迷，其最大安全挑战并非物理安保，而是网络环境。体育场成为企业IT中最混乱的端点环境：数万台未管理、未知设备（球迷手机）与支付系统、数字显示屏、运营平台和员工设备同时连接网络。这创造了巨大的攻击面，可能导致支付欺诈、显示内容篡改或运营中断。建议场馆部署网络分段、设备身份认证和实时威胁检测系统，并制定应急响应计划。
 
-> **来源**: [Forget the model. When it comes to cybersecurity, it’s all about the harness](https://cyberscoop.com/ai-cybersecurity-harness-autonomous-hacking/)  #CyberScoop
+> **来源**: [When 80,000 fans log on at once: The 2026 World Cup’s unique cybersecurity issues](https://www.csoonline.com/article/4196827/when-80000-fans-log-on-at-once-the-2026-world-cups-unique-cybersecurity-issues.html)  #CSO Online
 
-### 📰 9. 微软修复创纪录的570个安全漏洞
+### 📰 9. “自私的虚张声势”背后：伦敦交通局网络攻击案两名被告被判刑
 
-- 微软今日发布软件更新，修复了Windows操作系统及其他软件中的至少570个安全漏洞，几乎是上月创纪录的Patch Tuesday修复数量的三倍。微软将漏洞数量激增归因于人工智能辅助发现的漏洞。此次更新覆盖范围广泛，涉及多个产品线，建议用户尽快部署补丁以降低风险。这一趋势表明AI在安全研究中的应用正显著提升漏洞发现效率。
+- 2024年伦敦交通局网络攻击事件的两名主犯因违反《计算机滥用法》被判处各五年半监禁。法官在判决中指出，被告的行为源于“自私的虚张声势”，并非出于政治动机或复杂的技术目的。该攻击导致TfL部分系统中断，影响了伦敦公共交通网络的运营。此案凸显了针对关键基础设施的网络攻击即使由非国家行为者实施，也可能造成严重后果，并强调了法律对这类行为的严厉惩处。
 
-> **来源**: [Microsoft Patches a Record 570 Security Flaws](https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/)  #Krebs on Security
+> **来源**: ["Selfish Bravado" Behind TfL Cyber-Attack, Judge Says as Pair Jailed](https://www.infosecurity-magazine.com/news/selfish-bravado-behind-tfl/)  #Infosecurity Magazine
 
-### 📰 10. 受损登录凭证激增成为勒索软件攻击最常见入口
+### 📰 10. SANS警告：安全团队AI使用激增，但治理存在巨大缺口
 
-- Sophos的研究发现，网络钓鱼、暴力破解攻击和其他基于身份的攻击已超过软件漏洞，成为勒索软件交付的主要手段。攻击者通过窃取或猜测登录凭证，获得初始访问权限后部署勒索软件。这一趋势表明，传统的漏洞修补策略已不足以防御勒索软件，企业需加强身份验证和访问控制。研究建议组织部署多因素认证、监控异常登录行为并定期进行安全意识培训。
+- SANS研究所发布报告指出，尽管安全团队对人工智能工具的使用呈爆发式增长，但相应的AI治理项目仍处于非常初级的阶段。报告强调，随着AI应用带来的新威胁和失败案例增多，缺乏有效的治理框架将使组织面临更大的风险。SANS建议安全团队在部署AI时，必须同步建立包括风险评估、使用政策、持续监控和伦理审查在内的治理体系。这一发现对全球企业安全架构的演进具有重要警示意义，提示组织不能只追求AI的效率提升而忽视其潜在风险。
 
-> **来源**: [Compromised Logins Surge as the Most Common Entry Point for Ransomware Attacks](https://www.infosecurity-magazine.com/news/compromised-logins-ransomware-entry/)  #Infosecurity Magazine
+> **来源**: [SANS Warns of AI Governance Gap as Use by Security Teams Surges](https://www.infosecurity-magazine.com/news/sans-warns-of-ai-governance-gap/)  #Infosecurity Magazine
 
 ---
 
