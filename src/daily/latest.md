@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-07-21
+# 🤖🔒 AI+安全日报 | 2026-07-22
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. AI采用与业务加速正在改变技术风险管理的期望
+### ⚠️ 1. CVE-2026-12228 [高危 8.7] 🔬
 
-- 随着AI嵌入客户体验、内部工作流及供应链，安全领导者被要求不仅管理风险，还要帮助企业做出更明智决策并加速行动。然而，AI的发展速度远超治理其的程序，导致转型速度与安全、风险、隐私、合规及第三方风险团队理解业务暴露面的能力之间差距扩大。AI引入了提示注入等新风险，安全团队需在“快速行动”与“避免破坏”之间取得平衡。该趋势要求企业重新定义技术风险管理角色，将安全从成本中心转变为业务加速器。
+- parisneo/lollms（最新版本）的`POST /api/prompts/share`端点存在存储型跨站脚本（XSS）漏洞。攻击者可通过该端点将恶意`prompt_content`存储到`DBDirectMessage.content`中，且服务器端未进行清理。当受害者打开直接消息（DM）线程时，DM UI通过`MessageContentRenderer`使用`v-html`将渲染后的HTML插入DOM，而前端基于正则表达式的清理器无法完全防御。该漏洞影响所有使用该版本的lollms用户，攻击者可窃取会话令牌或执行恶意操作。建议升级至修复版本或实施服务器端输入验证。
 
-> **来源**: [AI adoption and business acceleration are changing the expectations of technology risk management](https://www.csoonline.com/article/4198872/ai-adoption-and-business-acceleration-are-changing-the-expectations-of-technology-risk-management.html)  #CSO Online
+> **来源**: [CVE-2026-12228 [HIGH 8.7] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-12228)  CVSS 8.7 HIGH · #NVD · #漏洞
 
-### 📰 2. 研究人员利用OpenAI的GPT构建WordPress漏洞利用
+### 📰 2. ServiceNow沙箱逃逸远程代码执行漏洞已在野外被利用
 
-- 一名发现WordPress关键漏洞的研究人员使用OpenAI的最新模型开发了漏洞利用链。该研究展示了AI如何被用于自动化漏洞利用开发，可能降低攻击门槛。虽然具体漏洞细节未公开，但此举引发了对AI在网络安全中双重用途的担忧。行业需加强AI安全治理，防止恶意使用AI进行攻击工具开发。
+- 威胁情报公司Defused报告称，ServiceNow上周修补的一个可能导致远程代码执行（RCE）的沙箱安全漏洞（CVE-2026-6875）正在被积极利用。Defused在X平台上发布报告，表示观察到针对ServiceNow预认证沙箱逃逸RCE漏洞的野外利用行为。Defused CEO Simo Kohonen在接受CSO Online采访时指出，攻击者似乎已改变战术，以应对ServiceNow的补丁，其手法与Searchlight Cyber研究人员早前公开的概念验证（PoC）有所不同。该漏洞影响所有未打补丁的ServiceNow实例，建议企业立即应用安全更新，并监控异常网络活动。
 
-> **来源**: [Researchers Build WordPress Exploit Using OpenAI's GPT](https://www.infosecurity-magazine.com/news/researchers-wordpress-exploit/)  #Infosecurity Magazine
+> **来源**: [ServiceNow’s sandbox escape RCE hole now exploited in the wild](https://www.csoonline.com/article/4198993/servicenows-sandbox-escape-rce-hole-now-exploited-in-the-wild.html)  #CSO Online
 
-### 📰 3. wp2shell（CVE-2026-63030，CVE-2026-60137）：关于WordPress核心远程代码执行链的常见问题
+### 📰 3. AI代理配置成为攻击载荷：攻击者如何瞄准开发者代理工具链
 
-- 未认证攻击者可利用两个WordPress核心漏洞CVE-2026-63030和CVE-2026-60137实现远程代码执行，影响WordPress 6.9.x和7.0.x版本。多个安全公司确认在公开披露后数天内已出现活跃野外利用，且公开的概念验证利用代码正在流传。CVE-2026-63030和CVE-2026-60137均为严重等级，攻击者无需认证即可链式利用。建议所有运行受影响版本的管理员立即应用官方补丁，并监控系统异常活动。
+- 攻击者已从躲避AI工具转向在AI工具内部进行攻击，通过投毒AI编码助手的配置文件（如settings.json钩子、.cursorrules Cursor MDC规则等）实现新型蠕虫攻击。这种攻击方式能够实现静默持久化、规避基于AI的扫描器，并通过开发者自身工具在组织仓库间传播。这些配置文件同时处于开发者信任、工具信任和供应链信任三个信任关系的交叉点，成为供应链攻击的明确目标而非附带损害。建议开发团队对AI编码助手的配置文件实施严格的版本控制和访问权限管理，并定期审计配置变更。
 
-> **来源**: [wp2shell (CVE-2026-63030, CVE-2026-60137): Frequently asked questions about remote code execution chain in WordPress Core](https://www.tenable.com/blog/wp2shell-cve-2026-63030-cve-2026-60137-frequently-asked-questions-about-remote-code-execution)  #Tenable Blog
+> **来源**: [Your AI agent’s config is now the payload: How attackers are targeting the developer agent harness](https://www.tenable.com/blog/ai-coding-assistant-agent-harness-attacks)  #Tenable Blog
 
-### 📰 4. 安全运营中心面临人类挑战：AI加速警报和威胁
+### 📰 4. 上下文炸弹预示AI时代欺骗性防御新纪元
 
-- 安全运营中心（SOC）长期受困于警报量增长、攻击面扩大和人员短缺，而AI现在增加了新复杂性：不仅信息更多，而且必须评估大量机器生成的内容。Futurum Group副总裁Fernando Montenegro指出，分析师现在需要从大量“AI垃圾”中辨别真实威胁，这种不对称性加剧了挑战。AI生成的警报可能包含虚假阳性或误导性数据，要求SOC团队具备更高分析能力。行业需开发更智能的过滤工具和培训，以帮助人类分析师有效应对AI驱动的威胁环境。
+- 攻击者正越来越多地使用AI代理来自动化网络攻击的各个阶段，这促使安全行业和企业寻找新的网络防御方法。一种有前景的技术是故意植入带有提示的诱饵文件，这些提示会触发大型语言模型（LLM）内置的内容安全护栏，旨在破坏恶意代理工作流。在网络安全中，使用诱饵资源作为警报器来提醒防御者潜在的未授权访问并非新概念，这些被称为“金丝雀”（canaries），源自煤矿中的预警系统，可以是虚假文档。这种“上下文炸弹”技术利用AI自身的机制进行防御，标志着欺骗性防御进入AI时代，但需注意其可能被对手反向利用。
 
-> **来源**: [SOCs face a human challenge as AI speeds alerts and threats](https://www.csoonline.com/article/4198016/socs-face-a-human-challenge-as-ai-speeds-alerts-and-threats.html)  #CSO Online
+> **来源**: [Context bombing heralds a new AI era of deceptive defense](https://www.csoonline.com/article/4198524/context-bombing-heralds-a-new-ai-era-of-deceptive-defense.html)  #CSO Online
 
-### 📰 5. 立即修补：WordPress REST API漏洞可导致远程代码执行
+### 📰 5. 白帽黑客Park Chan-am聚焦AI时代关键安全挑战
 
-- 运行最新版本WordPress的组织被要求修补一个影响内置REST Batch API的预认证远程代码执行（RCE）漏洞，编号为wp2shell。该漏洞允许攻击者无需插件、认证或特殊配置即可对默认WordPress安装执行任意代码。Searchlight Cyber的Adam Kues首先报告此问题，并发布了公开检查器以评估风险，在补丁可用且管理员有足够时间应用后才公布技术细节。建议所有WordPress管理员立即应用官方补丁，并检查系统是否已受攻击。
+- 被誉为“天才黑客”的Park Chan-am，在11岁就开始了白帽黑客生涯，十几岁起就在国内外黑客竞赛中获奖。他曾担任韩国多个政府机构（包括国家警察厅）的网络安全顾问，并在该国防御与朝鲜（DPRK）相关的网络攻击中发挥了关键作用。在本月由韩国多个政府机构主办的第15届信息安全日活动研讨会上，他重点讨论了AI时代的关键安全挑战，包括AI驱动的攻击自动化、深度伪造威胁以及关键基础设施的防护。Park强调，随着AI技术的普及，安全社区需要开发新的防御策略，并加强国际合作以应对跨国网络威胁。
 
-> **来源**: [Patch now: WordPress REST API bug allows remote code execution](https://www.csoonline.com/article/4198791/patch-now-wordpress-rest-api-bug-allows-remote-code-execution.html)  #CSO Online
+> **来源**: [White hat hacker Park Chan-am zeros in on the AI era’s key security challenges](https://www.csoonline.com/article/4198528/security-in-the-age-of-ai-where-to-start-key-challenges-identified-by-white-hacker-ceo-park-chan-am.html)  #CSO Online
 
-### 📰 6. 新型ACR Stealer活动利用WebDAV和MSHTA规避检测
+### ⚠️ 6. CVE-2026-10130 [高危 8.2]
 
-- 微软发出警告，指出ACR Stealer恶意软件活动近期激增，该木马采用ClickFix式社会工程学手法窃取凭证、浏览器数据和敏感商业文档。微软研究人员详细描述了2026年4月底至6月中旬观察到的两个独立活动，它们使用不同的执行技术（包括WebDAV和MSHTA）实现相同窃取目的。攻击者诱骗用户执行恶意命令以解决虚假问题，一旦执行，恶意软件会提取浏览器存储的凭证、会话令牌和文档，可能允许攻击者进行后续入侵。该活动影响Windows用户，建议企业部署端点检测与响应（EDR）系统，并加强用户安全意识培训。
+- QueryWeaver存在认证绕过漏洞，允许未认证攻击者通过提交已知受害者电子邮件地址的注册请求，获取现有账户的有效会话令牌。注册路由在检查电子邮件是否属于现有账户之前，通过Cypher MERGE操作无条件创建并链接新令牌到匹配的身份，导致服务器返回受害者身份的有效认证会话令牌。该漏洞影响所有QueryWeaver版本，攻击者可完全接管账户。建议立即应用补丁或修改注册逻辑以先验证邮箱唯一性。
 
-> **来源**: [New ACR Stealer campaigns use WebDAV, MSHTA to evade detection](https://www.csoonline.com/article/4198788/new-acr-stealer-campaigns-use-webdav-mshta-to-evade-detection.html)  #CSO Online
+> **来源**: [CVE-2026-10130 [HIGH 8.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-10130)  CVSS 8.2 HIGH · #NVD · #漏洞
 
-### 📰 7. 如何检查ChatGPT等AI工具是否引用你的网站——并提升2026年的被引用机会
+### 📰 7. Claude Mythos常见问题解答：能力、访问、竞争对手、影响
 
-- 文章指出SEO并未消亡，而是演变为适应AI工具的新形态。作者提供了检查AI工具（如ChatGPT）是否引用自己网站的方法，并给出了提升2026年被引用概率的策略。核心建议包括：优化内容结构使其更易被AI抓取和理解，使用结构化数据标记，以及建立权威性内容。对于网站运营者而言，理解AI的引用机制是维持搜索可见性的关键，因为AI工具正在改变用户获取信息的方式。
+- Anthropic公司开发的Claude Mythos是一款针对网络安全和医疗应用优化的高级AI模型。Mythos 5最初于4月向一小批经过审查的技术合作伙伴发布，计划后续更广泛推广。Anthropic建立了Project Glasswing联盟，向基础设施提供商、开源开发者及大型科技公司提供有限且受控的Mythos访问权限。该计划旨在帮助防御者比攻击者更快发现和修复漏洞，许多合作伙伴已利用该模型提升安全响应效率。此举标志着AI在安全防御领域的战略应用，可能重塑漏洞管理行业格局。
 
-> **来源**: [How to check if ChatGPT and other AI tools cite your website - and improve your chances in 2026](https://www.zdnet.com/article/how-to-check-if-chatgpt-ai-tools-cite-website-improve-chances/)  #ZDNet Security
+> **来源**: [Claude Mythos FAQ: Capabilities, access, competitors, implications](https://www.csoonline.com/article/4198019/claude-mythos-faq-capabilities-access-competitors-implications.html)  #CSO Online
 
-### 📰 8. 为何封禁AI模型无法阻止其引发的网络威胁
+### ⚠️ 8. CVE-2026-16154 [高危 7.3]
 
-- 文章指出，虽然AI公司能够发现漏洞并编写补丁，但仅靠企业无法构建应对AI网络威胁的长期防御战略。作者认为，美国政府必须承担起制定国家层面防御策略的责任，因为AI威胁具有系统性、跨领域和快速演化的特点。单纯阻止特定AI模型的使用无法解决根本问题，因为攻击者会不断利用新模型。行业意义在于，政策制定者需要从技术封锁转向构建弹性防御体系，包括威胁情报共享和主动防御机制。
+- SourceCodester Class and Exam Timetabling System 1.0/1.php存在SQL注入漏洞，影响文件/edit_room1.php中未知功能，通过操纵ID参数可实现远程SQL注入攻击。该漏洞与CVE-2026-16152类似但影响不同文件，漏洞利用代码已公开。建议用户同时修复这两个漏洞，并部署Web应用防火墙（WAF）作为临时防护措施，同时对所有数据库查询实施预编译语句。
 
-> **来源**: [Why blocking AI models won’t stop the cyber threats they create](https://cyberscoop.com/why-blocking-ai-models-wont-stop-cyber-threats-op-ed/)  #CyberScoop
+> **来源**: [CVE-2026-16154 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-16154)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 9. FBI查封NetNut代理平台和Popa僵尸网络
+### ⚠️ 9. CVE-2026-16152 [高危 7.3]
 
-- 美国联邦调查局（FBI）宣布与行业合作伙伴合作，查封了与NetNut相关的数百个域名。NetNut是一家由以色列上市公司Alarum Technologies运营的住宅代理服务。此次行动发生在KrebsOnSecurity发布调查报告约两周后，该报告将NetNut与Popa僵尸网络联系起来。Popa僵尸网络由至少200万台被恶意软件感染的设备组成，这些设备在未经受害者同意或知情的情况下被控制。该事件表明执法机构正在加强对用于网络犯罪的代理基础设施的打击，同时也提醒企业审查其使用的代理服务来源。
+- SourceCodester Class and Exam Timetabling System 1.0存在SQL注入漏洞，影响文件/edit_rooma.php中未知功能，通过操纵ID参数可实现远程SQL注入攻击。漏洞利用代码已公开，可能被广泛利用。该系统常用于教育机构排课管理，建议管理员立即应用补丁或升级到最新版本，并对所有用户输入进行参数化查询处理。
 
-> **来源**: [FBI Seizes NetNut Proxy Platform, Popa Botnet](https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/)  #Krebs on Security
+> **来源**: [CVE-2026-16152 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-16152)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 10. 提示注入攻击正在挫败AI黑客代理
+### 📰 10. AI、自动化与攻击：解读Unit 42 2026年全球事件响应报告
 
-- 一种名为“上下文轰炸”（Context Bombing）的新型提示注入攻击技术被发现，它能够欺骗恶意AI代理在造成危害前自行关闭。该技术通过向AI系统注入大量无关或矛盾的上下文信息，使其处理逻辑混乱并触发安全终止机制。这种方法可被防御方主动用于对抗自动化攻击工具，例如在AI驱动的渗透测试或恶意软件中植入“自杀”指令。该发现为AI安全领域提供了新的防御思路，但同时也可能被攻击者滥用，需谨慎评估其双刃剑效应。
+- Palo Alto Networks的Unit 42团队发布了2026年全球事件响应报告，深入分析了AI对网络安全的影响。报告指出，AI驱动的攻击自动化已成为主流，攻击者利用生成式AI快速生成钓鱼邮件、恶意代码和漏洞利用工具，显著缩短了攻击时间线。同时，AI也被用于防御端，例如自动化威胁检测、事件响应和漏洞修复。报告还强调了勒索软件、供应链攻击和云安全漏洞仍然是主要威胁，而AI的滥用加剧了这些风险的复杂性。Unit 42建议企业将AI安全纳入整体风险管理框架，并投资于AI驱动的安全运营中心（SOC）以应对日益自动化的攻击。
 
-> **来源**: [Prompt Injection Attacks Are Thwarting AI Hacking Agents](https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/)  #Wired Security
+> **来源**: [AI, Automation and Attacks: Unpacking the Unit 42 2026 Global Incident Response Report](https://unit42.paloaltonetworks.com/ai-insights-incident-response-report/)  #Unit 42
 
 ---
 
