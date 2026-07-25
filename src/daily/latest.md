@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-07-25
+# 🤖🔒 AI+安全日报 | 2026-07-26
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Top AIs invent same fake PyPl and npm package names
+### ⚠️ 1. CVE-2026-49499 [HIGH 8.8]
 
-Enterprise software developers continue to be in danger of falling victim to slopsquatting, where AI coding tools hallucinate the existence of nonexistent libraries and hackers create malicious packages in response. The top AI coding tools are remarkably consistent in their hallucinations: Researche
+Dell PowerProtect Data Manager, versions prior to 20.2.0.0, contain(s) a Generation of Incorrect Security Tokens vulnerability in the IAM. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Elevation of privileges.
 
-> **来源**: [Top AIs invent same fake PyPl and npm package names](https://www.csoonline.com/article/4201164/top-ais-invent-same-fake-pypl-and-npm-package-names-2.html)  #CSO Online
+> **来源**: [CVE-2026-49499 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-49499)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 2. Ransomware groups are hammering your vulnerable VPNs
+### ⚠️ 2. CVE-2026-64833 [HIGH 7.1]
 
-Cybercriminals are actively exploiting a recently discovered vulnerability in Palo Alto Networks firewall and VPN appliances to deploy the Qilin ransomware strain. A critical authentication bypass flaw (CVE-2026-0257) in Palo Alto GlobalProtect portal and gateway was the common link in a series of i
+FFmpeg versions 0.7.1 through 8.1.2 contain an out-of-bounds read vulnerability in the S/PDIF muxer that allows attackers to access memory beyond buffer boundaries by supplying a crafted DTS stream with a core_size value larger than the actual packet length. Attackers can exploit the missing bounds 
 
-> **来源**: [Ransomware groups are hammering your vulnerable VPNs](https://www.csoonline.com/article/4201019/ransomware-groups-are-hammering-your-vulnerable-vpns.html)  #CSO Online
+> **来源**: [CVE-2026-64833 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-64833)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### 📰 3. Check Point hole grants unauthenticated attackers full SmartConsole admin privileges
+### ⚠️ 3. CVE-2026-46738 [CRITICAL 9.1]
 
-Check Point has confirmed that a critical security hole in its SmartConsole management tool, one that allows unauthenticated attackers to assume full admin privileges, is now being exploited in the wild. The vulnerability, CVE-2026-16232, was given a CVSS score of 9.3. In its security alert, Check P
+Dell PowerProtect Data Manager, versions prior to 20.2.0.0, contain(s) an Improper Input Validation vulnerability in the REST API. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Elevation of privileges.
 
-> **来源**: [Check Point hole grants unauthenticated attackers full SmartConsole admin privileges](https://www.csoonline.com/article/4200913/check-point-hole-grants-unauthenticated-attackers-full-smartconsole-admin-privileges.html)  #CSO Online
+> **来源**: [CVE-2026-46738 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-46738)  CVSS 9.1 CRITICAL · #NVD · #漏洞
 
-### 📰 4. AgentForger proves AI agents can become persistent insider threats
+### ⚠️ 4. CVE-2026-40714 [HIGH 7.2]
 
-A new attack method found by Zenity Labs reveals that AI agents are becoming persistent insiders that attackers can recruit, rather than malware they have to install. Its researchers have discovered AgentForger, a phishing-based attack that silently creates and launches a fully autonomous AI agent w
+Dell PowerProtect Data Manager, versions prior to 20.2.0.0, contain(s) an Improper Input Validation vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Elevation of privileges.
 
-> **来源**: [AgentForger proves AI agents can become persistent insider threats](https://www.csoonline.com/article/4200978/agentforger-proves-ai-agents-can-become-persistent-insider-threats.html)  #CSO Online
+> **来源**: [CVE-2026-40714 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-40714)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 5. ChatGPT Among Top 10 Most Impersonated Brands in Phishing Attacks, Says Check Point
+### 📰 5. Tycoon2FA takedown reshapes the phishing landscape
 
-OpenAI’s chatbot tool ChatGPT ranked among the top 10 most impersonated brands in phishing attacks for the first time
+Traditional phishing techniques are in decline as a result of the disruption of the Tycoon2FA phishing-as-a-service (PHaaS) platform, Microsoft said in a new report, “Email threat landscape: Q2 2026 trends and insights”. “Phishing volume linked to the platform fell 92% from pre-disruption averages, 
 
-> **来源**: [ChatGPT Among Top 10 Most Impersonated Brands in Phishing Attacks, Says Check Point](https://www.infosecurity-magazine.com/news/chatgpt-most-impersonated-brands/)  #Infosecurity Magazine
+> **来源**: [Tycoon2FA takedown reshapes the phishing landscape](https://www.csoonline.com/article/4201146/tycoon2fa-takedown-reshapes-the-phishing-landscape.html)  #CSO Online
 
-### 📰 6. Ransomware Attacks Targeting Universities on the Rise
+### 📰 6. 4 ways AI-driven defense is rewriting the cybersecurity playbook
 
-Comparitech’s analysis of incidents in the first half of 2026 finds that the emergence of The Gentlemen ransomware has resulted in surge in attacks against higher education
+The cybersecurity landscape has evolved beyond human scale. Today’s adversaries have replaced predictable, manual playbooks with machine-generated attack chains that can breach traditional controls in seconds. To bridge the gap, organizations must move past legacy, reactive controls and embrace a fu
 
-> **来源**: [Ransomware Attacks Targeting Universities on the Rise](https://www.infosecurity-magazine.com/news/university-ransomware-attacks-rise/)  #Infosecurity Magazine
+> **来源**: [4 ways AI-driven defense is rewriting the cybersecurity playbook](https://www.csoonline.com/article/4200895/4-ways-ai-driven-defense-is-rewriting-the-cybersecurity-playbook-2.html)  #CSO Online
 
-### 📰 7. Two-Thirds of Ransomware Victims Say AI Boosted Attack Effectiveness
+### 📰 7. Cisco’s new AI model tells code reviewers where to look for vulnerabilities
 
-A new study of organizations which have fallen victim to ransomware suggests the rise of AI-tools being used by hackers is making life harder for defenders
+Cisco has revealed a family of open-weight AI models called Antares that, it said, can help security teams isolate potentially vulnerable parts of a software repository before deeper investigation begins. Rather than detecting a specific CVE or generating a patch, these models search a codebase usin
 
-> **来源**: [Two-Thirds of Ransomware Victims Say AI Boosted Attack Effectiveness](https://www.infosecurity-magazine.com/news/ai-boosts-ransomware-effectiveness/)  #Infosecurity Magazine
+> **来源**: [Cisco’s new AI model tells code reviewers where to look for vulnerabilities](https://www.csoonline.com/article/4200151/ciscos-new-ai-model-tells-code-reviewers-where-to-look-for-vulnerabilities-2.html)  #CSO Online
 
-### 📰 8. Government Agencies Falling Victim to Ransomware Daily, Warns Study
+### 📰 8. GitHub to Update npm to Thwart Software Supply Chain Attacks
 
-Government organizations are targeted by attackers who know agencies cannot afford disruption to public services
+NPM, part of GitHub, announced a new version of the npm package manager with several security improvements, including disabling install scripts
 
-> **来源**: [Government Agencies Falling Victim to Ransomware Daily, Warns Study](https://www.infosecurity-magazine.com/news/government-ransomware-daily/)  #Infosecurity Magazine
+> **来源**: [GitHub to Update npm to Thwart Software Supply Chain Attacks](https://www.infosecurity-magazine.com/news/github-update-npm-supply-chain/)  #Infosecurity Magazine
 
-### 📰 9. Russian espionage group using novel Zimbra exploit to steal sensitive data from Western countries
+### 📰 9. Industry’s message on CIRCIA: Please ask us fewer questions about cyberattacks
 
-Laundry Bear exploited a zero-day vulnerability for five months before it was patched in November 2025, and the group is still actively exploiting vulnerable environments. The post Russian espionage group using novel Zimbra exploit to steal sensitive data from Western countries appeared first on Cyb
+The administration set a target date of September for CISA to finalize the rule, but where the agency is headed remains a mystery to some. The post Industry’s message on CIRCIA: Please ask us fewer questions about cyberattacks appeared first on CyberScoop.
 
-> **来源**: [Russian espionage group using novel Zimbra exploit to steal sensitive data from Western countries](https://cyberscoop.com/russian-laundry-bear-zimbra-exploit/)  #CyberScoop
+> **来源**: [Industry’s message on CIRCIA: Please ask us fewer questions about cyberattacks](https://cyberscoop.com/cisa-circia-cyber-incident-reporting-rule-feedback/)  #CyberScoop
 
-### 📰 10. Smashing Security podcast #477: How 14 orders of chicken McNuggets helped nail a suspected Russian hacker
+### 📰 10. Hotel Wi-Fi Routers Compromised to Steal Corporate Login Credentials From Visitors
 
-A Russian intelligence-linked hacker is arrested in Thailand while enjoying a beach holiday - and the trail of evidence that nailed him to the Russian government includes 14 separate orders of chicken McNuggets. Meanwhile, AI music generator Suno has been hacked - and the stolen data appears to show
+Researchers at ReliaQuest warned of widespread DNS poisoning attacks targeting the hospitality sector as part of a cyber espionage campaign
 
-> **来源**: [Smashing Security podcast #477: How 14 orders of chicken McNuggets helped nail a suspected Russian hacker](https://grahamcluley.com/smashing-security-podcast-477/)  #Graham Cluley
+> **来源**: [Hotel Wi-Fi Routers Compromised to Steal Corporate Login Credentials From Visitors](https://www.infosecurity-magazine.com/news/hotel-wifi-dns-poisoning/)  #Infosecurity Magazine
 
 ---
 
