@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>2026-06-29 - AI+安全日报</title>
+        <title>2026-07-27 - AI+安全日报</title>
 
 
         <!-- Custom HTML head -->
@@ -177,38 +177,80 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="-ai安全日报--2026-06-29"><a class="header" href="#-ai安全日报--2026-06-29">🤖🔒 AI+安全日报 | 2026-06-29</a></h1>
+                        <h1 id="-ai安全日报--2026-07-27"><a class="header" href="#-ai安全日报--2026-07-27">🤖🔒 AI+安全日报 | 2026-07-27</a></h1>
 <blockquote>
-<p>今日共收录 <strong>4</strong> 条，AI+安全领域重要动态速览</p>
+<p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-英国网络安全市场扩张至147亿英镑ai安全公司增长强劲"><a class="header" href="#-1-英国网络安全市场扩张至147亿英镑ai安全公司增长强劲">📰 1. 英国网络安全市场扩张至147亿英镑，AI安全公司增长强劲</a></h3>
+<h3 id="-1-cve-2026-65917-高危-88"><a class="header" href="#-1-cve-2026-65917-高危-88">⚠️ 1. CVE-2026-65917 [高危 8.8]</a></h3>
 <ul>
-<li>英国网络安全行业收入达到147亿英镑，其中AI安全公司成为主要增长驱动力，年增长率超过30%。市场扩张得益于企业数字化转型加速、监管合规要求提升以及地缘政治威胁加剧。AI安全领域涵盖威胁检测、自动化响应和身份验证等方向，吸引了大量风险投资。该趋势表明，AI技术正从攻击工具转变为防御核心，但同时也带来对抗性机器学习等新风险，需平衡创新与安全。</li>
+<li>CyberPanel 1.9.1及之前版本（在提交b198460中修复）的IncBackups应用程序的增量备份处理程序（deleteBackup、fetchRestorePoints和restorePoint）中存在一个不安全的直接对象引用（IDOR）漏洞。该漏洞允许经过身份验证的面板用户通过提供攻击者控制的全局顺序IncJob整数ID（该ID从未重新限定到授权域）来访问或操纵其他租户的备份资源。攻击者可以枚举顺序备份ID来读取、修改或删除其他租户的备份数据。建议用户立即升级到包含修复的版本。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/uks-cyber-sector-grows-revenue-11/">UK Cybersecurity Market Expands to £14.7bn with Strong Growth in AI Security Firms</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-65917">CVE-2026-65917 [HIGH 8.8]</a>  CVSS 8.8 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-2-ai采用速度超越安全策略使组织暴露于网络风险"><a class="header" href="#-2-ai采用速度超越安全策略使组织暴露于网络风险">📰 2. AI采用速度超越安全策略，使组织暴露于网络风险</a></h3>
+<h3 id="-2-cve-2026-65916-高危-81"><a class="header" href="#-2-cve-2026-65916-高危-81">⚠️ 2. CVE-2026-65916 [高危 8.1]</a></h3>
 <ul>
-<li>ISACA发布报告警告称，尽管AI已成为企业常态，但许多组织尚未正式制定围绕其使用的安全或安保策略。报告指出，这种策略滞后导致组织在部署AI系统时缺乏必要的防护措施，增加了数据泄露和恶意利用的风险。该调查覆盖全球多个行业，显示AI采用率与安全治理之间存在显著差距。行业意义在于提醒企业必须同步推进AI创新与安全框架建设，否则将面临合规与运营双重挑战。</li>
+<li>CyberPanel 1.9.1及之前版本（在提交b198460中修复）存在一个缺失授权漏洞，位于cancelBackupCreation处理程序中。该漏洞允许经过身份验证的用户通过发送带有任意backupCancellationDomain和fileName参数的精心构造的POST请求，终止其他租户的备份进程、删除备份归档、破坏备份状态文件以及删除数据库记录。攻击者可以利用此漏洞破坏多租户环境中的数据完整性。建议用户立即升级到包含修复的版本。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/ai-adoption-outpaces-safety-policy/">AI Adoption Outpaces Safety Policies, Leaving Organizations Exposed to Cyber Risk</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-65916">CVE-2026-65916 [HIGH 8.1]</a>  CVSS 8.1 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-3-ncsc警告ai驱动的漏洞补丁浪潮"><a class="header" href="#-3-ncsc警告ai驱动的漏洞补丁浪潮">📰 3. NCSC警告AI驱动的“漏洞补丁浪潮”</a></h3>
+<h3 id="-3-微软在创纪录的补丁星期二修复570个cve漏洞"><a class="header" href="#-3-微软在创纪录的补丁星期二修复570个cve漏洞">📰 3. 微软在创纪录的补丁星期二修复570个CVE漏洞</a></h3>
 <ul>
-<li>英国国家网络安全中心（NCSC）警告称，AI工具将加速漏洞发现和利用，导致大量新软件更新涌现。攻击者利用AI自动化扫描和生成漏洞利用代码，迫使厂商频繁发布补丁。NCSC敦促组织提前准备，包括建立补丁管理流程、测试更新兼容性并优先修复关键漏洞。此趋势将增加安全团队的工作负担，建议采用自动化补丁工具和漏洞优先级评分系统。</li>
+<li>微软在7月补丁星期二更新中修复了创纪录的570个CVE漏洞，专家警告AI正大幅加速漏洞发现并增加补丁量。此次更新涵盖Windows、Office、Azure和Exchange等产品，其中包含多个严重等级为“关键”的远程代码执行漏洞，影响所有受支持版本。AI驱动的漏洞扫描工具使攻击者能更快识别和利用新漏洞，导致补丁周期压力增大。建议企业优先部署关键补丁，并采用自动化补丁管理系统以应对日益增长的更新频率。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/ncsc-warns-aifuelled-vulnerability/">NCSC Warns of an AI-Fuelled “Vulnerability Patch Wave”</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/microsoft-570-cves-patch-tuesday/">Microsoft Patches 570 CVEs in Record Patch Tuesday</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-4-anthropic推出claude-security用于ai漏洞扫描"><a class="header" href="#-4-anthropic推出claude-security用于ai漏洞扫描">📰 4. Anthropic推出Claude Security用于AI漏洞扫描</a></h3>
+<h3 id="-4-德国执法机构声称瓦解大型钓鱼即服务组织kratos"><a class="header" href="#-4-德国执法机构声称瓦解大型钓鱼即服务组织kratos">📰 4. 德国执法机构声称“瓦解”大型钓鱼即服务组织Kratos</a></h3>
 <ul>
-<li>Anthropic公司宣布Claude Security进入公开测试阶段，为企业提供AI驱动的代码扫描功能，无需API集成或自定义代理即可使用。该工具利用Claude模型自动识别代码中的安全漏洞，旨在简化企业安全审计流程。其零集成特性降低了部署门槛，使中小型企业也能快速获得高级漏洞检测能力。此举标志着AI安全工具向更易用、更自主的方向发展，可能推动行业安全实践标准化。</li>
+<li>德国执法机构领导全球执法行动，查封了大型钓鱼即服务（PhaaS）组织Kratos的基础设施，并在印度尼西亚逮捕了一名未具名的Kratos“开发者和技术管理员”。该行动涉及美国、印度尼西亚等多国机构，德国方面声称Kratos基础设施“已被完全禁用”，且“Kratos支持的钓鱼活动无法再继续进行”。然而，网络安全分析师和顾问质疑此次行动对企业面临的整体钓鱼威胁能产生多大影响，因为PhaaS生态系统具有高度弹性和分散性。专家建议组织继续加强员工安全意识培训和邮件安全过滤。</li>
 </ul>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/anthropic-claude-security-for-ai/">Anthropic Rolls Out Claude Security for AI Vulnerability Scanning</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4200215/german-law-enforcement-claims-to-have-dismantled-mega-phishing-as-a-service-group-kratos.html">German law enforcement claims to have ‘dismantled’ mega phishing-as-a-service group Kratos</a>  #CSO Online</p>
+</blockquote>
+<h3 id="-5-恶意软件正针对软件开发环境中的ai工具"><a class="header" href="#-5-恶意软件正针对软件开发环境中的ai工具">📰 5. 恶意软件正针对软件开发环境中的AI工具</a></h3>
+<ul>
+<li>CyberScoop报道称，一种新型蠕虫恶意软件正在软件开发环境中传播，专门针对开发者使用的AI辅助工具（如GitHub Copilot、Codex等）。该恶意软件伪装成日常代码提交或API调用，通过感染AI模型训练数据或代码补全建议，诱导开发者引入后门或漏洞。其行为与正常开发活动高度相似，难以被传统安全工具检测，且来源和最终目的尚未明确。安全研究人员警告，此类攻击可能通过污染AI供应链（如模型权重、训练数据集）实现大规模渗透，尤其威胁开源项目和CI/CD流水线。建议开发者对AI工具生成的代码进行人工审查，并隔离开发环境与生产网络。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/sandworm-mode-malware-ai-supply-chain-crowdstrike/">Malware is targeting AI tools in software development environments</a>  #CyberScoop</p>
+</blockquote>
+<h3 id="-6-英国政府更新国家风险登记册并发出网络警告"><a class="header" href="#-6-英国政府更新国家风险登记册并发出网络警告">📰 6. 英国政府更新国家风险登记册并发出网络警告</a></h3>
+<ul>
+<li>英国政府更新了国家风险登记册，新增对灾难性网络攻击潜在影响的警告，强调此类攻击可能瘫痪关键基础设施（如能源、医疗和交通系统）。报告指出，国家级黑客组织或勒索软件团伙可能利用AI技术发动大规模协同攻击，导致数周服务中断和经济损失数十亿英镑。该更新旨在提升公共和私营部门的应急准备意识，建议组织加强网络弹性、制定业务连续性计划并参与政府主导的演习。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/uk-national-risk-register-cyber/">Government Updates UK’s National Risk Register with Cyber Warnings</a>  #Infosecurity Magazine</p>
+</blockquote>
+<h3 id="-7-lidl通知客户第三方数据泄露事件"><a class="header" href="#-7-lidl通知客户第三方数据泄露事件">📰 7. Lidl通知客户第三方数据泄露事件</a></h3>
+<ul>
+<li>超市巨头Lidl披露了一起供应商数据泄露事件，影响客户个人信息，包括姓名、地址和支付卡数据。攻击者通过入侵Lidl使用的第三方服务提供商系统，获取了部分客户记录，但Lidl自身系统未受影响。该公司已通知受影响的客户并建议监控账户异常活动，同时与执法部门合作调查。此事件再次警示供应链安全风险，企业应严格审查第三方安全合规性并实施数据最小化原则。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/lidl-notifies-customers-of/">Lidl Notifies Customers of Third-Party Data Breach</a>  #Infosecurity Magazine</p>
+</blockquote>
+<h3 id="-8-新型dolphin-x窃密器利用ai画像优先锁定目标"><a class="header" href="#-8-新型dolphin-x窃密器利用ai画像优先锁定目标">📰 8. 新型Dolphin X窃密器利用AI画像优先锁定目标</a></h3>
+<ul>
+<li>安全研究人员发现一款名为Dolphin X的新型信息窃取恶意软件，其核心创新在于集成了人工智能驱动的受害者画像与排序功能。该恶意软件能够自动分析窃取到的系统信息、浏览器数据及凭证，根据潜在经济价值对受害者进行分级排序，使攻击者能优先处理高价值目标。Dolphin X的AI模块可识别企业财务系统、加密货币钱包及高权限账户等关键资产，大幅提升攻击效率。这一技术演进标志着信息窃取攻击正从“广撒网”向“精准打击”转型，对企业和个人用户的数据安全构成更严峻威胁。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/new-dolphin-x-stealer-ai-targets/">New Dolphin X Stealer Employs AI Profiling to Prioritize Targets</a>  #Infosecurity Magazine</p>
+</blockquote>
+<h3 id="-9-cisa近期github泄露事件的经验教训"><a class="header" href="#-9-cisa近期github泄露事件的经验教训">📰 9. CISA近期GitHub泄露事件的经验教训</a></h3>
+<ul>
+<li>美国网络安全和基础设施安全局（CISA）发布了一份关于数据泄露事件的复盘报告：一名承包商在公共GitHub仓库中发布了数十个内部CISA凭据（包括AWS GovCloud密钥），持续近六个月后才被KrebsOnSecurity发现。泄露的凭据包括API令牌、数据库密码和云服务密钥，可能允许攻击者访问CISA的敏感系统。CISA的初始响应被批评为缓慢且缺乏透明度，例如未及时撤销所有受影响凭据、未通知受影响供应商。专家指出，该事件暴露了三大教训：一是承包商访问权限需严格限制并定期审计；二是GitHub等代码托管平台应启用凭据扫描和自动告警；三是事件响应流程必须包含第三方依赖的快速隔离。CISA已承诺加强供应链安全审查，并部署GitHub Secret Scanning工具。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/">Lessons Learned from CISA’s Recent GitHub Leak</a>  #Krebs on Security</p>
+</blockquote>
+<h3 id="-10-scattered-spider黑客在审判首日认罪"><a class="header" href="#-10-scattered-spider黑客在审判首日认罪">📰 10. Scattered Spider黑客在审判首日认罪</a></h3>
+<ul>
+<li>两名英国男子在伦敦法庭认罪，承认参与2024年8月导致伦敦交通局（TfL）网络瘫痪的网络攻击，该攻击导致地铁、公交和铁路系统大面积中断。两人是臭名昭著的Scattered Spider黑客组织核心成员，该组织以针对大型企业（如Uber、Rockstar Games）的社交工程和勒索攻击闻名。原定六周的审判在第一天即告终结，两人面临共谋实施计算机滥用、敲诈勒索等多项指控。TfL攻击中，黑客通过SIM交换和钓鱼获取员工凭证，进而加密关键系统并索要赎金。此案凸显了Scattered Spider的“低技术高社会工程”策略的威胁性，以及英国司法系统对关键基础设施攻击的零容忍态度。安全专家建议，交通、能源等关键基础设施企业应部署多因素认证（MFA）和SIM卡锁定机制，并定期进行社交工程演练。</li>
+</ul>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/">Scattered Spider Hackers Plead Guilty on Day 1 of Trial</a>  #Krebs on Security</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -219,11 +261,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../daily/2026-06-30.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../daily/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../daily/2026-06-27.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../daily/2026-07-26.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -233,11 +275,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../daily/2026-06-30.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../daily/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../daily/2026-06-27.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../daily/2026-07-26.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
