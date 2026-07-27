@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-07-27
+# 🤖🔒 AI+安全日报 | 2026-07-28
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-65917 [高危 8.8]
+### 📰 1. Certighost 漏洞困扰微软 Active Directory 证书服务
 
-- CyberPanel 1.9.1及之前版本（在提交b198460中修复）的IncBackups应用程序的增量备份处理程序（deleteBackup、fetchRestorePoints和restorePoint）中存在一个不安全的直接对象引用（IDOR）漏洞。该漏洞允许经过身份验证的面板用户通过提供攻击者控制的全局顺序IncJob整数ID（该ID从未重新限定到授权域）来访问或操纵其他租户的备份资源。攻击者可以枚举顺序备份ID来读取、修改或删除其他租户的备份数据。建议用户立即升级到包含修复的版本。
+- 安全研究人员警告称，微软Active Directory证书服务（AD CS）中存在一个漏洞，允许低权限域用户冒充域控制器。该漏洞被命名为Certighost，源于证书颁发机构（CA）在目录对象解析过程中使用的一种称为“chase”的注册回退机制。攻击者可通过提供如“cdc”等请求属性，诱骗CA获取攻击者控制的身份，而非合法的域控制器。此漏洞影响范围广泛，可能导致攻击者获得域内最高权限，企业应立即审查并修补AD CS配置。
 
-> **来源**: [CVE-2026-65917 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-65917)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [Certighost haunts Microsoft Active Directory Certificate Services](https://www.csoonline.com/article/4201771/certighost-haunts-microsoft-active-directory-certificate-services.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-65916 [高危 8.1]
+### 📰 2. 黑客被黑：Klue 漏洞事件与第三方网络风险的新现实
 
-- CyberPanel 1.9.1及之前版本（在提交b198460中修复）存在一个缺失授权漏洞，位于cancelBackupCreation处理程序中。该漏洞允许经过身份验证的用户通过发送带有任意backupCancellationDomain和fileName参数的精心构造的POST请求，终止其他租户的备份进程、删除备份归档、破坏备份状态文件以及删除数据库记录。攻击者可以利用此漏洞破坏多租户环境中的数据完整性。建议用户立即升级到包含修复的版本。
+- 2026年发生的Klue安全事件颠覆了传统认知：原本只是一起软件即服务（SaaS）供应链漏洞事件，却演变为一个罕见案例——第二个犯罪团伙声称入侵了第一个勒索团伙，并窃取了已被盗的数据。该事件暴露了SaaS集成、基于身份信任机制以及第三方风险管理中的根本性弱点。它不仅仅是又一起勒索软件故事，而是揭示了攻击者自身基础设施也可能存在安全漏洞，导致“黑吃黑”的局面。这一事件警示企业，在评估第三方风险时，不仅要考虑服务提供商本身，还需考虑其可能面临的来自其他攻击者的连锁威胁。
 
-> **来源**: [CVE-2026-65916 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-65916)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [When the hackers get hacked: The Klue breach and the new reality of third-party cyber risk](https://www.csoonline.com/article/4200130/when-the-hackers-get-hacked-the-klue-breach-and-the-new-reality-of-third-party-cyber-risk.html)  #CSO Online
 
-### 📰 3. 微软在创纪录的补丁星期二修复570个CVE漏洞
+### ⚠️ 3. CVE-2026-66033 [高危 7.5]
 
-- 微软在7月补丁星期二更新中修复了创纪录的570个CVE漏洞，专家警告AI正大幅加速漏洞发现并增加补丁量。此次更新涵盖Windows、Office、Azure和Exchange等产品，其中包含多个严重等级为“关键”的远程代码执行漏洞，影响所有受支持版本。AI驱动的漏洞扫描工具使攻击者能更快识别和利用新漏洞，导致补丁周期压力增大。建议企业优先部署关键补丁，并采用自动化补丁管理系统以应对日益增长的更新频率。
+- libssh2库至1.11.1版本（已在提交a2ed82d中修复）存在一个预认证整数下溢漏洞，位于src/openssl.c文件的ssh2_cipher_crypt()函数中。恶意SSH服务器可通过在握手期间协商AES-GCM密码，利用计算blocksize减去aadlen再减去认证标签长度时的表达式下溢，触发越界读取和接近SIZE_MAX长度的memcpy调用，导致任何连接客户端立即崩溃。该漏洞影响所有使用受影响版本libssh2的SSH客户端，攻击者无需认证即可远程利用，建议用户立即升级至修复版本。
 
-> **来源**: [Microsoft Patches 570 CVEs in Record Patch Tuesday](https://www.infosecurity-magazine.com/news/microsoft-570-cves-patch-tuesday/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-66033 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-66033)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 4. 德国执法机构声称“瓦解”大型钓鱼即服务组织Kratos
+### ⚠️ 4. CVE-2026-65710 [高危 7.1]
 
-- 德国执法机构领导全球执法行动，查封了大型钓鱼即服务（PhaaS）组织Kratos的基础设施，并在印度尼西亚逮捕了一名未具名的Kratos“开发者和技术管理员”。该行动涉及美国、印度尼西亚等多国机构，德国方面声称Kratos基础设施“已被完全禁用”，且“Kratos支持的钓鱼活动无法再继续进行”。然而，网络安全分析师和顾问质疑此次行动对企业面临的整体钓鱼威胁能产生多大影响，因为PhaaS生态系统具有高度弹性和分散性。专家建议组织继续加强员工安全意识培训和邮件安全过滤。
+- sysPass 3.2.11及之前版本存在缺失授权漏洞，允许具有PUBLICLINK_CREATE配置文件标志的认证用户触发未经授权的解密和持久存储任何保险库账户的密码。漏洞源于公开链接创建流程中缺乏AccountAcl检查，攻击者可调用saveCreateFromAccountAction端点，使AccountService::getDataForLink加载任意目标账户而不受AccountFilterUser限制。此漏洞可导致敏感凭证泄露，影响所有使用sysPass的企业，建议立即修补并限制PUBLICLINK_CREATE权限的分配。
 
-> **来源**: [German law enforcement claims to have ‘dismantled’ mega phishing-as-a-service group Kratos](https://www.csoonline.com/article/4200215/german-law-enforcement-claims-to-have-dismantled-mega-phishing-as-a-service-group-kratos.html)  #CSO Online
+> **来源**: [CVE-2026-65710 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-65710)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### 📰 5. 恶意软件正针对软件开发环境中的AI工具
+### ⚠️ 5. CVE-2026-65708 [高危 8.1]
 
-- CyberScoop报道称，一种新型蠕虫恶意软件正在软件开发环境中传播，专门针对开发者使用的AI辅助工具（如GitHub Copilot、Codex等）。该恶意软件伪装成日常代码提交或API调用，通过感染AI模型训练数据或代码补全建议，诱导开发者引入后门或漏洞。其行为与正常开发活动高度相似，难以被传统安全工具检测，且来源和最终目的尚未明确。安全研究人员警告，此类攻击可能通过污染AI供应链（如模型权重、训练数据集）实现大规模渗透，尤其威胁开源项目和CI/CD流水线。建议开发者对AI工具生成的代码进行人工审查，并隔离开发环境与生产网络。
+- sysPass 3.2.11及之前版本存在不安全的直接对象引用漏洞（IDOR），允许任何经过身份验证的攻击者访问其无权访问的账户文件附件。漏洞源于AccountFileController中缺乏授权检查，攻击者可通过下载、查看、删除、上传和列出操作提供任意数字文件ID，枚举并操纵保险库中的任何附件，绕过账户级访问控制。该漏洞影响所有使用sysPass进行密码管理的组织，建议立即升级至3.2.11之后的版本，并实施严格的ACL审计。
 
-> **来源**: [Malware is targeting AI tools in software development environments](https://cyberscoop.com/sandworm-mode-malware-ai-supply-chain-crowdstrike/)  #CyberScoop
+> **来源**: [CVE-2026-65708 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-65708)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 6. 英国政府更新国家风险登记册并发出网络警告
+### ⚠️ 6. CVE-2026-65709 [高危 8.3]
 
-- 英国政府更新了国家风险登记册，新增对灾难性网络攻击潜在影响的警告，强调此类攻击可能瘫痪关键基础设施（如能源、医疗和交通系统）。报告指出，国家级黑客组织或勒索软件团伙可能利用AI技术发动大规模协同攻击，导致数周服务中断和经济损失数十亿英镑。该更新旨在提升公共和私营部门的应急准备意识，建议组织加强网络弹性、制定业务连续性计划并参与政府主导的演习。
+- sysPass 至3.2.11版本存在缺失对象级授权漏洞，影响其JSON-RPC API。攻击者作为API令牌持有者可枚举账户元数据、覆盖密码并删除整个保险库中的账户，无需逐账户访问控制。具体而言，攻击者可调用AccountController方法（如viewAction、editAction、deleteAction和editPassAction），绕过AccountFilterUser检查，修改或删除超出令牌权限范围的账户。该漏洞严重等级为8.3（高危），建议用户立即升级至3.2.11以上版本，并实施严格的API权限审计。
 
-> **来源**: [Government Updates UK’s National Risk Register with Cyber Warnings](https://www.infosecurity-magazine.com/news/uk-national-risk-register-cyber/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-65709 [HIGH 8.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-65709)  CVSS 8.3 HIGH · #NVD · #漏洞
 
-### 📰 7. Lidl通知客户第三方数据泄露事件
+### 📰 7. 假设AI网络安全攻击是未来：43%的公司已遭遇过
 
-- 超市巨头Lidl披露了一起供应商数据泄露事件，影响客户个人信息，包括姓名、地址和支付卡数据。攻击者通过入侵Lidl使用的第三方服务提供商系统，获取了部分客户记录，但Lidl自身系统未受影响。该公司已通知受影响的客户并建议监控账户异常活动，同时与执法部门合作调查。此事件再次警示供应链安全风险，企业应严格审查第三方安全合规性并实施数据最小化原则。
+- CDW最新研究显示，人工智能（AI）正在驱动新型网络钓鱼和基于恶意软件的攻击，43%的受访公司已遭遇过此类攻击。该研究强调，AI攻击正变得日益复杂，能够生成高度定制化的钓鱼邮件和绕过传统检测的恶意代码。然而，报告也指出，尽管威胁加剧，但并非所有公司都充分使用AI来防御这些攻击。行业意义在于，企业必须加速采用AI驱动的安全工具，以应对AI赋能的攻击者，否则将面临更大的安全风险。
 
-> **来源**: [Lidl Notifies Customers of Third-Party Data Breach](https://www.infosecurity-magazine.com/news/lidl-notifies-customers-of/)  #Infosecurity Magazine
+> **来源**: [Assume AI cybersecurity attacks are the future: 43% of companies have already experienced it](https://www.zdnet.com/article/assume-ai-cybersecurity-attacks-are-the-future-43-percent-of-companies-have-already-experienced-it/)  #ZDNet Security
 
-### 📰 8. 新型Dolphin X窃密器利用AI画像优先锁定目标
+### 📰 8. OpenAI 未加入新的开放安全 AI 联盟
 
-- 安全研究人员发现一款名为Dolphin X的新型信息窃取恶意软件，其核心创新在于集成了人工智能驱动的受害者画像与排序功能。该恶意软件能够自动分析窃取到的系统信息、浏览器数据及凭证，根据潜在经济价值对受害者进行分级排序，使攻击者能优先处理高价值目标。Dolphin X的AI模块可识别企业财务系统、加密货币钱包及高权限账户等关键资产，大幅提升攻击效率。这一技术演进标志着信息窃取攻击正从“广撒网”向“精准打击”转型，对企业和个人用户的数据安全构成更严峻威胁。
+- OpenAI明显缺席了“开放安全AI联盟”（Open Secure AI Alliance）的初始支持者名单，该联盟由Nvidia发起，旨在推动基于开源平台构建强大、安全、防御性的AI网络安全工具。该联盟获得了包括Cisco、Databricks、Dell Technologies、HPE、IBM、Microsoft、Palantir、Salesforce、SAP、ServiceNow、Siemens、Snowflake和Thinking Machines等30多家主要AI制造商和用户的支持。Nvidia表示，联盟成立的驱动因素之一是近期OpenAI允许其两个最强大模型的事件。OpenAI的缺席可能反映了其在AI安全策略上的独立立场，或对开源防御工具联盟的参与意愿有限。
 
-> **来源**: [New Dolphin X Stealer Employs AI Profiling to Prioritize Targets](https://www.infosecurity-magazine.com/news/new-dolphin-x-stealer-ai-targets/)  #Infosecurity Magazine
+> **来源**: [OpenAI not part of the new Open Secure AI Alliance](https://www.csoonline.com/article/4201761/openai-not-part-of-the-new-open-secure-ai-alliance.html)  #CSO Online
 
-### 📰 9. CISA近期GitHub泄露事件的经验教训
+### 📰 9. 勒索软件组织越来越多地部署EDR终结技术
 
-- 美国网络安全和基础设施安全局（CISA）发布了一份关于数据泄露事件的复盘报告：一名承包商在公共GitHub仓库中发布了数十个内部CISA凭据（包括AWS GovCloud密钥），持续近六个月后才被KrebsOnSecurity发现。泄露的凭据包括API令牌、数据库密码和云服务密钥，可能允许攻击者访问CISA的敏感系统。CISA的初始响应被批评为缓慢且缺乏透明度，例如未及时撤销所有受影响凭据、未通知受影响供应商。专家指出，该事件暴露了三大教训：一是承包商访问权限需严格限制并定期审计；二是GitHub等代码托管平台应启用凭据扫描和自动告警；三是事件响应流程必须包含第三方依赖的快速隔离。CISA已承诺加强供应链安全审查，并部署GitHub Secret Scanning工具。
+- Halcyon最新季度勒索软件报告显示，尽管勒索软件攻击数量有所下降，但攻击者使用的混淆技术正变得越来越难以对抗。报告指出，勒索软件组织正在积极开发能够绕过或禁用端点检测与响应（EDR）系统的技术，例如通过内核级驱动程序或进程注入来终止安全代理。这种趋势意味着传统基于签名的检测方法可能失效，企业需要部署多层防御策略，包括行为分析、内存保护和不可变备份。安全团队应定期测试EDR的韧性，并准备手动响应流程以应对自动化工具失效的情况。
 
-> **来源**: [Lessons Learned from CISA’s Recent GitHub Leak](https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/)  #Krebs on Security
+> **来源**: [Ransomware Groups Increasingly Deploy EDR Kill Techniques](https://www.infosecurity-magazine.com/news/ransomware-q2-2026-edr-kill/)  #Infosecurity Magazine
 
-### 📰 10. Scattered Spider黑客在审判首日认罪
+### 📰 10. 开源是解决恶意AI代理的答案吗？英伟达的新联盟表示肯定
 
-- 两名英国男子在伦敦法庭认罪，承认参与2024年8月导致伦敦交通局（TfL）网络瘫痪的网络攻击，该攻击导致地铁、公交和铁路系统大面积中断。两人是臭名昭著的Scattered Spider黑客组织核心成员，该组织以针对大型企业（如Uber、Rockstar Games）的社交工程和勒索攻击闻名。原定六周的审判在第一天即告终结，两人面临共谋实施计算机滥用、敲诈勒索等多项指控。TfL攻击中，黑客通过SIM交换和钓鱼获取员工凭证，进而加密关键系统并索要赎金。此案凸显了Scattered Spider的“低技术高社会工程”策略的威胁性，以及英国司法系统对关键基础设施攻击的零容忍态度。安全专家建议，交通、能源等关键基础设施企业应部署多因素认证（MFA）和SIM卡锁定机制，并定期进行社交工程演练。
+- 随着AI网络安全事件激增，英伟达牵头成立了一个新联盟，主张通过开源方法应对恶意AI代理的威胁。该联盟认为，开源框架能促进透明协作，加速开发检测和防御AI滥用（如自动化攻击或数据操纵）的工具。英伟达强调，封闭系统在应对快速演变的AI威胁时反应迟缓，而开源社区可提供更灵活的补丁和共享情报。这一举措标志着行业对AI安全治理的转向，建议企业参与开源安全项目以增强防御能力。
 
-> **来源**: [Scattered Spider Hackers Plead Guilty on Day 1 of Trial](https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/)  #Krebs on Security
+> **来源**: [Is open source the answer to rogue AI agents? Nvidia's new alliance says yes](https://www.zdnet.com/article/is-open-source-the-answer-to-rogue-ai-security-incidents-nvidia-thinks-so/)  #ZDNet Security
 
 ---
 
