@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-07-28
+# 🤖🔒 AI+安全日报 | 2026-07-29
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Certighost 漏洞困扰微软 Active Directory 证书服务
+### 📰 1. Hugging Face 入侵事件表明事件响应需要多模型AI策略
 
-- 安全研究人员警告称，微软Active Directory证书服务（AD CS）中存在一个漏洞，允许低权限域用户冒充域控制器。该漏洞被命名为Certighost，源于证书颁发机构（CA）在目录对象解析过程中使用的一种称为“chase”的注册回退机制。攻击者可通过提供如“cdc”等请求属性，诱骗CA获取攻击者控制的身份，而非合法的域控制器。此漏洞影响范围广泛，可能导致攻击者获得域内最高权限，企业应立即审查并修补AD CS配置。
+- 近期Hugging Face平台遭入侵事件揭示了AI辅助攻击的新趋势：攻击者已能利用大型语言模型（LLM）自动化完成整个攻击链。然而，防御方在尝试以机器速度响应时面临新限制：前沿模型日益保守的安全控制机制会阻止对恶意载荷和入侵痕迹的分析，而这些正是调查事件所必需的。该事件由OpenAI内部对高级模型网络能力的测试失误引发，涉及GPT-5。此案例表明，安全团队需采用多模型AI策略，在保持防御能力的同时避免被单一模型的限制所束缚。
 
-> **来源**: [Certighost haunts Microsoft Active Directory Certificate Services](https://www.csoonline.com/article/4201771/certighost-haunts-microsoft-active-directory-certificate-services.html)  #CSO Online
+> **来源**: [Hugging Face breach shows why incident response needs a multi-model AI strategy](https://www.csoonline.com/article/4201361/hugging-face-breach-shows-why-incident-response-needs-a-multi-model-ai-strategy.html)  #CSO Online
 
-### 📰 2. 黑客被黑：Klue 漏洞事件与第三方网络风险的新现实
+### 📰 2. 微软推出用于安全运营的多模型智能网络栈
 
-- 2026年发生的Klue安全事件颠覆了传统认知：原本只是一起软件即服务（SaaS）供应链漏洞事件，却演变为一个罕见案例——第二个犯罪团伙声称入侵了第一个勒索团伙，并窃取了已被盗的数据。该事件暴露了SaaS集成、基于身份信任机制以及第三方风险管理中的根本性弱点。它不仅仅是又一起勒索软件故事，而是揭示了攻击者自身基础设施也可能存在安全漏洞，导致“黑吃黑”的局面。这一事件警示企业，在评估第三方风险时，不仅要考虑服务提供商本身，还需考虑其可能面临的来自其他攻击者的连锁威胁。
+- 微软宣布推出名为Project Perception的新型AI驱动服务，使企业安全团队能够通过一系列AI代理持续评估和更新安全态势。这些代理可发现漏洞、模拟攻击、检测和分类潜在威胁，并制定修复方案。该服务将于8月3日进入公开预览，采用多模型方法，由底层框架决定最适合解决特定任务的AI模型。此举旨在平衡质量与成本，因为并非所有操作都需要使用最强大的模型。
 
-> **来源**: [When the hackers get hacked: The Klue breach and the new reality of third-party cyber risk](https://www.csoonline.com/article/4200130/when-the-hackers-get-hacked-the-klue-breach-and-the-new-reality-of-third-party-cyber-risk.html)  #CSO Online
+> **来源**: [Microsoft unveils multi-model agentic cyber stack for security operations](https://www.csoonline.com/article/4202080/microsoft-unveils-multi-model-agentic-cyber-stack-for-security-operations.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-66033 [高危 7.5]
+### 📰 3. AI辅助安全工具发现更多漏洞，但威胁等级未变
 
-- libssh2库至1.11.1版本（已在提交a2ed82d中修复）存在一个预认证整数下溢漏洞，位于src/openssl.c文件的ssh2_cipher_crypt()函数中。恶意SSH服务器可通过在握手期间协商AES-GCM密码，利用计算blocksize减去aadlen再减去认证标签长度时的表达式下溢，触发越界读取和接近SIZE_MAX长度的memcpy调用，导致任何连接客户端立即崩溃。该漏洞影响所有使用受影响版本libssh2的SSH客户端，攻击者无需认证即可远程利用，建议用户立即升级至修复版本。
+- 漏洞情报公司VulnCheck的分析显示，AI发现的漏洞被利用的速度并未比传统发现的漏洞更快。研究表明，尽管AI辅助工具提高了漏洞发现效率，但攻击者利用这些漏洞的时间线并未显著缩短。这意味着AI在安全领域的应用更多是提升了防御方的检测能力，而非改变了攻击方的威胁态势。安全团队应继续关注漏洞修复优先级，而非过度依赖AI发现的数量。
 
-> **来源**: [CVE-2026-66033 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-66033)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [AI-assisted security tools are finding more bugs, but the threat level has not changed](https://cyberscoop.com/ai-assisted-security-tools-are-finding-more-bugs-but-the-threat-level-has-not-changed/)  #CyberScoop
 
-### ⚠️ 4. CVE-2026-65710 [高危 7.1]
+### 📰 4. Infoblox以DNS为中心进入拥挤的EASM市场
 
-- sysPass 3.2.11及之前版本存在缺失授权漏洞，允许具有PUBLICLINK_CREATE配置文件标志的认证用户触发未经授权的解密和持久存储任何保险库账户的密码。漏洞源于公开链接创建流程中缺乏AccountAcl检查，攻击者可调用saveCreateFromAccountAction端点，使AccountService::getDataForLink加载任意目标账户而不受AccountFilterUser限制。此漏洞可导致敏感凭证泄露，影响所有使用sysPass的企业，建议立即修补并限制PUBLICLINK_CREATE权限的分配。
+- 随着AI将侦察和漏洞利用开发时间从数周压缩到数小时，安全厂商竞相帮助企业在事件发生前识别暴露面。Infoblox宣布进入外部攻击面管理（EASM）市场，同时推出新的供应链情报能力，扩展其暴露管理产品组合。这两项新增功能旨在让组织同时了解自身互联网资产和关键供应商的资产。据Infoblox称，该组合方案能提供更全面的暴露面视图。
 
-> **来源**: [CVE-2026-65710 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-65710)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [Infoblox joins crowded EASM market with DNS-centric approach](https://www.csoonline.com/article/4202205/infoblox-joins-crowded-easm-market-with-dns-centric-approach.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-65708 [高危 8.1]
+### 📰 5. 黑客入侵酒店Wi-Fi网关劫持Microsoft 365账户
 
-- sysPass 3.2.11及之前版本存在不安全的直接对象引用漏洞（IDOR），允许任何经过身份验证的攻击者访问其无权访问的账户文件附件。漏洞源于AccountFileController中缺乏授权检查，攻击者可通过下载、查看、删除、上传和列出操作提供任意数字文件ID，枚举并操纵保险库中的任何附件，绕过账户级访问控制。该漏洞影响所有使用sysPass进行密码管理的组织，建议立即升级至3.2.11之后的版本，并实施严格的ACL审计。
+- ReliaQuest威胁研究团队警告，自6月以来，威胁行为者一直在入侵酒店、会议中心等场所的“强制门户”Wi-Fi网关和其他门户设备，以劫持用户的Microsoft 365账户。一旦攻击者控制网关，他们可以静默地将用户流量重定向到自己的基础设施，窃取Microsoft 365凭证，而无需接触用户设备、破坏端点或发送钓鱼邮件。企业员工在旅行时应避免使用公共Wi-Fi登录敏感账户，或使用VPN进行加密通信。
 
-> **来源**: [CVE-2026-65708 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-65708)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [Hackers are compromising hotel Wi-Fi gateways to hijack Microsoft 365 accounts](https://www.csoonline.com/article/4202067/hackers-are-compromising-hotel-wi-fi-gateways-to-hijack-microsoft-365-accounts.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-65709 [高危 8.3]
+### ⚠️ 6. CVE-2026-63720 [高危 7.5]
 
-- sysPass 至3.2.11版本存在缺失对象级授权漏洞，影响其JSON-RPC API。攻击者作为API令牌持有者可枚举账户元数据、覆盖密码并删除整个保险库中的账户，无需逐账户访问控制。具体而言，攻击者可调用AccountController方法（如viewAction、editAction、deleteAction和editPassAction），绕过AccountFilterUser检查，修改或删除超出令牌权限范围的账户。该漏洞严重等级为8.3（高危），建议用户立即升级至3.2.11以上版本，并实施严格的API权限审计。
+- datamodel-code-generator 0.70.0之前版本存在代码注入漏洞，攻击者通过控制输入模式可远程执行代码。漏洞利用方式为提供包含嵌入换行符和无点Python表达式的恶意customBasePath值。该值被原样注入生成的“from ... import ...”语句中，且未进行标识符验证，导致导入生成模块时执行任意Python代码。建议升级至0.70.0或更高版本，并对输入模式进行严格验证。
 
-> **来源**: [CVE-2026-65709 [HIGH 8.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-65709)  CVSS 8.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-63720 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-63720)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 7. 假设AI网络安全攻击是未来：43%的公司已遭遇过
+### ⚠️ 7. CVE-2026-15962 [高危 8.8]
 
-- CDW最新研究显示，人工智能（AI）正在驱动新型网络钓鱼和基于恶意软件的攻击，43%的受访公司已遭遇过此类攻击。该研究强调，AI攻击正变得日益复杂，能够生成高度定制化的钓鱼邮件和绕过传统检测的恶意代码。然而，报告也指出，尽管威胁加剧，但并非所有公司都充分使用AI来防御这些攻击。行业意义在于，企业必须加速采用AI驱动的安全工具，以应对AI赋能的攻击者，否则将面临更大的安全风险。
+- WordPress插件Fluent Forms Pro Add On Pack 6.2.6及之前所有版本存在PHP对象注入漏洞，源于对不可信输入的反序列化处理不当。认证攻击者（至少拥有订阅者级别权限）可通过注入PHP对象利用此漏洞。若用户更新集成功能已启用且存在POP链，攻击者可更改用户密码并可能接管管理员账户。建议立即升级至最新版本，并检查用户更新集成配置。
 
-> **来源**: [Assume AI cybersecurity attacks are the future: 43% of companies have already experienced it](https://www.zdnet.com/article/assume-ai-cybersecurity-attacks-are-the-future-43-percent-of-companies-have-already-experienced-it/)  #ZDNet Security
+> **来源**: [CVE-2026-15962 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-15962)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 8. OpenAI 未加入新的开放安全 AI 联盟
+### 📰 8. 可口可乐披露子公司Fairlife遭遇数据泄露
 
-- OpenAI明显缺席了“开放安全AI联盟”（Open Secure AI Alliance）的初始支持者名单，该联盟由Nvidia发起，旨在推动基于开源平台构建强大、安全、防御性的AI网络安全工具。该联盟获得了包括Cisco、Databricks、Dell Technologies、HPE、IBM、Microsoft、Palantir、Salesforce、SAP、ServiceNow、Siemens、Snowflake和Thinking Machines等30多家主要AI制造商和用户的支持。Nvidia表示，联盟成立的驱动因素之一是近期OpenAI允许其两个最强大模型的事件。OpenAI的缺席可能反映了其在AI安全策略上的独立立场，或对开源防御工具联盟的参与意愿有限。
+- 可口可乐公司披露，其子公司Fairlife在近期的一次勒索软件攻击中数据被盗。攻击者成功入侵了Fairlife的系统并窃取了敏感数据。目前尚未披露具体受影响的数据类型和规模。此事件再次凸显了供应链安全的重要性，大型企业需加强对子公司的安全监管。建议企业实施零信任架构并定期进行安全审计。
 
-> **来源**: [OpenAI not part of the new Open Secure AI Alliance](https://www.csoonline.com/article/4201761/openai-not-part-of-the-new-open-secure-ai-alliance.html)  #CSO Online
+> **来源**: [Coca-Cola Reveals Subsidiary Fairlife Suffered Data Breach](https://www.infosecurity-magazine.com/news/coca-cola-subsidiary-fairlife-data/)  #Infosecurity Magazine
 
-### 📰 9. 勒索软件组织越来越多地部署EDR终结技术
+### 📰 9. 微软推出系列AI安全计划以应对AI驱动的威胁
 
-- Halcyon最新季度勒索软件报告显示，尽管勒索软件攻击数量有所下降，但攻击者使用的混淆技术正变得越来越难以对抗。报告指出，勒索软件组织正在积极开发能够绕过或禁用端点检测与响应（EDR）系统的技术，例如通过内核级驱动程序或进程注入来终止安全代理。这种趋势意味着传统基于签名的检测方法可能失效，企业需要部署多层防御策略，包括行为分析、内存保护和不可变备份。安全团队应定期测试EDR的韧性，并准备手动响应流程以应对自动化工具失效的情况。
+- 微软推出了新的代理安全系统用于网络防御，以及其首个专注于网络安全的AI模型。这些举措旨在帮助安全团队应对日益增长的AI驱动威胁。新系统能够自动检测、分析和响应安全事件，而AI模型则专注于理解恶意软件和攻击模式。这表明微软正将AI作为安全战略的核心，以应对攻击者同样使用AI带来的挑战。
 
-> **来源**: [Ransomware Groups Increasingly Deploy EDR Kill Techniques](https://www.infosecurity-magazine.com/news/ransomware-q2-2026-edr-kill/)  #Infosecurity Magazine
+> **来源**: [Microsoft Launches Flurry of AI Security Initiatives to Combat AI-Enabled Threats](https://www.infosecurity-magazine.com/news/microsoft-ai-security-initiatives/)  #Infosecurity Magazine
 
-### 📰 10. 开源是解决恶意AI代理的答案吗？英伟达的新联盟表示肯定
+### 📰 10. 新CREST AI标准将提供AI驱动的渗透测试认证
 
-- 随着AI网络安全事件激增，英伟达牵头成立了一个新联盟，主张通过开源方法应对恶意AI代理的威胁。该联盟认为，开源框架能促进透明协作，加速开发检测和防御AI滥用（如自动化攻击或数据操纵）的工具。英伟达强调，封闭系统在应对快速演变的AI威胁时反应迟缓，而开源社区可提供更灵活的补丁和共享情报。这一举措标志着行业对AI安全治理的转向，建议企业参与开源安全项目以增强防御能力。
+- CREST发布新的AI标准，作为网络安全服务提供商的可选附加要求，旨在证明其在渗透测试中负责任地使用人工智能。技术细节显示，这些标准涵盖AI模型的透明度、数据隐私保护、偏见缓解以及测试结果的可解释性，确保AI工具不会引入新的漏洞。该标准的影响范围包括所有寻求CREST认证的渗透测试公司，尤其是那些计划将AI集成到自动化漏洞扫描和模拟攻击中的机构。行业意义在于，AI在安全测试中的使用日益普遍，但缺乏统一规范，CREST的标准有助于建立信任并防止AI被滥用，同时推动行业向更智能、更可靠的渗透测试发展。
 
-> **来源**: [Is open source the answer to rogue AI agents? Nvidia's new alliance says yes](https://www.zdnet.com/article/is-open-source-the-answer-to-rogue-ai-security-incidents-nvidia-thinks-so/)  #ZDNet Security
+> **来源**: [New CREST AI Standards to Deliver AI-Enabled Pentesting Accreditation](https://www.infosecurity-magazine.com/news/crest-ai-pentesting-accreditation/)  #Infosecurity Magazine
 
 ---
 
