@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>2026-07-04 - AI+安全日报</title>
+        <title>2026-08-02 - AI+安全日报</title>
 
 
         <!-- Custom HTML head -->
@@ -177,80 +177,60 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="-ai安全日报--2026-07-04"><a class="header" href="#-ai安全日报--2026-07-04">🤖🔒 AI+安全日报 | 2026-07-04</a></h1>
+                        <h1 id="-ai安全日报--2026-08-02"><a class="header" href="#-ai安全日报--2026-08-02">🤖🔒 AI+安全日报 | 2026-08-02</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-cve-2026-58165-高危-88-"><a class="header" href="#-1-cve-2026-58165-高危-88-">⚠️ 1. CVE-2026-58165 [高危 8.8] 🔬</a></h3>
-<ul>
-<li>OpenZiti 2.0.0及之前版本（在提交3027fdf中修复）存在权限提升漏洞，允许具有细粒度注册管理权限的已认证非管理员身份为任何身份（包括默认管理员）创建注册。该漏洞源于controller/model/enrollment_manager.go中的ApplyCreate函数仅验证目标身份是否存在，而未执行将调用者绑定到目标身份的授权检查。攻击者可利用此漏洞获取管理员权限，CVSS评分为8.8（高危）。影响OpenZiti 2.0.0及之前版本，建议用户立即更新到修复版本。</li>
-</ul>
+<h3 id="-1-anthropics-opus-5-is-better-at-resisting-prompt-injection"><a class="header" href="#-1-anthropics-opus-5-is-better-at-resisting-prompt-injection">📰 1. Anthropic’s Opus 5 Is Better at Resisting Prompt Injection</a></h3>
+<p>The chart is interesting. On the IPI benchmark, Opus 5 improved over Opus 4.8, reducing the probability of an attacker succeeding within 15 attempts from 5.5% to 2.0%, and from 0.5% to 0.2% on 1 attempt. It also improved on Sonnet 5 (5.9% at k=15) and Mythos 5 (2.6%), making it the most robust model</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58165">CVE-2026-58165 [HIGH 8.8] 🔬</a>  CVSS 8.8 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://www.schneier.com/blog/archives/2026/07/anthropics-opus-5-is-better-at-resisting-prompt-injection.html">Anthropic’s Opus 5 Is Better at Resisting Prompt Injection</a>  #Schneier on Security</p>
 </blockquote>
-<h3 id="-2-类似citrixbleed的netscaler新漏洞已出现野外利用尝试"><a class="header" href="#-2-类似citrixbleed的netscaler新漏洞已出现野外利用尝试">📰 2. 类似CitrixBleed的NetScaler新漏洞已出现野外利用尝试</a></h3>
-<ul>
-<li>Citrix NetScaler设备近年来持续成为攻击目标，最近一次是通过名为CitrixBleed的信息泄露漏洞，这是自2023年以来一系列NetScaler内存越界读取漏洞中的最新一个。本周，Citrix修补了另一个类似CitrixBleed的漏洞，已有迹象表明该漏洞已被野外利用。该新内存越界读取漏洞编号为CVE-2026-8451，由安全公司watchTowr的研究人员发现，他们发布了一份详细报告，展示了未经身份验证的恶意请求如何导致受保护进程内存泄露。该漏洞影响广泛部署的NetScaler设备，建议用户立即应用补丁。</li>
-</ul>
+<h3 id="-2-chinese-hacker-uses-deepseek-ai-to-orchestrate-vulnerability-exploits"><a class="header" href="#-2-chinese-hacker-uses-deepseek-ai-to-orchestrate-vulnerability-exploits">📰 2. Chinese Hacker Uses DeepSeek AI to Orchestrate Vulnerability Exploits</a></h3>
+<p>A Chinese-speaking threat actor has been using DeepSeek’s AI models to orchestrate cyber-attacks targeting Asian organizations</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4192741/new-citrixbleed-like-netscaler-flaw-sees-exploit-attempts-in-the-wild.html">New CitrixBleed-like NetScaler flaw sees exploit attempts in the wild</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/chinese-hacker-deepseek-ai/">Chinese Hacker Uses DeepSeek AI to Orchestrate Vulnerability Exploits</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-3-adobe将每月发布两次安全补丁以加快修复速度"><a class="header" href="#-3-adobe将每月发布两次安全补丁以加快修复速度">📰 3. Adobe将每月发布两次安全补丁以加快修复速度</a></h3>
-<ul>
-<li>Adobe宣布将每月发布两次安全补丁，以应对软件漏洞发现和利用速度加快的趋势。此前，Oracle已将其季度补丁计划改为月度更新。Adobe、微软和SAP通常在每月第二个星期二发布补丁，但从7月起，Adobe将在每月第四个星期二额外发布一次补丁。作为加快节奏的早期信号，Adobe在6月30日（第五个星期二）发布了两个安全公告，涉及多个严重漏洞。这一变化表明软件行业正面临日益严峻的漏洞利用威胁，企业需加快补丁部署流程。</li>
-</ul>
+<h3 id="-3-cve-2026-67191-critical-98"><a class="header" href="#-3-cve-2026-67191-critical-98">⚠️ 3. CVE-2026-67191 [CRITICAL 9.8]</a></h3>
+<p>Xlight FTP Server before 3.9.5 contains a pre-authentication heap buffer overflow vulnerability that allows remote unauthenticated attackers to write past the end of a heap buffer by sending a malformed SSH client identification string. A logic error in the recv loop’s termination condition uses an</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4192789/adobe-premieres-a-second-patch-tuesday-each-month-to-deliver-fixes-faster.html">Adobe premieres a second Patch Tuesday each month to deliver fixes faster</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-67191">CVE-2026-67191 [CRITICAL 9.8]</a>  CVSS 9.8 CRITICAL · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-4-cve-2026-58169-高危-75"><a class="header" href="#-4-cve-2026-58169-高危-75">⚠️ 4. CVE-2026-58169 [高危 7.5]</a></h3>
-<ul>
-<li>Vibe-Trading 0.1.10之前版本存在DNS重绑定认证绕过漏洞，允许远程攻击者绕过bearer-token认证。该漏洞源于服务器信任回环客户端的TCP对等地址，同时缺少Host头验证，并绑定到0.0.0.0且使用凭据CORS。攻击者可构造恶意DNS重绑定页面，向本地API服务器发出经过认证的请求，从而访问带有bash预设的shell执行端点。该漏洞CVSS评分为7.5（高危），影响Vibe-Trading 0.1.10之前所有版本，建议用户立即升级。</li>
-</ul>
+<h3 id="-4-cve-2026-60112-critical-98"><a class="header" href="#-4-cve-2026-60112-critical-98">⚠️ 4. CVE-2026-60112 [CRITICAL 9.8]</a></h3>
+<p>AMMOS Instrument Toolkit (AIT) GUI before 2.5.1 contains a missing authentication vulnerability that allows any unauthenticated network attacker to obtain a valid session and issue arbitrary spacecraft commands by calling Sessions.create() without any credential check. Attackers can exploit the unau</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58169">CVE-2026-58169 [HIGH 7.5]</a>  CVSS 7.5 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60112">CVE-2026-60112 [CRITICAL 9.8]</a>  CVSS 9.8 CRITICAL · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-5-诈骗者利用委内瑞拉地震灾难牟利"><a class="header" href="#-5-诈骗者利用委内瑞拉地震灾难牟利">📰 5. 诈骗者利用委内瑞拉地震灾难牟利</a></h3>
-<ul>
-<li>诈骗者迅速利用委内瑞拉毁灭性地震进行欺诈活动，研究人员在短短五天内发现了212个新注册的以救援为主题的域名。这些域名可能用于钓鱼攻击或虚假捐款请求，利用公众同情心窃取资金或个人信息。该事件凸显了灾难后网络犯罪的高发风险，影响范围涉及全球捐赠者。行业意义在于提醒用户仅通过官方渠道捐款，并警惕可疑链接和邮件。</li>
-</ul>
+<h3 id="-5-cve-2026-67192-high-81"><a class="header" href="#-5-cve-2026-67192-high-81">⚠️ 5. CVE-2026-67192 [HIGH 8.1]</a></h3>
+<p>Xlight FTP Server before 3.9.5 contains a pre-authentication stack buffer overflow vulnerability that allows unauthenticated attackers to corrupt stack memory by sending malformed SSH packets when a GCM cipher is negotiated. Attackers can craft packets with an unvalidated length field passed directl</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/scammers-cash-in-venezuela-earthquake">Scammers race to cash in on Venezuelan earthquake disaster</a>  #Graham Cluley</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-67192">CVE-2026-67192 [HIGH 8.1]</a>  CVSS 8.1 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-6-缅因州因虚假通知被迫关闭数据泄露门户"><a class="header" href="#-6-缅因州因虚假通知被迫关闭数据泄露门户">📰 6. 缅因州因虚假通知被迫关闭数据泄露门户</a></h3>
-<ul>
-<li>美国缅因州因有人冒充两家知名科技公司提交虚假数据泄露通知，被迫关闭其公共数据泄露通知门户。这些虚假通知可能旨在破坏系统或误导调查，具体技术细节未公开。该事件影响范围包括州政府和受影响公司，可能导致公众对数据泄露报告系统的信任下降。行业意义在于强调验证通知真实性的重要性，建议加强身份验证流程以防止类似欺诈。</li>
-</ul>
+<h3 id="-6-cve-2026-60113-critical-98"><a class="header" href="#-6-cve-2026-60113-critical-98">⚠️ 6. CVE-2026-60113 [CRITICAL 9.8]</a></h3>
+<p>AMMOS Instrument Toolkit (AIT) Deep Space Network (DSN) Interface before 2.2.2 contains a missing authentication vulnerability in the Space Link Extension (SLE) interface manager that allows unauthenticated network attackers to access seven unprotected API routes by sending direct HTTP requests with</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/maine-take-down-data-breach-portal">Maine forced to take down data breach portal after fake notices filed with authorities</a>  #Graham Cluley</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60113">CVE-2026-60113 [CRITICAL 9.8]</a>  CVSS 9.8 CRITICAL · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-7-apple的隐藏我的电子邮件调整激怒隐私爱好者"><a class="header" href="#-7-apple的隐藏我的电子邮件调整激怒隐私爱好者">📰 7. Apple的“隐藏我的电子邮件”调整激怒隐私爱好者</a></h3>
-<ul>
-<li>Apple对其“隐藏我的电子邮件”功能进行了调整，使网站更容易阻止匿名注册，从而削弱用户在线隐私保护。该功能原本允许用户生成一次性电子邮件地址以保护真实邮箱，但新变化可能允许网站检测并拒绝这些地址。这一改动引发了隐私爱好者的强烈不满，因为Apple一直以隐私优先自居。技术细节未完全披露，但影响范围涉及所有iCloud+用户。行业意义在于平衡隐私与网站安全需求，建议用户关注后续更新并考虑替代方案。</li>
-</ul>
+<h3 id="-7-how-openais-agent-escaped-sprung-by-humans-in-a-series-of-preventable-events"><a class="header" href="#-7-how-openais-agent-escaped-sprung-by-humans-in-a-series-of-preventable-events">📰 7. How OpenAI’s agent escaped: Sprung by humans in a series of preventable events</a></h3>
+<p>Behind the rogue agent’s attack on Hugging Face was a particular sequence of human decisions. We all need to pay better attention - because threat actors are learning, too.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/apples-hide-my-email-tweak-leaves-privacy-fans-fuming">Apple’s Hide My Email tweak leaves privacy fans fuming</a>  #Graham Cluley</p>
+<p><strong>来源</strong>: <a href="https://www.zdnet.com/article/how-openais-agent-escaped-mapping-a-series-of-preventable-events/">How OpenAI’s agent escaped: Sprung by humans in a series of preventable events</a>  #ZDNet Security</p>
 </blockquote>
-<h3 id="-8-隐私乌龙世界杯失误泄露梅西护照信息"><a class="header" href="#-8-隐私乌龙世界杯失误泄露梅西护照信息">📰 8. 隐私乌龙：世界杯失误泄露梅西护照信息</a></h3>
-<ul>
-<li>阿根廷世界杯球队的护照号码在比赛开始前被泄露，原因不是黑客攻击，而是有人未能正确编辑文档。这一失误导致梅西等球员的敏感信息暴露，类似错误在过去多次发生。技术细节显示，文档中的护照号码未进行适当遮盖，可能被公开访问。影响范围涉及球员个人隐私和阿根廷足协声誉。行业意义在于提醒组织在发布文档前进行彻底审查，并采用自动化工具检测未编辑的敏感数据。</li>
-</ul>
+<h3 id="-8-the-5-million-threat-ai-is-supercharging-phishing-attacks"><a class="header" href="#-8-the-5-million-threat-ai-is-supercharging-phishing-attacks">📰 8. The $5 million threat: AI Is supercharging phishing attacks</a></h3>
+<p>According to the newly-published study, phishing and social engineering are becoming more expensive to recover from, trickier to detect, and increasingly augmented by artificial intelligence. Read more in my article on the Fortra blog.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/privacy-own-goal-world-cup-blunder-leaks-lionel-messis-passport-details">Privacy own-goal: World Cup blunder leaks Lionel Messi’s passport details</a>  #Graham Cluley</p>
+<p><strong>来源</strong>: <a href="https://www.fortra.com/blog/5-million-threat-ai-supercharging-phishing-attacks">The $5 million threat: AI Is supercharging phishing attacks</a>  #Graham Cluley</p>
 </blockquote>
-<h3 id="-9-勒索软件团伙与teampcp合作引发工业化网络攻击警告"><a class="header" href="#-9-勒索软件团伙与teampcp合作引发工业化网络攻击警告">📰 9. 勒索软件团伙与TeamPCP合作引发“工业化”网络攻击警告</a></h3>
-<ul>
-<li>研究人员警告称，一个勒索软件团伙与TeamPCP组织合作，可能导致“前所未有”的勒索攻击浪潮。FBI也发布了相关警告，指出这种合作将攻击能力提升至工业化水平。技术细节显示，TeamPCP提供初始访问权限和恶意软件分发服务，而勒索软件团伙则负责加密和勒索。影响范围可能覆盖全球企业、关键基础设施和政府机构。行业意义在于，这种分工协作模式降低了攻击门槛，安全团队需加强供应链风险管理和端点检测能力。</li>
-</ul>
+<h3 id="-9-how-mfa-gets-hacked--and-strategies-to-prevent-it"><a class="header" href="#-9-how-mfa-gets-hacked--and-strategies-to-prevent-it">📰 9. How MFA gets hacked — and strategies to prevent it</a></h3>
+<p>The security benefits of multifactor authentication (MFA) are well-known, yet MFA continues to be poorly, sporadically, and inconsistently implemented, undercutting its effectiveness as a security tool while often saddling users with an extra workflow burden — one of many obstacles to MFA’s success.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/industrialized-cyberattacks/">Warning Over “Industrialized” Cyber-Attacks After Ransomware Gang Partners With TeamPCP</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/570795/how-to-hack-2fa.html">How MFA gets hacked — and strategies to prevent it</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-10-fbi与谷歌联手摧毁netnut代理网络及popa僵尸网络"><a class="header" href="#-10-fbi与谷歌联手摧毁netnut代理网络及popa僵尸网络">📰 10. FBI与谷歌联手摧毁NetNut代理网络及“Popa”僵尸网络</a></h3>
-<ul>
-<li>FBI与谷歌联合行动，成功摧毁了被网络威胁行为者利用的NetNut代理网络和“Popa”僵尸网络。这些基础设施已知感染了Mirai DDoS僵尸网络的变种，用于发起大规模分布式拒绝服务攻击。技术细节表明，NetNut提供匿名代理服务，而Popa则控制受感染设备。影响范围包括全球物联网设备、服务器和网络基础设施。行业意义在于，执法机构与科技公司的合作能有效打击恶意基础设施，建议组织及时更新固件并监控异常流量。</li>
-</ul>
+<h3 id="-10-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran"><a class="header" href="#-10-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran">📰 10. 7 States’ Water Systems Hit by Cyberattacks Likely Tied to Iran</a></h3>
+<p>Plus: The FBI eyes AI-powered tech to detect future crimes, Russia charges Telegram’s founder, xAI sues to stop a state’s “nudification” ban, and the Democrats learn a lesson about getting scammed.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/fbi-google-take-down-netnut-proxy/">FBI, Google Take Down NetNut Proxy Network Used by Cyber Threat Actors</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/">7 States’ Water Systems Hit by Cyberattacks Likely Tied to Iran</a>  #Wired Security</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -261,11 +241,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../daily/2026-07-05.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../daily/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../daily/2026-07-03.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../daily/2026-08-01.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -275,11 +255,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../daily/2026-07-05.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../daily/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../daily/2026-07-03.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../daily/2026-08-01.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
