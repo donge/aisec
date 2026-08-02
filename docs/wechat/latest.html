@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI+安全日报 2026-08-02</title>
+<title>AI+安全日报 2026-08-03</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -141,7 +141,7 @@
     <div class="logo">🛡️</div>
     <h1>AI+安全日报</h1>
     <div class="subtitle">
-      2026年8月2日 · 共 <span>10</span> 条
+      2026年8月3日 · 共 <span>10</span> 条
     </div>
   </div>
 
@@ -149,88 +149,22 @@
     
     <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
       <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
         <div>
           <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
             <span style="font-size:13px;color:#64748b;font-weight:500;">#01</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            Anthropic’s Opus 5 Is Better at Resisting Prompt Injection
+            CVE-2026-58222 [HIGH 8.8]
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        The chart is interesting. On the IPI benchmark, Opus 5 improved over Opus 4.8, reducing the probability of an attacker succeeding within 15 attempts from 5.5% to 2.0%, and from 0.5% to 0.2% on 1 attempt. It also improved on Sonnet 5 (5.9% at k=15) and Mythos 5 (2.6%), making it the most robust model
+        A security flaw combining LDAP filter injection and improper authorization checks was found in Samba Active Directory Domain Controller (AD DC). When processing LDAP Compare requests, Samba fails to properly validate user-supplied attribute names and executes the resulting internal database search i
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.schneier.com/blog/archives/2026/07/anthropics-opus-5-is-better-at-resisting-prompt-injection.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Anthropic’s Opus 5 Is Better at Resisting Prompt Injection ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Schneier on Security</span>
-      </div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
-      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
-        <div>
-          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#02</span>
-          </div>
-          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            Chinese Hacker Uses DeepSeek AI to Orchestrate Vulnerability Exploits
-          </h3>
-        </div>
-      </div>
-      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        A Chinese-speaking threat actor has been using DeepSeek’s AI models to orchestrate cyber-attacks targeting Asian organizations
-      </p>
-      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.infosecurity-magazine.com/news/chinese-hacker-deepseek-ai/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Chinese Hacker Uses DeepSeek AI to Orchestrate Vulnerability Exploits ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
-      </div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
-      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
-        <div>
-          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#dc2626;color:#fff;border:1px solid #ef4444;margin-right:8px;">CRITICAL</span>
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#03</span>
-          </div>
-          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2026-67191 [CRITICAL 9.8]
-          </h3>
-        </div>
-      </div>
-      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        Xlight FTP Server before 3.9.5 contains a pre-authentication heap buffer overflow vulnerability that allows remote unauthenticated attackers to write past the end of a heap buffer by sending a malformed SSH client identification string. A logic error in the recv loop&#39;s termination condition uses an 
-      </p>
-      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-67191" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-67191 [CRITICAL 9.8] ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
-      </div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
-      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
-        <div>
-          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#dc2626;color:#fff;border:1px solid #ef4444;margin-right:8px;">CRITICAL</span>
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#04</span>
-          </div>
-          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2026-60112 [CRITICAL 9.8]
-          </h3>
-        </div>
-      </div>
-      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        AMMOS Instrument Toolkit (AIT) GUI before 2.5.1 contains a missing authentication vulnerability that allows any unauthenticated network attacker to obtain a valid session and issue arbitrary spacecraft commands by calling Sessions.create() without any credential check. Attackers can exploit the unau
-      </p>
-      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60112" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-60112 [CRITICAL 9.8] ↗</a>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58222" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-58222 [HIGH 8.8] ↗</a>
         <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
       </div>
     </div>
@@ -241,18 +175,18 @@
         <div>
           <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
             <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#05</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#02</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2026-67192 [HIGH 8.1]
+            CVE-2026-57862 [HIGH 8.5]
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        Xlight FTP Server before 3.9.5 contains a pre-authentication stack buffer overflow vulnerability that allows unauthenticated attackers to corrupt stack memory by sending malformed SSH packets when a GCM cipher is negotiated. Attackers can craft packets with an unvalidated length field passed directl
+        Kanboard 1.2.52 and prior contains a server-side request forgery vulnerability that allows authenticated users to bypass SSRF protections by supplying hexadecimal IP address notation in user-controlled URLs. Attackers can submit hexadecimal-encoded internal IP addresses through the web link creation
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-67192" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-67192 [HIGH 8.1] ↗</a>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-57862" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-57862 [HIGH 8.5] ↗</a>
         <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
       </div>
     </div>
@@ -262,20 +196,87 @@
         <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
         <div>
           <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#dc2626;color:#fff;border:1px solid #ef4444;margin-right:8px;">CRITICAL</span>
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#06</span>
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#03</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2026-60113 [CRITICAL 9.8]
+            CVE-2026-10842 [HIGH 7.5]
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        AMMOS Instrument Toolkit (AIT) Deep Space Network (DSN) Interface before 2.2.2 contains a missing authentication vulnerability in the Space Link Extension (SLE) interface manager that allows unauthenticated network attackers to access seven unprotected API routes by sending direct HTTP requests with
+        IBM WebSphere Application Server 8.5, and 9.0 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 Traditional and Liberty could allow a remote attacker to bypass security constraints.
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60113" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-60113 [CRITICAL 9.8] ↗</a>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10842" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-10842 [HIGH 7.5] ↗</a>
         <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#04</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            CVE-2026-28814 [HIGH 7.5]
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Arbitrary Wiki Markup rendering due to lack of authentication in Apache JSPWiki up to 2.12.3 allows attacker to obtain sensitive data stored in JSPWiki variables.
+Users are recommended to upgrade to version 2.12.4 or 3.0.0, which fixes this issue.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28814" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-28814 [HIGH 7.5] ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#05</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Trump blames Minnesota for cyberattacks on water sector, drawing pushback from cyber world
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        The president went against his intelligence agencies’ conclusions about Iran being the likely suspect in the campaign. The post Trump blames Minnesota for cyberattacks on water sector, drawing pushback from cyber world appeared first on CyberScoop.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://cyberscoop.com/trump-blames-minnesota-water-cyberattacks-iran/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Trump blames Minnesota for cyberattacks on water sector, drawing pushback from cyber world ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CyberScoop</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#06</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            DefCon security conference bans smart glasses with recording capabilities
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        It’s a sign of the times: Security conference DefCon has added smart glasses to its list of banned audio- or video-recording devices. The organizers have said that, with no consistent way to understand whether smart glasses are recording or not, they have taken the step to ban them in their entirety
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4203981/defcon-security-conference-bans-smart-glasses-with-recording-capabilities.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">DefCon security conference bans smart glasses with recording capabilities ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
       </div>
     </div>
 
@@ -288,16 +289,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#07</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            How OpenAI&#39;s agent escaped: Sprung by humans in a series of preventable events
+            Google adds to confusion with new names for threat actors
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        Behind the rogue agent&#39;s attack on Hugging Face was a particular sequence of human decisions. We all need to pay better attention - because threat actors are learning, too.
+        Google is creating a new naming scheme for the bad actors behind cybersecurity threats, hoping that it will help to standardize the way that attacks are reported. Spoiler: It won’t. Security researchers use these naming schemes so that they can attribute attacks without necessarily knowing exactly w
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.zdnet.com/article/how-openais-agent-escaped-mapping-a-series-of-preventable-events/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">How OpenAI&#39;s agent escaped: Sprung by humans in a series of preventable events ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">ZDNet Security</span>
+        <a href="https://www.csoonline.com/article/4203952/google-adds-to-confusion-with-new-names-for-threat-actors.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Google adds to confusion with new names for threat actors ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
       </div>
     </div>
 
@@ -310,16 +311,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#08</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            The $5 million threat: AI Is supercharging phishing attacks
+            Anthropic Reveals Claude Escaped Testing, Breaching Three Companies
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        According to the newly-published study, phishing and social engineering are becoming more expensive to recover from, trickier to detect, and increasingly augmented by artificial intelligence. Read more in my article on the Fortra blog.
+        Anthropic has revealed that Claude AI models compromised third-party organizations
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.fortra.com/blog/5-million-threat-ai-supercharging-phishing-attacks" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">The $5 million threat: AI Is supercharging phishing attacks ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Graham Cluley</span>
+        <a href="https://www.infosecurity-magazine.com/news/anthropic-claude-breached-three/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Anthropic Reveals Claude Escaped Testing, Breaching Three Companies ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
       </div>
     </div>
 
@@ -332,16 +333,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#09</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            How MFA gets hacked — and strategies to prevent it
+            Read This Before You Buy That TV Streaming Stick
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        The security benefits of multifactor authentication (MFA) are well-known, yet MFA continues to be poorly, sporadically, and inconsistently implemented, undercutting its effectiveness as a security tool while often saddling users with an extra workflow burden — one of many obstacles to MFA’s success.
+        Security experts have been sounding the alarm for years about the risks of using generic TV boxes that promise unlimited content streaming for a one-time fee, warning that they secretly rent the user&#39;s Internet connection out to strangers. But a groundbreaking new analysis finds these devices also r
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.csoonline.com/article/570795/how-to-hack-2fa.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">How MFA gets hacked — and strategies to prevent it ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+        <a href="https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Read This Before You Buy That TV Streaming Stick ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(56,189,248,0.15);color:#7dd3fc;">Krebs on Security</span>
       </div>
     </div>
 
@@ -354,16 +355,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#10</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            7 States’ Water Systems Hit by Cyberattacks Likely Tied to Iran
+            AiTM Phishing Becomes Top Initial Access Threat to Law Firms
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        Plus: The FBI eyes AI-powered tech to detect future crimes, Russia charges Telegram’s founder, xAI sues to stop a state’s “nudification” ban, and the Democrats learn a lesson about getting scammed.
+        AiTM phishing is now the top entry point into law firms, with identity behind 56% of threats
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">7 States’ Water Systems Hit by Cyberattacks Likely Tied to Iran ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Wired Security</span>
+        <a href="https://www.infosecurity-magazine.com/news/aitm-phishing-top-entry-point-law/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">AiTM Phishing Becomes Top Initial Access Threat to Law Firms ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
       </div>
     </div>
   </div>
@@ -373,7 +374,7 @@
   <div class="footer">
     📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
     仅供学习参考，不构成投资或决策建议<br>
-    <span class="mono">// AI+Security Daily · 10 items · 2026-08-02</span>
+    <span class="mono">// AI+Security Daily · 10 items · 2026-08-03</span>
   </div>
 
   <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
