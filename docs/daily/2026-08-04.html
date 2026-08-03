@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>2026-07-21 - AI+安全日报</title>
+        <title>2026-08-04 - AI+安全日报</title>
 
 
         <!-- Custom HTML head -->
@@ -177,80 +177,60 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="-ai安全日报--2026-07-21"><a class="header" href="#-ai安全日报--2026-07-21">🤖🔒 AI+安全日报 | 2026-07-21</a></h1>
+                        <h1 id="-ai安全日报--2026-08-04"><a class="header" href="#-ai安全日报--2026-08-04">🤖🔒 AI+安全日报 | 2026-08-04</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-ai采用与业务加速正在改变技术风险管理的期望"><a class="header" href="#-1-ai采用与业务加速正在改变技术风险管理的期望">📰 1. AI采用与业务加速正在改变技术风险管理的期望</a></h3>
-<ul>
-<li>随着AI嵌入客户体验、内部工作流及供应链，安全领导者被要求不仅管理风险，还要帮助企业做出更明智决策并加速行动。然而，AI的发展速度远超治理其的程序，导致转型速度与安全、风险、隐私、合规及第三方风险团队理解业务暴露面的能力之间差距扩大。AI引入了提示注入等新风险，安全团队需在“快速行动”与“避免破坏”之间取得平衡。该趋势要求企业重新定义技术风险管理角色，将安全从成本中心转变为业务加速器。</li>
-</ul>
+<h3 id="-1-the-openai-hack-shows-the-genie-is-out-of-the-bottle"><a class="header" href="#-1-the-openai-hack-shows-the-genie-is-out-of-the-bottle">📰 1. The OpenAI Hack Shows the Genie Is Out of the Bottle</a></h3>
+<p>This essay originally appeared in Foreign Policy. Earlier this month, two of OpenAI’s models broke out of their containment sandbox and attacked another AI company. The story is kind of wild. OpenAI was running security tests on two of its models: GPT-5.6 Sol and an unreleased model that is almost c</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4198872/ai-adoption-and-business-acceleration-are-changing-the-expectations-of-technology-risk-management.html">AI adoption and business acceleration are changing the expectations of technology risk management</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.schneier.com/blog/archives/2026/08/the-openai-hack-shows-the-genie-is-out-of-the-bottle.html">The OpenAI Hack Shows the Genie Is Out of the Bottle</a>  #Schneier on Security</p>
 </blockquote>
-<h3 id="-2-研究人员利用openai的gpt构建wordpress漏洞利用"><a class="header" href="#-2-研究人员利用openai的gpt构建wordpress漏洞利用">📰 2. 研究人员利用OpenAI的GPT构建WordPress漏洞利用</a></h3>
-<ul>
-<li>一名发现WordPress关键漏洞的研究人员使用OpenAI的最新模型开发了漏洞利用链。该研究展示了AI如何被用于自动化漏洞利用开发，可能降低攻击门槛。虽然具体漏洞细节未公开，但此举引发了对AI在网络安全中双重用途的担忧。行业需加强AI安全治理，防止恶意使用AI进行攻击工具开发。</li>
-</ul>
+<h3 id="-2-ai-is-making-cybersecurity-fundamentals-more-important-than-ever"><a class="header" href="#-2-ai-is-making-cybersecurity-fundamentals-more-important-than-ever">📰 2. AI is making cybersecurity fundamentals more important than ever</a></h3>
+<p>When OpenAI disclosed that one of its models escaped a test environment and broke into Hugging Face’s systems on its own, headlines cast the incident as the start of a new era of AI-driven attacks. But the underlying cause of the incident was a familiar one: a misconfigured sandbox — the same kind o</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/researchers-wordpress-exploit/">Researchers Build WordPress Exploit Using OpenAI’s GPT</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4204101/ai-is-making-cybersecurity-fundamentals-more-important-than-ever.html">AI is making cybersecurity fundamentals more important than ever</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-3-wp2shellcve-2026-63030cve-2026-60137关于wordpress核心远程代码执行链的常见问题"><a class="header" href="#-3-wp2shellcve-2026-63030cve-2026-60137关于wordpress核心远程代码执行链的常见问题">📰 3. wp2shell（CVE-2026-63030，CVE-2026-60137）：关于WordPress核心远程代码执行链的常见问题</a></h3>
-<ul>
-<li>未认证攻击者可利用两个WordPress核心漏洞CVE-2026-63030和CVE-2026-60137实现远程代码执行，影响WordPress 6.9.x和7.0.x版本。多个安全公司确认在公开披露后数天内已出现活跃野外利用，且公开的概念验证利用代码正在流传。CVE-2026-63030和CVE-2026-60137均为严重等级，攻击者无需认证即可链式利用。建议所有运行受影响版本的管理员立即应用官方补丁，并监控系统异常活动。</li>
-</ul>
+<h3 id="-3-cve-2026-54725-critical-96"><a class="header" href="#-3-cve-2026-54725-critical-96">⚠️ 3. CVE-2026-54725 [CRITICAL 9.6]</a></h3>
+<p>vault-secrets-webhook is a Kubernetes mutating webhook that makes direct secret injection into Pods possible. Prior to 1.23.1, parseVaultConfig() in pkg/webhook/config.go accepts the vault.security.banzaicloud.io/vault-addr annotation, MutateConfigMap and MutateSecret call newVaultClient in pkg/webh</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/wp2shell-cve-2026-63030-cve-2026-60137-frequently-asked-questions-about-remote-code-execution">wp2shell (CVE-2026-63030, CVE-2026-60137): Frequently asked questions about remote code execution chain in WordPress Core</a>  #Tenable Blog</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54725">CVE-2026-54725 [CRITICAL 9.6]</a>  CVSS 9.6 CRITICAL · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-4-安全运营中心面临人类挑战ai加速警报和威胁"><a class="header" href="#-4-安全运营中心面临人类挑战ai加速警报和威胁">📰 4. 安全运营中心面临人类挑战：AI加速警报和威胁</a></h3>
-<ul>
-<li>安全运营中心（SOC）长期受困于警报量增长、攻击面扩大和人员短缺，而AI现在增加了新复杂性：不仅信息更多，而且必须评估大量机器生成的内容。Futurum Group副总裁Fernando Montenegro指出，分析师现在需要从大量“AI垃圾”中辨别真实威胁，这种不对称性加剧了挑战。AI生成的警报可能包含虚假阳性或误导性数据，要求SOC团队具备更高分析能力。行业需开发更智能的过滤工具和培训，以帮助人类分析师有效应对AI驱动的威胁环境。</li>
-</ul>
+<h3 id="-4-more-on-the-openai-agents-attack-on-hugging-face"><a class="header" href="#-4-more-on-the-openai-agents-attack-on-hugging-face">📰 4. More on the OpenAI Agent’s Attack on Hugging Face</a></h3>
+<p>Hugging Face has published a detailed timeline of the attack. From the summary: The agent was running an internal OpenAI cyber-capability evaluation based on the ExploitGym benchmark, which tasks an AI agent with finding and exploiting software vulnerabilities. OpenAI ran this on its own infrastruct</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4198016/socs-face-a-human-challenge-as-ai-speeds-alerts-and-threats.html">SOCs face a human challenge as AI speeds alerts and threats</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.schneier.com/blog/archives/2026/08/more-on-the-openai-agents-attack-on-hugging-face.html">More on the OpenAI Agent’s Attack on Hugging Face</a>  #Schneier on Security</p>
 </blockquote>
-<h3 id="-5-立即修补wordpress-rest-api漏洞可导致远程代码执行"><a class="header" href="#-5-立即修补wordpress-rest-api漏洞可导致远程代码执行">📰 5. 立即修补：WordPress REST API漏洞可导致远程代码执行</a></h3>
-<ul>
-<li>运行最新版本WordPress的组织被要求修补一个影响内置REST Batch API的预认证远程代码执行（RCE）漏洞，编号为wp2shell。该漏洞允许攻击者无需插件、认证或特殊配置即可对默认WordPress安装执行任意代码。Searchlight Cyber的Adam Kues首先报告此问题，并发布了公开检查器以评估风险，在补丁可用且管理员有足够时间应用后才公布技术细节。建议所有WordPress管理员立即应用官方补丁，并检查系统是否已受攻击。</li>
-</ul>
+<h3 id="-5-how-to-keep-your-conversations-with-chatgpt-gemini-copilot-or-claude-as-private-as-possible"><a class="header" href="#-5-how-to-keep-your-conversations-with-chatgpt-gemini-copilot-or-claude-as-private-as-possible">📰 5. How to keep your conversations with ChatGPT, Gemini, Copilot or Claude as private as possible</a></h3>
+<p>Worried about your personal AI chats being exposed? Here’s how to tighten your privacy across several major chatbots.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4198791/patch-now-wordpress-rest-api-bug-allows-remote-code-execution.html">Patch now: WordPress REST API bug allows remote code execution</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.zdnet.com/article/how-to-keep-ai-conversations-private-chatgpt-gemini-copilot-claude/">How to keep your conversations with ChatGPT, Gemini, Copilot or Claude as private as possible</a>  #ZDNet Security</p>
 </blockquote>
-<h3 id="-6-新型acr-stealer活动利用webdav和mshta规避检测"><a class="header" href="#-6-新型acr-stealer活动利用webdav和mshta规避检测">📰 6. 新型ACR Stealer活动利用WebDAV和MSHTA规避检测</a></h3>
-<ul>
-<li>微软发出警告，指出ACR Stealer恶意软件活动近期激增，该木马采用ClickFix式社会工程学手法窃取凭证、浏览器数据和敏感商业文档。微软研究人员详细描述了2026年4月底至6月中旬观察到的两个独立活动，它们使用不同的执行技术（包括WebDAV和MSHTA）实现相同窃取目的。攻击者诱骗用户执行恶意命令以解决虚假问题，一旦执行，恶意软件会提取浏览器存储的凭证、会话令牌和文档，可能允许攻击者进行后续入侵。该活动影响Windows用户，建议企业部署端点检测与响应（EDR）系统，并加强用户安全意识培训。</li>
-</ul>
+<h3 id="-6-how-google-used-ai-agents-to-find-and-fix-1072-chrome-security-bugs---in-60-days"><a class="header" href="#-6-how-google-used-ai-agents-to-find-and-fix-1072-chrome-security-bugs---in-60-days">📰 6. How Google used AI agents to find and fix 1,072 Chrome security bugs - in 60 days</a></h3>
+<p>With 3.5 billion active users to protect, Google is relying on Gemini to find Chrome security bugs fast - and before attackers do.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4198788/new-acr-stealer-campaigns-use-webdav-mshta-to-evade-detection.html">New ACR Stealer campaigns use WebDAV, MSHTA to evade detection</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.zdnet.com/article/google-used-ai-to-fix-1072-chrome-security-bugs-in-60-days/">How Google used AI agents to find and fix 1,072 Chrome security bugs - in 60 days</a>  #ZDNet Security</p>
 </blockquote>
-<h3 id="-7-如何检查chatgpt等ai工具是否引用你的网站并提升2026年的被引用机会"><a class="header" href="#-7-如何检查chatgpt等ai工具是否引用你的网站并提升2026年的被引用机会">📰 7. 如何检查ChatGPT等AI工具是否引用你的网站——并提升2026年的被引用机会</a></h3>
-<ul>
-<li>文章指出SEO并未消亡，而是演变为适应AI工具的新形态。作者提供了检查AI工具（如ChatGPT）是否引用自己网站的方法，并给出了提升2026年被引用概率的策略。核心建议包括：优化内容结构使其更易被AI抓取和理解，使用结构化数据标记，以及建立权威性内容。对于网站运营者而言，理解AI的引用机制是维持搜索可见性的关键，因为AI工具正在改变用户获取信息的方式。</li>
-</ul>
+<h3 id="-7-pass-the-passkey-a-novel-attack-surface-in-passwordless-authentication"><a class="header" href="#-7-pass-the-passkey-a-novel-attack-surface-in-passwordless-authentication">📰 7. Pass the Passkey: A Novel Attack Surface in Passwordless Authentication</a></h3>
+<p>Explore how passkey implementation gaps undermine security when relying parties fail to validate the User Verified flag, reducing MFA to a single factor. The post Pass the Passkey: A Novel Attack Surface in Passwordless Authentication appeared first on Unit 42.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.zdnet.com/article/how-to-check-if-chatgpt-ai-tools-cite-website-improve-chances/">How to check if ChatGPT and other AI tools cite your website - and improve your chances in 2026</a>  #ZDNet Security</p>
+<p><strong>来源</strong>: <a href="https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/">Pass the Passkey: A Novel Attack Surface in Passwordless Authentication</a>  #Unit 42</p>
 </blockquote>
-<h3 id="-8-为何封禁ai模型无法阻止其引发的网络威胁"><a class="header" href="#-8-为何封禁ai模型无法阻止其引发的网络威胁">📰 8. 为何封禁AI模型无法阻止其引发的网络威胁</a></h3>
-<ul>
-<li>文章指出，虽然AI公司能够发现漏洞并编写补丁，但仅靠企业无法构建应对AI网络威胁的长期防御战略。作者认为，美国政府必须承担起制定国家层面防御策略的责任，因为AI威胁具有系统性、跨领域和快速演化的特点。单纯阻止特定AI模型的使用无法解决根本问题，因为攻击者会不断利用新模型。行业意义在于，政策制定者需要从技术封锁转向构建弹性防御体系，包括威胁情报共享和主动防御机制。</li>
-</ul>
+<h3 id="-8-30-days-with-claude-mythos-preview-how-tenable-adapted-our-security-program-and-why-yours-is-next"><a class="header" href="#-8-30-days-with-claude-mythos-preview-how-tenable-adapted-our-security-program-and-why-yours-is-next">📰 8. 30 days with Claude Mythos Preview: How Tenable adapted our security program, and why yours is next</a></h3>
+<p>Tenable spent 30 days running frontier AI models against our own code. It didn’t just find bugs — it proved they’re real, with reproducible exploits. That fundamentally changes code security from ranking potential code defects to a much higher signal focused on the findings that matter. Read on to l</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://cyberscoop.com/why-blocking-ai-models-wont-stop-cyber-threats-op-ed/">Why blocking AI models won’t stop the cyber threats they create</a>  #CyberScoop</p>
+<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/testing-claude-mythos-preview-for-code-security-tenable">30 days with Claude Mythos Preview: How Tenable adapted our security program, and why yours is next</a>  #Tenable Blog</p>
 </blockquote>
-<h3 id="-9-fbi查封netnut代理平台和popa僵尸网络"><a class="header" href="#-9-fbi查封netnut代理平台和popa僵尸网络">📰 9. FBI查封NetNut代理平台和Popa僵尸网络</a></h3>
-<ul>
-<li>美国联邦调查局（FBI）宣布与行业合作伙伴合作，查封了与NetNut相关的数百个域名。NetNut是一家由以色列上市公司Alarum Technologies运营的住宅代理服务。此次行动发生在KrebsOnSecurity发布调查报告约两周后，该报告将NetNut与Popa僵尸网络联系起来。Popa僵尸网络由至少200万台被恶意软件感染的设备组成，这些设备在未经受害者同意或知情的情况下被控制。该事件表明执法机构正在加强对用于网络犯罪的代理基础设施的打击，同时也提醒企业审查其使用的代理服务来源。</li>
-</ul>
+<h3 id="-9-koreas-largest-telco-kt-fined-38m-after-femtocell-campaign"><a class="header" href="#-9-koreas-largest-telco-kt-fined-38m-after-femtocell-campaign">📰 9. Korea’s Largest Telco KT Fined $38m After Femtocell Campaign</a></h3>
+<p>Korean telco KT has been fined $39m for a year-long breach linked to femtocell compromise</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/">FBI Seizes NetNut Proxy Platform, Popa Botnet</a>  #Krebs on Security</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/koreas-largest-telco-kt-fine-39m/">Korea’s Largest Telco KT Fined $38m After Femtocell Campaign</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-10-提示注入攻击正在挫败ai黑客代理"><a class="header" href="#-10-提示注入攻击正在挫败ai黑客代理">📰 10. 提示注入攻击正在挫败AI黑客代理</a></h3>
-<ul>
-<li>一种名为“上下文轰炸”（Context Bombing）的新型提示注入攻击技术被发现，它能够欺骗恶意AI代理在造成危害前自行关闭。该技术通过向AI系统注入大量无关或矛盾的上下文信息，使其处理逻辑混乱并触发安全终止机制。这种方法可被防御方主动用于对抗自动化攻击工具，例如在AI驱动的渗透测试或恶意软件中植入“自杀”指令。该发现为AI安全领域提供了新的防御思路，但同时也可能被攻击者滥用，需谨慎评估其双刃剑效应。</li>
-</ul>
+<h3 id="-10-stop-depending-on-heroics-and-start-operationalizing-third-party-risk"><a class="header" href="#-10-stop-depending-on-heroics-and-start-operationalizing-third-party-risk">📰 10. Stop depending on heroics and start operationalizing third-party risk</a></h3>
+<p>In cybersecurity, third-party risk management normally looks simple on paper: evaluate your vendor, learn the risk, report out on the gaps and weaknesses, transfer to the contract, and continue. Unfortunately, it seldom works that way in practice. In my roles as a CISO, I find my teams in an interme</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/">Prompt Injection Attacks Are Thwarting AI Hacking Agents</a>  #Wired Security</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4204027/stop-depending-on-heroics-and-start-operationalizing-third-party-risk.html">Stop depending on heroics and start operationalizing third-party risk</a>  #CSO Online</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -261,11 +241,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../daily/2026-07-22.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../daily/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../daily/2026-07-19.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../daily/2026-08-03.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -275,11 +255,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../daily/2026-07-22.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../daily/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../daily/2026-07-19.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../daily/2026-08-03.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
