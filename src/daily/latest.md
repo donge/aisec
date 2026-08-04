@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-08-04
+# 🤖🔒 AI+安全日报 | 2026-08-05
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. The OpenAI Hack Shows the Genie Is Out of the Bottle
+### 📰 1. Critical Azure Cosmos DB flaw threatened cross-tenant database takeover
 
-This essay originally appeared in Foreign Policy. Earlier this month, two of OpenAI’s models broke out of their containment sandbox and attacked another AI company. The story is kind of wild. OpenAI was running security tests on two of its models: GPT-5.6 Sol and an unreleased model that is almost c
+A critical vulnerability in Microsoft Azure’s Cosmos DB database service could have enabled attackers to escape the platform’s Gremlin query sandbox, execute code on shared infrastructure, and ultimately gain access to any customer’s database, including data stores used by Microsoft services such as
 
-> **来源**: [The OpenAI Hack Shows the Genie Is Out of the Bottle](https://www.schneier.com/blog/archives/2026/08/the-openai-hack-shows-the-genie-is-out-of-the-bottle.html)  #Schneier on Security
+> **来源**: [Critical Azure Cosmos DB flaw threatened cross-tenant database takeover](https://www.csoonline.com/article/4204925/critical-azure-cosmos-db-flaw-threatened-cross-tenant-database-takeover.html)  #CSO Online
 
-### 📰 2. AI is making cybersecurity fundamentals more important than ever
+### 📰 2. Prolific ransomware group behind SonicWall zero-day attacks
 
-When OpenAI disclosed that one of its models escaped a test environment and broke into Hugging Face’s systems on its own, headlines cast the incident as the start of a new era of AI-driven attacks. But the underlying cause of the incident was a familiar one: a misconfigured sandbox — the same kind o
+INC ransomware wasn’t the first group to exploit the zero-days, but it’s been the most assertive and effective in chaining both vulnerabilities to steal and encrypt data for extortion. The post Prolific ransomware group behind SonicWall zero-day attacks appeared first on CyberScoop.
 
-> **来源**: [AI is making cybersecurity fundamentals more important than ever](https://www.csoonline.com/article/4204101/ai-is-making-cybersecurity-fundamentals-more-important-than-ever.html)  #CSO Online
+> **来源**: [Prolific ransomware group behind SonicWall zero-day attacks](https://cyberscoop.com/inc-ransomware-sonicwall-zero-day-attacks/)  #CyberScoop
 
-### ⚠️ 3. CVE-2026-54725 [CRITICAL 9.6]
+### 📰 3. The top cybersecurity product announcements from Black Hat 2026
 
-vault-secrets-webhook is a Kubernetes mutating webhook that makes direct secret injection into Pods possible. Prior to 1.23.1, parseVaultConfig() in pkg/webhook/config.go accepts the vault.security.banzaicloud.io/vault-addr annotation, MutateConfigMap and MutateSecret call newVaultClient in pkg/webh
+Black Hat 2026 is shaping up to be another AI-heavy conference, but this year’s announcements suggest the industry is moving beyond simply adding copilots to existing products. Vendors are increasingly packaging AI into operational workflows, while pairing automation with governance, exposure manage
 
-> **来源**: [CVE-2026-54725 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-54725)  CVSS 9.6 CRITICAL · #NVD · #漏洞
+> **来源**: [The top cybersecurity product announcements from Black Hat 2026](https://www.csoonline.com/article/4204921/the-top-cybersecurity-product-announcements-from-black-hat-2026.html)  #CSO Online
 
-### 📰 4. More on the OpenAI Agent’s Attack on Hugging Face
+### 📰 4. Attackers are crafting malicious AI instruction files to turn your agentic workflows into quiet criminal helpers
 
-Hugging Face has published a detailed timeline of the attack. From the summary: The agent was running an internal OpenAI cyber-capability evaluation based on the ExploitGym benchmark, which tasks an AI agent with finding and exploiting software vulnerabilities. OpenAI ran this on its own infrastruct
+AI agents are increasingly being deployed across the enterprise, a rapid adoption that has significantly broadened the organization’s attack surface, turning sharable AI agent resources and configuration files into backdoors, security experts warn. AI-assisted software developers have been increasin
 
-> **来源**: [More on the OpenAI Agent’s Attack on Hugging Face](https://www.schneier.com/blog/archives/2026/08/more-on-the-openai-agents-attack-on-hugging-face.html)  #Schneier on Security
+> **来源**: [Attackers are crafting malicious AI instruction files to turn your agentic workflows into quiet criminal helpers](https://www.csoonline.com/article/4204731/attackers-are-crafting-malicious-ai-instruction-files-to-turn-your-agentic-workflows-into-quiet-criminal-helpers.html)  #CSO Online
 
-### 📰 5. How to keep your conversations with ChatGPT, Gemini, Copilot or Claude as private as possible
+### ⚠️ 5. CVE-2026-13339 [HIGH 7.5]
 
-Worried about your personal AI chats being exposed? Here's how to tighten your privacy across several major chatbots.
+The CubeWP Framework plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.1.30 via the 'cubewp_get_svg_content' function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensiti
 
-> **来源**: [How to keep your conversations with ChatGPT, Gemini, Copilot or Claude as private as possible](https://www.zdnet.com/article/how-to-keep-ai-conversations-private-chatgpt-gemini-copilot-claude/)  #ZDNet Security
+> **来源**: [CVE-2026-13339 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-13339)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 6. How Google used AI agents to find and fix 1,072 Chrome security bugs - in 60 days
+### 📰 6. The Frontier AI Vulnerability Burst: Industrializing Autonomous Zero-Day Discovery in Open-Source Software
 
-With 3.5 billion active users to protect, Google is relying on Gemini to find Chrome security bugs fast - and before attackers do.
+Frontier AI is reshaping vulnerability discovery. Learn how our NOVA system found 14,000+ unknown vulnerabilities across the open-source software supply chain. The post The Frontier AI Vulnerability Burst: Industrializing Autonomous Zero-Day Discovery in Open-Source Software appeared first on Unit 4
 
-> **来源**: [How Google used AI agents to find and fix 1,072 Chrome security bugs - in 60 days](https://www.zdnet.com/article/google-used-ai-to-fix-1072-chrome-security-bugs-in-60-days/)  #ZDNet Security
+> **来源**: [The Frontier AI Vulnerability Burst: Industrializing Autonomous Zero-Day Discovery in Open-Source Software](https://unit42.paloaltonetworks.com/frontier-ai-vulnerability-burst/)  #Unit 42
 
-### 📰 7. Pass the Passkey: A Novel Attack Surface in Passwordless Authentication
+### 📰 7. Almost Half of Malware Samples Communicate Direct to IP
 
-Explore how passkey implementation gaps undermine security when relying parties fail to validate the User Verified flag, reducing MFA to a single factor. The post Pass the Passkey: A Novel Attack Surface in Passwordless Authentication appeared first on Unit 42.
+Nearly half of C2 malware bypasses DNS by connecting directly to IP addresses. Zero trust IP enforcement secures networks against these threats. The post Almost Half of Malware Samples Communicate Direct to IP appeared first on Unit 42.
 
-> **来源**: [Pass the Passkey: A Novel Attack Surface in Passwordless Authentication](https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/)  #Unit 42
+> **来源**: [Almost Half of Malware Samples Communicate Direct to IP](https://unit42.paloaltonetworks.com/malware-bypass-dns-direct-to-ip/)  #Unit 42
 
-### 📰 8. 30 days with Claude Mythos Preview: How Tenable adapted our security program, and why yours is next
+### 📰 8. Google ADK flaws reveal what happens when AI agents trust the wrong message
 
-Tenable spent 30 days running frontier AI models against our own code. It didn’t just find bugs — it proved they’re real, with reproducible exploits. That fundamentally changes code security from ranking potential code defects to a much higher signal focused on the findings that matter. Read on to l
+Security flaws in automated workflows in the GitHub repository for Google’s Agent Development Kit for Python could allow public-facing AI agents to trigger more privileged automation, opening one path to manipulate pull-request reviews and another to expose credentials, according to a report from Pi
 
-> **来源**: [30 days with Claude Mythos Preview: How Tenable adapted our security program, and why yours is next](https://www.tenable.com/blog/testing-claude-mythos-preview-for-code-security-tenable)  #Tenable Blog
+> **来源**: [Google ADK flaws reveal what happens when AI agents trust the wrong message](https://www.csoonline.com/article/4204906/google-adk-flaws-reveal-what-happens-when-ai-agents-trust-the-wrong-message.html)  #CSO Online
 
-### 📰 9. Korea’s Largest Telco KT Fined $38m After Femtocell Campaign
+### ⚠️ 9. CVE-2026-8457 [CRITICAL 9.8]
 
-Korean telco KT has been fined $39m for a year-long breach linked to femtocell compromise
+The WooCommerce - Social Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to and including 2.8.7. This is due to the plugin's Apple login handler accepting the Apple id_token and decoding only its base64 payload without verifying the JWT signature against Apple's 
 
-> **来源**: [Korea’s Largest Telco KT Fined $38m After Femtocell Campaign](https://www.infosecurity-magazine.com/news/koreas-largest-telco-kt-fine-39m/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-8457 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-8457)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 10. Stop depending on heroics and start operationalizing third-party risk
+### 📰 10. Cybercriminals Bypass AI Safety Controls by Splitting Malicious Tasks Across Multiple Sessions
 
-In cybersecurity, third-party risk management normally looks simple on paper: evaluate your vendor, learn the risk, report out on the gaps and weaknesses, transfer to the contract, and continue. Unfortunately, it seldom works that way in practice. In my roles as a CISO, I find my teams in an interme
+Talos read attacker prompt logs and found guardrails fell to task splitting and ownership claims
 
-> **来源**: [Stop depending on heroics and start operationalizing third-party risk](https://www.csoonline.com/article/4204027/stop-depending-on-heroics-and-start-operationalizing-third-party-risk.html)  #CSO Online
+> **来源**: [Cybercriminals Bypass AI Safety Controls by Splitting Malicious Tasks Across Multiple Sessions](https://www.infosecurity-magazine.com/news/talos-attackers-split-tasks-evade/)  #Infosecurity Magazine
 
 ---
 
