@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-08-05
+# 🤖🔒 AI+安全日报 | 2026-08-06
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Critical Azure Cosmos DB flaw threatened cross-tenant database takeover
+### 📰 1. Prompt Injection Remains Biggest LLM Risk, Despite Limited Incidents
 
-A critical vulnerability in Microsoft Azure’s Cosmos DB database service could have enabled attackers to escape the platform’s Gremlin query sandbox, execute code on shared infrastructure, and ultimately gain access to any customer’s database, including data stores used by Microsoft services such as
+Prompt injection remains the most dangerous security threat to LLMs, according to OWASP’s latest Top 10 LLM Applications list
 
-> **来源**: [Critical Azure Cosmos DB flaw threatened cross-tenant database takeover](https://www.csoonline.com/article/4204925/critical-azure-cosmos-db-flaw-threatened-cross-tenant-database-takeover.html)  #CSO Online
+> **来源**: [Prompt Injection Remains Biggest LLM Risk, Despite Limited Incidents](https://www.infosecurity-magazine.com/news/prompt-injection-llm-risk/)  #Infosecurity Magazine
 
-### 📰 2. Prolific ransomware group behind SonicWall zero-day attacks
+### 📰 2. AI threat report: Rogue agents, workflow attacks
 
-INC ransomware wasn’t the first group to exploit the zero-days, but it’s been the most assertive and effective in chaining both vulnerabilities to steal and encrypt data for extortion. The post Prolific ransomware group behind SonicWall zero-day attacks appeared first on CyberScoop.
+Malicious AI use and threats to AI systems are requiring cyber teams to double down on security fundamentals and rethink the future of their approaches to defense. Newly emerging AI-enabled attacks, proofs of concept, and in-the-wild techniques, as well as the latest AI vulnerability and risk resear
 
-> **来源**: [Prolific ransomware group behind SonicWall zero-day attacks](https://cyberscoop.com/inc-ransomware-sonicwall-zero-day-attacks/)  #CyberScoop
+> **来源**: [AI threat report: Rogue agents, workflow attacks](https://www.csoonline.com/article/4205391/ai-threat-report-rogue-agents-workflow-attacks.html)  #CSO Online
 
-### 📰 3. The top cybersecurity product announcements from Black Hat 2026
+### 📰 3. Ruby on Rails critical bug puts every image upload under scrutiny
+
+A new critical vulnerability in the Ruby on Rails (“Rails”) web application framework, CVE-2026-66066, could turn a seemingly innocuous image into a front door to your secrets. Disclosed July 30, the high severity CVE (scored 9.5 out of 10) poses a significant risk to enterprises running apps that h
+
+> **来源**: [Ruby on Rails critical bug puts every image upload under scrutiny](https://www.csoonline.com/article/4205383/ruby-on-rails-critical-bug-puts-every-image-upload-under-scrutiny.html)  #CSO Online
+
+### 📰 4. The top new cybersecurity products at Black Hat USA 2026
 
 Black Hat 2026 is shaping up to be another AI-heavy conference, but this year’s announcements suggest the industry is moving beyond simply adding copilots to existing products. Vendors are increasingly packaging AI into operational workflows, while pairing automation with governance, exposure manage
 
-> **来源**: [The top cybersecurity product announcements from Black Hat 2026](https://www.csoonline.com/article/4204921/the-top-cybersecurity-product-announcements-from-black-hat-2026.html)  #CSO Online
+> **来源**: [The top new cybersecurity products at Black Hat USA 2026](https://www.csoonline.com/article/4204921/the-top-new-cybersecurity-products-at-black-hat-usa-2026.html)  #CSO Online
 
-### 📰 4. Attackers are crafting malicious AI instruction files to turn your agentic workflows into quiet criminal helpers
+### 📰 5. OpenAI, Anthropic AI agents resorted to deception in new cybersecurity incidents
 
-AI agents are increasingly being deployed across the enterprise, a rapid adoption that has significantly broadened the organization’s attack surface, turning sharable AI agent resources and configuration files into backdoors, security experts warn. AI-assisted software developers have been increasin
+OpenAI’s GPT-5.6 Sol and Anthropic’s Mythos 5 have been implicated in another series of AI security incidents after the models created fake online identities, targeted real people, and attempted to manipulate developers into approving malicious code during controlled cyber evaluations, according to 
 
-> **来源**: [Attackers are crafting malicious AI instruction files to turn your agentic workflows into quiet criminal helpers](https://www.csoonline.com/article/4204731/attackers-are-crafting-malicious-ai-instruction-files-to-turn-your-agentic-workflows-into-quiet-criminal-helpers.html)  #CSO Online
+> **来源**: [OpenAI, Anthropic AI agents resorted to deception in new cybersecurity incidents](https://www.csoonline.com/article/4205612/openai-anthropic-ai-agents-resorted-to-deception-in-new-cybersecurity-incidents.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-13339 [HIGH 7.5]
+### 📰 6. Massive supply-chain attack compromises 440 packages under four hours
 
-The CubeWP Framework plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.1.30 via the 'cubewp_get_svg_content' function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensiti
+Researchers from multiple security firms observed a variant of Mini Shai-Hulud, self-replicating malware linked to TeamPCP, in all the affected packages. The post Massive supply-chain attack compromises 440 packages under four hours appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-13339 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-13339)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [Massive supply-chain attack compromises 440 packages under four hours](https://cyberscoop.com/supply-chain-attack-malware-mini-shai-hulud-teampcp/)  #CyberScoop
 
-### 📰 6. The Frontier AI Vulnerability Burst: Industrializing Autonomous Zero-Day Discovery in Open-Source Software
+### 📰 7. Frontier Models Engage in Unsanctioned Behavior During Testing
 
-Frontier AI is reshaping vulnerability discovery. Learn how our NOVA system found 14,000+ unknown vulnerabilities across the open-source software supply chain. The post The Frontier AI Vulnerability Burst: Industrializing Autonomous Zero-Day Discovery in Open-Source Software appeared first on Unit 4
+Anthropic and OpenAI models attacked “real people and organizations” during AI Security Institute tests
 
-> **来源**: [The Frontier AI Vulnerability Burst: Industrializing Autonomous Zero-Day Discovery in Open-Source Software](https://unit42.paloaltonetworks.com/frontier-ai-vulnerability-burst/)  #Unit 42
+> **来源**: [Frontier Models Engage in Unsanctioned Behavior During Testing](https://www.infosecurity-magazine.com/news/frontier-models-unsanctioned/)  #Infosecurity Magazine
 
-### 📰 7. Almost Half of Malware Samples Communicate Direct to IP
+### 📰 8. AISI, OpenAI report more ‘unsanctioned’ model hacks
 
-Nearly half of C2 malware bypasses DNS by connecting directly to IP addresses. Zero trust IP enforcement secures networks against these threats. The post Almost Half of Malware Samples Communicate Direct to IP appeared first on Unit 42.
+Following similar reports by OpenAI and Anthropic, the UK’s top AI testing lab and a private cybersecurity tester say their models exploited parts of the open internet. The post AISI, OpenAI report more ‘unsanctioned’ model hacks appeared first on CyberScoop.
 
-> **来源**: [Almost Half of Malware Samples Communicate Direct to IP](https://unit42.paloaltonetworks.com/malware-bypass-dns-direct-to-ip/)  #Unit 42
+> **来源**: [AISI, OpenAI report more ‘unsanctioned’ model hacks](https://cyberscoop.com/aisi-openai-report-unsanctioned-ai-model-hacks/)  #CyberScoop
 
-### 📰 8. Google ADK flaws reveal what happens when AI agents trust the wrong message
+### 📰 9. Paperclip AI Flaws Let Unauthenticated Attackers Run Commands
 
-Security flaws in automated workflows in the GitHub repository for Google’s Agent Development Kit for Python could allow public-facing AI agents to trigger more privileged automation, opening one path to manipulate pull-request reviews and another to expose credentials, according to a report from Pi
+3 Paperclip flaws exposed data & allowed unauthenticated command execution in two deployment modes
 
-> **来源**: [Google ADK flaws reveal what happens when AI agents trust the wrong message](https://www.csoonline.com/article/4204906/google-adk-flaws-reveal-what-happens-when-ai-agents-trust-the-wrong-message.html)  #CSO Online
+> **来源**: [Paperclip AI Flaws Let Unauthenticated Attackers Run Commands](https://www.infosecurity-magazine.com/news/paperclip-ai-vulnerabilities-rce/)  #Infosecurity Magazine
 
-### ⚠️ 9. CVE-2026-8457 [CRITICAL 9.8]
+### 📰 10. Fake Bank of America Phishing Scam Installs Remote Access Malware
 
-The WooCommerce - Social Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to and including 2.8.7. This is due to the plugin's Apple login handler accepting the Apple id_token and decoding only its base64 payload without verifying the JWT signature against Apple's 
+Cybercriminals are using a fake Bank of America phishing campaign to trick users into downloading a malicious script that installs ScreenConnect, enabling remote access and persistence on compromised systems
 
-> **来源**: [CVE-2026-8457 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-8457)  CVSS 9.8 CRITICAL · #NVD · #漏洞
-
-### 📰 10. Cybercriminals Bypass AI Safety Controls by Splitting Malicious Tasks Across Multiple Sessions
-
-Talos read attacker prompt logs and found guardrails fell to task splitting and ownership claims
-
-> **来源**: [Cybercriminals Bypass AI Safety Controls by Splitting Malicious Tasks Across Multiple Sessions](https://www.infosecurity-magazine.com/news/talos-attackers-split-tasks-evade/)  #Infosecurity Magazine
+> **来源**: [Fake Bank of America Phishing Scam Installs Remote Access Malware](https://www.infosecurity-magazine.com/news/fake-bank-of-america-phishing-scam/)  #Infosecurity Magazine
 
 ---
 
