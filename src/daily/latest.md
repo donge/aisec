@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-08-06
+# 🤖🔒 AI+安全日报 | 2026-08-07
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Prompt Injection Remains Biggest LLM Risk, Despite Limited Incidents
+### 📰 1. Human oversight is still critical as AI patching tools miss security risks
 
-Prompt injection remains the most dangerous security threat to LLMs, according to OWASP’s latest Top 10 LLM Applications list
+AI-generated vulnerability patches still heavily depend on human review, particularly the ones involving security-sensitive code, according to a research. Researchers from 1Password have disclosed an internal evaluation that found AI-generated fixes frequently overlook broader concerns such as archi
 
-> **来源**: [Prompt Injection Remains Biggest LLM Risk, Despite Limited Incidents](https://www.infosecurity-magazine.com/news/prompt-injection-llm-risk/)  #Infosecurity Magazine
+> **来源**: [Human oversight is still critical as AI patching tools miss security risks](https://www.csoonline.com/article/4206598/human-oversight-is-still-critical-as-ai-patching-tools-miss-security-risks.html)  #CSO Online
 
-### 📰 2. AI threat report: Rogue agents, workflow attacks
+### 📰 2. Attackers hid malware inside Oracle Database after SQL injection breach
 
-Malicious AI use and threats to AI systems are requiring cyber teams to double down on security fundamentals and rethink the future of their approaches to defense. Newly emerging AI-enabled attacks, proofs of concept, and in-the-wild techniques, as well as the latest AI vulnerability and risk resear
+Huntress has documented a case where the Oracle database itself became the malware host. The security firm disclosed a campaign in which threat actors exploited a SQL injection vulnerability to store a custom post-exploitation toolkit, dubbed Khunt, inside an Oracle database using the platform’s bui
 
-> **来源**: [AI threat report: Rogue agents, workflow attacks](https://www.csoonline.com/article/4205391/ai-threat-report-rogue-agents-workflow-attacks.html)  #CSO Online
+> **来源**: [Attackers hid malware inside Oracle Database after SQL injection breach](https://www.csoonline.com/article/4206096/attackers-hid-malware-inside-oracle-database-after-sql-injection-breach.html)  #CSO Online
 
-### 📰 3. Ruby on Rails critical bug puts every image upload under scrutiny
+### 📰 3. Practical lessons from deploying AI securely at scale
 
-A new critical vulnerability in the Ruby on Rails (“Rails”) web application framework, CVE-2026-66066, could turn a seemingly innocuous image into a front door to your secrets. Disclosed July 30, the high severity CVE (scored 9.5 out of 10) poses a significant risk to enterprises running apps that h
+When I first started working on enterprise AI security initiatives, I expected the biggest challenges to be technical. I assumed we’d spend most of our time discussing prompt injection, model security, vector databases or the latest LLM vulnerabilities. I was wrong — or at least incomplete. The tech
 
-> **来源**: [Ruby on Rails critical bug puts every image upload under scrutiny](https://www.csoonline.com/article/4205383/ruby-on-rails-critical-bug-puts-every-image-upload-under-scrutiny.html)  #CSO Online
+> **来源**: [Practical lessons from deploying AI securely at scale](https://www.csoonline.com/article/4205710/practical-lessons-from-deploying-ai-securely-at-scale.html)  #CSO Online
 
-### 📰 4. The top new cybersecurity products at Black Hat USA 2026
+### 📰 4. Python package security in 2026: How supply chain attacks are targeting your AI development environment
 
-Black Hat 2026 is shaping up to be another AI-heavy conference, but this year’s announcements suggest the industry is moving beyond simply adding copilots to existing products. Vendors are increasingly packaging AI into operational workflows, while pairing automation with governance, exposure manage
+On March 24, 2026, developers building AI applications with LiteLLM — a Python package with 95 million monthly downloads — unknowingly installed malicious code. A threat actor group known as TeamPCP had compromised the PyPI distribution pipeline and pushed malicious versions 1.82.7 and 1.82.8 to the
 
-> **来源**: [The top new cybersecurity products at Black Hat USA 2026](https://www.csoonline.com/article/4204921/the-top-new-cybersecurity-products-at-black-hat-usa-2026.html)  #CSO Online
+> **来源**: [Python package security in 2026: How supply chain attacks are targeting your AI development environment](https://www.csoonline.com/article/4206245/python-package-security-in-2026.html)  #CSO Online
 
-### 📰 5. OpenAI, Anthropic AI agents resorted to deception in new cybersecurity incidents
+### 📰 5. Agentic AI for Cyber Defenders: What Security Teams Built at Black Hat USA 2026
 
-OpenAI’s GPT-5.6 Sol and Anthropic’s Mythos 5 have been implicated in another series of AI security incidents after the models created fake online identities, targeted real people, and attempted to manipulate developers into approving malicious code during controlled cyber evaluations, according to 
+Agentic AI armed attackers first, but it also put real building power in defenders’ hands. Here’s what security practitioners built in two days at Black Hat USA 2026, and how the CyberAgents Exchange keeps that work compounding long after the event.Key takeawaysBuilding defensive cybersecurity tooli
 
-> **来源**: [OpenAI, Anthropic AI agents resorted to deception in new cybersecurity incidents](https://www.csoonline.com/article/4205612/openai-anthropic-ai-agents-resorted-to-deception-in-new-cybersecurity-incidents.html)  #CSO Online
+> **来源**: [Agentic AI for Cyber Defenders: What Security Teams Built at Black Hat USA 2026](https://www.tenable.com/blog/agentic-ai-for-cyber-defenders-what-security-teams-built-at-black-hat-usa-2026)  #Tenable Blog
 
-### 📰 6. Massive supply-chain attack compromises 440 packages under four hours
+### ⚠️ 6. CVE-2026-69098 [CRITICAL 9.8]
 
-Researchers from multiple security firms observed a variant of Mini Shai-Hulud, self-replicating malware linked to TeamPCP, in all the affected packages. The post Massive supply-chain attack compromises 440 packages under four hours appeared first on CyberScoop.
+kotaemon through 0.12.0 contains an insecure deserialization vulnerability in the check_connection endpoint that allows unauthenticated attackers to instantiate arbitrary Python classes by supplying crafted YAML/JSON input with a __type__ field. Attackers can exploit this to override the __type__ fi
 
-> **来源**: [Massive supply-chain attack compromises 440 packages under four hours](https://cyberscoop.com/supply-chain-attack-malware-mini-shai-hulud-teampcp/)  #CyberScoop
+> **来源**: [CVE-2026-69098 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-69098)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 7. Frontier Models Engage in Unsanctioned Behavior During Testing
+### 📰 7. AI code security with Claude Mythos Preview: Inside Tenable’s 500+ hours of testing for Project Glasswing
 
-Anthropic and OpenAI models attacked “real people and organizations” during AI Security Institute tests
+We spent 500+ hours and 40 billion tokens testing Anthropic’s Claude Mythos Preview for Project Glasswing. The takeaway: frontier AI won't run your code security program, but used well, it can make one even stronger.Key takeawaysFrontier AI dramatically scales security testing. In one month, Tenable
 
-> **来源**: [Frontier Models Engage in Unsanctioned Behavior During Testing](https://www.infosecurity-magazine.com/news/frontier-models-unsanctioned/)  #Infosecurity Magazine
+> **来源**: [AI code security with Claude Mythos Preview: Inside Tenable’s 500+ hours of testing for Project Glasswing](https://www.tenable.com/blog/ai-code-security-with-claude-mythos-preview-inside-tenables-500-hours-of-testing-for-project)  #Tenable Blog
 
-### 📰 8. AISI, OpenAI report more ‘unsanctioned’ model hacks
+### 📰 8. Apple’s bug bounty program is drowning in so much AI slop, it is in danger of missing serious exploits
 
-Following similar reports by OpenAI and Anthropic, the UK’s top AI testing lab and a private cybersecurity tester say their models exploited parts of the open internet. The post AISI, OpenAI report more ‘unsanctioned’ model hacks appeared first on CyberScoop.
+Apple has imposed strict new submission limits on its bug bounty portal after finding itself overwhelmed by low-quality, AI generated vulnerability reports - many of which were found to be describing security flaws that simply didn't exist. Read more in my article on the Hot for Security blog.
 
-> **来源**: [AISI, OpenAI report more ‘unsanctioned’ model hacks](https://cyberscoop.com/aisi-openai-report-unsanctioned-ai-model-hacks/)  #CyberScoop
+> **来源**: [Apple’s bug bounty program is drowning in so much AI slop, it is in danger of missing serious exploits](https://www.bitdefender.com/en-us/blog/hotforsecurity/apple-bug-bounty-ai-missing-exploits)  #Graham Cluley
 
-### 📰 9. Paperclip AI Flaws Let Unauthenticated Attackers Run Commands
+### ⚠️ 9. CVE-2026-69110 [CRITICAL 9.1]
 
-3 Paperclip flaws exposed data & allowed unauthenticated command execution in two deployment modes
+OpenCode Studio before 2.4.4 contains a missing authentication vulnerability that allows unauthenticated remote attackers to read arbitrary files within the temp and static/music directories by directly accessing the GET /api/tmp/:tmpFile and GET /api/music/:fileName endpoints. Attackers can retriev
 
-> **来源**: [Paperclip AI Flaws Let Unauthenticated Attackers Run Commands](https://www.infosecurity-magazine.com/news/paperclip-ai-vulnerabilities-rce/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-69110 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-69110)  CVSS 9.1 CRITICAL · #NVD · #漏洞
 
-### 📰 10. Fake Bank of America Phishing Scam Installs Remote Access Malware
+### 📰 10. Meta Joins OpenAI and Anthropic in Reporting AI Exploit Incident
 
-Cybercriminals are using a fake Bank of America phishing campaign to trick users into downloading a malicious script that installs ScreenConnect, enabling remote access and persistence on compromised systems
+One of Meta’s AI models exploited a third-party security flaw during an evaluation, the latest in a series of similar incidents involving advanced AI systems
 
-> **来源**: [Fake Bank of America Phishing Scam Installs Remote Access Malware](https://www.infosecurity-magazine.com/news/fake-bank-of-america-phishing-scam/)  #Infosecurity Magazine
+> **来源**: [Meta Joins OpenAI and Anthropic in Reporting AI Exploit Incident](https://www.infosecurity-magazine.com/news/meta-ai-exploit-incident/)  #Infosecurity Magazine
 
 ---
 
