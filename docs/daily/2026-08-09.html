@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>2026-07-05 - AI+安全日报</title>
+        <title>2026-08-09 - AI+安全日报</title>
 
 
         <!-- Custom HTML head -->
@@ -177,66 +177,60 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="-ai安全日报--2026-07-05"><a class="header" href="#-ai安全日报--2026-07-05">🤖🔒 AI+安全日报 | 2026-07-05</a></h1>
+                        <h1 id="-ai安全日报--2026-08-09"><a class="header" href="#-ai安全日报--2026-08-09">🤖🔒 AI+安全日报 | 2026-08-09</a></h1>
 <blockquote>
-<p>今日共收录 <strong>8</strong> 条，AI+安全领域重要动态速览</p>
+<p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-cve-2026-24270-严重-98"><a class="header" href="#-1-cve-2026-24270-严重-98">⚠️ 1. CVE-2026-24270 [严重 9.8]</a></h3>
-<ul>
-<li>NVIDIA AIStore框架存在一个认证绕过漏洞，攻击者可利用该漏洞绕过身份验证机制。成功利用此漏洞可能导致拒绝服务、权限提升、信息泄露和数据篡改。该漏洞的CVSS评分为9.8（严重等级），影响所有使用NVIDIA AIStore框架的版本。建议用户立即更新到NVIDIA发布的最新补丁版本，并实施额外的网络访问控制措施以降低风险。</li>
-</ul>
+<h3 id="-1-cve-2026-53977-high-75"><a class="header" href="#-1-cve-2026-53977-high-75">⚠️ 1. CVE-2026-53977 [HIGH 7.5]</a></h3>
+<p>OpenChamber 1.11.7 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to terminate the server process by sending a POST request to the /api/system/shutdown endpoint, which is registered before the authentication middleware in the Express route handler chain.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24270">CVE-2026-24270 [CRITICAL 9.8]</a>  CVSS 9.8 CRITICAL · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53977">CVE-2026-53977 [HIGH 7.5]</a>  CVSS 7.5 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-2-cve-2026-24264-高危-75"><a class="header" href="#-2-cve-2026-24264-高危-75">⚠️ 2. CVE-2026-24264 [高危 7.5]</a></h3>
-<ul>
-<li>NVIDIA Triton Inference Server for Linux 中存在一个高危漏洞（CVE-2026-24264，CVSS评分7.5），攻击者可利用该漏洞导致对高度压缩数据的不当处理。成功利用此漏洞可能导致拒绝服务（DoS），影响模型推理服务的可用性。该漏洞影响所有使用NVIDIA Triton Inference Server的Linux部署环境，尤其对AI推理工作负载构成威胁。建议用户及时应用NVIDIA发布的安全补丁，并监控异常流量以检测潜在攻击。</li>
-</ul>
+<h3 id="-2-why-exposure-management-is-replacing-vulnerability-management"><a class="header" href="#-2-why-exposure-management-is-replacing-vulnerability-management">📰 2. Why exposure management is replacing vulnerability management</a></h3>
+<p>Vulnerability management isn’t failing because security teams lack visibility. Most organizations already have more findings than they can reasonably address. Yet despite all those findings, many CISOs still struggle to answer a deceptively simple question: Are we actually becoming harder to attack?</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24264">CVE-2026-24264 [HIGH 7.5]</a>  CVSS 7.5 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4206354/why-exposure-management-is-replacing-vulnerability-management.html">Why exposure management is replacing vulnerability management</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-3-cve-2026-24260-高危-85"><a class="header" href="#-3-cve-2026-24260-高危-85">⚠️ 3. CVE-2026-24260 [高危 8.5]</a></h3>
-<ul>
-<li>NVIDIA Container Toolkit for Linux 中存在一个高危漏洞（CVE-2026-24260，CVSS评分8.5），攻击者可利用该漏洞触发检查时间与使用时间（TOCTOU）竞争条件。成功利用此漏洞可能导致代码执行、权限提升及数据篡改。该漏洞影响所有使用NVIDIA Container Toolkit的Linux系统，尤其威胁容器化环境的安全性。建议用户立即更新至最新版本的Container Toolkit，并实施严格的访问控制以降低风险。</li>
-</ul>
+<h3 id="-3-natjack-exploits-put-nat-security-assumptions-to-the-test-at-black-hat"><a class="header" href="#-3-natjack-exploits-put-nat-security-assumptions-to-the-test-at-black-hat">📰 3. NatJack exploits put NAT security assumptions to the test at Black Hat</a></h3>
+<p>For decades, Network Address Translation (NAT) has been the default way IP addresses are provided inside larger networks, as a means to deal with the challenges of IPv4 address availability. The basic premise behind NAT is that private addresses stay private, but that assumption might not be entirel</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24260">CVE-2026-24260 [HIGH 8.5]</a>  CVSS 8.5 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4206299/natjack-exploits-put-nat-security-assumptions-to-the-test-at-black-hat-2.html">NatJack exploits put NAT security assumptions to the test at Black Hat</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-4-cve-2026-24251-高危-78"><a class="header" href="#-4-cve-2026-24251-高危-78">⚠️ 4. CVE-2026-24251 [高危 7.8]</a></h3>
-<ul>
-<li>该漏洞与 CVE-2026-24246 类似，涉及 NVIDIA Megatron Bridge for Linux 中动态管理代码资源的控制不当问题（CVSS 7.8）。攻击者可利用此漏洞执行恶意代码、提升权限、篡改数据或泄露信息。此漏洞对 AI 基础设施的稳定性和数据完整性构成严重威胁。安全团队应优先处理这些漏洞，并考虑在补丁部署前限制对 Megatron Bridge 服务的访问。</li>
-</ul>
+<h3 id="-4-cve-2026-53985-high-75"><a class="header" href="#-4-cve-2026-53985-high-75">⚠️ 4. CVE-2026-53985 [HIGH 7.5]</a></h3>
+<p>Ground Station prior to 0.6.0 contains an unauthenticated denial-of-service vulnerability in the Socket.IO server’s service_control event handler that allows any unauthenticated network peer to forcibly terminate the ground-station process by sending a single restart_service command. Attackers can c</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24251">CVE-2026-24251 [HIGH 7.8]</a>  CVSS 7.8 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53985">CVE-2026-53985 [HIGH 7.5]</a>  CVSS 7.5 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-5-google发布已在野外被利用的chrome漏洞补丁"><a class="header" href="#-5-google发布已在野外被利用的chrome漏洞补丁">📰 5. Google发布已在野外被利用的Chrome漏洞补丁</a></h3>
-<ul>
-<li>Google已发布Chrome浏览器安全更新，修复一个已被在野利用的高危漏洞（CVE-2026-11645）。该漏洞允许远程攻击者通过精心构造的HTML页面在沙箱内执行任意代码，绕过浏览器的安全隔离机制。此漏洞影响所有Chrome桌面版和移动版用户，攻击者可能利用其进行恶意软件传播或数据窃取。建议用户立即更新Chrome至最新版本（如Chrome 130+），并启用自动更新功能以防范此类零日攻击。</li>
-</ul>
+<h3 id="-5-how-a-software-provider-closed-unknown-paths-to-cloud-compromise"><a class="header" href="#-5-how-a-software-provider-closed-unknown-paths-to-cloud-compromise">📰 5. How a software provider closed unknown paths to cloud compromise</a></h3>
+<p>A healthcare software provider believed its segmented environment was reasonably secure. The company had invested heavily in layered controls across a distributed workforce, separating developer environments, segmenting cloud infrastructure, and tightly managing administrative access. Multifactor au</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/google-patch-chrome-vulnerability/">Google Releases Patch for Chrome Vulnerability Exploited in the Wild</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4206219/how-a-software-provider-closed-unknown-paths-to-cloud-compromise.html">How a software provider closed unknown paths to cloud compromise</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-6-伊朗关联黑客利用钓鱼和seo投毒攻击美国航空业"><a class="header" href="#-6-伊朗关联黑客利用钓鱼和seo投毒攻击美国航空业">📰 6. 伊朗关联黑客利用钓鱼和SEO投毒攻击美国航空业</a></h3>
-<ul>
-<li>伊朗背景的威胁组织“Nimbus Manticore”针对美国航空业发起了一场复杂的网络攻击活动，结合了钓鱼邮件和搜索引擎优化（SEO）投毒技术。攻击者利用AI构建了名为“MiniFast”的后门恶意软件，通过伪装成合法航空相关内容的钓鱼链接或SEO操纵的搜索结果诱导受害者下载。该后门具备远程控制、数据窃取和持久化能力，可绕过传统安全检测。此次事件凸显了地缘政治驱动的针对性攻击对关键基础设施行业的威胁，建议航空企业加强员工安全意识培训并部署基于行为的端点检测系统。</li>
-</ul>
+<h3 id="-6-cybersecurity-needs-a-new-operating-model"><a class="header" href="#-6-cybersecurity-needs-a-new-operating-model">📰 6. Cybersecurity needs a new operating model</a></h3>
+<p>For decades, cybersecurity has been built around one assumption: defenders had enough time to: Discover vulnerabilities. Assess exposure. Deploy patches. Verify that critical systems remained protected. That assumption shaped how organizations built security programs, how vendors developed security</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/iranian-hackers-us-aviation/">Iran-Linked Hackers Target US Aviation with Phishing and SEO Poisoning Campaign</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4206138/cybersecurity-needs-a-new-operating-model.html">Cybersecurity needs a new operating model</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-7-fbi警告kali365钓鱼工具包劫持microsoft-365-oauth令牌"><a class="header" href="#-7-fbi警告kali365钓鱼工具包劫持microsoft-365-oauth令牌">📰 7. FBI警告“Kali365”钓鱼工具包劫持Microsoft 365 OAuth令牌</a></h3>
-<ul>
-<li>美国联邦调查局（FBI）发布警告称，“Kali365”钓鱼即服务平台正在被网络犯罪分子广泛使用，该工具包专门针对Microsoft 365用户的OAuth认证令牌进行劫持。攻击者通过伪造的登录页面窃取用户授权令牌，从而绕过多因素认证（MFA）并长期访问受害者的云账户。该平台降低了网络犯罪的技术门槛，使非专业黑客也能发起高级钓鱼攻击。FBI建议组织启用条件访问策略、监控异常的OAuth应用授权，并定期审查令牌使用情况。</li>
-</ul>
+<h3 id="-7-despite-federal-warnings-thousands-of-us-industrial-controllers-used-in-water-systems-remain-exposed-online"><a class="header" href="#-7-despite-federal-warnings-thousands-of-us-industrial-controllers-used-in-water-systems-remain-exposed-online">📰 7. Despite federal warnings, thousands of U.S. industrial controllers used in water systems remain exposed online</a></h3>
+<p>A scan of internet-connected industrial equipment found 4,400 exposed PLCs, including 22 in cities recently targeted by water system attacks. The post Despite federal warnings, thousands of U.S. industrial controllers used in water systems remain exposed online appeared first on CyberScoop.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/fbi-kali365-phishing-kit-m365/">FBI Warns ‘Kali365’ Phishing Kit Hijacks Microsoft 365 OAuth Tokens</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/exposed-rockwell-controllers-water-system-attacks/">Despite federal warnings, thousands of U.S. industrial controllers used in water systems remain exposed online</a>  #CyberScoop</p>
 </blockquote>
-<h3 id="-8-dragonforce勒索软件利用microsoft-teams隐藏攻击大型企业"><a class="header" href="#-8-dragonforce勒索软件利用microsoft-teams隐藏攻击大型企业">📰 8. DragonForce勒索软件利用Microsoft Teams隐藏攻击大型企业</a></h3>
-<ul>
-<li>DragonForce勒索软件组织在针对一家大型企业的攻击中，利用Microsoft Teams的访客令牌来隐藏其命令与控制流量。攻击者通过滥用Teams访客令牌，使恶意活动看起来像合法的通信，从而绕过安全检测。这种技术使得安全团队难以区分正常协作流量与恶意活动。该事件凸显了攻击者利用合法协作工具进行隐蔽攻击的趋势，建议企业加强对协作平台流量的监控和异常行为检测。</li>
-</ul>
+<h3 id="-8-token-jacking-cybercriminals-could-be-stealing-your-ai-resources"><a class="header" href="#-8-token-jacking-cybercriminals-could-be-stealing-your-ai-resources">📰 8. Token Jacking: Cybercriminals Could Be Stealing Your AI Resources</a></h3>
+<p>Discover how attackers hijack AI tokens to fuel gray market transfer stations by stealing developer API keys. The post Token Jacking: Cybercriminals Could Be Stealing Your AI Resources appeared first on Unit 42.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/dragonforce-ransomware-hidden/">DragonForce Ransomware Exploited Microsoft Teams to Hide in Attack Against Major Company</a>  #Infosecurity Magazine</p>
+<p><strong>来源</strong>: <a href="https://unit42.paloaltonetworks.com/ai-token-jacking/">Token Jacking: Cybercriminals Could Be Stealing Your AI Resources</a>  #Unit 42</p>
+</blockquote>
+<h3 id="-9-the-water-sector-just-got-its-wake-up-call-again"><a class="header" href="#-9-the-water-sector-just-got-its-wake-up-call-again">📰 9. The water sector just got it’s wake-up call. Again.</a></h3>
+<p>The attack on water systems across seven states was preventable. Utilities had the playbook. They didn’t use it. The post The water sector just got it’s wake-up call. Again. appeared first on CyberScoop.</p>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/water-utility-cyberattacks-prevention-nozomi-networks-ceo-op-ed/">The water sector just got it’s wake-up call. Again.</a>  #CyberScoop</p>
+</blockquote>
+<h3 id="-10-snowflake-hacker-pleads-guilty-faces-up-to-32-years-in-prison"><a class="header" href="#-10-snowflake-hacker-pleads-guilty-faces-up-to-32-years-in-prison">📰 10. Snowflake hacker pleads guilty, faces up to 32 years in prison</a></h3>
+<p>Connor Moucka obtained almost $500,000 for playing a key role in one of the most widespread and damaging cyberattack sprees on record. The post Snowflake hacker pleads guilty, faces up to 32 years in prison appeared first on CyberScoop.</p>
+<blockquote>
+<p><strong>来源</strong>: <a href="https://cyberscoop.com/connor-moucka-guilty-snowflake-attack-spree/">Snowflake hacker pleads guilty, faces up to 32 years in prison</a>  #CyberScoop</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -247,11 +241,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../daily/2026-07-06.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../daily/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../daily/2026-07-04.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../daily/2026-08-08.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -261,11 +255,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../daily/2026-07-06.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../daily/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../daily/2026-07-04.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../daily/2026-08-08.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
