@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-11
+# 🤖🔒 AI+安全日报 | 2026-08-12
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-19211 [HIGH 7.3]
+### ⚠️ 1. CVE-2026-67620 [HIGH 7.7] 🔬
 
-A vulnerability was found in SourceCodester Photo Share Website 1.0. This affects an unknown function of the file /social/ajax.php?action=signup. Performing a manipulation of the argument email results in sql injection. Remote exploitation of the attack is possible. The exploit has been made public 
+Flowise through 3.1.4 contains a server-side request forgery vulnerability in the SSRF guard implemented in httpSecurity.ts, where the DEFAULT_DENY_LIST omits the Oracle Cloud Infrastructure metadata endpoint 192.0.0.192 and the Alibaba Cloud metadata endpoint 100.100.100.200, allowing authenticated
 
-> **来源**: [CVE-2026-19211 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-19211)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-67620 [HIGH 7.7] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-67620)  CVSS 7.7 HIGH · #NVD · #漏洞
 
-### 📰 2. Why transparent AI agents matter more than you think
+### 📰 2. OpenAI launches GPT-5.6-Cyber as AI narrows vulnerability response window
 
-The difference between a prompt injection attack you'll catch and one you won't might just be whether your AI agent can explain itself. The post Why transparent AI agents matter more than you think appeared first on CyberScoop.
+OpenAI has expanded its Daybreak cybersecurity program and introduced GPT-5.6-Cyber, a specialized model for approved security researchers, as the company warned that AI could give defenders less time to respond to developing threats. Daybreak now has two access levels. Blue gives approved defenders
 
-> **来源**: [Why transparent AI agents matter more than you think](https://cyberscoop.com/transparent-ai-agent-security-op-ed/)  #CyberScoop
+> **来源**: [OpenAI launches GPT-5.6-Cyber as AI narrows vulnerability response window](https://www.csoonline.com/article/4207896/openai-launches-gpt-5-6-cyber-as-ai-narrows-vulnerability-response-window.html)  #CSO Online
 
-### 📰 3. OpenAI says Astra could reach ‘critical’ cyber capability, tightens safeguards
+### ⚠️ 3. CVE-2026-71983 [CRITICAL 9.8]
 
-OpenAI said its upcoming model Astra is showing cybersecurity capabilities that could reach its highest risk category, where a system can autonomously find and exploit vulnerabilities or carry out end-to-end cyberattacks against hardened targets. The company disclosed the assessment following recent
+MSI Radix AXE6600 router firmware version v781521 contains a command injection vulnerability in the wps.cgi interface that allows remote attackers to execute arbitrary commands by injecting malicious input through the pin2g, pin5g, or pin6g parameters. Attackers can exploit these unsanitized paramet
 
-> **来源**: [OpenAI says Astra could reach ‘critical’ cyber capability, tightens safeguards](https://www.csoonline.com/article/4207311/openai-says-astra-could-reach-critical-cyber-capability-tightens-safeguards.html)  #CSO Online
+> **来源**: [CVE-2026-71983 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-71983)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 4. One-click flaw in Atlassian Rovo exposed enterprise data via prompt injection attack
+### 📰 4. NIST wants to overhaul its vulnerability database for the AI age
 
-Atlassian’s enterprise AI assistant Rovo, which is usually connected across sensitive work environments like Slack, Microsoft 365, and Google Workspace, was found vulnerable to data leaks through malicious instructions. At DEF CON 34, researchers from Varonis demonstrated an attack that used Rovo’s 
+NIST is seeking public input to modernize the National Vulnerability Database to keep pace with AI-driven cyber threats and machine-scale security data. The post NIST wants to overhaul its vulnerability database for the AI age appeared first on CyberScoop.
 
-> **来源**: [One-click flaw in Atlassian Rovo exposed enterprise data via prompt injection attack](https://www.csoonline.com/article/4207306/one-click-flaw-in-atlassian-rovo-exposed-enterprise-data-via-prompt-injection-attack.html)  #CSO Online
+> **来源**: [NIST wants to overhaul its vulnerability database for the AI age](https://cyberscoop.com/nist-national-vulnerability-database-ai-overhaul/)  #CyberScoop
 
-### 📰 5. Trojanized AI skills gain 1.7M installs in agent-targeted attack
+### 📰 5. OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber
 
-Researchers have uncovered an extremely effective attack campaign that involved AI agent skills trojanized to deploy a credential stealer. The incident is part of a growing trend in which attackers are targeting the AI software supply chain by poisoning sharable instruction and configuration files f
+Daybreak Blue removes some OpenAI-made guardrails while Daybreak Red grants the use of cyber-focused frontier AI models
 
-> **来源**: [Trojanized AI skills gain 1.7M installs in agent-targeted attack](https://www.csoonline.com/article/4206851/trojanized-ai-skills-gain-1-7m-installs-in-agent-targeted-attack.html)  #CSO Online
+> **来源**: [OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber](https://www.infosecurity-magazine.com/news/openai-daybreak-blue-red-gpt-cyber/)  #Infosecurity Magazine
 
-### 📰 6. How a global investment firm reduced security surprises
+### ⚠️ 6. CVE-2026-71950 [CRITICAL 9.8]
 
-Most security teams don’t suffer from a lack of data. They suffer from a lack of certainty. Vulnerability scanners, annual penetration tests, and compliance assessments can generate thousands of findings. Yet they often fail to answer a simple question: Which risks actually matter? For a global inve
+D-Link DWR-M961 devices with hardware version C1 and firmware version before 1.1.5_C1_202607071108 contain a command injection vulnerability in the /boafrm/formSmsManage interface. A remote attacker can inject arbitrary malicious commands into the action_value field, resulting in command execution w
 
-> **来源**: [How a global investment firm reduced security surprises](https://www.csoonline.com/article/4206204/how-a-global-investment-firm-reduced-security-surprises.html)  #CSO Online
+> **来源**: [CVE-2026-71950 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-71950)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 7. Researchers Uncover RovoBlast Vulnerability in Atlassian AI Assistant
+### ⚠️ 7. CVE-2026-71949 [CRITICAL 9.8]
 
-Atlassian fixed a flaw letting one crafted link make its Rovo AI assistant exfiltrate company data
+D-Link DWR-M961 devices with hardware version C1 and firmware version before 1.1.5_C1_202607071108 contain a command injection vulnerability in the /boafrm/formUSSDSetup interface. A remote attacker can inject arbitrary malicious commands into the ussdValue and selectMenuValue fields, resulting in c
 
-> **来源**: [Researchers Uncover RovoBlast Vulnerability in Atlassian AI Assistant](https://www.infosecurity-magazine.com/news/rovoblast-atlassian-rovo-url/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-71949 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-71949)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 8. UK man tied to The Com sentenced for abusing 117 victims
+### 📰 8. Logistics Giant Ceva Suffers Data Breach Impacting European Clients
 
-Justin Swaddle, who was a minor when he committed the crimes, coerced children across multiple countries into self-harm and sexual abuse using threats tied to their personal information, authorities said. The post UK man tied to The Com sentenced for abusing 117 victims appeared first on CyberScoop.
+Supply chain attack and data breach at Ceva Logistics appears to have a large blast radius
 
-> **来源**: [UK man tied to The Com sentenced for abusing 117 victims](https://cyberscoop.com/uk-justin-swaddle-the-com-sentenced/)  #CyberScoop
+> **来源**: [Logistics Giant Ceva Suffers Data Breach Impacting European Clients](https://www.infosecurity-magazine.com/news/logistics-ceva-data-breach/)  #Infosecurity Magazine
 
-### 📰 9. “Ghostjacking” Exploits AI Agents’ Trusted Access to Evade Firewall Controls
+### 📰 9. Security leaders’ rogue AI confidence could actually be disastrous
 
-Tenet reported that half of Fortune 500 companies are vulnerable to the Ghostjacking technique, which involves tricking AI agents with fake reports
+A large majority of IT and security leaders are confident in their teams’ ability to detect when an AI agent has gone rogue, but few are able to take quick action to mitigate the fallout when an agent exceeds its intended scope. Nine in 10 IT and security leaders surveyed by IT observability vendor 
 
-> **来源**: [“Ghostjacking” Exploits AI Agents’ Trusted Access to Evade Firewall Controls](https://www.infosecurity-magazine.com/news/ghostjacking-ai-gents-access/)  #Infosecurity Magazine
+> **来源**: [Security leaders’ rogue AI confidence could actually be disastrous](https://www.csoonline.com/article/4198038/security-leaders-confident-but-cooked-when-it-comes-to-rogue-ai-agents.html)  #CSO Online
 
-### 📰 10. Violent Physical Crypto Thefts Surge to $30m in Losses
+### 📰 10. The future of AI security research isn’t autonomous, it’s human-amplified
 
-So-called “wrench attacks” have resulted in $30m in losses so far in 2026, says Chainalysis
+Meet HTTP Terminator, a new AI system that has identified hundreds of websites vulnerable to HTTP request smuggling, hacked them live at scale, and even identified a “genuinely new class” of vulnerability, dubbed “shared-parser confusion.” But it didn’t do it alone; it was guided by a human the enti
 
-> **来源**: [Violent Physical Crypto Thefts Surge to $30m in Losses](https://www.infosecurity-magazine.com/news/violent-physical-crypto-thefts/)  #Infosecurity Magazine
+> **来源**: [The future of AI security research isn’t autonomous, it’s human-amplified](https://www.csoonline.com/article/4207666/the-future-of-ai-security-research-isnt-autonomous-its-human-amplified.html)  #CSO Online
 
 ---
 
