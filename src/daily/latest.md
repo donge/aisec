@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-08-12
+# 🤖🔒 AI+安全日报 | 2026-08-14
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Metabase SQLi exploit grants attackers total access
+### 📰 1. OpenAI launches GPT-5.6-Cyber as AI narrows vulnerability response window
 
-Business intelligence (BI) platform provider Metabase has disclosed a zero-day SQL Injection vulnerability, warning that customers’ sensitive credentials, tokens, API keys, and other data may have been exposed. The Metabase vulnerability revealed on August 6, designated CVE-2026-72898, is identified
+OpenAI has expanded its Daybreak cybersecurity program and introduced GPT-5.6-Cyber, a specialized model for approved security researchers, as the company warned that AI could give defenders less time to respond to developing threats. Daybreak now has two access levels. Blue gives approved defenders
 
-> **来源**: [Metabase SQLi exploit grants attackers total access](https://www.csoonline.com/article/4208307/metabase-sqli-exploit-grants-attackers-total-access.html)  #CSO Online
+> **来源**: [OpenAI launches GPT-5.6-Cyber as AI narrows vulnerability response window](https://www.csoonline.com/article/4207896/openai-launches-gpt-5-6-cyber-as-ai-narrows-vulnerability-response-window.html)  #CSO Online
 
-### 📰 2. Patch Tuesday August 2026: A zero-day WinSock driver hole under exploit, and a maximum severity SAP vulnerability
+### 📰 2. Microsoft wants you to rethink your approach to cyber defense
 
-A currently exploited zero-day elevation of privilege vulnerability that needs to be patched in a Windows driver for WinSock is the highlight of the 398 fixes issued today in Microsoft’s August Patch Tuesday releases. The hole is in Windows’ Ancillary Function Driver for WinSock (CVE-2026-68820), wh
+Cyber defenders need to shake off traditional best practices and switch from reactive patching to building inherently resilient systems in the face of AI-accelerated vulnerability discovery, according to a senior security manager at Microsoft. David Weston, group manager in the Windows team at Micro
 
-> **来源**: [Patch Tuesday August 2026: A zero-day WinSock driver hole under exploit, and a maximum severity SAP vulnerability](https://www.csoonline.com/article/4208185/patch-tuesday-august-2026-a-zero-day-winsock-driver-hole-under-exploit-and-a-maximum-severity-sap-vulnerability.html)  #CSO Online
+> **来源**: [Microsoft wants you to rethink your approach to cyber defense](https://www.csoonline.com/article/4208815/microsoft-wants-you-to-rethink-your-approach-to-cyber-defense.html)  #CSO Online
 
-### 📰 3. Prompt Injections for Defense
+### 📰 3. Researcher bypasses Microsoft Defender security patch, seizing control
 
-This seems to work: Researchers from Tracebit on Monday said they found that placing prompt injections alongside passwords, cryptographic keys, and other secrets stored on Amazon Web Services was often all that was needed to shut down attacks from AI hacking agents. The prompts direct the attacking 
+Just weeks after Microsoft patched a critical hole in Microsoft Defender, a cybersecurity researcher has posted an apparent bypass that provides system-level control to attackers once they gain any level of access. The researcher, who goes by the name Nightmare Eclipse, has been engaged in a long-ru
 
-> **来源**: [Prompt Injections for Defense](https://www.schneier.com/blog/archives/2026/08/prompt-injections-for-defense.html)  #Schneier on Security
+> **来源**: [Researcher bypasses Microsoft Defender security patch, seizing control](https://www.csoonline.com/article/4208760/researcher-bypasses-microsoft-defender-security-patch-seizing-control.html)  #CSO Online
 
-### 📰 4. Microsoft fixes 421 bugs and a Windows zero-day in August Patch Tuesday - update ASAP
+### 📰 4. AI agents wage near-autonomous cyberattack on Asian government networks
 
-The exploited zero-day flaw could allow an attacker to gain system privileges on a Windows PC.
+Autonomous AI agents built on open-source frameworks breached Taiwanese government systems, compromised credentials, and probed a nuclear safety agency in a multi-day cyberattack that researchers say signals a new phase in AI-enabled operations. The campaign unfolded over four days in early July, du
 
-> **来源**: [Microsoft fixes 421 bugs and a Windows zero-day in August Patch Tuesday - update ASAP](https://www.zdnet.com/article/microsoft-august-windows-update-421-bugs-zero-day-exploited/)  #ZDNet Security
+> **来源**: [AI agents wage near-autonomous cyberattack on Asian government networks](https://www.csoonline.com/article/4209210/ai-agents-wage-near-autonomous-cyberattack-on-asian-government-networks.html)  #CSO Online
 
-### 📰 5. The AI harness is the new attack surface
+### 📰 5. NIST wants to overhaul its vulnerability database for the AI age
 
-Ask a security researcher what makes an AI agent dangerous, and the instinct is to talk about the model — what it will and won’t refuse, how easily it can be jailbroken, whether its weights can be trusted. That instinct is increasingly out of date. A growing body of security research — exploit demon
+NIST is seeking public input to modernize the National Vulnerability Database to keep pace with AI-driven cyber threats and machine-scale security data. The post NIST wants to overhaul its vulnerability database for the AI age appeared first on CyberScoop.
 
-> **来源**: [The AI harness is the new attack surface](https://www.csoonline.com/article/4208236/the-ai-harness-is-the-new-attack-surface.html)  #CSO Online
+> **来源**: [NIST wants to overhaul its vulnerability database for the AI age](https://cyberscoop.com/nist-national-vulnerability-database-ai-overhaul/)  #CyberScoop
 
-### 📰 6. Zoom zero-click RCE flaws allow attackers to compromise meeting participants
+### 📰 6. OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber
 
-Zoom has fixed four vulnerabilities across its applications, including two that could allow attackers who join a meeting to execute malicious code on the systems of all other meeting participants with no interaction required from them. Three of the vulnerabilities affect all Zoom client applications
+Daybreak Blue removes some OpenAI-made guardrails while Daybreak Red grants the use of cyber-focused frontier AI models
 
-> **来源**: [Zoom zero-click RCE flaws allow attackers to compromise meeting participants](https://www.csoonline.com/article/4208223/zoom-zero-click-rce-flaws-allow-attackers-to-compromise-meeting-participants.html)  #CSO Online
+> **来源**: [OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber](https://www.infosecurity-magazine.com/news/openai-daybreak-blue-red-gpt-cyber/)  #Infosecurity Magazine
 
-### 📰 7. Microsoft Plugs Nearly 400 Security Holes
+### ⚠️ 7. CVE-2026-66738 [HIGH 8.8]
 
-Microsoft today released updates to remedy at least 398 security vulnerabilities in its Windows operating systems and supported software, including one weakness that is already being actively exploited and two others that were publicly detailed prior to today.
+SPIP before 4.4.18 contains a code injection vulnerability in SQLite-backed installations. The navigation menu endpoint improperly handles array-typed user input, which bypasses input sanitization and allows the value to break out of an internal quoted string context when evaluated as PHP. An authen
 
-> **来源**: [Microsoft Plugs Nearly 400 Security Holes](https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/)  #Krebs on Security
+> **来源**: [CVE-2026-66738 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-66738)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 8. WindRelay Malware Pairs With SpyNote RAT in Live-Call Scam
+### 📰 8. ICO Reprimands Criminal Records Office After 2023 Breach
 
-New WindRelay NFC malware paired with SpyNote RAT let a fraudster clone a card mid-call
+The ICO has issued a formal reprimand to ACRO after patching and security monitoring failures led to a breach
 
-> **来源**: [WindRelay Malware Pairs With SpyNote RAT in Live-Call Scam](https://www.infosecurity-magazine.com/news/windrelay-nfc-relay-spynote-rat/)  #Infosecurity Magazine
+> **来源**: [ICO Reprimands Criminal Records Office After 2023 Breach](https://www.infosecurity-magazine.com/news/ico-reprimands-acro-records-office/)  #Infosecurity Magazine
 
-### 📰 9. Lazarus Used Post-Quantum Key Exchange to Deliver Zero-Day
+### 📰 9. Smashing Security podcast #480: This is the AI service you should never sign up to
 
-Lazarus malware used post-quantum key exchange to protect delivery of a Windows zero-day exploit
+Would you like access to Anthropic's Claude at 90% off the normal price? All you have to do is redirect your traffic to a mysterious service called "Poison Claude". Only problem is that it's run by fraudsters... Meanwhile, a phishing-as-a-service platform called "Greatness" has come up with somethin
 
-> **来源**: [Lazarus Used Post-Quantum Key Exchange to Deliver Zero-Day](https://www.infosecurity-magazine.com/news/lazarus-post-quantum-key-dream-job/)  #Infosecurity Magazine
+> **来源**: [Smashing Security podcast #480: This is the AI service you should never sign up to](https://grahamcluley.com/smashing-security-podcast-480/)  #Graham Cluley
 
-### 📰 10. NIST Seeks Public Input on AI-Ready NVD Modernization
+### 📰 10. Logistics Giant Ceva Suffers Data Breach Impacting European Clients
 
-The US National Institute for Standards and Technology wants to modernize its National Vulnerability Database to embrace AI-powered vulnerability research
+Supply chain attack and data breach at Ceva Logistics appears to have a large blast radius
 
-> **来源**: [NIST Seeks Public Input on AI-Ready NVD Modernization](https://www.infosecurity-magazine.com/news/nist-seeks-public-input-ai-nvd/)  #Infosecurity Magazine
+> **来源**: [Logistics Giant Ceva Suffers Data Breach Impacting European Clients](https://www.infosecurity-magazine.com/news/logistics-ceva-data-breach/)  #Infosecurity Magazine
 
 ---
 
