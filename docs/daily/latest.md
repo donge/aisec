@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-14
+# 🤖🔒 AI+安全日报 | 2026-08-15
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Attackers target zero-day vulnerability in geospatial data platform GeoServer
+### 📰 1. The Agentic AI threat cluster: Seven incidents, three actors, and what they mean for your exposure
 
-Security researchers have seen evidence that attackers are attempting to exploit a currently unpatched SQL injection vulnerability in GeoServer, an open-source web server for managing and publishing geospatial data. The software is widely used by organizations in many industries, including the gover
+Tenable’s Research Special Operations (RSO) team has been tracking a cluster of agentic AI threat activity since late July 2026. The Taiwan autonomous AI cyber attack confirmed what the cluster data already showed: near-autonomous offensive AI has crossed from theoretical risk to operational reality
 
-> **来源**: [Attackers target zero-day vulnerability in geospatial data platform GeoServer](https://www.csoonline.com/article/4209388/attackers-target-zero-day-vulnerability-in-geospatial-data-platform-geoserver.html)  #CSO Online
+> **来源**: [The Agentic AI threat cluster: Seven incidents, three actors, and what they mean for your exposure](https://www.tenable.com/blog/the-agentic-ai-threat-cluster-seven-incidents-three-actors-and-what-they-mean)  #Tenable Blog
 
-### 📰 2. Oracle’s new database security tool is free — for six months
+### 📰 2. Microsoft wants you to rethink your approach to cyber defense
 
-Oracle has released a security tool intended to provide organizations with a centralized view of security risk across their database environments. Oracle Database Security Central will be available free of charge until the end of February 2027. It arrives at a critical time for Oracle customers, wit
+Cyber defenders need to shake off traditional best practices and switch from reactive patching to building inherently resilient systems in the face of AI-accelerated vulnerability discovery, according to a senior security manager at Microsoft. David Weston, group manager in the Windows team at Micro
 
-> **来源**: [Oracle’s new database security tool is free — for six months](https://www.csoonline.com/article/4209792/oracles-new-database-security-tool-is-free-for-six-months-2.html)  #CSO Online
+> **来源**: [Microsoft wants you to rethink your approach to cyber defense](https://www.csoonline.com/article/4208815/microsoft-wants-you-to-rethink-your-approach-to-cyber-defense.html)  #CSO Online
 
-### 📰 3. 5 key takeaways from Black Hat USA 2026
+### 📰 3. Researcher bypasses Microsoft Defender security patch, seizing control
 
-AI’s potential as a security tool and the danger of autonomous AI agents as a new attack surface were key themes of the presentations and product announcements at Black Hat and DEFCON in Las Vegas last week. Here are some key takeaways from this year’s hacker summer camp that CISOs should review whi
+Just weeks after Microsoft patched a critical hole in Microsoft Defender, a cybersecurity researcher has posted an apparent bypass that provides system-level control to attackers once they gain any level of access. The researcher, who goes by the name Nightmare Eclipse, has been engaged in a long-ru
 
-> **来源**: [5 key takeaways from Black Hat USA 2026](https://www.csoonline.com/article/4209429/5-key-takeaways-from-black-hat-usa-2026.html)  #CSO Online
+> **来源**: [Researcher bypasses Microsoft Defender security patch, seizing control](https://www.csoonline.com/article/4208760/researcher-bypasses-microsoft-defender-security-patch-seizing-control.html)  #CSO Online
 
-### 📰 4. Salesforce, ServiceNow data targeted in ‘City-Forum’ attacks
+### 📰 4. AI agents wage near-autonomous cyberattack on Asian government networks
 
-Records held in Salesforce and ServiceNow systems are under attack leaving user data exposed, according to researchers at Reco. The attack appears similar to those perpetrated by the extortion group ShinyHunters, Reco said. ShinyHunters has been particularly active this year, attacking dating sites 
+Autonomous AI agents built on open-source frameworks breached Taiwanese government systems, compromised credentials, and probed a nuclear safety agency in a multi-day cyberattack that researchers say signals a new phase in AI-enabled operations. The campaign unfolded over four days in early July, du
 
-> **来源**: [Salesforce, ServiceNow data targeted in ‘City-Forum’ attacks](https://www.csoonline.com/article/4209788/salesforce-servicenow-data-targeted-in-city-forum-attacks.html)  #CSO Online
+> **来源**: [AI agents wage near-autonomous cyberattack on Asian government networks](https://www.csoonline.com/article/4209210/ai-agents-wage-near-autonomous-cyberattack-on-asian-government-networks.html)  #CSO Online
 
-### 📰 5. Novel macOS Infostealer AmnesiaStealer Spread via ClickFix
+### 📰 5. NIST wants to overhaul its vulnerability database for the AI age
 
-AmnesiaStealer contains novel functions, including the attackers gaining remote control over the victim’s browser to steal cookie data
+NIST is seeking public input to modernize the National Vulnerability Database to keep pace with AI-driven cyber threats and machine-scale security data. The post NIST wants to overhaul its vulnerability database for the AI age appeared first on CyberScoop.
 
-> **来源**: [Novel macOS Infostealer AmnesiaStealer Spread via ClickFix](https://www.infosecurity-magazine.com/news/macos-infostealer-spread-clickfix/)  #Infosecurity Magazine
+> **来源**: [NIST wants to overhaul its vulnerability database for the AI age](https://cyberscoop.com/nist-national-vulnerability-database-ai-overhaul/)  #CyberScoop
 
-### 📰 6. AI’s ‘middle class’ has gotten dramatically better at hacking
+### 📰 6. OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber
 
-As frontier models and their sandbox escaping exploits dominate front-page news, researchers are increasingly worried about cheaper, more efficient AI models. The post AI’s ‘middle class’ has gotten dramatically better at hacking appeared first on CyberScoop.
+Daybreak Blue removes some OpenAI-made guardrails while Daybreak Red grants the use of cyber-focused frontier AI models
 
-> **来源**: [AI’s ‘middle class’ has gotten dramatically better at hacking](https://cyberscoop.com/mid-tier-ai-models-hacking-threat/)  #CyberScoop
+> **来源**: [OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber](https://www.infosecurity-magazine.com/news/openai-daybreak-blue-red-gpt-cyber/)  #Infosecurity Magazine
 
-### 📰 7. Researchers observe first ‘near-autonomous’ AI attack on government target in Taiwan
+### 📰 7. Akira ransomware reboots into Windows Safe Mode to knock EDR offline
 
-Israeli cyber firm Dream said the framework adapted mid-operation, corrected its mistakes and expanded as it went along. The post Researchers observe first ‘near-autonomous’ AI attack on government target in Taiwan appeared first on CyberScoop.
+Akira ransomware affiliates were seen using a new technique to evade endpoint detection and response (EDR), where they rebooted a compromised Windows system into Safe Mode with Networking enabled. According to Huntress, the technique successfully took both its agent and Microsoft Defender’s real-tim
 
-> **来源**: [Researchers observe first ‘near-autonomous’ AI attack on government target in Taiwan](https://cyberscoop.com/near-autonomous-ai-attack-government-target-taiwan/)  #CyberScoop
+> **来源**: [Akira ransomware reboots into Windows Safe Mode to knock EDR offline](https://www.csoonline.com/article/4209606/akira-ransomware-reboots-into-windows-safe-mode-to-knock-edr-offline.html)  #CSO Online
 
-### 📰 8. Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL
+### 📰 8. ICO Reprimands Criminal Records Office After 2023 Breach
 
-The Polish CERT has released details of another 2025 attack on a combined heat and power plant in the country
+The ICO has issued a formal reprimand to ACRO after patching and security monitoring failures led to a breach
 
-> **来源**: [Russian-Linked Hackers Accessed Polish Power Plant OT Network Through Private APN, Says CERT.PL](https://www.infosecurity-magazine.com/news/attack-polish-power-plant-2025-led/)  #Infosecurity Magazine
+> **来源**: [ICO Reprimands Criminal Records Office After 2023 Breach](https://www.infosecurity-magazine.com/news/ico-reprimands-acro-records-office/)  #Infosecurity Magazine
 
-### 📰 9. Kimwolf botnet rebuilt to survive takedowns, researchers say
+### 📰 9. Smashing Security podcast #480: This is the AI service you should never sign up to
 
-Months after police seized its servers and arrested an alleged operator, the Kimwolf botnet is running code that disguises attacks as Chrome traffic and fetches its orders from the Ethereum blockchain. The post Kimwolf botnet rebuilt to survive takedowns, researchers say appeared first on CyberScoop
+Would you like access to Anthropic's Claude at 90% off the normal price? All you have to do is redirect your traffic to a mysterious service called "Poison Claude". Only problem is that it's run by fraudsters... Meanwhile, a phishing-as-a-service platform called "Greatness" has come up with somethin
 
-> **来源**: [Kimwolf botnet rebuilt to survive takedowns, researchers say](https://cyberscoop.com/kimwolf-botnet-palo-alto-unit-42-android-tv-boxes/)  #CyberScoop
+> **来源**: [Smashing Security podcast #480: This is the AI service you should never sign up to](https://grahamcluley.com/smashing-security-podcast-480/)  #Graham Cluley
 
-### 📰 10. OpenAI Pauses Some Development of Astra Model on Security Concerns
+### 📰 10. Logistics Giant Ceva Suffers Data Breach Impacting European Clients
 
-OpenAI is tightening restrictions on testing of its upcoming Astra model due to security concerns
+Supply chain attack and data breach at Ceva Logistics appears to have a large blast radius
 
-> **来源**: [OpenAI Pauses Some Development of Astra Model on Security Concerns](https://www.infosecurity-magazine.com/news/openai-pauses-development-astra/)  #Infosecurity Magazine
+> **来源**: [Logistics Giant Ceva Suffers Data Breach Impacting European Clients](https://www.infosecurity-magazine.com/news/logistics-ceva-data-breach/)  #Infosecurity Magazine
 
 ---
 
