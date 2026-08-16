@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-08-15
+# 🤖🔒 AI+安全日报 | 2026-08-16
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. The Agentic AI threat cluster: Seven incidents, three actors, and what they mean for your exposure
+### ⚠️ 1. CVE-2026-73670 [HIGH 7.2]
 
-Tenable’s Research Special Operations (RSO) team has been tracking a cluster of agentic AI threat activity since late July 2026. The Taiwan autonomous AI cyber attack confirmed what the cluster data already showed: near-autonomous offensive AI has crossed from theoretical risk to operational reality
+A CMS contains a SQL injection vulnerability in admin/db_data.php at line 509 that allows authenticated administrators to inject arbitrary SQL into a SHOW COLUMNS FROM statement by supplying unsanitized input through the table_name GET or POST parameter. Attackers can perform table traversal, time-b
 
-> **来源**: [The Agentic AI threat cluster: Seven incidents, three actors, and what they mean for your exposure](https://www.tenable.com/blog/the-agentic-ai-threat-cluster-seven-incidents-three-actors-and-what-they-mean)  #Tenable Blog
+> **来源**: [CVE-2026-73670 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-73670)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 2. Microsoft wants you to rethink your approach to cyber defense
+### ⚠️ 2. CVE-2026-73515 [HIGH 8.1]
 
-Cyber defenders need to shake off traditional best practices and switch from reactive patching to building inherently resilient systems in the face of AI-accelerated vulnerability discovery, according to a senior security manager at Microsoft. David Weston, group manager in the Windows team at Micro
+PostGIS before 3.7.0beta2 contains an out-of-bounds read vulnerability that allows attackers to cause memory disclosure or a server crash by supplying a malformed FlatGeobuf buffer. The FlatGeobuf property metadata decoder verifies that a string length field is present but fails to verify that the s
 
-> **来源**: [Microsoft wants you to rethink your approach to cyber defense](https://www.csoonline.com/article/4208815/microsoft-wants-you-to-rethink-your-approach-to-cyber-defense.html)  #CSO Online
+> **来源**: [CVE-2026-73515 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-73515)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 3. Researcher bypasses Microsoft Defender security patch, seizing control
+### ⚠️ 3. CVE-2026-73514 [HIGH 8.8]
 
-Just weeks after Microsoft patched a critical hole in Microsoft Defender, a cybersecurity researcher has posted an apparent bypass that provides system-level control to attackers once they gain any level of access. The researcher, who goes by the name Nightmare Eclipse, has been engaged in a long-ru
+The address_standardizer extension for PostGIS through 3.7.0, fixed in commit 423570b, contains an out-of-bounds write vulnerability that allows a database user with the ability to supply caller-controlled relation names to standardize_address() to trigger memory corruption by providing a rules tabl
 
-> **来源**: [Researcher bypasses Microsoft Defender security patch, seizing control](https://www.csoonline.com/article/4208760/researcher-bypasses-microsoft-defender-security-patch-seizing-control.html)  #CSO Online
+> **来源**: [CVE-2026-73514 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-73514)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 4. AI agents wage near-autonomous cyberattack on Asian government networks
+### ⚠️ 4. CVE-2026-73533 [CRITICAL 9.8]
 
-Autonomous AI agents built on open-source frameworks breached Taiwanese government systems, compromised credentials, and probed a nuclear safety agency in a multi-day cyberattack that researchers say signals a new phase in AI-enabled operations. The campaign unfolded over four days in early July, du
+Ninja Tables Pro 5.2.11 contains an embedded malicious code vulnerability introduced via a tampered plugin build served through a decommissioned update server. The tampered build introduced a rogue PHP file (app/Library/updater/NinjaTableDataSync.php) that established a backdoor REST API endpoint, d
 
-> **来源**: [AI agents wage near-autonomous cyberattack on Asian government networks](https://www.csoonline.com/article/4209210/ai-agents-wage-near-autonomous-cyberattack-on-asian-government-networks.html)  #CSO Online
+> **来源**: [CVE-2026-73533 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-73533)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 5. NIST wants to overhaul its vulnerability database for the AI age
+### 📰 5. Fake CCleaner downloads turn Chrome into a credential-stealing surveillance tool
 
-NIST is seeking public input to modernize the National Vulnerability Database to keep pace with AI-driven cyber threats and machine-scale security data. The post NIST wants to overhaul its vulnerability database for the AI age appeared first on CyberScoop.
+A convincing fake version of the widely used CCleaner utility is being used to deliver a multi-stage Windows malware that ultimately abuses Google Chrome for credential theft and surveillance. Researchers from Malwarebytes found the campaign distributing a malicious Chrome extension called GhostDesk
 
-> **来源**: [NIST wants to overhaul its vulnerability database for the AI age](https://cyberscoop.com/nist-national-vulnerability-database-ai-overhaul/)  #CyberScoop
+> **来源**: [Fake CCleaner downloads turn Chrome into a credential-stealing surveillance tool](https://www.csoonline.com/article/4208565/fake-ccleaner-downloads-turn-chrome-into-a-credential-stealing-surveillance-tool.html)  #CSO Online
 
-### 📰 6. OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber
+### 📰 6. 17 old software bugs that took way too long to squash
 
-Daybreak Blue removes some OpenAI-made guardrails while Daybreak Red grants the use of cyber-focused frontier AI models
+In 2021, a vulnerability was revealed in a system that lay at the foundation of modern computing. An attacker could force the system to execute arbitrary code. Shockingly, the vulnerable code was almost 54 years old — and there was no patch available, and no expectation that one would be forthcoming
 
-> **来源**: [OpenAI Launches Two-Tier Security Access Program Alongside GPT 5.6 Cyber](https://www.infosecurity-magazine.com/news/openai-daybreak-blue-red-gpt-cyber/)  #Infosecurity Magazine
+> **来源**: [17 old software bugs that took way too long to squash](https://www.csoonline.com/article/570815/old-software-bugs-that-took-way-too-long-to-squash.html)  #CSO Online
 
-### 📰 7. Akira ransomware reboots into Windows Safe Mode to knock EDR offline
+### 📰 7. The cybersecurity backlog is not a security problem
 
-Akira ransomware affiliates were seen using a new technique to evade endpoint detection and response (EDR), where they rebooted a compromised Windows system into Safe Mode with Networking enabled. According to Huntress, the technique successfully took both its agent and Microsoft Defender’s real-tim
+Cybersecurity teams should be responsible for risk oversight, rather than for executing every corrective action. Assigning security teams the tasks of finding, prioritizing, assigning, implementing, tracking and validating every remediation does not foster accountability. Instead, it results in an o
 
-> **来源**: [Akira ransomware reboots into Windows Safe Mode to knock EDR offline](https://www.csoonline.com/article/4209606/akira-ransomware-reboots-into-windows-safe-mode-to-knock-edr-offline.html)  #CSO Online
+> **来源**: [The cybersecurity backlog is not a security problem](https://www.csoonline.com/article/4209334/the-cybersecurity-backlog-is-not-a-security-problem.html)  #CSO Online
 
-### 📰 8. ICO Reprimands Criminal Records Office After 2023 Breach
+### 📰 8. Trump administration opens door to private-sector cyber offensives
 
-The ICO has issued a formal reprimand to ACRO after patching and security monitoring failures led to a breach
+The Trump administration is opening the door for vetted US companies to conduct cyber operations against foreign cybercriminal organizations under federal supervision, giving the private sector a more direct role in disrupting cyber-enabled crime. A presidential memorandum issued on August 12 direct
 
-> **来源**: [ICO Reprimands Criminal Records Office After 2023 Breach](https://www.infosecurity-magazine.com/news/ico-reprimands-acro-records-office/)  #Infosecurity Magazine
+> **来源**: [Trump administration opens door to private-sector cyber offensives](https://www.csoonline.com/article/4209169/trump-administration-opens-door-to-private-sector-cyber-offensives.html)  #CSO Online
 
-### 📰 9. Smashing Security podcast #480: This is the AI service you should never sign up to
+### 📰 9. NVIDIA Group Proposes SAFE Initiative for Agentic Threat Intel Sharing
 
-Would you like access to Anthropic's Claude at 90% off the normal price? All you have to do is redirect your traffic to a mysterious service called "Poison Claude". Only problem is that it's run by fraudsters... Meanwhile, a phishing-as-a-service platform called "Greatness" has come up with somethin
+The Open Secure AI Alliance has announced plans for the Shared AI Findings Exchange (SAFE)
 
-> **来源**: [Smashing Security podcast #480: This is the AI service you should never sign up to](https://grahamcluley.com/smashing-security-podcast-480/)  #Graham Cluley
+> **来源**: [NVIDIA Group Proposes SAFE Initiative for Agentic Threat Intel Sharing](https://www.infosecurity-magazine.com/news/safe-initiative-agentic-threat/)  #Infosecurity Magazine
 
-### 📰 10. Logistics Giant Ceva Suffers Data Breach Impacting European Clients
+### 📰 10. NCSC Publishes Guidance to Aid Incident Response and Recovery
 
-Supply chain attack and data breach at Ceva Logistics appears to have a large blast radius
+The National Cyber Security Centre has released a detailed framework to assist with incident response and recovery
 
-> **来源**: [Logistics Giant Ceva Suffers Data Breach Impacting European Clients](https://www.infosecurity-magazine.com/news/logistics-ceva-data-breach/)  #Infosecurity Magazine
+> **来源**: [NCSC Publishes Guidance to Aid Incident Response and Recovery](https://www.infosecurity-magazine.com/news/ncsc-publishes-guidance-incident/)  #Infosecurity Magazine
 
 ---
 
