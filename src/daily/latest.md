@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-08-16
+# 🤖🔒 AI+安全日报 | 2026-08-17
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-73670 [HIGH 7.2]
+### 📰 1. Why data quality dictates security operations success
 
-A CMS contains a SQL injection vulnerability in admin/db_data.php at line 509 that allows authenticated administrators to inject arbitrary SQL into a SHOW COLUMNS FROM statement by supplying unsanitized input through the table_name GET or POST parameter. Attackers can perform table traversal, time-b
+As AI takes on more security operations center (SOC) workflows to automate threat triage, indicator extraction, and incident report generation, security operations leaders face a persistent question: Does SOC performance depend more on the large language model (LLM) deployed or on the underlying qua
 
-> **来源**: [CVE-2026-73670 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-73670)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [Why data quality dictates security operations success](https://www.csoonline.com/article/4206800/why-data-quality-dictates-security-operations-success.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-73515 [HIGH 8.1]
+### 📰 2. Zhipu says new coding AI developed advanced cyber skills faster than expected
 
-PostGIS before 3.7.0beta2 contains an out-of-bounds read vulnerability that allows attackers to cause memory disclosure or a server crash by supplying a malformed FlatGeobuf buffer. The FlatGeobuf property metadata decoder verifies that a string length field is present but fails to verify that the s
+Chinese AI developer Zhipu has launched GLM-5.3, a new coding-focused AI model that the company says has developed unexpectedly strong cybersecurity capabilities, putting it close to global leading models in vulnerability discovery while remaining behind them on deeper exploitation tasks. Zhipu’s ow
 
-> **来源**: [CVE-2026-73515 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-73515)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [Zhipu says new coding AI developed advanced cyber skills faster than expected](https://www.csoonline.com/article/4210501/zhipu-says-new-coding-ai-developed-advanced-cyber-skills-faster-than-expected-2.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-73514 [HIGH 8.8]
+### ⚠️ 3. CVE-2026-66271 [HIGH 7.2]
 
-The address_standardizer extension for PostGIS through 3.7.0, fixed in commit 423570b, contains an out-of-bounds write vulnerability that allows a database user with the ability to supply caller-controlled relation names to standardize_address() to trigger memory corruption by providing a rules tabl
+Dell Wyse Management Suite (WMS), versions prior to 2605.0.2, contain an Unrestricted Upload of File with Dangerous Type vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Remote Code Execution.
 
-> **来源**: [CVE-2026-73514 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-73514)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-66271 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-66271)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### ⚠️ 4. CVE-2026-73533 [CRITICAL 9.8]
+### ⚠️ 4. CVE-2026-66270 [HIGH 7.2]
 
-Ninja Tables Pro 5.2.11 contains an embedded malicious code vulnerability introduced via a tampered plugin build served through a decommissioned update server. The tampered build introduced a rogue PHP file (app/Library/updater/NinjaTableDataSync.php) that established a backdoor REST API endpoint, d
+Dell Wyse Management Suite (WMS), versions prior to 2605.0.2, contain an Unrestricted Upload of File with Dangerous Type vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Remote Code Execution.
 
-> **来源**: [CVE-2026-73533 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-73533)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-66270 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-66270)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 5. Fake CCleaner downloads turn Chrome into a credential-stealing surveillance tool
+### ⚠️ 5. CVE-2026-63700 [HIGH 7.8]
 
-A convincing fake version of the widely used CCleaner utility is being used to deliver a multi-stage Windows malware that ultimately abuses Google Chrome for credential theft and surveillance. Researchers from Malwarebytes found the campaign distributing a malicious Chrome extension called GhostDesk
+Dell Wyse Management Suite (WMS), versions prior to 2605.0.2, contain an Incorrect Default Permission vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Privilege Escalation.
 
-> **来源**: [Fake CCleaner downloads turn Chrome into a credential-stealing surveillance tool](https://www.csoonline.com/article/4208565/fake-ccleaner-downloads-turn-chrome-into-a-credential-stealing-surveillance-tool.html)  #CSO Online
+> **来源**: [CVE-2026-63700 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-63700)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 6. 17 old software bugs that took way too long to squash
+### 📰 6. An “invisible” car? Researcher uses machine learning to hide vehicles from Flock cameras
 
-In 2021, a vulnerability was revealed in a system that lay at the foundation of modern computing. An attacker could force the system to execute arbitrary code. Shockingly, the vulnerable code was almost 54 years old — and there was no patch available, and no expectation that one would be forthcoming
+A cybersecurity expert has demonstrated how computer-generated patterns can successfully prevent surveillance cameras from detecting vehicles - such as the controversial AI-powered Flock licence plate readers that are becoming increasingly common on American streets. Read more in my article on the H
 
-> **来源**: [17 old software bugs that took way too long to squash](https://www.csoonline.com/article/570815/old-software-bugs-that-took-way-too-long-to-squash.html)  #CSO Online
+> **来源**: [An “invisible” car? Researcher uses machine learning to hide vehicles from Flock cameras](https://www.bitdefender.com/en-us/blog/hotforsecurity/invisible-car-machine-learning-hide-vehicle-flock-cameras)  #Graham Cluley
 
-### 📰 7. The cybersecurity backlog is not a security problem
+### 📰 7. New macOS malware turns stolen browsers into attacker-controlled sessions
 
-Cybersecurity teams should be responsible for risk oversight, rather than for executing every corrective action. Assigning security teams the tasks of finding, prioritizing, assigning, implementing, tracking and validating every remediation does not foster accountability. Instead, it results in an o
+Mac users are being freshly warned of suspicious websites asking them to open Terminal and install software. Jamf Threat Labs has uncovered a multi-stage macOS infostealer, dubbed AmnesiaStealer, that uses a ClickFix-style fake GitHub download page to trick victims into executing a command that inst
 
-> **来源**: [The cybersecurity backlog is not a security problem](https://www.csoonline.com/article/4209334/the-cybersecurity-backlog-is-not-a-security-problem.html)  #CSO Online
+> **来源**: [New macOS malware turns stolen browsers into attacker-controlled sessions](https://www.csoonline.com/article/4210464/new-macos-malware-turns-stolen-browsers-into-attacker-controlled-sessions.html)  #CSO Online
 
-### 📰 8. Trump administration opens door to private-sector cyber offensives
+### ⚠️ 8. CVE-2026-53970 [HIGH 7.5]
 
-The Trump administration is opening the door for vetted US companies to conduct cyber operations against foreign cybercriminal organizations under federal supervision, giving the private sector a more direct role in disrupting cyber-enabled crime. A presidential memorandum issued on August 12 direct
+ZeroBrew version 0.3.1 and prior contains a missing integrity verification vulnerability in the Ruby compatibility shim that allows network attackers to execute arbitrary code by substituting malicious content at formula resource or URL-based patch URLs without checksum validation. Attackers can int
 
-> **来源**: [Trump administration opens door to private-sector cyber offensives](https://www.csoonline.com/article/4209169/trump-administration-opens-door-to-private-sector-cyber-offensives.html)  #CSO Online
+> **来源**: [CVE-2026-53970 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-53970)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 9. NVIDIA Group Proposes SAFE Initiative for Agentic Threat Intel Sharing
+### 📰 9. Detecting cloud ransomware in Azure with Tenable One’s cloud detection and response capabilities
 
-The Open Secure AI Alliance has announced plans for the Shared AI Findings Exchange (SAFE)
+Learn how Tenable One Cloud Exposure helps you unmask the sophisticated tactics of cybercrime group Storm-0501, which carries out Azure-based cloud ransomware campaigns. Tenable One Cloud Exposure uses AI-powered threat stories to expose Storm-0501 TTPs, backed by precision-engineered threat detecti
 
-> **来源**: [NVIDIA Group Proposes SAFE Initiative for Agentic Threat Intel Sharing](https://www.infosecurity-magazine.com/news/safe-initiative-agentic-threat/)  #Infosecurity Magazine
+> **来源**: [Detecting cloud ransomware in Azure with Tenable One’s cloud detection and response capabilities](https://www.tenable.com/blog/detecting-cloud-ransomware-in-azure-with-tenable-ones-cloud-detection-and-response)  #Tenable Blog
 
-### 📰 10. NCSC Publishes Guidance to Aid Incident Response and Recovery
+### 📰 10. It took $58 to break Microsoft’s SCCM, but a patch made it harder
 
-The National Cyber Security Centre has released a detailed framework to assist with incident response and recovery
+Researchers at XM Cyber found that a standard domain user with no Microsoft SCCM privileges can chain multiple flaws to reach remote code execution, although the attack does require network access to the SCCM environment. Enterprises use Microsoft System Center Configuration Manager (SCCM) to deploy
 
-> **来源**: [NCSC Publishes Guidance to Aid Incident Response and Recovery](https://www.infosecurity-magazine.com/news/ncsc-publishes-guidance-incident/)  #Infosecurity Magazine
+> **来源**: [It took $58 to break Microsoft’s SCCM, but a patch made it harder](https://www.csoonline.com/article/4209154/it-took-58-to-break-microsofts-sccm-but-a-patch-made-it-harder.html)  #CSO Online
 
 ---
 
