@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-08-17
+# 🤖🔒 AI+安全日报 | 2026-08-18
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Why data quality dictates security operations success
+### 📰 1. AI can find zero-days but still can’t reliably write secure code
 
-As AI takes on more security operations center (SOC) workflows to automate threat triage, indicator extraction, and incident report generation, security operations leaders face a persistent question: Does SOC performance depend more on the large language model (LLM) deployed or on the underlying qua
+In recent months, LLMs have gone from flooding open-source projects and bug bounty programs with questionable security reports that wasted developers’ time, to routinely finding zero-day flaws that humans and traditional security audit tools had missed for years — a rapid evolution in cyber capabili
 
-> **来源**: [Why data quality dictates security operations success](https://www.csoonline.com/article/4206800/why-data-quality-dictates-security-operations-success.html)  #CSO Online
+> **来源**: [AI can find zero-days but still can’t reliably write secure code](https://www.csoonline.com/article/4210735/ai-can-find-zero-days-but-still-cant-reliably-write-secure-code.html)  #CSO Online
 
-### 📰 2. Zhipu says new coding AI developed advanced cyber skills faster than expected
+### ⚠️ 2. CVE-2026-19900 [HIGH 8.1]
 
-Chinese AI developer Zhipu has launched GLM-5.3, a new coding-focused AI model that the company says has developed unexpectedly strong cybersecurity capabilities, putting it close to global leading models in vulnerability discovery while remaining behind them on deeper exploitation tasks. Zhipu’s ow
+A vulnerability was identified in LB-LINK X-PRO 1.0.22-20231206. The impacted element is an unknown function of the file /etc/shadow. The manipulation leads to hard-coded credentials. It is possible to initiate the attack remotely. A high degree of complexity is needed for the attack. The exploitabi
 
-> **来源**: [Zhipu says new coding AI developed advanced cyber skills faster than expected](https://www.csoonline.com/article/4210501/zhipu-says-new-coding-ai-developed-advanced-cyber-skills-faster-than-expected-2.html)  #CSO Online
+> **来源**: [CVE-2026-19900 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-19900)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### ⚠️ 3. CVE-2026-66271 [HIGH 7.2]
+### 📰 3. New Malware turns Microsoft cloud into its control center
 
-Dell Wyse Management Suite (WMS), versions prior to 2605.0.2, contain an Unrestricted Upload of File with Dangerous Type vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Remote Code Execution.
+Security researchers are warning of a newly uncovered Python malware framework that routes much of its command-and-control (C2) activity through Microsoft services that defenders already expect to see. The Ontinue Cyber Defense Center discovered the implant while investigating an active campaign in 
 
-> **来源**: [CVE-2026-66271 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-66271)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [New Malware turns Microsoft cloud into its control center](https://www.csoonline.com/article/4210973/new-malware-turns-microsoft-cloud-into-its-control-center.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-66270 [HIGH 7.2]
+### ⚠️ 4. CVE-2026-73045 [HIGH 7.5]
 
-Dell Wyse Management Suite (WMS), versions prior to 2605.0.2, contain an Unrestricted Upload of File with Dangerous Type vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Remote Code Execution.
+SiYuan before 3.7.4 contains an improper restriction of excessive authentication attempts vulnerability in the authFilePublishAccess endpoint that allows unauthenticated attackers to brute-force per-notebook publish passwords. Attackers can submit unbounded password guesses without rate limiting or 
 
-> **来源**: [CVE-2026-66270 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-66270)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-73045 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-73045)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### ⚠️ 5. CVE-2026-63700 [HIGH 7.8]
+### ⚠️ 5. CVE-2026-73043 [CRITICAL 9]
 
-Dell Wyse Management Suite (WMS), versions prior to 2605.0.2, contain an Incorrect Default Permission vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Privilege Escalation.
+SiYuan versions before v3.7.4 contain a remote code execution vulnerability in the Template calculation operator, which renders user-authored Go templates and stores output verbatim without sanitization. Attackers can inject malicious HTML and JavaScript into template calculations that execute in th
 
-> **来源**: [CVE-2026-63700 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-63700)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-73043 [CRITICAL 9]](https://nvd.nist.gov/vuln/detail/CVE-2026-73043)  CVSS 9 CRITICAL · #NVD · #漏洞
 
-### 📰 6. An “invisible” car? Researcher uses machine learning to hide vehicles from Flock cameras
+### ⚠️ 6. CVE-2026-19905 [HIGH 7.3]
 
-A cybersecurity expert has demonstrated how computer-generated patterns can successfully prevent surveillance cameras from detecting vehicles - such as the controversial AI-powered Flock licence plate readers that are becoming increasingly common on American streets. Read more in my article on the H
+A weakness has been identified in Jinher OA 1.0. Impacted is an unknown function of the file /C6/JHSoft.Web.HrmAttendance/attendance_out_approve.aspx. This manipulation of the argument httpOID causes sql injection. It is possible to initiate the attack remotely. The exploit has been made available t
 
-> **来源**: [An “invisible” car? Researcher uses machine learning to hide vehicles from Flock cameras](https://www.bitdefender.com/en-us/blog/hotforsecurity/invisible-car-machine-learning-hide-vehicle-flock-cameras)  #Graham Cluley
+> **来源**: [CVE-2026-19905 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-19905)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 7. New macOS malware turns stolen browsers into attacker-controlled sessions
+### 📰 7. What you say during a cyber breach can — and will — be used against you
 
-Mac users are being freshly warned of suspicious websites asking them to open Terminal and install software. Jamf Threat Labs has uncovered a multi-stage macOS infostealer, dubbed AmnesiaStealer, that uses a ClickFix-style fake GitHub download page to trick victims into executing a command that inst
+The first 24 hours after a cyber incident are messy. Teams are moving fast, and a lot gets said on Slack or email that can come back later. People are scrambling to contain the issue, figure out what happened and keep things moving. In the process, they create a record that doesn’t always age well. 
 
-> **来源**: [New macOS malware turns stolen browsers into attacker-controlled sessions](https://www.csoonline.com/article/4210464/new-macos-malware-turns-stolen-browsers-into-attacker-controlled-sessions.html)  #CSO Online
+> **来源**: [What you say during a cyber breach can — and will — be used against you](https://www.csoonline.com/article/4210677/what-you-say-during-a-cyber-breach-can-and-will-be-used-against-you.html)  #CSO Online
 
-### ⚠️ 8. CVE-2026-53970 [HIGH 7.5]
+### 📰 8. OpenAI president’s blog pushing agentic AI most notable for what it did not say
 
-ZeroBrew version 0.3.1 and prior contains a missing integrity verification vulnerability in the Ruby compatibility shim that allows network attackers to execute arbitrary code by substituting malicious content at formula resource or URL-based patch URLs without checksum validation. Attackers can int
+OpenAI president Greg Brockman on Sunday warned enterprise CISOs that they need to more aggressively embrace agents if they want to survive upcoming cyberattacks. Brockman said in a blog post that it has become “increasingly clear” that company systems are hiding “significant flaws, and defenders ne
 
-> **来源**: [CVE-2026-53970 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-53970)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [OpenAI president’s blog pushing agentic AI most notable for what it did not say](https://www.csoonline.com/article/4210776/openai-presidents-blog-pushing-agentic-ai-most-notable-for-what-it-did-not-say-2.html)  #CSO Online
 
-### 📰 9. Detecting cloud ransomware in Azure with Tenable One’s cloud detection and response capabilities
+### 📰 9. Wiz AI Agent Finds Critical Snowflake GitHub Repo Flaw Advanced Security Missed
 
-Learn how Tenable One Cloud Exposure helps you unmask the sophisticated tactics of cybercrime group Storm-0501, which carries out Azure-based cloud ransomware campaigns. Tenable One Cloud Exposure uses AI-powered threat stories to expose Storm-0501 TTPs, backed by precision-engineered threat detecti
+The security flaw in Snowflake’s GitHub Actions workflow had been missed by a GitHub Advanced Security scan, said a Wiz researcher
 
-> **来源**: [Detecting cloud ransomware in Azure with Tenable One’s cloud detection and response capabilities](https://www.tenable.com/blog/detecting-cloud-ransomware-in-azure-with-tenable-ones-cloud-detection-and-response)  #Tenable Blog
+> **来源**: [Wiz AI Agent Finds Critical Snowflake GitHub Repo Flaw Advanced Security Missed](https://www.infosecurity-magazine.com/news/wiz-ai-agent-finds-snowflake/)  #Infosecurity Magazine
 
-### 📰 10. It took $58 to break Microsoft’s SCCM, but a patch made it harder
+### 📰 10. NASA Ground Control Software Flaw Enables Unauthenticated Commands
 
-Researchers at XM Cyber found that a standard domain user with no Microsoft SCCM privileges can chain multiple flaws to reach remote code execution, although the attack does require network access to the SCCM environment. Enterprises use Microsoft System Center Configuration Manager (SCCM) to deploy
+Critical AIT-GUI flaws expose spacecraft commands and scripts to unauthenticated attackers
 
-> **来源**: [It took $58 to break Microsoft’s SCCM, but a patch made it harder](https://www.csoonline.com/article/4209154/it-took-58-to-break-microsofts-sccm-but-a-patch-made-it-harder.html)  #CSO Online
+> **来源**: [NASA Ground Control Software Flaw Enables Unauthenticated Commands](https://www.infosecurity-magazine.com/news/nasa-ground-control-software-flaw/)  #Infosecurity Magazine
 
 ---
 
