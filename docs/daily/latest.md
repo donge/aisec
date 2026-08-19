@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-18
+# 🤖🔒 AI+安全日报 | 2026-08-19
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. AI can find zero-days but still can’t reliably write secure code
+### 📰 1. CISOs are struggling to threat-model AI. Can 15-minute sessions help?
 
-In recent months, LLMs have gone from flooding open-source projects and bug bounty programs with questionable security reports that wasted developers’ time, to routinely finding zero-day flaws that humans and traditional security audit tools had missed for years — a rapid evolution in cyber capabili
+A few weeks ago, on a busy day, threat-modeling expert Adam Shostack opened an email from a client. Someone at that organization had vibe-coded an app and put it to work with customer data. Now, the client wanted to know what risks the tool posed. And what it should do about them. They needed answer
 
-> **来源**: [AI can find zero-days but still can’t reliably write secure code](https://www.csoonline.com/article/4210735/ai-can-find-zero-days-but-still-cant-reliably-write-secure-code.html)  #CSO Online
+> **来源**: [CISOs are struggling to threat-model AI. Can 15-minute sessions help?](https://www.csoonline.com/article/4206412/cisos-are-struggling-to-threat-model-ai-can-15-minute-sessions-help.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-19900 [HIGH 8.1]
+### 📰 2. Microsoft finally patches critical one-click Copilot vulnerability, almost eight months after learning of it
 
-A vulnerability was identified in LB-LINK X-PRO 1.0.22-20231206. The impacted element is an unknown function of the file /etc/shadow. The manipulation leads to hard-coded credentials. It is possible to initiate the attack remotely. A high degree of complexity is needed for the attack. The exploitabi
+Almost eight months after confirming a critical security vulnerability within the personal version of its AI assistant, Copilot, Microsoft on Tuesday issued a patch to close the hole, which relies on an LLM’s inability to distinguish the data in a query from an instruction. The CoSnitch hole was dis
 
-> **来源**: [CVE-2026-19900 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-19900)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [Microsoft finally patches critical one-click Copilot vulnerability, almost eight months after learning of it](https://www.csoonline.com/article/4211342/microsoft-finally-patches-critical-one-click-copilot-vulnerability-more-than-eight-months-after-learning-of-it-2.html)  #CSO Online
 
-### 📰 3. New Malware turns Microsoft cloud into its control center
+### 📰 3. Most organizations aren’t ready for a Hugging Face-level event
 
-Security researchers are warning of a newly uncovered Python malware framework that routes much of its command-and-control (C2) activity through Microsoft services that defenders already expect to see. The Ontinue Cyber Defense Center discovered the implant while investigating an active campaign in 
+The National Security Agency (NSA) and Central Security Service recently published an advisory statement on behalf of the Five Eyes Cyber Security Agencies, warning that AI technologies are making it easier than ever for would-be malicious actors to infiltrate and compromise sensitive networks. “AI 
 
-> **来源**: [New Malware turns Microsoft cloud into its control center](https://www.csoonline.com/article/4210973/new-malware-turns-microsoft-cloud-into-its-control-center.html)  #CSO Online
+> **来源**: [Most organizations aren’t ready for a Hugging Face-level event](https://www.csoonline.com/article/4211112/most-organizations-arent-ready-for-a-hugging-face-level-event.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-73045 [HIGH 7.5]
+### 📰 4. Critical GitLab flaw allows attackers to delete and modify public repos
 
-SiYuan before 3.7.4 contains an improper restriction of excessive authentication attempts vulnerability in the authFilePublishAccess endpoint that allows unauthenticated attackers to brute-force per-notebook publish passwords. Attackers can submit unbounded password guesses without rate limiting or 
+GitLab has fixed a critical vulnerability that could allow unauthenticated attackers to perform unauthorized modifications inside code repositories or to completely delete them with a single HTTP request. The patched releases also address a second high-risk cross-site request forgery (CSRF) flaw. Th
 
-> **来源**: [CVE-2026-73045 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-73045)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [Critical GitLab flaw allows attackers to delete and modify public repos](https://www.csoonline.com/article/4211140/critical-gitlab-flaw-allows-attackers-to-delete-and-modify-public-repos.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-73043 [CRITICAL 9]
+### ⚠️ 5. CVE-2026-19963 [HIGH 7.4]
 
-SiYuan versions before v3.7.4 contain a remote code execution vulnerability in the Template calculation operator, which renders user-authored Go templates and stores output verbatim without sanitization. Attackers can inject malicious HTML and JavaScript into template calculations that execute in th
+A vulnerability has been found in Edimax EW-7478APC 1.04. Affected by this issue is the function stainfo of the file /goform/stainfo. The manipulation of the argument interface leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public an
 
-> **来源**: [CVE-2026-73043 [CRITICAL 9]](https://nvd.nist.gov/vuln/detail/CVE-2026-73043)  CVSS 9 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-19963 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-19963)  CVSS 7.4 HIGH · #NVD · #漏洞
 
-### ⚠️ 6. CVE-2026-19905 [HIGH 7.3]
+### ⚠️ 6. CVE-2026-19960 [HIGH 7.4]
 
-A weakness has been identified in Jinher OA 1.0. Impacted is an unknown function of the file /C6/JHSoft.Web.HrmAttendance/attendance_out_approve.aspx. This manipulation of the argument httpOID causes sql injection. It is possible to initiate the attack remotely. The exploit has been made available t
+A security vulnerability has been detected in Edimax EW-7478APC 1.04. This impacts the function formWlbasic of the file /goform/formWlbasic. Such manipulation of the argument rootAPmac leads to command injection. The attack can be executed remotely. The exploit has been disclosed publicly and may be
 
-> **来源**: [CVE-2026-19905 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-19905)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-19960 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-19960)  CVSS 7.4 HIGH · #NVD · #漏洞
 
-### 📰 7. What you say during a cyber breach can — and will — be used against you
+### ⚠️ 7. CVE-2026-19959 [CRITICAL 9.9]
 
-The first 24 hours after a cyber incident are messy. Teams are moving fast, and a lot gets said on Slack or email that can come back later. People are scrambling to contain the issue, figure out what happened and keep things moving. In the process, they create a record that doesn’t always age well. 
+A weakness has been identified in Edimax EW-7478APC 1.04. This affects the function formWanTcpipSetup of the file /goform/formWanTcpipSetup. This manipulation of the argument pppUserName causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been made avai
 
-> **来源**: [What you say during a cyber breach can — and will — be used against you](https://www.csoonline.com/article/4210677/what-you-say-during-a-cyber-breach-can-and-will-be-used-against-you.html)  #CSO Online
+> **来源**: [CVE-2026-19959 [CRITICAL 9.9]](https://nvd.nist.gov/vuln/detail/CVE-2026-19959)  CVSS 9.9 CRITICAL · #NVD · #漏洞
 
-### 📰 8. OpenAI president’s blog pushing agentic AI most notable for what it did not say
+### 📰 8. The long tail of Clop’s PTC hack is just beginning to emerge
 
-OpenAI president Greg Brockman on Sunday warned enterprise CISOs that they need to more aggressively embrace agents if they want to survive upcoming cyberattacks. Brockman said in a blog post that it has become “increasingly clear” that company systems are hiding “significant flaws, and defenders ne
+The data theft extortion group likely compromised a critical vulnerability affecting PTC’s product lifecycle management software in June, a month before it sent threatening emails to victims. The post The long tail of Clop’s PTC hack is just beginning to emerge appeared first on CyberScoop.
 
-> **来源**: [OpenAI president’s blog pushing agentic AI most notable for what it did not say](https://www.csoonline.com/article/4210776/openai-presidents-blog-pushing-agentic-ai-most-notable-for-what-it-did-not-say-2.html)  #CSO Online
+> **来源**: [The long tail of Clop’s PTC hack is just beginning to emerge](https://cyberscoop.com/clop-zero-day-attacks-ptc-windchill-flexplm/)  #CyberScoop
 
-### 📰 9. Wiz AI Agent Finds Critical Snowflake GitHub Repo Flaw Advanced Security Missed
+### 📰 9. OpenAI Overhauls Safety Protocols After Its AI Agents Went Rogue
 
-The security flaw in Snowflake’s GitHub Actions workflow had been missed by a GitHub Advanced Security scan, said a Wiz researcher
+The ChatGPT maker says its upcoming Astra model may have reached “critical” cyber capabilities, prompting it to halt a significant number of training runs while it tightens internal safeguards.
 
-> **来源**: [Wiz AI Agent Finds Critical Snowflake GitHub Repo Flaw Advanced Security Missed](https://www.infosecurity-magazine.com/news/wiz-ai-agent-finds-snowflake/)  #Infosecurity Magazine
+> **来源**: [OpenAI Overhauls Safety Protocols After Its AI Agents Went Rogue](https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/)  #Wired Security
 
-### 📰 10. NASA Ground Control Software Flaw Enables Unauthenticated Commands
+### ⚠️ 10. CVE-2026-19962 [HIGH 7.4]
 
-Critical AIT-GUI flaws expose spacecraft commands and scripts to unauthenticated attackers
+A flaw has been found in Edimax EW-7478APC 1.04. Affected by this vulnerability is the function setWAN of the file /goform/setWAN. Executing a manipulation of the argument pppUserName/pptpUserName/L2TPUserName can lead to command injection. The attack may be performed from remote. The exploit has be
 
-> **来源**: [NASA Ground Control Software Flaw Enables Unauthenticated Commands](https://www.infosecurity-magazine.com/news/nasa-ground-control-software-flaw/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-19962 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-19962)  CVSS 7.4 HIGH · #NVD · #漏洞
 
 ---
 
