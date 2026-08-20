@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-19
+# 🤖🔒 AI+安全日报 | 2026-08-20
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. CISOs are struggling to threat-model AI. Can 15-minute sessions help?
+### ⚠️ 1. CVE-2026-64868 [HIGH 7.5] 🔬
 
-A few weeks ago, on a busy day, threat-modeling expert Adam Shostack opened an email from a client. Someone at that organization had vibe-coded an app and put it to work with customer data. Now, the client wanted to know what risks the tool posed. And what it should do about them. They needed answer
+New API is a large language mode (LLM) gateway and artificial intelligence (AI) asset management system. Prior to 1.0.0-rc.11, POST /api/stripe/webhook, POST /api/creem/webhook, and POST /api/waffo/webhook read and log full request bodies before signature validation in router/api-router.go and the p
 
-> **来源**: [CISOs are struggling to threat-model AI. Can 15-minute sessions help?](https://www.csoonline.com/article/4206412/cisos-are-struggling-to-threat-model-ai-can-15-minute-sessions-help.html)  #CSO Online
+> **来源**: [CVE-2026-64868 [HIGH 7.5] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-64868)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 2. Microsoft finally patches critical one-click Copilot vulnerability, almost eight months after learning of it
+### 📰 2. Kriminal breaks out of Grok, Claude guardrails at $12.99
 
-Almost eight months after confirming a critical security vulnerability within the personal version of its AI assistant, Copilot, Microsoft on Tuesday issued a patch to close the hole, which relies on an LLM’s inability to distinguish the data in a query from an instruction. The CoSnitch hole was dis
+Security researchers are warning of a criminal AI service built on Grok and Claude, among other models, that promises uncensored access to powerful AI capabilities for as little as $12.99 a month. ThreatDown researchers say “Kriminal” is largely a storefront wrapped around legitimate AI services, us
 
-> **来源**: [Microsoft finally patches critical one-click Copilot vulnerability, almost eight months after learning of it](https://www.csoonline.com/article/4211342/microsoft-finally-patches-critical-one-click-copilot-vulnerability-more-than-eight-months-after-learning-of-it-2.html)  #CSO Online
+> **来源**: [Kriminal breaks out of Grok, Claude guardrails at $12.99](https://www.csoonline.com/article/4211952/kriminal-breaks-out-of-grok-claude-guardrails-at-12-99.html)  #CSO Online
 
-### 📰 3. Most organizations aren’t ready for a Hugging Face-level event
+### 📰 3. Frequently asked questions about the active threat to Siemens S7 Series PLCs
 
-The National Security Agency (NSA) and Central Security Service recently published an advisory statement on behalf of the Five Eyes Cyber Security Agencies, warning that AI technologies are making it easier than ever for would-be malicious actors to infiltrate and compromise sensitive networks. “AI 
+A joint cybersecurity advisory released by multiple U.S. government agencies warns that threat actors are using AI-generated exploitation scripts to target exposed Siemens S7 Series PLCs across critical infrastructure sectors.Key TakeawaysUnattributed threat actors are exploiting known weaknesses an
 
-> **来源**: [Most organizations aren’t ready for a Hugging Face-level event](https://www.csoonline.com/article/4211112/most-organizations-arent-ready-for-a-hugging-face-level-event.html)  #CSO Online
+> **来源**: [Frequently asked questions about the active threat to Siemens S7 Series PLCs](https://www.tenable.com/blog/frequently-asked-questions-about-the-active-threat-to-siemens-s7-series-plcs)  #Tenable Blog
 
-### 📰 4. Critical GitLab flaw allows attackers to delete and modify public repos
+### 📰 4. Snowflake flaw slips past AI checks, gets exploited by another AI
 
-GitLab has fixed a critical vulnerability that could allow unauthenticated attackers to perform unauthorized modifications inside code repositories or to completely delete them with a single HTTP request. The patched releases also address a second high-risk cross-site request forgery (CSRF) flaw. Th
+An autonomous AI security agent developed by cloud security firm Wiz identified and exploited a critical vulnerability in Snowflake’s GitHub Actions pipeline, while GitHub Copilot had previously reviewed the code change without flagging the flaw. The vulnerable code was part of a pull request (PR) t
 
-> **来源**: [Critical GitLab flaw allows attackers to delete and modify public repos](https://www.csoonline.com/article/4211140/critical-gitlab-flaw-allows-attackers-to-delete-and-modify-public-repos.html)  #CSO Online
+> **来源**: [Snowflake flaw slips past AI checks, gets exploited by another AI](https://www.csoonline.com/article/4211501/snowflake-flaw-slips-past-ai-checks-gets-exploited-by-another-ai.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-19963 [HIGH 7.4]
+### 📰 5. ICS Operators Warned of AI-Driven Attacks on Siemens PLCs
 
-A vulnerability has been found in Edimax EW-7478APC 1.04. Affected by this issue is the function stainfo of the file /goform/stainfo. The manipulation of the argument interface leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public an
+A US government advisory warned that attackers are deploying AI-generated exploitation scripts against exposed Siemens S7 Series PLCs
 
-> **来源**: [CVE-2026-19963 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-19963)  CVSS 7.4 HIGH · #NVD · #漏洞
+> **来源**: [ICS Operators Warned of AI-Driven Attacks on Siemens PLCs](https://www.infosecurity-magazine.com/news/ics-ai-attacks-siemens/)  #Infosecurity Magazine
 
-### ⚠️ 6. CVE-2026-19960 [HIGH 7.4]
+### 📰 6. Identity Abuse Through Trusted Communication Channels
 
-A security vulnerability has been detected in Edimax EW-7478APC 1.04. This impacts the function formWlbasic of the file /goform/formWlbasic. Such manipulation of the argument rootAPmac leads to command injection. The attack can be executed remotely. The exploit has been disclosed publicly and may be
+Unit 42 details how attackers exploit enterprise collaboration tools for identity phishing and credential theft. Discover key defense strategies. The post Identity Abuse Through Trusted Communication Channels appeared first on Unit 42.
 
-> **来源**: [CVE-2026-19960 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-19960)  CVSS 7.4 HIGH · #NVD · #漏洞
+> **来源**: [Identity Abuse Through Trusted Communication Channels](https://unit42.paloaltonetworks.com/communication-channel-identity-risks/)  #Unit 42
 
-### ⚠️ 7. CVE-2026-19959 [CRITICAL 9.9]
+### 📰 7. AI-fueled attacks pose ‘active threat’ to water, other sectors, U.S. agencies warn
 
-A weakness has been identified in Edimax EW-7478APC 1.04. This affects the function formWanTcpipSetup of the file /goform/formWanTcpipSetup. This manipulation of the argument pppUserName causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been made avai
+The agencies said the hackers are taking aim at Siemens S7 Series programmable logic controllers in what could be a first. The post AI-fueled attacks pose ‘active threat’ to water, other sectors, U.S. agencies warn appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-19959 [CRITICAL 9.9]](https://nvd.nist.gov/vuln/detail/CVE-2026-19959)  CVSS 9.9 CRITICAL · #NVD · #漏洞
+> **来源**: [AI-fueled attacks pose ‘active threat’ to water, other sectors, U.S. agencies warn](https://cyberscoop.com/hackers-use-ai-target-siemens-plcs-critical-infrastructure/)  #CyberScoop
 
-### 📰 8. The long tail of Clop’s PTC hack is just beginning to emerge
+### 📰 8. JFrog Artifactory Flaws Enable Software Supply Chain Attacks
 
-The data theft extortion group likely compromised a critical vulnerability affecting PTC’s product lifecycle management software in June, a month before it sent threatening emails to victims. The post The long tail of Clop’s PTC hack is just beginning to emerge appeared first on CyberScoop.
+Two Artifactory flaws allowed attackers to poison package metadata across software repositories
 
-> **来源**: [The long tail of Clop’s PTC hack is just beginning to emerge](https://cyberscoop.com/clop-zero-day-attacks-ptc-windchill-flexplm/)  #CyberScoop
+> **来源**: [JFrog Artifactory Flaws Enable Software Supply Chain Attacks](https://www.infosecurity-magazine.com/news/jfrog-flaws-software-supply-chain/)  #Infosecurity Magazine
 
-### 📰 9. OpenAI Overhauls Safety Protocols After Its AI Agents Went Rogue
+### 📰 9. The push to designate AI as the next critical infrastructure sector
 
-The ChatGPT maker says its upcoming Astra model may have reached “critical” cyber capabilities, prompting it to halt a significant number of training runs while it tightens internal safeguards.
+The designation would unlock a range of federal services, tools and resources for an industry that policymakers view as increasingly tied to national and economic security. The post The push to designate AI as the next critical infrastructure sector appeared first on CyberScoop.
 
-> **来源**: [OpenAI Overhauls Safety Protocols After Its AI Agents Went Rogue](https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/)  #Wired Security
+> **来源**: [The push to designate AI as the next critical infrastructure sector](https://cyberscoop.com/ai-critical-infrastructure-designation-cisa-report/)  #CyberScoop
 
-### ⚠️ 10. CVE-2026-19962 [HIGH 7.4]
+### 📰 10. OpenAI ‘temporarily slows’ scaling efforts, also promises zero data retention for select frontier model customers
 
-A flaw has been found in Edimax EW-7478APC 1.04. Affected by this vulnerability is the function setWAN of the file /goform/setWAN. Executing a manipulation of the argument pppUserName/pptpUserName/L2TPUserName can lead to command injection. The attack may be performed from remote. The exploit has be
+OpenAI this week announced multiple moves designed to counter negative perceptions of its security and privacy, saying it had slowed its pace of scaling, implemented a two-week pause in reinforcement learning, and will be offering zero data retention for “eligible API customers.” In its first announ
 
-> **来源**: [CVE-2026-19962 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-19962)  CVSS 7.4 HIGH · #NVD · #漏洞
+> **来源**: [OpenAI ‘temporarily slows’ scaling efforts, also promises zero data retention for select frontier model customers](https://www.csoonline.com/article/4211672/openai-temporarily-slows-scaling-efforts-also-promises-zero-data-retention-for-select-frontier-model-customers-2.html)  #CSO Online
 
 ---
 
