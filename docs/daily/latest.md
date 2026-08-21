@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-20
+# 🤖🔒 AI+安全日报 | 2026-08-21
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-64868 [HIGH 7.5] 🔬
+### 📰 1. AI threats are everywhere. A risk-first CISO decides what to prioritize
 
-New API is a large language mode (LLM) gateway and artificial intelligence (AI) asset management system. Prior to 1.0.0-rc.11, POST /api/stripe/webhook, POST /api/creem/webhook, and POST /api/waffo/webhook read and log full request bodies before signature validation in router/api-router.go and the p
+The good news? AI gives cyber defenders some of the best discovery tooling they’ve ever had. The bad news? It gives attackers the same capability. This duality has left CISOs managing AI on two simultaneous fronts. Outside the organization, attackers are using AI to make phishing more convincing, au
 
-> **来源**: [CVE-2026-64868 [HIGH 7.5] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-64868)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [AI threats are everywhere. A risk-first CISO decides what to prioritize](https://www.csoonline.com/article/4212017/ai-threats-are-everywhere-a-risk-first-ciso-decides-what-to-prioritize.html)  #CSO Online
 
-### 📰 2. Kriminal breaks out of Grok, Claude guardrails at $12.99
+### 📰 2. Backdoored Rust packages hit crates.io, exposing developers to malware at build time
 
-Security researchers are warning of a criminal AI service built on Grok and Claude, among other models, that promises uncensored access to powerful AI capabilities for as little as $12.99 a month. ThreatDown researchers say “Kriminal” is largely a storefront wrapped around legitimate AI services, us
+Malicious versions of three Rust packages, including the widely used arrayref, were published to the crates.io registry on August 20, carrying a backdoor that executed automatically when affected projects were compiled. Security researchers at Wiz said the attack also shares infrastructure with rece
 
-> **来源**: [Kriminal breaks out of Grok, Claude guardrails at $12.99](https://www.csoonline.com/article/4211952/kriminal-breaks-out-of-grok-claude-guardrails-at-12-99.html)  #CSO Online
+> **来源**: [Backdoored Rust packages hit crates.io, exposing developers to malware at build time](https://www.csoonline.com/article/4212381/backdoored-rust-packages-hit-crates-io-exposing-developers-to-malware-at-build-time.html)  #CSO Online
 
-### 📰 3. Frequently asked questions about the active threat to Siemens S7 Series PLCs
+### 📰 3. Ransomware takes aim at enterprise resilience
 
-A joint cybersecurity advisory released by multiple U.S. government agencies warns that threat actors are using AI-generated exploitation scripts to target exposed Siemens S7 Series PLCs across critical infrastructure sectors.Key TakeawaysUnattributed threat actors are exploiting known weaknesses an
+Ransomware remains one of the most disruptive cyber threats organizations face. Companies have strengthened their cyber defenses over the years, but attackers in 2026 have become faster, more targeted, and increasingly reliant on AI, forcing the need for a change in how organizations approach cyber 
 
-> **来源**: [Frequently asked questions about the active threat to Siemens S7 Series PLCs](https://www.tenable.com/blog/frequently-asked-questions-about-the-active-threat-to-siemens-s7-series-plcs)  #Tenable Blog
+> **来源**: [Ransomware takes aim at enterprise resilience](https://www.csoonline.com/article/4212157/ransomware-takes-aim-at-enterprise-resilience.html)  #CSO Online
 
-### 📰 4. Snowflake flaw slips past AI checks, gets exploited by another AI
+### 📰 4. Critical flaw patched in popular JavaScript sandbox used in AI projects
 
-An autonomous AI security agent developed by cloud security firm Wiz identified and exploited a critical vulnerability in Snowflake’s GitHub Actions pipeline, while GitHub Copilot had previously reviewed the code change without flagging the flaw. The vulnerable code was part of a pull request (PR) t
+A critical sandbox escape vulnerability was discovered and patched in isolated-vm, a library for running JavaScript code inside an isolated process. If exploited, the vulnerability could allow attackers to hijack the host’s control flow, which could enable remote code execution. Isolated-vm is downl
 
-> **来源**: [Snowflake flaw slips past AI checks, gets exploited by another AI](https://www.csoonline.com/article/4211501/snowflake-flaw-slips-past-ai-checks-gets-exploited-by-another-ai.html)  #CSO Online
+> **来源**: [Critical flaw patched in popular JavaScript sandbox used in AI projects](https://www.csoonline.com/article/4212151/critical-flaw-patched-in-popular-javascript-sandbox-used-in-ai-projects.html)  #CSO Online
 
-### 📰 5. ICS Operators Warned of AI-Driven Attacks on Siemens PLCs
+### 📰 5. North Korean Hackers Tied to Rust Supply Chain Attack
 
-A US government advisory warned that attackers are deploying AI-generated exploitation scripts against exposed Siemens S7 Series PLCs
+Cybersecurity researchers have linked a malicious backdoor in compromised Rust packages to previous North Korean supply chain attacks
 
-> **来源**: [ICS Operators Warned of AI-Driven Attacks on Siemens PLCs](https://www.infosecurity-magazine.com/news/ics-ai-attacks-siemens/)  #Infosecurity Magazine
+> **来源**: [North Korean Hackers Tied to Rust Supply Chain Attack](https://www.infosecurity-magazine.com/news/north-korean-rust-supply-chain/)  #Infosecurity Magazine
 
-### 📰 6. Identity Abuse Through Trusted Communication Channels
+### ⚠️ 6. CVE-2026-12564 [CRITICAL 9.6]
 
-Unit 42 details how attackers exploit enterprise collaboration tools for identity phishing and credential theft. Discover key defense strategies. The post Identity Abuse Through Trusted Communication Channels appeared first on Unit 42.
+A flaw was found in the AAP Controller's HashiCorp Vault credential plugin. The kubernetes_auth() function in awx_plugins/credentials/hashivault.py reads the controller pod's Kubernetes service account token and sends it to an attacker-controlled URL when a HashiCorp Vault Secret Lookup credential w
 
-> **来源**: [Identity Abuse Through Trusted Communication Channels](https://unit42.paloaltonetworks.com/communication-channel-identity-risks/)  #Unit 42
+> **来源**: [CVE-2026-12564 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-12564)  CVSS 9.6 CRITICAL · #NVD · #漏洞
 
-### 📰 7. AI-fueled attacks pose ‘active threat’ to water, other sectors, U.S. agencies warn
+### 📰 7. New Agent Tesla Malware Variant Boosts Evasion Capabilities
 
-The agencies said the hackers are taking aim at Siemens S7 Series programmable logic controllers in what could be a first. The post AI-fueled attacks pose ‘active threat’ to water, other sectors, U.S. agencies warn appeared first on CyberScoop.
+An Agent Tesla v4 malware campaign used novel emoji-based code obfuscation to evade detection, KnowBe4 has revealed
 
-> **来源**: [AI-fueled attacks pose ‘active threat’ to water, other sectors, U.S. agencies warn](https://cyberscoop.com/hackers-use-ai-target-siemens-plcs-critical-infrastructure/)  #CyberScoop
+> **来源**: [New Agent Tesla Malware Variant Boosts Evasion Capabilities](https://www.infosecurity-magazine.com/news/agent-tesla-malware-evasion/)  #Infosecurity Magazine
 
-### 📰 8. JFrog Artifactory Flaws Enable Software Supply Chain Attacks
+### 📰 8. Cybersecurity Job Ads Requiring AI Skills Double
 
-Two Artifactory flaws allowed attackers to poison package metadata across software repositories
+An analysis by the AI Workforce Consortium found that technical cybersecurity jobs are becoming more strategic due to the influence of AI
 
-> **来源**: [JFrog Artifactory Flaws Enable Software Supply Chain Attacks](https://www.infosecurity-magazine.com/news/jfrog-flaws-software-supply-chain/)  #Infosecurity Magazine
+> **来源**: [Cybersecurity Job Ads Requiring AI Skills Double](https://www.infosecurity-magazine.com/news/cybersecurity-job-ads-ai-skills/)  #Infosecurity Magazine
 
-### 📰 9. The push to designate AI as the next critical infrastructure sector
+### 📰 9. Smashing Security podcast #481: Never say this to a robot dog
 
-The designation would unlock a range of federal services, tools and resources for an industry that policymakers view as increasingly tied to national and economic security. The post The push to designate AI as the next critical infrastructure sector appeared first on CyberScoop.
+At Black Hat this month, a group of security researchers took a $9,000 robot dog, plugged Google's AI into its brain, and jailbroke it by telling it - with a completely straight face - that it was a Pokemon. What followed involved a wall, a blue ice chest, and anyone in the room wearing white shoes.
 
-> **来源**: [The push to designate AI as the next critical infrastructure sector](https://cyberscoop.com/ai-critical-infrastructure-designation-cisa-report/)  #CyberScoop
+> **来源**: [Smashing Security podcast #481: Never say this to a robot dog](https://grahamcluley.com/smashing-security-podcast-481/)  #Graham Cluley
 
-### 📰 10. OpenAI ‘temporarily slows’ scaling efforts, also promises zero data retention for select frontier model customers
+### 📰 10. Exclusive: Linux Foundation's Akrites to Go Live in September
 
-OpenAI this week announced multiple moves designed to counter negative perceptions of its security and privacy, saying it had slowed its pace of scaling, implemented a two-week pause in reinforcement learning, and will be offering zero data retention for “eligible API customers.” In its first announ
+The Linux Foundation's Akrites initiative will become operational in September, when it will begin accepting AI-powered vulnerability reports for open-source projects
 
-> **来源**: [OpenAI ‘temporarily slows’ scaling efforts, also promises zero data retention for select frontier model customers](https://www.csoonline.com/article/4211672/openai-temporarily-slows-scaling-efforts-also-promises-zero-data-retention-for-select-frontier-model-customers-2.html)  #CSO Online
+> **来源**: [Exclusive: Linux Foundation's Akrites to Go Live in September](https://www.infosecurity-magazine.com/news/linux-foundations-akrites-go-live/)  #Infosecurity Magazine
 
 ---
 
