@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-21
+# 🤖🔒 AI+安全日报 | 2026-08-22
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. AI threats are everywhere. A risk-first CISO decides what to prioritize
+### 📰 1. Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain
 
-The good news? AI gives cyber defenders some of the best discovery tooling they’ve ever had. The bad news? It gives attackers the same capability. This duality has left CISOs managing AI on two simultaneous fronts. Outside the organization, attackers are using AI to make phishing more convincing, au
+Attackers are targeting CI/CD pipelines and developer tools instead of application code, requiring total SDLC visibility and strict security controls The post Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain appeared first on Unit 42.
 
-> **来源**: [AI threats are everywhere. A risk-first CISO decides what to prioritize](https://www.csoonline.com/article/4212017/ai-threats-are-everywhere-a-risk-first-ciso-decides-what-to-prioritize.html)  #CSO Online
+> **来源**: [Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain](https://unit42.paloaltonetworks.com/sdlc-supply-chain/)  #Unit 42
 
-### 📰 2. Backdoored Rust packages hit crates.io, exposing developers to malware at build time
+### 📰 2. Apollo discloses data breach from ongoing wave of attacks hitting financial sector
 
-Malicious versions of three Rust packages, including the widely used arrayref, were published to the crates.io registry on August 20, carrying a backdoor that executed automatically when affected projects were compiled. Security researchers at Wiz said the attack also shares infrastructure with rece
+The private equity firm said attackers broke into some of its cloud platforms during a five-day period in early July, compromising sensitive personal data. The post Apollo discloses data breach from ongoing wave of attacks hitting financial sector appeared first on CyberScoop.
 
-> **来源**: [Backdoored Rust packages hit crates.io, exposing developers to malware at build time](https://www.csoonline.com/article/4212381/backdoored-rust-packages-hit-crates-io-exposing-developers-to-malware-at-build-time.html)  #CSO Online
+> **来源**: [Apollo discloses data breach from ongoing wave of attacks hitting financial sector](https://cyberscoop.com/apollo-discloses-data-breach-social-engineering-attack/)  #CyberScoop
 
-### 📰 3. Ransomware takes aim at enterprise resilience
+### 📰 3. Citrix issues critical security updates for its NetScaler devices
 
-Ransomware remains one of the most disruptive cyber threats organizations face. Companies have strengthened their cyber defenses over the years, but attackers in 2026 have become faster, more targeted, and increasingly reliant on AI, forcing the need for a change in how organizations approach cyber 
+Citrix is urging its NetScaler ADC and NetScaler Gateway customers to quickly patch two critical security holes, one involving a memory overflow vulnerability leading to unpredictable behavior or denial of service, and the other allowing authentication bypass. Citrix said in an advisory that support
 
-> **来源**: [Ransomware takes aim at enterprise resilience](https://www.csoonline.com/article/4212157/ransomware-takes-aim-at-enterprise-resilience.html)  #CSO Online
+> **来源**: [Citrix issues critical security updates for its NetScaler devices](https://www.csoonline.com/article/4212082/citrix-issues-critical-security-updates-for-its-netscaler-devices.html)  #CSO Online
 
-### 📰 4. Critical flaw patched in popular JavaScript sandbox used in AI projects
+### 📰 4. Your Expired Visa Card Could Be ‘Zombified’ to Make Contactless Payments
 
-A critical sandbox escape vulnerability was discovered and patched in isolated-vm, a library for running JavaScript code inside an isolated process. If exploited, the vulnerability could allow attackers to hijack the host’s control flow, which could enable remote code execution. Isolated-vm is downl
+Plus: Apple sends out an “unprecedented” number of spyware warnings, Ukraine hits a Russian ecommerce giant with cyber and drone attacks, and more.
 
-> **来源**: [Critical flaw patched in popular JavaScript sandbox used in AI projects](https://www.csoonline.com/article/4212151/critical-flaw-patched-in-popular-javascript-sandbox-used-in-ai-projects.html)  #CSO Online
+> **来源**: [Your Expired Visa Card Could Be ‘Zombified’ to Make Contactless Payments](https://www.wired.com/story/security-news-this-week-your-expired-visa-card-could-be-zombiefied-to-make-contactless-payments/)  #Wired Security
 
-### 📰 5. North Korean Hackers Tied to Rust Supply Chain Attack
+### 📰 5. MaaS Campaign Combines ClickFix, ErrTraffic and Cruciferra
 
-Cybersecurity researchers have linked a malicious backdoor in compromised Rust packages to previous North Korean supply chain attacks
+eSentire uncovered a malware campaign combining ClickFix lures with ErrTraffic and Cruciferra
 
-> **来源**: [North Korean Hackers Tied to Rust Supply Chain Attack](https://www.infosecurity-magazine.com/news/north-korean-rust-supply-chain/)  #Infosecurity Magazine
+> **来源**: [MaaS Campaign Combines ClickFix, ErrTraffic and Cruciferra](https://www.infosecurity-magazine.com/news/maas-clickfix-errtraffic-cruciferra/)  #Infosecurity Magazine
 
-### ⚠️ 6. CVE-2026-12564 [CRITICAL 9.6]
+### 📰 6. Medusa ransomware tallies hundreds of new victims, says updated advisory on group’s tactics
 
-A flaw was found in the AAP Controller's HashiCorp Vault credential plugin. The kubernetes_auth() function in awx_plugins/credentials/hashivault.py reads the controller pod's Kubernetes service account token and sends it to an attacker-controlled URL when a HashiCorp Vault Secret Lookup credential w
+The updated warning from the FBI, CISA and HHS draws on a year’s worth of investigations to detail how the group gains initial access and what it does afterward. The post Medusa ransomware tallies hundreds of new victims, says updated advisory on group’s tactics appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-12564 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-12564)  CVSS 9.6 CRITICAL · #NVD · #漏洞
+> **来源**: [Medusa ransomware tallies hundreds of new victims, says updated advisory on group’s tactics](https://cyberscoop.com/medusa-ransomware-tactics-cisa-advisory/)  #CyberScoop
 
-### 📰 7. New Agent Tesla Malware Variant Boosts Evasion Capabilities
+### 📰 7. Meta’s Ray-Bans are being banned from pubs, restaurants, and theatres
 
-An Agent Tesla v4 malware campaign used novel emoji-based code obfuscation to evade detection, KnowBe4 has revealed
+A growing number of UK venues have decided to act against privacy-busting smart glasses. Read more in my article on the Hot for Security blog.
 
-> **来源**: [New Agent Tesla Malware Variant Boosts Evasion Capabilities](https://www.infosecurity-magazine.com/news/agent-tesla-malware-evasion/)  #Infosecurity Magazine
+> **来源**: [Meta’s Ray-Bans are being banned from pubs, restaurants, and theatres](https://www.bitdefender.com/en-us/blog/hotforsecurity/meta-ray-ban-banned-pubs-restaurants-theatres)  #Graham Cluley
 
-### 📰 8. Cybersecurity Job Ads Requiring AI Skills Double
+### 📰 8. Coldcard Users Lose $89m After Bitcoin Wallet Is Hacked
 
-An analysis by the AI Workforce Consortium found that technical cybersecurity jobs are becoming more strategic due to the influence of AI
+A hacker has drained nearly $89m from Coldcard Bitcoin wallets after exploiting a legacy bug
 
-> **来源**: [Cybersecurity Job Ads Requiring AI Skills Double](https://www.infosecurity-magazine.com/news/cybersecurity-job-ads-ai-skills/)  #Infosecurity Magazine
+> **来源**: [Coldcard Users Lose $89m After Bitcoin Wallet Is Hacked](https://www.infosecurity-magazine.com/news/coldcard-users-lose-89m-bitcoin/)  #Infosecurity Magazine
 
-### 📰 9. Smashing Security podcast #481: Never say this to a robot dog
+### 📰 9. Phishing Dominates as Initial Entry Method for Cyber-Attacks, as Hackers Hone Evasion Techniques
 
-At Black Hat this month, a group of security researchers took a $9,000 robot dog, plugged Google's AI into its brain, and jailbroke it by telling it - with a completely straight face - that it was a Pokemon. What followed involved a wall, a blue ice chest, and anyone in the room wearing white shoes.
+Analysis of real-life incident response cases by Cisco Talos warns that phishing remains a powerful method of initial compromise
 
-> **来源**: [Smashing Security podcast #481: Never say this to a robot dog](https://grahamcluley.com/smashing-security-podcast-481/)  #Graham Cluley
+> **来源**: [Phishing Dominates as Initial Entry Method for Cyber-Attacks, as Hackers Hone Evasion Techniques](https://www.infosecurity-magazine.com/news/phishing-dominates-initial-entry/)  #Infosecurity Magazine
 
-### 📰 10. Exclusive: Linux Foundation's Akrites to Go Live in September
+### 📰 10. New Ransomware Exploits Malicious Driver to Remove Cybersecurity Protections
 
-The Linux Foundation's Akrites initiative will become operational in September, when it will begin accepting AI-powered vulnerability reports for open-source projects
+GodDamn ransomware uses remote desktop application to secretly move around networks and drop the malicious PoisonX kernel driver
 
-> **来源**: [Exclusive: Linux Foundation's Akrites to Go Live in September](https://www.infosecurity-magazine.com/news/linux-foundations-akrites-go-live/)  #Infosecurity Magazine
+> **来源**: [New Ransomware Exploits Malicious Driver to Remove Cybersecurity Protections](https://www.infosecurity-magazine.com/news/ransomware-removes-cybersecurity/)  #Infosecurity Magazine
 
 ---
 
