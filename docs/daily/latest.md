@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-22
+# 🤖🔒 AI+安全日报 | 2026-08-23
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain
+### ⚠️ 1. CVE-2026-18263 [HIGH 7.8]
 
-Attackers are targeting CI/CD pipelines and developer tools instead of application code, requiring total SDLC visibility and strict security controls The post Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain appeared first on Unit 42.
+Parallels RAS Client RDP Backend Service Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Parallels RAS Client. An attacker must first obtain the ability to execute low-privileged code o
 
-> **来源**: [Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain](https://unit42.paloaltonetworks.com/sdlc-supply-chain/)  #Unit 42
+> **来源**: [CVE-2026-18263 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-18263)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 2. Apollo discloses data breach from ongoing wave of attacks hitting financial sector
+### ⚠️ 2. CVE-2026-18262 [HIGH 7.8]
 
-The private equity firm said attackers broke into some of its cloud platforms during a five-day period in early July, compromising sensitive personal data. The post Apollo discloses data breach from ongoing wave of attacks hitting financial sector appeared first on CyberScoop.
+Parallels RAS Client RDP Backend Service Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Parallels RAS Client. An attacker must first obtain the ability to execute low-privileged code o
 
-> **来源**: [Apollo discloses data breach from ongoing wave of attacks hitting financial sector](https://cyberscoop.com/apollo-discloses-data-breach-social-engineering-attack/)  #CyberScoop
+> **来源**: [CVE-2026-18262 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-18262)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 3. Citrix issues critical security updates for its NetScaler devices
+### ⚠️ 3. CVE-2026-13121 [HIGH 7.8]
 
-Citrix is urging its NetScaler ADC and NetScaler Gateway customers to quickly patch two critical security holes, one involving a memory overflow vulnerability leading to unpredictable behavior or denial of service, and the other allowing authentication bypass. Citrix said in an advisory that support
+Parallels RAS Client RDP Backend Service Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Parallels RAS Client. An attacker must first obtain the ability to execute low-privileged code o
 
-> **来源**: [Citrix issues critical security updates for its NetScaler devices](https://www.csoonline.com/article/4212082/citrix-issues-critical-security-updates-for-its-netscaler-devices.html)  #CSO Online
+> **来源**: [CVE-2026-13121 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-13121)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 4. Your Expired Visa Card Could Be ‘Zombified’ to Make Contactless Payments
+### ⚠️ 4. CVE-2026-75140 [HIGH 7.5]
 
-Plus: Apple sends out an “unprecedented” number of spyware warnings, Ukraine hits a Russian ecommerce giant with cyber and drone attacks, and more.
+jsoup through 1.23.2, fixed in commit 862ba2f, contains an uncontrolled resource consumption vulnerability in XmlTreeBuilder that allows remote attackers to exhaust JVM heap memory by supplying a deeply nested XML document with uniquely-namespaced elements. The builder copies the entire inherited na
 
-> **来源**: [Your Expired Visa Card Could Be ‘Zombified’ to Make Contactless Payments](https://www.wired.com/story/security-news-this-week-your-expired-visa-card-could-be-zombiefied-to-make-contactless-payments/)  #Wired Security
+> **来源**: [CVE-2026-75140 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-75140)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 5. MaaS Campaign Combines ClickFix, ErrTraffic and Cruciferra
+### 📰 5. Researchers Warn of AI-Enhanced Phone Fraud Ecosystem
 
-eSentire uncovered a malware campaign combining ClickFix lures with ErrTraffic and Cruciferra
+AI is dramatically reducing the barriers to entry for scam phone farm operators, Human Security warns
 
-> **来源**: [MaaS Campaign Combines ClickFix, ErrTraffic and Cruciferra](https://www.infosecurity-magazine.com/news/maas-clickfix-errtraffic-cruciferra/)  #Infosecurity Magazine
+> **来源**: [Researchers Warn of AI-Enhanced Phone Fraud Ecosystem](https://www.infosecurity-magazine.com/news/researchers-aienhanced-phone-fraud/)  #Infosecurity Magazine
 
-### 📰 6. Medusa ransomware tallies hundreds of new victims, says updated advisory on group’s tactics
+### 📰 6. SourTrade Malvertising Campaign Secretly Builds Malware in the Browser
 
-The updated warning from the FBI, CISA and HHS draws on a year’s worth of investigations to detail how the group gains initial access and what it does afterward. The post Medusa ransomware tallies hundreds of new victims, says updated advisory on group’s tactics appeared first on CyberScoop.
+Impersonating well-known cryptocurrency and trading sites, SourTrade has developed a novel technique to drop infostealers to victims
 
-> **来源**: [Medusa ransomware tallies hundreds of new victims, says updated advisory on group’s tactics](https://cyberscoop.com/medusa-ransomware-tactics-cisa-advisory/)  #CyberScoop
+> **来源**: [SourTrade Malvertising Campaign Secretly Builds Malware in the Browser](https://www.infosecurity-magazine.com/news/malvertising-builds-malware-in/)  #Infosecurity Magazine
 
-### 📰 7. Meta’s Ray-Bans are being banned from pubs, restaurants, and theatres
+### 📰 7. Def Con Attendees Targeted by Persistent Phishing Campaign
 
-A growing number of UK venues have decided to act against privacy-busting smart glasses. Read more in my article on the Hot for Security blog.
+Huntress researcher explains how they were targeted by an elaborate and persistent phishing scam following Def Con
 
-> **来源**: [Meta’s Ray-Bans are being banned from pubs, restaurants, and theatres](https://www.bitdefender.com/en-us/blog/hotforsecurity/meta-ray-ban-banned-pubs-restaurants-theatres)  #Graham Cluley
+> **来源**: [Def Con Attendees Targeted by Persistent Phishing Campaign](https://www.infosecurity-magazine.com/news/def-con-attendees-persistent/)  #Infosecurity Magazine
 
-### 📰 8. Coldcard Users Lose $89m After Bitcoin Wallet Is Hacked
+### 📰 8. OpenAI Tightens AI Safeguards Following Hugging Face Incident
 
-A hacker has drained nearly $89m from Coldcard Bitcoin wallets after exploiting a legacy bug
+OpenAI is strengthening safeguards for its most advanced AI models, citing growing risks as frontier systems gain more powerful cyber capabilities
 
-> **来源**: [Coldcard Users Lose $89m After Bitcoin Wallet Is Hacked](https://www.infosecurity-magazine.com/news/coldcard-users-lose-89m-bitcoin/)  #Infosecurity Magazine
+> **来源**: [OpenAI Tightens AI Safeguards Following Hugging Face Incident](https://www.infosecurity-magazine.com/news/openai-tightens-ai-safeguards/)  #Infosecurity Magazine
 
-### 📰 9. Phishing Dominates as Initial Entry Method for Cyber-Attacks, as Hackers Hone Evasion Techniques
+### 📰 9. Can AI Coexist With Privacy? Proton’s Andy Yen Says It Will Have To
 
-Analysis of real-life incident response cases by Cisco Talos warns that phishing remains a powerful method of initial compromise
+Proton’s CEO is a champion of encryption for everyone. So why is he going all in on un-encryptable AI?
 
-> **来源**: [Phishing Dominates as Initial Entry Method for Cyber-Attacks, as Hackers Hone Evasion Techniques](https://www.infosecurity-magazine.com/news/phishing-dominates-initial-entry/)  #Infosecurity Magazine
+> **来源**: [Can AI Coexist With Privacy? Proton’s Andy Yen Says It Will Have To](https://www.wired.com/story/the-big-interview-podcast-andy-yen-proton/)  #Wired Security
 
-### 📰 10. New Ransomware Exploits Malicious Driver to Remove Cybersecurity Protections
+### 📰 10. What water utilities need to know about cybersecurity compliance
 
-GodDamn ransomware uses remote desktop application to secretly move around networks and drop the malicious PoisonX kernel driver
+As federal enforcement tightens and states begin stepping in with their own cybersecurity mandates, water and wastewater utilities face a looming wave of hard compliance deadlines, compounded by recent cyber attacks on state water utilities.Key takeawaysWhile the EPA’s national sanitary-survey manda
 
-> **来源**: [New Ransomware Exploits Malicious Driver to Remove Cybersecurity Protections](https://www.infosecurity-magazine.com/news/ransomware-removes-cybersecurity/)  #Infosecurity Magazine
+> **来源**: [What water utilities need to know about cybersecurity compliance](https://www.tenable.com/blog/water-utilities-cybersecurity-regulatory-compliance)  #Tenable Blog
 
 ---
 
