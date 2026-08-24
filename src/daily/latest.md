@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-08-23
+# 🤖🔒 AI+安全日报 | 2026-08-24
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-18263 [HIGH 7.8]
+### 📰 1. Windows Defender’s own driver can leave systems defenseless
 
-Parallels RAS Client RDP Backend Service Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Parallels RAS Client. An attacker must first obtain the ability to execute low-privileged code o
+A Microsoft-signed Windows Defender remediation driver can be repurposed into a kernel-level “operation engine” capable of deleting files, modifying the registry and neutralizing security controls, according to new research from Check Point Research (CPR). The technique does not exploit a vulnerabil
 
-> **来源**: [CVE-2026-18263 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-18263)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [Windows Defender’s own driver can leave systems defenseless](https://www.csoonline.com/article/4212929/windows-defenders-own-driver-can-leave-systems-defenseless.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-18262 [HIGH 7.8]
+### ⚠️ 2. CVE-2026-22681 [HIGH 8.5]
 
-Parallels RAS Client RDP Backend Service Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Parallels RAS Client. An attacker must first obtain the ability to execute low-privileged code o
+OpenViking before 0.3.4 contains a server-side request forgery vulnerability that allows authenticated low-privilege attackers to access internal network services by submitting arbitrary URLs to the resources API endpoint. Attackers can POST a crafted URL to /api/v1/resources, causing the server to 
 
-> **来源**: [CVE-2026-18262 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-18262)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-22681 [HIGH 8.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-22681)  CVSS 8.5 HIGH · #NVD · #漏洞
 
-### ⚠️ 3. CVE-2026-13121 [HIGH 7.8]
+### 📰 3. How to use ChatGPT Work - and my top 10 tips for getting started with agentic AI
 
-Parallels RAS Client RDP Backend Service Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Parallels RAS Client. An attacker must first obtain the ability to execute low-privileged code o
+Curious about ChatGPT Work? Here's how the agentic AI handles research, files, and multistep projects, plus its risks and limits.
 
-> **来源**: [CVE-2026-13121 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-13121)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [How to use ChatGPT Work - and my top 10 tips for getting started with agentic AI](https://www.zdnet.com/article/how-to-use-chatgpt-work-and-my-top-tips/)  #ZDNet Security
 
-### ⚠️ 4. CVE-2026-75140 [HIGH 7.5]
+### 📰 4. 7 ways AI can be used to enhance security operations
 
-jsoup through 1.23.2, fixed in commit 862ba2f, contains an uncontrolled resource consumption vulnerability in XmlTreeBuilder that allows remote attackers to exhaust JVM heap memory by supplying a deeply nested XML document with uniquely-namespaced elements. The builder copies the entire inherited na
+AI has an almost unlimited number of applications, yet none may be more important than its ability to strengthen enterprise security. AI marks a new era of business transformation in which AI autonomy and innovation converge to redefine how people, processes, and technology interact, says Sheetal Me
 
-> **来源**: [CVE-2026-75140 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-75140)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [7 ways AI can be used to enhance security operations](https://www.csoonline.com/article/4212560/7-ways-ai-can-be-used-to-enhance-security-operations.html)  #CSO Online
 
-### 📰 5. Researchers Warn of AI-Enhanced Phone Fraud Ecosystem
+### ⚠️ 5. CVE-2026-75932 [HIGH 8.6]
 
-AI is dramatically reducing the barriers to entry for scam phone farm operators, Human Security warns
+Jet Admin allows an attacker to create a malicious app and connect it to a target user's custom domain, edit the authentication configuration, and reroute traffic to the attacker-controlled app. Once connected to the target domain, the attacker's workspace is populated with the victim's OAuth Client
 
-> **来源**: [Researchers Warn of AI-Enhanced Phone Fraud Ecosystem](https://www.infosecurity-magazine.com/news/researchers-aienhanced-phone-fraud/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-75932 [HIGH 8.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-75932)  CVSS 8.6 HIGH · #NVD · #漏洞
 
-### 📰 6. SourTrade Malvertising Campaign Secretly Builds Malware in the Browser
+### 📰 6. Wake-Up Call for CNI After Iranian Attack Shuts Down UK Power Plant
 
-Impersonating well-known cryptocurrency and trading sites, SourTrade has developed a novel technique to drop infostealers to victims
+Experts argue Iranian cyber-attack on UK power plant lays bare frailty of critical national infrastructure
 
-> **来源**: [SourTrade Malvertising Campaign Secretly Builds Malware in the Browser](https://www.infosecurity-magazine.com/news/malvertising-builds-malware-in/)  #Infosecurity Magazine
+> **来源**: [Wake-Up Call for CNI After Iranian Attack Shuts Down UK Power Plant](https://www.infosecurity-magazine.com/news/cni-iranian-attack-shuts-uk-power/)  #Infosecurity Magazine
 
-### 📰 7. Def Con Attendees Targeted by Persistent Phishing Campaign
+### 📰 7. Researchers Uncover Thousands of Leaked AWS Keys
 
-Huntress researcher explains how they were targeted by an elaborate and persistent phishing scam following Def Con
+Truffle Security says it found over 9000 publicly accessible and active AWS key pairs
 
-> **来源**: [Def Con Attendees Targeted by Persistent Phishing Campaign](https://www.infosecurity-magazine.com/news/def-con-attendees-persistent/)  #Infosecurity Magazine
+> **来源**: [Researchers Uncover Thousands of Leaked AWS Keys](https://www.infosecurity-magazine.com/news/researchers-thousands-eaked-aws/)  #Infosecurity Magazine
 
-### 📰 8. OpenAI Tightens AI Safeguards Following Hugging Face Incident
+### 📰 8. JadePuffer Returns With Ransomware Designed to Wipe AI Models
 
-OpenAI is strengthening safeguards for its most advanced AI models, citing growing risks as frontier systems gain more powerful cyber capabilities
+JadePuffer follow-up campaign deployed ENCFORGE locker built to destroy AI model artifacts
 
-> **来源**: [OpenAI Tightens AI Safeguards Following Hugging Face Incident](https://www.infosecurity-magazine.com/news/openai-tightens-ai-safeguards/)  #Infosecurity Magazine
+> **来源**: [JadePuffer Returns With Ransomware Designed to Wipe AI Models](https://www.infosecurity-magazine.com/news/jadepuffer-ai-model-ransomware/)  #Infosecurity Magazine
 
-### 📰 9. Can AI Coexist With Privacy? Proton’s Andy Yen Says It Will Have To
+### 📰 9. Three-quarters of Ransomware Attacks Target Mid-Market Firms
 
-Proton’s CEO is a champion of encryption for everyone. So why is he going all in on un-encryptable AI?
+Black Kite finds mid-market is the sweet spot for ransomware as manufacturers are most likely to be hit
 
-> **来源**: [Can AI Coexist With Privacy? Proton’s Andy Yen Says It Will Have To](https://www.wired.com/story/the-big-interview-podcast-andy-yen-proton/)  #Wired Security
+> **来源**: [Three-quarters of Ransomware Attacks Target Mid-Market Firms](https://www.infosecurity-magazine.com/news/threequarters-ransomware-attacks/)  #Infosecurity Magazine
 
-### 📰 10. What water utilities need to know about cybersecurity compliance
+### 📰 10. Canadian Man Pleads Guilty in Snowflake Extortions
 
-As federal enforcement tightens and states begin stepping in with their own cybersecurity mandates, water and wastewater utilities face a looming wave of hard compliance deadlines, compounded by recent cyber attacks on state water utilities.Key takeawaysWhile the EPA’s national sanitary-survey manda
+A 26-year-old Canadian man once described as one of the most consequential cybercrime threat actors of 2024 has pleaded guilty to computer fraud and conspiracy to hack and extort more than 165 organizations that used the cloud data storage provider Snowflake. Connor Riley Moucka, of Kitchener, Ontar
 
-> **来源**: [What water utilities need to know about cybersecurity compliance](https://www.tenable.com/blog/water-utilities-cybersecurity-regulatory-compliance)  #Tenable Blog
+> **来源**: [Canadian Man Pleads Guilty in Snowflake Extortions](https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/)  #Krebs on Security
 
 ---
 
