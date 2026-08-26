@@ -1,74 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-25
+# 🤖🔒 AI+安全日报 | 2026-08-27
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. How Equifax is using AI to elevate its cybersecurity
+### 📰 1. Who is accountable when your AI agent goes rogue?
 
-For nearly a decade, Equifax has been dealing with the aftermath of one of the worst cybersecurity breaches in US history, racking up $1.4 billion on cleanup costs. Among the mistakes that led to the breach were a mismanaged patching process, an expired public-key certificate, and poor governance. O
+AI agents can go to great lengths to complete the tasks their operators assign, and as a series of recent incidents showed, this can include exploiting third-party systems, manipulating people, and distributing malicious code. But AI agents are not people who can be fired, sued, or criminally prosec
 
-> **来源**: [How Equifax is using AI to elevate its cybersecurity](https://www.csoonline.com/article/4213266/how-equifax-is-using-ai-to-elevate-its-cybersecurity.html)  #CSO Online
+> **来源**: [Who is accountable when your AI agent goes rogue?](https://www.csoonline.com/article/4213883/who-is-accountable-when-your-ai-agent-goes-rogue.html)  #CSO Online
 
-### 📰 2. Nucleus wants to get ahead of scanners on new vulnerabilities
+### 📰 2. Edge infrastructure under siege: what two independent datasets reveal about who's exploiting your perimeter
 
-There usually is a crucial time lapse from when a vulnerability is newly disclosed to when security scanners are finally updated to scan for it. Nucleus Security says it wants to close that gap. The cybersecurity outfit focused on unified exposure management is expanding its platform with Nucleus He
+A joint Tenable-SentinelOne analysis of 93 CVE-actor attribution pairs reveals that both state-sponsored actors and cybercriminals independently converge on the same edge infrastructure. Special thanks to SentinelOne® Incident Readiness &amp; Response for their contributions to this publication.It i
 
-> **来源**: [Nucleus wants to get ahead of scanners on new vulnerabilities](https://www.csoonline.com/article/4213644/nucleus-wants-to-get-ahead-of-scanners-on-new-vulnerabilities.html)  #CSO Online
+> **来源**: [Edge infrastructure under siege: what two independent datasets reveal about who's exploiting your perimeter](https://www.tenable.com/blog/edge-infrastructure-under-siege)  #Tenable Blog
 
-### 📰 3. New attack lets hackers plant hidden instructions in AI memory with a single prompt
+### ⚠️ 3. CVE-2026-78156 [HIGH 7.4]
 
-A newly demonstrated attack technique allows hackers to plant hidden instructions inside an AI agent’s memory with a single prompt, enabling them to influence how the system responds to future queries. The technique, called InjecMEM, is described in a research paper as a “targeted red-teaming attack
+A security vulnerability has been detected in Open5GS 2.8.0. Affected by this issue is the function hss_ogs_diam_s6a_air_cb of the file src/hss/hss-s6a-path.c of the component S6a Authentication-Information-Request Handler. Such manipulation of the argument Visited-PLMN-Id leads to heap-based buffer
 
-> **来源**: [New attack lets hackers plant hidden instructions in AI memory with a single prompt](https://www.csoonline.com/article/4213632/new-attack-lets-hackers-plant-hidden-instructions-in-ai-memory-with-a-single-prompt.html)  #CSO Online
+> **来源**: [CVE-2026-78156 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-78156)  CVSS 7.4 HIGH · #NVD · #漏洞
 
-### 📰 4. AI helps Chinese-speaking hackers speed up attacks on exposed servers
+### 📰 4. NemoClaw’s AI can be poisoned through a browser tab
 
-A Chinese-speaking cybercrime group is using AI-driven tools to help compromise internet-facing Windows and Linux web servers, according to Cisco Talos, Cisco’s threat intelligence research unit. Talos said the activity points to increasingly automated offensive operations. Talos, which tracks the g
+A vulnerability affecting Nvidia’s NemoClaw could let an attacker gain control of the local Ollama model server through a single malicious website visit on the victim’s machine. According to a Cyera research, the flaw could give attackers unauthenticated access to the server, allowing them to plant 
 
-> **来源**: [AI helps Chinese-speaking hackers speed up attacks on exposed servers](https://www.csoonline.com/article/4213622/ai-helps-chinese-speaking-hackers-speed-up-attacks-on-exposed-servers.html)  #CSO Online
+> **来源**: [NemoClaw’s AI can be poisoned through a browser tab](https://www.csoonline.com/article/4214156/nemoclaws-ai-can-be-poisoned-through-a-browser-tab.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-4703 [CRITICAL 9.8]
+### 📰 5. Microsoft warns patch window is collapsing, urges shift to network-level containment
 
-The WS Form LITE – Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.10.80 via deserialization of untrusted input from form submission meta values. This makes it possible for unauthenticated attackers to inject a PHP O
+Microsoft is warning that the window for patching vulnerabilities is rapidly shrinking, as attackers move from disclosure to exploitation faster than enterprises can safely deploy fixes, and is urging organizations to adopt network-level controls to limit exposure during that gap. In a blog post, Ig
 
-> **来源**: [CVE-2026-4703 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-4703)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [Microsoft warns patch window is collapsing, urges shift to network-level containment](https://www.csoonline.com/article/4214135/microsoft-warns-patch-window-is-collapsing-urges-shift-to-network-level-containment.html)  #CSO Online
 
-### 📰 6. ReliaQuest Rejects Compromise Claims After ShinyHunters Incident
+### ⚠️ 6. CVE-2026-78203 [HIGH 7.1]
 
-ReliaQuest has detailed a social engineering attack linked to ShinyHunters, denying reports that the threat actor successfully compromised its systems
+Ghostwriter before 7.1.2 fails to validate template ownership in the report template swap endpoint, allowing attackers to attach client-scoped templates from other clients to their own reports. Attackers can exploit sequential template primary keys to enumerate and attach foreign templates, then gen
 
-> **来源**: [ReliaQuest Rejects Compromise Claims After ShinyHunters Incident](https://www.infosecurity-magazine.com/news/reliaquest-not-compromised-by/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-78203 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-78203)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### ⚠️ 7. CVE-2026-74595 [HIGH 7.8]
+### 📰 7. July was the worst month for ransomware victim claims in 2026 - or was it?
 
-In the Linux kernel, the following vulnerability has been resolved:
+We shouldn't ignore agentic AI ransomware threats, but the claims of a new ransomware group might be skewing the numbers.
 
-fscrypt: use the mount idmap for the owner check in fscrypt_ioctl_set_policy()
+> **来源**: [July was the worst month for ransomware victim claims in 2026 - or was it?](https://www.zdnet.com/article/ransomware-july-victim-count-spiked-in-july-but-whats-behind-it/)  #ZDNet Security
 
-fscrypt_ioctl_set_policy() calls inode_owner_or_capable() with
-&nop_mnt_idmap before allowing an encryption policy to be set, instead
-of the idmap of t
+### ⚠️ 8. CVE-2026-78161 [HIGH 7.3]
 
-> **来源**: [CVE-2026-74595 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-74595)  CVSS 7.8 HIGH · #NVD · #漏洞
+A vulnerability was found in warmcat libwebsockets 4.5.0. Impacted is the function report_raw_cbor of the file lib/misc/lecp.c of the component LECP CBOR Recording. The manipulation results in out-of-bounds write. The attack can be launched remotely. The exploit has been made public and could be use
 
-### 📰 8. Bipartisan Senate bill aims to prepare energy sector for Q-Day
+> **来源**: [CVE-2026-78161 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-78161)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-Under the bill, FERC would consider cyber threats from quantum computers and post-quantum cryptography in its reliability standards for the energy sector. The post Bipartisan Senate bill aims to prepare energy sector for Q-Day appeared first on CyberScoop.
+### ⚠️ 9. CVE-2026-78143 [HIGH 7.3]
 
-> **来源**: [Bipartisan Senate bill aims to prepare energy sector for Q-Day](https://cyberscoop.com/quantum-guard-act-electric-grid-cybersecurity/)  #CyberScoop
+A vulnerability was determined in code-projects Barangay Resident Profiling Management System 1.0. Affected is an unknown function of the file residents.php of the component Resident Search Functionality. This manipulation of the argument Search causes sql injection. Remote exploitation of the attac
 
-### 📰 9. Fake Recruiter Scams Target Corporate Credentials on Mobile
+> **来源**: [CVE-2026-78143 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-78143)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-RecruitTrap campaigns use mobile-optimized phishing pages to target enterprise credentials
+### 📰 10. Four in Five AI Tools Run with No IT Oversight, New Research Finds
 
-> **来源**: [Fake Recruiter Scams Target Corporate Credentials on Mobile](https://www.infosecurity-magazine.com/news/fake-recruiter-scams-corporate/)  #Infosecurity Magazine
+Reco report reveals growing shadow AI problem and surge in vulnerability disclosures
 
-### 📰 10. Fake Minecraft Clients Deliver WeedHack Malware Despite Infrastructure Takedown
-
-A threat actor keeps spreading the WeedHack malware to Minecraft players despite its original infrastructure taken down in July
-
-> **来源**: [Fake Minecraft Clients Deliver WeedHack Malware Despite Infrastructure Takedown](https://www.infosecurity-magazine.com/news/fake-minecraft-weedhack-malware/)  #Infosecurity Magazine
+> **来源**: [Four in Five AI Tools Run with No IT Oversight, New Research Finds](https://www.infosecurity-magazine.com/news/four-in-five-ai-tools-no-it/)  #Infosecurity Magazine
 
 ---
 
