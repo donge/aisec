@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-28
+# 🤖🔒 AI+安全日报 | 2026-08-29
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. AI can be made to read an email much differently than you do
+### 📰 1. CTEM can give your security team a contextual edge
 
-Security researchers are claiming it is possible for users to see one email in their inbox while their AI assistant reads another. Forcepoint X-Labs has demonstrated how a few lines of invisible HTML can be planted into an email that an AI email summarizer picks up and runs as instructions. In a con
+Traditional vulnerability management is accelerating toward a reset, with many security organizations considering continuous threat exposure management (CTEM) to better align their operations with the pace of change — and attacks — today. Whereas traditional vulnerability management relies on period
 
-> **来源**: [AI can be made to read an email much differently than you do](https://www.csoonline.com/article/4214814/ai-can-be-made-to-read-an-email-much-differently-than-you-do.html)  #CSO Online
+> **来源**: [CTEM can give your security team a contextual edge](https://www.csoonline.com/article/4215083/ctem-redefines-the-approach-to-cybersecurity-in-organizations.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-56702 [HIGH 8.8]
+### 📰 2. ServiceNow patches three maximum severity flaws that could put enterprise data at risk
 
-Adminer versions before 5.4.3 contain an unrestricted file upload vulnerability in the AdminerFileUpload plugin that allows authenticated users to upload PHP files by exploiting a permissive default extension allowlist. Attackers can upload PHP webshells to columns ending in _path and execute arbitr
+Code injection and SQL injection attacks have been around for decades, and they are still tried-and-true ways for attackers to compromise systems. ServiceNow’s latest trio of maximum severity flaws shows that even AI-era platforms remain vulnerable to these techniques: The software provider has rele
 
-> **来源**: [CVE-2026-56702 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-56702)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [ServiceNow patches three maximum severity flaws that could put enterprise data at risk](https://www.csoonline.com/article/4215430/servicenow-patches-three-maximum-severity-flaws-that-could-put-enterprise-data-at-risk.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-66766 [HIGH 7.5]
+### 📰 3. Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety
 
-SAP S/4HANA (Private Cloud) uses a third-party component that contains a Regular Expression Denial of Service (ReDoS) vulnerability. An unauthenticated attacker could supply specially crafted input that triggers excessive processing within the affected functionality. Successful exploitation could ex
+New research reveals that AI safety refusal lives in a thin neural layer, highlighting the critical need for external, multi-layered security. The post Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety appeared first on Unit 42.
 
-> **来源**: [CVE-2026-66766 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-66766)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety](https://unit42.paloaltonetworks.com/perturbation-probing-llm-safety/)  #Unit 42
 
-### 📰 4. Critical infrastructure’s long, undefended tail exposed by UK energy attack
+### 📰 4. GPUThor hardware attack can root Nvidia GPU systems
 
-A cyberattack that forced a small British electricity generator offline for four days caused no power outage, threatened no part of the national grid, and may not even have been carried out by the Iran-linked hackers initially blamed. But the incident illustrates a consequential weakness in Western 
+Hardware security researchers from University of Toronto have developed a new memory bit flipping technique that significantly improves on previously known attacks against GPU memory. The new method can defeat the error-correcting codes (ECC) defense used on enterprise Nvidia GPUs and can lead to ro
 
-> **来源**: [Critical infrastructure’s long, undefended tail exposed by UK energy attack](https://www.csoonline.com/article/4214535/critical-infrastructures-long-undefended-tail-exposed-by-uk-energy-attack.html)  #CSO Online
+> **来源**: [GPUThor hardware attack can root Nvidia GPU systems](https://www.csoonline.com/article/4215392/gputhor-hardware-attack-can-root-nvidia-gpu-systems.html)  #CSO Online
 
-### 📰 5. OpenAI: Agent behavior that led to Hugging Face intrusion formed in May
+### 📰 5. The first 24 hours of an AI agent security incident
 
-The company says the breach stemmed from a systemic failure of alignment and security, and has taken measures to prevent agents from independently orchestrating complex cyberattacks. The post OpenAI: Agent behavior that led to Hugging Face intrusion formed in May appeared first on CyberScoop.
+Most of what I read on AI agent security follows the same shape: a taxonomy of risks, a list of governance principles and a call to “adopt responsible AI practices.” That’s useful for a board deck. It’s nearly useless at 2 a.m. when an autonomous agent with live credentials has just done something n
 
-> **来源**: [OpenAI: Agent behavior that led to Hugging Face intrusion formed in May](https://cyberscoop.com/openai-hugging-face-agent-breach-report/)  #CyberScoop
+> **来源**: [The first 24 hours of an AI agent security incident](https://www.csoonline.com/article/4214961/the-first-24-hours-of-an-ai-agent-security-incident.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-56707 [HIGH 7.7]
+### 📰 6. Threat Actors Abuse Cursor Agent AI to Assist Ransomware Operations
 
-Grav Flex Objects plugin versions 1.4.0 through 1.4.7 contain an authorization bypass vulnerability in the flex-objects shortcode that allows users with page-edit access to render any registered Flex collection without permission checks. Attackers can place the shortcode in published pages to expose
+Aurora ransomware operators are abusing SpaceX’s Cursor Agent AI tool to conduct tasks such as reconnaissance and exploitation activities
 
-> **来源**: [CVE-2026-56707 [HIGH 7.7]](https://nvd.nist.gov/vuln/detail/CVE-2026-56707)  CVSS 7.7 HIGH · #NVD · #漏洞
+> **来源**: [Threat Actors Abuse Cursor Agent AI to Assist Ransomware Operations](https://www.infosecurity-magazine.com/news/abuse-cursor-agent-ransomware/)  #Infosecurity Magazine
 
-### ⚠️ 7. CVE-2026-56703 [HIGH 7.2]
+### ⚠️ 7. CVE-2026-80196 [HIGH 7.5]
 
-Adminer before 5.4.3 contains a remote code execution vulnerability in SQLite query handling where VACUUM INTO is not blocked despite ATTACH restrictions. Authenticated attackers can execute VACUUM INTO to write PHP code to arbitrary file paths and execute commands on the server.
+Kimai before 2.58.0 contains an authentication bypass vulnerability where password reset links remain valid after password changes because the LoginLink signature covers only the user id, not the password hash. Attackers who intercept or cache a password reset link can use it up to 2 additional time
 
-> **来源**: [CVE-2026-56703 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-56703)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-80196 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-80196)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 8. Unit 42 warns AI has shifted balance of power from defenders to attackers
+### 📰 8. ATF confirms cyberattack hit system containing info on its investigation targets
 
-Palo Alto Networks’ threat intelligence team said the early waves of threats riding on agentic AI models have broken in the wild, and organizations are unprepared for what’s coming next. The post Unit 42 warns AI has shifted balance of power from defenders to attackers appeared first on CyberScoop.
+The prolific ransomware group Qilin claimed responsibility for the attack. ATF insists the incident was limited to a standalone system and hasn’t impacted critical operations. The post ATF confirms cyberattack hit system containing info on its investigation targets appeared first on CyberScoop.
 
-> **来源**: [Unit 42 warns AI has shifted balance of power from defenders to attackers](https://cyberscoop.com/unit-42-palo-alto-networks-warning-agentic-ai-frontier-models/)  #CyberScoop
+> **来源**: [ATF confirms cyberattack hit system containing info on its investigation targets](https://cyberscoop.com/atf-doj-cyberattack-qilin-ransomware/)  #CyberScoop
 
-### 📰 9. 100-plus companies call for ‘global surge’ in AI-powered cyber defense
+### 📰 9. Why a cryptographic inventory is key for addressing the quantum computing threat
 
-OpenAI, Anthropic, Google, Microsoft, and others say there’s a narrow “defenders’ window” to strengthen security before AI-powered attacks become more sophisticated. The post 100-plus companies call for ‘global surge’ in AI-powered cyber defense appeared first on CyberScoop.
+When quantum computers become generally available, they’ll be able to crack current public-key cryptographic algorithms, putting digitally stored and transmitted data at risk. But the threat already exists, as attackers use the "harvest now, decrypt later" tactic. Discover why building a comprehensi
 
-> **来源**: [100-plus companies call for ‘global surge’ in AI-powered cyber defense](https://cyberscoop.com/ai-cyber-defense-global-surge/)  #CyberScoop
+> **来源**: [Why a cryptographic inventory is key for addressing the quantum computing threat](https://www.tenable.com/blog/why-a-cryptographic-inventory-is-key-for-addressing-the-quantum-computing-threat)  #Tenable Blog
 
-### 📰 10. AI a 'force multiplier' for low-skilled threat actors: 4 ways organizations should respond
+### 📰 10. How to build an exposure management program the business trusts: Lessons from Tenable’s CSO
 
-Low-skill hacktivists are now 'enabled with the same tooling and sophistication as a state-sponsored group,' according to cybersecurity consultant Unit 42.
+Discover how Tenable’s shift to an AI-driven exposure management program helped Tenable’s CSO, Robert Huber, overcome tool sprawl, unify data silos, mitigate the risk of rapid AI adoption, and shift from presenting granular, technical metrics to communicating business risk that the C-suite and the b
 
-> **来源**: [AI a 'force multiplier' for low-skilled threat actors: 4 ways organizations should respond](https://www.zdnet.com/article/ai-armed-script-kiddies-power-of-state-threat-actors-unit-42/)  #ZDNet Security
+> **来源**: [How to build an exposure management program the business trusts: Lessons from Tenable’s CSO](https://www.tenable.com/blog/how-to-build-an-exposure-management-program-the-business-trusts-lessons-from-tenables-cso)  #Tenable Blog
 
 ---
 
