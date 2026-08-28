@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-27
+# 🤖🔒 AI+安全日报 | 2026-08-28
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Who is accountable when your AI agent goes rogue?
+### 📰 1. AI can be made to read an email much differently than you do
 
-AI agents can go to great lengths to complete the tasks their operators assign, and as a series of recent incidents showed, this can include exploiting third-party systems, manipulating people, and distributing malicious code. But AI agents are not people who can be fired, sued, or criminally prosec
+Security researchers are claiming it is possible for users to see one email in their inbox while their AI assistant reads another. Forcepoint X-Labs has demonstrated how a few lines of invisible HTML can be planted into an email that an AI email summarizer picks up and runs as instructions. In a con
 
-> **来源**: [Who is accountable when your AI agent goes rogue?](https://www.csoonline.com/article/4213883/who-is-accountable-when-your-ai-agent-goes-rogue.html)  #CSO Online
+> **来源**: [AI can be made to read an email much differently than you do](https://www.csoonline.com/article/4214814/ai-can-be-made-to-read-an-email-much-differently-than-you-do.html)  #CSO Online
 
-### 📰 2. Edge infrastructure under siege: what two independent datasets reveal about who's exploiting your perimeter
+### ⚠️ 2. CVE-2026-56702 [HIGH 8.8]
 
-A joint Tenable-SentinelOne analysis of 93 CVE-actor attribution pairs reveals that both state-sponsored actors and cybercriminals independently converge on the same edge infrastructure. Special thanks to SentinelOne® Incident Readiness &amp; Response for their contributions to this publication.It i
+Adminer versions before 5.4.3 contain an unrestricted file upload vulnerability in the AdminerFileUpload plugin that allows authenticated users to upload PHP files by exploiting a permissive default extension allowlist. Attackers can upload PHP webshells to columns ending in _path and execute arbitr
 
-> **来源**: [Edge infrastructure under siege: what two independent datasets reveal about who's exploiting your perimeter](https://www.tenable.com/blog/edge-infrastructure-under-siege)  #Tenable Blog
+> **来源**: [CVE-2026-56702 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-56702)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### ⚠️ 3. CVE-2026-78156 [HIGH 7.4]
+### ⚠️ 3. CVE-2026-66766 [HIGH 7.5]
 
-A security vulnerability has been detected in Open5GS 2.8.0. Affected by this issue is the function hss_ogs_diam_s6a_air_cb of the file src/hss/hss-s6a-path.c of the component S6a Authentication-Information-Request Handler. Such manipulation of the argument Visited-PLMN-Id leads to heap-based buffer
+SAP S/4HANA (Private Cloud) uses a third-party component that contains a Regular Expression Denial of Service (ReDoS) vulnerability. An unauthenticated attacker could supply specially crafted input that triggers excessive processing within the affected functionality. Successful exploitation could ex
 
-> **来源**: [CVE-2026-78156 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-78156)  CVSS 7.4 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-66766 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-66766)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 4. NemoClaw’s AI can be poisoned through a browser tab
+### 📰 4. Critical infrastructure’s long, undefended tail exposed by UK energy attack
 
-A vulnerability affecting Nvidia’s NemoClaw could let an attacker gain control of the local Ollama model server through a single malicious website visit on the victim’s machine. According to a Cyera research, the flaw could give attackers unauthenticated access to the server, allowing them to plant 
+A cyberattack that forced a small British electricity generator offline for four days caused no power outage, threatened no part of the national grid, and may not even have been carried out by the Iran-linked hackers initially blamed. But the incident illustrates a consequential weakness in Western 
 
-> **来源**: [NemoClaw’s AI can be poisoned through a browser tab](https://www.csoonline.com/article/4214156/nemoclaws-ai-can-be-poisoned-through-a-browser-tab.html)  #CSO Online
+> **来源**: [Critical infrastructure’s long, undefended tail exposed by UK energy attack](https://www.csoonline.com/article/4214535/critical-infrastructures-long-undefended-tail-exposed-by-uk-energy-attack.html)  #CSO Online
 
-### 📰 5. Microsoft warns patch window is collapsing, urges shift to network-level containment
+### 📰 5. OpenAI: Agent behavior that led to Hugging Face intrusion formed in May
 
-Microsoft is warning that the window for patching vulnerabilities is rapidly shrinking, as attackers move from disclosure to exploitation faster than enterprises can safely deploy fixes, and is urging organizations to adopt network-level controls to limit exposure during that gap. In a blog post, Ig
+The company says the breach stemmed from a systemic failure of alignment and security, and has taken measures to prevent agents from independently orchestrating complex cyberattacks. The post OpenAI: Agent behavior that led to Hugging Face intrusion formed in May appeared first on CyberScoop.
 
-> **来源**: [Microsoft warns patch window is collapsing, urges shift to network-level containment](https://www.csoonline.com/article/4214135/microsoft-warns-patch-window-is-collapsing-urges-shift-to-network-level-containment.html)  #CSO Online
+> **来源**: [OpenAI: Agent behavior that led to Hugging Face intrusion formed in May](https://cyberscoop.com/openai-hugging-face-agent-breach-report/)  #CyberScoop
 
-### ⚠️ 6. CVE-2026-78203 [HIGH 7.1]
+### ⚠️ 6. CVE-2026-56707 [HIGH 7.7]
 
-Ghostwriter before 7.1.2 fails to validate template ownership in the report template swap endpoint, allowing attackers to attach client-scoped templates from other clients to their own reports. Attackers can exploit sequential template primary keys to enumerate and attach foreign templates, then gen
+Grav Flex Objects plugin versions 1.4.0 through 1.4.7 contain an authorization bypass vulnerability in the flex-objects shortcode that allows users with page-edit access to render any registered Flex collection without permission checks. Attackers can place the shortcode in published pages to expose
 
-> **来源**: [CVE-2026-78203 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-78203)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-56707 [HIGH 7.7]](https://nvd.nist.gov/vuln/detail/CVE-2026-56707)  CVSS 7.7 HIGH · #NVD · #漏洞
 
-### 📰 7. July was the worst month for ransomware victim claims in 2026 - or was it?
+### ⚠️ 7. CVE-2026-56703 [HIGH 7.2]
 
-We shouldn't ignore agentic AI ransomware threats, but the claims of a new ransomware group might be skewing the numbers.
+Adminer before 5.4.3 contains a remote code execution vulnerability in SQLite query handling where VACUUM INTO is not blocked despite ATTACH restrictions. Authenticated attackers can execute VACUUM INTO to write PHP code to arbitrary file paths and execute commands on the server.
 
-> **来源**: [July was the worst month for ransomware victim claims in 2026 - or was it?](https://www.zdnet.com/article/ransomware-july-victim-count-spiked-in-july-but-whats-behind-it/)  #ZDNet Security
+> **来源**: [CVE-2026-56703 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-56703)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### ⚠️ 8. CVE-2026-78161 [HIGH 7.3]
+### 📰 8. Unit 42 warns AI has shifted balance of power from defenders to attackers
 
-A vulnerability was found in warmcat libwebsockets 4.5.0. Impacted is the function report_raw_cbor of the file lib/misc/lecp.c of the component LECP CBOR Recording. The manipulation results in out-of-bounds write. The attack can be launched remotely. The exploit has been made public and could be use
+Palo Alto Networks’ threat intelligence team said the early waves of threats riding on agentic AI models have broken in the wild, and organizations are unprepared for what’s coming next. The post Unit 42 warns AI has shifted balance of power from defenders to attackers appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-78161 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-78161)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Unit 42 warns AI has shifted balance of power from defenders to attackers](https://cyberscoop.com/unit-42-palo-alto-networks-warning-agentic-ai-frontier-models/)  #CyberScoop
 
-### ⚠️ 9. CVE-2026-78143 [HIGH 7.3]
+### 📰 9. 100-plus companies call for ‘global surge’ in AI-powered cyber defense
 
-A vulnerability was determined in code-projects Barangay Resident Profiling Management System 1.0. Affected is an unknown function of the file residents.php of the component Resident Search Functionality. This manipulation of the argument Search causes sql injection. Remote exploitation of the attac
+OpenAI, Anthropic, Google, Microsoft, and others say there’s a narrow “defenders’ window” to strengthen security before AI-powered attacks become more sophisticated. The post 100-plus companies call for ‘global surge’ in AI-powered cyber defense appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-78143 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-78143)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [100-plus companies call for ‘global surge’ in AI-powered cyber defense](https://cyberscoop.com/ai-cyber-defense-global-surge/)  #CyberScoop
 
-### 📰 10. Four in Five AI Tools Run with No IT Oversight, New Research Finds
+### 📰 10. AI a 'force multiplier' for low-skilled threat actors: 4 ways organizations should respond
 
-Reco report reveals growing shadow AI problem and surge in vulnerability disclosures
+Low-skill hacktivists are now 'enabled with the same tooling and sophistication as a state-sponsored group,' according to cybersecurity consultant Unit 42.
 
-> **来源**: [Four in Five AI Tools Run with No IT Oversight, New Research Finds](https://www.infosecurity-magazine.com/news/four-in-five-ai-tools-no-it/)  #Infosecurity Magazine
+> **来源**: [AI a 'force multiplier' for low-skilled threat actors: 4 ways organizations should respond](https://www.zdnet.com/article/ai-armed-script-kiddies-power-of-state-threat-actors-unit-42/)  #ZDNet Security
 
 ---
 
