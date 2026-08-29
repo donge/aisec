@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-29
+# 🤖🔒 AI+安全日报 | 2026-08-30
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. CTEM can give your security team a contextual edge
+### ⚠️ 1. CVE-2026-58474 [HIGH 8.8] 🔬
 
-Traditional vulnerability management is accelerating toward a reset, with many security organizations considering continuous threat exposure management (CTEM) to better align their operations with the pace of change — and attacks — today. Whereas traditional vulnerability management relies on period
+whichllm before 0.5.16 contains a code injection vulnerability in the run and snippet commands that allows a remote attacker who controls a HuggingFace repository to achieve arbitrary code execution by crafting a malicious GGUF filename containing double quotes or other special characters. The scrip
 
-> **来源**: [CTEM can give your security team a contextual edge](https://www.csoonline.com/article/4215083/ctem-redefines-the-approach-to-cybersecurity-in-organizations.html)  #CSO Online
+> **来源**: [CVE-2026-58474 [HIGH 8.8] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-58474)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 2. ServiceNow patches three maximum severity flaws that could put enterprise data at risk
+### ⚠️ 2. CVE-2025-61165 [CRITICAL 9.8]
 
-Code injection and SQL injection attacks have been around for decades, and they are still tried-and-true ways for attackers to compromise systems. ServiceNow’s latest trio of maximum severity flaws shows that even AI-era platforms remain vulnerable to these techniques: The software provider has rele
+An arbitrary file upload vulnerability in the /v1/my_drive/batch_upload component of cohere North AI v1.1.5 allows attackers to exeute arbitrary code via uploading a crafted file.
 
-> **来源**: [ServiceNow patches three maximum severity flaws that could put enterprise data at risk](https://www.csoonline.com/article/4215430/servicenow-patches-three-maximum-severity-flaws-that-could-put-enterprise-data-at-risk.html)  #CSO Online
+> **来源**: [CVE-2025-61165 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2025-61165)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 3. Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety
+### ⚠️ 3. CVE-2025-56798 [HIGH 8.8]
 
-New research reveals that AI safety refusal lives in a thin neural layer, highlighting the critical need for external, multi-layered security. The post Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety appeared first on Unit 42.
+Cross-Site Request Forgery (CSRF) vulnerability in Lime Technology, Inc.'s Unraid OS version 6.12.14 and earlier allows remote attackers to escalate privileges via the Unraid authentication cookie's lax same-site policy.
 
-> **来源**: [Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety](https://unit42.paloaltonetworks.com/perturbation-probing-llm-safety/)  #Unit 42
+> **来源**: [CVE-2025-56798 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2025-56798)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 4. GPUThor hardware attack can root Nvidia GPU systems
+### 📰 4. Two Alleged ‘TeamPCP’ Hackers Arrested in Australia
 
-Hardware security researchers from University of Toronto have developed a new memory bit flipping technique that significantly improves on previously known attacks against GPU memory. The new method can defeat the error-correcting codes (ECC) defense used on enterprise Nvidia GPUs and can lead to ro
+Authorities in Australia have arrested two men believed to be members of TeamPCP, a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever. In a statement released today, the Australian Federal Police (AFP) said two unname
 
-> **来源**: [GPUThor hardware attack can root Nvidia GPU systems](https://www.csoonline.com/article/4215392/gputhor-hardware-attack-can-root-nvidia-gpu-systems.html)  #CSO Online
+> **来源**: [Two Alleged ‘TeamPCP’ Hackers Arrested in Australia](https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/)  #Krebs on Security
 
-### 📰 5. The first 24 hours of an AI agent security incident
+### 📰 5. The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn
 
-Most of what I read on AI agent security follows the same shape: a taxonomy of risks, a list of governance principles and a call to “adopt responsible AI practices.” That’s useful for a board deck. It’s nearly useless at 2 a.m. when an autonomous agent with live credentials has just done something n
+Plus: Hackers target over 100 US water systems, ICE puts in an order for robot dogs, and you’ll never guess what “MrChildPorn” was arrested for.
 
-> **来源**: [The first 24 hours of an AI agent security incident](https://www.csoonline.com/article/4214961/the-first-24-hours-of-an-ai-agent-security-incident.html)  #CSO Online
+> **来源**: [The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn](https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/)  #Wired Security
 
-### 📰 6. Threat Actors Abuse Cursor Agent AI to Assist Ransomware Operations
+### 📰 6. Shai-Hulud hackers: two men charged over TeamPCP’s global supply chain crime spree that hit OpenAI, and thousands more
 
-Aurora ransomware operators are abusing SpaceX’s Cursor Agent AI tool to conduct tasks such as reconnaissance and exploitation activities
+More than 1,000 organisations, 500,000 stolen credentials, and one self-propagating worm named after a Dune sandworm - two men now face charges over TeamPCP's global hacking spree. Read more in my article on the Hot for Security blog.
 
-> **来源**: [Threat Actors Abuse Cursor Agent AI to Assist Ransomware Operations](https://www.infosecurity-magazine.com/news/abuse-cursor-agent-ransomware/)  #Infosecurity Magazine
+> **来源**: [Shai-Hulud hackers: two men charged over TeamPCP’s global supply chain crime spree that hit OpenAI, and thousands more](https://www.bitdefender.com/en-us/blog/hotforsecurity/shai-hulud-hackers-charged-teampcps)  #Graham Cluley
 
-### ⚠️ 7. CVE-2026-80196 [HIGH 7.5]
+### 📰 7. Window to Tackle Surge in AI-Enabled Cyber Attacks Narrowing, Tech Giants Warn
 
-Kimai before 2.58.0 contains an authentication bypass vulnerability where password reset links remain valid after password changes because the LoginLink signature covers only the user id, not the password hash. Attackers who intercept or cache a password reset link can use it up to 2 additional time
+More than 100 companies, including OpenAI, Anthropic, Google and Microsoft, have urged collective action to unlock the power of AI to protect critical public services
 
-> **来源**: [CVE-2026-80196 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-80196)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [Window to Tackle Surge in AI-Enabled Cyber Attacks Narrowing, Tech Giants Warn](https://www.infosecurity-magazine.com/news/window-ai-attacks-narrowing-tech/)  #Infosecurity Magazine
 
-### 📰 8. ATF confirms cyberattack hit system containing info on its investigation targets
+### 📰 8. Beyond compliance: Designing systems that earn customer trust
 
-The prolific ransomware group Qilin claimed responsibility for the attack. ATF insists the incident was limited to a standalone system and hasn’t impacted critical operations. The post ATF confirms cyberattack hit system containing info on its investigation targets appeared first on CyberScoop.
+Over the years, I have learned that customer trust is not built by compliance alone. It comes from how systems actually handle data every day. In practice, I think five areas matter most Making customer intent consistent across systems Treating privacy as a distributed-systems problem Reducing unnec
 
-> **来源**: [ATF confirms cyberattack hit system containing info on its investigation targets](https://cyberscoop.com/atf-doj-cyberattack-qilin-ransomware/)  #CyberScoop
+> **来源**: [Beyond compliance: Designing systems that earn customer trust](https://www.csoonline.com/article/4214953/beyond-compliance-designing-systems-that-earn-customer-trust.html)  #CSO Online
 
-### 📰 9. Why a cryptographic inventory is key for addressing the quantum computing threat
+### 📰 9. OpenAI: Hugging Face Incident a “Warning Shot” to the World
 
-When quantum computers become generally available, they’ll be able to crack current public-key cryptographic algorithms, putting digitally stored and transmitted data at risk. But the threat already exists, as attackers use the "harvest now, decrypt later" tactic. Discover why building a comprehensi
+OpenAI reveals that unauthorized message boards were at the heart of the recent Hugging Face breach
 
-> **来源**: [Why a cryptographic inventory is key for addressing the quantum computing threat](https://www.tenable.com/blog/why-a-cryptographic-inventory-is-key-for-addressing-the-quantum-computing-threat)  #Tenable Blog
+> **来源**: [OpenAI: Hugging Face Incident a “Warning Shot” to the World](https://www.infosecurity-magazine.com/news/openai-hugging-face-warning-shot/)  #Infosecurity Magazine
 
-### 📰 10. How to build an exposure management program the business trusts: Lessons from Tenable’s CSO
+### 📰 10. DDoS Attack Hits Norwegian Government Services
 
-Discover how Tenable’s shift to an AI-driven exposure management program helped Tenable’s CSO, Robert Huber, overcome tool sprawl, unify data silos, mitigate the risk of rapid AI adoption, and shift from presenting granular, technical metrics to communicating business risk that the C-suite and the b
+A coordinated DDoS campaign has caused disruption among Norwegian government services
 
-> **来源**: [How to build an exposure management program the business trusts: Lessons from Tenable’s CSO](https://www.tenable.com/blog/how-to-build-an-exposure-management-program-the-business-trusts-lessons-from-tenables-cso)  #Tenable Blog
+> **来源**: [DDoS Attack Hits Norwegian Government Services](https://www.infosecurity-magazine.com/news/ddos-attack-hits-norwegian/)  #Infosecurity Magazine
 
 ---
 
