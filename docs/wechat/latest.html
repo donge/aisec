@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI+安全日报 2026-08-30</title>
+<title>AI+安全日报 2026-08-31</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -141,7 +141,7 @@
     <div class="logo">🛡️</div>
     <h1>AI+安全日报</h1>
     <div class="subtitle">
-      2026年8月30日 · 共 <span>10</span> 条
+      2026年8月31日 · 共 <span>7</span> 条
     </div>
   </div>
 
@@ -152,41 +152,19 @@
         <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
         <div>
           <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#dc2626;color:#fff;border:1px solid #ef4444;margin-right:8px;">CRITICAL</span>
             <span style="font-size:13px;color:#64748b;font-weight:500;">#01</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2026-58474 [HIGH 8.8] 🔬
+            CVE-2026-37006 [CRITICAL 9.8]
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        whichllm before 0.5.16 contains a code injection vulnerability in the run and snippet commands that allows a remote attacker who controls a HuggingFace repository to achieve arbitrary code execution by crafting a malicious GGUF filename containing double quotes or other special characters. The scrip
+        A vulnerability in the WebSocket endpoint of gpt-researcher v0.14.7 and before allows an unauthenticated remote attacker to achieve code execution via malicious Model Context Protocol configurations.
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58474" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-58474 [HIGH 8.8] 🔬 ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
-      </div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
-      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
-        <div>
-          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#dc2626;color:#fff;border:1px solid #ef4444;margin-right:8px;">CRITICAL</span>
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#02</span>
-          </div>
-          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2025-61165 [CRITICAL 9.8]
-          </h3>
-        </div>
-      </div>
-      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        An arbitrary file upload vulnerability in the /v1/my_drive/batch_upload component of cohere North AI v1.1.5 allows attackers to exeute arbitrary code via uploading a crafted file.
-      </p>
-      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61165" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2025-61165 [CRITICAL 9.8] ↗</a>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-37006" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-37006 [CRITICAL 9.8] ↗</a>
         <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
       </div>
     </div>
@@ -197,19 +175,41 @@
         <div>
           <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
             <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#03</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#02</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            CVE-2025-56798 [HIGH 8.8]
+            CVE-2026-10036 [HIGH 8.8]
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        Cross-Site Request Forgery (CSRF) vulnerability in Lime Technology, Inc.&#39;s Unraid OS version 6.12.14 and earlier allows remote attackers to escalate privileges via the Unraid authentication cookie&#39;s lax same-site policy.
+        SpeechBrain before 1.1.1 contains an arbitrary code execution vulnerability that allows attackers to execute arbitrary code by supplying a crafted CKPT.yaml checkpoint metadata file parsed with PyYAML&#39;s unsafe loader during candidate enumeration in Checkpointer.recover_if_possible(). Attackers can e
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-56798" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2025-56798 [HIGH 8.8] ↗</a>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10036" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-10036 [HIGH 8.8] ↗</a>
         <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#03</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            US Launches Gold Eagle to Coordinate AI-Driven Vulnerability Management
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        The White House announced Gold Eagle to help accelerate the discovery, prioritization and patching of flaws found by AI
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/us-gold-eagle-ai-vulnerability/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">US Launches Gold Eagle to Coordinate AI-Driven Vulnerability Management ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
       </div>
     </div>
 
@@ -222,16 +222,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#04</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            Two Alleged ‘TeamPCP’ Hackers Arrested in Australia
+            Fake Voicemail SVG Attachments Fuel Large-Scale Phishing Campaign
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        Authorities in Australia have arrested two men believed to be members of TeamPCP, a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever. In a statement released today, the Australian Federal Police (AFP) said two unname
+        A large-scale phishing campaign used fake voicemail SVG attachments to bypass email defenses, targeting 5527 organizations with over 26,000 malicious messages
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Two Alleged ‘TeamPCP’ Hackers Arrested in Australia ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(56,189,248,0.15);color:#7dd3fc;">Krebs on Security</span>
+        <a href="https://www.infosecurity-magazine.com/news/fake-voicemail-svg-files-bypass/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Fake Voicemail SVG Attachments Fuel Large-Scale Phishing Campaign ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
       </div>
     </div>
 
@@ -244,16 +244,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#05</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn
+            Manchester Airports Group Hit by Cyber Incident
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        Plus: Hackers target over 100 US water systems, ICE puts in an order for robot dogs, and you’ll never guess what “MrChildPorn” was arrested for.
+        Customer data linked to bookings and airport Wi-Fi registrations at Manchester, Stansted and East Midlands airports has been accessed by an unauthorized third party
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Wired Security</span>
+        <a href="https://www.infosecurity-magazine.com/news/manchester-airports-data-breach/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Manchester Airports Group Hit by Cyber Incident ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
       </div>
     </div>
 
@@ -266,16 +266,16 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#06</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            Shai-Hulud hackers: two men charged over TeamPCP’s global supply chain crime spree that hit OpenAI, and thousands more
+            Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        More than 1,000 organisations, 500,000 stolen credentials, and one self-propagating worm named after a Dune sandworm - two men now face charges over TeamPCP&#39;s global hacking spree. Read more in my article on the Hot for Security blog.
+        The order says any foreign-produced equipment deemed to pose national security risks can’t be purchased or installed. The post Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure appeared first on CyberScoop.
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/shai-hulud-hackers-charged-teampcps" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Shai-Hulud hackers: two men charged over TeamPCP’s global supply chain crime spree that hit OpenAI, and thousands more ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Graham Cluley</span>
+        <a href="https://cyberscoop.com/energy-department-cybersecurity-executive-order-rules/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CyberScoop</span>
       </div>
     </div>
 
@@ -288,81 +288,15 @@
             <span style="font-size:13px;color:#64748b;font-weight:500;">#07</span>
           </div>
           <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            Window to Tackle Surge in AI-Enabled Cyber Attacks Narrowing, Tech Giants Warn
+            Average Cyber Insurance Losses Increase Despite Fewer Claims
           </h3>
         </div>
       </div>
       <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        More than 100 companies, including OpenAI, Anthropic, Google and Microsoft, have urged collective action to unlock the power of AI to protect critical public services
+        Chubb reported that growing privacy litigation has contributed to surging cyber claim costs in the US
       </p>
       <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.infosecurity-magazine.com/news/window-ai-attacks-narrowing-tech/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Window to Tackle Surge in AI-Enabled Cyber Attacks Narrowing, Tech Giants Warn ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
-      </div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
-      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
-        <div>
-          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#08</span>
-          </div>
-          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            Beyond compliance: Designing systems that earn customer trust
-          </h3>
-        </div>
-      </div>
-      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        Over the years, I have learned that customer trust is not built by compliance alone. It comes from how systems actually handle data every day. In practice, I think five areas matter most Making customer intent consistent across systems Treating privacy as a distributed-systems problem Reducing unnec
-      </p>
-      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.csoonline.com/article/4214953/beyond-compliance-designing-systems-that-earn-customer-trust.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Beyond compliance: Designing systems that earn customer trust ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
-      </div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
-      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
-        <div>
-          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#09</span>
-          </div>
-          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            OpenAI: Hugging Face Incident a “Warning Shot” to the World
-          </h3>
-        </div>
-      </div>
-      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        OpenAI reveals that unauthorized message boards were at the heart of the recent Hugging Face breach
-      </p>
-      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.infosecurity-magazine.com/news/openai-hugging-face-warning-shot/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">OpenAI: Hugging Face Incident a “Warning Shot” to the World ↗</a>
-        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
-      </div>
-    </div>
-
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
-      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
-        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
-        <div>
-          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
-            
-            <span style="font-size:13px;color:#64748b;font-weight:500;">#10</span>
-          </div>
-          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
-            DDoS Attack Hits Norwegian Government Services
-          </h3>
-        </div>
-      </div>
-      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
-        A coordinated DDoS campaign has caused disruption among Norwegian government services
-      </p>
-      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
-        <a href="https://www.infosecurity-magazine.com/news/ddos-attack-hits-norwegian/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">DDoS Attack Hits Norwegian Government Services ↗</a>
+        <a href="https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Average Cyber Insurance Losses Increase Despite Fewer Claims ↗</a>
         <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
       </div>
     </div>
@@ -373,7 +307,7 @@
   <div class="footer">
     📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
     仅供学习参考，不构成投资或决策建议<br>
-    <span class="mono">// AI+Security Daily · 10 items · 2026-08-30</span>
+    <span class="mono">// AI+Security Daily · 7 items · 2026-08-31</span>
   </div>
 
   <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>

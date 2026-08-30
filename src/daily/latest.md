@@ -1,69 +1,51 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-08-30
+# 🤖🔒 AI+安全日报 | 2026-08-31
 
-> 今日共收录 **10** 条，AI+安全领域重要动态速览
+> 今日共收录 **7** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-58474 [HIGH 8.8] 🔬
+### ⚠️ 1. CVE-2026-37006 [CRITICAL 9.8]
 
-whichllm before 0.5.16 contains a code injection vulnerability in the run and snippet commands that allows a remote attacker who controls a HuggingFace repository to achieve arbitrary code execution by crafting a malicious GGUF filename containing double quotes or other special characters. The scrip
+A vulnerability in the WebSocket endpoint of gpt-researcher v0.14.7 and before allows an unauthenticated remote attacker to achieve code execution via malicious Model Context Protocol configurations.
 
-> **来源**: [CVE-2026-58474 [HIGH 8.8] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-58474)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-37006 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-37006)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### ⚠️ 2. CVE-2025-61165 [CRITICAL 9.8]
+### ⚠️ 2. CVE-2026-10036 [HIGH 8.8]
 
-An arbitrary file upload vulnerability in the /v1/my_drive/batch_upload component of cohere North AI v1.1.5 allows attackers to exeute arbitrary code via uploading a crafted file.
+SpeechBrain before 1.1.1 contains an arbitrary code execution vulnerability that allows attackers to execute arbitrary code by supplying a crafted CKPT.yaml checkpoint metadata file parsed with PyYAML's unsafe loader during candidate enumeration in Checkpointer.recover_if_possible(). Attackers can e
 
-> **来源**: [CVE-2025-61165 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2025-61165)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-10036 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-10036)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### ⚠️ 3. CVE-2025-56798 [HIGH 8.8]
+### 📰 3. US Launches Gold Eagle to Coordinate AI-Driven Vulnerability Management
 
-Cross-Site Request Forgery (CSRF) vulnerability in Lime Technology, Inc.'s Unraid OS version 6.12.14 and earlier allows remote attackers to escalate privileges via the Unraid authentication cookie's lax same-site policy.
+The White House announced Gold Eagle to help accelerate the discovery, prioritization and patching of flaws found by AI
 
-> **来源**: [CVE-2025-56798 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2025-56798)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [US Launches Gold Eagle to Coordinate AI-Driven Vulnerability Management](https://www.infosecurity-magazine.com/news/us-gold-eagle-ai-vulnerability/)  #Infosecurity Magazine
 
-### 📰 4. Two Alleged ‘TeamPCP’ Hackers Arrested in Australia
+### 📰 4. Fake Voicemail SVG Attachments Fuel Large-Scale Phishing Campaign
 
-Authorities in Australia have arrested two men believed to be members of TeamPCP, a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever. In a statement released today, the Australian Federal Police (AFP) said two unname
+A large-scale phishing campaign used fake voicemail SVG attachments to bypass email defenses, targeting 5527 organizations with over 26,000 malicious messages
 
-> **来源**: [Two Alleged ‘TeamPCP’ Hackers Arrested in Australia](https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/)  #Krebs on Security
+> **来源**: [Fake Voicemail SVG Attachments Fuel Large-Scale Phishing Campaign](https://www.infosecurity-magazine.com/news/fake-voicemail-svg-files-bypass/)  #Infosecurity Magazine
 
-### 📰 5. The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn
+### 📰 5. Manchester Airports Group Hit by Cyber Incident
 
-Plus: Hackers target over 100 US water systems, ICE puts in an order for robot dogs, and you’ll never guess what “MrChildPorn” was arrested for.
+Customer data linked to bookings and airport Wi-Fi registrations at Manchester, Stansted and East Midlands airports has been accessed by an unauthorized third party
 
-> **来源**: [The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn](https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/)  #Wired Security
+> **来源**: [Manchester Airports Group Hit by Cyber Incident](https://www.infosecurity-magazine.com/news/manchester-airports-data-breach/)  #Infosecurity Magazine
 
-### 📰 6. Shai-Hulud hackers: two men charged over TeamPCP’s global supply chain crime spree that hit OpenAI, and thousands more
+### 📰 6. Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure
 
-More than 1,000 organisations, 500,000 stolen credentials, and one self-propagating worm named after a Dune sandworm - two men now face charges over TeamPCP's global hacking spree. Read more in my article on the Hot for Security blog.
+The order says any foreign-produced equipment deemed to pose national security risks can’t be purchased or installed. The post Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure appeared first on CyberScoop.
 
-> **来源**: [Shai-Hulud hackers: two men charged over TeamPCP’s global supply chain crime spree that hit OpenAI, and thousands more](https://www.bitdefender.com/en-us/blog/hotforsecurity/shai-hulud-hackers-charged-teampcps)  #Graham Cluley
+> **来源**: [Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure](https://cyberscoop.com/energy-department-cybersecurity-executive-order-rules/)  #CyberScoop
 
-### 📰 7. Window to Tackle Surge in AI-Enabled Cyber Attacks Narrowing, Tech Giants Warn
+### 📰 7. Average Cyber Insurance Losses Increase Despite Fewer Claims
 
-More than 100 companies, including OpenAI, Anthropic, Google and Microsoft, have urged collective action to unlock the power of AI to protect critical public services
+Chubb reported that growing privacy litigation has contributed to surging cyber claim costs in the US
 
-> **来源**: [Window to Tackle Surge in AI-Enabled Cyber Attacks Narrowing, Tech Giants Warn](https://www.infosecurity-magazine.com/news/window-ai-attacks-narrowing-tech/)  #Infosecurity Magazine
-
-### 📰 8. Beyond compliance: Designing systems that earn customer trust
-
-Over the years, I have learned that customer trust is not built by compliance alone. It comes from how systems actually handle data every day. In practice, I think five areas matter most Making customer intent consistent across systems Treating privacy as a distributed-systems problem Reducing unnec
-
-> **来源**: [Beyond compliance: Designing systems that earn customer trust](https://www.csoonline.com/article/4214953/beyond-compliance-designing-systems-that-earn-customer-trust.html)  #CSO Online
-
-### 📰 9. OpenAI: Hugging Face Incident a “Warning Shot” to the World
-
-OpenAI reveals that unauthorized message boards were at the heart of the recent Hugging Face breach
-
-> **来源**: [OpenAI: Hugging Face Incident a “Warning Shot” to the World](https://www.infosecurity-magazine.com/news/openai-hugging-face-warning-shot/)  #Infosecurity Magazine
-
-### 📰 10. DDoS Attack Hits Norwegian Government Services
-
-A coordinated DDoS campaign has caused disruption among Norwegian government services
-
-> **来源**: [DDoS Attack Hits Norwegian Government Services](https://www.infosecurity-magazine.com/news/ddos-attack-hits-norwegian/)  #Infosecurity Magazine
+> **来源**: [Average Cyber Insurance Losses Increase Despite Fewer Claims](https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/)  #Infosecurity Magazine
 
 ---
 
