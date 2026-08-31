@@ -1,50 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-08-31
+# 🤖🔒 AI+安全日报 | 2026-09-01
 
-> 今日共收录 **7** 条，AI+安全领域重要动态速览
+> 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-37006 [CRITICAL 9.8]
+### 📰 1. Trusted Chrome, Edge extensions weaponized in supply chain campaign
 
-A vulnerability in the WebSocket endpoint of gpt-researcher v0.14.7 and before allows an unauthenticated remote attacker to achieve code execution via malicious Model Context Protocol configurations.
+Attackers have turned previously legitimate browser extensions into malware after acquiring them from legitimate publishers, potentially allowing malicious updates to reach users who had installed the software when it was still safe, researchers at Socket have found. The campaign involved 19 extensi
 
-> **来源**: [CVE-2026-37006 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-37006)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [Trusted Chrome, Edge extensions weaponized in supply chain campaign](https://www.csoonline.com/article/4215792/trusted-chrome-edge-extensions-weaponized-in-supply-chain-campaign.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-10036 [HIGH 8.8]
+### 📰 2. Is your cloud security strategy ready for AI’s looming threat?
 
-SpeechBrain before 1.1.1 contains an arbitrary code execution vulnerability that allows attackers to execute arbitrary code by supplying a crafted CKPT.yaml checkpoint metadata file parsed with PyYAML's unsafe loader during candidate enumeration in Checkpointer.recover_if_possible(). Attackers can e
+Cloud architectures designed to withstand human attackers are facing a new threat: AI agents that rewrite the rules on the pace and scope of attacks. The recent OpenAI incident involving Hugging Face offers an early example of what an autonomous AI attack can look like, with an agent exploiting mult
 
-> **来源**: [CVE-2026-10036 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-10036)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [Is your cloud security strategy ready for AI’s looming threat?](https://www.csoonline.com/article/4215419/is-your-cloud-security-strategy-ready-for-ais-looming-threat.html)  #CSO Online
 
-### 📰 3. US Launches Gold Eagle to Coordinate AI-Driven Vulnerability Management
+### ⚠️ 3. CVE-2026-18527 [CRITICAL 9.9]
 
-The White House announced Gold Eagle to help accelerate the discovery, prioritization and patching of flaws found by AI
+IBM Administration Runtime Expert for i 1R1M0 IBM Application Runtime Expert (ARE) for i could allow a remote attacker to gain elevated privileges, caused by ARE GUI component processing. An unauthenticated attacker can exploit this vulnerability to execute actions under another user's authenticated
 
-> **来源**: [US Launches Gold Eagle to Coordinate AI-Driven Vulnerability Management](https://www.infosecurity-magazine.com/news/us-gold-eagle-ai-vulnerability/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-18527 [CRITICAL 9.9]](https://nvd.nist.gov/vuln/detail/CVE-2026-18527)  CVSS 9.9 CRITICAL · #NVD · #漏洞
 
-### 📰 4. Fake Voicemail SVG Attachments Fuel Large-Scale Phishing Campaign
+### 📰 4. OpenAI-led coalition warns AI will compress cyberattack timelines, expose enterprise weaknesses
 
-A large-scale phishing campaign used fake voicemail SVG attachments to bypass email defenses, targeting 5527 organizations with over 26,000 malicious messages
+A coalition led by OpenAI is warning that AI will sharply accelerate the speed and scale of cyberattacks, leaving enterprises with a narrowing window to fix long-standing security weaknesses before they are exploited. “In the coming months, AI-enabled cyber attacks will become far more widespread an
 
-> **来源**: [Fake Voicemail SVG Attachments Fuel Large-Scale Phishing Campaign](https://www.infosecurity-magazine.com/news/fake-voicemail-svg-files-bypass/)  #Infosecurity Magazine
+> **来源**: [OpenAI-led coalition warns AI will compress cyberattack timelines, expose enterprise weaknesses](https://www.csoonline.com/article/4215838/openai-led-coalition-warns-ai-will-compress-cyberattack-timelines-expose-enterprise-weaknesses.html)  #CSO Online
 
-### 📰 5. Manchester Airports Group Hit by Cyber Incident
+### ⚠️ 5. CVE-2026-16821 [HIGH 7]
 
-Customer data linked to bookings and airport Wi-Fi registrations at Manchester, Stansted and East Midlands airports has been accessed by an unauthorized third party
+IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to gain elevated privileges due to a format string vulnerability.
 
-> **来源**: [Manchester Airports Group Hit by Cyber Incident](https://www.infosecurity-magazine.com/news/manchester-airports-data-breach/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-16821 [HIGH 7]](https://nvd.nist.gov/vuln/detail/CVE-2026-16821)  CVSS 7 HIGH · #NVD · #漏洞
 
-### 📰 6. Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure
+### 📰 6. 5 ways I actually use ChatGPT Work in my small business to save time and money
 
-The order says any foreign-produced equipment deemed to pose national security risks can’t be purchased or installed. The post Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure appeared first on CyberScoop.
+From scanning Gmail to catching ugly loan terms, ChatGPT Work has become my practical small-business assistant. Here's how agentic AI delivers real productivity gains for me.
 
-> **来源**: [Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure](https://cyberscoop.com/energy-department-cybersecurity-executive-order-rules/)  #CyberScoop
+> **来源**: [5 ways I actually use ChatGPT Work in my small business to save time and money](https://www.zdnet.com/article/chatgpt-work-small-business-use-cases/)  #ZDNet Security
 
-### 📰 7. Average Cyber Insurance Losses Increase Despite Fewer Claims
+### 📰 7. The AI Kill Switch Act is repeating the Clipper Chip’s mistakes
 
-Chubb reported that growing privacy litigation has contributed to surging cyber claim costs in the US
+Mandating ‘kill switches’ for AI agents would threaten the security of America’s critical infrastructure and undercut U.S. AI leadership. Congress must reject the AI Kill Switch Act. The post The AI Kill Switch Act is repeating the Clipper Chip’s mistakes appeared first on CyberScoop.
 
-> **来源**: [Average Cyber Insurance Losses Increase Despite Fewer Claims](https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/)  #Infosecurity Magazine
+> **来源**: [The AI Kill Switch Act is repeating the Clipper Chip’s mistakes](https://cyberscoop.com/ai-kill-switch-act-clipper-chip-mistakes-op-ed/)  #CyberScoop
+
+### ⚠️ 8. CVE-2026-17203 [HIGH 7.5]
+
+IBM Administration Runtime Expert for i 1R1M0 could allow a remote authenticated attacker to obtain sensitive information due to improper authentication enforcement.
+
+> **来源**: [CVE-2026-17203 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-17203)  CVSS 7.5 HIGH · #NVD · #漏洞
+
+### 📰 9. Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams
+
+Learn how the Spring Ring campaign abuses Microsoft Teams and voice phishing to deploy malware and target enterprise domain controllers. The post Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams appeared first on Unit 42.
+
+> **来源**: [Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams](https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/)  #Unit 42
+
+### 📰 10. ATM Flaws Reveal Key Weaknesses in the Software Supply Chain
+
+A security researcher discovered nine vulnerabilities impacting ATM encryption and authentication software. But the problems extend far beyond your local cash machine.
+
+> **来源**: [ATM Flaws Reveal Key Weaknesses in the Software Supply Chain](https://www.wired.com/story/atm-flaws-reveal-key-weaknesses-in-the-software-supply-chain/)  #Wired Security
 
 ---
 
