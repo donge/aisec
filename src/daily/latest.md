@@ -1,69 +1,63 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-09-01
+# 🤖🔒 AI+安全日报 | 2026-09-02
 
-> 今日共收录 **10** 条，AI+安全领域重要动态速览
+> 今日共收录 **9** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Trusted Chrome, Edge extensions weaponized in supply chain campaign
+### ⚠️ 1. CVE-2026-15980 [CRITICAL 9.8]
 
-Attackers have turned previously legitimate browser extensions into malware after acquiring them from legitimate publishers, potentially allowing malicious updates to reach users who had installed the software when it was still safe, researchers at Socket have found. The campaign involved 19 extensi
+The MyHome Core plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 4.4.5. This is due to missing authorization in the send_link() AJAX handler and improper token validation in the activate() function. This makes it possible for unauthenticated attackers
 
-> **来源**: [Trusted Chrome, Edge extensions weaponized in supply chain campaign](https://www.csoonline.com/article/4215792/trusted-chrome-edge-extensions-weaponized-in-supply-chain-campaign.html)  #CSO Online
+> **来源**: [CVE-2026-15980 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-15980)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 2. Is your cloud security strategy ready for AI’s looming threat?
+### 📰 2. Fake Cloudflare CAPTCHA tricks victims into opening a tunnel for attackers
 
-Cloud architectures designed to withstand human attackers are facing a new threat: AI agents that rewrite the rules on the pace and scope of attacks. The recent OpenAI incident involving Hugging Face offers an early example of what an autonomous AI attack can look like, with an agent exploiting mult
+Attackers are using fake CAPTCHA prompts to trick victims into running malicious PowerShell commands as part of a multi-stage intrusion campaign that can establish persistence, conduct network reconnaissance and potentially give operators a path to deeper access within an organization. Microsoft Thr
 
-> **来源**: [Is your cloud security strategy ready for AI’s looming threat?](https://www.csoonline.com/article/4215419/is-your-cloud-security-strategy-ready-for-ais-looming-threat.html)  #CSO Online
+> **来源**: [Fake Cloudflare CAPTCHA tricks victims into opening a tunnel for attackers](https://www.csoonline.com/article/4216927/fake-cloudflare-captcha-tricks-victims-into-opening-a-tunnel-for-attackers.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-18527 [CRITICAL 9.9]
+### 📰 3. Attackers Steal METR API Key and Burn $600,000 in AI Credits
 
-IBM Administration Runtime Expert for i 1R1M0 IBM Application Runtime Expert (ARE) for i could allow a remote attacker to gain elevated privileges, caused by ARE GUI component processing. An unauthenticated attacker can exploit this vulnerability to execute actions under another user's authenticated
+Attackers used a stolen METR API key for three weeks, consuming model credits worth $600,000
 
-> **来源**: [CVE-2026-18527 [CRITICAL 9.9]](https://nvd.nist.gov/vuln/detail/CVE-2026-18527)  CVSS 9.9 CRITICAL · #NVD · #漏洞
+> **来源**: [Attackers Steal METR API Key and Burn $600,000 in AI Credits](https://www.infosecurity-magazine.com/news/attackers-steal-metr-api-key/)  #Infosecurity Magazine
 
-### 📰 4. OpenAI-led coalition warns AI will compress cyberattack timelines, expose enterprise weaknesses
+### 📰 4. Microsoft nudges enterprise security closer to its passwordless future. But ‘123456’ will survive.
 
-A coalition led by OpenAI is warning that AI will sharply accelerate the speed and scale of cyberattacks, leaving enterprises with a narrowing window to fix long-standing security weaknesses before they are exploited. “In the coming months, AI-enabled cyber attacks will become far more widespread an
+Today marks the beginning of the end of an era for enterprise Microsoft authentication. As of Sept. 1, passkeys are now the default authentication method for Entra ID, Microsoft’s cloud-based identity and access management (IAM) service. By Feb. 1, 2027, Microsoft-provided SMS and voice authenticati
 
-> **来源**: [OpenAI-led coalition warns AI will compress cyberattack timelines, expose enterprise weaknesses](https://www.csoonline.com/article/4215838/openai-led-coalition-warns-ai-will-compress-cyberattack-timelines-expose-enterprise-weaknesses.html)  #CSO Online
+> **来源**: [Microsoft nudges enterprise security closer to its passwordless future. But ‘123456’ will survive.](https://www.csoonline.com/article/4215429/microsoft-nudges-enterprise-security-closer-to-its-passwordless-future-but-123456-will-survive.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-16821 [HIGH 7]
+### 📰 5. Healthcare Giant McKesson Investigates Data Breach Incident
 
-IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to gain elevated privileges due to a format string vulnerability.
+ShinyHunters claims to have stolen 284 million records from McKesson
 
-> **来源**: [CVE-2026-16821 [HIGH 7]](https://nvd.nist.gov/vuln/detail/CVE-2026-16821)  CVSS 7 HIGH · #NVD · #漏洞
+> **来源**: [Healthcare Giant McKesson Investigates Data Breach Incident](https://www.infosecurity-magazine.com/news/healthcare-mckesson-investigates/)  #Infosecurity Magazine
 
-### 📰 6. 5 ways I actually use ChatGPT Work in my small business to save time and money
+### 📰 6. McKesson copes with fallout from data theft extortion attack
 
-From scanning Gmail to catching ugly loan terms, ChatGPT Work has become my practical small-business assistant. Here's how agentic AI delivers real productivity gains for me.
+The major healthcare sector vendor did not identify the attackers, but ShinyHunters, a prolific group increasingly targeting the sector, claimed responsibility. The post McKesson copes with fallout from data theft extortion attack appeared first on CyberScoop.
 
-> **来源**: [5 ways I actually use ChatGPT Work in my small business to save time and money](https://www.zdnet.com/article/chatgpt-work-small-business-use-cases/)  #ZDNet Security
+> **来源**: [McKesson copes with fallout from data theft extortion attack](https://cyberscoop.com/mckesson-data-theft-extortion-attack-shinyhunters/)  #CyberScoop
 
-### 📰 7. The AI Kill Switch Act is repeating the Clipper Chip’s mistakes
+### 📰 7. White House Launches Pilot Program in Texas to Protect Water Infrastructure
 
-Mandating ‘kill switches’ for AI agents would threaten the security of America’s critical infrastructure and undercut U.S. AI leadership. Congress must reject the AI Kill Switch Act. The post The AI Kill Switch Act is repeating the Clipper Chip’s mistakes appeared first on CyberScoop.
+Project Watershed 250 will see water providers in Texas provided with federal and private sector cybersecurity resources amid rising nation-state threats
 
-> **来源**: [The AI Kill Switch Act is repeating the Clipper Chip’s mistakes](https://cyberscoop.com/ai-kill-switch-act-clipper-chip-mistakes-op-ed/)  #CyberScoop
+> **来源**: [White House Launches Pilot Program in Texas to Protect Water Infrastructure](https://www.infosecurity-magazine.com/news/white-house-texas-protect-water/)  #Infosecurity Magazine
 
-### ⚠️ 8. CVE-2026-17203 [HIGH 7.5]
+### 📰 8. China-linked hackers turn Cisco routers into covert attack infrastructure
 
-IBM Administration Runtime Expert for i 1R1M0 could allow a remote authenticated attacker to obtain sensitive information due to improper authentication enforcement.
+A China-linked cyber espionage group has expanded beyond VMware environments to target network and authentication infrastructure that enterprises rely on to manage access and administer critical systems, according to new findings from incident response firm Sygnia. The threat actor, tracked by Sygni
 
-> **来源**: [CVE-2026-17203 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-17203)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [China-linked hackers turn Cisco routers into covert attack infrastructure](https://www.csoonline.com/article/4216875/china-linked-hackers-turn-cisco-routers-into-covert-attack-infrastructure.html)  #CSO Online
 
-### 📰 9. Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams
+### 📰 9. Financial Stability Board Sounds the Alarm Over Frontier AI Risks
 
-Learn how the Spring Ring campaign abuses Microsoft Teams and voice phishing to deploy malware and target enterprise domain controllers. The post Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams appeared first on Unit 42.
+The Financial Stability Board has warned G20 banking leaders about the cyber risks of frontier AI
 
-> **来源**: [Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams](https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/)  #Unit 42
-
-### 📰 10. ATM Flaws Reveal Key Weaknesses in the Software Supply Chain
-
-A security researcher discovered nine vulnerabilities impacting ATM encryption and authentication software. But the problems extend far beyond your local cash machine.
-
-> **来源**: [ATM Flaws Reveal Key Weaknesses in the Software Supply Chain](https://www.wired.com/story/atm-flaws-reveal-key-weaknesses-in-the-software-supply-chain/)  #Wired Security
+> **来源**: [Financial Stability Board Sounds the Alarm Over Frontier AI Risks](https://www.infosecurity-magazine.com/news/financial-stability-board-alarm/)  #Infosecurity Magazine
 
 ---
 
