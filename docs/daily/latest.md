@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-09-03
+# 🤖🔒 AI+安全日报 | 2026-09-04
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. What happens when AI models take aim at ICS exploits
+### 📰 1. SonicWall reports two major security holes under active exploit
 
-LLMs have shown great improvement in vulnerability research and exploit development capabilities over the past six months. But it’s one thing to find vulnerabilities in well documented open-source projects and an entirely different skillset to decrypt file systems and reverse-engineer closed-source 
+SonicWall on Monday reported two major security holes in its Secure Mobile Access 1000 series appliances, both of which it said are being actively exploited, and published patches for each. Consultants called the holes, one of which permits remote attacks that bypass authentication, highly troubling
 
-> **来源**: [What happens when AI models take aim at ICS exploits](https://www.csoonline.com/article/4217212/what-happens-when-ai-models-take-aim-at-ics-exploits.html)  #CSO Online
+> **来源**: [SonicWall reports two major security holes under active exploit](https://www.csoonline.com/article/4217682/sonicwall-reports-two-major-security-holes-under-active-exploit-2.html)  #CSO Online
 
-### 📰 2. CrowdStrike launches cyber frontier AI models, agentic security system
+### 📰 2. Counterfeit installers turn routine software downloads into enterprise breaches
 
-CrowdStrike today announced SafeMind, a cybersecurity-specific AI model-harness system that CEO George Kurtz described as the “first complete agentic system for cybersecurity” at the company’s Fal.Con conference in Las Vegas. At the heart of SafeMind are two purpose-built cybersecurity models, the a
+Microsoft has warned that attackers are breaching enterprise systems via counterfeit download sites impersonating software including Microsoft Edge, Kaspersky and Razer, delivering trojanized installers for persistent access. “Once executed, the malicious installers deploy malware that establishes p
 
-> **来源**: [CrowdStrike launches cyber frontier AI models, agentic security system](https://www.csoonline.com/article/4217135/crowdstrike-launches-cyber-frontier-ai-models-agentic-security-system.html)  #CSO Online
+> **来源**: [Counterfeit installers turn routine software downloads into enterprise breaches](https://www.csoonline.com/article/4218075/counterfeit-installers-turn-routine-software-downloads-into-enterprise-breaches.html)  #CSO Online
 
-### 📰 3. Exploited JFrog Artifactory bug puts software supply chain on alert
+### 📰 3. Decade-old PostgreSQL flaw turns backup account into a backdoor
 
-A critical authentication bypass in JFrog Artifactory is now being exploited in the wild, with attackers observed generating administrator tokens and probing the software supply-chain platform’s sensitive data. The flaw, tracked as CVE-2026-82329, was disclosed by JFrog on August 28 and can, under d
+A critical vulnerability in PostgreSQL had remained hidden for more than a decade, potentially turning a routine backup account into a path to full database and server compromise. The issue, dubbed PostGREShell by Cyera Research, exists in the database’s replication functionality and could allow an 
 
-> **来源**: [Exploited JFrog Artifactory bug puts software supply chain on alert](https://www.csoonline.com/article/4217534/exploited-jfrog-artifactory-bug-puts-software-supply-chain-on-alert.html)  #CSO Online
+> **来源**: [Decade-old PostgreSQL flaw turns backup account into a backdoor](https://www.csoonline.com/article/4218101/decade-old-postgresql-flaw-turns-backup-account-into-a-backdoor.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-56718 [HIGH 7.5]
+### 📰 4. AI agents help compress ransomware intrusion to under 10 hours, raising stakes for CISOs
 
-AJCloud AJY IPC firmware prior to version 01.10715.11.37 contains a path traversal vulnerability in the jdbhttpd web service that allows unauthenticated remote attackers to read arbitrary files with root privileges by supplying path traversal sequences in the HTTP request URI. Attackers can send cra
+A ransomware attacker used AI agents to move through an enterprise network in less than 10 hours, according to Palo Alto Networks researchers, who estimated that similar work could have taken human operators about two weeks. The incident involved more than 50 techniques mapped to the MITRE ATT&CK fr
 
-> **来源**: [CVE-2026-56718 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-56718)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [AI agents help compress ransomware intrusion to under 10 hours, raising stakes for CISOs](https://www.csoonline.com/article/4217976/ai-agents-help-compress-ransomware-intrusion-to-under-10-hours-raising-stakes-for-cisos.html)  #CSO Online
 
-### 📰 5. An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation
+### ⚠️ 5. CVE-2026-72001 [HIGH 8.1]
 
-Using autonomous AI agents, an attacker breached an enterprise network in a matter of hours. Understand how to address and defend against agentic attacks. The post An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation appeared first on Unit 42.
+Pangolin before 1.22.0 contains an authentication bypass vulnerability that allows unauthenticated attackers to access any protected resource by supplying an attacker-controlled URL parameter to the share-link authentication endpoint that omits the expected resource identifier from the token verific
 
-> **来源**: [An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation](https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/)  #Unit 42
+> **来源**: [CVE-2026-72001 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-72001)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 6. Hackers Chain Two New SonicWall Zero-Day Vulnerabilities
+### 📰 6. Smashing Security podcast #483: This AI helps thieves steal your iPhone
 
-SonicWall has urged customers to patch two new zero-day vulnerabilities being exploited in the wild
+You've had your iPhone stolen. A day later, you get a text from Apple saying they've found it, and a very helpful woman called Alice from Apple Support calls to walk you through recovering it. She's polite. She's professional. But she is not from Apple. She's not even human. And she's about to break
 
-> **来源**: [Hackers Chain Two New SonicWall Zero-Day Vulnerabilities](https://www.infosecurity-magazine.com/news/hackers-chain-sonicwall-zeroday/)  #Infosecurity Magazine
+> **来源**: [Smashing Security podcast #483: This AI helps thieves steal your iPhone](https://grahamcluley.com/smashing-security-podcast-483/)  #Graham Cluley
 
-### 📰 7. FulcrumSec Claims Responsibility for Manchester Airport Group Breach
+### 📰 7. FBI Probes Service Selling 153M+ Drivers Licenses
 
-Threat group FulcrumSec claims MAG breach and leaks 550GB of data online
+A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning i
 
-> **来源**: [FulcrumSec Claims Responsibility for Manchester Airport Group Breach](https://www.infosecurity-magazine.com/news/fulcrumsec-manchester-airport/)  #Infosecurity Magazine
+> **来源**: [FBI Probes Service Selling 153M+ Drivers Licenses](https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/)  #Krebs on Security
 
-### 📰 8. Russian Man Extradited Over Malware Campaign Targeting Freelancers
+### 📰 8. vCenter Flaw Exploited Just Five Days After Disclosure
 
-Russian man extradited to US over malware campaign that targeted 80,000 freelance users
+Attackers exploited a critical-severity vCenter flaw five days after Broadcom disclosed it
 
-> **来源**: [Russian Man Extradited Over Malware Campaign Targeting Freelancers](https://www.infosecurity-magazine.com/news/russian-man-extradited-malware/)  #Infosecurity Magazine
+> **来源**: [vCenter Flaw Exploited Just Five Days After Disclosure](https://www.infosecurity-magazine.com/news/vcenter-cve-2026-59310-exploited/)  #Infosecurity Magazine
 
-### 📰 9. Anthropic introduces zero-retention AI safety monitoring for enterprises
+### 📰 9. Trump Authorizes Private Sector Participation in Offensive Cyber Operations
 
-Anthropic is introducing a new framework aimed at helping enterprises monitor AI misuse without ceding control over sensitive data, as organizations struggle to balance security visibility with strict compliance requirements. The company announced a new solution called Enterprise Frontier Safeguards
+The White House has authorized government-directed offensive cyber operations against transnational groups, prompting warnings over escalation and attribution risks
 
-> **来源**: [Anthropic introduces zero-retention AI safety monitoring for enterprises](https://www.csoonline.com/article/4217538/anthropic-introduces-zero-retention-ai-safety-monitoring-for-enterprises.html)  #CSO Online
+> **来源**: [Trump Authorizes Private Sector Participation in Offensive Cyber Operations](https://www.infosecurity-magazine.com/news/trump-private-offensive-cyber/)  #Infosecurity Magazine
 
-### 📰 10. FBI raises alarm over deceptive phishing campaign targeting prominent people
+### 📰 10. Akira Affiliate Crashes Ransomware After Attempting EDR Evasion
 
-The ongoing social engineering threat, which dates back to late 2025, tricks victims into granting threat actors long-term access to their accounts. The post FBI raises alarm over deceptive phishing campaign targeting prominent people appeared first on CyberScoop.
+Huntress documents how a ransomware affiliate sabotaged its own attack with an anti-EDR effort
 
-> **来源**: [FBI raises alarm over deceptive phishing campaign targeting prominent people](https://cyberscoop.com/fbi-alert-oauth-consent-phishing-campaign/)  #CyberScoop
+> **来源**: [Akira Affiliate Crashes Ransomware After Attempting EDR Evasion](https://www.infosecurity-magazine.com/news/akira-affiliate-crashes-ransomware/)  #Infosecurity Magazine
 
 ---
 

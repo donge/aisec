@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>2026-07-22 - AI+安全日报</title>
+        <title>2026-09-04 - AI+安全日报</title>
 
 
         <!-- Custom HTML head -->
@@ -177,80 +177,60 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="-ai安全日报--2026-07-22"><a class="header" href="#-ai安全日报--2026-07-22">🤖🔒 AI+安全日报 | 2026-07-22</a></h1>
+                        <h1 id="-ai安全日报--2026-09-04"><a class="header" href="#-ai安全日报--2026-09-04">🤖🔒 AI+安全日报 | 2026-09-04</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-cve-2026-12228-高危-87-"><a class="header" href="#-1-cve-2026-12228-高危-87-">⚠️ 1. CVE-2026-12228 [高危 8.7] 🔬</a></h3>
-<ul>
-<li>parisneo/lollms（最新版本）的<code>POST /api/prompts/share</code>端点存在存储型跨站脚本（XSS）漏洞。攻击者可通过该端点将恶意<code>prompt_content</code>存储到<code>DBDirectMessage.content</code>中，且服务器端未进行清理。当受害者打开直接消息（DM）线程时，DM UI通过<code>MessageContentRenderer</code>使用<code>v-html</code>将渲染后的HTML插入DOM，而前端基于正则表达式的清理器无法完全防御。该漏洞影响所有使用该版本的lollms用户，攻击者可窃取会话令牌或执行恶意操作。建议升级至修复版本或实施服务器端输入验证。</li>
-</ul>
+<h3 id="-1-sonicwall-reports-two-major-security-holes-under-active-exploit"><a class="header" href="#-1-sonicwall-reports-two-major-security-holes-under-active-exploit">📰 1. SonicWall reports two major security holes under active exploit</a></h3>
+<p>SonicWall on Monday reported two major security holes in its Secure Mobile Access 1000 series appliances, both of which it said are being actively exploited, and published patches for each. Consultants called the holes, one of which permits remote attacks that bypass authentication, highly troubling</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12228">CVE-2026-12228 [HIGH 8.7] 🔬</a>  CVSS 8.7 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4217682/sonicwall-reports-two-major-security-holes-under-active-exploit-2.html">SonicWall reports two major security holes under active exploit</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-2-servicenow沙箱逃逸远程代码执行漏洞已在野外被利用"><a class="header" href="#-2-servicenow沙箱逃逸远程代码执行漏洞已在野外被利用">📰 2. ServiceNow沙箱逃逸远程代码执行漏洞已在野外被利用</a></h3>
-<ul>
-<li>威胁情报公司Defused报告称，ServiceNow上周修补的一个可能导致远程代码执行（RCE）的沙箱安全漏洞（CVE-2026-6875）正在被积极利用。Defused在X平台上发布报告，表示观察到针对ServiceNow预认证沙箱逃逸RCE漏洞的野外利用行为。Defused CEO Simo Kohonen在接受CSO Online采访时指出，攻击者似乎已改变战术，以应对ServiceNow的补丁，其手法与Searchlight Cyber研究人员早前公开的概念验证（PoC）有所不同。该漏洞影响所有未打补丁的ServiceNow实例，建议企业立即应用安全更新，并监控异常网络活动。</li>
-</ul>
+<h3 id="-2-counterfeit-installers-turn-routine-software-downloads-into-enterprise-breaches"><a class="header" href="#-2-counterfeit-installers-turn-routine-software-downloads-into-enterprise-breaches">📰 2. Counterfeit installers turn routine software downloads into enterprise breaches</a></h3>
+<p>Microsoft has warned that attackers are breaching enterprise systems via counterfeit download sites impersonating software including Microsoft Edge, Kaspersky and Razer, delivering trojanized installers for persistent access. “Once executed, the malicious installers deploy malware that establishes p</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4198993/servicenows-sandbox-escape-rce-hole-now-exploited-in-the-wild.html">ServiceNow’s sandbox escape RCE hole now exploited in the wild</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4218075/counterfeit-installers-turn-routine-software-downloads-into-enterprise-breaches.html">Counterfeit installers turn routine software downloads into enterprise breaches</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-3-ai代理配置成为攻击载荷攻击者如何瞄准开发者代理工具链"><a class="header" href="#-3-ai代理配置成为攻击载荷攻击者如何瞄准开发者代理工具链">📰 3. AI代理配置成为攻击载荷：攻击者如何瞄准开发者代理工具链</a></h3>
-<ul>
-<li>攻击者已从躲避AI工具转向在AI工具内部进行攻击，通过投毒AI编码助手的配置文件（如settings.json钩子、.cursorrules Cursor MDC规则等）实现新型蠕虫攻击。这种攻击方式能够实现静默持久化、规避基于AI的扫描器，并通过开发者自身工具在组织仓库间传播。这些配置文件同时处于开发者信任、工具信任和供应链信任三个信任关系的交叉点，成为供应链攻击的明确目标而非附带损害。建议开发团队对AI编码助手的配置文件实施严格的版本控制和访问权限管理，并定期审计配置变更。</li>
-</ul>
+<h3 id="-3-decade-old-postgresql-flaw-turns-backup-account-into-a-backdoor"><a class="header" href="#-3-decade-old-postgresql-flaw-turns-backup-account-into-a-backdoor">📰 3. Decade-old PostgreSQL flaw turns backup account into a backdoor</a></h3>
+<p>A critical vulnerability in PostgreSQL had remained hidden for more than a decade, potentially turning a routine backup account into a path to full database and server compromise. The issue, dubbed PostGREShell by Cyera Research, exists in the database’s replication functionality and could allow an</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/ai-coding-assistant-agent-harness-attacks">Your AI agent’s config is now the payload: How attackers are targeting the developer agent harness</a>  #Tenable Blog</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4218101/decade-old-postgresql-flaw-turns-backup-account-into-a-backdoor.html">Decade-old PostgreSQL flaw turns backup account into a backdoor</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-4-上下文炸弹预示ai时代欺骗性防御新纪元"><a class="header" href="#-4-上下文炸弹预示ai时代欺骗性防御新纪元">📰 4. 上下文炸弹预示AI时代欺骗性防御新纪元</a></h3>
-<ul>
-<li>攻击者正越来越多地使用AI代理来自动化网络攻击的各个阶段，这促使安全行业和企业寻找新的网络防御方法。一种有前景的技术是故意植入带有提示的诱饵文件，这些提示会触发大型语言模型（LLM）内置的内容安全护栏，旨在破坏恶意代理工作流。在网络安全中，使用诱饵资源作为警报器来提醒防御者潜在的未授权访问并非新概念，这些被称为“金丝雀”（canaries），源自煤矿中的预警系统，可以是虚假文档。这种“上下文炸弹”技术利用AI自身的机制进行防御，标志着欺骗性防御进入AI时代，但需注意其可能被对手反向利用。</li>
-</ul>
+<h3 id="-4-ai-agents-help-compress-ransomware-intrusion-to-under-10-hours-raising-stakes-for-cisos"><a class="header" href="#-4-ai-agents-help-compress-ransomware-intrusion-to-under-10-hours-raising-stakes-for-cisos">📰 4. AI agents help compress ransomware intrusion to under 10 hours, raising stakes for CISOs</a></h3>
+<p>A ransomware attacker used AI agents to move through an enterprise network in less than 10 hours, according to Palo Alto Networks researchers, who estimated that similar work could have taken human operators about two weeks. The incident involved more than 50 techniques mapped to the MITRE ATT&amp;CK fr</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4198524/context-bombing-heralds-a-new-ai-era-of-deceptive-defense.html">Context bombing heralds a new AI era of deceptive defense</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4217976/ai-agents-help-compress-ransomware-intrusion-to-under-10-hours-raising-stakes-for-cisos.html">AI agents help compress ransomware intrusion to under 10 hours, raising stakes for CISOs</a>  #CSO Online</p>
 </blockquote>
-<h3 id="-5-白帽黑客park-chan-am聚焦ai时代关键安全挑战"><a class="header" href="#-5-白帽黑客park-chan-am聚焦ai时代关键安全挑战">📰 5. 白帽黑客Park Chan-am聚焦AI时代关键安全挑战</a></h3>
-<ul>
-<li>被誉为“天才黑客”的Park Chan-am，在11岁就开始了白帽黑客生涯，十几岁起就在国内外黑客竞赛中获奖。他曾担任韩国多个政府机构（包括国家警察厅）的网络安全顾问，并在该国防御与朝鲜（DPRK）相关的网络攻击中发挥了关键作用。在本月由韩国多个政府机构主办的第15届信息安全日活动研讨会上，他重点讨论了AI时代的关键安全挑战，包括AI驱动的攻击自动化、深度伪造威胁以及关键基础设施的防护。Park强调，随着AI技术的普及，安全社区需要开发新的防御策略，并加强国际合作以应对跨国网络威胁。</li>
-</ul>
+<h3 id="-5-cve-2026-72001-high-81"><a class="header" href="#-5-cve-2026-72001-high-81">⚠️ 5. CVE-2026-72001 [HIGH 8.1]</a></h3>
+<p>Pangolin before 1.22.0 contains an authentication bypass vulnerability that allows unauthenticated attackers to access any protected resource by supplying an attacker-controlled URL parameter to the share-link authentication endpoint that omits the expected resource identifier from the token verific</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4198528/security-in-the-age-of-ai-where-to-start-key-challenges-identified-by-white-hacker-ceo-park-chan-am.html">White hat hacker Park Chan-am zeros in on the AI era’s key security challenges</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-72001">CVE-2026-72001 [HIGH 8.1]</a>  CVSS 8.1 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-6-cve-2026-10130-高危-82"><a class="header" href="#-6-cve-2026-10130-高危-82">⚠️ 6. CVE-2026-10130 [高危 8.2]</a></h3>
-<ul>
-<li>QueryWeaver存在认证绕过漏洞，允许未认证攻击者通过提交已知受害者电子邮件地址的注册请求，获取现有账户的有效会话令牌。注册路由在检查电子邮件是否属于现有账户之前，通过Cypher MERGE操作无条件创建并链接新令牌到匹配的身份，导致服务器返回受害者身份的有效认证会话令牌。该漏洞影响所有QueryWeaver版本，攻击者可完全接管账户。建议立即应用补丁或修改注册逻辑以先验证邮箱唯一性。</li>
-</ul>
+<h3 id="-6-smashing-security-podcast-483-this-ai-helps-thieves-steal-your-iphone"><a class="header" href="#-6-smashing-security-podcast-483-this-ai-helps-thieves-steal-your-iphone">📰 6. Smashing Security podcast #483: This AI helps thieves steal your iPhone</a></h3>
+<p>You’ve had your iPhone stolen. A day later, you get a text from Apple saying they’ve found it, and a very helpful woman called Alice from Apple Support calls to walk you through recovering it. She’s polite. She’s professional. But she is not from Apple. She’s not even human. And she’s about to break</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10130">CVE-2026-10130 [HIGH 8.2]</a>  CVSS 8.2 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://grahamcluley.com/smashing-security-podcast-483/">Smashing Security podcast #483: This AI helps thieves steal your iPhone</a>  #Graham Cluley</p>
 </blockquote>
-<h3 id="-7-claude-mythos常见问题解答能力访问竞争对手影响"><a class="header" href="#-7-claude-mythos常见问题解答能力访问竞争对手影响">📰 7. Claude Mythos常见问题解答：能力、访问、竞争对手、影响</a></h3>
-<ul>
-<li>Anthropic公司开发的Claude Mythos是一款针对网络安全和医疗应用优化的高级AI模型。Mythos 5最初于4月向一小批经过审查的技术合作伙伴发布，计划后续更广泛推广。Anthropic建立了Project Glasswing联盟，向基础设施提供商、开源开发者及大型科技公司提供有限且受控的Mythos访问权限。该计划旨在帮助防御者比攻击者更快发现和修复漏洞，许多合作伙伴已利用该模型提升安全响应效率。此举标志着AI在安全防御领域的战略应用，可能重塑漏洞管理行业格局。</li>
-</ul>
+<h3 id="-7-fbi-probes-service-selling-153m-drivers-licenses"><a class="header" href="#-7-fbi-probes-service-selling-153m-drivers-licenses">📰 7. FBI Probes Service Selling 153M+ Drivers Licenses</a></h3>
+<p>A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning i</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4198019/claude-mythos-faq-capabilities-access-competitors-implications.html">Claude Mythos FAQ: Capabilities, access, competitors, implications</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/">FBI Probes Service Selling 153M+ Drivers Licenses</a>  #Krebs on Security</p>
 </blockquote>
-<h3 id="-8-cve-2026-16154-高危-73"><a class="header" href="#-8-cve-2026-16154-高危-73">⚠️ 8. CVE-2026-16154 [高危 7.3]</a></h3>
-<ul>
-<li>SourceCodester Class and Exam Timetabling System 1.0/1.php存在SQL注入漏洞，影响文件/edit_room1.php中未知功能，通过操纵ID参数可实现远程SQL注入攻击。该漏洞与CVE-2026-16152类似但影响不同文件，漏洞利用代码已公开。建议用户同时修复这两个漏洞，并部署Web应用防火墙（WAF）作为临时防护措施，同时对所有数据库查询实施预编译语句。</li>
-</ul>
+<h3 id="-8-vcenter-flaw-exploited-just-five-days-after-disclosure"><a class="header" href="#-8-vcenter-flaw-exploited-just-five-days-after-disclosure">📰 8. vCenter Flaw Exploited Just Five Days After Disclosure</a></h3>
+<p>Attackers exploited a critical-severity vCenter flaw five days after Broadcom disclosed it</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16154">CVE-2026-16154 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/vcenter-cve-2026-59310-exploited/">vCenter Flaw Exploited Just Five Days After Disclosure</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-9-cve-2026-16152-高危-73"><a class="header" href="#-9-cve-2026-16152-高危-73">⚠️ 9. CVE-2026-16152 [高危 7.3]</a></h3>
-<ul>
-<li>SourceCodester Class and Exam Timetabling System 1.0存在SQL注入漏洞，影响文件/edit_rooma.php中未知功能，通过操纵ID参数可实现远程SQL注入攻击。漏洞利用代码已公开，可能被广泛利用。该系统常用于教育机构排课管理，建议管理员立即应用补丁或升级到最新版本，并对所有用户输入进行参数化查询处理。</li>
-</ul>
+<h3 id="-9-trump-authorizes-private-sector-participation-in-offensive-cyber-operations"><a class="header" href="#-9-trump-authorizes-private-sector-participation-in-offensive-cyber-operations">📰 9. Trump Authorizes Private Sector Participation in Offensive Cyber Operations</a></h3>
+<p>The White House has authorized government-directed offensive cyber operations against transnational groups, prompting warnings over escalation and attribution risks</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16152">CVE-2026-16152 [HIGH 7.3]</a>  CVSS 7.3 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/trump-private-offensive-cyber/">Trump Authorizes Private Sector Participation in Offensive Cyber Operations</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-10-ai自动化与攻击解读unit-42-2026年全球事件响应报告"><a class="header" href="#-10-ai自动化与攻击解读unit-42-2026年全球事件响应报告">📰 10. AI、自动化与攻击：解读Unit 42 2026年全球事件响应报告</a></h3>
-<ul>
-<li>Palo Alto Networks的Unit 42团队发布了2026年全球事件响应报告，深入分析了AI对网络安全的影响。报告指出，AI驱动的攻击自动化已成为主流，攻击者利用生成式AI快速生成钓鱼邮件、恶意代码和漏洞利用工具，显著缩短了攻击时间线。同时，AI也被用于防御端，例如自动化威胁检测、事件响应和漏洞修复。报告还强调了勒索软件、供应链攻击和云安全漏洞仍然是主要威胁，而AI的滥用加剧了这些风险的复杂性。Unit 42建议企业将AI安全纳入整体风险管理框架，并投资于AI驱动的安全运营中心（SOC）以应对日益自动化的攻击。</li>
-</ul>
+<h3 id="-10-akira-affiliate-crashes-ransomware-after-attempting-edr-evasion"><a class="header" href="#-10-akira-affiliate-crashes-ransomware-after-attempting-edr-evasion">📰 10. Akira Affiliate Crashes Ransomware After Attempting EDR Evasion</a></h3>
+<p>Huntress documents how a ransomware affiliate sabotaged its own attack with an anti-EDR effort</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://unit42.paloaltonetworks.com/ai-insights-incident-response-report/">AI, Automation and Attacks: Unpacking the Unit 42 2026 Global Incident Response Report</a>  #Unit 42</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/akira-affiliate-crashes-ransomware/">Akira Affiliate Crashes Ransomware After Attempting EDR Evasion</a>  #Infosecurity Magazine</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -261,11 +241,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../daily/2026-07-23.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../daily/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../daily/2026-07-21.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../daily/2026-09-03.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -275,11 +255,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../daily/2026-07-23.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../daily/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../daily/2026-07-21.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../daily/2026-09-03.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
