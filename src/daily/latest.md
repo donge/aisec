@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-09-04
+# 🤖🔒 AI+安全日报 | 2026-09-05
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. SonicWall reports two major security holes under active exploit
+### 📰 1. FBI investigates breach of 153 million driving license records at IDscan.net
 
-SonicWall on Monday reported two major security holes in its Secure Mobile Access 1000 series appliances, both of which it said are being actively exploited, and published patches for each. Consultants called the holes, one of which permits remote attacks that bypass authentication, highly troubling
+Drivers in North America received a nasty shock this week when it was revealed that digital scans of 153 million drivers’ licenses were for sale on the dark web. Among the victims were US Defense Secretary Pete Hegseth – and investigative reporter Brian Krebs, who has dug deep into the data breach o
 
-> **来源**: [SonicWall reports two major security holes under active exploit](https://www.csoonline.com/article/4217682/sonicwall-reports-two-major-security-holes-under-active-exploit-2.html)  #CSO Online
+> **来源**: [FBI investigates breach of 153 million driving license records at IDscan.net](https://www.csoonline.com/article/4218789/fbi-investigates-breach-of-153-million-driving-license-records-at-idscan-net.html)  #CSO Online
 
-### 📰 2. Counterfeit installers turn routine software downloads into enterprise breaches
+### 📰 2. OpenAI launches GPT-6 Astra, its first model to cross a critical cybersecurity threshold
 
-Microsoft has warned that attackers are breaching enterprise systems via counterfeit download sites impersonating software including Microsoft Edge, Kaspersky and Razer, delivering trojanized installers for persistent access. “Once executed, the malicious installers deploy malware that establishes p
+OpenAI launched GPT-6 Astra on Thursday, disclosing that the new flagship model has crossed the “Critical” threshold for cybersecurity risk under its Preparedness Framework, a classification the company said triggers additional deployment restrictions. “GPT‑6 Astra is rolling out today to a limited 
 
-> **来源**: [Counterfeit installers turn routine software downloads into enterprise breaches](https://www.csoonline.com/article/4218075/counterfeit-installers-turn-routine-software-downloads-into-enterprise-breaches.html)  #CSO Online
+> **来源**: [OpenAI launches GPT-6 Astra, its first model to cross a critical cybersecurity threshold](https://www.csoonline.com/article/4218679/openai-launches-gpt-6-astra-its-first-model-to-cross-a-critical-cybersecurity-threshold.html)  #CSO Online
 
-### 📰 3. Decade-old PostgreSQL flaw turns backup account into a backdoor
+### ⚠️ 3. CVE-2026-19591 [HIGH 8.8]
 
-A critical vulnerability in PostgreSQL had remained hidden for more than a decade, potentially turning a routine backup account into a path to full database and server compromise. The issue, dubbed PostGREShell by Cyera Research, exists in the database’s replication functionality and could allow an 
+OpenAI Codex CLI for Windows, macOS, and Linux and Codex Desktop for Windows and macOS misclassified certain PowerShell commands as safe because their command-safety parser interpreted PowerShell's stop-parsing token (--%) differently than PowerShell itself. If a user opens an attacker-prepared repo
 
-> **来源**: [Decade-old PostgreSQL flaw turns backup account into a backdoor](https://www.csoonline.com/article/4218101/decade-old-postgresql-flaw-turns-backup-account-into-a-backdoor.html)  #CSO Online
+> **来源**: [CVE-2026-19591 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-19591)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 4. AI agents help compress ransomware intrusion to under 10 hours, raising stakes for CISOs
+### 📰 4. Nobody Is Saying Why OpenAI and Anthropic Had Outages Today
 
-A ransomware attacker used AI agents to move through an enterprise network in less than 10 hours, according to Palo Alto Networks researchers, who estimated that similar work could have taken human operators about two weeks. The incident involved more than 50 techniques mapped to the MITRE ATT&CK fr
+ChatGPT, Claude, and Grok all suffered outages at nearly the exact same time for reasons that remain murky.
 
-> **来源**: [AI agents help compress ransomware intrusion to under 10 hours, raising stakes for CISOs](https://www.csoonline.com/article/4217976/ai-agents-help-compress-ransomware-intrusion-to-under-10-hours-raising-stakes-for-cisos.html)  #CSO Online
+> **来源**: [Nobody Is Saying Why OpenAI and Anthropic Had Outages Today](https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/)  #Wired Security
 
-### ⚠️ 5. CVE-2026-72001 [HIGH 8.1]
+### 📰 5. OpenAI Pledges $1bn to Bring its AI Cybersecurity Tools to Essential Services
 
-Pangolin before 1.22.0 contains an authentication bypass vulnerability that allows unauthenticated attackers to access any protected resource by supplying an attacker-controlled URL parameter to the share-link authentication endpoint that omits the expected resource identifier from the token verific
+OpenAI has committed to subsidizing access to Daybreak, helping defenders deploy its AI models in its existing cybersecurity infrastructure
 
-> **来源**: [CVE-2026-72001 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-72001)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [OpenAI Pledges $1bn to Bring its AI Cybersecurity Tools to Essential Services](https://www.infosecurity-magazine.com/news/openai-pledges-ai-tools-essential/)  #Infosecurity Magazine
 
-### 📰 6. Smashing Security podcast #483: This AI helps thieves steal your iPhone
+### 📰 6. Why judgment is emerging as cybersecurity’s defining skill
 
-You've had your iPhone stolen. A day later, you get a text from Apple saying they've found it, and a very helpful woman called Alice from Apple Support calls to walk you through recovering it. She's polite. She's professional. But she is not from Apple. She's not even human. And she's about to break
+AI is getting better at much of what security teams have long spent time on: analyzing information, identifying patterns, and providing technically sound recommendations quickly. As those capabilities become more routine, they are changing what security practitioners spend their time on. Reaching a 
 
-> **来源**: [Smashing Security podcast #483: This AI helps thieves steal your iPhone](https://grahamcluley.com/smashing-security-podcast-483/)  #Graham Cluley
+> **来源**: [Why judgment is emerging as cybersecurity’s defining skill](https://cyberscoop.com/ai-security-operations-human-context-ciso-op-ed/)  #CyberScoop
 
-### 📰 7. FBI Probes Service Selling 153M+ Drivers Licenses
+### 📰 7. The democratization of cyber warfare — and what it means for CISOs
 
-A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning i
+For most of modern history, sophisticated and costly warfare had a high barrier to entry. In order to maintain a significant tactical advantage, you needed money, infrastructure and highly trained human resources. In the physical realm, you needed trained and capable warfighters along with relativel
 
-> **来源**: [FBI Probes Service Selling 153M+ Drivers Licenses](https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/)  #Krebs on Security
+> **来源**: [The democratization of cyber warfare — and what it means for CISOs](https://www.csoonline.com/article/4218244/the-democratization-of-cyber-warfare-and-what-it-means-for-cisos.html)  #CSO Online
 
-### 📰 8. vCenter Flaw Exploited Just Five Days After Disclosure
+### 📰 8. Attackers exploit zero-days in consistently besieged SonicWall product
 
-Attackers exploited a critical-severity vCenter flaw five days after Broadcom disclosed it
+SonicWall customers have confronted a barrage of attacks for years, including five actively exploited vulnerabilities in SMA 1000 appliances since late 2025. The post Attackers exploit zero-days in consistently besieged SonicWall product appeared first on CyberScoop.
 
-> **来源**: [vCenter Flaw Exploited Just Five Days After Disclosure](https://www.infosecurity-magazine.com/news/vcenter-cve-2026-59310-exploited/)  #Infosecurity Magazine
+> **来源**: [Attackers exploit zero-days in consistently besieged SonicWall product](https://cyberscoop.com/sonicwall-sma1000-zero-days-actively-exploited/)  #CyberScoop
 
-### 📰 9. Trump Authorizes Private Sector Participation in Offensive Cyber Operations
+### 📰 9. OpenAI targets small utilities with $1 billion cyber defense initiative
 
-The White House has authorized government-directed offensive cyber operations against transnational groups, prompting warnings over escalation and attribution risks
+In a keynote speech during a summit at OpenAI’s headquarters attended by 300 enterprise security leaders and CISOs from Fortune 1000 companies, OpenAI President Greg Brockman announced Daybreak for Frontline Defenders, a new global initiative to help frontline defenders use frontier cyber AI to prot
 
-> **来源**: [Trump Authorizes Private Sector Participation in Offensive Cyber Operations](https://www.infosecurity-magazine.com/news/trump-private-offensive-cyber/)  #Infosecurity Magazine
+> **来源**: [OpenAI targets small utilities with $1 billion cyber defense initiative](https://www.csoonline.com/article/4218373/openai-targets-small-utilities-with-1-billion-cyber-defense-initiative.html)  #CSO Online
 
-### 📰 10. Akira Affiliate Crashes Ransomware After Attempting EDR Evasion
+### 📰 10. Gunra Ransomware Exploits Fortinet Flaws to Target Critical Infrastructure
 
-Huntress documents how a ransomware affiliate sabotaged its own attack with an anti-EDR effort
+Gunra actors are using stealth to exfiltrate vast volumes of data from Microsoft services, US and Korean agencies have warned
 
-> **来源**: [Akira Affiliate Crashes Ransomware After Attempting EDR Evasion](https://www.infosecurity-magazine.com/news/akira-affiliate-crashes-ransomware/)  #Infosecurity Magazine
+> **来源**: [Gunra Ransomware Exploits Fortinet Flaws to Target Critical Infrastructure](https://www.infosecurity-magazine.com/news/gunra-ransomware-fortinet-flaws/)  #Infosecurity Magazine
 
 ---
 
