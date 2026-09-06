@@ -1,60 +1,44 @@
-# 🤖🔒 AI+安全日报 | 2026-09-06
+# 🤖🔒 AI+安全日报 | 2026-09-07
 
-> 今日共收录 **8** 条，AI+安全领域重要动态速览
+> 今日共收录 **6** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-20281 [HIGH 7.5]
+### ⚠️ 1. CVE-2026-82526 [CRITICAL 9.8]
 
-A vulnerability in Cisco Desk Phone 9800 Series, Cisco IP Phone 7800 and 8800 Series, and Cisco Video Phone 8875 that are running Cisco Session Initiation Protocol (SIP) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
+R2R through 3.6.6 contains a stacked SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL statements by manipulating the index name parameter in the vector index creation endpoint. The index name is interpolated directly into a CREATE INDEX statement via string 
 
-Th
+> **来源**: [CVE-2026-82526 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-82526)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-> **来源**: [CVE-2026-20281 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-20281)  CVSS 7.5 HIGH · #NVD · #漏洞
+### ⚠️ 2. CVE-2026-85187 [HIGH 7.3]
 
-### ⚠️ 2. CVE-2026-20212 [CRITICAL 9.8]
+A security vulnerability has been detected in itsourcecode Online Medicine Delivery System 1.0. Affected by this issue is the function Order::pupdate of the file /rider/orders/controller.php?action=edit&actions=confirm of the component Order Status Update. The manipulation of the argument ID leads t
 
-A vulnerability in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to execute code with&nbsp;root privileges.
+> **来源**: [CVE-2026-85187 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-85187)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-This vulnerability exists because TCP ports 43210 and 43211 are accessible in the default Layer 3 (L3) virtual routing and
+### 📰 3. Indirect Prompt Injection in Web Content Targets AI Agents
 
-> **来源**: [CVE-2026-20212 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-20212)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+Zscaler found sites hiding prompt-injection text to manipulate AI agents into crypto payments
 
-### 📰 3. When the patch tsunami meets the maintenance window
+> **来源**: [Indirect Prompt Injection in Web Content Targets AI Agents](https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/)  #Infosecurity Magazine
 
-In April 2026, the balance between finding software flaws and fixing them broke. Frontier AI models released by Anthropic and OpenAI can now autonomously identify exploitable vulnerabilities in production software — work that used to take experienced human researchers roughly sixty days now takes ab
+### 📰 4. Hacker Extradited from Ukraine Pleads Guilty to Ryuk Ransomware Charges
 
-> **来源**: [When the patch tsunami meets the maintenance window](https://www.csoonline.com/article/4217080/when-the-patch-tsunami-meets-the-maintenance-window.html)  #CSO Online
+An Armenian man has pleaded guilty to his role in the infamous Ryuk ransomware operation
 
-### 📰 4. Anthropic makes changes to stop AI agents running amok again
+> **来源**: [Hacker Extradited from Ukraine Pleads Guilty to Ryuk Ransomware Charges](https://www.infosecurity-magazine.com/news/hacker-extradited-ukraine-guilty/)  #Infosecurity Magazine
 
-Learning from the OpenAI-Hugging Face fiasco, as well as from recent revelations about its own model, Anthropic is revamping its security and alignment practices. The company has established controls that flag when a model attempts to break out of a sandbox or successfully accesses the live internet
+### 📰 5. Microsoft Warns of Increase in Number of Security Updates
 
-> **来源**: [Anthropic makes changes to stop AI agents running amok again](https://www.csoonline.com/article/4217243/anthropic-makes-changes-to-stop-ai-agents-running-amok-again.html)  #CSO Online
+Microsoft has said the volume of Windows security updates is set to grow as it uses AI to find new bugs
 
-### 📰 5. Toolkit Hidden Inside Oracle Database Evades Endpoint Tools
+> **来源**: [Microsoft Warns of Increase in Number of Security Updates](https://www.infosecurity-magazine.com/news/microsoft-increase-number-security/)  #Infosecurity Magazine
 
-Attackers used SQL injection to compile a post-exploitation toolkit inside an Oracle database
+### 📰 6. China-Linked APT Expands Proxy Network With New Malware
 
-> **来源**: [Toolkit Hidden Inside Oracle Database Evades Endpoint Tools](https://www.infosecurity-magazine.com/news/khunt-toolkit-oracle-database-sql/)  #Infosecurity Magazine
+Cisco Talos said China-linked APT UAT-7810 is growing its proxy relay network with new malware
 
-### 📰 6. Cloud and SaaS Environments Now Top Targets for Attackers
-
-Cloud and SaaS are now the preferred operating environments for threat actors, amid a continued shift to identity attacks
-
-> **来源**: [Cloud and SaaS Environments Now Top Targets for Attackers](https://www.infosecurity-magazine.com/news/cloud-saas-targets-attackers/)  #Infosecurity Magazine
-
-### 📰 7. AI Accounts for Over Half of Cybercrime in Africa, Says Interpol
-
-Interpol claims AI is driving a surge in cybercrime in Africa, with related losses doubling
-
-> **来源**: [AI Accounts for Over Half of Cybercrime in Africa, Says Interpol](https://www.infosecurity-magazine.com/news/ai-accounts-over-half-cybercrime/)  #Infosecurity Magazine
-
-### 📰 8. China-Linked Threat Actors Weaponize New Vulnerabilities in Under a Day
-
-Chinese actors exploited the critical React2Shell exploit inside a day, while 88% of exploited vulnerabilities in H1 2026 were compromised within 48 hours of disclosure
-
-> **来源**: [China-Linked Threat Actors Weaponize New Vulnerabilities in Under a Day](https://www.infosecurity-magazine.com/news/chinalinked-threat-actors/)  #Infosecurity Magazine
+> **来源**: [China-Linked APT Expands Proxy Network With New Malware](https://www.infosecurity-magazine.com/news/uat-7810-china-apt-orb-proxy/)  #Infosecurity Magazine
 
 ---
 
