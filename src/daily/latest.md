@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-09-08
+# 🤖🔒 AI+安全日报 | 2026-09-09
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Back-to-back N-able bugs send admins on a patching spree
+### 📰 1. Claude Mythos 5 is coming to Tenable One, powering the new “Adversary View”
 
-A max-severity zero-day bug could be affecting cybersecurity firm N-able’s N-central remote monitoring and management platform, the company said, even as administrators were applying a hotfix for two vulnerabilities disclosed just a day earlier. The latest flaw, tracked as CVE-2026-86218, is a remot
+Tenable is bringing Anthropic’s Claude Mythos 5 into our enterprise security offerings. Adding frontier adversarial reasoning to the Tenable One Exposure Management Platform will help customers better anticipate how attackers could breach their environments and stay ahead of AI-fueled risk. Tenable 
 
-> **来源**: [Back-to-back N-able bugs send admins on a patching spree](https://www.csoonline.com/article/4219242/back-to-back-n-able-bugs-send-admins-on-a-patching-spree.html)  #CSO Online
+> **来源**: [Claude Mythos 5 is coming to Tenable One, powering the new “Adversary View”](https://www.tenable.com/blog/tenable-one-claude-mythos-5-adversary-view-ai-exposure-management)  #Tenable Blog
 
-### ⚠️ 2. CVE-2026-80116 [HIGH 7.8]
+### 📰 2. StyleSmuggler (CVE-2026-75650): Frequently asked questions about Adobe Commerce and Magento zero-day
 
-PassMark PerformanceTest before 11.1 build 1012, BurnInTest before 11.1 build 1000, and OSForensics before 11.1 build 1016 contain a privilege escalation vulnerability in DirectIo64.sys that allows local users to modify hardware configuration by exploiting exposed IOCTLs with no validation on device
+A critical unauthenticated remote code execution (RCE) zero-day in Adobe Commerce and Magento Open Source, dubbed StyleSmuggler, has been actively exploited since September 4 with attacks observed three days before a vendor patch became available.Key takeawaysCVE-2026-75650 is a critical remote code
 
-> **来源**: [CVE-2026-80116 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-80116)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [StyleSmuggler (CVE-2026-75650): Frequently asked questions about Adobe Commerce and Magento zero-day](https://www.tenable.com/blog/stylesmuggler-cve-2026-75650-frequently-asked-questions-about-adobe-commerce-and-magento-zero)  #Tenable Blog
 
-### ⚠️ 3. CVE-2026-80112 [HIGH 7.8]
+### 📰 3. Adobe Commerce max-severity bug comes under active attack
 
-PassMark PerformanceTest before 11.1 build 1012, BurnInTest before 11.1 build 1000, and OSForensics before 11.1 build 1016 contain an improper access control vulnerability in the DirectIo64.sys kernel driver that allows unprivileged local users to perform privileged hardware operations by opening a 
+Online stores running Adobe Commerce and Magento Open Source have been hit by a max-severity, zero-day bug that lets unauthenticated attackers execute code on vulnerable servers. Security firm Sansec is calling the flaw StyleSmuggler because of the way attackers abused Magento’s Style properties to 
 
-> **来源**: [CVE-2026-80112 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-80112)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [Adobe Commerce max-severity bug comes under active attack](https://www.csoonline.com/article/4219626/adobe-commerce-max-severity-bug-comes-under-active-attack.html)  #CSO Online
 
-### 📰 4. Sam Altman calls GPT-6 Astra rollout ‘messy’ as enterprise users wait for access
+### 📰 4. Security leaders must prepare for likely threats, not sensationalized agentic attacks
 
-OpenAI’s rollout of its GPT-6 Astra model ran into early access issues after paying ChatGPT users were unable to use the system shortly after launch, prompting CEO Sam Altman to apologize and say the release had been “messy.” “First, sorry for the messy rollout,” OpenAI CEO Sam Altman acknowledged t
+A malicious dataset exploits code-execution paths in a remote-code dataset loader and a dataset configuration before compromising access credentials to move laterally through the target network. A frontier AI model publishes a malicious Python package to a public PyPI registry after identifying setu
 
-> **来源**: [Sam Altman calls GPT-6 Astra rollout ‘messy’ as enterprise users wait for access](https://www.csoonline.com/article/4219249/sam-altman-calls-gpt-6-astra-rollout-messy-as-enterprise-users-wait-for-access.html)  #CSO Online
+> **来源**: [Security leaders must prepare for likely threats, not sensationalized agentic attacks](https://www.csoonline.com/article/4218759/security-leaders-must-prepare-for-likely-threats-not-sensationalized-agentic-attacks.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-85638 [HIGH 7.3]
+### 📰 5. Securing AI agents: Key controls and best practices
 
-A weakness has been identified in jofpin trape 2.0. This affects an unknown part of the file core/user.py. This manipulation of the argument vId/id causes authorization bypass. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for atta
+Enterprises increasingly give AI agents the credentials, tools, and network access of privileged employees, but security experts warn that existing security controls designed to govern human access are insufficient. An AI agent operates at inhuman speed, can chain allowed actions into unauthorized o
 
-> **来源**: [CVE-2026-85638 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-85638)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Securing AI agents: Key controls and best practices](https://www.csoonline.com/article/4218440/securing-ai-agents-key-controls-and-best-practices.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-80119 [HIGH 7.8]
+### 📰 6. Mars Security Debuts Automated Threat Engine Processing Live Cyber Intelligence Into Validated Rules Within Minutes
 
-PassMark PerformanceTest before 11.1 build 1012, BurnInTest before 11.1 build 1000, and OSForensics before 11.1 build 1016 contain an information disclosure vulnerability in DirectIo64.sys that allows unauthenticated local attackers to dump complete physical memory contents by supplying a caller-con
+Mars Security, an autonomous threat hunting and detection engineering platform founded by offensive cybersecurity veterans, today announced Real-Time Intel-Based Detection. The milestone expansion equips enterprise security operations centers (SOCs) to convert newly published threat intelligence adv
 
-> **来源**: [CVE-2026-80119 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-80119)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [Mars Security Debuts Automated Threat Engine Processing Live Cyber Intelligence Into Validated Rules Within Minutes](https://www.csoonline.com/article/4219725/mars-security-debuts-automated-threat-engine-processing-live-cyber-intelligence-into-validated-rules-within-minutes.html)  #CSO Online
 
-### 📰 7. NCSC Warns Shadow AI Creates New Security Risks
+### ⚠️ 7. CVE-2026-86148 [CRITICAL 9.1]
 
-NCSC warns unapproved AI tools can expose corporate data and create new security risks
+A security flaw has been discovered in Tenda CP3 27.5.57.101. This vulnerability affects the function SystemAsh of the file Apis/system.c of the component Kylin. The manipulation of the argument AlarmVoiceURL results in os command injection. It is possible to launch the attack remotely.
 
-> **来源**: [NCSC Warns Shadow AI Creates New Security Risks](https://www.infosecurity-magazine.com/news/ncsc-warns-shadow-ai-security-risks/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-86148 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-86148)  CVSS 9.1 CRITICAL · #NVD · #漏洞
 
-### 📰 8. Multiple Class Action Lawsuits Filed Against IDScan
+### 📰 8. AI Coding Tools Now a Prime Target for Threat Actors, Google Warns
 
-Several victims of a recent breach of driver’s license information have sued the company they believe responsible
+Google warned that the rapid integration of AI-assisted coding tools has significantly expanded software supply chain risks
 
-> **来源**: [Multiple Class Action Lawsuits Filed Against IDScan](https://www.infosecurity-magazine.com/news/multiple-class-action-lawsuits/)  #Infosecurity Magazine
+> **来源**: [AI Coding Tools Now a Prime Target for Threat Actors, Google Warns](https://www.infosecurity-magazine.com/news/ai-coding-tools-threat-actors/)  #Infosecurity Magazine
 
-### 📰 9. Researcher Publishes CrowdStrike Privilege Escalation Zero Day
+### 📰 9. Trezor Supply Chain Breach Now Impacts 81,000 Customers
 
-A security researcher has posted a zero-day exploit in CrowdStrike which could allow hackers to escalate privileges
+Crypto wallet-maker Trezor says a data breach at supplier ShipMonk is far worse than originally thought
 
-> **来源**: [Researcher Publishes CrowdStrike Privilege Escalation Zero Day](https://www.infosecurity-magazine.com/news/crowdstrike-privilege-escalation/)  #Infosecurity Magazine
+> **来源**: [Trezor Supply Chain Breach Now Impacts 81,000 Customers](https://www.infosecurity-magazine.com/news/trezor-supply-chain-breach-impacts/)  #Infosecurity Magazine
 
-### 📰 10. Russian-Alligned TA488 Returns With Persistent Outlook Web Access Attack
+### 📰 10. Grindr Settles UK Data Privacy Claims for £26m
 
-TA488 returned with OWA half-click exploit deploying OWAReaper implant that survived re-imaging
+Grindr settled UK claims over alleged unlawful processing of sensitive user data
 
-> **来源**: [Russian-Alligned TA488 Returns With Persistent Outlook Web Access Attack](https://www.infosecurity-magazine.com/news/ta488-outlook-half-click-owareaper/)  #Infosecurity Magazine
+> **来源**: [Grindr Settles UK Data Privacy Claims for £26m](https://www.infosecurity-magazine.com/news/grindr-settles-uk-data-privacy/)  #Infosecurity Magazine
 
 ---
 
