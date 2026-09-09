@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-09-09
+# 🤖🔒 AI+安全日报 | 2026-09-10
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Claude Mythos 5 is coming to Tenable One, powering the new “Adversary View”
+### 📰 1. Introducing the CyberAgents Exchange AI Inspector: Rigorous review for community-built AI
 
-Tenable is bringing Anthropic’s Claude Mythos 5 into our enterprise security offerings. Adding frontier adversarial reasoning to the Tenable One Exposure Management Platform will help customers better anticipate how attackers could breach their environments and stay ahead of AI-fueled risk. Tenable 
+Open-source registries for AI agents are only effective when they include a rigorous, transparent security review process for community submissions. That’s why for its new CyberAgents Exchange registry, Tenable paired its exposure management expertise with OpenAI GPT Cyber models to create the Cyber
 
-> **来源**: [Claude Mythos 5 is coming to Tenable One, powering the new “Adversary View”](https://www.tenable.com/blog/tenable-one-claude-mythos-5-adversary-view-ai-exposure-management)  #Tenable Blog
+> **来源**: [Introducing the CyberAgents Exchange AI Inspector: Rigorous review for community-built AI](https://www.tenable.com/blog/ai-agent-security-openai-tenable-cyberagents-exchange-inspector)  #Tenable Blog
 
-### 📰 2. StyleSmuggler (CVE-2026-75650): Frequently asked questions about Adobe Commerce and Magento zero-day
+### 📰 2. When the prompt becomes the payload: A practical pen-testing guide for GenAI, LLM and RAG applications
 
-A critical unauthenticated remote code execution (RCE) zero-day in Adobe Commerce and Magento Open Source, dubbed StyleSmuggler, has been actively exploited since September 4 with attacks observed three days before a vendor patch became available.Key takeawaysCVE-2026-75650 is a critical remote code
+Generative AI has moved well beyond the stand-alone chatbot. It now drafts code, searches internal knowledge, reviews contracts, opens support cases and, in some deployments, takes action through connected tools. That broader role changes the security question. A tester is no longer looking only for
 
-> **来源**: [StyleSmuggler (CVE-2026-75650): Frequently asked questions about Adobe Commerce and Magento zero-day](https://www.tenable.com/blog/stylesmuggler-cve-2026-75650-frequently-asked-questions-about-adobe-commerce-and-magento-zero)  #Tenable Blog
+> **来源**: [When the prompt becomes the payload: A practical pen-testing guide for GenAI, LLM and RAG applications](https://www.csoonline.com/article/4219801/when-the-prompt-becomes-the-payload-a-practical-pen-testing-guide-for-genai-llm-and-rag-applications.html)  #CSO Online
 
-### 📰 3. Adobe Commerce max-severity bug comes under active attack
+### 📰 3. September 2026 Patch Tuesday roundup: Plugs for two zero day holes among almost 1,000 fixes in Windows
 
-Online stores running Adobe Commerce and Magento Open Source have been hit by a max-severity, zero-day bug that lets unauthenticated attackers execute code on vulnerable servers. Security firm Sansec is calling the flaw StyleSmuggler because of the way attackers abused Magento’s Style properties to 
+Possibly wormable bugs and two zero-day holes highlight the almost 1,000 fixes issued today by Microsoft in its September Patch Tuesday release. The 964 vulnerabilities, another record since Microsoft began using AI in the middle of the year to find holes, require customer action. Excluded are 174 t
 
-> **来源**: [Adobe Commerce max-severity bug comes under active attack](https://www.csoonline.com/article/4219626/adobe-commerce-max-severity-bug-comes-under-active-attack.html)  #CSO Online
+> **来源**: [September 2026 Patch Tuesday roundup: Plugs for two zero day holes among almost 1,000 fixes in Windows](https://www.csoonline.com/article/4219846/september-2026-patch-tuesday-roundup-plugs-for-two-zero-day-holes-among-almost-1000-fixes-in-windows.html)  #CSO Online
 
-### 📰 4. Security leaders must prepare for likely threats, not sensationalized agentic attacks
+### ⚠️ 4. CVE-2026-86225 [HIGH 7.3]
 
-A malicious dataset exploits code-execution paths in a remote-code dataset loader and a dataset configuration before compromising access credentials to move laterally through the target network. A frontier AI model publishes a malicious Python package to a public PyPI registry after identifying setu
+A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0. Affected by this vulnerability is the function mysqli_query of the file /admin/modal_add_room.php. The manipulation of the argument room_name leads to sql injection. The attack is possible to be carried out remot
 
-> **来源**: [Security leaders must prepare for likely threats, not sensationalized agentic attacks](https://www.csoonline.com/article/4218759/security-leaders-must-prepare-for-likely-threats-not-sensationalized-agentic-attacks.html)  #CSO Online
+> **来源**: [CVE-2026-86225 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86225)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 5. Securing AI agents: Key controls and best practices
+### 📰 5. ChatGPT flaw lets attackers pull Gmail data across accounts via a hidden channel
 
-Enterprises increasingly give AI agents the credentials, tools, and network access of privileged employees, but security experts warn that existing security controls designed to govern human access are insufficient. An AI agent operates at inhuman speed, can chain allowed actions into unauthorized o
+A flaw in OpenAI’s ChatGPT allowed attackers to extract data from a victim’s connected Gmail account by passing hidden instructions between separate user sessions, according to research from Check Point. In a proof-of-concept, Check Point demonstrated that a victim’s ChatGPT session could retrieve e
 
-> **来源**: [Securing AI agents: Key controls and best practices](https://www.csoonline.com/article/4218440/securing-ai-agents-key-controls-and-best-practices.html)  #CSO Online
+> **来源**: [ChatGPT flaw lets attackers pull Gmail data across accounts via a hidden channel](https://www.csoonline.com/article/4220203/chatgpt-flaw-lets-attackers-pull-gmail-data-across-accounts-via-a-hidden-channel.html)  #CSO Online
 
-### 📰 6. Mars Security Debuts Automated Threat Engine Processing Live Cyber Intelligence Into Validated Rules Within Minutes
+### 📰 6. ShinyHunters claims Florida DMV breach, puts data on the clock
 
-Mars Security, an autonomous threat hunting and detection engineering platform founded by offensive cybersecurity veterans, today announced Real-Time Intel-Based Detection. The milestone expansion equips enterprise security operations centers (SOCs) to convert newly published threat intelligence adv
+ShinyHunters is claiming to have broken into a Florida government database containing sensitive information on the state’s drivers. The notorious extortion group said it has breached the Florida Department of Highway Safety and Motor Vehicles’ Driver and Vehicle Information Database (DAVID) and clai
 
-> **来源**: [Mars Security Debuts Automated Threat Engine Processing Live Cyber Intelligence Into Validated Rules Within Minutes](https://www.csoonline.com/article/4219725/mars-security-debuts-automated-threat-engine-processing-live-cyber-intelligence-into-validated-rules-within-minutes.html)  #CSO Online
+> **来源**: [ShinyHunters claims Florida DMV breach, puts data on the clock](https://www.csoonline.com/article/4220193/shinyhunters-claims-florida-dmv-breach-puts-data-on-the-clock.html)  #CSO Online
 
-### ⚠️ 7. CVE-2026-86148 [CRITICAL 9.1]
+### 📰 7. Microsoft Shatters Patch Tuesday Record With 974 CVE Fixes in September 2026
 
-A security flaw has been discovered in Tenda CP3 27.5.57.101. This vulnerability affects the function SystemAsh of the file Apis/system.c of the component Kylin. The manipulation of the argument AlarmVoiceURL results in os command injection. It is possible to launch the attack remotely.
+The update contained 119 critical flaws and two zero days, with security teams needing to prioritize updates
 
-> **来源**: [CVE-2026-86148 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-86148)  CVSS 9.1 CRITICAL · #NVD · #漏洞
+> **来源**: [Microsoft Shatters Patch Tuesday Record With 974 CVE Fixes in September 2026](https://www.infosecurity-magazine.com/news/microsoft-patch-tuesday-record/)  #Infosecurity Magazine
 
-### 📰 8. AI Coding Tools Now a Prime Target for Threat Actors, Google Warns
+### ⚠️ 8. CVE-2026-86224 [HIGH 7.3]
 
-Google warned that the rapid integration of AI-assisted coding tools has significantly expanded software supply chain risks
+A vulnerability was determined in SourceCodester Class and Exam Timetabling System 1.0. Affected is the function mysqli_query of the file /admin/modal_add_product.php. Executing a manipulation of the argument fname can lead to sql injection. The attack can be executed remotely. The exploit has been 
 
-> **来源**: [AI Coding Tools Now a Prime Target for Threat Actors, Google Warns](https://www.infosecurity-magazine.com/news/ai-coding-tools-threat-actors/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-86224 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86224)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 9. Trezor Supply Chain Breach Now Impacts 81,000 Customers
+### ⚠️ 9. CVE-2026-86223 [HIGH 7.3]
 
-Crypto wallet-maker Trezor says a data breach at supplier ShipMonk is far worse than originally thought
+A vulnerability was found in SourceCodester Class and Exam Timetabling System 1.0. This impacts the function mysqli_query of the file /admin/modal_add_coursea.php. Performing a manipulation of the argument course results in sql injection. Remote exploitation of the attack is possible. The exploit ha
 
-> **来源**: [Trezor Supply Chain Breach Now Impacts 81,000 Customers](https://www.infosecurity-magazine.com/news/trezor-supply-chain-breach-impacts/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-86223 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86223)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 10. Grindr Settles UK Data Privacy Claims for £26m
+### ⚠️ 10. CVE-2026-86222 [HIGH 7.3]
 
-Grindr settled UK claims over alleged unlawful processing of sensitive user data
+A vulnerability has been found in SourceCodester Class and Exam Timetabling System 1.0. This affects the function mysqli_query of the file /admin/modal_add_course2.php. Such manipulation of the argument course leads to sql injection. The attack may be launched remotely. The exploit has been disclose
 
-> **来源**: [Grindr Settles UK Data Privacy Claims for £26m](https://www.infosecurity-magazine.com/news/grindr-settles-uk-data-privacy/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-86222 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86222)  CVSS 7.3 HIGH · #NVD · #漏洞
 
 ---
 
