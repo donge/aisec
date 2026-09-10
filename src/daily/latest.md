@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-09-10
+# 🤖🔒 AI+安全日报 | 2026-09-11
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Introducing the CyberAgents Exchange AI Inspector: Rigorous review for community-built AI
+### ⚠️ 1. CVE-2026-86438 [HIGH 7.2] 🔬
 
-Open-source registries for AI agents are only effective when they include a rigorous, transparent security review process for community submissions. That’s why for its new CyberAgents Exchange registry, Tenable paired its exposure management expertise with OpenAI GPT Cyber models to create the Cyber
+Lara Dashboard before 1.3.2 fails to authorize the MarketplaceModuleBrowser installModule Livewire action, allowing non-Superadmin administrators to install modules. Attackers can download and auto-activate arbitrary PHP modules from the marketplace over unsigned HTTP requests, achieving remote code
 
-> **来源**: [Introducing the CyberAgents Exchange AI Inspector: Rigorous review for community-built AI](https://www.tenable.com/blog/ai-agent-security-openai-tenable-cyberagents-exchange-inspector)  #Tenable Blog
+> **来源**: [CVE-2026-86438 [HIGH 7.2] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-86438)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 2. When the prompt becomes the payload: A practical pen-testing guide for GenAI, LLM and RAG applications
+### ⚠️ 2. CVE-2026-86539 [HIGH 7.2] 🔬
 
-Generative AI has moved well beyond the stand-alone chatbot. It now drafts code, searches internal knowledge, reviews contracts, opens support cases and, in some deployments, takes action through connected tools. That broader role changes the security question. A tester is no longer looking only for
+knowns through 0.33.0 contains a server-side request forgery vulnerability in the POST /api/embedding-models/test endpoint that issues outbound requests to caller-supplied destinations without validation. Attackers can enumerate internal hosts and cloud metadata endpoints by observing transport erro
 
-> **来源**: [When the prompt becomes the payload: A practical pen-testing guide for GenAI, LLM and RAG applications](https://www.csoonline.com/article/4219801/when-the-prompt-becomes-the-payload-a-practical-pen-testing-guide-for-genai-llm-and-rag-applications.html)  #CSO Online
+> **来源**: [CVE-2026-86539 [HIGH 7.2] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-86539)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 3. September 2026 Patch Tuesday roundup: Plugs for two zero day holes among almost 1,000 fixes in Windows
+### 📰 3. 10 most critical LLM vulnerabilities
 
-Possibly wormable bugs and two zero-day holes highlight the almost 1,000 fixes issued today by Microsoft in its September Patch Tuesday release. The 964 vulnerabilities, another record since Microsoft began using AI in the middle of the year to find holes, require customer action. Excluded are 174 t
+Enterprise adoption of generative AI technologies has exploded due to the rapid evolution of the technology and the emergence of a variety of business use cases. But large language models (LLMs) can accidentally produce harmful results, leak information, or become exposed to threat actors. These vul
 
-> **来源**: [September 2026 Patch Tuesday roundup: Plugs for two zero day holes among almost 1,000 fixes in Windows](https://www.csoonline.com/article/4219846/september-2026-patch-tuesday-roundup-plugs-for-two-zero-day-holes-among-almost-1000-fixes-in-windows.html)  #CSO Online
+> **来源**: [10 most critical LLM vulnerabilities](https://www.csoonline.com/article/575497/owasp-lists-10-most-critical-large-language-model-vulnerabilities.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-86225 [HIGH 7.3]
+### 📰 4. Stealth rootkit targeting F5 BIG-IP could expose enterprise identity gateways
 
-A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0. Affected by this vulnerability is the function mysqli_query of the file /admin/modal_add_room.php. The manipulation of the argument room_name leads to sql injection. The attack is possible to be carried out remot
+A newly analyzed Linux rootkit is believed to have given attackers a way to hide shells inside recently compromised F5 BIG-IP Access Policy Management (APM) environments, without leaving the malicious PHP code on disk. Sophos said the malware, found in compromised BIG-IP APM environments using Apach
 
-> **来源**: [CVE-2026-86225 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86225)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Stealth rootkit targeting F5 BIG-IP could expose enterprise identity gateways](https://www.csoonline.com/article/4220693/stealth-rootkit-targeting-f5-big-ip-could-expose-enterprise-identity-gateways.html)  #CSO Online
 
-### 📰 5. ChatGPT flaw lets attackers pull Gmail data across accounts via a hidden channel
+### 📰 5. The agentic harness for Tenable Hexa AI: How Tenable prevents AI agents from going off the rails
 
-A flaw in OpenAI’s ChatGPT allowed attackers to extract data from a victim’s connected Gmail account by passing hidden instructions between separate user sessions, according to research from Check Point. In a proof-of-concept, Check Point demonstrated that a victim’s ChatGPT session could retrieve e
+Learn why Tenable treats agentic LLMs as untrusted insiders, and how we’ve made sure you can control and monitor the AI agents making changes in your production security environmentKey takeawaysAI models can quickly understand data, but not your business. While modern AI models are great at reasonin
 
-> **来源**: [ChatGPT flaw lets attackers pull Gmail data across accounts via a hidden channel](https://www.csoonline.com/article/4220203/chatgpt-flaw-lets-attackers-pull-gmail-data-across-accounts-via-a-hidden-channel.html)  #CSO Online
+> **来源**: [The agentic harness for Tenable Hexa AI: How Tenable prevents AI agents from going off the rails](https://www.tenable.com/blog/how-agentic-harness-works-tenable-hexa-ai)  #Tenable Blog
 
-### 📰 6. ShinyHunters claims Florida DMV breach, puts data on the clock
+### 📰 6. Chinese espionage groups swarm to exploit triple-link chain of zero-days
 
-ShinyHunters is claiming to have broken into a Florida government database containing sensitive information on the state’s drivers. The notorious extortion group said it has breached the Florida Department of Highway Safety and Motor Vehicles’ Driver and Vehicle Information Database (DAVID) and clai
+Multiple China-aligned threat groups exploited the defects quickly to target various organizations. Proofpoint said the activity is ongoing and expects it to widen. The post Chinese espionage groups swarm to exploit triple-link chain of zero-days appeared first on CyberScoop.
 
-> **来源**: [ShinyHunters claims Florida DMV breach, puts data on the clock](https://www.csoonline.com/article/4220193/shinyhunters-claims-florida-dmv-breach-puts-data-on-the-clock.html)  #CSO Online
+> **来源**: [Chinese espionage groups swarm to exploit triple-link chain of zero-days](https://cyberscoop.com/china-espionage-groups-exploit-chain-zero-days/)  #CyberScoop
 
-### 📰 7. Microsoft Shatters Patch Tuesday Record With 974 CVE Fixes in September 2026
+### ⚠️ 7. CVE-2026-86541 [HIGH 8.3]
 
-The update contained 119 critical flaws and two zero days, with security teams needing to prioritize updates
+knowns versions before 0.30.0 contain a path traversal vulnerability in the handleCodeReplace() function that allows attackers to overwrite arbitrary files outside the project root. Attackers can supply absolute paths or relative paths containing directory traversal sequences to write malicious cont
 
-> **来源**: [Microsoft Shatters Patch Tuesday Record With 974 CVE Fixes in September 2026](https://www.infosecurity-magazine.com/news/microsoft-patch-tuesday-record/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-86541 [HIGH 8.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86541)  CVSS 8.3 HIGH · #NVD · #漏洞
 
-### ⚠️ 8. CVE-2026-86224 [HIGH 7.3]
+### ⚠️ 8. CVE-2026-86538 [HIGH 7.5]
 
-A vulnerability was determined in SourceCodester Class and Exam Timetabling System 1.0. Affected is the function mysqli_query of the file /admin/modal_add_product.php. Executing a manipulation of the argument fname can lead to sql injection. The attack can be executed remotely. The exploit has been 
+knowns versions before 0.30.0 contain a path traversal vulnerability in the POST /api/templates/preview endpoint that allows unauthenticated attackers to read arbitrary files. Attackers can supply directory traversal sequences in the templateFile parameter to bypass path restrictions and read sensit
 
-> **来源**: [CVE-2026-86224 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86224)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-86538 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-86538)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### ⚠️ 9. CVE-2026-86223 [HIGH 7.3]
+### 📰 9. MikroTik patches flaws currently being exploited to take over routers
 
-A vulnerability was found in SourceCodester Class and Exam Timetabling System 1.0. This impacts the function mysqli_query of the file /admin/modal_add_coursea.php. Performing a manipulation of the argument course results in sql injection. Remote exploitation of the attack is possible. The exploit ha
+Networking gear manufacturer MikroTik has released patches for six vulnerabilities in its RouterOS firmware, two of which can be chained together to take over devices without authentication over SSH. The exploit chain, dubbed MikroTrick, is already being used by attackers in the wild. The vulnerabil
 
-> **来源**: [CVE-2026-86223 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86223)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [MikroTik patches flaws currently being exploited to take over routers](https://www.csoonline.com/article/4220390/mikrotik-patches-flaws-currently-being-exploited-to-take-over-routers.html)  #CSO Online
 
-### ⚠️ 10. CVE-2026-86222 [HIGH 7.3]
+### 📰 10. SpyCloud 2026 Identity Threat Report Finds Non-Human Identities Are Now the Leading Path into the Enterprise
 
-A vulnerability has been found in SourceCodester Class and Exam Timetabling System 1.0. This affects the function mysqli_query of the file /admin/modal_add_course2.php. Such manipulation of the argument course leads to sql injection. The attack may be launched remotely. The exploit has been disclose
+Ninety-five percent of organizations believe they have visibility into their AI and machine identity exposures, yet only 36% are actually monitoring them. SpyCloud, the leader in identity threat protection, today released its annual SpyCloud Identity Threat Report, a survey-based study finding that 
 
-> **来源**: [CVE-2026-86222 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86222)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [SpyCloud 2026 Identity Threat Report Finds Non-Human Identities Are Now the Leading Path into the Enterprise](https://www.csoonline.com/article/4220209/spycloud-2026-identity-threat-report-finds-non-human-identities-are-now-the-leading-path-into-the-enterprise.html)  #CSO Online
 
 ---
 
