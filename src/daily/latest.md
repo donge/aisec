@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-09-11
+# 🤖🔒 AI+安全日报 | 2026-09-12
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-86438 [HIGH 7.2] 🔬
+### 📰 1. Attackers are weaponizing the gap between Chromium fixes and Chrome patches
 
-Lara Dashboard before 1.3.2 fails to authorize the MarketplaceModuleBrowser installModule Livewire action, allowing non-Superadmin administrators to install modules. Attackers can download and auto-activate arbitrary PHP modules from the marketplace over unsigned HTTP requests, achieving remote code
+A new exploit kit is revealing the perils of the “patch later” mentality. According to the Proofpoint Threat Research team, espionage-motivated threat actors are using a new malicious toolkit to chain together four separate Chrome browser and Microsoft Windows vulnerabilities to allow them to launch
 
-> **来源**: [CVE-2026-86438 [HIGH 7.2] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-86438)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [Attackers are weaponizing the gap between Chromium fixes and Chrome patches](https://www.csoonline.com/article/4220939/attackers-are-weaponizing-the-gap-between-chromium-fixes-and-chrome-patches.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-86539 [HIGH 7.2] 🔬
+### 📰 2. ConnectWise patches critical ScreenConnect authentication failure after five days
 
-knowns through 0.33.0 contains a server-side request forgery vulnerability in the POST /api/embedding-models/test endpoint that issues outbound requests to caller-supplied destinations without validation. Attackers can enumerate internal hosts and cloud metadata endpoints by observing transport erro
+ConnectWise has issued a security update for ScreenConnect, five days after warning customers the product could allow files to be transferred and executed through active remote sessions without authorization or confirmation. The company warned customers on Sept. 3 of the problem with support and acc
 
-> **来源**: [CVE-2026-86539 [HIGH 7.2] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-86539)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [ConnectWise patches critical ScreenConnect authentication failure after five days](https://www.csoonline.com/article/4221263/connectwise-patches-critical-screenconnect-authentication-failure-after-five-days-2.html)  #CSO Online
 
-### 📰 3. 10 most critical LLM vulnerabilities
+### 📰 3. Anthropic finds evidence of a fourth AI escaping from containment
 
-Enterprise adoption of generative AI technologies has exploded due to the rapid evolution of the technology and the emergence of a variety of business use cases. But large language models (LLMs) can accidentally produce harmful results, leak information, or become exposed to threat actors. These vul
+Anthropic has owned up to a fourth security incident involving its AI model, Claude, escaping onto the open internet and attacking other organizations during a test of cybersecurity abilities on what was believed to be a closed system. The company revealed three such incidents in July after a prelim
 
-> **来源**: [10 most critical LLM vulnerabilities](https://www.csoonline.com/article/575497/owasp-lists-10-most-critical-large-language-model-vulnerabilities.html)  #CSO Online
+> **来源**: [Anthropic finds evidence of a fourth AI escaping from containment](https://www.csoonline.com/article/4221160/anthropic-finds-evidence-of-a-fourth-ai-escaping-from-containment.html)  #CSO Online
 
-### 📰 4. Stealth rootkit targeting F5 BIG-IP could expose enterprise identity gateways
+### 📰 4. Attackers use passkey-themed scams to hijack Microsoft 365 accounts
 
-A newly analyzed Linux rootkit is believed to have given attackers a way to hide shells inside recently compromised F5 BIG-IP Access Policy Management (APM) environments, without leaving the malicious PHP code on disk. Sophos said the malware, found in compromised BIG-IP APM environments using Apach
+Attackers are using passkey-themed social engineering to trick employees into giving them access to their Microsoft accounts. Microsoft Security Research said it has been tracking active cloud intrusions since May in which attackers impersonated IT helpdesk staff, told employees they needed to updat
 
-> **来源**: [Stealth rootkit targeting F5 BIG-IP could expose enterprise identity gateways](https://www.csoonline.com/article/4220693/stealth-rootkit-targeting-f5-big-ip-could-expose-enterprise-identity-gateways.html)  #CSO Online
+> **来源**: [Attackers use passkey-themed scams to hijack Microsoft 365 accounts](https://www.csoonline.com/article/4221110/attackers-use-passkey-themed-scams-to-hijack-microsoft-365-accounts.html)  #CSO Online
 
-### 📰 5. The agentic harness for Tenable Hexa AI: How Tenable prevents AI agents from going off the rails
+### 📰 5. AI lets small actors run state-level hacking campaigns, Anthropic report finds
 
-Learn why Tenable treats agentic LLMs as untrusted insiders, and how we’ve made sure you can control and monitor the AI agents making changes in your production security environmentKey takeawaysAI models can quickly understand data, but not your business. While modern AI models are great at reasonin
+The report details a Russian-aligned espionage campaign against more than 20 organizations, an exploit foundry run by Chinese undergraduates and ShinyHunters-affiliated breaches, among other disrupted operations. The post AI lets small actors run state-level hacking campaigns, Anthropic report finds
 
-> **来源**: [The agentic harness for Tenable Hexa AI: How Tenable prevents AI agents from going off the rails](https://www.tenable.com/blog/how-agentic-harness-works-tenable-hexa-ai)  #Tenable Blog
+> **来源**: [AI lets small actors run state-level hacking campaigns, Anthropic report finds](https://cyberscoop.com/anthropic-report-ai-enabled-cyber-attacks/)  #CyberScoop
 
-### 📰 6. Chinese espionage groups swarm to exploit triple-link chain of zero-days
+### 📰 6. Hawley probes OpenAI over Hugging Face breach
 
-Multiple China-aligned threat groups exploited the defects quickly to target various organizations. Proofpoint said the activity is ongoing and expects it to widen. The post Chinese espionage groups swarm to exploit triple-link chain of zero-days appeared first on CyberScoop.
+The Republican lawmaker called OpenAI’s leadership decisions “reckless,” and used recent warnings about the existential risk of AI to bolster his inquiry. The post Hawley probes OpenAI over Hugging Face breach appeared first on CyberScoop.
 
-> **来源**: [Chinese espionage groups swarm to exploit triple-link chain of zero-days](https://cyberscoop.com/china-espionage-groups-exploit-chain-zero-days/)  #CyberScoop
+> **来源**: [Hawley probes OpenAI over Hugging Face breach](https://cyberscoop.com/openai-hugging-face-probe-senate-hawley/)  #CyberScoop
 
-### ⚠️ 7. CVE-2026-86541 [HIGH 8.3]
+### 📰 7. CISA Updates Insider Threat Guide With New Mitigation Advice
 
-knowns versions before 0.30.0 contain a path traversal vulnerability in the handleCodeReplace() function that allows attackers to overwrite arbitrary files outside the project root. Attackers can supply absolute paths or relative paths containing directory traversal sequences to write malicious cont
+CISA has updated its insider threat guide with new advice on remote work, AI and risk detection
 
-> **来源**: [CVE-2026-86541 [HIGH 8.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-86541)  CVSS 8.3 HIGH · #NVD · #漏洞
+> **来源**: [CISA Updates Insider Threat Guide With New Mitigation Advice](https://www.infosecurity-magazine.com/news/cisa-updates-insider-threat-guide/)  #Infosecurity Magazine
 
-### ⚠️ 8. CVE-2026-86538 [HIGH 7.5]
+### 📰 8. Governments ‘buying time’ in race between innovation, security, national cyber director says
 
-knowns versions before 0.30.0 contain a path traversal vulnerability in the POST /api/templates/preview endpoint that allows unauthenticated attackers to read arbitrary files. Attackers can supply directory traversal sequences in the templateFile parameter to bypass path restrictions and read sensit
+Sean Cairncross also said AI has shown long-standing issues in cyber rather than creating new ones. The post Governments ‘buying time’ in race between innovation, security, national cyber director says appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-86538 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-86538)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [Governments ‘buying time’ in race between innovation, security, national cyber director says](https://cyberscoop.com/national-cyber-director-ai-cybersecurity-threats/)  #CyberScoop
 
-### 📰 9. MikroTik patches flaws currently being exploited to take over routers
+### 📰 9. Smashing Security podcast #484: How websites are tracking you with silence
 
-Networking gear manufacturer MikroTik has released patches for six vulnerabilities in its RouterOS firmware, two of which can be chained together to take over devices without authentication over SSH. The exploit chain, dubbed MikroTrick, is already being used by attackers in the wild. The vulnerabil
+When a chap called Matt noticed his Bluetooth headphones wouldn't switch to his phone, he was surprised to realise the reason was a single AliExpress webpage sitting open in his browser - playing nothing at all, at zero volume. And yet somehow his hardware could hear it. Audio fingerprinting is one 
 
-> **来源**: [MikroTik patches flaws currently being exploited to take over routers](https://www.csoonline.com/article/4220390/mikrotik-patches-flaws-currently-being-exploited-to-take-over-routers.html)  #CSO Online
+> **来源**: [Smashing Security podcast #484: How websites are tracking you with silence](https://grahamcluley.com/smashing-security-podcast-484/)  #Graham Cluley
 
-### 📰 10. SpyCloud 2026 Identity Threat Report Finds Non-Human Identities Are Now the Leading Path into the Enterprise
+### 📰 10. FBI cyber chief worries private sector not sharing enough cyber threat information
 
-Ninety-five percent of organizations believe they have visibility into their AI and machine identity exposures, yet only 36% are actually monitoring them. SpyCloud, the leader in identity threat protection, today released its annual SpyCloud Identity Threat Report, a survey-based study finding that 
+Brett Leatherman said that industry has the wrong idea about what the FBI does with the data it collects during incidents, which is used to help victims and investigations alike. The post FBI cyber chief worries private sector not sharing enough cyber threat information appeared first on CyberScoop.
 
-> **来源**: [SpyCloud 2026 Identity Threat Report Finds Non-Human Identities Are Now the Leading Path into the Enterprise](https://www.csoonline.com/article/4220209/spycloud-2026-identity-threat-report-finds-non-human-identities-are-now-the-leading-path-into-the-enterprise.html)  #CSO Online
+> **来源**: [FBI cyber chief worries private sector not sharing enough cyber threat information](https://cyberscoop.com/fbi-cyber-division-private-sector-threat-sharing/)  #CyberScoop
 
 ---
 
