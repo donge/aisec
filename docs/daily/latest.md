@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-09-12
+# 🤖🔒 AI+安全日报 | 2026-09-13
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Attackers are weaponizing the gap between Chromium fixes and Chrome patches
+### 📰 1. Why AI raises the stakes for exposure validation
 
-A new exploit kit is revealing the perils of the “patch later” mentality. According to the Proofpoint Threat Research team, espionage-motivated threat actors are using a new malicious toolkit to chain together four separate Chrome browser and Microsoft Windows vulnerabilities to allow them to launch
+AI dominated the conversation at Fal.Con 2026, but one of the most important takeaways wasn’t simply how AI is changing cyber defense. It was how AI is changing the speed and scale of a problem defenders already face. Security teams already have more vulnerabilities and security signals than they ca
 
-> **来源**: [Attackers are weaponizing the gap between Chromium fixes and Chrome patches](https://www.csoonline.com/article/4220939/attackers-are-weaponizing-the-gap-between-chromium-fixes-and-chrome-patches.html)  #CSO Online
+> **来源**: [Why AI raises the stakes for exposure validation](https://www.csoonline.com/article/4221299/why-ai-raises-the-stakes-for-exposure-validation.html)  #CSO Online
 
-### 📰 2. ConnectWise patches critical ScreenConnect authentication failure after five days
+### ⚠️ 2. CVE-2026-54694 [CRITICAL 9.6]
 
-ConnectWise has issued a security update for ScreenConnect, five days after warning customers the product could allow files to be transferred and executed through active remote sessions without authorization or confirmation. The company warned customers on Sept. 3 of the problem with support and acc
+SkillTree is a micro-learning gamification platform. Prior to version 4.4.2, two independent code flaws combine into a single exploitable attack chain, with three distinct exploitation paths of escalating impact. `StringHighlighter.js` builds an HTML string by interpolating raw `value` substrings di
 
-> **来源**: [ConnectWise patches critical ScreenConnect authentication failure after five days](https://www.csoonline.com/article/4221263/connectwise-patches-critical-screenconnect-authentication-failure-after-five-days-2.html)  #CSO Online
+> **来源**: [CVE-2026-54694 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-54694)  CVSS 9.6 CRITICAL · #NVD · #漏洞
 
-### 📰 3. Anthropic finds evidence of a fourth AI escaping from containment
+### 📰 3. Cyberattack causes a flight delay? Airlines won’t owe you a hotel or meal
 
-Anthropic has owned up to a fourth security incident involving its AI model, Claude, escaping onto the open internet and attacking other organizations during a test of cybersecurity abilities on what was believed to be a closed system. The company revealed three such incidents in July after a prelim
+A Department of Transportation rule published last week says that airlines complying with cybersecurity regulations will have reduced customer obligations in the event of an attack. The post Cyberattack causes a flight delay? Airlines won’t owe you a hotel or meal appeared first on CyberScoop.
 
-> **来源**: [Anthropic finds evidence of a fourth AI escaping from containment](https://www.csoonline.com/article/4221160/anthropic-finds-evidence-of-a-fourth-ai-escaping-from-containment.html)  #CSO Online
+> **来源**: [Cyberattack causes a flight delay? Airlines won’t owe you a hotel or meal](https://cyberscoop.com/dot-rule-airline-cyberattack-flight-delays/)  #CyberScoop
 
-### 📰 4. Attackers use passkey-themed scams to hijack Microsoft 365 accounts
+### 📰 4. India’s STPI serves TerminalFix-style attack via fake Cloudflare check
 
-Attackers are using passkey-themed social engineering to trick employees into giving them access to their Microsoft accounts. Microsoft Security Research said it has been tracking active cloud intrusions since May in which attackers impersonated IT helpdesk staff, told employees they needed to updat
+A website linked to India’s Software Technology Parks of India (STPI) is serving a spoofed Cloudflare verification page that silently copies a malicious string to visitors’ clipboards and prompts them to execute it via Windows Terminal, in a technique consistent with emerging TerminalFix-style attac
 
-> **来源**: [Attackers use passkey-themed scams to hijack Microsoft 365 accounts](https://www.csoonline.com/article/4221110/attackers-use-passkey-themed-scams-to-hijack-microsoft-365-accounts.html)  #CSO Online
+> **来源**: [India’s STPI serves TerminalFix-style attack via fake Cloudflare check](https://www.csoonline.com/article/4221243/indias-stpi-serves-terminalfix-style-attack-via-fake-cloudflare-check.html)  #CSO Online
 
-### 📰 5. AI lets small actors run state-level hacking campaigns, Anthropic report finds
+### ⚠️ 5. CVE-2026-73787 [HIGH 7.2]
 
-The report details a Russian-aligned espionage campaign against more than 20 organizations, an exploit foundry run by Chinese undergraduates and ShinyHunters-affiliated breaches, among other disrupted operations. The post AI lets small actors run state-level hacking campaigns, Anthropic report finds
+A vulnerability in the CPPM web interface could allow an authenticated remote attacker to access directory information on a vulnerable system. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system.
 
-> **来源**: [AI lets small actors run state-level hacking campaigns, Anthropic report finds](https://cyberscoop.com/anthropic-report-ai-enabled-cyber-attacks/)  #CyberScoop
+> **来源**: [CVE-2026-73787 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-73787)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 6. Hawley probes OpenAI over Hugging Face breach
+### ⚠️ 6. CVE-2026-73786 [HIGH 7.5]
 
-The Republican lawmaker called OpenAI’s leadership decisions “reckless,” and used recent warnings about the existential risk of AI to bolster his inquiry. The post Hawley probes OpenAI over Hugging Face breach appeared first on CyberScoop.
+A vulnerability in the web-based management interface of CPPM could allow an unauthenticated remote attacker to conduct a Denial-of-Service (DoS) attack. Successful exploitation could allow an attacker to cause instability and degrade performance of the vulnerable CPPM server.
 
-> **来源**: [Hawley probes OpenAI over Hugging Face breach](https://cyberscoop.com/openai-hugging-face-probe-senate-hawley/)  #CyberScoop
+> **来源**: [CVE-2026-73786 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-73786)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 7. CISA Updates Insider Threat Guide With New Mitigation Advice
+### ⚠️ 7. CVE-2026-73769 [HIGH 7.2]
 
-CISA has updated its insider threat guide with new advice on remote work, AI and risk detection
+A vulnerability in the web-based management interface of vulnerable CPPM systems could allow an authenticated remote attacker to achieve remote code execution. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system.
 
-> **来源**: [CISA Updates Insider Threat Guide With New Mitigation Advice](https://www.infosecurity-magazine.com/news/cisa-updates-insider-threat-guide/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-73769 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-73769)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 8. Governments ‘buying time’ in race between innovation, security, national cyber director says
+### 📰 8. Post-quantum cryptography adoption and the national security implications
 
-Sean Cairncross also said AI has shown long-standing issues in cyber rather than creating new ones. The post Governments ‘buying time’ in race between innovation, security, national cyber director says appeared first on CyberScoop.
+Quantum computers have advanced significantly in capability and compute power in the last several years and are turning theoretical vulnerabilities in modern cryptography into real-world threats. The shift to post-quantum cryptography (PQC) needs to start now, but several challenges need to be overc
 
-> **来源**: [Governments ‘buying time’ in race between innovation, security, national cyber director says](https://cyberscoop.com/national-cyber-director-ai-cybersecurity-threats/)  #CyberScoop
+> **来源**: [Post-quantum cryptography adoption and the national security implications](https://www.csoonline.com/article/4219777/post-quantum-cryptography-adoption-and-the-national-security-implications.html)  #CSO Online
 
-### 📰 9. Smashing Security podcast #484: How websites are tracking you with silence
+### 📰 9. How AI and cybersecurity are reshaping ServiceNow
 
-When a chap called Matt noticed his Bluetooth headphones wouldn't switch to his phone, he was surprised to realise the reason was a single AliExpress webpage sitting open in his browser - playing nothing at all, at zero volume. And yet somehow his hardware could hear it. Audio fingerprinting is one 
+The once stable era of IT service management (ITSM) has entered a period of disruption and uncertainty. At least if you’re an investor or enterprise customer with an interest in ITSM giant ServiceNow, the signals over recent months have been hard to ignore. Last year, the category leader delivered m
 
-> **来源**: [Smashing Security podcast #484: How websites are tracking you with silence](https://grahamcluley.com/smashing-security-podcast-484/)  #Graham Cluley
+> **来源**: [How AI and cybersecurity are reshaping ServiceNow](https://www.csoonline.com/article/4220438/how-ai-and-cybersecurity-are-reshaping-servicenow-2.html)  #CSO Online
 
-### 📰 10. FBI cyber chief worries private sector not sharing enough cyber threat information
+### 📰 10. Hackers Favor US Eastern Business Hours in M365 Phishing Campaign
 
-Brett Leatherman said that industry has the wrong idea about what the FBI does with the data it collects during incidents, which is used to help victims and investigations alike. The post FBI cyber chief worries private sector not sharing enough cyber threat information appeared first on CyberScoop.
+KnowBe4 researchers observed a new phishing campaign leveraging Microsoft 365’s Direct Send to send malicious emails
 
-> **来源**: [FBI cyber chief worries private sector not sharing enough cyber threat information](https://cyberscoop.com/fbi-cyber-division-private-sector-threat-sharing/)  #CyberScoop
+> **来源**: [Hackers Favor US Eastern Business Hours in M365 Phishing Campaign](https://www.infosecurity-magazine.com/news/hackers-us-business-hours-m365/)  #Infosecurity Magazine
 
 ---
 
