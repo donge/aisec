@@ -1,69 +1,45 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-09-13
+# 🤖🔒 AI+安全日报 | 2026-09-14
 
-> 今日共收录 **10** 条，AI+安全领域重要动态速览
+> 今日共收录 **6** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Why AI raises the stakes for exposure validation
+### 📰 1. Conti ransomware crew member sentenced to four years in prison
 
-AI dominated the conversation at Fal.Con 2026, but one of the most important takeaways wasn’t simply how AI is changing cyber defense. It was how AI is changing the speed and scale of a problem defenders already face. Security teams already have more vulnerabilities and security signals than they ca
+Oleksii Lytvynenko joined the notorious group in 2021 and was directly involved in attacks on at least 12 companies. The post Conti ransomware crew member sentenced to four years in prison appeared first on CyberScoop.
 
-> **来源**: [Why AI raises the stakes for exposure validation](https://www.csoonline.com/article/4221299/why-ai-raises-the-stakes-for-exposure-validation.html)  #CSO Online
+> **来源**: [Conti ransomware crew member sentenced to four years in prison](https://cyberscoop.com/conti-ransomware-developer-sentenced/)  #CyberScoop
 
-### ⚠️ 2. CVE-2026-54694 [CRITICAL 9.6]
+### 📰 2. MantaxOtax Android Malware Combines Ransomware With Spyware
 
-SkillTree is a micro-learning gamification platform. Prior to version 4.4.2, two independent code flaws combine into a single exploitable attack chain, with three distinct exploitation paths of escalating impact. `StringHighlighter.js` builds an HTML string by interpolating raw `value` substrings di
+MantaxOtax Android malware combines ransomware with extensive spyware capabilities
 
-> **来源**: [CVE-2026-54694 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-54694)  CVSS 9.6 CRITICAL · #NVD · #漏洞
+> **来源**: [MantaxOtax Android Malware Combines Ransomware With Spyware](https://www.infosecurity-magazine.com/news/mantaxotax-android-malware/)  #Infosecurity Magazine
 
-### 📰 3. Cyberattack causes a flight delay? Airlines won’t owe you a hotel or meal
+### 📰 3. Untracked Nightmares: The Threats Hiding Behind Commodity Infrastructure
 
-A Department of Transportation rule published last week says that airlines complying with cybersecurity regulations will have reduced customer obligations in the event of an attack. The post Cyberattack causes a flight delay? Airlines won’t owe you a hotel or meal appeared first on CyberScoop.
+An investigation into how cybercriminals used YouTube gaming lures and SEO poisoning to deliver multi-payload malware to enterprise networks. The post Untracked Nightmares: The Threats Hiding Behind Commodity Infrastructure appeared first on Unit 42.
 
-> **来源**: [Cyberattack causes a flight delay? Airlines won’t owe you a hotel or meal](https://cyberscoop.com/dot-rule-airline-cyberattack-flight-delays/)  #CyberScoop
+> **来源**: [Untracked Nightmares: The Threats Hiding Behind Commodity Infrastructure](https://unit42.paloaltonetworks.com/ppi-network-malware-campaign-analysis/)  #Unit 42
 
-### 📰 4. India’s STPI serves TerminalFix-style attack via fake Cloudflare check
+### 📰 4. BigBear 2 PhaaS Campaign Steals 5000+ Microsoft Credentials
 
-A website linked to India’s Software Technology Parks of India (STPI) is serving a spoofed Cloudflare verification page that silently copies a malicious string to visitors’ clipboards and prompts them to execute it via Windows Terminal, in a technique consistent with emerging TerminalFix-style attac
+CloudSEK has uncovered BigBear 2.0, a new phishing-as-a-service operation targeting Microsoft 365
 
-> **来源**: [India’s STPI serves TerminalFix-style attack via fake Cloudflare check](https://www.csoonline.com/article/4221243/indias-stpi-serves-terminalfix-style-attack-via-fake-cloudflare-check.html)  #CSO Online
+> **来源**: [BigBear 2 PhaaS Campaign Steals 5000+ Microsoft Credentials](https://www.infosecurity-magazine.com/news/bigbear-2-phaas-5000-microsoft/)  #Infosecurity Magazine
 
-### ⚠️ 5. CVE-2026-73787 [HIGH 7.2]
+### 📰 5. A New Ransomware Threat Actor Emerges Every Week, Warns Report
 
-A vulnerability in the CPPM web interface could allow an authenticated remote attacker to access directory information on a vulnerable system. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system.
+Analysis by Black Kite warns that ransomware ecosystem is becoming bigger and more fragmented
 
-> **来源**: [CVE-2026-73787 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-73787)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [A New Ransomware Threat Actor Emerges Every Week, Warns Report](https://www.infosecurity-magazine.com/news/new-ransomware-weekly/)  #Infosecurity Magazine
 
-### ⚠️ 6. CVE-2026-73786 [HIGH 7.5]
+### 📰 6. Police Chiefs Cite TfL Hack in Push for Cybercrime Risk Orders
 
-A vulnerability in the web-based management interface of CPPM could allow an unauthenticated remote attacker to conduct a Denial-of-Service (DoS) attack. Successful exploitation could allow an attacker to cause instability and degrade performance of the vulnerable CPPM server.
+Two chiefs of UK policing agencies said the Transport for London prosecution demonstrates the need for Cybercrime Risk Orders
 
-> **来源**: [CVE-2026-73786 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-73786)  CVSS 7.5 HIGH · #NVD · #漏洞
-
-### ⚠️ 7. CVE-2026-73769 [HIGH 7.2]
-
-A vulnerability in the web-based management interface of vulnerable CPPM systems could allow an authenticated remote attacker to achieve remote code execution. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system.
-
-> **来源**: [CVE-2026-73769 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-73769)  CVSS 7.2 HIGH · #NVD · #漏洞
-
-### 📰 8. Post-quantum cryptography adoption and the national security implications
-
-Quantum computers have advanced significantly in capability and compute power in the last several years and are turning theoretical vulnerabilities in modern cryptography into real-world threats. The shift to post-quantum cryptography (PQC) needs to start now, but several challenges need to be overc
-
-> **来源**: [Post-quantum cryptography adoption and the national security implications](https://www.csoonline.com/article/4219777/post-quantum-cryptography-adoption-and-the-national-security-implications.html)  #CSO Online
-
-### 📰 9. How AI and cybersecurity are reshaping ServiceNow
-
-The once stable era of IT service management (ITSM) has entered a period of disruption and uncertainty. At least if you’re an investor or enterprise customer with an interest in ITSM giant ServiceNow, the signals over recent months have been hard to ignore. Last year, the category leader delivered m
-
-> **来源**: [How AI and cybersecurity are reshaping ServiceNow](https://www.csoonline.com/article/4220438/how-ai-and-cybersecurity-are-reshaping-servicenow-2.html)  #CSO Online
-
-### 📰 10. Hackers Favor US Eastern Business Hours in M365 Phishing Campaign
-
-KnowBe4 researchers observed a new phishing campaign leveraging Microsoft 365’s Direct Send to send malicious emails
-
-> **来源**: [Hackers Favor US Eastern Business Hours in M365 Phishing Campaign](https://www.infosecurity-magazine.com/news/hackers-us-business-hours-m365/)  #Infosecurity Magazine
+> **来源**: [Police Chiefs Cite TfL Hack in Push for Cybercrime Risk Orders](https://www.infosecurity-magazine.com/news/police-chiefs-tfl-cybercrime-risk/)  #Infosecurity Magazine
 
 ---
 
