@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-09-18
+# 🤖🔒 AI+安全日报 | 2026-09-19
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Smashing Security podcast #485: These researchers got drunk to hack an LG TV
+### 📰 1. CISA is ending its monthly vulnerability bulletin
 
-Researchers wanted to test if LG's smart TVs come with any security risks - but their lawyers noticed a snag: the terms and conditions would forbid it. So they came up with a solution. They got plastered before setting up the TV, on the reasoning that you can't be legally bound to a contract you agr
+The rise in AI-generated security threats may just have generated one casualty: the death of the weekly bulletin of security threats from the US Cybersecurity Infrastructure and Security Agency (CISA). The agency will discontinue its weekly bulletin of known vulnerabilities from September 28. It sai
 
-> **来源**: [Smashing Security podcast #485: These researchers got drunk to hack an LG TV](https://grahamcluley.com/smashing-security-podcast-485/)  #Graham Cluley
+> **来源**: [CISA is ending its monthly vulnerability bulletin](https://www.csoonline.com/article/4223933/cisa-is-ending-its-monthly-vulnerability-bulletin.html)  #CSO Online
 
-### 📰 2. AI agent authorization risks remain a gap in new NIST-CISA token security guidance
+### 📰 2. Cisco patches max-severity ISE flaw, the second critical zero-day this week
 
-AI agents’ actions are out of scope for new guidance from US authorities on securing identity and access tokens, but there is still plenty enterprises can do to protect their systems from rogue humans and AI agents alike. “Protecting Tokens and Assertions from Forgery, Theft, and Misuse,” a new repo
+Cisco released patches for an actively exploited authentication bypass vulnerability in its Cisco Identity Services Engine (ISE) platform, which is used for enterprise network access control and policy enforcement. This is the second zero-day flaw Cisco has been forced to release emergency patches f
 
-> **来源**: [AI agent authorization risks remain a gap in new NIST-CISA token security guidance](https://www.csoonline.com/article/4222867/ai-agent-authorization-risks-remain-a-gap-in-new-nist-cisa-token-security-guidance.html)  #CSO Online
+> **来源**: [Cisco patches max-severity ISE flaw, the second critical zero-day this week](https://www.csoonline.com/article/4223535/cisco-patches-max-severity-ise-flaw-the-second-critical-zero-day-this-week.html)  #CSO Online
 
-### 📰 3. AI made software development unrecognizable. Is cybersecurity next?
+### 📰 3. A zero-click RCE flaw in AI coding agents could have exposed enterprise systems
 
-The rapid emergence of AI has radically changed a host of professions, with software engineering and development perhaps the most transformed of all pursuits. The usual “solitary ritual” of a developer writing code for hours is giving way to collaboration with an army of chatbots. In its 2025 report
+Popular AI coding agents such as OpenAI’s Codex, Anthropic’s Claude Code, Google’s Gemini CLI, and Microsoft-owned GitHub Copilot were vulnerable to a zero-click attack that enabled attackers to execute malicious code, even without developer interaction, by swapping a trusted plugin from an online m
 
-> **来源**: [AI made software development unrecognizable. Is cybersecurity next?](https://www.csoonline.com/article/4221311/ai-made-software-development-unrecognizable-is-cybersecurity-next.html)  #CSO Online
+> **来源**: [A zero-click RCE flaw in AI coding agents could have exposed enterprise systems](https://www.csoonline.com/article/4223909/a-zero-click-rce-flaw-in-ai-coding-agents-could-have-exposed-enterprise-systems-2.html)  #CSO Online
 
-### 📰 4. AI is exposing a security structure built for yesterday’s threats
+### 📰 4. GhostCode attackers abuse device codes to take over Microsoft 365 accounts
 
-Organizations are investing more in security than ever before, yet many still struggle with a fundamental problem: they are preparing for tomorrow’s crisis with yesterday’s mindset. For decades, companies organized security around neat categories. Cybersecurity protected networks. Physical security 
+Microsoft 365 users are being tricked into handing over access to their accounts by a new phishing kit, GhostCode, that exploits a weakness in a legitimate device authorization flow. Researchers in eSentire’s threat response unit identified the campaign in late August 2026. The kit abuses Microsoft’
 
-> **来源**: [AI is exposing a security structure built for yesterday’s threats](https://www.csoonline.com/article/4221801/ai-is-exposing-a-security-structure-built-for-yesterdays-threats.html)  #CSO Online
+> **来源**: [GhostCode attackers abuse device codes to take over Microsoft 365 accounts](https://www.csoonline.com/article/4223898/ghostcode-attackers-abuse-device-codes-to-take-over-microsoft-365-accounts-2.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-89023 [HIGH 8.6]
+### 📰 5. The AI hacking apocalypse is not inevitable
 
-ThemeAtelier Domain For Sale plugin for WordPress before 3.5.2 contains a missing authorization vulnerability in its REST API endpoints that allows unauthenticated attackers to access and manipulate protected resources. Attackers can retrieve stored offer records, delete arbitrary offers by numeric 
+While large language models present real risks to society, experts say they can be tested and largely controlled using well-worn cybersecurity and policy choices. The post The AI hacking apocalypse is not inevitable appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-89023 [HIGH 8.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-89023)  CVSS 8.6 HIGH · #NVD · #漏洞
+> **来源**: [The AI hacking apocalypse is not inevitable](https://cyberscoop.com/ai-agent-hacking-apocalypse-cybersecurity/)  #CyberScoop
 
-### ⚠️ 6. CVE-2026-82035 [HIGH 7.1]
+### 📰 6. An Undercover Google Analyst Infiltrated a Notorious Supply-Chain Hacking Gang
 
-PyMuPDF through 1.28.2, fixed in commit b2c8f3a, contains a path traversal vulnerability in the font branch of extract_objects() in src/__main__.py, where the output filename is constructed by joining a document-controlled BaseFont name directly onto the user-supplied output directory without stripp
+TeamPCP pulled off the worst-ever software supply-chain hacking spree and breached thousands of companies. Now Google’s threat intelligence group says it had a mole inside the hackers’ inner circle.
 
-> **来源**: [CVE-2026-82035 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-82035)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [An Undercover Google Analyst Infiltrated a Notorious Supply-Chain Hacking Gang](https://www.wired.com/story/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/)  #Wired Security
 
-### 📰 7. Authorities seize popular, long-running DDoS-for-hire service domains
+### 📰 7. International security agencies warn about North Korean hackers exploiting job seekers to steal crypto, data
 
-Cybercriminals used NightmareStresser to launch hundreds of thousands of DDoS attacks since at least 2022. Threat actors behind the operation claimed links to Russia. The post Authorities seize popular, long-running DDoS-for-hire service domains appeared first on CyberScoop.
+The U.S., Japan, Germany and Australia said WaterPlum operators pose as prospective employers and have infected more than 30,000 devices worldwide. The post International security agencies warn about North Korean hackers exploiting job seekers to steal crypto, data appeared first on CyberScoop.
 
-> **来源**: [Authorities seize popular, long-running DDoS-for-hire service domains](https://cyberscoop.com/fbi-seizes-nightmarestresser-ddos-for-hire-domains/)  #CyberScoop
+> **来源**: [International security agencies warn about North Korean hackers exploiting job seekers to steal crypto, data](https://cyberscoop.com/north-korea-waterplum-job-seeker-crypto-attacks/)  #CyberScoop
 
-### 📰 8. AI Agent Carries Out Multi-Stage Data Theft Attack
+### 📰 8. New Settra Ransomware Variant Deployed in Attacks on Retail and Manufacturing
 
-Spanish data protection agency AEPD reveals the country’s first AI-powered data breach
+Huntress researchers highlighted a new ransomware variant, named Settra, and the post-compromise techniques used in two recent attacks
 
-> **来源**: [AI Agent Carries Out Multi-Stage Data Theft Attack](https://www.infosecurity-magazine.com/news/ai-agent-carries-out-multistage/)  #Infosecurity Magazine
+> **来源**: [New Settra Ransomware Variant Deployed in Attacks on Retail and Manufacturing](https://www.infosecurity-magazine.com/news/settra-ransomware-retail/)  #Infosecurity Magazine
 
-### 📰 9. Exaforce extends its AI security tool to monitor more than just Claude
+### 📰 9. Manufacturing Accounts for 22% of all Ransomware Victims
 
-Exaforce is offering to help enterprise security teams discover and monitor AI agents using security telemetry they already collect, rather than requiring yet another endpoint sensor. By combining usage data from agentic AI platforms with endpoint, cloud, SaaS and code data, Exaforce AI Security can
+Black Kite has found that manufacturing remained the most targeted sector for ransomware attacks, and saw a big jump in incidents in H1 2026
 
-> **来源**: [Exaforce extends its AI security tool to monitor more than just Claude](https://www.csoonline.com/article/4222191/exaforce-extends-its-ai-security-tool-to-monitor-more-than-just-claude.html)  #CSO Online
+> **来源**: [Manufacturing Accounts for 22% of all Ransomware Victims](https://www.infosecurity-magazine.com/news/manufacturing-22-ransomware-victims/)  #Infosecurity Magazine
 
-### 📰 10. New Chinese-Made ‘RatHat’ Android Malware Leverages AI to Steal Financial Data
+### 📰 10. Researchers use AI to find widespread software decoder flaw
 
-Researchers at Zimperium have uncovered a new Android malware strain, dubbed RatHat, with spyware and backdoor capabilities
+The bug, since patched, gave attackers remote code execution privileges and access to user accounts and production environments, including Meta’s core product suite and an OpenAI software repository. The post Researchers use AI to find widespread software decoder flaw appeared first on CyberScoop.
 
-> **来源**: [New Chinese-Made ‘RatHat’ Android Malware Leverages AI to Steal Financial Data](https://www.infosecurity-magazine.com/news/rathat-android-malware-ai-steal/)  #Infosecurity Magazine
+> **来源**: [Researchers use AI to find widespread software decoder flaw](https://cyberscoop.com/hacktron-ai-heif-heist-vulnerability/)  #CyberScoop
 
 ---
 
