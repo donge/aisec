@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-09-19
+# 🤖🔒 AI+安全日报 | 2026-09-20
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. CISA is ending its monthly vulnerability bulletin
+### ⚠️ 1. CVE-2026-92716 [CRITICAL 9.6]
 
-The rise in AI-generated security threats may just have generated one casualty: the death of the weekly bulletin of security threats from the US Cybersecurity Infrastructure and Security Agency (CISA). The agency will discontinue its weekly bulletin of known vulnerabilities from September 28. It sai
+Shuffle through 2.2.1 contains a cross-tenant privilege escalation vulnerability in the HandleApiGeneration endpoint that allows administrators to reset and read API keys of non-administrator users in other organizations. Attackers with admin privileges in one organization can supply arbitrary user 
 
-> **来源**: [CISA is ending its monthly vulnerability bulletin](https://www.csoonline.com/article/4223933/cisa-is-ending-its-monthly-vulnerability-bulletin.html)  #CSO Online
+> **来源**: [CVE-2026-92716 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-92716)  CVSS 9.6 CRITICAL · #NVD · #漏洞
 
-### 📰 2. Cisco patches max-severity ISE flaw, the second critical zero-day this week
+### ⚠️ 2. CVE-2026-92604 [HIGH 8.1]
 
-Cisco released patches for an actively exploited authentication bypass vulnerability in its Cisco Identity Services Engine (ISE) platform, which is used for enterprise network access control and policy enforcement. This is the second zero-day flaw Cisco has been forced to release emergency patches f
+Scirius through 3.8.0 contains an arbitrary file write vulnerability in the PCAP filestore upload endpoint that allows default User role users to write attacker-controlled JSON content to filesystem paths. Attackers can supply path traversal sequences in the uploaded document's _id field to escape t
 
-> **来源**: [Cisco patches max-severity ISE flaw, the second critical zero-day this week](https://www.csoonline.com/article/4223535/cisco-patches-max-severity-ise-flaw-the-second-critical-zero-day-this-week.html)  #CSO Online
+> **来源**: [CVE-2026-92604 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-92604)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 3. A zero-click RCE flaw in AI coding agents could have exposed enterprise systems
+### ⚠️ 3. CVE-2026-47094 [HIGH 8.8]
 
-Popular AI coding agents such as OpenAI’s Codex, Anthropic’s Claude Code, Google’s Gemini CLI, and Microsoft-owned GitHub Copilot were vulnerable to a zero-click attack that enabled attackers to execute malicious code, even without developer interaction, by swapping a trusted plugin from an online m
+SIMAC MyPHR 1.1 contains an insecure direct object reference (IDOR) vulnerability that allows authenticated attackers to access and modify arbitrary employee records due to missing server-side ownership validation. Attackers can send a PUT request to the employee update endpoint with an arbitrary em
 
-> **来源**: [A zero-click RCE flaw in AI coding agents could have exposed enterprise systems](https://www.csoonline.com/article/4223909/a-zero-click-rce-flaw-in-ai-coding-agents-could-have-exposed-enterprise-systems-2.html)  #CSO Online
+> **来源**: [CVE-2026-47094 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-47094)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 4. GhostCode attackers abuse device codes to take over Microsoft 365 accounts
+### 📰 4. Forget the AI Slowdown—the Vulnerability Explosion Is Already Happening
 
-Microsoft 365 users are being tricked into handing over access to their accounts by a new phishing kit, GhostCode, that exploits a weakness in a legitimate device authorization flow. Researchers in eSentire’s threat response unit identified the campaign in late August 2026. The kit abuses Microsoft’
+AI labs are toying with an industry-wide pact to slow development. Meanwhile, widely available AI chatbots are already helping uncover a tidal wave of security flaws.
 
-> **来源**: [GhostCode attackers abuse device codes to take over Microsoft 365 accounts](https://www.csoonline.com/article/4223898/ghostcode-attackers-abuse-device-codes-to-take-over-microsoft-365-accounts-2.html)  #CSO Online
+> **来源**: [Forget the AI Slowdown—the Vulnerability Explosion Is Already Happening](https://www.wired.com/story/kernel-panic-ai-vulnerability-explosion/)  #Wired Security
 
-### 📰 5. The AI hacking apocalypse is not inevitable
+### 📰 5. Strong fundamentals make next-gen security possible
 
-While large language models present real risks to society, experts say they can be tested and largely controlled using well-worn cybersecurity and policy choices. The post The AI hacking apocalypse is not inevitable appeared first on CyberScoop.
+Risk management has always been a difficult job, but the current threat landscape has taken the challenge to a new level. I’ve spent years leading cybersecurity efforts at large enterprises, including Hyatt and United Airlines, and in that time I’ve seen cybercriminals grow increasingly creative, le
 
-> **来源**: [The AI hacking apocalypse is not inevitable](https://cyberscoop.com/ai-agent-hacking-apocalypse-cybersecurity/)  #CyberScoop
+> **来源**: [Strong fundamentals make next-gen security possible](https://www.csoonline.com/article/4223032/strong-fundamentals-make-next-gen-security-possible.html)  #CSO Online
 
-### 📰 6. An Undercover Google Analyst Infiltrated a Notorious Supply-Chain Hacking Gang
+### ⚠️ 6. CVE-2026-92720 [CRITICAL 9.1]
 
-TeamPCP pulled off the worst-ever software supply-chain hacking spree and breached thousands of companies. Now Google’s threat intelligence group says it had a mole inside the hackers’ inner circle.
+Kubero through 3.1.1 fails to apply authentication guards to the notifications API endpoints, allowing unauthenticated attackers to read webhook secrets and service URLs. Attackers can retrieve stored credentials and register malicious webhooks to intercept pipeline events or suppress alerting by de
 
-> **来源**: [An Undercover Google Analyst Infiltrated a Notorious Supply-Chain Hacking Gang](https://www.wired.com/story/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/)  #Wired Security
+> **来源**: [CVE-2026-92720 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-92720)  CVSS 9.1 CRITICAL · #NVD · #漏洞
 
-### 📰 7. International security agencies warn about North Korean hackers exploiting job seekers to steal crypto, data
+### 📰 7. America’s cyber strategy overlooks the infrastructure that actually keeps the military moving
 
-The U.S., Japan, Germany and Australia said WaterPlum operators pose as prospective employers and have infected more than 30,000 devices worldwide. The post International security agencies warn about North Korean hackers exploiting job seekers to steal crypto, data appeared first on CyberScoop.
+Ports, railroads, and utilities keep the military operational. They're all vulnerable to Iranian cyberattacks. The post America’s cyber strategy overlooks the infrastructure that actually keeps the military moving appeared first on CyberScoop.
 
-> **来源**: [International security agencies warn about North Korean hackers exploiting job seekers to steal crypto, data](https://cyberscoop.com/north-korea-waterplum-job-seeker-crypto-attacks/)  #CyberScoop
+> **来源**: [America’s cyber strategy overlooks the infrastructure that actually keeps the military moving](https://cyberscoop.com/us-cyber-strategy-iranian-threats-infrastructure-op-ed/)  #CyberScoop
 
-### 📰 8. New Settra Ransomware Variant Deployed in Attacks on Retail and Manufacturing
+### 📰 8. CISA Upgrades Vulnerability Reporting Platform with More Automation
 
-Huntress researchers highlighted a new ransomware variant, named Settra, and the post-compromise techniques used in two recent attacks
+The US cybersecurity agency is moving to a new vulnerability coordination platform called VINCE-NT
 
-> **来源**: [New Settra Ransomware Variant Deployed in Attacks on Retail and Manufacturing](https://www.infosecurity-magazine.com/news/settra-ransomware-retail/)  #Infosecurity Magazine
+> **来源**: [CISA Upgrades Vulnerability Reporting Platform with More Automation](https://www.infosecurity-magazine.com/news/cisa-upgrades-vulnerability/)  #Infosecurity Magazine
 
-### 📰 9. Manufacturing Accounts for 22% of all Ransomware Victims
+### 📰 9. Cisco alerts customers to second actively exploited zero-day in as many days
 
-Black Kite has found that manufacturing remained the most targeted sector for ransomware attacks, and saw a big jump in incidents in H1 2026
+The latest zero-day has a maximum-severity rating and affects Cisco Identity Services Engine, a product hit with three actively exploited vulnerabilities since June 2025. The post Cisco alerts customers to second actively exploited zero-day in as many days appeared first on CyberScoop.
 
-> **来源**: [Manufacturing Accounts for 22% of all Ransomware Victims](https://www.infosecurity-magazine.com/news/manufacturing-22-ransomware-victims/)  #Infosecurity Magazine
+> **来源**: [Cisco alerts customers to second actively exploited zero-day in as many days](https://cyberscoop.com/cisco-ise-zero-day-cve-2026-76460/)  #CyberScoop
 
-### 📰 10. Researchers use AI to find widespread software decoder flaw
+### 📰 10. FamousSparrow Swaps SparrowDoor For New SparroWocky Backdoor
 
-The bug, since patched, gave attackers remote code execution privileges and access to user accounts and production environments, including Meta’s core product suite and an OpenAI software repository. The post Researchers use AI to find widespread software decoder flaw appeared first on CyberScoop.
+ESET said FamousSparrow has replaced SparrowDoor with SparroWocky
 
-> **来源**: [Researchers use AI to find widespread software decoder flaw](https://cyberscoop.com/hacktron-ai-heif-heist-vulnerability/)  #CyberScoop
+> **来源**: [FamousSparrow Swaps SparrowDoor For New SparroWocky Backdoor](https://www.infosecurity-magazine.com/news/famoussparrow-sparrowocky-latin/)  #Infosecurity Magazine
 
 ---
 
