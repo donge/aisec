@@ -1,68 +1,62 @@
-# 🤖🔒 AI+安全日报 | 2026-09-20
+# 🤖🔒 AI+安全日报 | 2026-09-21
 
-> 今日共收录 **10** 条，AI+安全领域重要动态速览
+> 今日共收录 **9** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-92716 [CRITICAL 9.6]
+### ⚠️ 1. CVE-2026-54253 [HIGH 8.2]
 
-Shuffle through 2.2.1 contains a cross-tenant privilege escalation vulnerability in the HandleApiGeneration endpoint that allows administrators to reset and read API keys of non-administrator users in other organizations. Attackers with admin privileges in one organization can supply arbitrary user 
+TS3 Manager is modern web interface for maintaining Teamspeak3 servers. Prior to 2.2.6, the /api/download handler in packages/server/routes/api.js passes the attacker-controlled port query parameter to socket.connect(port, host) and returns the resulting error.message through res.status(400).send(er
 
-> **来源**: [CVE-2026-92716 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-92716)  CVSS 9.6 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-54253 [HIGH 8.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-54253)  CVSS 8.2 HIGH · #NVD · #漏洞
 
-### ⚠️ 2. CVE-2026-92604 [HIGH 8.1]
+### ⚠️ 2. CVE-2026-92926 [HIGH 7.3]
 
-Scirius through 3.8.0 contains an arbitrary file write vulnerability in the PCAP filestore upload endpoint that allows default User role users to write attacker-controlled JSON content to filesystem paths. Attackers can supply path traversal sequences in the uploaded document's _id field to escape t
+A vulnerability has been found in code-projects Matrimonial System 1.0. This vulnerability affects the function writepartnerprefs of the file /partner_preference.php. Such manipulation of the argument education leads to sql injection. The attack can be executed remotely. The exploit has been disclos
 
-> **来源**: [CVE-2026-92604 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-92604)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-92926 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-92926)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### ⚠️ 3. CVE-2026-47094 [HIGH 8.8]
+### 📰 3. US Coast Guard and FBI board oil tanker to investigate cyber attack
 
-SIMAC MyPHR 1.1 contains an insecure direct object reference (IDOR) vulnerability that allows authenticated attackers to access and modify arbitrary employee records due to missing server-side ownership validation. Attackers can send a PUT request to the employee update endpoint with an arbitrary em
+An oil tanker bound for Texas was boarded mid-voyage by the US Coast Guard and FBI last month, after its network may have been compromised by malicious hackers. According to the US Coast Guard, the supertanker was boarded after indications that the network "may have been compromised by a foreign act
 
-> **来源**: [CVE-2026-47094 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-47094)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [US Coast Guard and FBI board oil tanker to investigate cyber attack](https://www.bitdefender.com/en-us/blog/hotforsecurity/us-coast-guard-fbi-board-oil-tanker-investigate-cyber-attack)  #Graham Cluley
 
-### 📰 4. Forget the AI Slowdown—the Vulnerability Explosion Is Already Happening
+### 📰 4. Cyber Essentials Has Record Year but Takeup Remains Low
 
-AI labs are toying with an industry-wide pact to slow development. Meanwhile, widely available AI chatbots are already helping uncover a tidal wave of security flaws.
+New government figures reveal a 20% annual increase in certifications
 
-> **来源**: [Forget the AI Slowdown—the Vulnerability Explosion Is Already Happening](https://www.wired.com/story/kernel-panic-ai-vulnerability-explosion/)  #Wired Security
+> **来源**: [Cyber Essentials Has Record Year but Takeup Remains Low](https://www.infosecurity-magazine.com/news/cyber-essentials-has-record-year/)  #Infosecurity Magazine
 
-### 📰 5. Strong fundamentals make next-gen security possible
+### 📰 5. CISA promotes a fresh way to deter cyberattackers: Lie to them
 
-Risk management has always been a difficult job, but the current threat landscape has taken the challenge to a new level. I’ve spent years leading cybersecurity efforts at large enterprises, including Hyatt and United Airlines, and in that time I’ve seen cybercriminals grow increasingly creative, le
+It’s the first guidance from the Cybersecurity and Infrastructure Security Agency on deploying decoys, like honeypots, to detect and distract adversaries. The post CISA promotes a fresh way to deter cyberattackers: Lie to them appeared first on CyberScoop.
 
-> **来源**: [Strong fundamentals make next-gen security possible](https://www.csoonline.com/article/4223032/strong-fundamentals-make-next-gen-security-possible.html)  #CSO Online
+> **来源**: [CISA promotes a fresh way to deter cyberattackers: Lie to them](https://cyberscoop.com/cisa-guidance-cyber-decoys-critical-infrastructure/)  #CyberScoop
 
-### ⚠️ 6. CVE-2026-92720 [CRITICAL 9.1]
+### 📰 6. Coast Guard, FBI board US-bound foreign ships in order to probe for cyberattacks
 
-Kubero through 3.1.1 fails to apply authentication guards to the notifications API endpoints, allowing unauthenticated attackers to read webhook secrets and service URLs. Attackers can retrieve stored credentials and register malicious webhooks to intercept pipeline events or suppress alerting by de
+The agencies issued a joint statement saying the “joint security boardings” came in response to “indications that the networks of both vessels were compromised.” The post Coast Guard, FBI board US-bound foreign ships in order to probe for cyberattacks appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-92720 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-92720)  CVSS 9.1 CRITICAL · #NVD · #漏洞
+> **来源**: [Coast Guard, FBI board US-bound foreign ships in order to probe for cyberattacks](https://cyberscoop.com/coast-guard-fbi-investigate-tanker-cyberattacks/)  #CyberScoop
 
-### 📰 7. America’s cyber strategy overlooks the infrastructure that actually keeps the military moving
+### 📰 7. AI the Top Priority for New Spend as Cyber Budgets Flatline
 
-Ports, railroads, and utilities keep the military operational. They're all vulnerable to Iranian cyberattacks. The post America’s cyber strategy overlooks the infrastructure that actually keeps the military moving appeared first on CyberScoop.
+IANS finds AI is dominating net-new budgets even as overall funding for the function is flat
 
-> **来源**: [America’s cyber strategy overlooks the infrastructure that actually keeps the military moving](https://cyberscoop.com/us-cyber-strategy-iranian-threats-infrastructure-op-ed/)  #CyberScoop
+> **来源**: [AI the Top Priority for New Spend as Cyber Budgets Flatline](https://www.infosecurity-magazine.com/news/ai-top-priority-new-spend-cyber/)  #Infosecurity Magazine
 
-### 📰 8. CISA Upgrades Vulnerability Reporting Platform with More Automation
+### 📰 8. The Gentlemen Overtakes Qilin as Most Prolific Ransomware Threat
 
-The US cybersecurity agency is moving to a new vulnerability coordination platform called VINCE-NT
+Analysis of ransomware incidents by ReliaQuest indicates a shift in the ransomware landscape
 
-> **来源**: [CISA Upgrades Vulnerability Reporting Platform with More Automation](https://www.infosecurity-magazine.com/news/cisa-upgrades-vulnerability/)  #Infosecurity Magazine
+> **来源**: [The Gentlemen Overtakes Qilin as Most Prolific Ransomware Threat](https://www.infosecurity-magazine.com/news/the-gentlemen-most-prolific/)  #Infosecurity Magazine
 
-### 📰 9. Cisco alerts customers to second actively exploited zero-day in as many days
+### 📰 9. Phishing Campaign Hides Lua Loader as TrueType Font File
 
-The latest zero-day has a maximum-severity rating and affects Cisco Identity Services Engine, a product hit with three actively exploited vulnerabilities since June 2025. The post Cisco alerts customers to second actively exploited zero-day in as many days appeared first on CyberScoop.
+Global phishing campaign disguised a Lua loader as a font file to deploy RATs and infostealers
 
-> **来源**: [Cisco alerts customers to second actively exploited zero-day in as many days](https://cyberscoop.com/cisco-ise-zero-day-cve-2026-76460/)  #CyberScoop
-
-### 📰 10. FamousSparrow Swaps SparrowDoor For New SparroWocky Backdoor
-
-ESET said FamousSparrow has replaced SparrowDoor with SparroWocky
-
-> **来源**: [FamousSparrow Swaps SparrowDoor For New SparroWocky Backdoor](https://www.infosecurity-magazine.com/news/famoussparrow-sparrowocky-latin/)  #Infosecurity Magazine
+> **来源**: [Phishing Campaign Hides Lua Loader as TrueType Font File](https://www.infosecurity-magazine.com/news/phishing-lua-loader-truetype-font/)  #Infosecurity Magazine
 
 ---
 
