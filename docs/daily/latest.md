@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-09-22
+# 🤖🔒 AI+安全日报 | 2026-09-23
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. After spending billions, OpenAI still has gaps in its cybersecurity
+### 📰 1. Beware these fake websites selling subscriptions to AI assistants
 
-Two separate reports of security flaws in OpenAI systems highlight how even a company spending billions on developing its own AI-powered cybersecurity testing tools remains vulnerable. In one incident, researchers breached OpenAI systems with the help of a rival AI developer’s tools, while another g
+Websites offering fake subscriptions to AI transcription tools, image generators, and other digital assistants could be putting enterprise data at risk, according to researchers at Malwarebytes. The sites impersonate AI products with solid reputations, including GPT-6 Astra, DaVinci Resolve, PixAI a
 
-> **来源**: [After spending billions, OpenAI still has gaps in its cybersecurity](https://www.csoonline.com/article/4224453/after-spending-billions-openai-still-has-gaps-in-its-cybersecurity.html)  #CSO Online
+> **来源**: [Beware these fake websites selling subscriptions to AI assistants](https://www.csoonline.com/article/4224923/beware-these-fake-websites-selling-subscriptions-to-ai-assistants-2.html)  #CSO Online
 
-### 📰 2. New npm malware finds a way around install script defenses
+### ⚠️ 2. CVE-2026-93993 [HIGH 8.8]
 
-Blocking suspicious install scripts may no longer be enough to mitigate threats from malicious JavaScript dependencies used in software supply-chain attacks. Security researchers at Checkmarx are warning of attackers using a malicious package called “indexed-btree” to impersonate the legitimate sort
+Mistral Vibe before 2.25.5 contains a remote code execution vulnerability in the worktree creation process that executes git hooks before trust validation. Attackers can supply a repository with a crafted post-checkout hook that executes arbitrary shell commands with the privileges of the user runni
 
-> **来源**: [New npm malware finds a way around install script defenses](https://www.csoonline.com/article/4224400/new-npm-malware-finds-a-way-around-install-script-defenses-2.html)  #CSO Online
+> **来源**: [CVE-2026-93993 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-93993)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### ⚠️ 3. CVE-2017-20284 [HIGH 7.5]
+### ⚠️ 3. CVE-2026-93992 [HIGH 8.1]
 
-Caucho Resin contains a path traversal vulnerability in the documentation webapp (resin-doc) that allows remote unauthenticated attackers to read arbitrary files by supplying a relative path through the inputFile request parameter of the jndi-appconfig tutorial servlet. Attackers can craft requests 
+Gopeed through 2.0.0-beta.3 contains a path traversal vulnerability in archive extraction that allows attackers to write arbitrary files outside the extraction directory. Attackers can craft malicious archives with entries containing directory traversal sequences that bypass validation, enabling fil
 
-> **来源**: [CVE-2017-20284 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2017-20284)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-93992 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-93992)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 4. Orchid Security Introduces AI Agent Readiness Controls Featuring Continuous Identity Monitoring and Kill-Switch Capabilities
+### ⚠️ 4. CVE-2026-93991 [HIGH 7.7]
 
-Readiness tagging for AI, always-on observability, and coordinated kill switches at the application layer give enterprises a defensible route to scaling agents while keeping authority in human hands. New York, London – September 15, 2026 – Orchid Security, which unlocks safe AI adoption by solving i
+Argo Workflows versions 4.1.0 through 4.1.3 contain an authorization bypass vulnerability in ListArchivedWorkflows that fails to apply cluster-scoped access review when the metadata.namespace field selector uses the NotEquals operator. Attackers with namespace-scoped list permissions can use a negat
 
-> **来源**: [Orchid Security Introduces AI Agent Readiness Controls Featuring Continuous Identity Monitoring and Kill-Switch Capabilities](https://www.csoonline.com/article/4224374/orchid-security-introduces-ai-agent-readiness-controls-featuring-continuous-identity-monitoring-and-kill-switch-capabilities.html)  #CSO Online
+> **来源**: [CVE-2026-93991 [HIGH 7.7]](https://nvd.nist.gov/vuln/detail/CVE-2026-93991)  CVSS 7.7 HIGH · #NVD · #漏洞
 
-### 📰 5. US and China Discuss Alerting Each Other to AI National Security Threats
+### 📰 5. The cyber AI parity window now has a deadline
 
-Officials discussed setting up a mechanism for the two countries to notify each other of AI incidents which could threaten national security.
+In April, I wrote about what I called the Cyber AI Parity Window. This is the rare period in which defenders and adversaries gained access to the same transformative technology at roughly the same moment. For most of cybersecurity history, advanced offensive capability reached attackers years before
 
-> **来源**: [US and China Discuss Alerting Each Other to AI National Security Threats](https://www.wired.com/story/us-and-china-discuss-alerting-each-other-to-ai-national-security-threats/)  #Wired Security
+> **来源**: [The cyber AI parity window now has a deadline](https://www.csoonline.com/article/4224418/the-cyber-ai-parity-window-now-has-a-deadline.html)  #CSO Online
 
-### 📰 6. 5 ways AI is reshaping the cybersecurity job market
+### 📰 6. CISOs can no longer ignore the nation-state threat
 
-Mario Platt spent part of last year eliminating a team. As CISO for online password management service LastPass, he shut down the company’s dedicated vulnerability management function in late 2025, folding its responsibilities directly into IT and product security. AI and business intelligence tools
+Flare-ups between US intelligence agencies and private-sector defenders have long been a characteristic of the cybersecurity landscape, with the balance swinging between deep collaboration and friction. The goal of CISOs has typically been to get adversaries out of networks as quickly as possible to
 
-> **来源**: [5 ways AI is reshaping the cybersecurity job market](https://www.csoonline.com/article/4224019/5-ways-ai-is-reshaping-the-cybersecurity-job-market.html)  #CSO Online
+> **来源**: [CISOs can no longer ignore the nation-state threat](https://www.csoonline.com/article/4224629/ai-reshapes-the-nation-state-threat-landscape-for-cisos.html)  #CSO Online
 
-### 📰 7. Attackers Abuse npm Trusted Publishing in GHAPPIER Campaign
+### 📰 7. Gemini broke into 3 companies, but Google kept it quiet because ‘no damage was done’
 
-CloudSEK linked GHAPPIER to a compromised npm package with valid trusted-publishing provenance
+A Google Gemini AI agent broke into three companies in May, guessing the credentials for one and discovering the credentials for the second two in a public repository, Google confirmed on Monday. But the more interesting background to the story, which was broken by The Wall Street Journal on Friday,
 
-> **来源**: [Attackers Abuse npm Trusted Publishing in GHAPPIER Campaign](https://www.infosecurity-magazine.com/news/attackers-abuse-npm-trusted/)  #Infosecurity Magazine
+> **来源**: [Gemini broke into 3 companies, but Google kept it quiet because ‘no damage was done’](https://www.csoonline.com/article/4224570/gemini-broke-into-3-companies-but-google-kept-it-quiet-because-no-damage-was-done.html)  #CSO Online
 
-### 📰 8. ShinyHunters Claim Hack of Rival Ransomware Gang Clop
+### ⚠️ 8. CVE-2026-93959 [HIGH 7.3]
 
-ShinyHunters has claimed responsibility for hacking the Clop ransomware group, defacing its leak site and alleging theft of key operational data
+A vulnerability was determined in SourceCodester Online Reviewer Management System 1.0. This issue affects some unknown processing of the file /reviewer_0/admins/assessments/course/btn_functions.php. This manipulation of the argument Course causes sql injection. The attack is possible to be carried 
 
-> **来源**: [ShinyHunters Claim Hack of Rival Ransomware Gang Clop](https://www.infosecurity-magazine.com/news/shinyhunters-claim-hack-of-clop/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-93959 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-93959)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 9. Revolut Customers Targeted with New Wave of Phishing Attacks
+### 📰 9. Microsoft and partners disrupt EvilTokens, a comprehensive cybercrime service for financial fraud
 
-Following a major data breach, Revolut customers are being sent convincing phishing messages
+The popular phishing-as-a-service platform used AI throughout the attack chain, allowing cybercriminals to steal tokens for account takeover and business email compromise. The post Microsoft and partners disrupt EvilTokens, a comprehensive cybercrime service for financial fraud appeared first on Cyb
 
-> **来源**: [Revolut Customers Targeted with New Wave of Phishing Attacks](https://www.infosecurity-magazine.com/news/revolut-customers-targeted-wave/)  #Infosecurity Magazine
+> **来源**: [Microsoft and partners disrupt EvilTokens, a comprehensive cybercrime service for financial fraud](https://cyberscoop.com/microsoft-eviltokens-cybercrime-service-takedown/)  #CyberScoop
 
-### 📰 10. Phishing Campaign Abuses eCards to Deploy RMM Tools
+### 📰 10. Network Segmentation Failures Are Expanding the Corporate Attack Surface
 
-Six-month phishing campaign used seasonal eCard lures to plant legitimate RMM tools on victims
+Forescout warns that incomplete network segmentation is widening the potential blast radius of attacks
 
-> **来源**: [Phishing Campaign Abuses eCards to Deploy RMM Tools](https://www.infosecurity-magazine.com/news/seasonalinvite-phishing-ecards-rmm/)  #Infosecurity Magazine
+> **来源**: [Network Segmentation Failures Are Expanding the Corporate Attack Surface](https://www.infosecurity-magazine.com/news/segmentation-failures-expanding/)  #Infosecurity Magazine
 
 ---
 
