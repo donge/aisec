@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-09-24
+# 🤖🔒 AI+安全日报 | 2026-09-25
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. AI malware just removed the human from the attack loop
+### 📰 1. Check Point hacked: The security software protecting your network has become a prime attack target
 
-Attackers using AI have greatly benefited when it comes to speed and scale, and now, says Cisco Talos, the technology has evolved to execute large portions of the attack chain entirely without human involvement. Researchers at the threat intelligence group have identified what they call the first “L
+A firewall is supposed to be the barrier between attackers and the enterprise network, but that barrier can itself become a threat actors’ tool. Check Point has revealed that attackers are actively exploiting two vulnerabilities in its Security Gateway and Security Management products. The security 
 
-> **来源**: [AI malware just removed the human from the attack loop](https://www.csoonline.com/article/4225264/ai-malware-just-removed-the-human-from-the-attack-loop.html)  #CSO Online
+> **来源**: [Check Point hacked: The security software protecting your network has become a prime attack target](https://www.csoonline.com/article/4225812/check-point-hacked-the-security-software-protecting-your-network-has-become-a-prime-attack-target.html)  #CSO Online
 
-### 📰 2. Meta’s Muse AI Assistant Rolled Out With a Serious Security Flaw
+### 📰 2. On-prem VeloCloud Orchestrator under attack, only some versions patched
 
-Meta says it issued a fix for the Muse zero-day vulnerability that would have let attackers do “whatever” they wanted on a victim’s Mac, highlighting the inherent dangers of AI helpers.
+A flaw in VeloCloud Orchestrator enables attackers to access the platform organizations use to manage their VeloCloud SD-WAN subscriptions and the edge devices it controls. Arista, which now owns the VeloCloud business, warned customers that a vulnerable configuration exists in on-premises VeloCloud
 
-> **来源**: [Meta’s Muse AI Assistant Rolled Out With a Serious Security Flaw](https://www.wired.com/story/metas-muse-ai-agent-zero-day/)  #Wired Security
+> **来源**: [On-prem VeloCloud Orchestrator under attack, only some versions patched](https://www.csoonline.com/article/4226148/on-prem-velocloud-orchestrator-under-attack-only-some-versions-patched-2.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-94098 [CRITICAL 9.1]
+### 📰 3. F5 fixes actively exploited zero-day flaw in BIG-IP APM
 
-A vulnerability was identified in Netcore NBR200V2 1.3.241127.071246. This vulnerability affects unknown code of the file /www/cgi-bin/upgrade of the component Firmware Upgrade CGI Endpoint. Such manipulation of the argument QUERY_STRING leads to command injection. The attack can be executed remotel
+Technology company F5 fixed a critical remote code execution vulnerability in its BIG-IP Access Policy Manager (APM) platform on Tuesday. The flaw impacts deployments configured as OAuth authorization servers and was already under active exploitation in the wild before the patch became available. BI
 
-> **来源**: [CVE-2026-94098 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-94098)  CVSS 9.1 CRITICAL · #NVD · #漏洞
+> **来源**: [F5 fixes actively exploited zero-day flaw in BIG-IP APM](https://www.csoonline.com/article/4225721/f5-fixes-actively-exploited-zero-day-flaw-in-big-ip-apm.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-94044 [HIGH 7.3]
+### ⚠️ 4. CVE-2026-49810 [HIGH 7.8]
 
-A vulnerability was identified in 03-lovepreetSingh MCP up to f95d035c5317fad81af9828286631053ccb23546. This issue affects the function create_file of the file app/api/mcp/route.ts. Such manipulation of the argument filePath/content leads to path traversal. The attack can be launched remotely. The e
+Dell Command Powershell Provider (DCPP), versions prior to 2.10.2 contain an Insertion of Sensitive Information into Log File vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information Disclosure.
 
-> **来源**: [CVE-2026-94044 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-94044)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-49810 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-49810)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### ⚠️ 5. CVE-2026-94099 [CRITICAL 9.9]
+### 📰 5. Microsoft integrates SOC capabilities with Defender for enterprises
 
-A security flaw has been discovered in Netcore NBR200V2 1.3.241127.071246. This issue affects some unknown processing of the file restore.cgi of the component Backup Restore. Performing a manipulation of the argument QUERY_STRING results in command injection. The attack is possible to be carried out
+Microsoft 365 E5 and E7 customers can now run security information and event management (SIEM) inside Microsoft Defender at no extra license cost. Microsoft is delivering the capability through the Integrated Security Operations Center (ISOC) in Microsoft Defender, which combines SIEM with Defender’
 
-> **来源**: [CVE-2026-94099 [CRITICAL 9.9]](https://nvd.nist.gov/vuln/detail/CVE-2026-94099)  CVSS 9.9 CRITICAL · #NVD · #漏洞
+> **来源**: [Microsoft integrates SOC capabilities with Defender for enterprises](https://www.csoonline.com/article/4226195/microsoft-integrates-soc-capabilities-with-defender-for-enterprises.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-94097 [CRITICAL 10]
+### ⚠️ 6. CVE-2026-94412 [HIGH 8.8]
 
-A vulnerability was determined in Netcore NBR200V2 1.3.241127.071246. This affects an unknown part of the file /www/cgi-bin/network_tools of the component CGI Diagnostic Endpoint. This manipulation of the argument param/key/val causes command injection. Remote exploitation of the attack is possible.
+jshERP through 3.6 contains an authorization bypass vulnerability in the POST /user/resetPwd endpoint that allows authenticated users to reset any other user's password. Attackers can submit a request with an arbitrary target user ID to reset that account's password to a known default value, enablin
 
-> **来源**: [CVE-2026-94097 [CRITICAL 10]](https://nvd.nist.gov/vuln/detail/CVE-2026-94097)  CVSS 10 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-94412 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-94412)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 7. Ryuk ransomware operator sentenced to 2 years in prison
+### ⚠️ 7. CVE-2026-94411 [HIGH 8.8]
 
-The Armenian national was extradited from Ukraine to the United States last year and pleaded guilty to cybercrimes in July. The post Ryuk ransomware operator sentenced to 2 years in prison appeared first on CyberScoop.
+jshERP 3.6 contains a privilege escalation vulnerability in the updateOneValueByKeyIdAndType endpoint that allows authenticated users to grant themselves arbitrary roles. Attackers can send a POST request with type=UserRole, their own user ID, and a role ID list to escalate from low-privilege tenant
 
-> **来源**: [Ryuk ransomware operator sentenced to 2 years in prison](https://cyberscoop.com/ryuk-ransomware-operator-karen-vardanyan-sentenced/)  #CyberScoop
+> **来源**: [CVE-2026-94411 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-94411)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 8. OpenAI, Ukraine partner on ‘Daybreak’ program to protect power grids and water systems
+### ⚠️ 8. CVE-2026-94403 [HIGH 8.8]
 
-A Ukrainian official said the government will use the tools to automate cybersecurity functions in critical infrastructure as the war with Russia continues. The post OpenAI, Ukraine partner on ‘Daybreak’ program to protect power grids and water systems appeared first on CyberScoop.
+A weakness has been identified in ColorFul iGameCenter 1.0.3.4. This impacts the function sub_140001AF0 in the library ene.sys of the component IOCTL Handler. This manipulation causes untrusted pointer dereference. The attack can only be executed locally. The exploit has been made available to the p
 
-> **来源**: [OpenAI, Ukraine partner on ‘Daybreak’ program to protect power grids and water systems](https://cyberscoop.com/openai-ukraine-cybersecurity-critical-infrastructure/)  #CyberScoop
+> **来源**: [CVE-2026-94403 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-94403)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 9. Windows Botnet x47.c Offers AI API Draining, 18 Attack Methods
+### 📰 9. New bill would create federal investigative body for AI-driven hacks
 
-Qrator found a Windows botnet advertised with AI API draining, credential theft and SOCKS5 proxying
+A new Democratic bill in Congress would establish a federal Cybersecurity and AI Board of Investigations to provide independent government oversight of cyberattacks carried out by AI agents, following recent hacks by models run at companies like Anthropic, OpenAI, Meta and others. The bill, introduc
 
-> **来源**: [Windows Botnet x47.c Offers AI API Draining, 18 Attack Methods](https://www.infosecurity-magazine.com/news/x47c-botnet-ai-api-draining-18/)  #Infosecurity Magazine
+> **来源**: [New bill would create federal investigative body for AI-driven hacks](https://cyberscoop.com/new-bill-would-create-federal-investigative-body-for-ai-driven-hacks/)  #CyberScoop
 
-### 📰 10. ShinyHunters Claims FBI Hack Via PeopleSoft Zero Day
+### 📰 10. Emerging Ransomware Gang Uses Backup Destruction Threats to Pressure Victims
 
-Infamous threat group ShinyHunters claims to have personal information on thousands of FBI employees
+Ransom notes by n0n ransomware claim to take double extortion to a new level of danger for victims
 
-> **来源**: [ShinyHunters Claims FBI Hack Via PeopleSoft Zero Day](https://www.infosecurity-magazine.com/news/shinyhunters-fbi-hack-peoplesoft/)  #Infosecurity Magazine
+> **来源**: [Emerging Ransomware Gang Uses Backup Destruction Threats to Pressure Victims](https://www.infosecurity-magazine.com/news/ransomware-gang-uses-backup/)  #Infosecurity Magazine
 
 ---
 
