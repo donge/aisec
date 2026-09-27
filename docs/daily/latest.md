@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-09-27
+# 🤖🔒 AI+安全日报 | 2026-09-28
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-75131 [HIGH 7.8]
+### ⚠️ 1. CVE-2026-77294 [HIGH 8.1] 🔬
 
-NetworkManager-l2tp through 1.52.4, fixed in 1.52.6, contains a privilege escalation vulnerability that allows local users with permission to create VPN connections to execute arbitrary code as root by injecting pppd options through a crafted VPN username. Attackers can embed a double-quote characte
+TREK is a collaborative travel planner. Prior to 3.3.0, TREK allows an authenticated user to store an attacker-controlled llm_base_url through the settings API when the LLM_PARSING feature is enabled. Write permission to the target trip instance is required to trigger the vulnerable AI-assisted impo
 
-> **来源**: [CVE-2026-75131 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-75131)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-77294 [HIGH 8.1] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-77294)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 2. Watchdog finds most agencies failed to meet CISA cloud security orders, heightening risk of attack
+### ⚠️ 2. CVE-2026-81455 [HIGH 8.6]
 
-The DHS inspector general said CISA lacks the power to compel agencies to implement its Binding Operational Directives. The post Watchdog finds most agencies failed to meet CISA cloud security orders, heightening risk of attack appeared first on CyberScoop.
+Dell ThinOS 10, versions prior to SecurityAddon_2605.10.2766_T10, contain a Missing Authentication for Critical Function vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access.
 
-> **来源**: [Watchdog finds most agencies failed to meet CISA cloud security orders, heightening risk of attack](https://cyberscoop.com/dhs-ig-report-federal-agencies-fail-cisa-cloud-security-directives/)  #CyberScoop
+> **来源**: [CVE-2026-81455 [HIGH 8.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-81455)  CVSS 8.6 HIGH · #NVD · #漏洞
 
-### 📰 3. RemControl Banking Trojan Gives Attackers Remote Control of Android Devices
+### ⚠️ 3. CVE-2026-81473 [HIGH 8.1]
 
-The newly-discovered trojan abuses the Android Accessibility Service to gain control over victim devices and collect sensitive banking credentials
+Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.
 
-> **来源**: [RemControl Banking Trojan Gives Attackers Remote Control of Android Devices](https://www.infosecurity-magazine.com/news/banking-trojan-remote-control/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-81473 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-81473)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 4. Phone-hacking company that won U.S. security agency contracts hid Russian ownership, DOJ alleges
+### ⚠️ 4. CVE-2026-61825 [HIGH 8.7]
 
-The Justice Department said two leaders of the company have been arrested and face conspiracy to commit wire fraud. The post Phone-hacking company that won U.S. security agency contracts hid Russian ownership, DOJ alleges appeared first on CyberScoop.
+code16 Sharp is a Laravel-based framework for building content-management and administrative interfaces. Versions before 9.22.5 contain a stored cross-site scripting vulnerability in `SharpEditorFormField`: attacker-controlled content bearing the `data-html-content` attribute can bypass HTML sanitiz
 
-> **来源**: [Phone-hacking company that won U.S. security agency contracts hid Russian ownership, DOJ alleges](https://cyberscoop.com/oxygen-forensics-ceo-arrested-russian-ownership-fraud/)  #CyberScoop
+> **来源**: [CVE-2026-61825 [HIGH 8.7]](https://nvd.nist.gov/vuln/detail/CVE-2026-61825)  CVSS 8.7 HIGH · #NVD · #漏洞
 
-### 📰 5. Bipartisan Senate leaders introduce bill to bolster telecom cybersecurity in response to Salt Typhoon hacks
+### 📰 5. Frequently asked questions about reported Citrix NetScaler zero-day vulnerabilities
 
-The legislation from Senate Intelligence Vice-Chairman. Mark Warner, D-Va., and Senate Commerce Chairman Ted Cruz, R-Tex., would create a government-industry group to write voluntary best practices. The post Bipartisan Senate leaders introduce bill to bolster telecom cybersecurity in response to Sal
+There are reportedly two unpatched zero-day Citrix NetScaler vulnerabilities capable of enabling remote code execution that have been actively exploited in the wild, with no patches available at this time.Key takeawaysReports indicate that there are two critical zero-day vulnerabilities in Citrix Ne
 
-> **来源**: [Bipartisan Senate leaders introduce bill to bolster telecom cybersecurity in response to Salt Typhoon hacks](https://cyberscoop.com/senate-telecom-cybersecurity-resilience-act-salt-typhoon/)  #CyberScoop
+> **来源**: [Frequently asked questions about reported Citrix NetScaler zero-day vulnerabilities](https://www.tenable.com/blog/frequently-asked-questions-about-reported-citrix-netscaler-zero-day-vulnerabilities)  #Tenable Blog
 
-### 📰 6. How tax policy can stop threat actors from breaching US water systems
+### 📰 6. AI Drives Surge in Bot and API Threats
 
-New federal programs take years to launch and fund. State and local governments need cybersecurity software now. The One Big Beautiful Bill already enables tax incentives. Congress should clarify and deploy them. The post How tax policy can stop threat actors from breaching US water systems appeared
+Akamai report warns of increase in bot traffic, API threats, chatbot leaks and other AI-related threats
 
-> **来源**: [How tax policy can stop threat actors from breaching US water systems](https://cyberscoop.com/how-federal-tax-incentives-can-protect-state-local-cybersecurity-op-ed/)  #CyberScoop
+> **来源**: [AI Drives Surge in Bot and API Threats](https://www.infosecurity-magazine.com/news/ai-drives-surge-in-bot-and-api/)  #Infosecurity Magazine
 
-### 📰 7. Data Overtakes Skills as Top Threat Hunting Challenge, SANS Study Finds
+### 📰 7. CISOs Must Update Incident Response Playbooks for Multimodal Deepfakes, Gartner Warns
 
-SANS Institute report claims data rather than skills is now the main hurdle for threat hunters
+Gartner warns that CISOs must update incident response playbooks as AI-powered deepfakes make social engineering attacks more convincing and harder to detect
 
-> **来源**: [Data Overtakes Skills as Top Threat Hunting Challenge, SANS Study Finds](https://www.infosecurity-magazine.com/news/data-top-bottleneck-barrier-threat/)  #Infosecurity Magazine
+> **来源**: [CISOs Must Update Incident Response Playbooks for Multimodal Deepfakes, Gartner Warns](https://www.infosecurity-magazine.com/news/update-incident-response/)  #Infosecurity Magazine
 
-### 📰 8. Smashing Security podcast #486: Vibe-coded shops, and hackable Flock cameras
+### 📰 8. Former AT&T store worker jailed after moonlighting as a SIM-swap gang’s inside man
 
-A store in Auckland vibe-coded itself a new website. Within hours, its inventory had somehow expanded to include a pair of crusty socks, an $850 banana, and all of New Zealand's national parks. What could possibly have gone wrong? Meanwhile, a hacker collective backed a truck into one of the license
+44-year-old Kenneth Carter from Portland, Oregon, used to work in an AT&T retail store. But now he has been sentenced to 16 months in a federal prison. That should be plenty of time for him to rue the day he agreed to increase his monthly income by helping a SIM swap gang in their attempt to steal o
 
-> **来源**: [Smashing Security podcast #486: Vibe-coded shops, and hackable Flock cameras](https://grahamcluley.com/smashing-security-podcast-486/)  #Graham Cluley
+> **来源**: [Former AT&T store worker jailed after moonlighting as a SIM-swap gang’s inside man](https://www.bitdefender.com/en-us/blog/hotforsecurity/former-at-t-worker-jailed-sim-swap)  #Graham Cluley
 
-### 📰 9. Okta bets on identity to control AI agents, but is identity enough?
+### 📰 9. Researchers Identify AliExpress Phishing Domains Before Registration
 
-Concerns over agentic risks are rising, and identity and access management (IAM) giant Okta believes it’s making the moves of a would-be leader in this emerging cyber market. “Identity is the primary control plane for securing AI,” said Okta CEO and co-founder Todd McKinnon in an earnings call in la
+EfficientIP says it flagged AliExpress phishing domains before they were registered
 
-> **来源**: [Okta bets on identity to control AI agents, but is identity enough?](https://www.csoonline.com/article/4225230/okta-bets-on-identity-to-control-ai-agents-but-is-identity-alone-enough.html)  #CSO Online
+> **来源**: [Researchers Identify AliExpress Phishing Domains Before Registration](https://www.infosecurity-magazine.com/news/aliexpress-phishing-flagged-early/)  #Infosecurity Magazine
 
-### 📰 10. Microsoft’s EvilTokens takedown sheds light on state of AI-powered cybercrime
+### 📰 10. UK Government Shifts to Service-Led Cyber Governance After Stinging Audit
 
-Microsoft has hailed its success in disrupting EvilTokens, an AI-powered a phishing-as-a-service (PhaaS) platform linked to more than 12,000 compromised Microsoft 365 inboxes across more than 10,000 organizations worldwide. Since February 2026, EvilTokens has offered a subscription platform combinin
+Whitehall is shifting from mandatory cyber controls to service-led governance following a critical audit exposing failures of its 2022 cyber strategy
 
-> **来源**: [Microsoft’s EvilTokens takedown sheds light on state of AI-powered cybercrime](https://www.csoonline.com/article/4225175/microsofts-eviltokens-takedown-sheds-light-on-state-of-ai-powered-cybercrime.html)  #CSO Online
+> **来源**: [UK Government Shifts to Service-Led Cyber Governance After Stinging Audit](https://www.infosecurity-magazine.com/news/uk-government-service-led-cyber/)  #Infosecurity Magazine
 
 ---
 

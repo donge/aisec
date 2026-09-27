@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>2026-07-06 - AI+安全日报</title>
+        <title>2026-09-28 - AI+安全日报</title>
 
 
         <!-- Custom HTML head -->
@@ -177,80 +177,60 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="-ai安全日报--2026-07-06"><a class="header" href="#-ai安全日报--2026-07-06">🤖🔒 AI+安全日报 | 2026-07-06</a></h1>
+                        <h1 id="-ai安全日报--2026-09-28"><a class="header" href="#-ai安全日报--2026-09-28">🤖🔒 AI+安全日报 | 2026-09-28</a></h1>
 <blockquote>
 <p>今日共收录 <strong>10</strong> 条，AI+安全领域重要动态速览</p>
 </blockquote>
 <hr>
-<h3 id="-1-cve-2024-58352-高-75"><a class="header" href="#-1-cve-2024-58352-高-75">⚠️ 1. CVE-2024-58352 [高 7.5]</a></h3>
-<ul>
-<li>蓝凌OA存在一个未经身份验证的HQL注入漏洞，攻击者可通过向wechatLoginHelper.do端点的uid POST参数注入恶意HQL语法，查询任意Hibernate实体类。漏洞源于字符串拼接的过滤表达式未进行输入清理，直接传递给Hibernate的findList()调用。攻击者可利用此漏洞提取敏感数据，如管理员密码哈希，并在数据库权限足够时执行进一步操作。该漏洞影响蓝凌OA相关版本，建议升级或实施输入验证。</li>
-</ul>
+<h3 id="-1-cve-2026-77294-high-81-"><a class="header" href="#-1-cve-2026-77294-high-81-">⚠️ 1. CVE-2026-77294 [HIGH 8.1] 🔬</a></h3>
+<p>TREK is a collaborative travel planner. Prior to 3.3.0, TREK allows an authenticated user to store an attacker-controlled llm_base_url through the settings API when the LLM_PARSING feature is enabled. Write permission to the target trip instance is required to trigger the vulnerable AI-assisted impo</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-58352">CVE-2024-58352 [HIGH 7.5]</a>  CVSS 7.5 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-77294">CVE-2026-77294 [HIGH 8.1] 🔬</a>  CVSS 8.1 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-2-cve-2026-58455-严重-98"><a class="header" href="#-2-cve-2026-58455-严重-98">⚠️ 2. CVE-2026-58455 [严重 9.8]</a></h3>
-<ul>
-<li>Dockwatch 0.6.567及之前版本存在一个未经身份验证的操作系统命令注入漏洞。攻击者通过利用loader.php中认证重定向后缺少exit()的问题，结合ajax/compose.php中未经过滤的输入传递给shell_exec()，可以远程执行任意shell命令。攻击者可通过不完整的认证检查植入所需的会话标志，然后通过composePull操作中的composePath POST参数注入任意命令，从而完全控制主机。该漏洞影响所有Dockwatch 0.6.567版本，建议立即升级或禁用相关功能。</li>
-</ul>
+<h3 id="-2-cve-2026-81455-high-86"><a class="header" href="#-2-cve-2026-81455-high-86">⚠️ 2. CVE-2026-81455 [HIGH 8.6]</a></h3>
+<p>Dell ThinOS 10, versions prior to SecurityAddon_2605.10.2766_T10, contain a Missing Authentication for Critical Function vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58455">CVE-2026-58455 [CRITICAL 9.8]</a>  CVSS 9.8 CRITICAL · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81455">CVE-2026-81455 [HIGH 8.6]</a>  CVSS 8.6 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-3-cve-2026-58465-高-75"><a class="header" href="#-3-cve-2026-58465-高-75">⚠️ 3. CVE-2026-58465 [高 7.5]</a></h3>
-<ul>
-<li>Eclipse Wakaama在snapshot/2026-05-26之前版本中存在一个无界内存分配漏洞，位于coap/block.c的CoAP Block1处理程序中。未经身份验证的远程攻击者可通过发送一系列块号递增的Block1 PUT请求，耗尽服务器内存。攻击者可针对UDP上的注册端点进行攻击，无需认证，导致服务器反复重新分配不断增长的累积缓冲区，每次追加块负载而不施加任何限制。该漏洞影响Eclipse Wakaama旧版本，建议升级到snapshot/2026-05-26或更高版本。</li>
-</ul>
+<h3 id="-3-cve-2026-81473-high-81"><a class="header" href="#-3-cve-2026-81473-high-81">⚠️ 3. CVE-2026-81473 [HIGH 8.1]</a></h3>
+<p>Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58465">CVE-2026-58465 [HIGH 7.5]</a>  CVSS 7.5 HIGH · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81473">CVE-2026-81473 [HIGH 8.1]</a>  CVSS 8.1 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-4-cve-2022-50973-严重-98"><a class="header" href="#-4-cve-2022-50973-严重-98">⚠️ 4. CVE-2022-50973 [严重 9.8]</a></h3>
-<ul>
-<li>用友KSOA 9.0存在一个未经身份验证的任意文件上传漏洞，位于com.sksoft.bill.ImageUpload servlet中。攻击者无需任何认证即可通过POST请求提交攻击者控制的文件路径和文件名参数，且系统未对文件类型、扩展名或内容进行任何验证。攻击者可上传JSP webshell，通过指定恶意文件名和根路径，将文件存储在pictures目录下，从而完全控制服务器。该漏洞影响用友KSOA 9.0版本，建议立即应用补丁或限制访问。</li>
-</ul>
+<h3 id="-4-cve-2026-61825-high-87"><a class="header" href="#-4-cve-2026-61825-high-87">⚠️ 4. CVE-2026-61825 [HIGH 8.7]</a></h3>
+<p>code16 Sharp is a Laravel-based framework for building content-management and administrative interfaces. Versions before 9.22.5 contain a stored cross-site scripting vulnerability in <code>SharpEditorFormField</code>: attacker-controlled content bearing the <code>data-html-content</code> attribute can bypass HTML sanitiz</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50973">CVE-2022-50973 [CRITICAL 9.8]</a>  CVSS 9.8 CRITICAL · #NVD · #漏洞</p>
+<p><strong>来源</strong>: <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-61825">CVE-2026-61825 [HIGH 8.7]</a>  CVSS 8.7 HIGH · #NVD · #漏洞</p>
 </blockquote>
-<h3 id="-5-microsoft-365用户遭遇大规模密码喷洒攻击"><a class="header" href="#-5-microsoft-365用户遭遇大规模密码喷洒攻击">📰 5. Microsoft 365用户遭遇大规模密码喷洒攻击</a></h3>
-<ul>
-<li>微软用户近期遭受了一次大规模自动化密码喷洒攻击，安全公司Huntress的客户成为主要目标。攻击者在6月12日至26日期间，从单一IP地址发起了8100万次登录尝试，成功入侵至少78个账户。密码喷洒攻击通过尝试常见弱密码绕过账户锁定机制，其成功率虽低但规模庞大。Huntress警告称，实际受损账户数可能更高，建议用户启用多因素认证并监控异常登录活动。</li>
-</ul>
+<h3 id="-5-frequently-asked-questions-about-reported-citrix-netscaler-zero-day-vulnerabilities"><a class="header" href="#-5-frequently-asked-questions-about-reported-citrix-netscaler-zero-day-vulnerabilities">📰 5. Frequently asked questions about reported Citrix NetScaler zero-day vulnerabilities</a></h3>
+<p>There are reportedly two unpatched zero-day Citrix NetScaler vulnerabilities capable of enabling remote code execution that have been actively exploited in the wild, with no patches available at this time.Key takeawaysReports indicate that there are two critical zero-day vulnerabilities in Citrix Ne</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4192819/microsoft-365-users-fall-victim-to-one-in-a-million-password-spray-attack.html">Microsoft 365 users fall victim to one-in-a-million password spray attack</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.tenable.com/blog/frequently-asked-questions-about-reported-citrix-netscaler-zero-day-vulnerabilities">Frequently asked questions about reported Citrix NetScaler zero-day vulnerabilities</a>  #Tenable Blog</p>
 </blockquote>
-<h3 id="-6-恶意chromium扩展伪装成perplexity-ai劫持浏览器搜索"><a class="header" href="#-6-恶意chromium扩展伪装成perplexity-ai劫持浏览器搜索">📰 6. 恶意Chromium扩展伪装成Perplexity AI劫持浏览器搜索</a></h3>
-<ul>
-<li>谷歌已移除一个伪装成Perplexity AI的恶意浏览器扩展，该扩展由微软研究人员发现。该扩展通过拦截用户搜索流量，将查询路由至攻击者控制的服务器，再转发至合法搜索引擎，同时收集浏览数据。微软威胁情报分析称，其核心目标是窃取搜索数据，同时维持正常浏览体验以隐藏活动。用户应仅从官方商店安装扩展，并检查权限请求是否合理。</li>
-</ul>
+<h3 id="-6-ai-drives-surge-in-bot-and-api-threats"><a class="header" href="#-6-ai-drives-surge-in-bot-and-api-threats">📰 6. AI Drives Surge in Bot and API Threats</a></h3>
+<p>Akamai report warns of increase in bot traffic, API threats, chatbot leaks and other AI-related threats</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4191060/malicious-chromium-extension-spoofs-perplexity-ai-to-hijack-browser-searches.html">Malicious Chromium extension spoofs Perplexity AI to hijack browser searches</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/ai-drives-surge-in-bot-and-api/">AI Drives Surge in Bot and API Threats</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-7-ciso需向董事会传达的零信任ot策略90天沟通与行动计划"><a class="header" href="#-7-ciso需向董事会传达的零信任ot策略90天沟通与行动计划">📰 7. CISO需向董事会传达的零信任OT策略：90天沟通与行动计划</a></h3>
-<ul>
-<li>一位管道运营商的首席专家撰文指出，自2021年Colonial管道勒索软件事件后，工业界对OT环境中零信任的讨论日益增多。文章建议CISO在90天内向董事会传达零信任的核心价值，包括通过审计请求、TSA安全指令和项目目标来量化风险。零信任在OT中需逐步实施，重点包括网络分段、持续监控和最小权限原则。该计划旨在帮助董事会理解OT安全投资对业务连续性的关键作用。</li>
-</ul>
+<h3 id="-7-cisos-must-update-incident-response-playbooks-for-multimodal-deepfakes-gartner-warns"><a class="header" href="#-7-cisos-must-update-incident-response-playbooks-for-multimodal-deepfakes-gartner-warns">📰 7. CISOs Must Update Incident Response Playbooks for Multimodal Deepfakes, Gartner Warns</a></h3>
+<p>Gartner warns that CISOs must update incident response playbooks as AI-powered deepfakes make social engineering attacks more convincing and harder to detect</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://www.csoonline.com/article/4189605/what-cisos-need-to-tell-the-board-about-zero-trust-in-ot-a-90-day-communication-and-action-plan.html">What CISOs need to tell the board about zero trust in OT: A 90-day communication and action plan</a>  #CSO Online</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/update-incident-response/">CISOs Must Update Incident Response Playbooks for Multimodal Deepfakes, Gartner Warns</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-8-全局命名空间风险云数据外传的通用存储桶劫持技术"><a class="header" href="#-8-全局命名空间风险云数据外传的通用存储桶劫持技术">📰 8. 全局命名空间风险：云数据外传的通用存储桶劫持技术</a></h3>
-<ul>
-<li>Unit 42研究揭示一种利用全局名称唯一性的存储桶劫持技术，攻击者可跨主流云服务提供商（如AWS S3、Azure Blob、GCP Cloud Storage）重定向数据流。该技术基于云存储桶名称的全局唯一性，攻击者通过注册未使用的桶名或利用DNS缓存投毒，将合法数据请求导向恶意存储桶，从而窃取上传或下载的数据。该攻击无需访问目标云账户，且可绕过传统访问控制策略。Unit 42建议企业使用随机化桶名、启用存储桶策略中的来源IP限制，并监控DNS解析异常以检测劫持行为。</li>
-</ul>
+<h3 id="-8-former-att-store-worker-jailed-after-moonlighting-as-a-sim-swap-gangs-inside-man"><a class="header" href="#-8-former-att-store-worker-jailed-after-moonlighting-as-a-sim-swap-gangs-inside-man">📰 8. Former AT&amp;T store worker jailed after moonlighting as a SIM-swap gang’s inside man</a></h3>
+<p>44-year-old Kenneth Carter from Portland, Oregon, used to work in an AT&amp;T retail store. But now he has been sentenced to 16 months in a federal prison. That should be plenty of time for him to rue the day he agreed to increase his monthly income by helping a SIM swap gang in their attempt to steal o</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://unit42.paloaltonetworks.com/cloud-bucket-hijacking-risks/">The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration</a>  #Unit 42</p>
+<p><strong>来源</strong>: <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/former-at-t-worker-jailed-sim-swap">Former AT&amp;T store worker jailed after moonlighting as a SIM-swap gang’s inside man</a>  #Graham Cluley</p>
 </blockquote>
-<h3 id="-9-现代安全运营中心内部72分钟竞速"><a class="header" href="#-9-现代安全运营中心内部72分钟竞速">📰 9. 现代安全运营中心内部：72分钟竞速</a></h3>
-<ul>
-<li>研究显示，攻击者从初始访问到数据外传的平均时间已缩短至72分钟，迫使安全运营中心（SOC）必须加速响应。Unit 42提出通过AI驱动的自动化、威胁狩猎、托管检测与响应（MDR）以及Managed XSIAM平台来缩小速度差距。具体措施包括：利用机器学习模型实时分析日志和网络流量，自动隔离可疑端点；通过威胁情报集成预判攻击路径；以及采用XDR（扩展检测与响应）工具统一告警视图。专家强调，SOC团队需将平均检测时间（MTTD）和平均响应时间（MTTR）压缩至分钟级，否则将面临数据泄露风险。</li>
-</ul>
+<h3 id="-9-researchers-identify-aliexpress-phishing-domains-before-registration"><a class="header" href="#-9-researchers-identify-aliexpress-phishing-domains-before-registration">📰 9. Researchers Identify AliExpress Phishing Domains Before Registration</a></h3>
+<p>EfficientIP says it flagged AliExpress phishing domains before they were registered</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://unit42.paloaltonetworks.com/soc-72-minute-race/">Inside the Modern SOC: The 72-Minute Race</a>  #Unit 42</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/aliexpress-phishing-flagged-early/">Researchers Identify AliExpress Phishing Domains Before Registration</a>  #Infosecurity Magazine</p>
 </blockquote>
-<h3 id="-10-威胁简报pan-os-cve-2026-0257-遭积极利用"><a class="header" href="#-10-威胁简报pan-os-cve-2026-0257-遭积极利用">📰 10. 威胁简报：PAN-OS CVE-2026-0257 遭积极利用</a></h3>
-<ul>
-<li>Unit 42发布报告称，PAN-OS存在一个高危漏洞CVE-2026-0257，目前已被积极利用。该漏洞影响特定版本的PAN-OS防火墙操作系统，攻击者可利用其远程执行代码或提升权限。报告提供了相关的入侵指标（IoC）和缓解措施，建议用户立即应用补丁或启用临时防护规则。该漏洞的广泛利用可能对全球使用Palo Alto Networks设备的企业网络构成严重威胁。</li>
-</ul>
+<h3 id="-10-uk-government-shifts-to-service-led-cyber-governance-after-stinging-audit"><a class="header" href="#-10-uk-government-shifts-to-service-led-cyber-governance-after-stinging-audit">📰 10. UK Government Shifts to Service-Led Cyber Governance After Stinging Audit</a></h3>
+<p>Whitehall is shifting from mandatory cyber controls to service-led governance following a critical audit exposing failures of its 2022 cyber strategy</p>
 <blockquote>
-<p><strong>来源</strong>: <a href="https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/">Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257</a>  #Unit 42</p>
+<p><strong>来源</strong>: <a href="https://www.infosecurity-magazine.com/news/uk-government-service-led-cyber/">UK Government Shifts to Service-Led Cyber Governance After Stinging Audit</a>  #Infosecurity Magazine</p>
 </blockquote>
 <hr>
 <blockquote>
@@ -261,11 +241,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../daily/2026-07-07.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../daily/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../daily/2026-07-05.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../daily/2026-09-27.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -275,11 +255,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../daily/2026-07-07.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../daily/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../daily/2026-07-05.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../daily/2026-09-27.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
