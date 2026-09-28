@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-09-28
+# 🤖🔒 AI+安全日报 | 2026-09-29
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-77294 [HIGH 8.1] 🔬
+### 📰 1. Stolen AI credentials feed growing LLM proxy economy
 
-TREK is a collaborative travel planner. Prior to 3.3.0, TREK allows an authenticated user to store an attacker-controlled llm_base_url through the settings API when the LLM_PARSING feature is enabled. Write permission to the target trip instance is required to trigger the vulnerable AI-assisted impo
+Cyber threat groups have increasingly targeted enterprise AI assets, such as credentials, cloud environments, and research, as a means for operationalizing their own use of AI. Now, another sophisticated means for obfuscating illegitimate use of AI resources is coming more clearly to light. Accordin
 
-> **来源**: [CVE-2026-77294 [HIGH 8.1] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-77294)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [Stolen AI credentials feed growing LLM proxy economy](https://www.csoonline.com/article/4227199/stolen-ai-credentials-feed-growing-llm-proxy-economy.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-81455 [HIGH 8.6]
+### 📰 2. Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild
 
-Dell ThinOS 10, versions prior to SecurityAddon_2605.10.2766_T10, contain a Missing Authentication for Critical Function vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access.
+Unit 42 is aware of possible 0-day activity against NetScaler devices. Citrix reports CVE-2026-88771, CVE-2026-88772 have been exploited in the wild. The post Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild appeared first on Unit 42.
 
-> **来源**: [CVE-2026-81455 [HIGH 8.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-81455)  CVSS 8.6 HIGH · #NVD · #漏洞
+> **来源**: [Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild](https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/)  #Unit 42
 
-### ⚠️ 3. CVE-2026-81473 [HIGH 8.1]
+### 📰 3. NetScaler admins told to patch critical zero-days in ADC and Gateway now
 
-Dell Rugged Control Center (RCC), versions prior to 5.2.206, contain an Improper Authorization vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.
+Citrix NetScaler ADC and NetScaler Gateway users should take their systems offline and patch them immediately, they were told over the weekend, as news emerged of two critical unauthenticated remote code execution zero-day vulnerabilities in the products under active attack. “Monday will be too late
 
-> **来源**: [CVE-2026-81473 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-81473)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [NetScaler admins told to patch critical zero-days in ADC and Gateway now](https://www.csoonline.com/article/4227488/netscaler-admins-told-to-patch-critical-zero-days-in-adc-and-gateway-now-2.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-61825 [HIGH 8.7]
+### ⚠️ 4. CVE-2026-100391 [HIGH 8.2]
 
-code16 Sharp is a Laravel-based framework for building content-management and administrative interfaces. Versions before 9.22.5 contain a stored cross-site scripting vulnerability in `SharpEditorFormField`: attacker-controlled content bearing the `data-html-content` attribute can bypass HTML sanitiz
+MediaFlow Proxy through 2.4.9 contains a server-side request forgery vulnerability in the /proxy routes due to missing and incomplete destination validation in the d query parameter. Remote attackers can supply arbitrary internal URLs including loopback and cloud metadata endpoints to read full resp
 
-> **来源**: [CVE-2026-61825 [HIGH 8.7]](https://nvd.nist.gov/vuln/detail/CVE-2026-61825)  CVSS 8.7 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-100391 [HIGH 8.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-100391)  CVSS 8.2 HIGH · #NVD · #漏洞
 
-### 📰 5. Frequently asked questions about reported Citrix NetScaler zero-day vulnerabilities
+### ⚠️ 5. CVE-2026-100389 [HIGH 8.1]
 
-There are reportedly two unpatched zero-day Citrix NetScaler vulnerabilities capable of enabling remote code execution that have been actively exploited in the wild, with no patches available at this time.Key takeawaysReports indicate that there are two critical zero-day vulnerabilities in Citrix Ne
+GestSup versions before 3.2.61 contain a remote code execution vulnerability in the basic IMAP connector's attachment handling that fails to skip blocked file extensions. Unauthenticated attackers can send emails with PHP attachments to monitored mailboxes, which are written to the web-accessible up
 
-> **来源**: [Frequently asked questions about reported Citrix NetScaler zero-day vulnerabilities](https://www.tenable.com/blog/frequently-asked-questions-about-reported-citrix-netscaler-zero-day-vulnerabilities)  #Tenable Blog
+> **来源**: [CVE-2026-100389 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-100389)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 6. AI Drives Surge in Bot and API Threats
+### ⚠️ 6. CVE-2026-100387 [HIGH 8.1]
 
-Akamai report warns of increase in bot traffic, API threats, chatbot leaks and other AI-related threats
+pgPointcloud through 1.2.5 contains a heap out-of-bounds read vulnerability in dimensional patch WKB deserialization that allows authenticated database users to read adjacent heap memory. Attackers can supply crafted pcpatch values with attacker-controlled size fields to copy heap memory into stored
 
-> **来源**: [AI Drives Surge in Bot and API Threats](https://www.infosecurity-magazine.com/news/ai-drives-surge-in-bot-and-api/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-100387 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-100387)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 7. CISOs Must Update Incident Response Playbooks for Multimodal Deepfakes, Gartner Warns
+### 📰 7. Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation
 
-Gartner warns that CISOs must update incident response playbooks as AI-powered deepfakes make social engineering attacks more convincing and harder to detect
+Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attac
 
-> **来源**: [CISOs Must Update Incident Response Playbooks for Multimodal Deepfakes, Gartner Warns](https://www.infosecurity-magazine.com/news/update-incident-response/)  #Infosecurity Magazine
+> **来源**: [Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation](https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/)  #Krebs on Security
 
-### 📰 8. Former AT&T store worker jailed after moonlighting as a SIM-swap gang’s inside man
+### 📰 8. OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government
 
-44-year-old Kenneth Carter from Portland, Oregon, used to work in an AT&T retail store. But now he has been sentenced to 16 months in a federal prison. That should be plenty of time for him to rue the day he agreed to increase his monthly income by helping a SIM swap gang in their attempt to steal o
+Sam Altman says the company “have not been as fast as we would have liked” at dealing with security breaches, after news of further incidents over the summer forces another temporary halt.
 
-> **来源**: [Former AT&T store worker jailed after moonlighting as a SIM-swap gang’s inside man](https://www.bitdefender.com/en-us/blog/hotforsecurity/former-at-t-worker-jailed-sim-swap)  #Graham Cluley
+> **来源**: [OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government](https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/)  #Wired Security
 
-### 📰 9. Researchers Identify AliExpress Phishing Domains Before Registration
+### ⚠️ 9. CVE-2026-57443 [HIGH 7.5]
 
-EfficientIP says it flagged AliExpress phishing domains before they were registered
+SCBE-AETHERMOORE is a geometric AI governance and evaluation framework. Starting in version 4.0.2 and prior to version 4.2.1, the AetherBrowser API server (`scripts/aetherbrowser/api_server.py`) exposes the `POST /api/ops/check-email` endpoint without any authentication. Any remote attacker can call
 
-> **来源**: [Researchers Identify AliExpress Phishing Domains Before Registration](https://www.infosecurity-magazine.com/news/aliexpress-phishing-flagged-early/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-57443 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-57443)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 10. UK Government Shifts to Service-Led Cyber Governance After Stinging Audit
+### 📰 10. As AI world debates security, NVIDIA releases open source tools for agents
 
-Whitehall is shifting from mandatory cyber controls to service-led governance following a critical audit exposing failures of its 2022 cyber strategy
+One expert told CyberScoop that the announcement reflects industry recognition that after years of training models to behave safely or ethically, more outside controls are needed. The post As AI world debates security, NVIDIA releases open source tools for agents appeared first on CyberScoop.
 
-> **来源**: [UK Government Shifts to Service-Led Cyber Governance After Stinging Audit](https://www.infosecurity-magazine.com/news/uk-government-service-led-cyber/)  #Infosecurity Magazine
+> **来源**: [As AI world debates security, NVIDIA releases open source tools for agents](https://cyberscoop.com/nvidia-open-agent-safety-platform/)  #CyberScoop
 
 ---
 
