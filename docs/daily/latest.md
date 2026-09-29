@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-09-29
+# 🤖🔒 AI+安全日报 | 2026-09-30
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Stolen AI credentials feed growing LLM proxy economy
+### ⚠️ 1. CVE-2026-100739 [HIGH 7.3]
 
-Cyber threat groups have increasingly targeted enterprise AI assets, such as credentials, cloud environments, and research, as a means for operationalizing their own use of AI. Now, another sophisticated means for obfuscating illegitimate use of AI resources is coming more clearly to light. Accordin
+A vulnerability was detected in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. This impacts an unknown function of the file viewresult.php. Performing a manipulation of the argument seno results in sql injection. Remote exploitation of the attack is possible.
 
-> **来源**: [Stolen AI credentials feed growing LLM proxy economy](https://www.csoonline.com/article/4227199/stolen-ai-credentials-feed-growing-llm-proxy-economy.html)  #CSO Online
+> **来源**: [CVE-2026-100739 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-100739)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 2. Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild
+### 📰 2. Kiteworks lifts shutdown advisory after ‘credible threat intelligence’ from federal authorities
 
-Unit 42 is aware of possible 0-day activity against NetScaler devices. Citrix reports CVE-2026-88771, CVE-2026-88772 have been exploited in the wild. The post Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild appeared first on Unit 42.
+The company said it found and patched a previously unknown critical vulnerability in one product during the weekend shutdown, and has no indication it was exploited. The post Kiteworks lifts shutdown advisory after ‘credible threat intelligence’ from federal authorities appeared first on CyberScoop.
 
-> **来源**: [Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild](https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/)  #Unit 42
+> **来源**: [Kiteworks lifts shutdown advisory after ‘credible threat intelligence’ from federal authorities](https://cyberscoop.com/kiteworks-lifts-shutdown-advisory-after-credible-threat-intelligence-from-federal-authorities/)  #CyberScoop
 
-### 📰 3. NetScaler admins told to patch critical zero-days in ADC and Gateway now
+### 📰 3. Is ChatGPT your new Google Workspace alternative? Meet Space, Pages, and slides
 
-Citrix NetScaler ADC and NetScaler Gateway users should take their systems offline and patch them immediately, they were told over the weekend, as news emerged of two critical unauthenticated remote code execution zero-day vulnerabilities in the products under active attack. “Monday will be too late
+OpenAI now lets teams create documents, build presentations, and work with AI agents inside ChatGPT
 
-> **来源**: [NetScaler admins told to patch critical zero-days in ADC and Gateway now](https://www.csoonline.com/article/4227488/netscaler-admins-told-to-patch-critical-zero-days-in-adc-and-gateway-now-2.html)  #CSO Online
+> **来源**: [Is ChatGPT your new Google Workspace alternative? Meet Space, Pages, and slides](https://www.zdnet.com/innovation/chatgpt-space-pages-slides-google-workspace-alternative/)  #ZDNet Security
 
-### ⚠️ 4. CVE-2026-100391 [HIGH 8.2]
+### 📰 4. OpenAI pulls the plug on GPT 6.1 Astra as agents keep crossing lines
 
-MediaFlow Proxy through 2.4.9 contains a server-side request forgery vulnerability in the /proxy routes due to missing and incomplete destination validation in the d query parameter. Remote attackers can supply arbitrary internal URLs including loopback and cloud metadata endpoints to read full resp
+OpenAI has scrapped the planned October release of GPT-6.1 Astra after internal testing found the model did not meet the company’s safety and alignment standards. GPT-6.1 Astra was being developed as a more autonomous model capable of handling complex tasks with less human assistance, and was expect
 
-> **来源**: [CVE-2026-100391 [HIGH 8.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-100391)  CVSS 8.2 HIGH · #NVD · #漏洞
+> **来源**: [OpenAI pulls the plug on GPT 6.1 Astra as agents keep crossing lines](https://www.csoonline.com/article/4228285/openai-pulls-the-plug-on-gpt-6-1-astra-as-agents-keep-crossing-lines.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-100389 [HIGH 8.1]
+### ⚠️ 5. CVE-2026-100740 [CRITICAL 9.9]
 
-GestSup versions before 3.2.61 contain a remote code execution vulnerability in the basic IMAP connector's attachment handling that fails to skip blocked file extensions. Unauthenticated attackers can send emails with PHP attachments to monitored mailboxes, which are written to the web-accessible up
+A vulnerability was detected in D-Link DIR-895L A1_102b07. Impacted is the function tunnel_set_params of the file tunnel.c of the component L2TP Control Channel Parser. Performing a manipulation results in out-of-bounds write. The attack may be initiated remotely. The exploit is now public and may b
 
-> **来源**: [CVE-2026-100389 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-100389)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-100740 [CRITICAL 9.9]](https://nvd.nist.gov/vuln/detail/CVE-2026-100740)  CVSS 9.9 CRITICAL · #NVD · #漏洞
 
-### ⚠️ 6. CVE-2026-100387 [HIGH 8.1]
+### 📰 6. US is looking to weave AI into critical infrastructure for cybersecurity, national cyber director says
 
-pgPointcloud through 1.2.5 contains a heap out-of-bounds read vulnerability in dimensional patch WKB deserialization that allows authenticated database users to read adjacent heap memory. Attackers can supply crafted pcpatch values with attacker-controlled size fields to copy heap memory into stored
+Sean Cairncross said CEOs need to be cognizant of how it’s being used, however. The post US is looking to weave AI into critical infrastructure for cybersecurity, national cyber director says appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-100387 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-100387)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [US is looking to weave AI into critical infrastructure for cybersecurity, national cyber director says](https://cyberscoop.com/national-cyber-director-ai-critical-infrastructure-cybersecurity/)  #CyberScoop
 
-### 📰 7. Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation
+### 📰 7. RatHat's Evolving C2 Panel Points to Malware-as-a-Service Model
 
-Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attac
+RatHat's C2 panel now builds malware and ranks victims with AI across nearly 100 deployments
 
-> **来源**: [Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation](https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/)  #Krebs on Security
+> **来源**: [RatHat's Evolving C2 Panel Points to Malware-as-a-Service Model](https://www.infosecurity-magazine.com/news/rathat-c2-panel-malware-as-a/)  #Infosecurity Magazine
 
-### 📰 8. OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government
+### 📰 8. Amazon Bedrock AgentCore Flaws Could Expose AWS Credentials
 
-Sam Altman says the company “have not been as fast as we would have liked” at dealing with security breaches, after news of further incidents over the summer forces another temporary halt.
+AWS AgentCore SDK flaws could let attackers run commands in AI sandboxes and reach AWS credentials
 
-> **来源**: [OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government](https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/)  #Wired Security
+> **来源**: [Amazon Bedrock AgentCore Flaws Could Expose AWS Credentials](https://www.infosecurity-magazine.com/news/aws-agentcore-sdk-flaws-ai/)  #Infosecurity Magazine
 
-### ⚠️ 9. CVE-2026-57443 [HIGH 7.5]
+### 📰 9. Japanese Railway Operators Hit with Weekend Cyber Attacks
 
-SCBE-AETHERMOORE is a geometric AI governance and evaluation framework. Starting in version 4.0.2 and prior to version 4.2.1, the AetherBrowser API server (`scripts/aetherbrowser/api_server.py`) exposes the `POST /api/ops/check-email` endpoint without any authentication. Any remote attacker can call
+Tokyo Metro and Keio have revealed separate cyber-attacks
 
-> **来源**: [CVE-2026-57443 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-57443)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [Japanese Railway Operators Hit with Weekend Cyber Attacks](https://www.infosecurity-magazine.com/news/japanese-railway-operators-cyber/)  #Infosecurity Magazine
 
-### 📰 10. As AI world debates security, NVIDIA releases open source tools for agents
+### 📰 10. Nvidia releases Open Agent Safety Platform to monitor and govern agentic AI
 
-One expert told CyberScoop that the announcement reflects industry recognition that after years of training models to behave safely or ethically, more outside controls are needed. The post As AI world debates security, NVIDIA releases open source tools for agents appeared first on CyberScoop.
+Nvidia on Monday rolled out an agentic governance system called the Open Agent Safety Platform that combines software with out-of-band DPU-based silicon in a reference system design that it says will secure agents “from testing to deployment.” But while the Nvidia design’s silicon-based component pr
 
-> **来源**: [As AI world debates security, NVIDIA releases open source tools for agents](https://cyberscoop.com/nvidia-open-agent-safety-platform/)  #CyberScoop
+> **来源**: [Nvidia releases Open Agent Safety Platform to monitor and govern agentic AI](https://www.csoonline.com/article/4227843/nvidia-releases-open-agent-safety-platform-to-monitor-and-govern-agentic-ai.html)  #CSO Online
 
 ---
 
