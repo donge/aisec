@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-09-30
+# 🤖🔒 AI+安全日报 | 2026-10-01
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-100739 [HIGH 7.3]
+### 📰 1. Attackers Combine ChatGPT Feature Abuse With ClickFix to Deliver Trojan Malware
 
-A vulnerability was detected in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. This impacts an unknown function of the file viewresult.php. Performing a manipulation of the argument seno results in sql injection. Remote exploitation of the attack is possible.
+Cybersecurity researchers at Huntress identify campaign to deliver potent trojan which targets users searching for ChatGPT via Google
 
-> **来源**: [CVE-2026-100739 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-100739)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Attackers Combine ChatGPT Feature Abuse With ClickFix to Deliver Trojan Malware](https://www.infosecurity-magazine.com/news/chatgpt-feature-abuse-to-deliver/)  #Infosecurity Magazine
 
-### 📰 2. Kiteworks lifts shutdown advisory after ‘credible threat intelligence’ from federal authorities
+### 📰 2. Attackers exploited Citrix NetScaler zero-day for at least three weeks undetected
 
-The company said it found and patched a previously unknown critical vulnerability in one product during the weekend shutdown, and has no indication it was exploited. The post Kiteworks lifts shutdown advisory after ‘credible threat intelligence’ from federal authorities appeared first on CyberScoop.
+Mandiant researchers said dozens of organizations have been impacted by attacks attributed to advanced and suspected state-sponsored threat groups. They expect more attacks to come. The post Attackers exploited Citrix NetScaler zero-day for at least three weeks undetected appeared first on CyberScoo
 
-> **来源**: [Kiteworks lifts shutdown advisory after ‘credible threat intelligence’ from federal authorities](https://cyberscoop.com/kiteworks-lifts-shutdown-advisory-after-credible-threat-intelligence-from-federal-authorities/)  #CyberScoop
+> **来源**: [Attackers exploited Citrix NetScaler zero-day for at least three weeks undetected](https://cyberscoop.com/citrix-netscaler-zero-day-attacks-three-weeks-undetected/)  #CyberScoop
 
-### 📰 3. Is ChatGPT your new Google Workspace alternative? Meet Space, Pages, and slides
+### 📰 3. Unsloth’s model picker had a code-execution problem
 
-OpenAI now lets teams create documents, build presentations, and work with AI agents inside ChatGPT
+True to its name, AI-model-training tool Unsloth would do more work than it was asked to when developers checked out a model: It would also allow arbitrary code to execute on their machines. Pillar Security found that simply selecting a model in Unsloth Studio caused the application to download and 
 
-> **来源**: [Is ChatGPT your new Google Workspace alternative? Meet Space, Pages, and slides](https://www.zdnet.com/innovation/chatgpt-space-pages-slides-google-workspace-alternative/)  #ZDNet Security
+> **来源**: [Unsloth’s model picker had a code-execution problem](https://www.csoonline.com/article/4228910/unsloths-model-picker-had-a-code-execution-problem-2.html)  #CSO Online
 
-### 📰 4. OpenAI pulls the plug on GPT 6.1 Astra as agents keep crossing lines
+### 📰 4. The MFA you have isn’t the MFA you think you have
 
-OpenAI has scrapped the planned October release of GPT-6.1 Astra after internal testing found the model did not meet the company’s safety and alignment standards. GPT-6.1 Astra was being developed as a more autonomous model capable of handling complex tasks with less human assistance, and was expect
+For nearly a decade, multi-factor authentication has been the control every security leader points to when asked how they’ve reduced account takeover risk. It sits on almost every compliance checklist and nearly every cyber insurance questionnaire, and for good reason — adding a second factor to a p
 
-> **来源**: [OpenAI pulls the plug on GPT 6.1 Astra as agents keep crossing lines](https://www.csoonline.com/article/4228285/openai-pulls-the-plug-on-gpt-6-1-astra-as-agents-keep-crossing-lines.html)  #CSO Online
+> **来源**: [The MFA you have isn’t the MFA you think you have](https://www.csoonline.com/article/4228386/the-mfa-you-have-isnt-the-mfa-you-think-you-have.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-100740 [CRITICAL 9.9]
+### ⚠️ 5. CVE-2026-101064 [HIGH 7.6]
 
-A vulnerability was detected in D-Link DIR-895L A1_102b07. Impacted is the function tunnel_set_params of the file tunnel.c of the component L2TP Control Channel Parser. Performing a manipulation results in out-of-bounds write. The attack may be initiated remotely. The exploit is now public and may b
+Obot before v0.23.0 contains a server-side request forgery vulnerability in remote MCP server registration that allows privileged users to specify arbitrary URLs without destination validation. Attackers with Power User or higher roles can coerce Obot to make requests to internal services and cloud 
 
-> **来源**: [CVE-2026-100740 [CRITICAL 9.9]](https://nvd.nist.gov/vuln/detail/CVE-2026-100740)  CVSS 9.9 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-101064 [HIGH 7.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-101064)  CVSS 7.6 HIGH · #NVD · #漏洞
 
-### 📰 6. US is looking to weave AI into critical infrastructure for cybersecurity, national cyber director says
+### 📰 6. Can we jail a superintelligence?
 
-Sean Cairncross said CEOs need to be cognizant of how it’s being used, however. The post US is looking to weave AI into critical infrastructure for cybersecurity, national cyber director says appeared first on CyberScoop.
+AI containment is essential, but security leaders should assume every boundary can fail once an agent can communicate, use tools, and act on real systems. On September 17, podcaster Steven Bartlett asked four AI experts an unusual question: Could you build a jail for a digital Einstein? The panel on
 
-> **来源**: [US is looking to weave AI into critical infrastructure for cybersecurity, national cyber director says](https://cyberscoop.com/national-cyber-director-ai-critical-infrastructure-cybersecurity/)  #CyberScoop
+> **来源**: [Can we jail a superintelligence?](https://www.csoonline.com/article/4228309/can-we-jail-a-superintelligence.html)  #CSO Online
 
-### 📰 7. RatHat's Evolving C2 Panel Points to Malware-as-a-Service Model
+### 📰 7. Apple Patches CoreGraphics Zero Day Exploited in Attacks
 
-RatHat's C2 panel now builds malware and ranks victims with AI across nearly 100 deployments
+Apple has patched CVE-2026-86950, a zero-day bug in the iOS CoreGraphics engine
 
-> **来源**: [RatHat's Evolving C2 Panel Points to Malware-as-a-Service Model](https://www.infosecurity-magazine.com/news/rathat-c2-panel-malware-as-a/)  #Infosecurity Magazine
+> **来源**: [Apple Patches CoreGraphics Zero Day Exploited in Attacks](https://www.infosecurity-magazine.com/news/apple-patches-coregraphics-zero/)  #Infosecurity Magazine
 
-### 📰 8. Amazon Bedrock AgentCore Flaws Could Expose AWS Credentials
+### 📰 8. Whatever happened to the 36-month IT security roadmap?
 
-AWS AgentCore SDK flaws could let attackers run commands in AI sandboxes and reach AWS credentials
+Insight Global’s John Dickson had a problem familiar to many CISOs today. Employees were embracing AI tools faster than his security team could track them, and new AI agents and service integrations spread rapidly across the environment alongside them. Dickson and his security org had plans to build
 
-> **来源**: [Amazon Bedrock AgentCore Flaws Could Expose AWS Credentials](https://www.infosecurity-magazine.com/news/aws-agentcore-sdk-flaws-ai/)  #Infosecurity Magazine
+> **来源**: [Whatever happened to the 36-month IT security roadmap?](https://www.csoonline.com/article/4228518/whatever-happened-to-the-36-month-it-security-roadmap.html)  #CSO Online
 
-### 📰 9. Japanese Railway Operators Hit with Weekend Cyber Attacks
+### ⚠️ 9. CVE-2026-101062 [HIGH 8.8]
 
-Tokyo Metro and Keio have revealed separate cyber-attacks
+Obot before v0.23.0 (affected versions <= v0.22.1) running with OBOT_SERVER_ENABLE_AUTHENTICATION=true exposes OAuth dynamic client registration without authentication and without any restriction on the redirect URIs a client may register. Because the authorization flow auto-completes for an already
 
-> **来源**: [Japanese Railway Operators Hit with Weekend Cyber Attacks](https://www.infosecurity-magazine.com/news/japanese-railway-operators-cyber/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-101062 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-101062)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 10. Nvidia releases Open Agent Safety Platform to monitor and govern agentic AI
+### 📰 10. AI-Found Vulnerabilities More Likely to Enable RCE, Google Says
 
-Nvidia on Monday rolled out an agentic governance system called the Open Agent Safety Platform that combines software with out-of-band DPU-based silicon in a reference system design that it says will secure agents “from testing to deployment.” But while the Nvidia design’s silicon-based component pr
+AI-discovered vulnerabilities are more likely to enable RCE, as disclosures and exploitation rise
 
-> **来源**: [Nvidia releases Open Agent Safety Platform to monitor and govern agentic AI](https://www.csoonline.com/article/4227843/nvidia-releases-open-agent-safety-platform-to-monitor-and-govern-agentic-ai.html)  #CSO Online
+> **来源**: [AI-Found Vulnerabilities More Likely to Enable RCE, Google Says](https://www.infosecurity-magazine.com/news/ai-found-vulnerabilities-rce/)  #Infosecurity Magazine
 
 ---
 
