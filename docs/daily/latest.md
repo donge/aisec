@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-01
+# 🤖🔒 AI+安全日报 | 2026-10-02
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Attackers Combine ChatGPT Feature Abuse With ClickFix to Deliver Trojan Malware
+### ⚠️ 1. CVE-2026-93355 [HIGH 8.1] 🔬
 
-Cybersecurity researchers at Huntress identify campaign to deliver potent trojan which targets users searching for ChatGPT via Google
+LiteLLM contains a weak authentication vulnerability that allows an attacker holding a valid JWT from the configured identity provider to authenticate as any existing user by exploiting an email-based fallback lookup in the JWT authentication flow without verifying the email_verified claim. Attacker
 
-> **来源**: [Attackers Combine ChatGPT Feature Abuse With ClickFix to Deliver Trojan Malware](https://www.infosecurity-magazine.com/news/chatgpt-feature-abuse-to-deliver/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-93355 [HIGH 8.1] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-93355)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 2. Attackers exploited Citrix NetScaler zero-day for at least three weeks undetected
+### 📰 2. Cisco SD-WAN Manager hit by zero-day admin access attack
 
-Mandiant researchers said dozens of organizations have been impacted by attacks attributed to advanced and suspected state-sponsored threat groups. They expect more attacks to come. The post Attackers exploited Citrix NetScaler zero-day for at least three weeks undetected appeared first on CyberScoo
+Cisco’s SD-WAN management software has been letting some attackers walk through an authentication check without having to prove who they are. The company says it has now fixed the flaw that was allowing it. The affected platform, Cisco Catalyst SD-WAN Manager, is used to configure and operate softwa
 
-> **来源**: [Attackers exploited Citrix NetScaler zero-day for at least three weeks undetected](https://cyberscoop.com/citrix-netscaler-zero-day-attacks-three-weeks-undetected/)  #CyberScoop
+> **来源**: [Cisco SD-WAN Manager hit by zero-day admin access attack](https://www.csoonline.com/article/4229603/cisco-sd-wan-manager-hit-by-zero-day-admin-access-attack-2.html)  #CSO Online
 
-### 📰 3. Unsloth’s model picker had a code-execution problem
+### ⚠️ 3. CVE-2026-101187 [CRITICAL 9.1]
 
-True to its name, AI-model-training tool Unsloth would do more work than it was asked to when developers checked out a model: It would also allow arbitrary code to execute on their machines. Pillar Security found that simply selecting a model in Unsloth Studio caused the application to download and 
+A weakness has been identified in Ziroom ZHOME A0101 1.0.1.0. This vulnerability affects the function pop_usb_device of the file usr/lib/lua/luci/controller/api/zrUsb.lua of the component USB Device Management API. This manipulation of the argument path causes command injection. The attack is possib
 
-> **来源**: [Unsloth’s model picker had a code-execution problem](https://www.csoonline.com/article/4228910/unsloths-model-picker-had-a-code-execution-problem-2.html)  #CSO Online
+> **来源**: [CVE-2026-101187 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-101187)  CVSS 9.1 CRITICAL · #NVD · #漏洞
 
-### 📰 4. The MFA you have isn’t the MFA you think you have
+### 📰 4. AI Threats Top Cybersecurity Preparedness Gap, PwC Finds
 
-For nearly a decade, multi-factor authentication has been the control every security leader points to when asked how they’ve reduced account takeover risk. It sits on almost every compliance checklist and nearly every cyber insurance questionnaire, and for good reason — adding a second factor to a p
+PwC finds global security leaders are most concerned about attacks on AI systems
 
-> **来源**: [The MFA you have isn’t the MFA you think you have](https://www.csoonline.com/article/4228386/the-mfa-you-have-isnt-the-mfa-you-think-you-have.html)  #CSO Online
+> **来源**: [AI Threats Top Cybersecurity Preparedness Gap, PwC Finds](https://www.infosecurity-magazine.com/news/mitigating-adversarial-ai-top/)  #Infosecurity Magazine
 
-### ⚠️ 5. CVE-2026-101064 [HIGH 7.6]
+### ⚠️ 5. CVE-2026-86950 [HIGH 8.8]
 
-Obot before v0.23.0 contains a server-side request forgery vulnerability in remote MCP server registration that allows privileged users to specify arbitrary URLs without destination validation. Attackers with Power User or higher roles can coerce Obot to make requests to internal services and cloud 
+An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.1 and iPadOS 26.7.1, macOS Sequoia 15.8.1, macOS Tahoe 26.7.1. Processing a maliciously crafted file may lead to arbitrary code execution. Apple is aware of a report that this issue may have bee
 
-> **来源**: [CVE-2026-101064 [HIGH 7.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-101064)  CVSS 7.6 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-86950 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-86950)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 6. Can we jail a superintelligence?
+### 📰 6. Critical Cisco Catalyst SD-WAN Zero-Day Under Active Exploitation
 
-AI containment is essential, but security leaders should assume every boundary can fail once an agent can communicate, use tools, and act on real systems. On September 17, podcaster Steven Bartlett asked four AI experts an unusual question: Could you build a jail for a digital Einstein? The panel on
+Vulnerability in Cisco Catalyst SD-WAN Manager allows an unauthenticated, remote attacker to access systems with admin privileges
 
-> **来源**: [Can we jail a superintelligence?](https://www.csoonline.com/article/4228309/can-we-jail-a-superintelligence.html)  #CSO Online
+> **来源**: [Critical Cisco Catalyst SD-WAN Zero-Day Under Active Exploitation](https://www.infosecurity-magazine.com/news/critical-cisco-catalyst-sdwan/)  #Infosecurity Magazine
 
-### 📰 7. Apple Patches CoreGraphics Zero Day Exploited in Attacks
+### 📰 7. AI policy circles targeted in China-linked phishing operation
 
-Apple has patched CVE-2026-86950, a zero-day bug in the iOS CoreGraphics engine
+Cybersecurity firm Proofpoint said TA419 impersonated officials and AI industry figures in an effort to gain access to cloud accounts held by U.S. think tank, university and legal-sector experts. The post AI policy circles targeted in China-linked phishing operation appeared first on CyberScoop.
 
-> **来源**: [Apple Patches CoreGraphics Zero Day Exploited in Attacks](https://www.infosecurity-magazine.com/news/apple-patches-coregraphics-zero/)  #Infosecurity Magazine
+> **来源**: [AI policy circles targeted in China-linked phishing operation](https://cyberscoop.com/china-cyber-espionage-ta419-phishing-us-ai-policy-experts/)  #CyberScoop
 
-### 📰 8. Whatever happened to the 36-month IT security roadmap?
+### 📰 8. Google makes Gemini 4 AI model available to a trusted few
 
-Insight Global’s John Dickson had a problem familiar to many CISOs today. Employees were embracing AI tools faster than his security team could track them, and new AI agents and service integrations spread rapidly across the environment alongside them. Dickson and his security org had plans to build
+Google has unveiled a new frontier AI model after months of delay. Gemini 4 Argon is designed to handle complex, long-horizon workloads spanning software engineering, enterprise knowledge work such as legal and financial analysis, and cybersecurity. But only a few organizations can get their hands o
 
-> **来源**: [Whatever happened to the 36-month IT security roadmap?](https://www.csoonline.com/article/4228518/whatever-happened-to-the-36-month-it-security-roadmap.html)  #CSO Online
+> **来源**: [Google makes Gemini 4 AI model available to a trusted few](https://www.csoonline.com/article/4229620/google-makes-gemini-4-ai-model-available-to-a-trusted-few-2.html)  #CSO Online
 
-### ⚠️ 9. CVE-2026-101062 [HIGH 8.8]
+### 📰 9. OpenAI reveals ‘novel’ encryption bypass used in distillation attack
 
-Obot before v0.23.0 (affected versions <= v0.22.1) running with OBOT_SERVER_ENABLE_AUTHENTICATION=true exposes OAuth dynamic client registration without authentication and without any restriction on the redirect URIs a client may register. Because the authorization flow auto-completes for an already
+The company said individuals associated with Chinese company MoonshotAI were behind parts of the attack, but did not offer hard evidence for the claim. The post OpenAI reveals ‘novel’ encryption bypass used in distillation attack appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-101062 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-101062)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [OpenAI reveals ‘novel’ encryption bypass used in distillation attack](https://cyberscoop.com/openai-moonshot-ai-model-distillation-attack/)  #CyberScoop
 
-### 📰 10. AI-Found Vulnerabilities More Likely to Enable RCE, Google Says
+### 📰 10. WaterISAC reckons with range of threats after summer of cyberattacks
 
-AI-discovered vulnerabilities are more likely to enable RCE, as disclosures and exploitation rise
+Internet-exposed tech, PLCs, outside integrators and inside protections are all factors the water sector’s information sharing and analysis center is watching. The post WaterISAC reckons with range of threats after summer of cyberattacks appeared first on CyberScoop.
 
-> **来源**: [AI-Found Vulnerabilities More Likely to Enable RCE, Google Says](https://www.infosecurity-magazine.com/news/ai-found-vulnerabilities-rce/)  #Infosecurity Magazine
+> **来源**: [WaterISAC reckons with range of threats after summer of cyberattacks](https://cyberscoop.com/water-utility-cyberattacks-waterisac-cyware-threat-intelligence/)  #CyberScoop
 
 ---
 
