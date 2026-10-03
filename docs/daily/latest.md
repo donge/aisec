@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-03
+# 🤖🔒 AI+安全日报 | 2026-10-04
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Rolling the cyber dice with open-source and open-weight AI models
+### ⚠️ 1. CVE-2024-58387 [HIGH 7.5]
 
-With typical cybersecurity exposure, I can conduct pen testing with deterministic tools. I am able to predict how a piece of software is going to respond. I even stand a decent chance of finding vulnerabilities before they can be exploited against me. What we are dealing with now is a new kind of ex
+Inspur Haiyue HCM Cloud contains an arbitrary file read vulnerability in the /api/model_report/file/download endpoint that allows unauthenticated remote attackers to read arbitrary files by supplying unvalidated path parameters index and ext. Attackers can craft requests such as /api/model_report/fi
 
-> **来源**: [Rolling the cyber dice with open-source and open-weight AI models](https://www.csoonline.com/article/4229623/rolling-the-cyber-dice-with-open-source-and-open-weight-ai-models.html)  #CSO Online
+> **来源**: [CVE-2024-58387 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2024-58387)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 2. Two Zero-Days Exploited in Attack on Dutch Institute for Vulnerability Disclosure
+### ⚠️ 2. CVE-2023-54403 [HIGH 7.5]
 
-The Dutch Institute for Vulnerability Disclosure reveals agentic AI-powered attack using Zammad zero-days
+Yonyou U8 CRM before V16.5 and V18 contains an arbitrary file read vulnerability in /ajax/getemaildata.php that allows unauthenticated attackers to bypass authentication using the DontCheckLogin=1 parameter and read arbitrary files via an unvalidated filePath parameter. Attackers can exploit this fl
 
-> **来源**: [Two Zero-Days Exploited in Attack on Dutch Institute for Vulnerability Disclosure](https://www.infosecurity-magazine.com/news/zerodays-dutch-institute/)  #Infosecurity Magazine
+> **来源**: [CVE-2023-54403 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2023-54403)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 3. A Flaw in ChatGPT’s Mac App Could Have Let Hackers Grab Sensitive Data
+### ⚠️ 3. CVE-2023-54402 [HIGH 7.5]
 
-While the focus has been on AI agents’ hacking capabilities, a recently patched vulnerability in a ChatGPT app shows that AI software is itself an inviting—and vulnerable—target.
+iDocView contains a server-side request forgery vulnerability in its /doc/upload endpoint that allows remote unauthenticated attackers to fetch arbitrary URLs by supplying a hardcoded default token value (testtoken) to bypass authentication. Attackers can exploit the unrestricted URL scheme handling
 
-> **来源**: [A Flaw in ChatGPT’s Mac App Could Have Let Hackers Grab Sensitive Data](https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/)  #Wired Security
+> **来源**: [CVE-2023-54402 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2023-54402)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 4. Microsoft: AI Cuts Post-Compromise Attack Time to Minutes
+### ⚠️ 4. CVE-2026-101885 [HIGH 7.8]
 
-Microsoft has warned that threat actors have gained the advantage over defenders by using AI to enhance the speed and scale of attacks
+ZeroClaw versions before 0.8.5 built with plugins-wasm feature contain a path traversal vulnerability in plugin installation that fails to validate the wasm_path manifest field. Attackers can convince users to install crafted plugins that write arbitrary files to paths outside the plugins directory,
 
-> **来源**: [Microsoft: AI Cuts Post-Compromise Attack Time to Minutes](https://www.infosecurity-magazine.com/news/microsoft-ai-attack-time-minutes/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-101885 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-101885)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 5. This new ChatGPT scam tricks you into installing malware – how to spot the trap
+### 📰 5. N0n ransomware: what you need to know
 
-This authentic-looking scam starts with a sponsored Google link – and it’s catching people off-guard.
+N0n is a newly-emerged cyber extortion gang. The group was first spotted in the middle of September 2026, and within days it had published on its dark web leak site details of what it claimed to be around a dozen victims. Since then, the tally has continued to grow. Read more in my article on the Fo
 
-> **来源**: [This new ChatGPT scam tricks you into installing malware – how to spot the trap](https://www.zdnet.com/innovation/chatgpt-scam-malware-trap/)  #ZDNet Security
+> **来源**: [N0n ransomware: what you need to know](https://www.fortra.com/blog/n0n-ransomware-what-you-need-know)  #Graham Cluley
 
-### 📰 6. EU Cyber Resilience Act ‘completely kills’ manual vulnerability triage
+### 📰 6. Revolut scam wave steals £180,000 from Jersey residents in just four weeks
 
-Independent security experts see the EU Cyber Resilience Act (CRA) reshaping international technology markets to emphasize cyber resilience from the ground up, thereby testing the operational capacities of technology vendors whose wares compete in those markets. The EU CRA introduces mandatory repor
+If you live in Jersey and bank with Revolut, you should be on your guard against scam phone calls. Because local police on the largest of the Channel Islands have warned that over a single four-week period, an astonishing 75% of all scam crime reports they have received have involved Revolut account
 
-> **来源**: [EU Cyber Resilience Act ‘completely kills’ manual vulnerability triage](https://www.csoonline.com/article/4229824/eu-cyber-resilience-act-completely-kills-manual-vulnerability-triage.html)  #CSO Online
+> **来源**: [Revolut scam wave steals £180,000 from Jersey residents in just four weeks](https://www.bitdefender.com/en-us/blog/hotforsecurity/revolut-scam-jersey)  #Graham Cluley
 
-### 📰 7. Pentagon personnel database breach exposes personal data of millions
+### 📰 7. US Navy tells sailors and their families: scrub your social media, enemies are watching
 
-A Pentagon personnel database was breached for nine months without anyone noticing. Over three million people are affected. Read more in my article on the Hot for Security blog.
+The US Navy has told its entire workforce of 340,000 active-duty personnel, 58,000 reservists, and 210,000 civilian employees to clean up their social media profiles, because adversaries might be using them to determine who they are, where they live, and when they may not be at home. Read more in my
 
-> **来源**: [Pentagon personnel database breach exposes personal data of millions](https://www.bitdefender.com/en-us/blog/hotforsecurity/pentagon-personnel-database-breach-personal-data-millions)  #Graham Cluley
+> **来源**: [US Navy tells sailors and their families: scrub your social media, enemies are watching](https://www.bitdefender.com/en-us/blog/hotforsecurity/us-navy-sailors-families-scrub-social-media-enemies-watching)  #Graham Cluley
 
-### 📰 8. Microsoft Warns NeedyMantis Malware Enables Persistent Network Access
+### 📰 8. Citrix Patches Critical Zero Days Under Active Exploitation
 
-Microsoft Threat Intelligence warns that NeedyMantis threat actor from China has targeted organizations across a range of industries
+Citrix has confirmed exploitation of two critical zero-day RCE bugs
 
-> **来源**: [Microsoft Warns NeedyMantis Malware Enables Persistent Network Access](https://www.infosecurity-magazine.com/news/microsoft-needymantis-malware/)  #Infosecurity Magazine
+> **来源**: [Citrix Patches Critical Zero Days Under Active Exploitation](https://www.infosecurity-magazine.com/news/citrix-patches-critical-zero-days/)  #Infosecurity Magazine
 
-### 📰 9. Deepfakes Are Becoming a Costly Reality for Businesses, Report Warns
+### 📰 9. Ransomware Attacks Reach Record High for 2026
 
-A quarter of victims of deepfake attacks have lost over $1m. CISOs worry that boardrooms don’t understand the threat
+A total of 1073 firms fell victim to ransomware attacks globally in August, with the industrial sector the most affected, according to new NCC data
 
-> **来源**: [Deepfakes Are Becoming a Costly Reality for Businesses, Report Warns](https://www.infosecurity-magazine.com/news/deepfakes-costly-reality-for/)  #Infosecurity Magazine
+> **来源**: [Ransomware Attacks Reach Record High for 2026](https://www.infosecurity-magazine.com/news/ransomware-attacks-reach-record/)  #Infosecurity Magazine
 
-### 📰 10. FBI tells ShinyHunters members to turn themselves in, after arrest of alleged leader
+### 📰 10. ShinyHunters suspect arrested, and is now investigated over alleged murder plots
 
-The FBI has a very simple message for the ShinyHunters gang: give yourselves up. On Tuesday, FBI cyber division assistant director Brett Leatherman released a video, thanking the Dutch police for arresting a 24-year-old man they believe to be a member of the group, and and who is separately suspecte
+An alleged key figure in the ShinyHunters cybercrime group has been arrested in the Netherlands, and - in a sinister twist - the 24-year-old suspect is also being investigated for attempting to arrange two murders. Read more in my article on the Hot for Security blog.
 
-> **来源**: [FBI tells ShinyHunters members to turn themselves in, after arrest of alleged leader](https://www.bitdefender.com/en-us/blog/hotforsecurity/fbi-shinyhunters-turn-themselves-in-arrest-leader)  #Graham Cluley
+> **来源**: [ShinyHunters suspect arrested, and is now investigated over alleged murder plots](https://www.bitdefender.com/en-us/blog/hotforsecurity/shinyhunters-suspect-arrested-now-investigated-alleged-murder-plots)  #Graham Cluley
 
 ---
 
