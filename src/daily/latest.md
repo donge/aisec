@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-04
+# 🤖🔒 AI+安全日报 | 2026-10-05
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2024-58387 [HIGH 7.5]
+### ⚠️ 1. CVE-2026-104059 [HIGH 8.1]
 
-Inspur Haiyue HCM Cloud contains an arbitrary file read vulnerability in the /api/model_report/file/download endpoint that allows unauthenticated remote attackers to read arbitrary files by supplying unvalidated path parameters index and ext. Attackers can craft requests such as /api/model_report/fi
+Lektor 3.3.14 and 3.4.0b15 contains a cross-site request forgery vulnerability in the admin API blueprint that allows unauthenticated attackers to perform state-changing actions by sending cross-origin requests without CSRF tokens, Origin/Referer validation, CORS configuration, or Host allowlisting.
 
-> **来源**: [CVE-2024-58387 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2024-58387)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-104059 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-104059)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### ⚠️ 2. CVE-2023-54403 [HIGH 7.5]
+### ⚠️ 2. CVE-2026-104057 [HIGH 7.5]
 
-Yonyou U8 CRM before V16.5 and V18 contains an arbitrary file read vulnerability in /ajax/getemaildata.php that allows unauthenticated attackers to bypass authentication using the DontCheckLogin=1 parameter and read arbitrary files via an unvalidated filePath parameter. Attackers can exploit this fl
+Podgrab contains an unauthenticated denial-of-service vulnerability caused by unsynchronized concurrent access to shared maps (activePlayers and allConnections) in its WebSocket handler, where Wshandler and HandleWebsocketMessages goroutines read and write these maps without a mutex. A remote attack
 
-> **来源**: [CVE-2023-54403 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2023-54403)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-104057 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-104057)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### ⚠️ 3. CVE-2023-54402 [HIGH 7.5]
+### 📰 3. OperTraitors: How Kubernetes Operators Betray Your Security Posture
 
-iDocView contains a server-side request forgery vulnerability in its /doc/upload endpoint that allows remote unauthenticated attackers to fetch arbitrary URLs by supplying a hardcoded default token value (testtoken) to bypass authentication. Attackers can exploit the unrestricted URL scheme handling
+We introduce OperTraitor, a tool to audit privileges of Kubernetes operators, identify excessive RBAC risks, and secure non-human identities. The post OperTraitors: How Kubernetes Operators Betray Your Security Posture appeared first on Unit 42.
 
-> **来源**: [CVE-2023-54402 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2023-54402)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [OperTraitors: How Kubernetes Operators Betray Your Security Posture](https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/)  #Unit 42
 
-### ⚠️ 4. CVE-2026-101885 [HIGH 7.8]
+### 📰 4. Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America
 
-ZeroClaw versions before 0.8.5 built with plugins-wasm feature contain a path traversal vulnerability in plugin installation that fails to validate the wasm_path manifest field. Attackers can convince users to install crafted plugins that write arbitrary files to paths outside the plugins directory,
+Explore how attackers targeting Latin American entities use AI for data exfiltration and how basic OpSec errors allow defenders to disrupt operations. The post Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America appeared first on Unit 42.
 
-> **来源**: [CVE-2026-101885 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-101885)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America](https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/)  #Unit 42
 
-### 📰 5. N0n ransomware: what you need to know
+### 📰 5. The State of AI-Enabled Malware August 2026: From Brand Abuse to Agentic Execution
 
-N0n is a newly-emerged cyber extortion gang. The group was first spotted in the middle of September 2026, and within days it had published on its dark web leak site details of what it claimed to be around a dozen victims. Since then, the tally has continued to grow. Read more in my article on the Fo
+Explore Unit 42 research on AI-enabled malware. Learn how existing behavioral detection and endpoint analytics stop AI-authored code before execution. The post The State of AI-Enabled Malware August 2026: From Brand Abuse to Agentic Execution appeared first on Unit 42.
 
-> **来源**: [N0n ransomware: what you need to know](https://www.fortra.com/blog/n0n-ransomware-what-you-need-know)  #Graham Cluley
+> **来源**: [The State of AI-Enabled Malware August 2026: From Brand Abuse to Agentic Execution](https://unit42.paloaltonetworks.com/ai-enabled-malware-analysis/)  #Unit 42
 
-### 📰 6. Revolut scam wave steals £180,000 from Jersey residents in just four weeks
+### 📰 6. Muse Creates Detailed Profiles of All Your Friends and Family
 
-If you live in Jersey and bank with Revolut, you should be on your guard against scam phone calls. Because local police on the largest of the Channel Islands have warned that over a single four-week period, an astonishing 75% of all scam crime reports they have received have involved Revolut account
+Millions have downloaded Meta’s AI agent Muse. But getting it to do your bidding comes with privacy costs.
 
-> **来源**: [Revolut scam wave steals £180,000 from Jersey residents in just four weeks](https://www.bitdefender.com/en-us/blog/hotforsecurity/revolut-scam-jersey)  #Graham Cluley
+> **来源**: [Muse Creates Detailed Profiles of All Your Friends and Family](https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/)  #Wired Security
 
-### 📰 7. US Navy tells sailors and their families: scrub your social media, enemies are watching
+### 📰 7. Inside the Modern SOC: Defending the Cross-Environment Pivot
 
-The US Navy has told its entire workforce of 340,000 active-duty personnel, 58,000 reservists, and 210,000 civilian employees to clean up their social media profiles, because adversaries might be using them to determine who they are, where they live, and when they may not be at home. Read more in my
+Cross-environment attacks demand a new approach to security operations. Learn how Unit 42 Managed XSIAM helps SOC teams investigate complete attack paths. The post Inside the Modern SOC: Defending the Cross-Environment Pivot appeared first on Unit 42.
 
-> **来源**: [US Navy tells sailors and their families: scrub your social media, enemies are watching](https://www.bitdefender.com/en-us/blog/hotforsecurity/us-navy-sailors-families-scrub-social-media-enemies-watching)  #Graham Cluley
+> **来源**: [Inside the Modern SOC: Defending the Cross-Environment Pivot](https://unit42.paloaltonetworks.com/soc-cross-environment-pivot/)  #Unit 42
 
-### 📰 8. Citrix Patches Critical Zero Days Under Active Exploitation
+### 📰 8. Cyber-Attacks Cost Organizations $52,000 on Average
 
-Citrix has confirmed exploitation of two critical zero-day RCE bugs
+Hiscox highlighted the huge financial and operational costs of cyber-attacks, with the average cost of an incident at $52,000
 
-> **来源**: [Citrix Patches Critical Zero Days Under Active Exploitation](https://www.infosecurity-magazine.com/news/citrix-patches-critical-zero-days/)  #Infosecurity Magazine
+> **来源**: [Cyber-Attacks Cost Organizations $52,000 on Average](https://www.infosecurity-magazine.com/news/cyberattacks-cost-organizations/)  #Infosecurity Magazine
 
-### 📰 9. Ransomware Attacks Reach Record High for 2026
+### 📰 9. Major Cyber Vendors Turn to New UK Testing Program as MITRE Evaluations Face Changes
 
-A total of 1073 firms fell victim to ransomware attacks globally in August, with the industrial sector the most affected, according to new NCC data
+A group of cyber threat detection providers, including CrowdStrike, Palo Alto Networks and Sophos, have joined SE Labs’ PIVOT program
 
-> **来源**: [Ransomware Attacks Reach Record High for 2026](https://www.infosecurity-magazine.com/news/ransomware-attacks-reach-record/)  #Infosecurity Magazine
+> **来源**: [Major Cyber Vendors Turn to New UK Testing Program as MITRE Evaluations Face Changes](https://www.infosecurity-magazine.com/news/cyber-vendors-mitre-uk-testing/)  #Infosecurity Magazine
 
-### 📰 10. ShinyHunters suspect arrested, and is now investigated over alleged murder plots
+### 📰 10. Defense Cyber Spending Set to Surge Amid Rising Attacks on Military Systems
 
-An alleged key figure in the ShinyHunters cybercrime group has been arrested in the Netherlands, and - in a sinister twist - the 24-year-old suspect is also being investigated for attempting to arrange two murders. Read more in my article on the Hot for Security blog.
+MarketsandMarkets has projected the cyber warfare market to double by 2031, amid growing demand for defensive and offensive cyber capabilities in the military
 
-> **来源**: [ShinyHunters suspect arrested, and is now investigated over alleged murder plots](https://www.bitdefender.com/en-us/blog/hotforsecurity/shinyhunters-suspect-arrested-now-investigated-alleged-murder-plots)  #Graham Cluley
+> **来源**: [Defense Cyber Spending Set to Surge Amid Rising Attacks on Military Systems](https://www.infosecurity-magazine.com/news/defense-cyber-spending-attacks/)  #Infosecurity Magazine
 
 ---
 
