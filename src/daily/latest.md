@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-05
+# 🤖🔒 AI+安全日报 | 2026-10-06
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-104059 [HIGH 8.1]
+### 📰 1. Citrix warns of actively exploited NetScaler flaw days after zero-day patch rush
 
-Lektor 3.3.14 and 3.4.0b15 contains a cross-site request forgery vulnerability in the admin API blueprint that allows unauthenticated attackers to perform state-changing actions by sending cross-origin requests without CSRF tokens, Origin/Referer validation, CORS configuration, or Host allowlisting.
+Citrix has warned customers about another high-severity vulnerability in its NetScaler ADC and NetScaler Gateway products, just days after the company urged them to fix a separate batch of flaws that included two actively exploited zero-days. The new vulnerability, tracked as CVE-2026-88779, is a me
 
-> **来源**: [CVE-2026-104059 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-104059)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [Citrix warns of actively exploited NetScaler flaw days after zero-day patch rush](https://www.csoonline.com/article/4230642/citrix-warns-of-actively-exploited-netscaler-flaw-days-after-zero-day-patch-rush.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-104057 [HIGH 7.5]
+### ⚠️ 2. CVE-2026-95102 [CRITICAL 9.4]
 
-Podgrab contains an unauthenticated denial-of-service vulnerability caused by unsynchronized concurrent access to shared maps (activePlayers and allConnections) in its WebSocket handler, where Wshandler and HandleWebsocketMessages goroutines read and write these maps without a mutex. A remote attack
+WebSocket endpoints lack proper authentication mechanisms, enabling attackers to impersonate charging stations. As a result, attackers can exploit this weakness to gain unauthorized access to sensitive data or perform unauthorized actions. Given that no authentication is required, this can lead to p
 
-> **来源**: [CVE-2026-104057 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-104057)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-95102 [CRITICAL 9.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-95102)  CVSS 9.4 CRITICAL · #NVD · #漏洞
 
-### 📰 3. OperTraitors: How Kubernetes Operators Betray Your Security Posture
+### ⚠️ 3. CVE-2026-104433 [HIGH 7.5]
 
-We introduce OperTraitor, a tool to audit privileges of Kubernetes operators, identify excessive RBAC risks, and secure non-human identities. The post OperTraitors: How Kubernetes Operators Betray Your Security Posture appeared first on Unit 42.
+Mooncake transfer engine before 0.3.12 contains an out-of-bounds read vulnerability in the readString function of include/common.h that allows unauthenticated attackers to crash the service by sending a zero-length handshake frame. Attackers can connect to the handshake port listening on all interfa
 
-> **来源**: [OperTraitors: How Kubernetes Operators Betray Your Security Posture](https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/)  #Unit 42
+> **来源**: [CVE-2026-104433 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-104433)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 4. Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America
+### 📰 4. Should the CISO role be split in two?
 
-Explore how attackers targeting Latin American entities use AI for data exfiltration and how basic OpSec errors allow defenders to disrupt operations. The post Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America appeared first on Unit 42.
+In its roughly 30-year history, the CISO role has been reshaped by waves of new technology and rising cyber threats. In many organizations, CISOs now own risk reporting, information risk management, threat monitoring, cyber risk accountability and governance, and security strategy. And as AI and dig
 
-> **来源**: [Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America](https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/)  #Unit 42
+> **来源**: [Should the CISO role be split in two?](https://www.csoonline.com/article/4230243/should-the-ciso-role-be-split-in-two.html)  #CSO Online
 
-### 📰 5. The State of AI-Enabled Malware August 2026: From Brand Abuse to Agentic Execution
+### ⚠️ 5. CVE-2026-84411 [CRITICAL 9.8]
 
-Explore Unit 42 research on AI-enabled malware. Learn how existing behavioral detection and endpoint analytics stop AI-authored code before execution. The post The State of AI-Enabled Malware August 2026: From Brand Abuse to Agentic Execution appeared first on Unit 42.
+The web management service in affected RouterOS versions contains an integer underflow in its HTTP request body handling that is reachable before authentication. This can be leveraged by an unauthenticated network attacker to achieve arbitrary code execution as root, or to cause a denial of service,
 
-> **来源**: [The State of AI-Enabled Malware August 2026: From Brand Abuse to Agentic Execution](https://unit42.paloaltonetworks.com/ai-enabled-malware-analysis/)  #Unit 42
+> **来源**: [CVE-2026-84411 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-84411)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 6. Muse Creates Detailed Profiles of All Your Friends and Family
+### ⚠️ 6. CVE-2026-97363 [HIGH 7.5]
 
-Millions have downloaded Meta’s AI agent Muse. But getting it to do your bidding comes with privacy costs.
+The WebSocket Application Programming Interface lacks restrictions on the number of authentication requests. This absence of rate limiting may allow an attacker to conduct denial-of-service attacks or brute-force attacks to gain unauthorized access.
 
-> **来源**: [Muse Creates Detailed Profiles of All Your Friends and Family](https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/)  #Wired Security
+> **来源**: [CVE-2026-97363 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-97363)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 7. Inside the Modern SOC: Defending the Cross-Environment Pivot
+### 📰 7. New Stealthy Linux Backdoors Target Telecoms, Masquerade as Email Traffic
 
-Cross-environment attacks demand a new approach to security operations. Learn how Unit 42 Managed XSIAM helps SOC teams investigate complete attack paths. The post Inside the Modern SOC: Defending the Cross-Environment Pivot appeared first on Unit 42.
+Rapid7 has uncovered new BPFDoor, BPF Rekoobe and AVERAT malware variants targeting telecom and network-edge appliances in South Korea and Taiwan
 
-> **来源**: [Inside the Modern SOC: Defending the Cross-Environment Pivot](https://unit42.paloaltonetworks.com/soc-cross-environment-pivot/)  #Unit 42
+> **来源**: [New Stealthy Linux Backdoors Target Telecoms, Masquerade as Email Traffic](https://www.infosecurity-magazine.com/news/smtp-linux-backdoors-network-edge/)  #Infosecurity Magazine
 
-### 📰 8. Cyber-Attacks Cost Organizations $52,000 on Average
+### 📰 8. Google Suspends Open-Source Bug Bounty Due to AI Vulnerability Reports
 
-Hiscox highlighted the huge financial and operational costs of cyber-attacks, with the average cost of an incident at $52,000
+Google has paused its Open Source Vulnerability Rewards Program due to a flood of AI submissions
 
-> **来源**: [Cyber-Attacks Cost Organizations $52,000 on Average](https://www.infosecurity-magazine.com/news/cyberattacks-cost-organizations/)  #Infosecurity Magazine
+> **来源**: [Google Suspends Open-Source Bug Bounty Due to AI Vulnerability Reports](https://www.infosecurity-magazine.com/news/google-suspends-opensource-bug/)  #Infosecurity Magazine
 
-### 📰 9. Major Cyber Vendors Turn to New UK Testing Program as MITRE Evaluations Face Changes
+### 📰 9. ClingSTUN Malware Turns Unpatched IoT Devices Into Proxy Nodes
 
-A group of cyber threat detection providers, including CrowdStrike, Palo Alto Networks and Sophos, have joined SE Labs’ PIVOT program
+ClingSTUN exploits known IoT flaws and abuses public STUN servers to keep proxy access to devices
 
-> **来源**: [Major Cyber Vendors Turn to New UK Testing Program as MITRE Evaluations Face Changes](https://www.infosecurity-magazine.com/news/cyber-vendors-mitre-uk-testing/)  #Infosecurity Magazine
+> **来源**: [ClingSTUN Malware Turns Unpatched IoT Devices Into Proxy Nodes](https://www.infosecurity-magazine.com/news/clingstun-backdoor-unpatched-iot/)  #Infosecurity Magazine
 
-### 📰 10. Defense Cyber Spending Set to Surge Amid Rising Attacks on Military Systems
+### 📰 10. Atomic macOS (AMOS) Stealer Activity
 
-MarketsandMarkets has projected the cyber warfare market to double by 2031, amid growing demand for defensive and offensive cyber capabilities in the military
+Modern macOS malware uses deceptive setup guides to steal credentials and sensitive user data. Learn how to identify and block these threats. The post Atomic macOS (AMOS) Stealer Activity appeared first on Unit 42.
 
-> **来源**: [Defense Cyber Spending Set to Surge Amid Rising Attacks on Military Systems](https://www.infosecurity-magazine.com/news/defense-cyber-spending-attacks/)  #Infosecurity Magazine
+> **来源**: [Atomic macOS (AMOS) Stealer Activity](https://unit42.paloaltonetworks.com/atomic-macos-amos-stealer-activity/)  #Unit 42
 
 ---
 
