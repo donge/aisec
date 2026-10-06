@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-06
+# 🤖🔒 AI+安全日报 | 2026-10-07
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Citrix warns of actively exploited NetScaler flaw days after zero-day patch rush
+### 📰 1. AI accelerates n-day attacks, as flaw disclosures and exploits double
 
-Citrix has warned customers about another high-severity vulnerability in its NetScaler ADC and NetScaler Gateway products, just days after the company urged them to fix a separate batch of flaws that included two actively exploited zero-days. The new vulnerability, tracked as CVE-2026-88779, is a me
+Attackers are increasingly weaponizing already-disclosed flaws rather than new zero-days, and AI tools may be accelerating how quickly they do it. According to a report from Google’s Threat Intelligence Group (GTIG), attackers have exploited more vulnerabilities in the wild thus far this year than t
 
-> **来源**: [Citrix warns of actively exploited NetScaler flaw days after zero-day patch rush](https://www.csoonline.com/article/4230642/citrix-warns-of-actively-exploited-netscaler-flaw-days-after-zero-day-patch-rush.html)  #CSO Online
+> **来源**: [AI accelerates n-day attacks, as flaw disclosures and exploits double](https://www.csoonline.com/article/4230247/ai-accelerates-n-day-attacks-as-flaw-disclosures-and-exploits-double.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-95102 [CRITICAL 9.4]
+### 📰 2. Dell patches 18 critical flaws that could hand attackers the keys to storage and Kubernetes
 
-WebSocket endpoints lack proper authentication mechanisms, enabling attackers to impersonate charging stations. As a result, attackers can exploit this weakness to gain unauthorized access to sensitive data or perform unauthorized actions. Given that no authentication is required, this can lead to p
+Dell’s security team has had a busy week. The company has announced a slew of Common Vulnerabilities and Exposures (CVEs) impacting its Dell Container Storage Modules (CSM) and Dell System Update (DSU). Disclosed by Dell in two security notices, these critical vulnerabilities could allow unauthentic
 
-> **来源**: [CVE-2026-95102 [CRITICAL 9.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-95102)  CVSS 9.4 CRITICAL · #NVD · #漏洞
+> **来源**: [Dell patches 18 critical flaws that could hand attackers the keys to storage and Kubernetes](https://www.csoonline.com/article/4230923/dell-patches-18-critical-flaws-that-could-hand-attackers-the-keys-to-storage-and-kubernetes.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-104433 [HIGH 7.5]
+### 📰 3. The AI app builder your team trusts has a root-level backdoor
 
-Mooncake transfer engine before 0.3.12 contains an out-of-bounds read vulnerability in the readString function of include/common.h that allows unauthenticated attackers to crash the service by sending a zero-length handshake frame. Attackers can connect to the handshake port listening on all interfa
+The fastest-growing category of enterprise software right now is also the least scrutinized from a security standpoint. AI application platforms — tools that let teams build, connect and automate AI-powered workflows without writing much code — are landing in production environments faster than secu
 
-> **来源**: [CVE-2026-104433 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-104433)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [The AI app builder your team trusts has a root-level backdoor](https://www.csoonline.com/article/4230802/the-ai-app-builder-your-team-trusts-has-a-root-level-backdoor.html)  #CSO Online
 
-### 📰 4. Should the CISO role be split in two?
+### 📰 4. New Linux malware turns vulnerable IoT devices into proxy nodes
 
-In its roughly 30-year history, the CISO role has been reshaped by waves of new technology and rising cyber threats. In many organizations, CISOs now own risk reporting, information risk management, threat monitoring, cyber risk accountability and governance, and security strategy. And as AI and dig
+A new Linux backdoor is turning vulnerable internet-facing devices into remotely controlled proxy nodes, while using the public Session Traversal Utilities for NAT (STUN) infrastructure to blend into normal VoIP and WebRTC traffic. Fortinet’s FortiGuard Labs said it has been tracking the malware, du
 
-> **来源**: [Should the CISO role be split in two?](https://www.csoonline.com/article/4230243/should-the-ciso-role-be-split-in-two.html)  #CSO Online
+> **来源**: [New Linux malware turns vulnerable IoT devices into proxy nodes](https://www.csoonline.com/article/4231136/new-linux-malware-turns-vulnerable-iot-devices-into-proxy-nodes.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-84411 [CRITICAL 9.8]
+### ⚠️ 5. CVE-2026-105126 [HIGH 7.2]
 
-The web management service in affected RouterOS versions contains an integer underflow in its HTTP request body handling that is reachable before authentication. This can be leveraged by an unauthenticated network attacker to achieve arbitrary code execution as root, or to cause a denial of service,
+LaraDashboard before 1.4.8 contains an improper privilege management vulnerability that allows authenticated Admin users to escalate to Superadmin by editing or renaming roles. Attackers with role.edit can rename their role to Superadmin or grant user.login_as permissions to take over accounts and r
 
-> **来源**: [CVE-2026-84411 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-84411)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-105126 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-105126)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### ⚠️ 6. CVE-2026-97363 [HIGH 7.5]
+### ⚠️ 6. CVE-2026-105123 [HIGH 8.8]
 
-The WebSocket Application Programming Interface lacks restrictions on the number of authentication requests. This absence of rate limiting may allow an attacker to conduct denial-of-service attacks or brute-force attacks to gain unauthorized access.
+W (vincent-peugnet/wcms) through 3.18.0 contains a remote code execution vulnerability that allows authenticated editors to write arbitrary files by abusing the unvalidated path in POST /api/v0/media/upload/[*:path]. Attackers can upload .php files executed by the web server, use encoded ../ sequenc
 
-> **来源**: [CVE-2026-97363 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-97363)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-105123 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-105123)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 7. New Stealthy Linux Backdoors Target Telecoms, Masquerade as Email Traffic
+### 📰 7. Mistral’s new Le Chonk model brings AI cybersecurity to your business – and you control it
 
-Rapid7 has uncovered new BPFDoor, BPF Rekoobe and AVERAT malware variants targeting telecom and network-edge appliances in South Korea and Taiwan
+Open models are vying to become the everyman defense solution for a growing swarm of agent breaches.
 
-> **来源**: [New Stealthy Linux Backdoors Target Telecoms, Masquerade as Email Traffic](https://www.infosecurity-magazine.com/news/smtp-linux-backdoors-network-edge/)  #Infosecurity Magazine
+> **来源**: [Mistral’s new Le Chonk model brings AI cybersecurity to your business – and you control it](https://www.zdnet.com/innovation/mistral-le-chonk-ai-cybersecurity-business/)  #ZDNet Security
 
-### 📰 8. Google Suspends Open-Source Bug Bounty Due to AI Vulnerability Reports
+### 📰 8. Citrix discloses third actively exploited NetScaler zero-day in less than a week
 
-Google has paused its Open Source Vulnerability Rewards Program due to a flood of AI submissions
+The vendor was much quicker and consistent in its response to the latest defect, and researchers consider the impact relatively low compared to the previous pair of zero-days. The post Citrix discloses third actively exploited NetScaler zero-day in less than a week appeared first on CyberScoop.
 
-> **来源**: [Google Suspends Open-Source Bug Bounty Due to AI Vulnerability Reports](https://www.infosecurity-magazine.com/news/google-suspends-opensource-bug/)  #Infosecurity Magazine
+> **来源**: [Citrix discloses third actively exploited NetScaler zero-day in less than a week](https://cyberscoop.com/citrix-netscaler-third-exploited-zero-day-vulnerability/)  #CyberScoop
 
-### 📰 9. ClingSTUN Malware Turns Unpatched IoT Devices Into Proxy Nodes
+### ⚠️ 9. CVE-2026-105135 [CRITICAL 10]
 
-ClingSTUN exploits known IoT flaws and abuses public STUN servers to keep proxy access to devices
+A vulnerability has been found in InternLM MindSearch 0.1.0. This issue affects the function ExecutionAction.run of the file mindsearch/agent/graph.py of the component Planner Agent. The manipulation of the argument inputs leads to code injection. The attack can be initiated remotely. The exploit ha
 
-> **来源**: [ClingSTUN Malware Turns Unpatched IoT Devices Into Proxy Nodes](https://www.infosecurity-magazine.com/news/clingstun-backdoor-unpatched-iot/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-105135 [CRITICAL 10]](https://nvd.nist.gov/vuln/detail/CVE-2026-105135)  CVSS 10 CRITICAL · #NVD · #漏洞
 
-### 📰 10. Atomic macOS (AMOS) Stealer Activity
+### ⚠️ 10. CVE-2026-105134 [CRITICAL 10]
 
-Modern macOS malware uses deceptive setup guides to steal credentials and sensitive user data. Learn how to identify and block these threats. The post Atomic macOS (AMOS) Stealer Activity appeared first on Unit 42.
+A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remo
 
-> **来源**: [Atomic macOS (AMOS) Stealer Activity](https://unit42.paloaltonetworks.com/atomic-macos-amos-stealer-activity/)  #Unit 42
+> **来源**: [CVE-2026-105134 [CRITICAL 10]](https://nvd.nist.gov/vuln/detail/CVE-2026-105134)  CVSS 10 CRITICAL · #NVD · #漏洞
 
 ---
 
