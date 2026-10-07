@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-07
+# 🤖🔒 AI+安全日报 | 2026-10-08
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. AI accelerates n-day attacks, as flaw disclosures and exploits double
+### 📰 1. Atlassian’s critical flaw turns eight enterprise products into one big security problem
 
-Attackers are increasingly weaponizing already-disclosed flaws rather than new zero-days, and AI tools may be accelerating how quickly they do it. According to a report from Google’s Threat Intelligence Group (GTIG), attackers have exploited more vulnerabilities in the wild thus far this year than t
+A newly-disclosed critical flaw in Atlassian’s data center software has a remarkably wide reach, affecting eight core products across the company’s enterprise portfolio. CVE-2026-21589, rated 9.3 (critical) in severity, is an arbitrary file access vulnerability that could allow an attacker with no l
 
-> **来源**: [AI accelerates n-day attacks, as flaw disclosures and exploits double](https://www.csoonline.com/article/4230247/ai-accelerates-n-day-attacks-as-flaw-disclosures-and-exploits-double.html)  #CSO Online
+> **来源**: [Atlassian’s critical flaw turns eight enterprise products into one big security problem](https://www.csoonline.com/article/4231527/atlassians-critical-flaw-turns-eight-enterprise-products-into-one-big-security-problem.html)  #CSO Online
 
-### 📰 2. Dell patches 18 critical flaws that could hand attackers the keys to storage and Kubernetes
+### 📰 2. AI is turning offensive security into a continuous necessity
 
-Dell’s security team has had a busy week. The company has announced a slew of Common Vulnerabilities and Exposures (CVEs) impacting its Dell Container Storage Modules (CSM) and Dell System Update (DSU). Disclosed by Dell in two security notices, these critical vulnerabilities could allow unauthentic
+The rise of AI has CISOs facing even more vulnerabilities than ever, resulting in increasingly difficult decisions around what fixes to prioritize. “When I was a CIO, the hardest part of my job was deciding what not to do,” Snehal Antani, CEO of pentesting platform Horizon3.ai, tells CSO. “And if I 
 
-> **来源**: [Dell patches 18 critical flaws that could hand attackers the keys to storage and Kubernetes](https://www.csoonline.com/article/4230923/dell-patches-18-critical-flaws-that-could-hand-attackers-the-keys-to-storage-and-kubernetes.html)  #CSO Online
+> **来源**: [AI is turning offensive security into a continuous necessity](https://www.csoonline.com/article/4231510/ai-is-turning-offensive-security-into-a-continuous-necessity.html)  #CSO Online
 
-### 📰 3. The AI app builder your team trusts has a root-level backdoor
+### ⚠️ 3. CVE-2026-105294 [HIGH 7.4]
 
-The fastest-growing category of enterprise software right now is also the least scrutinized from a security standpoint. AI application platforms — tools that let teams build, connect and automate AI-powered workflows without writing much code — are landing in production environments faster than secu
+Legcord 1.1.0 through 1.3.0 contains a configuration injection vulnerability that allows script in the Discord page to write any config key via the window.legcord settings.setConfig bridge. Attackers exploiting a Discord XSS can set additionalArguments to persistently add --proxy-server and --ignore
 
-> **来源**: [The AI app builder your team trusts has a root-level backdoor](https://www.csoonline.com/article/4230802/the-ai-app-builder-your-team-trusts-has-a-root-level-backdoor.html)  #CSO Online
+> **来源**: [CVE-2026-105294 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-105294)  CVSS 7.4 HIGH · #NVD · #漏洞
 
-### 📰 4. New Linux malware turns vulnerable IoT devices into proxy nodes
+### ⚠️ 4. CVE-2026-105166 [HIGH 7.3]
 
-A new Linux backdoor is turning vulnerable internet-facing devices into remotely controlled proxy nodes, while using the public Session Traversal Utilities for NAT (STUN) infrastructure to blend into normal VoIP and WebRTC traffic. Fortinet’s FortiGuard Labs said it has been tracking the malware, du
+A vulnerability was found in kishor-23 food-waste-management-system 411989e3ecb82895e53dca7865f72145f03d7d93/b3a70b2c492dc9904de5be1ad9389bd79b87f82c. The affected element is the function insert of the file fooddonateform.php of the component Food Donation Form. Performing a manipulation of the argu
 
-> **来源**: [New Linux malware turns vulnerable IoT devices into proxy nodes](https://www.csoonline.com/article/4231136/new-linux-malware-turns-vulnerable-iot-devices-into-proxy-nodes.html)  #CSO Online
+> **来源**: [CVE-2026-105166 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-105166)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### ⚠️ 5. CVE-2026-105126 [HIGH 7.2]
+### 📰 5. Attackers Hide AI Prompt Injections Inside Phishing Emails
 
-LaraDashboard before 1.4.8 contains an improper privilege management vulnerability that allows authenticated Admin users to escalate to Superadmin by editing or renaming roles. Attackers with role.edit can rename their role to Superadmin or grant user.login_as permissions to take over accounts and r
+Barracuda finds phishing emails designed to manipulate both human users and AI assistants
 
-> **来源**: [CVE-2026-105126 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-105126)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [Attackers Hide AI Prompt Injections Inside Phishing Emails](https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/)  #Infosecurity Magazine
 
-### ⚠️ 6. CVE-2026-105123 [HIGH 8.8]
+### 📰 6. Alert: FortiBleed remains active campaign, can lock out users or lead to ransomware attacks
 
-W (vincent-peugnet/wcms) through 3.18.0 contains a remote code execution vulnerability that allows authenticated editors to write arbitrary files by abusing the unvalidated path in POST /api/v0/media/upload/[*:path]. Attackers can upload .php files executed by the web server, use encoded ../ sequenc
+The FBI and Secret Service warned Fortinet users that FortiBleed, uncovered this summer, is a continuing threat. The post Alert: FortiBleed remains active campaign, can lock out users or lead to ransomware attacks appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-105123 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-105123)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [Alert: FortiBleed remains active campaign, can lock out users or lead to ransomware attacks](https://cyberscoop.com/fortibleed-fortinet-vpn-ransomware-fbi-warning/)  #CyberScoop
 
-### 📰 7. Mistral’s new Le Chonk model brings AI cybersecurity to your business – and you control it
+### ⚠️ 7. CVE-2026-105293 [HIGH 8.1]
 
-Open models are vying to become the everyman defense solution for a growing swarm of agent breaches.
+Legcord 1.1.0 through 1.3.0 contains a path traversal vulnerability in theme IPC handlers that allows script in the Discord page to escape the themes directory via unvalidated theme ids. Attackers running script in the Discord origin, such as through XSS, can abuse themes.folder, themes.uninstall, a
 
-> **来源**: [Mistral’s new Le Chonk model brings AI cybersecurity to your business – and you control it](https://www.zdnet.com/innovation/mistral-le-chonk-ai-cybersecurity-business/)  #ZDNet Security
+> **来源**: [CVE-2026-105293 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-105293)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 8. Citrix discloses third actively exploited NetScaler zero-day in less than a week
+### ⚠️ 8. CVE-2026-105170 [HIGH 7.3]
 
-The vendor was much quicker and consistent in its response to the latest defect, and researchers consider the impact relatively low compared to the previous pair of zero-days. The post Citrix discloses third actively exploited NetScaler zero-day in less than a week appeared first on CyberScoop.
+A weakness has been identified in kishor-23 food-waste-management-system 411989e3ecb82895e53dca7865f72145f03d7d93/b3a70b2c492dc9904de5be1ad9389bd79b87f82c. Affected is an unknown function of the file admin/signup.php of the component Admin Signup. This manipulation of the argument sign causes missin
 
-> **来源**: [Citrix discloses third actively exploited NetScaler zero-day in less than a week](https://cyberscoop.com/citrix-netscaler-third-exploited-zero-day-vulnerability/)  #CyberScoop
+> **来源**: [CVE-2026-105170 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-105170)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### ⚠️ 9. CVE-2026-105135 [CRITICAL 10]
+### 📰 9. Anthropic widens access to AI cyber capabilities for vetted security teams
 
-A vulnerability has been found in InternLM MindSearch 0.1.0. This issue affects the function ExecutionAction.run of the file mindsearch/agent/graph.py of the component Planner Agent. The manipulation of the argument inputs leads to code injection. The attack can be initiated remotely. The exploit ha
+Anthropic is expanding its Cyber Verification Program to give more security teams access to advanced cyber capabilities with reduced safeguards on its most advanced AI models. The expanded program has three access tiers based on the type of cybersecurity work an organization is authorized to perform
 
-> **来源**: [CVE-2026-105135 [CRITICAL 10]](https://nvd.nist.gov/vuln/detail/CVE-2026-105135)  CVSS 10 CRITICAL · #NVD · #漏洞
+> **来源**: [Anthropic widens access to AI cyber capabilities for vetted security teams](https://www.csoonline.com/article/4231812/anthropic-widens-access-to-ai-cyber-capabilities-for-vetted-security-teams.html)  #CSO Online
 
-### ⚠️ 10. CVE-2026-105134 [CRITICAL 10]
+### 📰 10. Encrypted instructions trick Copilot CLI into spilling developer secrets
 
-A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remo
+GitHub Copilot CLI can be made to read sensitive files from a developer’s machine and send their contents to an attacker from a single web page. Security researchers at Adversa AI said the new attack technique, dubbed Cryptographic Context Injection (CCI), hides malicious instructions inside encrypt
 
-> **来源**: [CVE-2026-105134 [CRITICAL 10]](https://nvd.nist.gov/vuln/detail/CVE-2026-105134)  CVSS 10 CRITICAL · #NVD · #漏洞
+> **来源**: [Encrypted instructions trick Copilot CLI into spilling developer secrets](https://www.csoonline.com/article/4231763/encrypted-instructions-trick-copilot-cli-to-spill-dev-secrets.html)  #CSO Online
 
 ---
 
