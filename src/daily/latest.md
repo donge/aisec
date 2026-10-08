@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-08
+# 🤖🔒 AI+安全日报 | 2026-10-09
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Atlassian’s critical flaw turns eight enterprise products into one big security problem
+### 📰 1. Inside the Exchange Inspector: How Tenable uses OpenAI GPT cyber models to review open-source AI agents
 
-A newly-disclosed critical flaw in Atlassian’s data center software has a remarkably wide reach, affecting eight core products across the company’s enterprise portfolio. CVE-2026-21589, rated 9.3 (critical) in severity, is an arbitrary file access vulnerability that could allow an attacker with no l
+Community-built AI agents, skills, and MCP servers are landing in SOC workflows fast. Here’s what the Exchange Inspector tests before a listing earns its vetted tag on the CyberAgents Exchange. Three tools have already passed.Key takeawaysEvery Inspector-vetted listing clears three gates: an automat
 
-> **来源**: [Atlassian’s critical flaw turns eight enterprise products into one big security problem](https://www.csoonline.com/article/4231527/atlassians-critical-flaw-turns-eight-enterprise-products-into-one-big-security-problem.html)  #CSO Online
+> **来源**: [Inside the Exchange Inspector: How Tenable uses OpenAI GPT cyber models to review open-source AI agents](https://www.tenable.com/blog/tenable-openai-security-vetting-open-source-ai-agents-exchange-inspector)  #Tenable Blog
 
-### 📰 2. AI is turning offensive security into a continuous necessity
+### 📰 2. SonicWall’s latest critical flaw indicates a security pattern, not another one-off bug
 
-The rise of AI has CISOs facing even more vulnerabilities than ever, resulting in increasingly difficult decisions around what fixes to prioritize. “When I was a CIO, the hardest part of my job was deciding what not to do,” Snehal Antani, CEO of pentesting platform Horizon3.ai, tells CSO. “And if I 
+SonicWall has disclosed yet another critical flaw in one of its core products. CVE-2026-102255, rated 10 in severity, the highest possible on the Common Vulnerability Scoring System (CVSS), is a pre-authentication server-side request forgery (SSRF) vulnerability in the SMA1000 Appliance Work Place i
 
-> **来源**: [AI is turning offensive security into a continuous necessity](https://www.csoonline.com/article/4231510/ai-is-turning-offensive-security-into-a-continuous-necessity.html)  #CSO Online
+> **来源**: [SonicWall’s latest critical flaw indicates a security pattern, not another one-off bug](https://www.csoonline.com/article/4232246/sonicwalls-latest-critical-flaw-indicates-a-security-pattern-not-another-one-off-bug.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-105294 [HIGH 7.4]
+### 📰 3. AWS’s repeated problems with AI agent controls illustrates the autonomous agent dilemma
 
-Legcord 1.1.0 through 1.3.0 contains a configuration injection vulnerability that allows script in the Discord page to write any config key via the window.legcord settings.setConfig bridge. Attackers exploiting a Discord XSS can set additionalArguments to persistently add --proxy-server and --ignore
+Throughout this year, Amazon Web Services (AWS) has repeatedly had to patch autonomous agent security holes, which have then reemerged in slightly different forms, according to cybersecurity researchers at Palo Alto Networks’ Unit 42 and at Zenity Labs. But the problem is not with AWS, which seems t
 
-> **来源**: [CVE-2026-105294 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-105294)  CVSS 7.4 HIGH · #NVD · #漏洞
+> **来源**: [AWS’s repeated problems with AI agent controls illustrates the autonomous agent dilemma](https://www.csoonline.com/article/4232054/awss-repeated-problems-with-ai-agent-controls-illustrates-the-autonomous-agent-dilemma.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-105166 [HIGH 7.3]
+### ⚠️ 4. CVE-2026-77226 [HIGH 8.1]
 
-A vulnerability was found in kishor-23 food-waste-management-system 411989e3ecb82895e53dca7865f72145f03d7d93/b3a70b2c492dc9904de5be1ad9389bd79b87f82c. The affected element is the function insert of the file fooddonateform.php of the component Food Donation Form. Performing a manipulation of the argu
+Camunda 7.24.0 before 7.24.15 contains an incorrect authorization vulnerability in the Admin web application's first-run setup endpoint, where SetupResource incorrectly determines setup availability by counting only direct members of the camunda-admin group rather than recognizing all configured adm
 
-> **来源**: [CVE-2026-105166 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-105166)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-77226 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-77226)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 5. Attackers Hide AI Prompt Injections Inside Phishing Emails
+### 📰 5. FBI: FortiBleed attackers can lock organizations out of their own firewalls
 
-Barracuda finds phishing emails designed to manipulate both human users and AI assistants
+Details from an FBI investigation into the ongoing FortiBleed attacks reveal that victims could be locked out of their own firewall even as attackers remain logged in. After gaining access to a backend server left exposed by the attackers, the FBI and US Secret Service have shared new details of an 
 
-> **来源**: [Attackers Hide AI Prompt Injections Inside Phishing Emails](https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/)  #Infosecurity Magazine
+> **来源**: [FBI: FortiBleed attackers can lock organizations out of their own firewalls](https://www.csoonline.com/article/4232481/fbi-fortibleed-attackers-can-lock-organizations-out-of-their-own-firewalls.html)  #CSO Online
 
-### 📰 6. Alert: FortiBleed remains active campaign, can lock out users or lead to ransomware attacks
+### 📰 6. Evolution of Web3 in Cloud Supply Chain Attacks
 
-The FBI and Secret Service warned Fortinet users that FortiBleed, uncovered this summer, is a continuing threat. The post Alert: FortiBleed remains active campaign, can lock out users or lead to ransomware attacks appeared first on CyberScoop.
+Unit 42 details how threat actors leverage Web3 infrastructure and open-source supply chain attacks to breach enterprise cloud environments The post Evolution of Web3 in Cloud Supply Chain Attacks appeared first on Unit 42.
 
-> **来源**: [Alert: FortiBleed remains active campaign, can lock out users or lead to ransomware attacks](https://cyberscoop.com/fortibleed-fortinet-vpn-ransomware-fbi-warning/)  #CyberScoop
+> **来源**: [Evolution of Web3 in Cloud Supply Chain Attacks](https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/)  #Unit 42
 
-### ⚠️ 7. CVE-2026-105293 [HIGH 8.1]
+### ⚠️ 7. CVE-2026-105773 [HIGH 7]
 
-Legcord 1.1.0 through 1.3.0 contains a path traversal vulnerability in theme IPC handlers that allows script in the Discord page to escape the themes directory via unvalidated theme ids. Attackers running script in the Discord origin, such as through XSS, can abuse themes.folder, themes.uninstall, a
+Canimaan Software ClamXAV versions 3.3 - 3.11 contains a local privilege escalation vulnerability in the Privileged Helper Tool caused by a race condition and insufficient file validation, allowing a local attacker to execute arbitrary code with system privileges. Fixed in 3.11.1.
 
-> **来源**: [CVE-2026-105293 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-105293)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-105773 [HIGH 7]](https://nvd.nist.gov/vuln/detail/CVE-2026-105773)  CVSS 7 HIGH · #NVD · #漏洞
 
-### ⚠️ 8. CVE-2026-105170 [HIGH 7.3]
+### ⚠️ 8. CVE-2026-105741 [HIGH 7.1]
 
-A weakness has been identified in kishor-23 food-waste-management-system 411989e3ecb82895e53dca7865f72145f03d7d93/b3a70b2c492dc9904de5be1ad9389bd79b87f82c. Affected is an unknown function of the file admin/signup.php of the component Admin Signup. This manipulation of the argument sign causes missin
+Langflow is a tool for building and deploying AI-powered agents and workflows. From 1.5.0 until 1.10.3, an IP spoofing vulnerability in the Model Context Protocol (MCP) configuration installation endpoint (POST /api/v1/mcp/project/{project_id}/install) allowed authenticated remote attackers to bypas
 
-> **来源**: [CVE-2026-105170 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-105170)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-105741 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-105741)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### 📰 9. Anthropic widens access to AI cyber capabilities for vetted security teams
+### 📰 9. Growing PQC at the edge belies deeper quantum-readiness challenges
 
-Anthropic is expanding its Cyber Verification Program to give more security teams access to advanced cyber capabilities with reduced safeguards on its most advanced AI models. The expanded program has three access tiers based on the type of cybersecurity work an organization is authorized to perform
+The quantum threat is becoming an increasing concern for security leaders, but many may be mistaking protection at their website’s front door for quantum readiness across their business. More than half (54%) of the world’s top 1 million websites now support post-quantum key exchange, according to re
 
-> **来源**: [Anthropic widens access to AI cyber capabilities for vetted security teams](https://www.csoonline.com/article/4231812/anthropic-widens-access-to-ai-cyber-capabilities-for-vetted-security-teams.html)  #CSO Online
+> **来源**: [Growing PQC at the edge belies deeper quantum-readiness challenges](https://www.csoonline.com/article/4232205/growing-pqc-at-the-edge-belies-deeper-quantum-readiness-challenges.html)  #CSO Online
 
-### 📰 10. Encrypted instructions trick Copilot CLI into spilling developer secrets
+### 📰 10. ASOS Confirms Data Breach Linked to Stolen Employee Credentials
 
-GitHub Copilot CLI can be made to read sensitive files from a developer’s machine and send their contents to an attacker from a single web page. Security researchers at Adversa AI said the new attack technique, dubbed Cryptographic Context Injection (CCI), hides malicious instructions inside encrypt
+The ASOS hack comes from the compromise of agentic marketing platform Simon AI, said the attackers
 
-> **来源**: [Encrypted instructions trick Copilot CLI into spilling developer secrets](https://www.csoonline.com/article/4231763/encrypted-instructions-trick-copilot-cli-to-spill-dev-secrets.html)  #CSO Online
+> **来源**: [ASOS Confirms Data Breach Linked to Stolen Employee Credentials](https://www.infosecurity-magazine.com/news/asos-data-breach-stolen-employee/)  #Infosecurity Magazine
 
 ---
 
