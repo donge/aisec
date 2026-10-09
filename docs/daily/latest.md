@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-09
+# 🤖🔒 AI+安全日报 | 2026-10-10
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Inside the Exchange Inspector: How Tenable uses OpenAI GPT cyber models to review open-source AI agents
+### 📰 1. Citrix issues its weekly critical security patch for NetScaler ADC and NetScaler Gateway
 
-Community-built AI agents, skills, and MCP servers are landing in SOC workflows fast. Here’s what the Exchange Inspector tests before a listing earns its vetted tag on the CyberAgents Exchange. Three tools have already passed.Key takeawaysEvery Inspector-vetted listing clears three gates: an automat
+For the third week running, Citrix has issued a critical security warning to customers managing their own NetScaler ADC and Netscaler Gateway instances, this time warning of a memory overflow vulnerability enabling denial of service or remote code execution. This week’s vulnerability affects ADC and
 
-> **来源**: [Inside the Exchange Inspector: How Tenable uses OpenAI GPT cyber models to review open-source AI agents](https://www.tenable.com/blog/tenable-openai-security-vetting-open-source-ai-agents-exchange-inspector)  #Tenable Blog
+> **来源**: [Citrix issues its weekly critical security patch for NetScaler ADC and NetScaler Gateway](https://www.csoonline.com/article/4233187/citrix-issues-its-weekly-critical-security-patch-for-netscaler-adc-and-netscaler-gateway-2.html)  #CSO Online
 
-### 📰 2. SonicWall’s latest critical flaw indicates a security pattern, not another one-off bug
+### 📰 2. Lightwell project filters out 400 Java library vulnerabilities
 
-SonicWall has disclosed yet another critical flaw in one of its core products. CVE-2026-102255, rated 10 in severity, the highest possible on the Common Vulnerability Scoring System (CVSS), is a pre-authentication server-side request forgery (SSRF) vulnerability in the SMA1000 Appliance Work Place i
+Lightwell, the open-source security initiative set up by IBM and Red Hat, has identified more than 400 previously undiscovered vulnerabilities in widely used Java libraries — and now the companies are inviting customers to submit their own code dependencies to a new service, Lightwell Clearinghouse,
 
-> **来源**: [SonicWall’s latest critical flaw indicates a security pattern, not another one-off bug](https://www.csoonline.com/article/4232246/sonicwalls-latest-critical-flaw-indicates-a-security-pattern-not-another-one-off-bug.html)  #CSO Online
+> **来源**: [Lightwell project filters out 400 Java library vulnerabilities](https://www.csoonline.com/article/4233240/lightwell-project-filters-out-400-java-library-vulnerabilities-2.html)  #CSO Online
 
-### 📰 3. AWS’s repeated problems with AI agent controls illustrates the autonomous agent dilemma
+### 📰 3. Exposed Nvidia GPU monitors can reveal AI infrastructure secrets
 
-Throughout this year, Amazon Web Services (AWS) has repeatedly had to patch autonomous agent security holes, which have then reemerged in slightly different forms, according to cybersecurity researchers at Palo Alto Networks’ Unit 42 and at Zenity Labs. But the problem is not with AWS, which seems t
+A component of Nvidia’s GPU monitoring software that enterprises use to keep tabs on their AI training and inference infrastructure has been vulnerable to denial-of-service (DoS) and information disclosure attacks. The Nvidia DCGM Exporter contains an unauthenticated resource exhaustion vulnerabilit
 
-> **来源**: [AWS’s repeated problems with AI agent controls illustrates the autonomous agent dilemma](https://www.csoonline.com/article/4232054/awss-repeated-problems-with-ai-agent-controls-illustrates-the-autonomous-agent-dilemma.html)  #CSO Online
+> **来源**: [Exposed Nvidia GPU monitors can reveal AI infrastructure secrets](https://www.csoonline.com/article/4233081/exposed-nvidia-gpu-monitors-can-reveal-ai-infrastructure-secrets.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-77226 [HIGH 8.1]
+### 📰 4. OpenAI reports three new incidents of misalignment
 
-Camunda 7.24.0 before 7.24.15 contains an incorrect authorization vulnerability in the Admin web application's first-run setup endpoint, where SetupResource incorrectly determines setup availability by counting only direct members of the camunda-admin group rather than recognizing all configured adm
+OpenAI continues to report incidences of “misaligned” behavior by its AI models, with three new reports dropping on Oct. 2. However, they describe relatively minor issues compared to previous alignment reports and notices covering its attacks on Hugging Face, Rubygems, and a German programming wiki.
 
-> **来源**: [CVE-2026-77226 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-77226)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [OpenAI reports three new incidents of misalignment](https://www.csoonline.com/article/4233207/openai-reports-three-new-incidents-of-misalignment.html)  #CSO Online
 
-### 📰 5. FBI: FortiBleed attackers can lock organizations out of their own firewalls
+### 📰 5. Q3 2026 Sets New Record for Ransomware Attacks
 
-Details from an FBI investigation into the ongoing FortiBleed attacks reveal that victims could be locked out of their own firewall even as attackers remain logged in. After gaining access to a backend server left exposed by the attackers, the FBI and US Secret Service have shared new details of an 
+Comparitech observed 2627 claimed ransomware attacks in Q3, with critical sectors like finance, technology, education and healthcare experiencing significant increases
 
-> **来源**: [FBI: FortiBleed attackers can lock organizations out of their own firewalls](https://www.csoonline.com/article/4232481/fbi-fortibleed-attackers-can-lock-organizations-out-of-their-own-firewalls.html)  #CSO Online
+> **来源**: [Q3 2026 Sets New Record for Ransomware Attacks](https://www.infosecurity-magazine.com/news/q3-new-record-ransomware/)  #Infosecurity Magazine
 
-### 📰 6. Evolution of Web3 in Cloud Supply Chain Attacks
+### 📰 6. Anthropic rolls out program for ‘long-term commitment’ to secure critical infrastructure, open source software
 
-Unit 42 details how threat actors leverage Web3 infrastructure and open-source supply chain attacks to breach enterprise cloud environments The post Evolution of Web3 in Cloud Supply Chain Attacks appeared first on Unit 42.
+The critical infrastructure defense program will seek to pair Claude models, Anthropic engineers and threat research with the expertise of cybersecurity companies. The post Anthropic rolls out program for ‘long-term commitment’ to secure critical infrastructure, open source software appeared first o
 
-> **来源**: [Evolution of Web3 in Cloud Supply Chain Attacks](https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/)  #Unit 42
+> **来源**: [Anthropic rolls out program for ‘long-term commitment’ to secure critical infrastructure, open source software](https://cyberscoop.com/anthropic-cybersecurity-program-critical-infrastructure-open-source/)  #CyberScoop
 
-### ⚠️ 7. CVE-2026-105773 [HIGH 7]
+### 📰 7. Critical Flaw in Multiple Atlassian Products Exploited in the Wild
 
-Canimaan Software ClamXAV versions 3.3 - 3.11 contains a local privilege escalation vulnerability in the Privileged Helper Tool caused by a race condition and insufficient file validation, allowing a local attacker to execute arbitrary code with system privileges. Fixed in 3.11.1.
+A critical vulnerability affecting eight Atlassian products, including Jira and Confluence, is being exploited in the wild, said VulnCheck
 
-> **来源**: [CVE-2026-105773 [HIGH 7]](https://nvd.nist.gov/vuln/detail/CVE-2026-105773)  CVSS 7 HIGH · #NVD · #漏洞
+> **来源**: [Critical Flaw in Multiple Atlassian Products Exploited in the Wild](https://www.infosecurity-magazine.com/news/critical-vulnerability-atlassian/)  #Infosecurity Magazine
 
-### ⚠️ 8. CVE-2026-105741 [HIGH 7.1]
+### 📰 8. Smashing Security podcast #487: Clippy’s crypto comeback
 
-Langflow is a tool for building and deploying AI-powered agents and workflows. From 1.5.0 until 1.10.3, an IP spoofing vulnerability in the Model Context Protocol (MCP) configuration installation endpoint (POST /api/v1/mcp/project/{project_id}/install) allowed authenticated remote attackers to bypas
+Microsoft's Twitter account, with its 13 million followers, was hijacked by a paperclip. There was no ransomware or data theft, just Clippy, a dodgy crypto coin, and a corporate apology that wasn't from Microsoft either. Meanwhile, UK losses from hacked email and social media accounts have rocketed 
 
-> **来源**: [CVE-2026-105741 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-105741)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [Smashing Security podcast #487: Clippy’s crypto comeback](https://grahamcluley.com/smashing-security-podcast-487/)  #Graham Cluley
 
-### 📰 9. Growing PQC at the edge belies deeper quantum-readiness challenges
+### ⚠️ 9. CVE-2026-102162 [HIGH 8.8]
 
-The quantum threat is becoming an increasing concern for security leaders, but many may be mistaking protection at their website’s front door for quantum readiness across their business. More than half (54%) of the world’s top 1 million websites now support post-quantum key exchange, according to re
+On affected Arista Wi-Fi access points with captive portal, or application firewall enabled on at least one SSID, a vulnerability in the wireless gateway service could allow an unauthenticated network-adjacent attacker to send a crafted packet that triggers a stack overflow, resulting in a denial-of
 
-> **来源**: [Growing PQC at the edge belies deeper quantum-readiness challenges](https://www.csoonline.com/article/4232205/growing-pqc-at-the-edge-belies-deeper-quantum-readiness-challenges.html)  #CSO Online
+> **来源**: [CVE-2026-102162 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-102162)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 10. ASOS Confirms Data Breach Linked to Stolen Employee Credentials
+### ⚠️ 10. CVE-2026-101158 [HIGH 8.4]
 
-The ASOS hack comes from the compromise of agentic marketing platform Simon AI, said the attackers
+A missing input validation vulnerability in the Fileserver upload API allows an authenticated attacker with file upload privileges to execute stored cross-site scripting (XSS). Successful exploitation could enable the attacker to hijack another CloudVision user's web session, potentially granting fu
 
-> **来源**: [ASOS Confirms Data Breach Linked to Stolen Employee Credentials](https://www.infosecurity-magazine.com/news/asos-data-breach-stolen-employee/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-101158 [HIGH 8.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-101158)  CVSS 8.4 HIGH · #NVD · #漏洞
 
 ---
 
