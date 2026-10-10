@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-10
+# 🤖🔒 AI+安全日报 | 2026-10-11
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Citrix issues its weekly critical security patch for NetScaler ADC and NetScaler Gateway
+### 📰 1. Canadian cybersecurity executive arrested in federal extortion case
 
-For the third week running, Citrix has issued a critical security warning to customers managing their own NetScaler ADC and Netscaler Gateway instances, this time warning of a memory overflow vulnerability enabling denial of service or remote code execution. This week’s vulnerability affects ADC and
+Details of the case align with the investigation into ShinyHunters’ attack on FBI IT systems. The post Canadian cybersecurity executive arrested in federal extortion case appeared first on CyberScoop.
 
-> **来源**: [Citrix issues its weekly critical security patch for NetScaler ADC and NetScaler Gateway](https://www.csoonline.com/article/4233187/citrix-issues-its-weekly-critical-security-patch-for-netscaler-adc-and-netscaler-gateway-2.html)  #CSO Online
+> **来源**: [Canadian cybersecurity executive arrested in federal extortion case](https://cyberscoop.com/edward-dubrovsky-cypfer-arrested-fbi-extortion-charges/)  #CyberScoop
 
-### 📰 2. Lightwell project filters out 400 Java library vulnerabilities
+### 📰 2. We are fighting phishing at the wrong layer
 
-Lightwell, the open-source security initiative set up by IBM and Red Hat, has identified more than 400 previously undiscovered vulnerabilities in widely used Java libraries — and now the companies are inviting customers to submit their own code dependencies to a new service, Lightwell Clearinghouse,
+I timed an attacker once. From registering a domain to having it delegated, certificated and serving a live credential-harvesting page took under 24 minutes, and 12 of those were spent waiting on nameservers. I keep coming back to that number, because it quietly indicts most of what we do about phis
 
-> **来源**: [Lightwell project filters out 400 Java library vulnerabilities](https://www.csoonline.com/article/4233240/lightwell-project-filters-out-400-java-library-vulnerabilities-2.html)  #CSO Online
+> **来源**: [We are fighting phishing at the wrong layer](https://www.csoonline.com/article/4231923/we-are-fighting-phishing-at-the-wrong-layer.html)  #CSO Online
 
-### 📰 3. Exposed Nvidia GPU monitors can reveal AI infrastructure secrets
+### 📰 3. FBI removes contractor working with its PeopleSoft system after data breach, says report
 
-A component of Nvidia’s GPU monitoring software that enterprises use to keep tabs on their AI training and inference infrastructure has been vulnerable to denial-of-service (DoS) and information disclosure attacks. The Nvidia DCGM Exporter contains an unauthenticated resource exhaustion vulnerabilit
+The US Federal Bureau of Investigation has removed an Accenture contractor working on its PeopleSoft installation over their role in a data breach that exposed personal details of FBI employees, Reuters reported Monday. This is the first time that anyone other than the hacker group Shinyhunters that
 
-> **来源**: [Exposed Nvidia GPU monitors can reveal AI infrastructure secrets](https://www.csoonline.com/article/4233081/exposed-nvidia-gpu-monitors-can-reveal-ai-infrastructure-secrets.html)  #CSO Online
+> **来源**: [FBI removes contractor working with its PeopleSoft system after data breach, says report](https://www.csoonline.com/article/4231356/fbi-removes-contractor-working-with-its-peoplesoft-system-after-data-breach-says-report.html)  #CSO Online
 
-### 📰 4. OpenAI reports three new incidents of misalignment
+### 📰 4. Ransomware consultant said he would decrypt data, is accused of paying ransoms instead
 
-OpenAI continues to report incidences of “misaligned” behavior by its AI models, with three new reports dropping on Oct. 2. However, they describe relatively minor issues compared to previous alignment reports and notices covering its attacks on Hugging Face, Rubygems, and a German programming wiki.
+The owner of a ransomware remediation company is facing trial for defrauding customers. Zohar Pinhasi, also known as “Zack Silver” and “Zack Green,” has been arraigned in New York on wire fraud charges for allegedly defrauding clients of his ransomware remediation company, MonsterCloud. Pinhasi fals
 
-> **来源**: [OpenAI reports three new incidents of misalignment](https://www.csoonline.com/article/4233207/openai-reports-three-new-incidents-of-misalignment.html)  #CSO Online
+> **来源**: [Ransomware consultant said he would decrypt data, is accused of paying ransoms instead](https://www.csoonline.com/article/4233219/ransomware-consultant-said-he-would-decrypt-data-is-accused-of-paying-ransoms-instead.html)  #CSO Online
 
-### 📰 5. Q3 2026 Sets New Record for Ransomware Attacks
+### 📰 5. UK and Allies Warn of Cyber Threat from China’s Integrity Technology Group
 
-Comparitech observed 2627 claimed ransomware attacks in Q3, with critical sectors like finance, technology, education and healthcare experiencing significant increases
+The UK, US and allies have issued an alert detailing malicious activity linked to China’s Integrity Technology Group
 
-> **来源**: [Q3 2026 Sets New Record for Ransomware Attacks](https://www.infosecurity-magazine.com/news/q3-new-record-ransomware/)  #Infosecurity Magazine
+> **来源**: [UK and Allies Warn of Cyber Threat from China’s Integrity Technology Group](https://www.infosecurity-magazine.com/news/uk-allies-threat-china-integrity/)  #Infosecurity Magazine
 
-### 📰 6. Anthropic rolls out program for ‘long-term commitment’ to secure critical infrastructure, open source software
+### 📰 6. Attackers Hijack Three ccTLDs to Obtain Google Certificates
 
-The critical infrastructure defense program will seek to pair Claude models, Anthropic engineers and threat research with the expertise of cybersecurity companies. The post Anthropic rolls out program for ‘long-term commitment’ to secure critical infrastructure, open source software appeared first o
+Attackers compromised .gh, .sl and .as registries to obtain unauthorized HTTPS certificates
 
-> **来源**: [Anthropic rolls out program for ‘long-term commitment’ to secure critical infrastructure, open source software](https://cyberscoop.com/anthropic-cybersecurity-program-critical-infrastructure-open-source/)  #CyberScoop
+> **来源**: [Attackers Hijack Three ccTLDs to Obtain Google Certificates](https://www.infosecurity-magazine.com/news/attackers-hijack-cctlds-obtain/)  #Infosecurity Magazine
 
-### 📰 7. Critical Flaw in Multiple Atlassian Products Exploited in the Wild
+### 📰 7. Chinese Hacker Deployed AI in Campaign Against South Korean Banks
 
-A critical vulnerability affecting eight Atlassian products, including Jira and Confluence, is being exploited in the wild, said VulnCheck
+CrowdStrike revealed that a Chinese-speaking hacker deployed agentic pentesting tool ARTEX and Claude to help breach data from South Korean financial firms
 
-> **来源**: [Critical Flaw in Multiple Atlassian Products Exploited in the Wild](https://www.infosecurity-magazine.com/news/critical-vulnerability-atlassian/)  #Infosecurity Magazine
+> **来源**: [Chinese Hacker Deployed AI in Campaign Against South Korean Banks](https://www.infosecurity-magazine.com/news/chinese-hacker-ai-korean-banks/)  #Infosecurity Magazine
 
-### 📰 8. Smashing Security podcast #487: Clippy’s crypto comeback
+### 📰 8. Major rules for federal contractors handling sensitive data are nearing the finish line
 
-Microsoft's Twitter account, with its 13 million followers, was hijacked by a paperclip. There was no ransomware or data theft, just Clippy, a dodgy crypto coin, and a corporate apology that wasn't from Microsoft either. Meanwhile, UK losses from hacked email and social media accounts have rocketed 
+The regulations on “controlled unclassified information” include security rules and requirements for reporting when they’re breached, including by cyberattacks. The post Major rules for federal contractors handling sensitive data are nearing the finish line appeared first on CyberScoop.
 
-> **来源**: [Smashing Security podcast #487: Clippy’s crypto comeback](https://grahamcluley.com/smashing-security-podcast-487/)  #Graham Cluley
+> **来源**: [Major rules for federal contractors handling sensitive data are nearing the finish line](https://cyberscoop.com/federal-contractors-cui-cybersecurity-rules/)  #CyberScoop
 
-### ⚠️ 9. CVE-2026-102162 [HIGH 8.8]
+### 📰 9. PoeLLM malware has assembled a sweeping botnet, taking technical cues from a poem
 
-On affected Arista Wi-Fi access points with captive portal, or application firewall enabled on at least one SSID, a vulnerability in the wireless gateway service could allow an unauthenticated network-adjacent attacker to send a crafted packet that triggers a stack overflow, resulting in a denial-of
+More than 3,400 servers have been compromised by malware that hides its infrastructure coordinates in a poem. The post PoeLLM malware has assembled a sweeping botnet, taking technical cues from a poem appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-102162 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-102162)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [PoeLLM malware has assembled a sweeping botnet, taking technical cues from a poem](https://cyberscoop.com/poellm-malware-botnet-poem-lumen-black-lotus-labs/)  #CyberScoop
 
-### ⚠️ 10. CVE-2026-101158 [HIGH 8.4]
+### 📰 10. ShinyHunters Extorted Boeing Spin-off Prior to Arrests
 
-A missing input validation vulnerability in the Fileserver upload API allows an authenticated attacker with file upload privileges to execute stored cross-site scripting (XSS). Successful exploitation could enable the attacker to hijack another CloudVision user's web session, potentially granting fu
+A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle "Rey," was 
 
-> **来源**: [CVE-2026-101158 [HIGH 8.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-101158)  CVSS 8.4 HIGH · #NVD · #漏洞
+> **来源**: [ShinyHunters Extorted Boeing Spin-off Prior to Arrests](https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/)  #Krebs on Security
 
 ---
 
