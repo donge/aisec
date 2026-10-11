@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-11
+# 🤖🔒 AI+安全日报 | 2026-10-12
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Canadian cybersecurity executive arrested in federal extortion case
+### ⚠️ 1. CVE-2026-107707 [HIGH 7.8]
 
-Details of the case align with the investigation into ShinyHunters’ attack on FBI IT systems. The post Canadian cybersecurity executive arrested in federal extortion case appeared first on CyberScoop.
+Intego Antivirus for Windows through 3.0.0.1 contains a link following vulnerability in its optimization module that allows local unprivileged users to delete arbitrary folders as SYSTEM. Attackers can replace a scanned duplicate file's directory with a junction to C:\Config.msi and abuse Windows In
 
-> **来源**: [Canadian cybersecurity executive arrested in federal extortion case](https://cyberscoop.com/edward-dubrovsky-cypfer-arrested-fbi-extortion-charges/)  #CyberScoop
+> **来源**: [CVE-2026-107707 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-107707)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 2. We are fighting phishing at the wrong layer
+### ⚠️ 2. CVE-2026-104076 [CRITICAL 9.1]
 
-I timed an attacker once. From registering a domain to having it delegated, certificated and serving a live credential-harvesting page took under 24 minutes, and 12 of those were spent waiting on nameservers. I keep coming back to that number, because it quietly indicts most of what we do about phis
+TVU Networks Receiver/Transceiver devices running firmware before version 7.9 contain a missing authentication vulnerability that allows remote unauthenticated attackers to read sensitive device information and modify device configuration via unprotected REST API endpoints. Attackers can send unauth
 
-> **来源**: [We are fighting phishing at the wrong layer](https://www.csoonline.com/article/4231923/we-are-fighting-phishing-at-the-wrong-layer.html)  #CSO Online
+> **来源**: [CVE-2026-104076 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-104076)  CVSS 9.1 CRITICAL · #NVD · #漏洞
 
-### 📰 3. FBI removes contractor working with its PeopleSoft system after data breach, says report
+### ⚠️ 3. CVE-2026-104075 [CRITICAL 9.8]
 
-The US Federal Bureau of Investigation has removed an Accenture contractor working on its PeopleSoft installation over their role in a data breach that exposed personal details of FBI employees, Reuters reported Monday. This is the first time that anyone other than the hacker group Shinyhunters that
+TVU Networks Receiver/Transceiver devices running firmware before version 7.9 contain an authentication bypass vulnerability in the web management login endpoint POST /tvu/Login that allows remote unauthenticated attackers to obtain an administrative session by submitting an empty or absent UserName
 
-> **来源**: [FBI removes contractor working with its PeopleSoft system after data breach, says report](https://www.csoonline.com/article/4231356/fbi-removes-contractor-working-with-its-peoplesoft-system-after-data-breach-says-report.html)  #CSO Online
+> **来源**: [CVE-2026-104075 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-104075)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 4. Ransomware consultant said he would decrypt data, is accused of paying ransoms instead
+### 📰 4. Denmark’s national ID system breach exposes personal data of 8.8M
 
-The owner of a ransomware remediation company is facing trial for defrauding customers. Zohar Pinhasi, also known as “Zack Silver” and “Zack Green,” has been arraigned in New York on wire fraud charges for allegedly defrauding clients of his ransomware remediation company, MonsterCloud. Pinhasi fals
+Denmark is reviewing security controls around its national citizen registry after unauthorized parties exploited a company’s access credentials to harvest records on approximately 8.8 million people over a 10-day period. The breach covers people living in Denmark as well as individuals who have died
 
-> **来源**: [Ransomware consultant said he would decrypt data, is accused of paying ransoms instead](https://www.csoonline.com/article/4233219/ransomware-consultant-said-he-would-decrypt-data-is-accused-of-paying-ransoms-instead.html)  #CSO Online
+> **来源**: [Denmark’s national ID system breach exposes personal data of 8.8M](https://www.csoonline.com/article/4231797/denmarks-national-id-system-breach-exposes-personal-data-of-8-8m.html)  #CSO Online
 
-### 📰 5. UK and Allies Warn of Cyber Threat from China’s Integrity Technology Group
+### 📰 5. Danish CPR Breach Highlights Challenge of Supply Chain Risk
 
-The UK, US and allies have issued an alert detailing malicious activity linked to China’s Integrity Technology Group
+A breach of 8.8 million citizens on the Danish Central Register of Persons (CPR) occurred via third-party access
 
-> **来源**: [UK and Allies Warn of Cyber Threat from China’s Integrity Technology Group](https://www.infosecurity-magazine.com/news/uk-allies-threat-china-integrity/)  #Infosecurity Magazine
+> **来源**: [Danish CPR Breach Highlights Challenge of Supply Chain Risk](https://www.infosecurity-magazine.com/news/danish-cpr-breach-supply-chain-risk/)  #Infosecurity Magazine
 
-### 📰 6. Attackers Hijack Three ccTLDs to Obtain Google Certificates
+### 📰 6. How to mitigate the risk from AI-generated apps built by your 'citizen coder' employees
 
-Attackers compromised .gh, .sl and .as registries to obtain unauthorized HTTPS certificates
+AI tools let non-technical employees build workplace apps in minutes with natural language prompts. While these AI-generated apps boost productivity, they can create severe security and data risks. As Cybersecurity Awareness Month kicks off, we’re sharing how Tenable adopted a structured governance 
 
-> **来源**: [Attackers Hijack Three ccTLDs to Obtain Google Certificates](https://www.infosecurity-magazine.com/news/attackers-hijack-cctlds-obtain/)  #Infosecurity Magazine
+> **来源**: [How to mitigate the risk from AI-generated apps built by your 'citizen coder' employees](https://www.tenable.com/blog/how-to-secure-mitigate-ai-risk-vibe-coding-ai-apps-citizen-coders)  #Tenable Blog
 
-### 📰 7. Chinese Hacker Deployed AI in Campaign Against South Korean Banks
+### 📰 7. ASOS Customers Receive Bizarre “Hacked” Message Amid Suspected Snowflake Compromise
 
-CrowdStrike revealed that a Chinese-speaking hacker deployed agentic pentesting tool ARTEX and Claude to help breach data from South Korean financial firms
+ASOS customers have received a seemingly legitimate push notifications claiming the retailer’s IT systems have been breached through a Snowflake breach
 
-> **来源**: [Chinese Hacker Deployed AI in Campaign Against South Korean Banks](https://www.infosecurity-magazine.com/news/chinese-hacker-ai-korean-banks/)  #Infosecurity Magazine
+> **来源**: [ASOS Customers Receive Bizarre “Hacked” Message Amid Suspected Snowflake Compromise](https://www.infosecurity-magazine.com/news/asos-customers-message-suspected/)  #Infosecurity Magazine
 
-### 📰 8. Major rules for federal contractors handling sensitive data are nearing the finish line
+### 📰 8. Blinder Tunnel Campaign Targets Iraqi Infrastructure
 
-The regulations on “controlled unclassified information” include security rules and requirements for reporting when they’re breached, including by cyberattacks. The post Major rules for federal contractors handling sensitive data are nearing the finish line appeared first on CyberScoop.
+Analysis of Blinder Tunnel, an Iran-nexus campaign using fake Dubai Airports recruitment lures and GitHub C2 malware to target critical infrastructure. The post Blinder Tunnel Campaign Targets Iraqi Infrastructure appeared first on Unit 42.
 
-> **来源**: [Major rules for federal contractors handling sensitive data are nearing the finish line](https://cyberscoop.com/federal-contractors-cui-cybersecurity-rules/)  #CyberScoop
+> **来源**: [Blinder Tunnel Campaign Targets Iraqi Infrastructure](https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/)  #Unit 42
 
-### 📰 9. PoeLLM malware has assembled a sweeping botnet, taking technical cues from a poem
+### 📰 9. FBI Arrests Executive at Ransomware Negotiation Firm
 
-More than 3,400 servers have been compromised by malware that hides its infrastructure coordinates in a poem. The post PoeLLM malware has assembled a sweeping botnet, taking technical cues from a poem appeared first on CyberScoop.
+Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSec
 
-> **来源**: [PoeLLM malware has assembled a sweeping botnet, taking technical cues from a poem](https://cyberscoop.com/poellm-malware-botnet-poem-lumen-black-lotus-labs/)  #CyberScoop
+> **来源**: [FBI Arrests Executive at Ransomware Negotiation Firm](https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/)  #Krebs on Security
 
-### 📰 10. ShinyHunters Extorted Boeing Spin-off Prior to Arrests
+### 📰 10. $10 million bounty offered for Chinese Hafnium hacker accused of Microsoft Exchange Server mega-attack
 
-A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle "Rey," was 
+The US State Department is offering up to US $10 million for information about the whereabouts of Zhang Yu, a 44-year-old Chinese national who is accused of being a key figure in China's state-sponsored hacking group, Hafnium. Read more in my article on the Hot for Security blog.
 
-> **来源**: [ShinyHunters Extorted Boeing Spin-off Prior to Arrests](https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/)  #Krebs on Security
+> **来源**: [$10 million bounty offered for Chinese Hafnium hacker accused of Microsoft Exchange Server mega-attack](https://www.bitdefender.com/en-us/blog/hotforsecurity/10-million-bounty-chinese-hafnium-hacker-microsoft-exchange-server-mega-attack)  #Graham Cluley
 
 ---
 
