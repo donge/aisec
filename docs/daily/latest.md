@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-12
+# 🤖🔒 AI+安全日报 | 2026-10-13
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-107707 [HIGH 7.8]
+### 📰 1. Months-Old Palo Alto VPN Vulnerability Remains a Target for Ransomware Groups
 
-Intego Antivirus for Windows through 3.0.0.1 contains a link following vulnerability in its optimization module that allows local unprivileged users to delete arbitrary folders as SYSTEM. Attackers can replace a scanned duplicate file's directory with a junction to C:\Config.msi and abuse Windows In
+ReliaQuest confirmed that the Qilin and Settra ransomware groups are actively exploiting a Palo Alto vulnerability patched in May
 
-> **来源**: [CVE-2026-107707 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-107707)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [Months-Old Palo Alto VPN Vulnerability Remains a Target for Ransomware Groups](https://www.infosecurity-magazine.com/news/palo-alto-vpn-vulnerability-target/)  #Infosecurity Magazine
 
-### ⚠️ 2. CVE-2026-104076 [CRITICAL 9.1]
+### 📰 2. The 7 biggest issues CISOs and security teams face today
 
-TVU Networks Receiver/Transceiver devices running firmware before version 7.9 contain a missing authentication vulnerability that allows remote unauthenticated attackers to read sensitive device information and modify device configuration via unprotected REST API endpoints. Attackers can send unauth
+Year after year CISOs see the volume, velocity, and sophistication of attacks increase. They also see their attack surfaces expand and increase in complexity. Advances in artificial intelligence and the rapid growth of AI use in business are also impacting the security agenda, introducing novel atta
 
-> **来源**: [CVE-2026-104076 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-104076)  CVSS 9.1 CRITICAL · #NVD · #漏洞
+> **来源**: [The 7 biggest issues CISOs and security teams face today](https://www.csoonline.com/article/4232208/the-7-biggest-issues-cisos-and-security-teams-face-today.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-104075 [CRITICAL 9.8]
+### 📰 3. Researchers bypass 6 AI agent frameworks with a simple ‘Repeat-After-Me’ prompt
 
-TVU Networks Receiver/Transceiver devices running firmware before version 7.9 contain an authentication bypass vulnerability in the web management login endpoint POST /tvu/Login that allows remote unauthenticated attackers to obtain an administrative session by submitting an empty or absent UserName
+Researchers have tricked six widely used AI agent frameworks into running tool calls written by an attacker, simply by asking the underlying model to repeat the call back. The technique, which the researchers call “Repeat-After-Me,” worked on LangChain’s LangGraph, Microsoft Agent Framework, Microso
 
-> **来源**: [CVE-2026-104075 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-104075)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [Researchers bypass 6 AI agent frameworks with a simple ‘Repeat-After-Me’ prompt](https://www.csoonline.com/article/4233811/researchers-bypass-6-ai-agent-frameworks-with-a-simple-repeat-after-me-prompt.html)  #CSO Online
 
-### 📰 4. Denmark’s national ID system breach exposes personal data of 8.8M
+### ⚠️ 4. CVE-2026-104797 [HIGH 8.1]
 
-Denmark is reviewing security controls around its national citizen registry after unauthorized parties exploited a company’s access credentials to harvest records on approximately 8.8 million people over a 10-day period. The breach covers people living in Denmark as well as individuals who have died
+The Advanced Form Integration — Connect Forms to 300+ Apps plugin for WordPress is vulnerable to Authentication Bypass via Unverified Password Change in all versions up to, and including, 2.9.0 The `adfoin_ultimatememberac_send_data` function, which powers the Ultimate Member "Update Profile Field" 
 
-> **来源**: [Denmark’s national ID system breach exposes personal data of 8.8M](https://www.csoonline.com/article/4231797/denmarks-national-id-system-breach-exposes-personal-data-of-8-8m.html)  #CSO Online
+> **来源**: [CVE-2026-104797 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-104797)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 5. Danish CPR Breach Highlights Challenge of Supply Chain Risk
+### ⚠️ 5. CVE-2026-104732 [CRITICAL 9.8]
 
-A breach of 8.8 million citizens on the Danish Central Register of Persons (CPR) occurred via third-party access
+The Advanced IP Blocker plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 8.13.13 The vulnerability exists because `handle_login_action()` performs no server-side check — via transient, session marker, or equivalent — that a requester completed step-1 
 
-> **来源**: [Danish CPR Breach Highlights Challenge of Supply Chain Risk](https://www.infosecurity-magazine.com/news/danish-cpr-breach-supply-chain-risk/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-104732 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-104732)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 6. How to mitigate the risk from AI-generated apps built by your 'citizen coder' employees
+### 📰 6. IonQ to buy zero-trust security firm Elisity in deal valued at up to $1.3 billion
 
-AI tools let non-technical employees build workplace apps in minutes with natural language prompts. While these AI-generated apps boost productivity, they can create severe security and data risks. As Cybersecurity Awareness Month kicks off, we’re sharing how Tenable adopted a structured governance 
+The acquisition pairs Elisity's zero-trust access controls with IonQ's post-quantum cryptography business as federal agencies and major companies accelerate timelines for quantum-ready encryption. The post IonQ to buy zero-trust security firm Elisity in deal valued at up to $1.3 billion appeared fir
 
-> **来源**: [How to mitigate the risk from AI-generated apps built by your 'citizen coder' employees](https://www.tenable.com/blog/how-to-secure-mitigate-ai-risk-vibe-coding-ai-apps-citizen-coders)  #Tenable Blog
+> **来源**: [IonQ to buy zero-trust security firm Elisity in deal valued at up to $1.3 billion](https://cyberscoop.com/ionq-acquires-elisity-1-3-billion-quantum-security/)  #CyberScoop
 
-### 📰 7. ASOS Customers Receive Bizarre “Hacked” Message Amid Suspected Snowflake Compromise
+### 📰 7. Major French Supermarket Chains Hit by Cyber-Attack, Food Stock Impacted
 
-ASOS customers have received a seemingly legitimate push notifications claiming the retailer’s IT systems have been breached through a Snowflake breach
+The CEO of Cooperative U confirmed a cyber-attack affected the food stock in several stores from October 11
 
-> **来源**: [ASOS Customers Receive Bizarre “Hacked” Message Amid Suspected Snowflake Compromise](https://www.infosecurity-magazine.com/news/asos-customers-message-suspected/)  #Infosecurity Magazine
+> **来源**: [Major French Supermarket Chains Hit by Cyber-Attack, Food Stock Impacted](https://www.infosecurity-magazine.com/news/french-supermarket-chains/)  #Infosecurity Magazine
 
-### 📰 8. Blinder Tunnel Campaign Targets Iraqi Infrastructure
+### 📰 8. Karaoke Giant Reveals Data Breach Impacting Eight Million
 
-Analysis of Blinder Tunnel, an Iran-nexus campaign using fake Dubai Airports recruitment lures and GitHub C2 malware to target critical infrastructure. The post Blinder Tunnel Campaign Targets Iraqi Infrastructure appeared first on Unit 42.
+Daiichi Kosho says a supply chain breach has exposed personal data on over eight million karaoke customers
 
-> **来源**: [Blinder Tunnel Campaign Targets Iraqi Infrastructure](https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/)  #Unit 42
+> **来源**: [Karaoke Giant Reveals Data Breach Impacting Eight Million](https://www.infosecurity-magazine.com/news/karaoke-giant-data-breach-eight/)  #Infosecurity Magazine
 
-### 📰 9. FBI Arrests Executive at Ransomware Negotiation Firm
+### 📰 9. Luna Moth Leaks Shed Light on Ransomware Group's Inner Workings
 
-Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSec
+Leaked documents suggest a multi-pronged operation, with social engineering and more technical attackers working together to manipulate a single target
 
-> **来源**: [FBI Arrests Executive at Ransomware Negotiation Firm](https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/)  #Krebs on Security
+> **来源**: [Luna Moth Leaks Shed Light on Ransomware Group's Inner Workings](https://www.infosecurity-magazine.com/news/luna-moth-leaks-ransomware-playbook/)  #Infosecurity Magazine
 
-### 📰 10. $10 million bounty offered for Chinese Hafnium hacker accused of Microsoft Exchange Server mega-attack
+### 📰 10. 3 Consulting Myths Debunked by Unit 42 Experts
 
-The US State Department is offering up to US $10 million for information about the whereabouts of Zhang Yu, a 44-year-old Chinese national who is accused of being a key figure in China's state-sponsored hacking group, Hafnium. Read more in my article on the Hot for Security blog.
+Unit 42 security experts address critical cybersecurity misconceptions, offering practical insights to help your organization reinforce its enterprise defenses. The post 3 Consulting Myths Debunked by Unit 42 Experts appeared first on Unit 42.
 
-> **来源**: [$10 million bounty offered for Chinese Hafnium hacker accused of Microsoft Exchange Server mega-attack](https://www.bitdefender.com/en-us/blog/hotforsecurity/10-million-bounty-chinese-hafnium-hacker-microsoft-exchange-server-mega-attack)  #Graham Cluley
+> **来源**: [3 Consulting Myths Debunked by Unit 42 Experts](https://unit42.paloaltonetworks.com/3-consulting-myths-debunked-by-unit-42-experts/)  #Unit 42
 
 ---
 
