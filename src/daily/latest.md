@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-13
+# 🤖🔒 AI+安全日报 | 2026-10-14
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Months-Old Palo Alto VPN Vulnerability Remains a Target for Ransomware Groups
+### 📰 1. Critical infrastructure orgs face heightened cyber risk from nation-state groups, AI threats
 
-ReliaQuest confirmed that the Qilin and Settra ransomware groups are actively exploiting a Palo Alto vulnerability patched in May
+Critical infrastructure faces mounting threats from nation-state groups and AI-driven attacks. In the latest installment of our Cybersecurity Awareness Month blog series, learn how leading cybersecurity agencies, such as CISA, are advising critical infrastructure organizations on ways to protect the
 
-> **来源**: [Months-Old Palo Alto VPN Vulnerability Remains a Target for Ransomware Groups](https://www.infosecurity-magazine.com/news/palo-alto-vpn-vulnerability-target/)  #Infosecurity Magazine
+> **来源**: [Critical infrastructure orgs face heightened cyber risk from nation-state groups, AI threats](https://www.tenable.com/blog/critical-infrastructure-orgs-face-heightened-cyber-risk-from-nation-state-groups-ai-threats)  #Tenable Blog
 
-### 📰 2. The 7 biggest issues CISOs and security teams face today
+### 📰 2. GitLab patches a max-severity regex flaw alongside five high-severity bugs
 
-Year after year CISOs see the volume, velocity, and sophistication of attacks increase. They also see their attack surfaces expand and increase in complexity. Advances in artificial intelligence and the rapid growth of AI use in business are also impacting the security agenda, introducing novel atta
+GitLab just fixed a max-severity vulnerability that could allow unauthenticated attackers to execute arbitrary code on its servers. The company released a fix on Monday, alongside patches for five other high-severity flaws affecting its source code management and continuous integration and delivery 
 
-> **来源**: [The 7 biggest issues CISOs and security teams face today](https://www.csoonline.com/article/4232208/the-7-biggest-issues-cisos-and-security-teams-face-today.html)  #CSO Online
+> **来源**: [GitLab patches a max-severity regex flaw alongside five high-severity bugs](https://www.csoonline.com/article/4234306/gitlab-patches-a-max-severity-regex-flaw-alongside-five-high-severity-bugs.html)  #CSO Online
 
-### 📰 3. Researchers bypass 6 AI agent frameworks with a simple ‘Repeat-After-Me’ prompt
+### 📰 3. Over 1,500 npm packages exposed by Trusted Publishing validation flaw
 
-Researchers have tricked six widely used AI agent frameworks into running tool calls written by an attacker, simply by asking the underlying model to repeat the call back. The technique, which the researchers call “Repeat-After-Me,” worked on LangChain’s LangGraph, Microsoft Agent Framework, Microso
+A flaw in npm’s Trusted Publishing mechanism could allow attackers to hijack legitimate software packages by reclaiming abandoned GitHub repository names, potentially exposing millions of package downloads to supply-chain attacks. Researchers at Bloom Security identified more than 1500 potentially v
 
-> **来源**: [Researchers bypass 6 AI agent frameworks with a simple ‘Repeat-After-Me’ prompt](https://www.csoonline.com/article/4233811/researchers-bypass-6-ai-agent-frameworks-with-a-simple-repeat-after-me-prompt.html)  #CSO Online
+> **来源**: [Over 1,500 npm packages exposed by Trusted Publishing validation flaw](https://www.csoonline.com/article/4234229/over-1500-npm-packages-exposed-by-trusted-publishing-validation-flaw.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-104797 [HIGH 8.1]
+### ⚠️ 4. CVE-2026-108623 [HIGH 7.1]
 
-The Advanced Form Integration — Connect Forms to 300+ Apps plugin for WordPress is vulnerable to Authentication Bypass via Unverified Password Change in all versions up to, and including, 2.9.0 The `adfoin_ultimatememberac_send_data` function, which powers the Ultimate Member "Update Profile Field" 
+JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SysLogController deleteBatch handler that allows any authenticated user to delete system audit log entries. Low-privileged attackers can send a DELETE request with ids set to allclear to wipe the entire sys_log table, eras
 
-> **来源**: [CVE-2026-104797 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-104797)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-108623 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-108623)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### ⚠️ 5. CVE-2026-104732 [CRITICAL 9.8]
+### 📰 5. UK Government Announces Sweeping New AI Security Plans
 
-The Advanced IP Blocker plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 8.13.13 The vulnerability exists because `handle_login_action()` performs no server-side check — via transient, session marker, or equivalent — that a requester completed step-1 
+The government is planning tweaks to legislation, new incident response and more to head of AI security threats
 
-> **来源**: [CVE-2026-104732 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-104732)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [UK Government Announces Sweeping New AI Security Plans](https://www.infosecurity-magazine.com/news/uk-government-sweeping-ai-security/)  #Infosecurity Magazine
 
-### 📰 6. IonQ to buy zero-trust security firm Elisity in deal valued at up to $1.3 billion
+### 📰 6. Defenders Reluctant to Deploy Agentic AI as a Cybersecurity Tool
 
-The acquisition pairs Elisity's zero-trust access controls with IonQ's post-quantum cryptography business as federal agencies and major companies accelerate timelines for quantum-ready encryption. The post IonQ to buy zero-trust security firm Elisity in deal valued at up to $1.3 billion appeared fir
+Flashpoint research suggests that only 25% of security teams have actively deployed AI, with many concerned about AI Agents’ negative impact
 
-> **来源**: [IonQ to buy zero-trust security firm Elisity in deal valued at up to $1.3 billion](https://cyberscoop.com/ionq-acquires-elisity-1-3-billion-quantum-security/)  #CyberScoop
+> **来源**: [Defenders Reluctant to Deploy Agentic AI as a Cybersecurity Tool](https://www.infosecurity-magazine.com/news/defenders-skeptical-agentic-ai/)  #Infosecurity Magazine
 
-### 📰 7. Major French Supermarket Chains Hit by Cyber-Attack, Food Stock Impacted
+### 📰 7. European Retail Firms Confirm Cyber Incidents
 
-The CEO of Cooperative U confirmed a cyber-attack affected the food stock in several stores from October 11
+Several Europe-based retail firms have confirmed experiencing cyber incidents, while H&M said it is “investigating” such claims
 
-> **来源**: [Major French Supermarket Chains Hit by Cyber-Attack, Food Stock Impacted](https://www.infosecurity-magazine.com/news/french-supermarket-chains/)  #Infosecurity Magazine
+> **来源**: [European Retail Firms Confirm Cyber Incidents](https://www.infosecurity-magazine.com/news/retail-firms-confirm-cyber/)  #Infosecurity Magazine
 
-### 📰 8. Karaoke Giant Reveals Data Breach Impacting Eight Million
+### 📰 8. GTA 6 leaker threatens to release full playable version of game ahead of official launch
 
-Daiichi Kosho says a supply chain breach has exposed personal data on over eight million karaoke customers
+The hacker behind a high-profile string of leaks involving the upcoming release of the Grand Theft Auto (GTA) 6 videogame has threatened to release a complete, playable build. Read more in my article on the Hot for Security blog.
 
-> **来源**: [Karaoke Giant Reveals Data Breach Impacting Eight Million](https://www.infosecurity-magazine.com/news/karaoke-giant-data-breach-eight/)  #Infosecurity Magazine
+> **来源**: [GTA 6 leaker threatens to release full playable version of game ahead of official launch](https://www.bitdefender.com/en-us/blog/hotforsecurity/gta-6-leaker-threatens-release-full-game)  #Graham Cluley
 
-### 📰 9. Luna Moth Leaks Shed Light on Ransomware Group's Inner Workings
+### 📰 9. AI Is Getting Really Good at Messing With Cybercriminals
 
-Leaked documents suggest a multi-pronged operation, with social engineering and more technical attackers working together to manipulate a single target
+Anti-cybercrime initiatives are increasingly using AI to scam the scammers by tricking them into talking to lifelike bots that they think are real victims.
 
-> **来源**: [Luna Moth Leaks Shed Light on Ransomware Group's Inner Workings](https://www.infosecurity-magazine.com/news/luna-moth-leaks-ransomware-playbook/)  #Infosecurity Magazine
+> **来源**: [AI Is Getting Really Good at Messing With Cybercriminals](https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/)  #Wired Security
 
-### 📰 10. 3 Consulting Myths Debunked by Unit 42 Experts
+### 📰 10. Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push
 
-Unit 42 security experts address critical cybersecurity misconceptions, offering practical insights to help your organization reinforce its enterprise defenses. The post 3 Consulting Myths Debunked by Unit 42 Experts appeared first on Unit 42.
+Ten leading AI firms have committed to make data protection improvements following a call for evidence by the UK’s Information Commissioner's Office
 
-> **来源**: [3 Consulting Myths Debunked by Unit 42 Experts](https://unit42.paloaltonetworks.com/3-consulting-myths-debunked-by-unit-42-experts/)  #Unit 42
+> **来源**: [Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push](https://www.infosecurity-magazine.com/news/ai-firms-pledge-data-protection/)  #Infosecurity Magazine
 
 ---
 

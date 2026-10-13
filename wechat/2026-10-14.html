@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI+安全日报 2026-10-14</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #0b1120;
+    color: #e2e8f0;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 16px 60px;
+  }
+  .header {
+    text-align: center;
+    padding: 32px 0 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(56,189,248,0.5), transparent);
+  }
+  .header .logo {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+  }
+  .header .subtitle {
+    font-size: 14px;
+    color: #64748b;
+  }
+  .header .subtitle span {
+    display: inline-block;
+    background: rgba(56,189,248,0.1);
+    color: #38bdf8;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 2px;
+  }
+  .copy-btn {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 14px 0;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(56,189,248,0.25);
+    letter-spacing: 0.5px;
+  }
+  .copy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(56,189,248,0.35);
+  }
+  .copy-btn:active {
+    transform: translateY(0);
+  }
+  .copy-btn.copied {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    box-shadow: 0 4px 20px rgba(34,197,94,0.25);
+  }
+  .toast {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #22c55e;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 9999;
+    box-shadow: 0 8px 32px rgba(34,197,94,0.3);
+  }
+  .divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+    margin: 20px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 24px 0;
+    color: #475569;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 8px;
+  }
+  .footer .mono {
+    font-family: "SF Mono", "Fira Code", monospace;
+    font-size: 11px;
+    color: #334155;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .item-enter {
+    animation: fadeIn 0.5s ease-out both;
+  }
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast">✅ 已复制到剪贴板，请粘贴到公众号编辑器</div>
+
+<div class="container">
+  <div class="header">
+    <div class="logo">🛡️</div>
+    <h1>AI+安全日报</h1>
+    <div class="subtitle">
+      2026年10月14日 · 共 <span>10</span> 条
+    </div>
+  </div>
+
+  <div id="wechatContent">
+    
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#01</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Critical infrastructure orgs face heightened cyber risk from nation-state groups, AI threats
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Critical infrastructure faces mounting threats from nation-state groups and AI-driven attacks. In the latest installment of our Cybersecurity Awareness Month blog series, learn how leading cybersecurity agencies, such as CISA, are advising critical infrastructure organizations on ways to protect the
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.tenable.com/blog/critical-infrastructure-orgs-face-heightened-cyber-risk-from-nation-state-groups-ai-threats" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Critical infrastructure orgs face heightened cyber risk from nation-state groups, AI threats ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Tenable Blog</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#02</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            GitLab patches a max-severity regex flaw alongside five high-severity bugs
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        GitLab just fixed a max-severity vulnerability that could allow unauthenticated attackers to execute arbitrary code on its servers. The company released a fix on Monday, alongside patches for five other high-severity flaws affecting its source code management and continuous integration and delivery 
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4234306/gitlab-patches-a-max-severity-regex-flaw-alongside-five-high-severity-bugs.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">GitLab patches a max-severity regex flaw alongside five high-severity bugs ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#03</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Over 1,500 npm packages exposed by Trusted Publishing validation flaw
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        A flaw in npm’s Trusted Publishing mechanism could allow attackers to hijack legitimate software packages by reclaiming abandoned GitHub repository names, potentially exposing millions of package downloads to supply-chain attacks. Researchers at Bloom Security identified more than 1500 potentially v
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4234229/over-1500-npm-packages-exposed-by-trusted-publishing-validation-flaw.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Over 1,500 npm packages exposed by Trusted Publishing validation flaw ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#04</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            CVE-2026-108623 [HIGH 7.1]
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SysLogController deleteBatch handler that allows any authenticated user to delete system audit log entries. Low-privileged attackers can send a DELETE request with ids set to allclear to wipe the entire sys_log table, eras
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-108623" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-108623 [HIGH 7.1] ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#05</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            UK Government Announces Sweeping New AI Security Plans
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        The government is planning tweaks to legislation, new incident response and more to head of AI security threats
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/uk-government-sweeping-ai-security/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">UK Government Announces Sweeping New AI Security Plans ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#06</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Defenders Reluctant to Deploy Agentic AI as a Cybersecurity Tool
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Flashpoint research suggests that only 25% of security teams have actively deployed AI, with many concerned about AI Agents’ negative impact
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/defenders-skeptical-agentic-ai/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Defenders Reluctant to Deploy Agentic AI as a Cybersecurity Tool ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#07</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            European Retail Firms Confirm Cyber Incidents
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Several Europe-based retail firms have confirmed experiencing cyber incidents, while H&amp;M said it is “investigating” such claims
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/retail-firms-confirm-cyber/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">European Retail Firms Confirm Cyber Incidents ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#08</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            GTA 6 leaker threatens to release full playable version of game ahead of official launch
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        The hacker behind a high-profile string of leaks involving the upcoming release of the Grand Theft Auto (GTA) 6 videogame has threatened to release a complete, playable build. Read more in my article on the Hot for Security blog.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/gta-6-leaker-threatens-release-full-game" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">GTA 6 leaker threatens to release full playable version of game ahead of official launch ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Graham Cluley</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#09</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            AI Is Getting Really Good at Messing With Cybercriminals
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Anti-cybercrime initiatives are increasingly using AI to scam the scammers by tricking them into talking to lifelike bots that they think are real victims.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">AI Is Getting Really Good at Messing With Cybercriminals ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Wired Security</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#10</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Ten leading AI firms have committed to make data protection improvements following a call for evidence by the UK’s Information Commissioner&#39;s Office
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/ai-firms-pledge-data-protection/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="footer">
+    📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
+    仅供学习参考，不构成投资或决策建议<br>
+    <span class="mono">// AI+Security Daily · 10 items · 2026-10-14</span>
+  </div>
+
+  <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
+</div>
+
+<script>
+(function() {
+  function getContentHtml() {
+    var el = document.getElementById('wechatContent');
+    return el.innerHTML.trim();
+  }
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    return Promise.resolve();
+  }
+  function doCopy(btn) {
+    var html = getContentHtml();
+    copyToClipboard(html).then(function() {
+      btn.textContent = '✅ 已复制！';
+      btn.classList.add('copied');
+      var toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      setTimeout(function() {
+        toast.style.display = 'none';
+        btn.textContent = '📋 一键复制（公众号格式）';
+        btn.classList.remove('copied');
+      }, 2500);
+    }).catch(function() {
+      btn.textContent = '❌ 复制失败，请手动选择复制';
+      setTimeout(function() {
+        btn.textContent = '📋 一键复制（公众号格式）';
+      }, 2000);
+    });
+  }
+  var btns = document.querySelectorAll('.copy-btn');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function() { doCopy(this); });
+  }
+
+  // Staggered fade-in
+  var cards = document.querySelectorAll('#wechatContent > div');
+  cards.forEach(function(card, i) {
+    card.classList.add('item-enter');
+    card.style.animationDelay = (i * 0.08) + 's';
+  });
+})();
+</script>
+</body>
+</html>
