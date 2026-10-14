@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-14
+# 🤖🔒 AI+安全日报 | 2026-10-15
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Critical infrastructure orgs face heightened cyber risk from nation-state groups, AI threats
+### 📰 1. Hackers abuse the Ivanti Connect Secure bug to gain access without accounts
 
-Critical infrastructure faces mounting threats from nation-state groups and AI-driven attacks. In the latest installment of our Cybersecurity Awareness Month blog series, learn how leading cybersecurity agencies, such as CISA, are advising critical infrastructure organizations on ways to protect the
+Attackers without an account of their own were found logging in to Ivanti Connect Secure appliances using an authentication bypass flaw that the vendor has since fixed. Once inside, attackers ran arbitrary commands on the appliances. “Ivanti initially discovered a portion of this vulnerability as pa
 
-> **来源**: [Critical infrastructure orgs face heightened cyber risk from nation-state groups, AI threats](https://www.tenable.com/blog/critical-infrastructure-orgs-face-heightened-cyber-risk-from-nation-state-groups-ai-threats)  #Tenable Blog
+> **来源**: [Hackers abuse the Ivanti Connect Secure bug to gain access without accounts](https://www.csoonline.com/article/4235129/hackers-abuse-the-ivanti-connect-secure-bug-to-gain-access-without-accounts.html)  #CSO Online
 
-### 📰 2. GitLab patches a max-severity regex flaw alongside five high-severity bugs
+### 📰 2. How Claude Code’s 256KB blind spot put developers’ secrets in the preview pane
 
-GitLab just fixed a max-severity vulnerability that could allow unauthenticated attackers to execute arbitrary code on its servers. The company released a fix on Monday, alongside patches for five other high-severity flaws affecting its source code management and continuous integration and delivery 
+Simply asking Anthropic’s Claude Code to review an HTML file could hand attackers access to a developer’s machine, cloud credentials and software development environment, according to a new Noma Security finding. Noma’s researchers found a vulnerability affecting Anthropic’s Claude Code Desktop app 
 
-> **来源**: [GitLab patches a max-severity regex flaw alongside five high-severity bugs](https://www.csoonline.com/article/4234306/gitlab-patches-a-max-severity-regex-flaw-alongside-five-high-severity-bugs.html)  #CSO Online
+> **来源**: [How Claude Code’s 256KB blind spot put developers’ secrets in the preview pane](https://www.csoonline.com/article/4235139/how-claude-codes-256kb-blind-spot-put-developers-secrets-in-the-preview-pane.html)  #CSO Online
 
-### 📰 3. Over 1,500 npm packages exposed by Trusted Publishing validation flaw
+### 📰 3. IonQ’s $1.2 billion acquisition of Elisity is trying to position it for quantum cybersecurity
 
-A flaw in npm’s Trusted Publishing mechanism could allow attackers to hijack legitimate software packages by reclaiming abandoned GitHub repository names, potentially exposing millions of package downloads to supply-chain attacks. Researchers at Bloom Security identified more than 1500 potentially v
+When quantum vendor IonQ on Sunday announced a $1.2 billion all stock deal to take over cybersecurity vendor Elisity, it spoke of a near-term future where enterprise quantum cybersecurity needs will move beyond replacing to-be-outdated encryption. The acquisition brings together IonQ’s post-quantum 
 
-> **来源**: [Over 1,500 npm packages exposed by Trusted Publishing validation flaw](https://www.csoonline.com/article/4234229/over-1500-npm-packages-exposed-by-trusted-publishing-validation-flaw.html)  #CSO Online
+> **来源**: [IonQ’s $1.2 billion acquisition of Elisity is trying to position it for quantum cybersecurity](https://www.csoonline.com/article/4234910/ionqs-1-2-billion-acquisition-of-elisity-is-trying-to-position-it-for-quantum-cybersecurity.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-108623 [HIGH 7.1]
+### 📰 4. October Patch Tuesday roundup: Over 1,400 Microsoft holes to be plugged, including three zero days
 
-JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SysLogController deleteBatch handler that allows any authenticated user to delete system audit log entries. Low-privileged attackers can send a DELETE request with ids set to allclear to wipe the entire sys_log table, eras
+Microsoft released a record-shattering 1,407 CVEs to be plugged today on October Patch Tuesday, breaking the 2020 record of 1,261. The list was so long that its release was several hours later than the usual 1 p.m. Eastern drop time, somewhat frustrating admins. The bugs include three zero-day vulne
 
-> **来源**: [CVE-2026-108623 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-108623)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [October Patch Tuesday roundup: Over 1,400 Microsoft holes to be plugged, including three zero days](https://www.csoonline.com/article/4234759/october-patch-tuesday-roundup-over-1400-microsoft-holes-to-be-plugged-including-three-zero-days.html)  #CSO Online
 
-### 📰 5. UK Government Announces Sweeping New AI Security Plans
+### 📰 5. Ivanti misses opportunity to fix vulnerability before attackers got to work and made it a zero-day
 
-The government is planning tweaks to legislation, new incident response and more to head of AI security threats
+The security vendor said it initially discovered a portion of the defect during internal security checks in June, but the company said it didn’t meet the threshold for an out-of-band release. The post Ivanti misses opportunity to fix vulnerability before attackers got to work and made it a zero-day 
 
-> **来源**: [UK Government Announces Sweeping New AI Security Plans](https://www.infosecurity-magazine.com/news/uk-government-sweeping-ai-security/)  #Infosecurity Magazine
+> **来源**: [Ivanti misses opportunity to fix vulnerability before attackers got to work and made it a zero-day](https://cyberscoop.com/ivanti-connect-secure-zero-day-actively-exploited/)  #CyberScoop
 
-### 📰 6. Defenders Reluctant to Deploy Agentic AI as a Cybersecurity Tool
+### ⚠️ 6. CVE-2026-108783 [HIGH 7.3]
 
-Flashpoint research suggests that only 25% of security teams have actively deployed AI, with many concerned about AI Agents’ negative impact
+A security vulnerability has been detected in PRVTPRO Amnezia-Web-Panel up to 1.6.2/1.7.2. This affects an unknown part of the file app.py of the component Backup Download. The manipulation leads to use of default credentials. The attack can be initiated remotely. The exploit has been disclosed publ
 
-> **来源**: [Defenders Reluctant to Deploy Agentic AI as a Cybersecurity Tool](https://www.infosecurity-magazine.com/news/defenders-skeptical-agentic-ai/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-108783 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-108783)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 7. European Retail Firms Confirm Cyber Incidents
+### 📰 7. Senators press Trump admin to rally federal government around AI safety, security
 
-Several Europe-based retail firms have confirmed experiencing cyber incidents, while H&M said it is “investigating” such claims
+The letter argues federal agencies should more rigorously test AI models for security threats and sandbox evasion, set new safety standards and lean into defensive AI. The post Senators press Trump admin to rally federal government around AI safety, security appeared first on CyberScoop.
 
-> **来源**: [European Retail Firms Confirm Cyber Incidents](https://www.infosecurity-magazine.com/news/retail-firms-confirm-cyber/)  #Infosecurity Magazine
+> **来源**: [Senators press Trump admin to rally federal government around AI safety, security](https://cyberscoop.com/congress-presses-trump-administration-ai-safety-cybersecurity/)  #CyberScoop
 
-### 📰 8. GTA 6 leaker threatens to release full playable version of game ahead of official launch
+### 📰 8. Microsoft Breaks Patch Tuesday Record Again with 1400+ CVEs
 
-The hacker behind a high-profile string of leaks involving the upcoming release of the Grand Theft Auto (GTA) 6 videogame has threatened to release a complete, playable build. Read more in my article on the Hot for Security blog.
+Microsoft issued its largest ever round of security updates in the October Patch Tuesday
 
-> **来源**: [GTA 6 leaker threatens to release full playable version of game ahead of official launch](https://www.bitdefender.com/en-us/blog/hotforsecurity/gta-6-leaker-threatens-release-full-game)  #Graham Cluley
+> **来源**: [Microsoft Breaks Patch Tuesday Record Again with 1400+ CVEs](https://www.infosecurity-magazine.com/news/microsoft-patch-tuesday-record-1/)  #Infosecurity Magazine
 
-### 📰 9. AI Is Getting Really Good at Messing With Cybercriminals
+### 📰 9. U.K. Sanctions Cryptomus for RU Money Laundering
 
-Anti-cybercrime initiatives are increasingly using AI to scam the scammers by tricking them into talking to lifelike bots that they think are real victims.
+The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
 
-> **来源**: [AI Is Getting Really Good at Messing With Cybercriminals](https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/)  #Wired Security
+> **来源**: [U.K. Sanctions Cryptomus for RU Money Laundering](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)  #Krebs on Security
 
-### 📰 10. Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push
+### 📰 10. ROMULUS Malware Server Leverages ClickFix to Deliver Multiple Payloads
 
-Ten leading AI firms have committed to make data protection improvements following a call for evidence by the UK’s Information Commissioner's Office
+Researchers at Forescout said the discovery shows how ClickFix is evolving from a delivery technique into full-blown cyber-criminal infrastructure
 
-> **来源**: [Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push](https://www.infosecurity-magazine.com/news/ai-firms-pledge-data-protection/)  #Infosecurity Magazine
+> **来源**: [ROMULUS Malware Server Leverages ClickFix to Deliver Multiple Payloads](https://www.infosecurity-magazine.com/news/romulus-malware-clickfix-deliver/)  #Infosecurity Magazine
 
 ---
 
