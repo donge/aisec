@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-15
+# 🤖🔒 AI+安全日报 | 2026-10-16
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Hackers abuse the Ivanti Connect Secure bug to gain access without accounts
+### 📰 1. Cisco warns of actively exploited Secure Email Gateway flaw
 
-Attackers without an account of their own were found logging in to Ivanti Connect Secure appliances using an authentication bypass flaw that the vendor has since fixed. Once inside, attackers ran arbitrary commands on the appliances. “Ivanti initially discovered a portion of this vulnerability as pa
+A critical vulnerability affecting Cisco’s Secure Email Gateway product is allowing attackers towrite arbitrary files on the underlying operating system. In an advisory issued on Wednesday, the company urged customers to apply available fixes after confirming that the flaw is being exploited in the 
 
-> **来源**: [Hackers abuse the Ivanti Connect Secure bug to gain access without accounts](https://www.csoonline.com/article/4235129/hackers-abuse-the-ivanti-connect-secure-bug-to-gain-access-without-accounts.html)  #CSO Online
+> **来源**: [Cisco warns of actively exploited Secure Email Gateway flaw](https://www.csoonline.com/article/4235801/cisco-warns-of-actively-exploited-secure-email-gateway-flaw.html)  #CSO Online
 
-### 📰 2. How Claude Code’s 256KB blind spot put developers’ secrets in the preview pane
+### 📰 2. Attackers exploit Palo Alto PAN-OS flaw for root access as CISA orders three-day fix
 
-Simply asking Anthropic’s Claude Code to review an HTML file could hand attackers access to a developer’s machine, cloud credentials and software development environment, according to a new Noma Security finding. Noma’s researchers found a vulnerability affecting Anthropic’s Claude Code Desktop app 
+Attackers are exploiting a newly disclosed flaw in Palo Alto Networks’ PAN-OS firewall software to run code with root privileges, and US federal agencies have been ordered to fix it and check for compromise by October 17. Palo Alto Networks disclosed the vulnerability, tracked as CVE-2026-0322, in a
 
-> **来源**: [How Claude Code’s 256KB blind spot put developers’ secrets in the preview pane](https://www.csoonline.com/article/4235139/how-claude-codes-256kb-blind-spot-put-developers-secrets-in-the-preview-pane.html)  #CSO Online
+> **来源**: [Attackers exploit Palo Alto PAN-OS flaw for root access as CISA orders three-day fix](https://www.csoonline.com/article/4235787/attackers-exploit-palo-alto-pan-os-flaw-for-root-access-as-cisa-orders-three-day-fix.html)  #CSO Online
 
-### 📰 3. IonQ’s $1.2 billion acquisition of Elisity is trying to position it for quantum cybersecurity
+### 📰 3. Ransomware extortion gets personal as attackers target employees’ families
 
-When quantum vendor IonQ on Sunday announced a $1.2 billion all stock deal to take over cybersecurity vendor Elisity, it spoke of a near-term future where enterprise quantum cybersecurity needs will move beyond replacing to-be-outdated encryption. The acquisition brings together IonQ’s post-quantum 
+Ransomware attackers are expanding their tactics beyond encrypting corporate systems and threatening to leak stolen data. They are increasingly using AI in attacks, exploiting organizations’ own AI systems and even using physical intimidation by threatening employees and their families to pressure c
 
-> **来源**: [IonQ’s $1.2 billion acquisition of Elisity is trying to position it for quantum cybersecurity](https://www.csoonline.com/article/4234910/ionqs-1-2-billion-acquisition-of-elisity-is-trying-to-position-it-for-quantum-cybersecurity.html)  #CSO Online
+> **来源**: [Ransomware extortion gets personal as attackers target employees’ families](https://www.csoonline.com/article/4235782/ransomware-extortion-gets-personal-as-attackers-target-employees-families.html)  #CSO Online
 
-### 📰 4. October Patch Tuesday roundup: Over 1,400 Microsoft holes to be plugged, including three zero days
+### 📰 4. Warning Over High-Risk Vulnerabilities in Widely Used LLM Gateway Tool
 
-Microsoft released a record-shattering 1,407 CVEs to be plugged today on October Patch Tuesday, breaking the 2020 record of 1,261. The list was so long that its release was several hours later than the usual 1 p.m. Eastern drop time, somewhat frustrating admins. The bugs include three zero-day vulne
+CVE-2026-35029 and CVE-2026-59823 affect LiteLLM, which is commonly used by enterprises to connect their AI applications to providers like OpenAI and Anthropic
 
-> **来源**: [October Patch Tuesday roundup: Over 1,400 Microsoft holes to be plugged, including three zero days](https://www.csoonline.com/article/4234759/october-patch-tuesday-roundup-over-1400-microsoft-holes-to-be-plugged-including-three-zero-days.html)  #CSO Online
+> **来源**: [Warning Over High-Risk Vulnerabilities in Widely Used LLM Gateway Tool](https://www.infosecurity-magazine.com/news/high-risk-vulnerabilities-llm-tool/)  #Infosecurity Magazine
 
-### 📰 5. Ivanti misses opportunity to fix vulnerability before attackers got to work and made it a zero-day
+### 📰 5. Cybersecurity is a leadership problem: Why the management model needs to catch up
 
-The security vendor said it initially discovered a portion of the defect during internal security checks in June, but the company said it didn’t meet the threshold for an out-of-band release. The post Ivanti misses opportunity to fix vulnerability before attackers got to work and made it a zero-day 
+When I started writing regularly about cybersecurity management in 2015, the environment looked very different. Cloud computing was still reshaping enterprise technology. Ransomware had not become the industrialised threat it is today. Artificial intelligence was not driving boardroom discussions. Z
 
-> **来源**: [Ivanti misses opportunity to fix vulnerability before attackers got to work and made it a zero-day](https://cyberscoop.com/ivanti-connect-secure-zero-day-actively-exploited/)  #CyberScoop
+> **来源**: [Cybersecurity is a leadership problem: Why the management model needs to catch up](https://www.csoonline.com/article/4234532/cybersecurity-is-a-leadership-problem-why-the-management-model-needs-to-catch-up.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-108783 [HIGH 7.3]
+### ⚠️ 6. CVE-2026-83535 [HIGH 7.4]
 
-A security vulnerability has been detected in PRVTPRO Amnezia-Web-Panel up to 1.6.2/1.7.2. This affects an unknown part of the file app.py of the component Backup Download. The manipulation leads to use of default credentials. The attack can be initiated remotely. The exploit has been disclosed publ
+A flaw was found in openstack-network-exporter. When an operator configures user authentication but omits or misconfigures Transport Layer Security (TLS), the basic authentication mechanism is silently bypassed. This fail-open design allows an adjacent network attacker to access sensitive Open vSwit
 
-> **来源**: [CVE-2026-108783 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-108783)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-83535 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-83535)  CVSS 7.4 HIGH · #NVD · #漏洞
 
-### 📰 7. Senators press Trump admin to rally federal government around AI safety, security
+### 📰 7. Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant
 
-The letter argues federal agencies should more rigorously test AI models for security threats and sandbox evasion, set new safety standards and lean into defensive AI. The post Senators press Trump admin to rally federal government around AI safety, security appeared first on CyberScoop.
+We investigated an intrusion where attackers exploited CVE-2024-47575 to target 500+ firewalls and deploy PEERSTITCH, a memory-resident ARM64 malware. The post Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant appeared first on Unit 42.
 
-> **来源**: [Senators press Trump admin to rally federal government around AI safety, security](https://cyberscoop.com/congress-presses-trump-administration-ai-safety-cybersecurity/)  #CyberScoop
+> **来源**: [Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant](https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/)  #Unit 42
 
-### 📰 8. Microsoft Breaks Patch Tuesday Record Again with 1400+ CVEs
+### ⚠️ 8. CVE-2026-108921 [HIGH 7.3]
 
-Microsoft issued its largest ever round of security updates in the October Patch Tuesday
+A vulnerability was detected in KusalkaSilva Learning-Management-System up to ffeb873f8803f1e9664384ff75000c7da45466d2. This impacts the function mysql_query of the file remove_announcements.php of the component State-Changing Endpoints. Performing a manipulation of the argument ID results in missin
 
-> **来源**: [Microsoft Breaks Patch Tuesday Record Again with 1400+ CVEs](https://www.infosecurity-magazine.com/news/microsoft-patch-tuesday-record-1/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-108921 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-108921)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 9. U.K. Sanctions Cryptomus for RU Money Laundering
+### 📰 9. ICO Reprimands Met Over Third-Party Data Leak
 
-The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
+The ICO has handed the Metropolitan Police a reprimand and enforcement notice after privacy failings linked to the Auror platform
 
-> **来源**: [U.K. Sanctions Cryptomus for RU Money Laundering](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)  #Krebs on Security
+> **来源**: [ICO Reprimands Met Over Third-Party Data Leak](https://www.infosecurity-magazine.com/news/ico-reprimands-met-over-thirdparty/)  #Infosecurity Magazine
 
-### 📰 10. ROMULUS Malware Server Leverages ClickFix to Deliver Multiple Payloads
+### 📰 10. Smashing Security podcast #488: How a ransomware negotiator ended up arrested at his own conference
 
-Researchers at Forescout said the discovery shows how ClickFix is evolving from a delivery technique into full-blown cyber-criminal infrastructure
+A ransomware negotiator attended a cybersecurity conference, only to be arrested by the FBI in connection with its investigation into the ShinyHunters gang. Meanwhile, hackers get the keys to ASOS's app and the chance to message every single customer. What did they say? And how did the company respo
 
-> **来源**: [ROMULUS Malware Server Leverages ClickFix to Deliver Multiple Payloads](https://www.infosecurity-magazine.com/news/romulus-malware-clickfix-deliver/)  #Infosecurity Magazine
+> **来源**: [Smashing Security podcast #488: How a ransomware negotiator ended up arrested at his own conference](https://grahamcluley.com/smashing-security-podcast-488/)  #Graham Cluley
 
 ---
 
