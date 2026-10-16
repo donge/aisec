@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-16
+# 🤖🔒 AI+安全日报 | 2026-10-17
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Cisco warns of actively exploited Secure Email Gateway flaw
+### 📰 1. TypeSafe’s Jev ‘even more susceptible to attack’ than LLMs, says security vendor
 
-A critical vulnerability affecting Cisco’s Secure Email Gateway product is allowing attackers towrite arbitrary files on the underlying operating system. In an advisory issued on Wednesday, the company urged customers to apply available fixes after confirming that the flaw is being exploited in the 
+Although the Jev model rolled out last month by TypeSafe claims to have significant advantages over traditional LLMs, a security report published Wednesday argued that its streamlined approach makes it more vulnerable to some kinds of attack, compared to traditional LLMs. “In some cases, [Jev] is ev
 
-> **来源**: [Cisco warns of actively exploited Secure Email Gateway flaw](https://www.csoonline.com/article/4235801/cisco-warns-of-actively-exploited-secure-email-gateway-flaw.html)  #CSO Online
+> **来源**: [TypeSafe’s Jev ‘even more susceptible to attack’ than LLMs, says security vendor](https://www.csoonline.com/article/4236132/typesafes-jev-even-more-susceptible-to-attack-than-llms-says-security-vendor-2.html)  #CSO Online
 
-### 📰 2. Attackers exploit Palo Alto PAN-OS flaw for root access as CISA orders three-day fix
+### 📰 2. Xbow spent $40K on AI and cracked Google Chrome wide open
 
-Attackers are exploiting a newly disclosed flaw in Palo Alto Networks’ PAN-OS firewall software to run code with root privileges, and US federal agencies have been ordered to fix it and check for compromise by October 17. Palo Alto Networks disclosed the vulnerability, tracked as CVE-2026-0322, in a
+A chain of vulnerabilities in Google’s Chrome browser could have enabled researchers to take control of one billion Windows machines worldwide — and it cost them just $40,000 in AI compute time to discover it. Researchers at Xbow USA worked for six days on developing the exploit, which earned them a
 
-> **来源**: [Attackers exploit Palo Alto PAN-OS flaw for root access as CISA orders three-day fix](https://www.csoonline.com/article/4235787/attackers-exploit-palo-alto-pan-os-flaw-for-root-access-as-cisa-orders-three-day-fix.html)  #CSO Online
+> **来源**: [Xbow spent $40K on AI and cracked Google Chrome wide open](https://www.csoonline.com/article/4236599/xbow-spent-40k-on-ai-and-cracked-google-chrome-wide-open-2.html)  #CSO Online
 
-### 📰 3. Ransomware extortion gets personal as attackers target employees’ families
+### 📰 3. BeyondTrust zero-day tied to Chinese spies puts Remote Support users on alert
 
-Ransomware attackers are expanding their tactics beyond encrypting corporate systems and threatening to leak stolen data. They are increasingly using AI in attacks, exploiting organizations’ own AI systems and even using physical intimidation by threatening employees and their families to pressure c
+Organizations running self-hosted BeyondTrust Remote Support should treat exposed appliances as potentially compromised after a suspected Chinese espionage group exploited a critical zero-day to gain root control, access credential vaults, and establish footholds for lateral movement, according to M
 
-> **来源**: [Ransomware extortion gets personal as attackers target employees’ families](https://www.csoonline.com/article/4235782/ransomware-extortion-gets-personal-as-attackers-target-employees-families.html)  #CSO Online
+> **来源**: [BeyondTrust zero-day tied to Chinese spies puts Remote Support users on alert](https://www.csoonline.com/article/4236421/beyondtrust-zero-day-tied-to-chinese-spies-puts-remote-support-users-on-alert.html)  #CSO Online
 
-### 📰 4. Warning Over High-Risk Vulnerabilities in Widely Used LLM Gateway Tool
+### 📰 4. Prolific Chinese espionage group exploits BeyondTrust zero-day
 
-CVE-2026-35029 and CVE-2026-59823 affect LiteLLM, which is commonly used by enterprises to connect their AI applications to providers like OpenAI and Anthropic
+Researchers said the first known attack by Armory Castle, also known as UNC5221, occurred almost seven weeks ago. The threat group previously compromised Ivanti and Citrix customers. The post Prolific Chinese espionage group exploits BeyondTrust zero-day appeared first on CyberScoop.
 
-> **来源**: [Warning Over High-Risk Vulnerabilities in Widely Used LLM Gateway Tool](https://www.infosecurity-magazine.com/news/high-risk-vulnerabilities-llm-tool/)  #Infosecurity Magazine
+> **来源**: [Prolific Chinese espionage group exploits BeyondTrust zero-day](https://cyberscoop.com/china-espionage-attacks-beyondtrust-zero-day-armory-castle/)  #CyberScoop
 
-### 📰 5. Cybersecurity is a leadership problem: Why the management model needs to catch up
+### 📰 5. Linux kernel gets a fix for a flaw that enabled attackers to escape VMs
 
-When I started writing regularly about cybersecurity management in 2015, the environment looked very different. Cloud computing was still reshaping enterprise technology. Ransomware had not become the industrialised threat it is today. Artificial intelligence was not driving boardroom discussions. Z
+The Linux kernel’s networking stack was found vulnerable to a guest-to-host escape attack, in which an attacker operating inside a virtual machine (VM) could cross the isolation boundary and access the underlying host. Dubbed PwnEscape and tracked as CVE-2026-99999, a flaw allowed guest-controlled p
 
-> **来源**: [Cybersecurity is a leadership problem: Why the management model needs to catch up](https://www.csoonline.com/article/4234532/cybersecurity-is-a-leadership-problem-why-the-management-model-needs-to-catch-up.html)  #CSO Online
+> **来源**: [Linux kernel gets a fix for a flaw that enabled attackers to escape VMs](https://www.csoonline.com/article/4236460/linux-kernel-gets-a-fix-for-a-flaw-that-enabled-attackers-to-escape-vms.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-83535 [HIGH 7.4]
+### 📰 6. Top 5 Initial Access Threat Vectors Observed by Unit 42 in September 2026
 
-A flaw was found in openstack-network-exporter. When an operator configures user authentication but omits or misconfigures Transport Layer Security (TLS), the basic authentication mechanism is silently bypassed. This fail-open design allows an adjacent network attacker to access sensitive Open vSwit
+Unit 42 details the top initial access vectors adversaries use to breach organizations, led by edge exploits, credential abuse and phishing The post Top 5 Initial Access Threat Vectors Observed by Unit 42 in September 2026 appeared first on Unit 42.
 
-> **来源**: [CVE-2026-83535 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-83535)  CVSS 7.4 HIGH · #NVD · #漏洞
+> **来源**: [Top 5 Initial Access Threat Vectors Observed by Unit 42 in September 2026](https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/)  #Unit 42
 
-### 📰 7. Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant
+### 📰 7. Ransomware Gangs Increasingly Turn to Threats of Physical Violence to Extort Payments
 
-We investigated an intrusion where attackers exploited CVE-2024-47575 to target 500+ firewalls and deploy PEERSTITCH, a memory-resident ARM64 malware. The post Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant appeared first on Unit 42.
+New report warns that threats of violence against employees of organizations hit by ransomware are on the rise as attackers find new ways to guarantee payments
 
-> **来源**: [Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant](https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/)  #Unit 42
+> **来源**: [Ransomware Gangs Increasingly Turn to Threats of Physical Violence to Extort Payments](https://www.infosecurity-magazine.com/news/ransomware-threats-physical/)  #Infosecurity Magazine
 
-### ⚠️ 8. CVE-2026-108921 [HIGH 7.3]
+### ⚠️ 8. CVE-2026-100133 [CRITICAL 9.3]
 
-A vulnerability was detected in KusalkaSilva Learning-Management-System up to ffeb873f8803f1e9664384ff75000c7da45466d2. This impacts the function mysql_query of the file remove_announcements.php of the component State-Changing Endpoints. Performing a manipulation of the argument ID results in missin
+Adobe Commerce is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field, potent
 
-> **来源**: [CVE-2026-108921 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-108921)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-100133 [CRITICAL 9.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-100133)  CVSS 9.3 CRITICAL · #NVD · #漏洞
 
-### 📰 9. ICO Reprimands Met Over Third-Party Data Leak
+### 📰 9. Proofpoint to buy Varonis for $6.3 billion
 
-The ICO has handed the Metropolitan Police a reprimand and enforcement notice after privacy failings linked to the Auror platform
+The deal pairs the email security giant's massive threat intelligence with Varonis' visibility into corporate data, as both companies race to secure the AI agents now roaming enterprise networks. The post Proofpoint to buy Varonis for $6.3 billion appeared first on CyberScoop.
 
-> **来源**: [ICO Reprimands Met Over Third-Party Data Leak](https://www.infosecurity-magazine.com/news/ico-reprimands-met-over-thirdparty/)  #Infosecurity Magazine
+> **来源**: [Proofpoint to buy Varonis for $6.3 billion](https://cyberscoop.com/proofpoint-acquires-varonis-systems-data-security/)  #CyberScoop
 
-### 📰 10. Smashing Security podcast #488: How a ransomware negotiator ended up arrested at his own conference
+### 📰 10. Cyber Incident at BAE Systems Disrupts US Federal Bankruptcy Noticing
 
-A ransomware negotiator attended a cybersecurity conference, only to be arrested by the FBI in connection with its investigation into the ShinyHunters gang. Meanwhile, hackers get the keys to ASOS's app and the chance to message every single customer. What did they say? And how did the company respo
+Several services of the US Bankruptcy Noticing Center are unavailable due to a cyber incident affecting defense contractor BAE Systems
 
-> **来源**: [Smashing Security podcast #488: How a ransomware negotiator ended up arrested at his own conference](https://grahamcluley.com/smashing-security-podcast-488/)  #Graham Cluley
+> **来源**: [Cyber Incident at BAE Systems Disrupts US Federal Bankruptcy Noticing](https://www.infosecurity-magazine.com/news/cyber-incident-bae-us-bankruptcy/)  #Infosecurity Magazine
 
 ---
 
