@@ -1,68 +1,72 @@
-# 🤖🔒 AI+安全日报 | 2026-10-17
+# 🤖🔒 AI+安全日报 | 2026-10-18
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. TypeSafe’s Jev ‘even more susceptible to attack’ than LLMs, says security vendor
+### ⚠️ 1. CVE-2026-101983 [CRITICAL 9.8]
 
-Although the Jev model rolled out last month by TypeSafe claims to have significant advantages over traditional LLMs, a security report published Wednesday argued that its streamlined approach makes it more vulnerable to some kinds of attack, compared to traditional LLMs. “In some cases, [Jev] is ev
+A Stack-based Buffer Overflow vulnerability in the httpd process of Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated network attacker to cause remote code execution and denial of service via a J-Web virtual-domain configured.
 
-> **来源**: [TypeSafe’s Jev ‘even more susceptible to attack’ than LLMs, says security vendor](https://www.csoonline.com/article/4236132/typesafes-jev-even-more-susceptible-to-attack-than-llms-says-security-vendor-2.html)  #CSO Online
+> **来源**: [CVE-2026-101983 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-101983)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 2. Xbow spent $40K on AI and cracked Google Chrome wide open
+### ⚠️ 2. CVE-2026-101954 [CRITICAL 9.8]
 
-A chain of vulnerabilities in Google’s Chrome browser could have enabled researchers to take control of one billion Windows machines worldwide — and it cost them just $40,000 in AI compute time to discover it. Researchers at Xbow USA worked for six days on developing the exploit, which earned them a
+An Improper Authentication vulnerability in the J-Web management interface and its NETCONF session handling of Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated network attacker to obtain root-level device configuration access and take over the device via a reachable J-Web HTT
 
-> **来源**: [Xbow spent $40K on AI and cracked Google Chrome wide open](https://www.csoonline.com/article/4236599/xbow-spent-40k-on-ai-and-cracked-google-chrome-wide-open-2.html)  #CSO Online
+> **来源**: [CVE-2026-101954 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-101954)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 3. BeyondTrust zero-day tied to Chinese spies puts Remote Support users on alert
+### 📰 3. Hallucinated domain in official OpenAI skill underscores AI supply chain risks
 
-Organizations running self-hosted BeyondTrust Remote Support should treat exposed appliances as potentially compromised after a suspected Chinese espionage group exploited a critical zero-day to gain root control, access credential vaults, and establish footholds for lateral movement, according to M
+Researchers have discovered a first-of-its-kind supply-chain vulnerability in OpenAI’s official skills repository. OpenAI maintains an official GitHub repository of skills that teach AI agents how to work with various platforms and services. As an official skill, these components are often given an 
 
-> **来源**: [BeyondTrust zero-day tied to Chinese spies puts Remote Support users on alert](https://www.csoonline.com/article/4236421/beyondtrust-zero-day-tied-to-chinese-spies-puts-remote-support-users-on-alert.html)  #CSO Online
+> **来源**: [Hallucinated domain in official OpenAI skill underscores AI supply chain risks](https://www.csoonline.com/article/4236659/hallucinated-domain-in-official-openai-skill-underscores-ai-supply-chain-risks.html)  #CSO Online
 
-### 📰 4. Prolific Chinese espionage group exploits BeyondTrust zero-day
+### 📰 4. Cyberattack AIs must be trained only on air-gapped systems, hundreds of AI researchers say
 
-Researchers said the first known attack by Armory Castle, also known as UNC5221, occurred almost seven weeks ago. The threat group previously compromised Ivanti and Citrix customers. The post Prolific Chinese espionage group exploits BeyondTrust zero-day appeared first on CyberScoop.
+Current security procedures for training AI models are inadequate, hundreds of AI researchers have warned governments and the AI community. They are calling for tougher rules and the establishment of a new international body overseeing best practice for AI development. In an open letter the AI speci
 
-> **来源**: [Prolific Chinese espionage group exploits BeyondTrust zero-day](https://cyberscoop.com/china-espionage-attacks-beyondtrust-zero-day-armory-castle/)  #CyberScoop
+> **来源**: [Cyberattack AIs must be trained only on air-gapped systems, hundreds of AI researchers say](https://www.csoonline.com/article/4236276/cyberattack-ais-must-be-trained-only-on-air-gapped-systems-hundreds-of-ai-researchers-say.html)  #CSO Online
 
-### 📰 5. Linux kernel gets a fix for a flaw that enabled attackers to escape VMs
+### 📰 5. Malware evasion made easier with AI — but behavior still gives it away
 
-The Linux kernel’s networking stack was found vulnerable to a guest-to-host escape attack, in which an attacker operating inside a virtual machine (VM) could cross the isolation boundary and access the underlying host. Dubbed PwnEscape and tracked as CVE-2026-99999, a flaw allowed guest-controlled p
+Fresh research suggests recent panic over AI-generated malware may be overblown. Last month Anthropic detailed how Russia-linked cyberespionage group Midnight Blizzard used Claude to rebuild malware each time security tools flagged its backdoor as malign. “We observed GTG-20006 operate through custo
 
-> **来源**: [Linux kernel gets a fix for a flaw that enabled attackers to escape VMs](https://www.csoonline.com/article/4236460/linux-kernel-gets-a-fix-for-a-flaw-that-enabled-attackers-to-escape-vms.html)  #CSO Online
+> **来源**: [Malware evasion made easier with AI — but behavior still gives it away](https://www.csoonline.com/article/4235447/malware-evasion-made-easier-with-ai-but-behavior-still-gives-it-away.html)  #CSO Online
 
-### 📰 6. Top 5 Initial Access Threat Vectors Observed by Unit 42 in September 2026
+### 📰 6. As phishing-as-a-service goes industrial, Microsoft takes down a marketplace behind 1 billion messages
 
-Unit 42 details the top initial access vectors adversaries use to breach organizations, led by edge exploits, credential abuse and phishing The post Top 5 Initial Access Threat Vectors Observed by Unit 42 in September 2026 appeared first on Unit 42.
+Microsoft says it has dismantled a criminal marketplace responsible for 1 billion malicious messages. Working with international authorities and several tech and cybersecurity companies in a nearly year-long investigation, Redmond identified and took down Yam Store, a coordinated underground network
 
-> **来源**: [Top 5 Initial Access Threat Vectors Observed by Unit 42 in September 2026](https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/)  #Unit 42
+> **来源**: [As phishing-as-a-service goes industrial, Microsoft takes down a marketplace behind 1 billion messages](https://www.csoonline.com/article/4235517/as-phishing-as-a-service-goes-industrial-microsoft-takes-down-a-marketplace-behind-1-billion-messages.html)  #CSO Online
 
-### 📰 7. Ransomware Gangs Increasingly Turn to Threats of Physical Violence to Extort Payments
+### ⚠️ 7. CVE-2026-0322 [HIGH 7.2]
 
-New report warns that threats of violence against employees of organizations hit by ransomware are on the rise as attackers find new ways to guarantee payments
+A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.
 
-> **来源**: [Ransomware Gangs Increasingly Turn to Threats of Physical Violence to Extort Payments](https://www.infosecurity-magazine.com/news/ransomware-threats-physical/)  #Infosecurity Magazine
 
-### ⚠️ 8. CVE-2026-100133 [CRITICAL 9.3]
 
-Adobe Commerce is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field, potent
+The security risk posed by this issue is minimized by restricting ac
 
-> **来源**: [CVE-2026-100133 [CRITICAL 9.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-100133)  CVSS 9.3 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-0322 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-0322)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 9. Proofpoint to buy Varonis for $6.3 billion
+### 📰 8. Federal agencies recommend cyber controls, independent testing for frontier AI systems
 
-The deal pairs the email security giant's massive threat intelligence with Varonis' visibility into corporate data, as both companies race to secure the AI agents now roaming enterprise networks. The post Proofpoint to buy Varonis for $6.3 billion appeared first on CyberScoop.
+While voluntary, the document marks the federal government’s most detailed cybersecurity guidance for securing sandbox environments during AI model tests. The post Federal agencies recommend cyber controls, independent testing for frontier AI systems appeared first on CyberScoop.
 
-> **来源**: [Proofpoint to buy Varonis for $6.3 billion](https://cyberscoop.com/proofpoint-acquires-varonis-systems-data-security/)  #CyberScoop
+> **来源**: [Federal agencies recommend cyber controls, independent testing for frontier AI systems](https://cyberscoop.com/federal-ai-agent-sandbox-security-guidance/)  #CyberScoop
 
-### 📰 10. Cyber Incident at BAE Systems Disrupts US Federal Bankruptcy Noticing
+### 📰 9. Microsoft drops an actively exploited zero-day among record high of 1,413 vulnerabilities
 
-Several services of the US Bankruptcy Noticing Center are unavailable due to a cyber incident affecting defense contractor BAE Systems
+In its October Patch Tuesday, the tech giant addressed more defects in one month than any annual total on record. Nearly 4 in 5 vulnerabilities affect Windows. The post Microsoft drops an actively exploited zero-day among record high of 1,413 vulnerabilities appeared first on CyberScoop.
 
-> **来源**: [Cyber Incident at BAE Systems Disrupts US Federal Bankruptcy Noticing](https://www.infosecurity-magazine.com/news/cyber-incident-bae-us-bankruptcy/)  #Infosecurity Magazine
+> **来源**: [Microsoft drops an actively exploited zero-day among record high of 1,413 vulnerabilities](https://cyberscoop.com/microsoft-patch-tuesday-october-2026/)  #CyberScoop
+
+### 📰 10. Passkey Authentications Double but Adoption Remains Slow
+
+Dashlane data finds that passkey adoption is growing but not quickly enough
+
+> **来源**: [Passkey Authentications Double but Adoption Remains Slow](https://www.infosecurity-magazine.com/news/passkey-authentications-double/)  #Infosecurity Magazine
 
 ---
 
