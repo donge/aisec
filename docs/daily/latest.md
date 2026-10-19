@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-19
+# 🤖🔒 AI+安全日报 | 2026-10-20
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-55103 [HIGH 8.6]
+### 📰 1. 9 rising malware trends every security pro should know
 
-Discourse ActivityPub adds ActivityPub support to Discourse. Prior to commit 1c8518b0f2abdf31cbea3e0b242f74d8994a9ba5, inbound ActivityPub processing does not sufficiently verify that the actor authenticated by the signed request matches the Activity actor and owns the referenced federated post. A r
+Malware is evolving rapidly, driven by advances in AI and changes in computing infrastructures. Security professionals must continuously educate themselves on these trends to defend against increasingly sophisticated threats. The traditional game of cat and mouse between security attackers and defen
 
-> **来源**: [CVE-2026-55103 [HIGH 8.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-55103)  CVSS 8.6 HIGH · #NVD · #漏洞
+> **来源**: [9 rising malware trends every security pro should know](https://www.csoonline.com/article/3997388/6-rising-malware-trends-every-security-pro-should-know.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-111105 [HIGH 7]
+### 📰 2. Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
 
-Telegram rlottie Numeric Truncation Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Telegram. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a mal
+U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
 
-> **来源**: [CVE-2026-111105 [HIGH 7]](https://nvd.nist.gov/vuln/detail/CVE-2026-111105)  CVSS 7 HIGH · #NVD · #漏洞
+> **来源**: [Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)  #Krebs on Security
 
-### 📰 3. Unplug your smart fridges, French supermarkets warned after cyberattack
+### 📰 3. Conduent Agrees to Pay $80m to Settle Data Breach Class Action
 
-More internet-connected refrigerators have joined the official list of those affected by a cyberattack that ruined stocks of chilled food at hundreds of French supermarkets over the weekend. The French Computer Emergency Response Team (CERT-FR) advised supermarkets to disconnect any refrigeration co
+The 2024 cyber incident affected the healthcare data of 62 million people, who launched a class action lawsuit against the business services firm
 
-> **来源**: [Unplug your smart fridges, French supermarkets warned after cyberattack](https://www.csoonline.com/article/4235107/unplug-your-smart-fridges-french-supermarkets-warned-after-cyberattack.html)  #CSO Online
+> **来源**: [Conduent Agrees to Pay $80m to Settle Data Breach Class Action](https://www.infosecurity-magazine.com/news/conduent-settle-data-breach-action/)  #Infosecurity Magazine
 
-### 📰 4. No click required: How the ad industry became a pipeline for mercenary spyware
+### 📰 4. OpenCode Breach Could Affect OpenAI, Anthropic and Google
 
-That ad you just scrolled past on your phone but barely spared a look or click? It could be tracking your movements and collecting your data, without you having to do a thing. This “zero-click mercenary spyware,” dubbed “AdFection,” is increasingly exploiting a sprawling online advertising ecosystem
+A breach affecting the OpenCode Console may lead to the exposure of API keys for Anthropic, OpenAI and Google Gemini users
 
-> **来源**: [No click required: How the ad industry became a pipeline for mercenary spyware](https://www.csoonline.com/article/4236143/no-click-required-how-the-ad-industry-became-a-pipeline-for-mercenary-spyware.html)  #CSO Online
+> **来源**: [OpenCode Breach Could Affect OpenAI, Anthropic and Google](https://www.infosecurity-magazine.com/news/opencode-breach-openai-anthropic/)  #Infosecurity Magazine
 
-### 📰 5. AI-Powered Espionage Campaign Targets Government Linux Infrastructure
+### 📰 5. Microsoft, Nvidia push provenance checks as open-weight AI adoption accelerates
 
-Our analysis an AI-powered espionage campaign targeting government Linux infrastructure with custom malware, web shells, and advanced credential theft. The post AI-Powered Espionage Campaign Targets Government Linux Infrastructure appeared first on Unit 42.
+Microsoft and Nvidia are urging enterprises to assess the security of open-weight AI models throughout deployment, warning that changes to model weights and configurations can weaken safeguards even when a model retains its ability to perform assigned tasks. In a joint paper published last week, the
 
-> **来源**: [AI-Powered Espionage Campaign Targets Government Linux Infrastructure](https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/)  #Unit 42
+> **来源**: [Microsoft, Nvidia push provenance checks as open-weight AI adoption accelerates](https://www.csoonline.com/article/4237095/microsoft-nvidia-push-provenance-checks-as-open-weight-ai-adoption-accelerates.html)  #CSO Online
 
-### 📰 6. AI agents aren’t ‘going rogue.’ Frontier labs are skipping security basics.
+### 📰 6. ConnectWise backup credentials exposed multiple Microsoft 365 tenants
 
-Since July, US frontier AI labs and other AI leaders have revealed a string of incidents in which their models accessed external computer systems without authorization, events popularly described as AI agents “going rogue.” The most well-known and studied of these incidents is OpenAI’s hack into Hug
+ConnectWise has disabled key cloud services and is investigating unauthorized access to customers’ Microsoft 365 environments after a credential tied to its Cloud Backup platform was compromised and used to authenticate into customer tenants, prompting Huntress to identify suspicious sign-ins across
 
-> **来源**: [AI agents aren’t ‘going rogue.’ Frontier labs are skipping security basics.](https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html)  #CSO Online
+> **来源**: [ConnectWise backup credentials exposed multiple Microsoft 365 tenants](https://www.csoonline.com/article/4237087/connectwise-backup-credentials-exposed-multiple-microsoft-365-tenants.html)  #CSO Online
 
-### 📰 7. The Noise Inside the Network: How an Unsophisticated Attack Exposed a Third-Party Risk
+### 📰 7. The password nobody owns: Taking machines to zero standing privilege (ZSP)
 
-Unit 42 dissects a cyberattack targeting a European bank's IT infrastructure, delivering concrete defense strategies to help organizations detect and counter comparable threats. The post The Noise Inside the Network: How an Unsophisticated Attack Exposed a Third-Party Risk appeared first on Unit 42.
+Ask your infrastructure lead who owns the service account behind the overnight finance batch and notice how long the answer takes. In many of the environments I’ve reviewed, the engineer who set it up left years ago and the password has been sitting in a vault, or sometimes a plain config file, ever
 
-> **来源**: [The Noise Inside the Network: How an Unsophisticated Attack Exposed a Third-Party Risk](https://unit42.paloaltonetworks.com/noise-inside-network-third-party-risk/)  #Unit 42
+> **来源**: [The password nobody owns: Taking machines to zero standing privilege (ZSP)](https://www.csoonline.com/article/4236528/the-password-nobody-owns-taking-machines-to-zero-standing-privilege-zsp.html)  #CSO Online
 
-### 📰 8. Nikkei Discloses Two Employee Cloud Account Compromises
+### 📰 8. DHS to ban DeepSeek from federal civilian agencies
 
-Nikkei says two employee cloud accounts were accessed, with one used to send 9,000 phishing emails
+The order cites national security concerns, including sending data to servers in China, the potential for malware and the overall risk to federal IT systems. The post DHS to ban DeepSeek from federal civilian agencies appeared first on CyberScoop.
 
-> **来源**: [Nikkei Discloses Two Employee Cloud Account Compromises](https://www.infosecurity-magazine.com/news/nikkei-employee-cloud-account/)  #Infosecurity Magazine
+> **来源**: [DHS to ban DeepSeek from federal civilian agencies](https://cyberscoop.com/dhs-bans-deepseek-federal-agencies/)  #CyberScoop
 
-### 📰 9. The Machine With Many Faces: Post-Exploitation Identity Misuse in SPIFFE/SPIRE
+### 📰 9. ConnectWise Shuts Off Cloud Services After ‘Unauthorized Access’ to Microsoft 365 Tenants
 
-Learn how root access on a compromised K8s node allows attackers to utilize SPIFFE/SPIRE metadata to spoof and harvest co-located workload identities. The post The Machine With Many Faces: Post-Exploitation Identity Misuse in SPIFFE/SPIRE appeared first on Unit 42.
+Cloud Backup, SaaS Security, and Cloud Management services offline as IT service provider investigates possibility that unknown attackers have full access to client environments via stolen tokens
 
-> **来源**: [The Machine With Many Faces: Post-Exploitation Identity Misuse in SPIFFE/SPIRE](https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/)  #Unit 42
+> **来源**: [ConnectWise Shuts Off Cloud Services After ‘Unauthorized Access’ to Microsoft 365 Tenants](https://www.infosecurity-magazine.com/news/connectwise-shuts-off-cloud/)  #Infosecurity Magazine
 
-### 📰 10. Encryption Is Getting Squeezed From All Sides
+### 📰 10. US Cybersecurity Job Postings Fall 26%, Hitting Four Year Low
 
-Canada’s planned surveillance law is the latest grim step in a series of threats to encryption that are spreading around the world.
+CyberSN observed a particularly big dip in cybersecurity leadership positions such as CISO and Cybersecurity Director in 2026 compared to 2025
 
-> **来源**: [Encryption Is Getting Squeezed From All Sides](https://www.wired.com/story/kernel-panic-encryption-is-getting-squeezed-from-all-sides/)  #Wired Security
+> **来源**: [US Cybersecurity Job Postings Fall 26%, Hitting Four Year Low](https://www.infosecurity-magazine.com/news/cybersecurity-job-postings-fall/)  #Infosecurity Magazine
 
 ---
 
