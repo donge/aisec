@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-20
+# 🤖🔒 AI+安全日报 | 2026-10-21
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. 9 rising malware trends every security pro should know
+### 📰 1. F5 rushes out emergency NGINX patches for three critical flaws
 
-Malware is evolving rapidly, driven by advances in AI and changes in computing infrastructures. Security professionals must continuously educate themselves on these trends to defend against increasingly sophisticated threats. The traditional game of cat and mouse between security attackers and defen
+F5 is once again disclosing cybersecurity flaws in its core offerings. The app delivery and security provider has released out-of-band (OOB) security patches that address multiple flaws in NGINX, its high-performance software that controls digital traffic for websites. These include three critical-s
 
-> **来源**: [9 rising malware trends every security pro should know](https://www.csoonline.com/article/3997388/6-rising-malware-trends-every-security-pro-should-know.html)  #CSO Online
+> **来源**: [F5 rushes out emergency NGINX patches for three critical flaws](https://www.csoonline.com/article/4237420/f5-rushes-out-emergency-nginx-patches-for-three-critical-flaws.html)  #CSO Online
 
-### 📰 2. Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
+### 📰 2. Police arrest Qilin ransomware suspect on holiday, as links made to Synnovis hack that contributed to patient’s death
 
-U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
+A 28-year-old Russian man has been arrested by German police, suspected of being a key member of the Qilin ransomware gang. Detectives have linked the man to the attack against blood-testing firm Synnovis, that disrupted London hospitals, and resulted in the death of a patient. Read more in my artic
 
-> **来源**: [Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)  #Krebs on Security
+> **来源**: [Police arrest Qilin ransomware suspect on holiday, as links made to Synnovis hack that contributed to patient’s death](https://www.bitdefender.com/en-us/blog/hotforsecurity/qilin-ransomware-arrested-synnovis-patient-death)  #Graham Cluley
 
-### 📰 3. Conduent Agrees to Pay $80m to Settle Data Breach Class Action
+### ⚠️ 3. CVE-2026-111897 [HIGH 7.1]
 
-The 2024 cyber incident affected the healthcare data of 62 million people, who launched a class action lawsuit against the business services firm
+phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an authorization bypass vulnerability that allows category-restricted editors to manage attachments of FAQs outside their categories by supplying arbitrary record IDs. Attackers in medium permission mode can send upload or delete requests with a target
 
-> **来源**: [Conduent Agrees to Pay $80m to Settle Data Breach Class Action](https://www.infosecurity-magazine.com/news/conduent-settle-data-breach-action/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-111897 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-111897)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### 📰 4. OpenCode Breach Could Affect OpenAI, Anthropic and Google
+### ⚠️ 4. CVE-2026-111882 [HIGH 8.1]
 
-A breach affecting the OpenCode Console may lead to the exposure of API keys for Anthropic, OpenAI and Google Gemini users
+phpMyFAQ 3.2.0-alpha before 4.1.9 and 4.2.0-alpha before 4.2.0-beta contains an authentication bypass vulnerability that allows IdP-authenticated users to skip TOTP two-factor authentication through the Keycloak and Entra ID SSO callbacks. Attackers holding a valid or phished IdP identity linked to 
 
-> **来源**: [OpenCode Breach Could Affect OpenAI, Anthropic and Google](https://www.infosecurity-magazine.com/news/opencode-breach-openai-anthropic/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-111882 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-111882)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 5. Microsoft, Nvidia push provenance checks as open-weight AI adoption accelerates
+### 📰 5. Siemens Customers Targeted by ClickFix Attackers Exploiting DLL Side-Loading Flaw
 
-Microsoft and Nvidia are urging enterprises to assess the security of open-weight AI models throughout deployment, warning that changes to model weights and configurations can weaken safeguards even when a model retains its ability to perform assigned tasks. In a joint paper published last week, the
+Siemens identified the activity to be from the Romulus multi-platform ClickFix campaign, with Siemens Software Center users urged to apply an update
 
-> **来源**: [Microsoft, Nvidia push provenance checks as open-weight AI adoption accelerates](https://www.csoonline.com/article/4237095/microsoft-nvidia-push-provenance-checks-as-open-weight-ai-adoption-accelerates.html)  #CSO Online
+> **来源**: [Siemens Customers Targeted by ClickFix Attackers Exploiting DLL Side-Loading Flaw](https://www.infosecurity-magazine.com/news/siemens-clickfix-exploiting-side/)  #Infosecurity Magazine
 
-### 📰 6. ConnectWise backup credentials exposed multiple Microsoft 365 tenants
+### 📰 6. OT systems complicate quantum-resistant data protection
 
-ConnectWise has disabled key cloud services and is investigating unauthorized access to customers’ Microsoft 365 environments after a credential tied to its Cloud Backup platform was compromised and used to authenticate into customer tenants, prompting Huntress to identify suspicious sign-ins across
+Quantum-resistant cryptography presents security leaders with various challenges, but CISOs in industries dependent on IoT and operational technology (OT) devices may face a particularly difficult journey to quantum readiness, especially if sensitive information that must remain confidential for yea
 
-> **来源**: [ConnectWise backup credentials exposed multiple Microsoft 365 tenants](https://www.csoonline.com/article/4237087/connectwise-backup-credentials-exposed-multiple-microsoft-365-tenants.html)  #CSO Online
+> **来源**: [OT systems complicate quantum-resistant data protection](https://www.csoonline.com/article/4236142/ot-systems-complicate-shift-to-quantum-resistant-data-protection.html)  #CSO Online
 
-### 📰 7. The password nobody owns: Taking machines to zero standing privilege (ZSP)
+### 📰 7. Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign
 
-Ask your infrastructure lead who owns the service account behind the overnight finance batch and notice how long the answer takes. In many of the environments I’ve reviewed, the engineer who set it up left years ago and the password has been sitting in a vault, or sometimes a plain config file, ever
+It’s the work of the infamous group behind the attacks on Democrats during the 2016 presidential election, Symantec said. The post Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign appeared first on CyberScoop.
 
-> **来源**: [The password nobody owns: Taking machines to zero standing privilege (ZSP)](https://www.csoonline.com/article/4236528/the-password-nobody-owns-taking-machines-to-zero-standing-privilege-zsp.html)  #CSO Online
+> **来源**: [Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign](https://cyberscoop.com/russian-hackers-apt28-target-nato-defense-firms/)  #CyberScoop
 
-### 📰 8. DHS to ban DeepSeek from federal civilian agencies
+### 📰 8. ConnectWise customers hit by supply-chain attack linked to compromised API secret
 
-The order cites national security concerns, including sending data to servers in China, the potential for malware and the overall risk to federal IT systems. The post DHS to ban DeepSeek from federal civilian agencies appeared first on CyberScoop.
+Hundreds of customers are confirmed impacted, as attackers use a sensitive credential to break into connected Microsoft 365 applications unimpeded. The post ConnectWise customers hit by supply-chain attack linked to compromised API secret appeared first on CyberScoop.
 
-> **来源**: [DHS to ban DeepSeek from federal civilian agencies](https://cyberscoop.com/dhs-bans-deepseek-federal-agencies/)  #CyberScoop
+> **来源**: [ConnectWise customers hit by supply-chain attack linked to compromised API secret](https://cyberscoop.com/connectwise-cloud-backup-supply-chain-attack/)  #CyberScoop
 
-### 📰 9. ConnectWise Shuts Off Cloud Services After ‘Unauthorized Access’ to Microsoft 365 Tenants
+### 📰 9. DOJ escalates fight for election supremacy with California raids
 
-Cloud Backup, SaaS Security, and Cloud Management services offline as IT service provider investigates possibility that unknown attackers have full access to client environments via stolen tokens
+The arrests were paired with comments from DOJ and DHS officials, threatening to investigate, arrest or prosecute tens of thousands of California voters if they vote in November. The post DOJ escalates fight for election supremacy with California raids appeared first on CyberScoop.
 
-> **来源**: [ConnectWise Shuts Off Cloud Services After ‘Unauthorized Access’ to Microsoft 365 Tenants](https://www.infosecurity-magazine.com/news/connectwise-shuts-off-cloud/)  #Infosecurity Magazine
+> **来源**: [DOJ escalates fight for election supremacy with California raids](https://cyberscoop.com/justice-department-california-voter-arrests-noncitizen-claims/)  #CyberScoop
 
-### 📰 10. US Cybersecurity Job Postings Fall 26%, Hitting Four Year Low
+### 📰 10. Head of AI Security Roles Surge in Large Organizations
 
-CyberSN observed a particularly big dip in cybersecurity leadership positions such as CISO and Cybersecurity Director in 2026 compared to 2025
+A new IANS report has found that despite the growth of the head of AI security role, accountability for AI governance in firms remains unsettled
 
-> **来源**: [US Cybersecurity Job Postings Fall 26%, Hitting Four Year Low](https://www.infosecurity-magazine.com/news/cybersecurity-job-postings-fall/)  #Infosecurity Magazine
+> **来源**: [Head of AI Security Roles Surge in Large Organizations](https://www.infosecurity-magazine.com/news/head-ai-security-roles/)  #Infosecurity Magazine
 
 ---
 
