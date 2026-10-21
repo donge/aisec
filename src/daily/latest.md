@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-21
+# 🤖🔒 AI+安全日报 | 2026-10-22
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. F5 rushes out emergency NGINX patches for three critical flaws
+### 📰 1. KVM escape exposes broader attack surface in Linux networking
 
-F5 is once again disclosing cybersecurity flaws in its core offerings. The app delivery and security provider has released out-of-band (OOB) security patches that address multiple flaws in NGINX, its high-performance software that controls digital traffic for websites. These include three critical-s
+Security researchers have found a critical flaw in the Linux kernel’s networking stack that can let attackers escape a KVM virtual machine and execute code on the host system. The weakness could also potentially let attackers compromise systems running other Linux-based virtualization and sandbox pl
 
-> **来源**: [F5 rushes out emergency NGINX patches for three critical flaws](https://www.csoonline.com/article/4237420/f5-rushes-out-emergency-nginx-patches-for-three-critical-flaws.html)  #CSO Online
+> **来源**: [KVM escape exposes broader attack surface in Linux networking](https://www.csoonline.com/article/4237999/kvm-escape-exposes-broader-attack-surface-in-linux-networking.html)  #CSO Online
 
-### 📰 2. Police arrest Qilin ransomware suspect on holiday, as links made to Synnovis hack that contributed to patient’s death
+### 📰 2. Moving past autonomous exploitation to machine-speed security
 
-A 28-year-old Russian man has been arrested by German police, suspected of being a key member of the Qilin ransomware gang. Detectives have linked the man to the attack against blood-testing firm Synnovis, that disrupted London hospitals, and resulted in the death of a patient. Read more in my artic
+Frontier AI advancements have created a world where exploitation outpaces defense. The average enterprise takes 32 to 43 days to patch, but the mean time to exploit a vulnerability is 10 hours. This asymmetry creates questions around how enterprises can trust autonomous AI to operate ubiquitously ac
 
-> **来源**: [Police arrest Qilin ransomware suspect on holiday, as links made to Synnovis hack that contributed to patient’s death](https://www.bitdefender.com/en-us/blog/hotforsecurity/qilin-ransomware-arrested-synnovis-patient-death)  #Graham Cluley
+> **来源**: [Moving past autonomous exploitation to machine-speed security](https://www.csoonline.com/article/4237926/moving-past-autonomous-exploitation-to-machine-speed-security.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-111897 [HIGH 7.1]
+### 📰 3. WordPress sites compromised after TeamUpdraft credential exposure
 
-phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an authorization bypass vulnerability that allows category-restricted editors to manage attachments of FAQs outside their categories by supplying arbitrary record IDs. Attackers in medium permission mode can send upload or delete requests with a target
+Attackers are using stolen connection keys exposed in a TeamUpdraft security breach to install malicious plugins on affected WordPress sites and establish persistent access. Sites already compromised may remain at risk even after the exposed credentials are revoked. The attacks followed unauthorized
 
-> **来源**: [CVE-2026-111897 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-111897)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [WordPress sites compromised after TeamUpdraft credential exposure](https://www.csoonline.com/article/4238422/wordpress-sites-compromised-after-teamupdraft-credential-exposure.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-111882 [HIGH 8.1]
+### 📰 4. Children’s Data Stolen After Ransomware Attack Compromises ‘Password1’ Account
 
-phpMyFAQ 3.2.0-alpha before 4.1.9 and 4.2.0-alpha before 4.2.0-beta contains an authentication bypass vulnerability that allows IdP-authenticated users to skip TOTP two-factor authentication through the Keycloak and Entra ID SSO callbacks. Attackers holding a valid or phished IdP identity linked to 
+The ICO has slammed security failings by the Welsh local government data unit and IT service provider following the 2024 incident
 
-> **来源**: [CVE-2026-111882 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-111882)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [Children’s Data Stolen After Ransomware Attack Compromises ‘Password1’ Account](https://www.infosecurity-magazine.com/news/children-data-stolen-password1/)  #Infosecurity Magazine
 
-### 📰 5. Siemens Customers Targeted by ClickFix Attackers Exploiting DLL Side-Loading Flaw
+### 📰 5. php2shell (CVE-2026-109618, CVE-2026-109619): Frequently asked questions about critical PHP remote code execution vulnerabilities
 
-Siemens identified the activity to be from the Romulus multi-platform ClickFix campaign, with Siemens Software Center users urged to apply an update
+PHP has released patches for two critical remote code execution vulnerabilities. Fixes are available for PHP 8.2 through 8.5, with source backports for end-of-life PHP 7.4 through 8.1.Change logUpdate October 21: PHP released patches and published its advisories. This post now includes vulnerability
 
-> **来源**: [Siemens Customers Targeted by ClickFix Attackers Exploiting DLL Side-Loading Flaw](https://www.infosecurity-magazine.com/news/siemens-clickfix-exploiting-side/)  #Infosecurity Magazine
+> **来源**: [php2shell (CVE-2026-109618, CVE-2026-109619): Frequently asked questions about critical PHP remote code execution vulnerabilities](https://www.tenable.com/blog/php2shell-cve-2026-109618-cve-2026-109619-frequently-asked-questions-about-critical-php-remote)  #Tenable Blog
 
-### 📰 6. OT systems complicate quantum-resistant data protection
+### ⚠️ 6. CVE-2026-112025 [HIGH 7.3]
 
-Quantum-resistant cryptography presents security leaders with various challenges, but CISOs in industries dependent on IoT and operational technology (OT) devices may face a particularly difficult journey to quantum readiness, especially if sensitive information that must remain confidential for yea
+A weakness has been identified in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. This impacts an unknown function of the file App/Home/Controller/UserController.class.php of the component Captcha Validation. Executing a manipulation can lead to impro
 
-> **来源**: [OT systems complicate quantum-resistant data protection](https://www.csoonline.com/article/4236142/ot-systems-complicate-shift-to-quantum-resistant-data-protection.html)  #CSO Online
+> **来源**: [CVE-2026-112025 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-112025)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 7. Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign
+### 📰 7. Widespread PHP Flaw May Cause Many Site Outages Today
 
-It’s the work of the infamous group behind the attacks on Democrats during the 2016 presidential election, Symantec said. The post Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign appeared first on CyberScoop.
+Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw
 
-> **来源**: [Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign](https://cyberscoop.com/russian-hackers-apt28-target-nato-defense-firms/)  #CyberScoop
+> **来源**: [Widespread PHP Flaw May Cause Many Site Outages Today](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)  #Krebs on Security
 
-### 📰 8. ConnectWise customers hit by supply-chain attack linked to compromised API secret
+### 📰 8. “Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities
 
-Hundreds of customers are confirmed impacted, as attackers use a sensitive credential to break into connected Microsoft 365 applications unimpeded. The post ConnectWise customers hit by supply-chain attack linked to compromised API secret appeared first on CyberScoop.
+An investigation into a threat actor bypassing AI safety controls to coordinate credential theft, VoIP fraud planning, and database exfiltration. The post “Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities appeared first on Unit 
 
-> **来源**: [ConnectWise customers hit by supply-chain attack linked to compromised API secret](https://cyberscoop.com/connectwise-cloud-backup-supply-chain-attack/)  #CyberScoop
+> **来源**: [“Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities](https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/)  #Unit 42
 
-### 📰 9. DOJ escalates fight for election supremacy with California raids
+### 📰 9. How Tenable brought multi-language support to security detectors with agentic translation
 
-The arrests were paired with comments from DOJ and DHS officials, threatening to investigate, arrest or prosecute tens of thousands of California voters if they vote in November. The post DOJ escalates fight for election supremacy with California raids appeared first on CyberScoop.
+AI security tools that can only detect threats in English offer limited protection. Here’s how Tenable trained our threat detectors to process nine additional languages and understand thousands more, without the need for a translation model, which increases costs and slows down processing.Key takeaw
 
-> **来源**: [DOJ escalates fight for election supremacy with California raids](https://cyberscoop.com/justice-department-california-voter-arrests-noncitizen-claims/)  #CyberScoop
+> **来源**: [How Tenable brought multi-language support to security detectors with agentic translation](https://www.tenable.com/blog/how-tenable-brought-multi-language-support-to-security-detectors-with-agentic-translation)  #Tenable Blog
 
-### 📰 10. Head of AI Security Roles Surge in Large Organizations
+### 📰 10. 14 ways attackers abuse cloud services to hack your enterprise
 
-A new IANS report has found that despite the growth of the head of AI security role, accountability for AI governance in firms remains unsettled
+Attackers are increasingly abusing trusted SaaS platforms, cloud infrastructure, and identity systems to blend malicious activity into legitimate enterprise traffic. Adversaries are pushing command and control (C2) through high-reputation services, including OpenAI and AWS, to blend in with normal b
 
-> **来源**: [Head of AI Security Roles Surge in Large Organizations](https://www.infosecurity-magazine.com/news/head-ai-security-roles/)  #Infosecurity Magazine
+> **来源**: [14 ways attackers abuse cloud services to hack your enterprise](https://www.csoonline.com/article/4142001/12-ways-attackers-abuse-cloud-services-to-hack-your-enterprise.html)  #CSO Online
 
 ---
 
