@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-22
+# 🤖🔒 AI+安全日报 | 2026-10-23
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. KVM escape exposes broader attack surface in Linux networking
+### 📰 1. Security teams urged to center defense on the flaw profile attackers target most
 
-Security researchers have found a critical flaw in the Linux kernel’s networking stack that can let attackers escape a KVM virtual machine and execute code on the host system. The weakness could also potentially let attackers compromise systems running other Linux-based virtualization and sandbox pl
+Attackers are increasingly focusing on a limited range of critical vulnerabilities to run attacks with flaws packaged into exploits within as little as three days. Rapid7’s latest Quarterly Threat Landscape report found the number of newly exploited vulnerabilities in Q3 of 2026 was 43, up 19% year 
 
-> **来源**: [KVM escape exposes broader attack surface in Linux networking](https://www.csoonline.com/article/4237999/kvm-escape-exposes-broader-attack-surface-in-linux-networking.html)  #CSO Online
+> **来源**: [Security teams urged to center defense on the flaw profile attackers target most](https://www.csoonline.com/article/4239255/security-teams-urged-to-center-defense-on-the-single-profile-attackers-target-most.html)  #CSO Online
 
-### 📰 2. Moving past autonomous exploitation to machine-speed security
+### 📰 2. LiteLLM release pipeline hacked to distribute credential-stealing malware
 
-Frontier AI advancements have created a world where exploitation outpaces defense. The average enterprise takes 32 to 43 days to patch, but the mean time to exploit a vulnerability is 10 hours. This asymmetry creates questions around how enterprises can trust autonomous AI to operate ubiquitously ac
+Hackers hijacked the software release pipeline of LiteLLM, a popular open-source AI gateway, to distribute credential-stealing malware, marking the project’s second supply chain compromise this year despite security measures introduced after an earlier attack. The compromised version, 1.107.0, was d
 
-> **来源**: [Moving past autonomous exploitation to machine-speed security](https://www.csoonline.com/article/4237926/moving-past-autonomous-exploitation-to-machine-speed-security.html)  #CSO Online
+> **来源**: [LiteLLM release pipeline hacked to distribute credential-stealing malware](https://www.csoonline.com/article/4239033/litellm-release-pipeline-hacked-to-distribute-credential-stealing-malware.html)  #CSO Online
 
-### 📰 3. WordPress sites compromised after TeamUpdraft credential exposure
+### 📰 3. China-linked hackers used agentic AI in attack on 2,250 Microsoft 365 tenants
 
-Attackers are using stolen connection keys exposed in a TeamUpdraft security breach to install malicious plugins on affected WordPress sites and establish persistent access. Sites already compromised may remain at risk even after the exposed credentials are revoked. The attacks followed unauthorized
+A China-state-aligned threat actor compromised a ConnectWise cloud backup application and used an open-source agentic AI framework to turn its stolen credentials against more than 2,250 Microsoft 365 tenants, Microsoft said. Microsoft Threat Intelligence attributed the activity to Storm-0940, which 
 
-> **来源**: [WordPress sites compromised after TeamUpdraft credential exposure](https://www.csoonline.com/article/4238422/wordpress-sites-compromised-after-teamupdraft-credential-exposure.html)  #CSO Online
+> **来源**: [China-linked hackers used agentic AI in attack on 2,250 Microsoft 365 tenants](https://www.csoonline.com/article/4239028/china-linked-hackers-used-agentic-ai-in-attack-on-2250-microsoft-365-tenants.html)  #CSO Online
 
-### 📰 4. Children’s Data Stolen After Ransomware Attack Compromises ‘Password1’ Account
+### 📰 4. How to contain shadow AI, as it takes on multiple forms and spreads throughout your environment
 
-The ICO has slammed security failings by the Welsh local government data unit and IT service provider following the 2024 incident
+Shadow AI used to be confined to a few simple scenarios, such as AI chatbots and AI browser extensions. Today, it spans a broad spectrum of complex vectors, making it harder to detect and control. In the latest installment of our Cybersecurity Awareness Month blog series, learn how employee security
 
-> **来源**: [Children’s Data Stolen After Ransomware Attack Compromises ‘Password1’ Account](https://www.infosecurity-magazine.com/news/children-data-stolen-password1/)  #Infosecurity Magazine
+> **来源**: [How to contain shadow AI, as it takes on multiple forms and spreads throughout your environment](https://www.tenable.com/blog/how-to-contain-shadow-ai-as-it-takes-on-multiple-forms-and-spreads-throughout-your-environment)  #Tenable Blog
 
-### 📰 5. php2shell (CVE-2026-109618, CVE-2026-109619): Frequently asked questions about critical PHP remote code execution vulnerabilities
+### 📰 5. OpenAI’s models are deliberately breaking their misalignment monitoring systems
 
-PHP has released patches for two critical remote code execution vulnerabilities. Fixes are available for PHP 8.2 through 8.5, with source backports for end-of-life PHP 7.4 through 8.1.Change logUpdate October 21: PHP released patches and published its advisories. This post now includes vulnerability
+AI agents are getting more inventive in finding ways to circumvent safeguards to prevent bad behavior, OpenAI has revealed. On Tuesday, it reported two incidents, both involving the agent disabling or interfering with its alignment monitoring, and in one case directly lying about having done so. “In
 
-> **来源**: [php2shell (CVE-2026-109618, CVE-2026-109619): Frequently asked questions about critical PHP remote code execution vulnerabilities](https://www.tenable.com/blog/php2shell-cve-2026-109618-cve-2026-109619-frequently-asked-questions-about-critical-php-remote)  #Tenable Blog
+> **来源**: [OpenAI’s models are deliberately breaking their misalignment monitoring systems](https://www.csoonline.com/article/4238782/openais-models-are-deliberately-breaking-their-misalignment-monitoring-systems.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-112025 [HIGH 7.3]
+### ⚠️ 6. CVE-2026-109437 [CRITICAL 9.8]
 
-A weakness has been identified in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. This impacts an unknown function of the file App/Home/Controller/UserController.class.php of the component Captcha Validation. Executing a manipulation can lead to impro
+Cognition before 0.13.0 contains an unauthenticated remote code execution vulnerability due to defaulting its agent sandbox backend to local execution and shipping no authentication on its REST/SSE API. Attackers can create a session via POST /sessions and post a message via POST /sessions/{id}/mess
 
-> **来源**: [CVE-2026-112025 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-112025)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-109437 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-109437)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 7. Widespread PHP Flaw May Cause Many Site Outages Today
+### 📰 7. Iranian Hacking Group Found Hosting C2 Infrastructure in the US
 
-Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw
+Stealthy malware campaign by ‘Prince of Persia’ threat group targeting organisations worldwide discovered operating on American soil
 
-> **来源**: [Widespread PHP Flaw May Cause Many Site Outages Today](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)  #Krebs on Security
+> **来源**: [Iranian Hacking Group Found Hosting C2 Infrastructure in the US](https://www.infosecurity-magazine.com/news/iranian-hacking-group-hosting-c2/)  #Infosecurity Magazine
 
-### 📰 8. “Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities
+### 📰 8. Microsoft: Chinese State Actor Used AI to Compromise ConnectWise Tenants
 
-An investigation into a threat actor bypassing AI safety controls to coordinate credential theft, VoIP fraud planning, and database exfiltration. The post “Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities appeared first on Unit 
+Microsoft said it has observed threat actor activity in multiple ConnectWise customer environments, with the attackers leveraging the ARTEX agentic AI platform
 
-> **来源**: [“Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities](https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/)  #Unit 42
+> **来源**: [Microsoft: Chinese State Actor Used AI to Compromise ConnectWise Tenants](https://www.infosecurity-magazine.com/news/microsoft-chinese-ai-connectwise/)  #Infosecurity Magazine
 
-### 📰 9. How Tenable brought multi-language support to security detectors with agentic translation
+### 📰 9. Microsoft pins ConnectWise supply-chain attack to China-state aligned threat group
 
-AI security tools that can only detect threats in English offer limited protection. Here’s how Tenable trained our threat detectors to process nine additional languages and understand thousands more, without the need for a translation model, which increases costs and slows down processing.Key takeaw
+Storm-0940 used the agentic AI penetration testing framework to automate attacks and “reach more than 2,250 tenants at 2,900 sign-in attempts per minute,” Microsoft researchers said. The post Microsoft pins ConnectWise supply-chain attack to China-state aligned threat group appeared first on CyberSc
 
-> **来源**: [How Tenable brought multi-language support to security detectors with agentic translation](https://www.tenable.com/blog/how-tenable-brought-multi-language-support-to-security-detectors-with-agentic-translation)  #Tenable Blog
+> **来源**: [Microsoft pins ConnectWise supply-chain attack to China-state aligned threat group](https://cyberscoop.com/microsoft-attributes-connectwise-supply-chain-attack-china-storm-0940/)  #CyberScoop
 
-### 📰 10. 14 ways attackers abuse cloud services to hack your enterprise
+### 📰 10. Exclusive: bipartisan bill would develop federal guidance for distillation attacks, convene industry on defensive cyber
 
-Attackers are increasingly abusing trusted SaaS platforms, cloud infrastructure, and identity systems to blend malicious activity into legitimate enterprise traffic. Adversaries are pushing command and control (C2) through high-reputation services, including OpenAI and AWS, to blend in with normal b
+One of the bill’s sponsors told CyberScoop it’s “incredibly expensive” for U.S. AI companies to stay ahead and distillation attacks incentivize stealing over innovation. The post Exclusive: bipartisan bill would develop federal guidance for distillation attacks, convene industry on defensive cyber a
 
-> **来源**: [14 ways attackers abuse cloud services to hack your enterprise](https://www.csoonline.com/article/4142001/12-ways-attackers-abuse-cloud-services-to-hack-your-enterprise.html)  #CSO Online
+> **来源**: [Exclusive: bipartisan bill would develop federal guidance for distillation attacks, convene industry on defensive cyber](https://cyberscoop.com/bipartisan-bill-combat-ai-distillation-attacks-nist/)  #CyberScoop
 
 ---
 
