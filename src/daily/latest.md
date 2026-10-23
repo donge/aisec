@@ -1,69 +1,77 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-23
+# 🤖🔒 AI+安全日报 | 2026-10-24
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Security teams urged to center defense on the flaw profile attackers target most
+### 📰 1. Oracle patches 1295 security vulnerabilities in October, including six scoring 10.0
 
-Attackers are increasingly focusing on a limited range of critical vulnerabilities to run attacks with flaws packaged into exploits within as little as three days. Rapid7’s latest Quarterly Threat Landscape report found the number of newly exploited vulnerabilities in Q3 of 2026 was 43, up 19% year 
+Oracle has patched 1295 security vulnerabilities with its October Critical Patch Update Advisory; six of them scored the highest vulnerability rating of 10.0 on the CVSS version 3.1 scale. The company’s flagship Oracle E-Business Suite was home to one of the vulnerabiltiies, tracked as CVE-2026-1018
 
-> **来源**: [Security teams urged to center defense on the flaw profile attackers target most](https://www.csoonline.com/article/4239255/security-teams-urged-to-center-defense-on-the-single-profile-attackers-target-most.html)  #CSO Online
+> **来源**: [Oracle patches 1295 security vulnerabilities in October, including six scoring 10.0](https://www.csoonline.com/article/4239850/oracle-patches-1295-security-vulnerabilities-in-october-including-six-scoring-10-0-2.html)  #CSO Online
 
-### 📰 2. LiteLLM release pipeline hacked to distribute credential-stealing malware
+### 📰 2. Dual BIOS: The laptop security feature SMBs don’t know they need
 
-Hackers hijacked the software release pipeline of LiteLLM, a popular open-source AI gateway, to distribute credential-stealing malware, marking the project’s second supply chain compromise this year despite security measures introduced after an earlier attack. The compromised version, 1.107.0, was d
+Every security checklist starts with the basics: strong passwords, multifactor authentication, spotting phishing, and keeping software up to date. All four protect what happens after a laptop starts. But some attackers are more focused on what happens before. That’s the domain of the BIOS, the first
 
-> **来源**: [LiteLLM release pipeline hacked to distribute credential-stealing malware](https://www.csoonline.com/article/4239033/litellm-release-pipeline-hacked-to-distribute-credential-stealing-malware.html)  #CSO Online
+> **来源**: [Dual BIOS: The laptop security feature SMBs don’t know they need](https://www.csoonline.com/article/4239779/dual-bios-the-laptop-security-feature-smbs-dont-know-they-need.html)  #CSO Online
 
-### 📰 3. China-linked hackers used agentic AI in attack on 2,250 Microsoft 365 tenants
+### 📰 3. PHP2Shell exposes the weakness in coordinated vulnerability disclosure
 
-A China-state-aligned threat actor compromised a ConnectWise cloud backup application and used an open-source agentic AI framework to turn its stolen credentials against more than 2,250 Microsoft 365 tenants, Microsoft said. Microsoft Threat Intelligence attributed the activity to Storm-0940, which 
+Two critical vulnerabilities discovered in the widely-used PHP programming language have shaken up enterprises, and the ramifications will take some time to truly understand. But one of the lesser-known stories centers around disclosure. According to The PHP Foundation, several organizations had agr
 
-> **来源**: [China-linked hackers used agentic AI in attack on 2,250 Microsoft 365 tenants](https://www.csoonline.com/article/4239028/china-linked-hackers-used-agentic-ai-in-attack-on-2250-microsoft-365-tenants.html)  #CSO Online
+> **来源**: [PHP2Shell exposes the weakness in coordinated vulnerability disclosure](https://www.csoonline.com/article/4239359/php2shell-exposes-the-weakness-in-coordinated-vulnerability-disclosure-2.html)  #CSO Online
 
-### 📰 4. How to contain shadow AI, as it takes on multiple forms and spreads throughout your environment
+### 📰 4. The ‘Mythos moment’ has already passed. Now comes the hard part for cybersecurity
 
-Shadow AI used to be confined to a few simple scenarios, such as AI chatbots and AI browser extensions. Today, it spans a broad spectrum of complex vectors, making it harder to detect and control. In the latest installment of our Cybersecurity Awareness Month blog series, learn how employee security
+When Anthropic introduced Claude Mythos Preview, the cybersecurity debate quickly turned to what AI could do: uncover decades-old vulnerabilities, develop working exploits and accelerate tasks that once required specialist expertise. Anthropic noted that Mythos discovered software flaws no human had
 
-> **来源**: [How to contain shadow AI, as it takes on multiple forms and spreads throughout your environment](https://www.tenable.com/blog/how-to-contain-shadow-ai-as-it-takes-on-multiple-forms-and-spreads-throughout-your-environment)  #Tenable Blog
+> **来源**: [The ‘Mythos moment’ has already passed. Now comes the hard part for cybersecurity](https://www.csoonline.com/article/4239166/the-mythos-moment-has-already-passed-now-comes-the-hard-part-for-cybersecurity.html)  #CSO Online
 
-### 📰 5. OpenAI’s models are deliberately breaking their misalignment monitoring systems
+### ⚠️ 5. CVE-2026-113810 [HIGH 7]
 
-AI agents are getting more inventive in finding ways to circumvent safeguards to prevent bad behavior, OpenAI has revealed. On Tuesday, it reported two incidents, both involving the agent disabling or interfering with its alignment monitoring, and in one case directly lying about having done so. “In
+A Stored Cross-Site Scripting vulnerability exists in the SNS enrollment Portal.
 
-> **来源**: [OpenAI’s models are deliberately breaking their misalignment monitoring systems](https://www.csoonline.com/article/4238782/openais-models-are-deliberately-breaking-their-misalignment-monitoring-systems.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-109437 [CRITICAL 9.8]
 
-Cognition before 0.13.0 contains an unauthenticated remote code execution vulnerability due to defaulting its agent sandbox backend to local execution and shipping no authentication on its REST/SSE API. Attackers can create a session via POST /sessions and post a message via POST /sessions/{id}/mess
+Through the captive portal an attacker can inject an XSS when requesting certificate creation for user. The stored XSS can only be triggered during validation by the administrator.
 
-> **来源**: [CVE-2026-109437 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-109437)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-113810 [HIGH 7]](https://nvd.nist.gov/vuln/detail/CVE-2026-113810)  CVSS 7 HIGH · #NVD · #漏洞
 
-### 📰 7. Iranian Hacking Group Found Hosting C2 Infrastructure in the US
+### ⚠️ 6. CVE-2026-113808 [HIGH 7.1]
 
-Stealthy malware campaign by ‘Prince of Persia’ threat group targeting organisations worldwide discovered operating on American soil
+A Stored Cross-Site Scripting vulnerability exists in the SNS enrollment Portal.
 
-> **来源**: [Iranian Hacking Group Found Hosting C2 Infrastructure in the US](https://www.infosecurity-magazine.com/news/iranian-hacking-group-hosting-c2/)  #Infosecurity Magazine
 
-### 📰 8. Microsoft: Chinese State Actor Used AI to Compromise ConnectWise Tenants
 
-Microsoft said it has observed threat actor activity in multiple ConnectWise customer environments, with the attackers leveraging the ARTEX agentic AI platform
+Through the captive portal an attacker can inject an XSS when requesting user creation. The stored XSS can only be triggered during validation by the administrator.
 
-> **来源**: [Microsoft: Chinese State Actor Used AI to Compromise ConnectWise Tenants](https://www.infosecurity-magazine.com/news/microsoft-chinese-ai-connectwise/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-113808 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-113808)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### 📰 9. Microsoft pins ConnectWise supply-chain attack to China-state aligned threat group
+### 📰 7. Hacker leaks 281 GB of data from Germany’s far-right AfD party
 
-Storm-0940 used the agentic AI penetration testing framework to automate attacks and “reach more than 2,250 tenants at 2,900 sign-in attempts per minute,” Microsoft researchers said. The post Microsoft pins ConnectWise supply-chain attack to China-state aligned threat group appeared first on CyberSc
+The AfD has confirmed that hackers breached its hosting provider. A leak site now claims to offer 421,179 of the party’s internal emails, and shows AI-written summaries rather than the emails themselves. Read more in my article on the Hot for Security blog.
 
-> **来源**: [Microsoft pins ConnectWise supply-chain attack to China-state aligned threat group](https://cyberscoop.com/microsoft-attributes-connectwise-supply-chain-attack-china-storm-0940/)  #CyberScoop
+> **来源**: [Hacker leaks 281 GB of data from Germany’s far-right AfD party](https://www.bitdefender.com/en-us/blog/hotforsecurity/hacker-leaks-281-gb-data-germany-afd)  #Graham Cluley
 
-### 📰 10. Exclusive: bipartisan bill would develop federal guidance for distillation attacks, convene industry on defensive cyber
+### 📰 8. Widespread Token-Spraying Attacks Target Microsoft 365 Accounts For Email Compromise
 
-One of the bill’s sponsors told CyberScoop it’s “incredibly expensive” for U.S. AI companies to stay ahead and distillation attacks incentivize stealing over innovation. The post Exclusive: bipartisan bill would develop federal guidance for distillation attacks, convene industry on defensive cyber a
+Security researchers identified attempts to access corporate networks which have been linked to a major Microsoft 365-targeted BEC campaign using phishing, stolen session tokens and social engineering
 
-> **来源**: [Exclusive: bipartisan bill would develop federal guidance for distillation attacks, convene industry on defensive cyber](https://cyberscoop.com/bipartisan-bill-combat-ai-distillation-attacks-nist/)  #CyberScoop
+> **来源**: [Widespread Token-Spraying Attacks Target Microsoft 365 Accounts For Email Compromise](https://www.infosecurity-magazine.com/news/tokenspraying-attacks-target/)  #Infosecurity Magazine
+
+### 📰 9. The adversary economy: How threat actors are reacting to PHP2Shell
+
+Two critical PHP vulnerabilities sent criminal forum operators scrambling to protect their own infrastructure, revealing that threat actors face the same exposure management challenges as the organizations they target.Key takeawaysThe adversary economy operates on the same fundamental principles as 
+
+> **来源**: [The adversary economy: How threat actors are reacting to PHP2Shell](https://www.tenable.com/blog/php2shell-vulnerability-threat-actor-response)  #Tenable Blog
+
+### 📰 10. Smashing Security podcast #489: How a brand new crypto wallet came with a spy inside
+
+Imagine buying a brand new hardware wallet for your cryptocurrency with the shrink-wrap still on... what could possibly be hiding inside? We break out a Geiger counter and a cat to find out. Meanwhile, malicious ads are targeting journalists with zero-click attacks. Plus, Origin’s Spencer Thompson r
+
+> **来源**: [Smashing Security podcast #489: How a brand new crypto wallet came with a spy inside](https://grahamcluley.com/smashing-security-podcast-489/)  #Graham Cluley
 
 ---
 
