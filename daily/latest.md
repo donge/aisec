@@ -1,76 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-24
+# 🤖🔒 AI+安全日报 | 2026-10-25
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Oracle patches 1295 security vulnerabilities in October, including six scoring 10.0
+### ⚠️ 1. CVE-2026-111184 [HIGH 7.8]
 
-Oracle has patched 1295 security vulnerabilities with its October Critical Patch Update Advisory; six of them scored the highest vulnerability rating of 10.0 on the CVSS version 3.1 scale. The company’s flagship Oracle E-Business Suite was home to one of the vulnerabiltiies, tracked as CVE-2026-1018
+NoMachine Named Pipe Incorrect Permission Assignment Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine. An attacker must first obtain the ability to execute low-privileged code on the target system in ord
 
-> **来源**: [Oracle patches 1295 security vulnerabilities in October, including six scoring 10.0](https://www.csoonline.com/article/4239850/oracle-patches-1295-security-vulnerabilities-in-october-including-six-scoring-10-0-2.html)  #CSO Online
+> **来源**: [CVE-2026-111184 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-111184)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 2. Dual BIOS: The laptop security feature SMBs don’t know they need
+### 📰 2. The PHP Meltdown Shows How AI Makes Bugs More Exploitable
 
-Every security checklist starts with the basics: strong passwords, multifactor authentication, spotting phishing, and keeping software up to date. All four protect what happens after a laptop starts. But some attackers are more focused on what happens before. That’s the domain of the BIOS, the first
+Security researchers used AI tools to help uncover years-old vulnerabilities in the PHP web scripting language. Then the AI-assisted attacks began.
 
-> **来源**: [Dual BIOS: The laptop security feature SMBs don’t know they need](https://www.csoonline.com/article/4239779/dual-bios-the-laptop-security-feature-smbs-dont-know-they-need.html)  #CSO Online
+> **来源**: [The PHP Meltdown Shows How AI Makes Bugs More Exploitable](https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/)  #Wired Security
 
-### 📰 3. PHP2Shell exposes the weakness in coordinated vulnerability disclosure
+### ⚠️ 3. CVE-2026-110744 [HIGH 7.2]
 
-Two critical vulnerabilities discovered in the widely-used PHP programming language have shaken up enterprises, and the ramifications will take some time to truly understand. But one of the lesser-known stories centers around disclosure. According to The PHP Foundation, several organizations had agr
+A flaw was found in multicluster-global-hub-operator-bundle. The operator is configured with overly broad role-based access control (RBAC) permissions that grant cluster-wide impersonation of arbitrary users, groups, and service accounts without restriction. An attacker who compromises the operator 
 
-> **来源**: [PHP2Shell exposes the weakness in coordinated vulnerability disclosure](https://www.csoonline.com/article/4239359/php2shell-exposes-the-weakness-in-coordinated-vulnerability-disclosure-2.html)  #CSO Online
+> **来源**: [CVE-2026-110744 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-110744)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 4. The ‘Mythos moment’ has already passed. Now comes the hard part for cybersecurity
+### 📰 4. Two critical PHP flaws put the web on alert as emergency patches arrive
 
-When Anthropic introduced Claude Mythos Preview, the cybersecurity debate quickly turned to what AI could do: uncover decades-old vulnerabilities, develop working exploits and accelerate tasks that once required specialist expertise. Anthropic noted that Mythos discovered software flaws no human had
+Organizations are scrambling to protect themselves following the disclosure of two critical vulnerabilities in commonly used code that powers much of the internet. The flaws discovered in the PHP scripting language could allow attackers to perform unauthenticated remote code execution (RCE). On Wedn
 
-> **来源**: [The ‘Mythos moment’ has already passed. Now comes the hard part for cybersecurity](https://www.csoonline.com/article/4239166/the-mythos-moment-has-already-passed-now-comes-the-hard-part-for-cybersecurity.html)  #CSO Online
+> **来源**: [Two critical PHP flaws put the web on alert as emergency patches arrive](https://www.csoonline.com/article/4238692/two-critical-php-flaws-put-the-web-on-alert-as-emergency-patches-arrive.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-113810 [HIGH 7]
+### 📰 5. Microsoft: Treat AI agents as insider threats
 
-A Stored Cross-Site Scripting vulnerability exists in the SNS enrollment Portal.
+EVP of Microsoft Security Hayete Gallot writes in a blog post that AI agents operating independently within companies could be a serious security threat. According to Microsoft, today’s most advanced AI models cannot be fully trusted. Not because they are malicious, but because they are trained to a
 
+> **来源**: [Microsoft: Treat AI agents as insider threats](https://www.csoonline.com/article/4238693/microsoft-treat-ai-agents-as-insider-threats.html)  #CSO Online
 
+### ⚠️ 6. CVE-2026-114262 [HIGH 7.3]
 
-Through the captive portal an attacker can inject an XSS when requesting certificate creation for user. The stored XSS can only be triggered during validation by the administrator.
+A vulnerability was determined in file-management-system dc9ce1bf27f94b23d906cb1e86ce374dc94ca5df. Impacted is the function store of the file app/Http/Controllers/FileController.php. This manipulation of the argument File causes unrestricted upload. The attack may be initiated remotely. The exploit 
 
-> **来源**: [CVE-2026-113810 [HIGH 7]](https://nvd.nist.gov/vuln/detail/CVE-2026-113810)  CVSS 7 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-114262 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-114262)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### ⚠️ 6. CVE-2026-113808 [HIGH 7.1]
+### ⚠️ 7. CVE-2026-111183 [CRITICAL 9.8]
 
-A Stored Cross-Site Scripting vulnerability exists in the SNS enrollment Portal.
+GStreamer rtpL16depay Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GStreamer. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depen
 
+> **来源**: [CVE-2026-111183 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-111183)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
+### 📰 8. Enterprises should report AI breaches and ‘near misses,’ says UK financial regulator
 
-Through the captive portal an attacker can inject an XSS when requesting user creation. The stored XSS can only be triggered during validation by the administrator.
+Enterprises should be required to report “significant AI failures and near-misses,” UK Financial Conduct Authority (FCA) Chief Data Officer Jessica Rusu said Monday, adding to the drumbeat of demands for some kind of regulatory control over enterprise AI deployments. But her speech also highlighted 
 
-> **来源**: [CVE-2026-113808 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-113808)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [Enterprises should report AI breaches and ‘near misses,’ says UK financial regulator](https://www.csoonline.com/article/4238124/enterprises-should-report-ai-breaches-and-near-misses-says-uk-financial-regulator.html)  #CSO Online
 
-### 📰 7. Hacker leaks 281 GB of data from Germany’s far-right AfD party
+### 📰 9. PHP2Shell Exploitation Attempt Detected by Amazon Four Days Before Vulnerability Disclosure
 
-The AfD has confirmed that hackers breached its hosting provider. A leak site now claims to offer 421,179 of the party’s internal emails, and shows AI-written summaries rather than the emails themselves. Read more in my article on the Hot for Security blog.
+Threat intelligence analysts now observe large-scale evidence of exploitation of the two critical PHP vulnerabilities
 
-> **来源**: [Hacker leaks 281 GB of data from Germany’s far-right AfD party](https://www.bitdefender.com/en-us/blog/hotforsecurity/hacker-leaks-281-gb-data-germany-afd)  #Graham Cluley
+> **来源**: [PHP2Shell Exploitation Attempt Detected by Amazon Four Days Before Vulnerability Disclosure](https://www.infosecurity-magazine.com/news/php2shell-exploitation-attempt/)  #Infosecurity Magazine
 
-### 📰 8. Widespread Token-Spraying Attacks Target Microsoft 365 Accounts For Email Compromise
+### 📰 10. New PhaaS Platform Uses AI to Craft Phishing Lures and Mask Malicious Activity
 
-Security researchers identified attempts to access corporate networks which have been linked to a major Microsoft 365-targeted BEC campaign using phishing, stolen session tokens and social engineering
+Researchers have uncovered Athena StealthRoute, a phishing-as-a-service platform featuring an AI Studio that generates phishing lures and decoy content designed to conceal attacks
 
-> **来源**: [Widespread Token-Spraying Attacks Target Microsoft 365 Accounts For Email Compromise](https://www.infosecurity-magazine.com/news/tokenspraying-attacks-target/)  #Infosecurity Magazine
-
-### 📰 9. The adversary economy: How threat actors are reacting to PHP2Shell
-
-Two critical PHP vulnerabilities sent criminal forum operators scrambling to protect their own infrastructure, revealing that threat actors face the same exposure management challenges as the organizations they target.Key takeawaysThe adversary economy operates on the same fundamental principles as 
-
-> **来源**: [The adversary economy: How threat actors are reacting to PHP2Shell](https://www.tenable.com/blog/php2shell-vulnerability-threat-actor-response)  #Tenable Blog
-
-### 📰 10. Smashing Security podcast #489: How a brand new crypto wallet came with a spy inside
-
-Imagine buying a brand new hardware wallet for your cryptocurrency with the shrink-wrap still on... what could possibly be hiding inside? We break out a Geiger counter and a cat to find out. Meanwhile, malicious ads are targeting journalists with zero-click attacks. Plus, Origin’s Spencer Thompson r
-
-> **来源**: [Smashing Security podcast #489: How a brand new crypto wallet came with a spy inside](https://grahamcluley.com/smashing-security-podcast-489/)  #Graham Cluley
+> **来源**: [New PhaaS Platform Uses AI to Craft Phishing Lures and Mask Malicious Activity](https://www.infosecurity-magazine.com/news/new-phaas-uses-ai-phishing-lures/)  #Infosecurity Magazine
 
 ---
 
