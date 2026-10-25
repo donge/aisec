@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-25
+# 🤖🔒 AI+安全日报 | 2026-10-26
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-111184 [HIGH 7.8]
+### ⚠️ 1. CVE-2022-51026 [CRITICAL 9.8]
 
-NoMachine Named Pipe Incorrect Permission Assignment Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine. An attacker must first obtain the ability to execute low-privileged code on the target system in ord
+Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST endpoint. Attackers can set instanceUrl to
 
-> **来源**: [CVE-2026-111184 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-111184)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2022-51026 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2022-51026)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 2. The PHP Meltdown Shows How AI Makes Bugs More Exploitable
+### 📰 2. ‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire
 
-Security researchers used AI tools to help uncover years-old vulnerabilities in the PHP web scripting language. Then the AI-assisted attacks began.
+The PHP Foundation has revealed two serious vulnerabilities that could impact millions of websites. Security experts warn that failure to quickly patch the flaws could have dire consequences.
 
-> **来源**: [The PHP Meltdown Shows How AI Makes Bugs More Exploitable](https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/)  #Wired Security
+> **来源**: [‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire](https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/)  #Wired Security
 
-### ⚠️ 3. CVE-2026-110744 [HIGH 7.2]
+### 📰 3. Symantec Uncovers AI Agent Hijacking Models for Autonomous Cyber-Attacks
 
-A flaw was found in multicluster-global-hub-operator-bundle. The operator is configured with overly broad role-based access control (RBAC) permissions that grant cluster-wide impersonation of arbitrary users, groups, and service accounts without restriction. An attacker who compromises the operator 
+Researchers at Symantec have uncovered an AI agent designed to operate a full cyber-attack without human intervention
 
-> **来源**: [CVE-2026-110744 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-110744)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [Symantec Uncovers AI Agent Hijacking Models for Autonomous Cyber-Attacks](https://www.infosecurity-magazine.com/news/symantec-ai-agent-llmjacking/)  #Infosecurity Magazine
 
-### 📰 4. Two critical PHP flaws put the web on alert as emergency patches arrive
+### 📰 4. AI Guardrails Aren’t Stopping Criminal Hackers
 
-Organizations are scrambling to protect themselves following the disclosure of two critical vulnerabilities in commonly used code that powers much of the internet. The flaws discovered in the PHP scripting language could allow attackers to perform unauthenticated remote code execution (RCE). On Wedn
+Hackers around the world are all-in on using agentic AI to wage attacks—and manipulating tools like Anthropic’s Claude to help them carry out their crimes.
 
-> **来源**: [Two critical PHP flaws put the web on alert as emergency patches arrive](https://www.csoonline.com/article/4238692/two-critical-php-flaws-put-the-web-on-alert-as-emergency-patches-arrive.html)  #CSO Online
+> **来源**: [AI Guardrails Aren’t Stopping Criminal Hackers](https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/)  #Wired Security
 
-### 📰 5. Microsoft: Treat AI agents as insider threats
+### 📰 5. A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse
 
-EVP of Microsoft Security Hayete Gallot writes in a blog post that AI agents operating independently within companies could be a serious security threat. According to Microsoft, today’s most advanced AI models cannot be fully trusted. Not because they are malicious, but because they are trained to a
+The company is suspending the feature after security researchers discovered how easy it was to access sensitive information shared with the AI assistant.
 
-> **来源**: [Microsoft: Treat AI agents as insider threats](https://www.csoonline.com/article/4238693/microsoft-treat-ai-agents-as-insider-threats.html)  #CSO Online
+> **来源**: [A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse](https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/)  #Wired Security
 
-### ⚠️ 6. CVE-2026-114262 [HIGH 7.3]
+### 📰 6. US bans DeepSeek across federal agencies, putting AI supply chains under scrutiny
 
-A vulnerability was determined in file-management-system dc9ce1bf27f94b23d906cb1e86ce374dc94ca5df. Impacted is the function store of the file app/Http/Controllers/FileController.php. This manipulation of the argument File causes unrestricted upload. The attack may be initiated remotely. The exploit 
+DeepSeek has been dealt a huge blow in the US, even as it continues to innovate and keep pace with, or in some cases outperform, rival models from American labs. The US Secretary of Homeland Security has issued an order banning all DeepSeek products and services from federal agencies. Government org
 
-> **来源**: [CVE-2026-114262 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-114262)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [US bans DeepSeek across federal agencies, putting AI supply chains under scrutiny](https://www.csoonline.com/article/4238149/us-bans-deepseek-across-federal-agencies-putting-ai-supply-chains-under-scrutiny-2.html)  #CSO Online
 
-### ⚠️ 7. CVE-2026-111183 [CRITICAL 9.8]
+### 📰 7. AI Agent Adoption Creates Risk as Oversight Struggles to Keep Pace, Splunk Finds
 
-GStreamer rtpL16depay Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GStreamer. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depen
+Rapid adoption of agentic AI comes with potential business benefits. But if done incorrectly it also carries risks around AI activity management and security
 
-> **来源**: [CVE-2026-111183 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-111183)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [AI Agent Adoption Creates Risk as Oversight Struggles to Keep Pace, Splunk Finds](https://www.infosecurity-magazine.com/news/ai-agent-adoption-oversight/)  #Infosecurity Magazine
 
-### 📰 8. Enterprises should report AI breaches and ‘near misses,’ says UK financial regulator
+### 📰 8. Meta hit with $25 billion fine for illegally sharing user data
 
-Enterprises should be required to report “significant AI failures and near-misses,” UK Financial Conduct Authority (FCA) Chief Data Officer Jessica Rusu said Monday, adding to the drumbeat of demands for some kind of regulatory control over enterprise AI deployments. But her speech also highlighted 
+A judge in New Mexico has fined Meta $25 billion for its flouting of data privacy laws between 2010 and 2021, including its controversial passing of data to Cambridge Analytica. The action serves as a stark reminder to enterprises not to play fast and loose with data protection legislation, as the c
 
-> **来源**: [Enterprises should report AI breaches and ‘near misses,’ says UK financial regulator](https://www.csoonline.com/article/4238124/enterprises-should-report-ai-breaches-and-near-misses-says-uk-financial-regulator.html)  #CSO Online
+> **来源**: [Meta hit with $25 billion fine for illegally sharing user data](https://www.csoonline.com/article/4239754/meta-hit-with-25-billion-fine-for-illegally-sharing-user-data-2.html)  #CSO Online
 
-### 📰 9. PHP2Shell Exploitation Attempt Detected by Amazon Four Days Before Vulnerability Disclosure
+### 📰 9. Attacks on Tech Firms Behind Most Third-Party Data Breach Victims
 
-Threat intelligence analysts now observe large-scale evidence of exploitation of the two critical PHP vulnerabilities
+Kroll found that 69% of data breach victims in the past year were affected by a third-party breach, with attacks on tech companies the most common cause
 
-> **来源**: [PHP2Shell Exploitation Attempt Detected by Amazon Four Days Before Vulnerability Disclosure](https://www.infosecurity-magazine.com/news/php2shell-exploitation-attempt/)  #Infosecurity Magazine
+> **来源**: [Attacks on Tech Firms Behind Most Third-Party Data Breach Victims](https://www.infosecurity-magazine.com/news/tech-third-party-breach-victims/)  #Infosecurity Magazine
 
-### 📰 10. New PhaaS Platform Uses AI to Craft Phishing Lures and Mask Malicious Activity
+### 📰 10. The AI notetaker risk is now an everywhere problem
 
-Researchers have uncovered Athena StealthRoute, a phishing-as-a-service platform featuring an AI Studio that generates phishing lures and decoy content designed to conceal attacks
+The businesspeople adopting AI notetakers are not being reckless. They are responding to a real business need. Our teams are in meetings all day with companies we support, and the idea that we could read a clean summary of every one of them at the end of the day makes us better partners to our custo
 
-> **来源**: [New PhaaS Platform Uses AI to Craft Phishing Lures and Mask Malicious Activity](https://www.infosecurity-magazine.com/news/new-phaas-uses-ai-phishing-lures/)  #Infosecurity Magazine
+> **来源**: [The AI notetaker risk is now an everywhere problem](https://www.csoonline.com/article/4239372/the-ai-notetaker-risk-is-now-an-everywhere-problem.html)  #CSO Online
 
 ---
 
