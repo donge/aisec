@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-26
+# 🤖🔒 AI+安全日报 | 2026-10-27
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2022-51026 [CRITICAL 9.8]
+### 📰 1. Malicious downloads can trick AI coding agents into compromising themselves
 
-Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST endpoint. Attackers can set instanceUrl to
+Malicious instruction files planted in a computer’s Downloads folder can trick AI coding agents into executing harmful code or exposing authentication tokens, Forever Security said after blocking an attempted attack on a customer’s machine and demonstrating similar techniques against OpenAI’s Codex 
 
-> **来源**: [CVE-2022-51026 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2022-51026)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [Malicious downloads can trick AI coding agents into compromising themselves](https://www.csoonline.com/article/4240222/malicious-downloads-can-trick-ai-coding-agents-into-compromising-themselves.html)  #CSO Online
 
-### 📰 2. ‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire
+### 📰 2. What EvilTokens teaches us about defending against AI-assisted attacks
 
-The PHP Foundation has revealed two serious vulnerabilities that could impact millions of websites. Security experts warn that failure to quickly patch the flaws could have dire consequences.
+Cybercriminals don’t need AI to compromise an organization, but AI is making its way into classic attack methods and changing how quickly such attacks can progress. Tasks that once required attackers to manually sift through information and piece together how an organization operates can be accelera
 
-> **来源**: [‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire](https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/)  #Wired Security
+> **来源**: [What EvilTokens teaches us about defending against AI-assisted attacks](https://www.csoonline.com/article/4239703/what-eviltokens-teaches-us-about-defending-against-ai-assisted-attacks.html)  #CSO Online
 
-### 📰 3. Symantec Uncovers AI Agent Hijacking Models for Autonomous Cyber-Attacks
+### 📰 3. OpenAI, Anthropic disclosures spotlight growing AI containment challenge
 
-Researchers at Symantec have uncovered an AI agent designed to operate a full cyber-attack without human intervention
+Two leading AI developers have released fresh evidence of a problem that researchers have long anticipated: advanced models searching for ways around the limits imposed on them. New disclosures from OpenAI and Anthropic detail how frontier systems exploited weaknesses in their environments or exceed
 
-> **来源**: [Symantec Uncovers AI Agent Hijacking Models for Autonomous Cyber-Attacks](https://www.infosecurity-magazine.com/news/symantec-ai-agent-llmjacking/)  #Infosecurity Magazine
+> **来源**: [OpenAI, Anthropic disclosures spotlight growing AI containment challenge](https://www.csoonline.com/article/4240279/openai-anthropic-disclosures-spotlight-growing-ai-containment-challenge.html)  #CSO Online
 
-### 📰 4. AI Guardrails Aren’t Stopping Criminal Hackers
+### 📰 4. 10 most powerful cybersecurity companies today
 
-Hackers around the world are all-in on using agentic AI to wage attacks—and manipulating tools like Anthropic’s Claude to help them carry out their crimes.
+The number of cybersecurity startups attempting to cash in on the AI boom is staggering. But an analysis of the cybersecurity marketplace indicates that the incumbents, rather than resting on their laurels and opening themselves up for disruption, are quickly adapting to the new AI-centric threat en
 
-> **来源**: [AI Guardrails Aren’t Stopping Criminal Hackers](https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/)  #Wired Security
+> **来源**: [10 most powerful cybersecurity companies today](https://www.csoonline.com/article/569075/the-10-most-powerful-cybersecurity-companies.html)  #CSO Online
 
-### 📰 5. A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse
+### 📰 5. Gheist Attackers Stumble in Attempt to Abuse GitHub Tokens
 
-The company is suspending the feature after security researchers discovered how easy it was to access sensitive information shared with the AI assistant.
+A large-scale GitHub campaign abused stolen access tokens to target 13,500+ branches and repositories with secret-stealing workflows
 
-> **来源**: [A Design Flaw in Share Links Exposes Users’ Personal Conversations With Meta’s Muse](https://www.wired.com/story/a-design-flaw-in-share-links-exposes-users-personal-conversations-with-meta-muse/)  #Wired Security
+> **来源**: [Gheist Attackers Stumble in Attempt to Abuse GitHub Tokens](https://www.infosecurity-magazine.com/news/gheist-attackers-abuse-stolen/)  #Infosecurity Magazine
 
-### 📰 6. US bans DeepSeek across federal agencies, putting AI supply chains under scrutiny
+### 📰 6. PHP Publishes Mitigation Advice for New RCE Flaw
 
-DeepSeek has been dealt a huge blow in the US, even as it continues to innovate and keep pace with, or in some cases outperform, rival models from American labs. The US Secretary of Homeland Security has issued an order banning all DeepSeek products and services from federal agencies. Government org
+PHP warns of critical RCE vulnerability CVE-2026-115560, but says limited exploit conditions mean most deployments are unlikely to be affected
 
-> **来源**: [US bans DeepSeek across federal agencies, putting AI supply chains under scrutiny](https://www.csoonline.com/article/4238149/us-bans-deepseek-across-federal-agencies-putting-ai-supply-chains-under-scrutiny-2.html)  #CSO Online
+> **来源**: [PHP Publishes Mitigation Advice for New RCE Flaw](https://www.infosecurity-magazine.com/news/php-publishes-mitigation-advice/)  #Infosecurity Magazine
 
-### 📰 7. AI Agent Adoption Creates Risk as Oversight Struggles to Keep Pace, Splunk Finds
+### 📰 7. CISA publishes strategy with eye on the next four years
 
-Rapid adoption of agentic AI comes with potential business benefits. But if done incorrectly it also carries risks around AI activity management and security
+It includes a review of whether its existing capabilities will meet its three pillars: “defend, harden, prevail.” The post CISA publishes strategy with eye on the next four years appeared first on CyberScoop.
 
-> **来源**: [AI Agent Adoption Creates Risk as Oversight Struggles to Keep Pace, Splunk Finds](https://www.infosecurity-magazine.com/news/ai-agent-adoption-oversight/)  #Infosecurity Magazine
+> **来源**: [CISA publishes strategy with eye on the next four years](https://cyberscoop.com/cisa-2030-cybersecurity-strategy/)  #CyberScoop
 
-### 📰 8. Meta hit with $25 billion fine for illegally sharing user data
+### 📰 8. The Current Landscape of OAuth Attacks
 
-A judge in New Mexico has fined Meta $25 billion for its flouting of data privacy laws between 2010 and 2021, including its controversial passing of data to Cambridge Analytica. The action serves as a stark reminder to enterprises not to play fast and loose with data protection legislation, as the c
+Unit 42 explores modern OAuth threats and actionable steps organizations can take to protect their environments. The post The Current Landscape of OAuth Attacks appeared first on Unit 42.
 
-> **来源**: [Meta hit with $25 billion fine for illegally sharing user data](https://www.csoonline.com/article/4239754/meta-hit-with-25-billion-fine-for-illegally-sharing-user-data-2.html)  #CSO Online
+> **来源**: [The Current Landscape of OAuth Attacks](https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/)  #Unit 42
 
-### 📰 9. Attacks on Tech Firms Behind Most Third-Party Data Breach Victims
+### 📰 9. Ransomware Attacks Rise as Rival Gangs Vie For Market Supremacy
 
-Kroll found that 69% of data breach victims in the past year were affected by a third-party breach, with attacks on tech companies the most common cause
+Cybercriminal groups The Gentlemen and Qilin dominate ransomware attacks - and both are evolving their tactics in an attempt to outdo one another
 
-> **来源**: [Attacks on Tech Firms Behind Most Third-Party Data Breach Victims](https://www.infosecurity-magazine.com/news/tech-third-party-breach-victims/)  #Infosecurity Magazine
+> **来源**: [Ransomware Attacks Rise as Rival Gangs Vie For Market Supremacy](https://www.infosecurity-magazine.com/news/rival-gangs-vie-for-market/)  #Infosecurity Magazine
 
-### 📰 10. The AI notetaker risk is now an everywhere problem
+### 📰 10. Senators say targeted ads are a security risk. Ad groups say the critics are off base.
 
-The businesspeople adopting AI notetakers are not being reckless. They are responding to a real business need. Our teams are in meetings all day with companies we support, and the idea that we could read a clean summary of every one of them at the end of the day makes us better partners to our custo
+Citizen Lab’s AdFection findings have senators pushing for industry improvements, while IAB Europe and Google defend their vetting practices. The post Senators say targeted ads are a security risk. Ad groups say the critics are off base. appeared first on CyberScoop.
 
-> **来源**: [The AI notetaker risk is now an everywhere problem](https://www.csoonline.com/article/4239372/the-ai-notetaker-risk-is-now-an-everywhere-problem.html)  #CSO Online
+> **来源**: [Senators say targeted ads are a security risk. Ad groups say the critics are off base.](https://cyberscoop.com/targeted-ads-spyware-government-threat/)  #CyberScoop
 
 ---
 
