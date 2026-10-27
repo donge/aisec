@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-27
+# 🤖🔒 AI+安全日报 | 2026-10-28
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Malicious downloads can trick AI coding agents into compromising themselves
+### ⚠️ 1. CVE-2026-116000 [HIGH 7.3]
 
-Malicious instruction files planted in a computer’s Downloads folder can trick AI coding agents into executing harmful code or exposing authentication tokens, Forever Security said after blocking an attempted attack on a customer’s machine and demonstrating similar techniques against OpenAI’s Codex 
+A security flaw has been discovered in Zylon PrivateGPT 1.0.0/1.0.1. This vulnerability affects the function load_file_from_uri of the file private_gpt/server/ingest/uri_loader.py of the component URI Artifact Loader. Performing a manipulation of the argument Value results in server-side request for
 
-> **来源**: [Malicious downloads can trick AI coding agents into compromising themselves](https://www.csoonline.com/article/4240222/malicious-downloads-can-trick-ai-coding-agents-into-compromising-themselves.html)  #CSO Online
+> **来源**: [CVE-2026-116000 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-116000)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 2. What EvilTokens teaches us about defending against AI-assisted attacks
+### 📰 2. The days of assuming another company’s breach is someone else’s problem are over
 
-Cybercriminals don’t need AI to compromise an organization, but AI is making its way into classic attack methods and changing how quickly such attacks can progress. Tasks that once required attackers to manually sift through information and piece together how an organization operates can be accelera
+The median blast radius of data breaches has increased year-on-year at the same time cybercriminals have begun using AI to mine stolen datasets for damaging information that enables follow-on fraud and cyberattacks. In 2026, the median breach exposed 542 organizations beyond the initially breached v
 
-> **来源**: [What EvilTokens teaches us about defending against AI-assisted attacks](https://www.csoonline.com/article/4239703/what-eviltokens-teaches-us-about-defending-against-ai-assisted-attacks.html)  #CSO Online
+> **来源**: [The days of assuming another company’s breach is someone else’s problem are over](https://www.csoonline.com/article/4240612/the-days-of-assuming-another-companys-breach-is-someone-elses-problem-are-over.html)  #CSO Online
 
-### 📰 3. OpenAI, Anthropic disclosures spotlight growing AI containment challenge
+### 📰 3. OpenAI’s August fix for theft of reasoning traces was quickly bypassed
 
-Two leading AI developers have released fresh evidence of a problem that researchers have long anticipated: advanced models searching for ways around the limits imposed on them. New disclosures from OpenAI and Anthropic detail how frontier systems exploited weaknesses in their environments or exceed
+Cybersecurity research firm Xint on Monday published details of a bug in the OpenAI API that leaks raw reasoning traces from frontier OpenAI models, revealing the risk of other data leaks. OpenAI has confirmed the flaw, mitigated it, and paid a bug bounty for its discovery. The problem is that OpenA
 
-> **来源**: [OpenAI, Anthropic disclosures spotlight growing AI containment challenge](https://www.csoonline.com/article/4240279/openai-anthropic-disclosures-spotlight-growing-ai-containment-challenge.html)  #CSO Online
+> **来源**: [OpenAI’s August fix for theft of reasoning traces was quickly bypassed](https://www.csoonline.com/article/4240662/openais-august-fix-for-theft-of-reasoning-traces-was-quickly-bypassed.html)  #CSO Online
 
-### 📰 4. 10 most powerful cybersecurity companies today
+### 📰 4. Discover and remediate PHP2Shell exposure with Tenable
 
-The number of cybersecurity startups attempting to cash in on the AI boom is staggering. But an analysis of the cybersecurity marketplace indicates that the incumbents, rather than resting on their laurels and opening themselves up for disruption, are quickly adapting to the new AI-centric threat en
+Learn how to use Tenable solutions to find vulnerable PHP versions, prioritize remediation, and patch the critical PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) faster.Key takeawaysThe PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) put security teams in a race agai
 
-> **来源**: [10 most powerful cybersecurity companies today](https://www.csoonline.com/article/569075/the-10-most-powerful-cybersecurity-companies.html)  #CSO Online
+> **来源**: [Discover and remediate PHP2Shell exposure with Tenable](https://www.tenable.com/blog/discover-and-remediate-php2shell-exposure-with-tenable)  #Tenable Blog
 
-### 📰 5. Gheist Attackers Stumble in Attempt to Abuse GitHub Tokens
+### ⚠️ 5. CVE-2026-116006 [HIGH 7.3]
 
-A large-scale GitHub campaign abused stolen access tokens to target 13,500+ branches and repositories with secret-stealing workflows
+A vulnerability was detected in YunaiV/zhijiantianya ruoyi-vue-pro up to 2026.09. The affected element is an unknown function of the file AuthController.java of the component SMS Code Verification. The manipulation of the argument mobile/code results in improper authentication. The attack can be lau
 
-> **来源**: [Gheist Attackers Stumble in Attempt to Abuse GitHub Tokens](https://www.infosecurity-magazine.com/news/gheist-attackers-abuse-stolen/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-116006 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-116006)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 6. PHP Publishes Mitigation Advice for New RCE Flaw
+### ⚠️ 6. CVE-2026-115999 [HIGH 7.3]
 
-PHP warns of critical RCE vulnerability CVE-2026-115560, but says limited exploit conditions mean most deployments are unlikely to be affected
+A vulnerability has been found in mansi-k Restaurant_IMS d7ad49f61ab7cc1ec6eb359ac2b5378bdbde0694. Affected is the function mysqli_connect of the file lsmodal.php. The manipulation of the argument login_id/epsw leads to sql injection. Remote exploitation of the attack is possible. This product follo
 
-> **来源**: [PHP Publishes Mitigation Advice for New RCE Flaw](https://www.infosecurity-magazine.com/news/php-publishes-mitigation-advice/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-115999 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-115999)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 7. CISA publishes strategy with eye on the next four years
+### ⚠️ 7. CVE-2026-115995 [CRITICAL 9.6]
 
-It includes a review of whether its existing capabilities will meet its three pillars: “defend, harden, prevail.” The post CISA publishes strategy with eye on the next four years appeared first on CyberScoop.
+A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4. The impacted element is the function set_volume of the file gpt_thread.py of the component chat_go. Such manipulation of the argument Value leads to os command injection. The attack can be launched remotely. U
 
-> **来源**: [CISA publishes strategy with eye on the next four years](https://cyberscoop.com/cisa-2030-cybersecurity-strategy/)  #CyberScoop
+> **来源**: [CVE-2026-115995 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-115995)  CVSS 9.6 CRITICAL · #NVD · #漏洞
 
-### 📰 8. The Current Landscape of OAuth Attacks
+### 📰 8. Node2Shell puts Microsoft and Node.js on Brotli patch duty
 
-Unit 42 explores modern OAuth threats and actionable steps organizations can take to protect their environments. The post The Current Landscape of OAuth Attacks appeared first on Unit 42.
+A vulnerability in Google’s Brotli compression library could allow attackers to execute arbitrary code in applications that use an affected Brotli decoder to process compressed data. Tracked as CVE-2026-111497, the high-severity flaw was first flagged in the Brotli decoder bundled with Node.js. The 
 
-> **来源**: [The Current Landscape of OAuth Attacks](https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/)  #Unit 42
+> **来源**: [Node2Shell puts Microsoft and Node.js on Brotli patch duty](https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html)  #CSO Online
 
-### 📰 9. Ransomware Attacks Rise as Rival Gangs Vie For Market Supremacy
+### 📰 9. Brotli2Shell: Frequently asked questions for Google Brotli decoder vulnerability (CVE-2026-111497)
 
-Cybercriminal groups The Gentlemen and Qilin dominate ransomware attacks - and both are evolving their tactics in an attempt to outdo one another
+Researchers have demonstrated remote code execution through CVE-2026-111497, an out-of-bounds write in Google's Brotli decoder library, and public proofs-of-concept (PoCs) are available. Software that uses the decoder includes Node.js, .NET, Bun, Envoy Proxy, Istio, Python HTTP clients and PHP for W
 
-> **来源**: [Ransomware Attacks Rise as Rival Gangs Vie For Market Supremacy](https://www.infosecurity-magazine.com/news/rival-gangs-vie-for-market/)  #Infosecurity Magazine
+> **来源**: [Brotli2Shell: Frequently asked questions for Google Brotli decoder vulnerability (CVE-2026-111497)](https://www.tenable.com/blog/brotli2shell-frequently-asked-questions-for-google-brotli-decoder-cve-2026-111497)  #Tenable Blog
 
-### 📰 10. Senators say targeted ads are a security risk. Ad groups say the critics are off base.
+### 📰 10. Whole-of-state defense: How SLED agencies can secure critical infrastructure in the AI era
 
-Citizen Lab’s AdFection findings have senators pushing for industry improvements, while IAB Europe and Google defend their vetting practices. The post Senators say targeted ads are a security risk. Ad groups say the critics are off base. appeared first on CyberScoop.
+AI is widening the attack surface of the critical infrastructure facilities and services that state, local, and education (SLED) organizations run. In the final post of our Cybersecurity Awareness Month series, we explain how a whole-of-state security approach can help SLED agencies protect their cr
 
-> **来源**: [Senators say targeted ads are a security risk. Ad groups say the critics are off base.](https://cyberscoop.com/targeted-ads-spyware-government-threat/)  #CyberScoop
+> **来源**: [Whole-of-state defense: How SLED agencies can secure critical infrastructure in the AI era](https://www.tenable.com/blog/whole-of-state-security-sled-critical-infrastructure)  #Tenable Blog
 
 ---
 

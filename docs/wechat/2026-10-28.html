@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI+安全日报 2026-10-28</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #0b1120;
+    color: #e2e8f0;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 16px 60px;
+  }
+  .header {
+    text-align: center;
+    padding: 32px 0 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(56,189,248,0.5), transparent);
+  }
+  .header .logo {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+  }
+  .header .subtitle {
+    font-size: 14px;
+    color: #64748b;
+  }
+  .header .subtitle span {
+    display: inline-block;
+    background: rgba(56,189,248,0.1);
+    color: #38bdf8;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 2px;
+  }
+  .copy-btn {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 14px 0;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(56,189,248,0.25);
+    letter-spacing: 0.5px;
+  }
+  .copy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(56,189,248,0.35);
+  }
+  .copy-btn:active {
+    transform: translateY(0);
+  }
+  .copy-btn.copied {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    box-shadow: 0 4px 20px rgba(34,197,94,0.25);
+  }
+  .toast {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #22c55e;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 9999;
+    box-shadow: 0 8px 32px rgba(34,197,94,0.3);
+  }
+  .divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+    margin: 20px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 24px 0;
+    color: #475569;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 8px;
+  }
+  .footer .mono {
+    font-family: "SF Mono", "Fira Code", monospace;
+    font-size: 11px;
+    color: #334155;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .item-enter {
+    animation: fadeIn 0.5s ease-out both;
+  }
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast">✅ 已复制到剪贴板，请粘贴到公众号编辑器</div>
+
+<div class="container">
+  <div class="header">
+    <div class="logo">🛡️</div>
+    <h1>AI+安全日报</h1>
+    <div class="subtitle">
+      2026年10月28日 · 共 <span>10</span> 条
+    </div>
+  </div>
+
+  <div id="wechatContent">
+    
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#01</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            CVE-2026-116000 [HIGH 7.3]
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        A security flaw has been discovered in Zylon PrivateGPT 1.0.0/1.0.1. This vulnerability affects the function load_file_from_uri of the file private_gpt/server/ingest/uri_loader.py of the component URI Artifact Loader. Performing a manipulation of the argument Value results in server-side request for
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116000" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-116000 [HIGH 7.3] ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#02</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            The days of assuming another company’s breach is someone else’s problem are over
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        The median blast radius of data breaches has increased year-on-year at the same time cybercriminals have begun using AI to mine stolen datasets for damaging information that enables follow-on fraud and cyberattacks. In 2026, the median breach exposed 542 organizations beyond the initially breached v
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4240612/the-days-of-assuming-another-companys-breach-is-someone-elses-problem-are-over.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">The days of assuming another company’s breach is someone else’s problem are over ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#03</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            OpenAI’s August fix for theft of reasoning traces was quickly bypassed
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Cybersecurity research firm Xint on Monday published details of a bug in the OpenAI API that leaks raw reasoning traces from frontier OpenAI models, revealing the risk of other data leaks. OpenAI has confirmed the flaw, mitigated it, and paid a bug bounty for its discovery. The problem is that OpenA
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4240662/openais-august-fix-for-theft-of-reasoning-traces-was-quickly-bypassed.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">OpenAI’s August fix for theft of reasoning traces was quickly bypassed ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#04</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Discover and remediate PHP2Shell exposure with Tenable
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Learn how to use Tenable solutions to find vulnerable PHP versions, prioritize remediation, and patch the critical PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) faster.Key takeawaysThe PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) put security teams in a race agai
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.tenable.com/blog/discover-and-remediate-php2shell-exposure-with-tenable" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Discover and remediate PHP2Shell exposure with Tenable ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Tenable Blog</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#05</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            CVE-2026-116006 [HIGH 7.3]
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        A vulnerability was detected in YunaiV/zhijiantianya ruoyi-vue-pro up to 2026.09. The affected element is an unknown function of the file AuthController.java of the component SMS Code Verification. The manipulation of the argument mobile/code results in improper authentication. The attack can be lau
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116006" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-116006 [HIGH 7.3] ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#06</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            CVE-2026-115999 [HIGH 7.3]
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        A vulnerability has been found in mansi-k Restaurant_IMS d7ad49f61ab7cc1ec6eb359ac2b5378bdbde0694. Affected is the function mysqli_connect of the file lsmodal.php. The manipulation of the argument login_id/epsw leads to sql injection. Remote exploitation of the attack is possible. This product follo
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-115999" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-115999 [HIGH 7.3] ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#dc2626;color:#fff;border:1px solid #ef4444;margin-right:8px;">CRITICAL</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#07</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            CVE-2026-115995 [CRITICAL 9.6]
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4. The impacted element is the function set_volume of the file gpt_thread.py of the component chat_go. Such manipulation of the argument Value leads to os command injection. The attack can be launched remotely. U
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-115995" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-115995 [CRITICAL 9.6] ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#08</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Node2Shell puts Microsoft and Node.js on Brotli patch duty
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        A vulnerability in Google’s Brotli compression library could allow attackers to execute arbitrary code in applications that use an affected Brotli decoder to process compressed data. Tracked as CVE-2026-111497, the high-severity flaw was first flagged in the Brotli decoder bundled with Node.js. The 
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Node2Shell puts Microsoft and Node.js on Brotli patch duty ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#09</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Brotli2Shell: Frequently asked questions for Google Brotli decoder vulnerability (CVE-2026-111497)
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Researchers have demonstrated remote code execution through CVE-2026-111497, an out-of-bounds write in Google&#39;s Brotli decoder library, and public proofs-of-concept (PoCs) are available. Software that uses the decoder includes Node.js, .NET, Bun, Envoy Proxy, Istio, Python HTTP clients and PHP for W
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.tenable.com/blog/brotli2shell-frequently-asked-questions-for-google-brotli-decoder-cve-2026-111497" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Brotli2Shell: Frequently asked questions for Google Brotli decoder vulnerability (CVE-2026-111497) ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Tenable Blog</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#10</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Whole-of-state defense: How SLED agencies can secure critical infrastructure in the AI era
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        AI is widening the attack surface of the critical infrastructure facilities and services that state, local, and education (SLED) organizations run. In the final post of our Cybersecurity Awareness Month series, we explain how a whole-of-state security approach can help SLED agencies protect their cr
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.tenable.com/blog/whole-of-state-security-sled-critical-infrastructure" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Whole-of-state defense: How SLED agencies can secure critical infrastructure in the AI era ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Tenable Blog</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="footer">
+    📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
+    仅供学习参考，不构成投资或决策建议<br>
+    <span class="mono">// AI+Security Daily · 10 items · 2026-10-28</span>
+  </div>
+
+  <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
+</div>
+
+<script>
+(function() {
+  function getContentHtml() {
+    var el = document.getElementById('wechatContent');
+    return el.innerHTML.trim();
+  }
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    return Promise.resolve();
+  }
+  function doCopy(btn) {
+    var html = getContentHtml();
+    copyToClipboard(html).then(function() {
+      btn.textContent = '✅ 已复制！';
+      btn.classList.add('copied');
+      var toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      setTimeout(function() {
+        toast.style.display = 'none';
+        btn.textContent = '📋 一键复制（公众号格式）';
+        btn.classList.remove('copied');
+      }, 2500);
+    }).catch(function() {
+      btn.textContent = '❌ 复制失败，请手动选择复制';
+      setTimeout(function() {
+        btn.textContent = '📋 一键复制（公众号格式）';
+      }, 2000);
+    });
+  }
+  var btns = document.querySelectorAll('.copy-btn');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function() { doCopy(this); });
+  }
+
+  // Staggered fade-in
+  var cards = document.querySelectorAll('#wechatContent > div');
+  cards.forEach(function(card, i) {
+    card.classList.add('item-enter');
+    card.style.animationDelay = (i * 0.08) + 's';
+  });
+})();
+</script>
+</body>
+</html>
