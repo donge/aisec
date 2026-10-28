@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-10-28
+# 🤖🔒 AI+安全日报 | 2026-10-29
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-116000 [HIGH 7.3]
+### 📰 1. Attackers built a ‘Skynet’ AI agent that hijacks exposed models to run cyberattacks
 
-A security flaw has been discovered in Zylon PrivateGPT 1.0.0/1.0.1. This vulnerability affects the function load_file_from_uri of the file private_gpt/server/ingest/uri_loader.py of the component URI Artifact Loader. Performing a manipulation of the argument Value results in server-side request for
+Skynet is no longer a fictional adversary. Attackers have built an offensive agent that exploits unprotected AI models on the web with a ‘Skynet’ directive that allows them to run unattended for up to 100,000 steps. In this mode, a reference to the humanity-destroying artificial neural network-based
 
-> **来源**: [CVE-2026-116000 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-116000)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Attackers built a ‘Skynet’ AI agent that hijacks exposed models to run cyberattacks](https://www.csoonline.com/article/4241421/attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattacks.html)  #CSO Online
 
-### 📰 2. The days of assuming another company’s breach is someone else’s problem are over
+### 📰 2. 10 ways attackers abuse AI services to hack your business
 
-The median blast radius of data breaches has increased year-on-year at the same time cybercriminals have begun using AI to mine stolen datasets for damaging information that enables follow-on fraud and cyberattacks. In 2026, the median breach exposed 542 organizations beyond the initially breached v
+Attackers are starting to exploit AI systems to mount attacks in the same way they once relied on built-in enterprise tools such as PowerShell. Instead of relying on malware, cybercriminals are increasingly abusing AI tools enterprises depend on — a trend some experts describe as “living off the AI 
 
-> **来源**: [The days of assuming another company’s breach is someone else’s problem are over](https://www.csoonline.com/article/4240612/the-days-of-assuming-another-companys-breach-is-someone-elses-problem-are-over.html)  #CSO Online
+> **来源**: [10 ways attackers abuse AI services to hack your business](https://www.csoonline.com/article/4154222/6-ways-attackers-abuse-ai-services-to-hack-your-business.html)  #CSO Online
 
-### 📰 3. OpenAI’s August fix for theft of reasoning traces was quickly bypassed
+### 📰 3. Fake ChatGPT, Claude apps spread malware via signed AI binaries
 
-Cybersecurity research firm Xint on Monday published details of a bug in the OpenAI API that leaks raw reasoning traces from frontier OpenAI models, revealing the risk of other data leaks. OpenAI has confirmed the flaw, mitigated it, and paid a bug bounty for its discovery. The problem is that OpenA
+Attackers are distributing malware through fake ChatGPT and Claude desktop applications, using legitimate, digitally signed executables from OpenAI and Anthropic to load malicious code onto victims’ Windows systems, according to Check Point Research. The campaign, tracked as Yoba, uses fake GitHub r
 
-> **来源**: [OpenAI’s August fix for theft of reasoning traces was quickly bypassed](https://www.csoonline.com/article/4240662/openais-august-fix-for-theft-of-reasoning-traces-was-quickly-bypassed.html)  #CSO Online
+> **来源**: [Fake ChatGPT, Claude apps spread malware via signed AI binaries](https://www.csoonline.com/article/4241634/fake-chatgpt-claude-apps-spread-malware-via-signed-ai-binaries.html)  #CSO Online
 
-### 📰 4. Discover and remediate PHP2Shell exposure with Tenable
+### 📰 4. Trusting Unsloth’s trust setting could mean executing malicious code
 
-Learn how to use Tenable solutions to find vulnerable PHP versions, prioritize remediation, and patch the critical PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) faster.Key takeawaysThe PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) put security teams in a race agai
+AI developers may have a security setting enabled and still end up running attacker-controlled code. Pillar Security has disclosed a high-severity vulnerability in Unsloth’s model loader that could allow arbitrary Python code execution when processing a maliciously crafted model configuration. Track
 
-> **来源**: [Discover and remediate PHP2Shell exposure with Tenable](https://www.tenable.com/blog/discover-and-remediate-php2shell-exposure-with-tenable)  #Tenable Blog
+> **来源**: [Trusting Unsloth’s trust setting could mean executing malicious code](https://www.csoonline.com/article/4241619/trusting-unsloths-trust-setting-could-mean-executing-malicious-code.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-116006 [HIGH 7.3]
+### 📰 5. Unwrapping Retail Peak Season Cyber Threats
 
-A vulnerability was detected in YunaiV/zhijiantianya ruoyi-vue-pro up to 2026.09. The affected element is an unknown function of the file AuthController.java of the component SMS Code Verification. The manipulation of the argument mobile/code results in improper authentication. The attack can be lau
+Unit 42 explores key peak shopping season retail cyber threats, from ransomware to AI attacks, and shares how to defend operations and customer trust. The post Unwrapping Retail Peak Season Cyber Threats appeared first on Unit 42.
 
-> **来源**: [CVE-2026-116006 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-116006)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Unwrapping Retail Peak Season Cyber Threats](https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/)  #Unit 42
 
-### ⚠️ 6. CVE-2026-115999 [HIGH 7.3]
+### 📰 6. Hive ransomware affiliate jailed, years after FBI infiltrated the gang’s systems
 
-A vulnerability has been found in mansi-k Restaurant_IMS d7ad49f61ab7cc1ec6eb359ac2b5378bdbde0694. Affected is the function mysqli_connect of the file lsmodal.php. The manipulation of the argument login_id/epsw leads to sql injection. Remote exploitation of the attack is possible. This product follo
+A Ukrainian man who carried out ransomware attacks for both the Nefilim and Hive gangs, including attacks on law firms and a healthcare provider during the COVID-19 pandemic, has been sentenced to 70 months in a US prison. Read more in my article on the Hot for Security blog.
 
-> **来源**: [CVE-2026-115999 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-115999)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [Hive ransomware affiliate jailed, years after FBI infiltrated the gang’s systems](https://www.bitdefender.com/en-us/blog/hotforsecurity/hive-ransomware-jailed-fbi-infiltrated)  #Graham Cluley
 
-### ⚠️ 7. CVE-2026-115995 [CRITICAL 9.6]
+### 📰 7. Attackers Hide Malware Behind Signed ChatGPT and Claude Binaries
 
-A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4. The impacted element is the function set_volume of the file gpt_thread.py of the component chat_go. Such manipulation of the argument Value leads to os command injection. The attack can be launched remotely. U
+Attackers have used fake ChatGPT and Claude projects to distribute Yoba malware
 
-> **来源**: [CVE-2026-115995 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-115995)  CVSS 9.6 CRITICAL · #NVD · #漏洞
+> **来源**: [Attackers Hide Malware Behind Signed ChatGPT and Claude Binaries](https://www.infosecurity-magazine.com/news/attackers-hide-malware-behind/)  #Infosecurity Magazine
 
-### 📰 8. Node2Shell puts Microsoft and Node.js on Brotli patch duty
+### 📰 8. All the security risks Anthropic is worried about before its IPO
 
-A vulnerability in Google’s Brotli compression library could allow attackers to execute arbitrary code in applications that use an affected Brotli decoder to process compressed data. Tracked as CVE-2026-111497, the high-severity flaw was first flagged in the Brotli decoder bundled with Node.js. The 
+Anthropic has said out-of-control AI poses a threat to the world, but perhaps unsurprisingly suggests that profit will shape those decisions, too. The post All the security risks Anthropic is worried about before its IPO appeared first on CyberScoop.
 
-> **来源**: [Node2Shell puts Microsoft and Node.js on Brotli patch duty](https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html)  #CSO Online
+> **来源**: [All the security risks Anthropic is worried about before its IPO](https://cyberscoop.com/anthropic-ipo-filing-cybersecurity-risks/)  #CyberScoop
 
-### 📰 9. Brotli2Shell: Frequently asked questions for Google Brotli decoder vulnerability (CVE-2026-111497)
+### 📰 9. Attackers Exploit Teams External Chat to Breach Organizations in Under 15 Minutes
 
-Researchers have demonstrated remote code execution through CVE-2026-111497, an out-of-bounds write in Google's Brotli decoder library, and public proofs-of-concept (PoCs) are available. Software that uses the decoder includes Node.js, .NET, Bun, Envoy Proxy, Istio, Python HTTP clients and PHP for W
+Arctic Wolf warned that the function enables highly effective social engineering attacks, which lead to incidents such as ransomware
 
-> **来源**: [Brotli2Shell: Frequently asked questions for Google Brotli decoder vulnerability (CVE-2026-111497)](https://www.tenable.com/blog/brotli2shell-frequently-asked-questions-for-google-brotli-decoder-cve-2026-111497)  #Tenable Blog
+> **来源**: [Attackers Exploit Teams External Chat to Breach Organizations in Under 15 Minutes](https://www.infosecurity-magazine.com/news/exploit-teams-chat-breach/)  #Infosecurity Magazine
 
-### 📰 10. Whole-of-state defense: How SLED agencies can secure critical infrastructure in the AI era
+### ⚠️ 10. CVE-2026-116110 [HIGH 7.3]
 
-AI is widening the attack surface of the critical infrastructure facilities and services that state, local, and education (SLED) organizations run. In the final post of our Cybersecurity Awareness Month series, we explain how a whole-of-state security approach can help SLED agencies protect their cr
+A vulnerability was found in GiantappMan LiveWallPaper 2.6.8.0 on Windows. This issue affects some unknown processing of the file /LiveWallpaper/UploadFile of the component SignalR Hub. Performing a manipulation results in missing authentication. The attack is possible to be carried out remotely. Th
 
-> **来源**: [Whole-of-state defense: How SLED agencies can secure critical infrastructure in the AI era](https://www.tenable.com/blog/whole-of-state-security-sled-critical-infrastructure)  #Tenable Blog
+> **来源**: [CVE-2026-116110 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-116110)  CVSS 7.3 HIGH · #NVD · #漏洞
 
 ---
 
