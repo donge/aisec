@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-10-30
+# 🤖🔒 AI+安全日报 | 2026-10-31
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. New Cisco firewall zero-day being actively exploited
+### 📰 1. PHP2Shell plus Fragnesia: A dangerous new route from web server to root
 
-A high-severity flaw in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) and Cisco Secure Firewall Threat Defense (FTD) is under active exploitation to crash vulnerable devices. The vulnerability, tracked as CVE-2026-76418 and rated 8.6 in severity, is due
+The PHP2Shell saga continues, with attackers discovering new ways to exploit the critical vulnerability impacting millions of organizations worldwide. The US Cybersecurity and Infrastructure Security Agency (CISA) has warned of a high severity Linux kernel privilege escalation flaw that attackers ar
 
-> **来源**: [New Cisco firewall zero-day being actively exploited](https://www.csoonline.com/article/4242420/new-cisco-firewall-zero-day-being-actively-exploited.html)  #CSO Online
+> **来源**: [PHP2Shell plus Fragnesia: A dangerous new route from web server to root](https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html)  #CSO Online
 
-### 📰 2. Fake Anthropic AI previews lure in overeager employees
+### 📰 2. Anthropic AI model finds Linux kernel bug that leads to remote root access
 
-Everyone wants to know what Anthropic is up to, and hackers are gleefully exploiting the fact. New research from cybersecurity company Cofense describes a phishing campaign that hooks overeager enterprise users by making them think they are getting an invite to a private invite-only Anthropic previe
+Linux servers running Multipath TCP (MPTCP) could be vulnerable to remote code execution through a flaw in the kernel’s networking stack. Anthropic has disclosed a zero-click exploit developed with an unreleased Claude research model that allows an unauthenticated attacker to execute arbitrary comma
 
-> **来源**: [Fake Anthropic AI previews lure in overeager employees](https://www.csoonline.com/article/4241895/fake-anthropic-ai-previews-lure-in-overeager-employees.html)  #CSO Online
+> **来源**: [Anthropic AI model finds Linux kernel bug that leads to remote root access](https://www.csoonline.com/article/4242724/anthropic-ai-model-finds-linux-kernel-bug-that-leads-to-remote-root-access.html)  #CSO Online
 
-### 📰 3. Vulnerability exploitation rising as the root cause of many breaches
+### 📰 3. Beyond deterministic worms: Preparing the SOC for reasoning adversaries
 
-More evidence has emerged that attackers are turning to vulnerabilities rather than phishing as a means for breaking into corporate systems. Incident response firm LevelBlue’s Q3 findings show that vulnerability exploitation accounted for 14% of initial access cases, up from 4% in Q2. The finding re
+In May 2017, the WannaCry cryptoworm spread across the internet, compromising more than 200,000 computers in at least 100 countries. The National Audit Office called it the largest cyberattack ever to hit the NHS in England. At least 80 of 236 hospital trusts were infected or disrupted, an estimated
 
-> **来源**: [Vulnerability exploitation rising as the root cause of many breaches](https://www.csoonline.com/article/4241912/vulnerability-exploitation-rising-as-the-root-cause-of-many-breaches.html)  #CSO Online
+> **来源**: [Beyond deterministic worms: Preparing the SOC for reasoning adversaries](https://www.csoonline.com/article/4242253/beyond-deterministic-worms-preparing-the-soc-for-reasoning-adversaries.html)  #CSO Online
 
-### 📰 4. Securing MCP servers before the AI rollout outpaces security
+### 📰 4. New Framework Puts Ransomware Resilience for AI Systems in Focus
 
-Your company’s CTO has a plan to implement your company’s first LLM-based application. The board approved it, and now you’re finding out about it. It’s a typical story I hear all the time, and I’ve lived it myself. You’ve heard everything about models and LLMs, but now you see this new term all over
+RAID-AI aims to help organizations assess their security preparation for ransomware attacks targeting AI systems
 
-> **来源**: [Securing MCP servers before the AI rollout outpaces security](https://www.csoonline.com/article/4241763/securing-mcp-servers-before-the-ai-rollout-outpaces-security.html)  #CSO Online
+> **来源**: [New Framework Puts Ransomware Resilience for AI Systems in Focus](https://www.infosecurity-magazine.com/news/framework-ransomware-resilience-ai/)  #Infosecurity Magazine
 
-### ⚠️ 5. CVE-2014-125135 [HIGH 7.3]
+### 📰 5. A deep dive into China’s Volt Typhoon suggests it is preparing for an assault on infrastructure
 
-A security vulnerability has been detected in OctoPrint 1.0.0/1.1.0. Affected is an unknown function of the component Flask Secret Key Handler. Such manipulation leads to use of hard-coded cryptographic key . The attack may be performed from remote. Upgrading to version 1.11.1 is able to address th
+In a deep dive into the Silent Train attack tactic used by China’s Volt Typhoon cybercrime group, Lumen’s Black Lotus Labs highlighted evidence of efforts to pre-position access within what it described as “strategic communications, critical infrastructure and other ecosystems that become essential 
 
-> **来源**: [CVE-2014-125135 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2014-125135)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [A deep dive into China’s Volt Typhoon suggests it is preparing for an assault on infrastructure](https://www.csoonline.com/article/4242439/a-deep-dive-into-chinas-volt-typhoon-suggests-it-is-preparing-for-an-assault-on-infrastructure.html)  #CSO Online
 
-### 📰 6. NIK C2 Malware Can Use Victims’ OpenAI Keys for AI Queries
+### 📰 6. Your Netgear router may be vulnerable to a security exploit – how to check and patch it
 
-NIK C2 malware can fall back on victims’ OpenAI API keys to run AI queries
+A vulnerability in some Netgear routers could allow an attacker with access to your network to run malicious commands on the device.
 
-> **来源**: [NIK C2 Malware Can Use Victims’ OpenAI Keys for AI Queries](https://www.infosecurity-magazine.com/news/nik-c2-malware-victims-openai-keys/)  #Infosecurity Magazine
+> **来源**: [Your Netgear router may be vulnerable to a security exploit – how to check and patch it](https://www.zdnet.com/tech/netgear-routers-vulnerable-security-exploit/)  #ZDNet Security
 
-### 📰 7. Smashing Security podcast #490: How Jared Kushner’s iPhone was allegedly hacked twice
+### 📰 7. Defense contractor pleads guilty to aiding North Korean remote worker scheme
 
-Dutch spies, Russian hackers and Jared Kushner’s iPhone. It sounds like the ingredients for a thriller, but according to claims in a new book the US President's son-in-law may have been hacked twice. Is any of it true, and what does it tell us about the phones in our pockets? Meanwhile, James Ball e
+The 62-year-old allowed co-conspirators to use his identity and top secret security clearance to apply for almost 100 jobs last year. The scheme’s success rate was limited. The post Defense contractor pleads guilty to aiding North Korean remote worker scheme appeared first on CyberScoop.
 
-> **来源**: [Smashing Security podcast #490: How Jared Kushner’s iPhone was allegedly hacked twice](https://grahamcluley.com/smashing-security-podcast-490/)  #Graham Cluley
+> **来源**: [Defense contractor pleads guilty to aiding North Korean remote worker scheme](https://cyberscoop.com/defense-contractor-guilty-north-korea-scheme-facilitator/)  #CyberScoop
 
-### 📰 8. Researchers uncover Volt Typhoon’s covert, ephemeral network
+### 📰 8. Chinese Actor Compromises US Government Network Via Chained PHP2Shell Exploit
 
-The China-linked threat group has used the “Silent Train” framework, built on a series of rapidly rotating compromised devices, to infiltrate hundreds of critical infrastructure networks. The post Researchers uncover Volt Typhoon’s covert, ephemeral network appeared first on CyberScoop.
+Dream found that a suspected Chinese-nexus actor gained root access to Palo Alto Network firewall servers to target government organizations
 
-> **来源**: [Researchers uncover Volt Typhoon’s covert, ephemeral network](https://cyberscoop.com/volt-typhoon-silent-train-covert-ephemeral-network-black-lotus-labs/)  #CyberScoop
+> **来源**: [Chinese Actor Compromises US Government Network Via Chained PHP2Shell Exploit](https://www.infosecurity-magazine.com/news/chinese-us-government-chained-php2/)  #Infosecurity Magazine
 
-### 📰 9. AI Is Turning CISOs Into Business-Risk Translators, Says Nvidia’s Head of Cyber
+### 📰 9. Cyber Incident Forces UNM Health to Cancel Surgeries, Divert Ambulances
 
-Nvidia’s Mark Weatherford says CISOs must translate AI cybersecurity risks into business priorities, clarify risk ownership and balance innovation with security controls
+The University of New Mexico is working to restore systems following the incident, which has been claimed by the BYOD ransomware group
 
-> **来源**: [AI Is Turning CISOs Into Business-Risk Translators, Says Nvidia’s Head of Cyber](https://www.infosecurity-magazine.com/news/ai-is-turning-cisos-into/)  #Infosecurity Magazine
+> **来源**: [Cyber Incident Forces UNM Health to Cancel Surgeries, Divert Ambulances](https://www.infosecurity-magazine.com/news/cyber-unmhealth-surgeries/)  #Infosecurity Magazine
 
-### 📰 10. Energy Giant Engie Notifies Customers of Supply Chain Breach
+### 📰 10. ISC2 Launches Cyber-AI Workforce Coalition to Address the Future of AI Security Jobs
 
-An undisclosed number of Engie customers have had their data compromised after a supply chain incident
+ISC2’s new Cyber-AI Workforce Coalition serves as a “vendor-neutral convener” to map the future of AI security careers, ISC2 CEO Scott Beale told Infosecurity
 
-> **来源**: [Energy Giant Engie Notifies Customers of Supply Chain Breach](https://www.infosecurity-magazine.com/news/energy-giant-engie-supply-chain/)  #Infosecurity Magazine
+> **来源**: [ISC2 Launches Cyber-AI Workforce Coalition to Address the Future of AI Security Jobs](https://www.infosecurity-magazine.com/news/isc2-launches-cyberai-workforce/)  #Infosecurity Magazine
 
 ---
 
