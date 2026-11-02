@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-02
+# 🤖🔒 AI+安全日报 | 2026-11-03
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-119190 [HIGH 7.4]
+### 📰 1. What a security strategy that survives 2027 looks like
 
-Forge (also called node-forge) is a native implementation of Transport Layer Security in JavaScript. Prior to 1.4.1, node-forge parsed deprecated extension OIDs 2.5.29.10 and 2.5.29.13 as basicConstraints, and pki.verifyCertificateChain() used the first extension with that name. Exploitation require
+Equifax CISO Jeremy Koppen sees the same dynamics most security chiefs are facing: hackers on the one side using AI to perform more sophisticated attacks at unprecedented speed, and defenders on the other adopting AI to match that volume and velocity. “AI is changing the pace on both sides,” he says
 
-> **来源**: [CVE-2026-119190 [HIGH 7.4]](https://nvd.nist.gov/vuln/detail/CVE-2026-119190)  CVSS 7.4 HIGH · #NVD · #漏洞
+> **来源**: [What a security strategy that survives 2027 looks like](https://www.csoonline.com/article/4240618/what-a-security-strategy-that-survives-2027-looks-like.html)  #CSO Online
 
-### 📰 2. Gheist turns GitHub Actions into a secret extraction service
+### 📰 2. OpenAI will merge ChatGPT’s chat and work tabs – here’s when, and what to expect
 
-A threat actor dubbed Gheist is turning compromised GitHub accounts into credential-harvesting platforms. By planting malicious GitHub Actions workflows in private repositories, the attackers can expose repository and environment secrets, then retrieve them through GitHub APIs before deleting eviden
+On the heels of Anthropic’s similar move, the change will be tested among select users before being rolled out.
 
-> **来源**: [Gheist turns GitHub Actions into a secret extraction service](https://www.csoonline.com/article/4241625/gheist-turns-github-actions-into-a-secret-extraction-service.html)  #CSO Online
+> **来源**: [OpenAI will merge ChatGPT’s chat and work tabs – here’s when, and what to expect](https://www.zdnet.com/innovation/openai-merge-chatgpt-chat-work-tabs/)  #ZDNet Security
 
-### 📰 3. When prevention fails: Why cyber resilience is the next big test of trust
+### 📰 3. A compromised DevOps laptop caused the $6.3B Binance breach
 
-Imagine arriving at work on a Monday morning to find employees cannot log in, customer service is unavailable, and critical business applications have stopped working. Security alerts are flashing. The IT team is investigating. Business leaders want to know when operations will resume. Then comes th
+Cryptocurrency Exchange Binance blamed a compromised DevOps laptop for the loss of $6.3 billion in cryptocurrency last week, adding that it will now cover any losses faced by its customers. “Binance will cover all losses from the Secure Assets Fund for Users (SAFU) and the company’s funds,” the worl
 
-> **来源**: [When prevention fails: Why cyber resilience is the next big test of trust](https://www.csoonline.com/article/4241129/when-prevention-fails-why-cyber-resilience-is-the-next-big-test-of-trust.html)  #CSO Online
+> **来源**: [A compromised DevOps laptop caused the $6.3B Binance breach](https://www.csoonline.com/article/4243225/a-compromised-devops-laptop-caused-the-6-3b-binance-breach.html)  #CSO Online
 
-### 📰 4. Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims
+### 📰 4. Cursor removes malicious Claude Code extension after SSH backdoor attempt
 
-Named “Volta-Autodoxer,” the recently uncovered malware uses AI tools to collect troves of data about victims, from login credentials and credit card numbers to Discord sessions and UberEats receipts.
+A malicious version of Anthropic’s Claude Code extension distributed through the Cursor marketplace attempted to install a persistent Secure Shell (SSH) backdoor on developers’ machines, potentially giving attackers remote access to systems holding source code, credentials and other sensitive inform
 
-> **来源**: [Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims](https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/)  #Wired Security
+> **来源**: [Cursor removes malicious Claude Code extension after SSH backdoor attempt](https://www.csoonline.com/article/4243210/cursor-removes-malicious-claude-code-extension-after-ssh-backdoor-attempt.html)  #CSO Online
 
-### 📰 5. Why identity governance demands executive attention
+### 📰 5. Why do we keep testing employees for yesterday’s phishing attacks
 
-The identity landscape you’re responsible for looks nothing like it did just a few years ago. Employees and contractors now share the enterprise with service accounts, machine identities, and a fast-growing population of AI agents — all accessing business systems and data. Every one of those identit
+“Yesterday’s price is not today’s price,” a phrase Fat Joe popularized in 2021, reminds us that what worked yesterday may not deliver the same value today. In cybersecurity, this matters when we continue to assess employees against familiar phishing techniques while attackers use AI to craft more co
 
-> **来源**: [Why identity governance demands executive attention](https://www.csoonline.com/article/4242864/why-identity-governance-demands-executive-attention.html)  #CSO Online
+> **来源**: [Why do we keep testing employees for yesterday’s phishing attacks](https://www.csoonline.com/article/4242712/why-do-we-keep-testing-employees-for-yesterdays-phishing-attacks.html)  #CSO Online
 
-### 📰 6. Hackers leak personnel data of 41,000+ Homeland Security staff, including ICE and border agents
+### 📰 6. Chainalysis Warns Customers After “Offensive Agentic” Security Incident
 
-The US Department of Homeland Security has had the details of more than 41,000 staff, including ICE and CBP agents, published online. Not ideal for an organisation with "Security" in its name. Read more in my article on the Hot for Security blog.
+Chainalysis reveals AI-driven attack that led to unauthorized activity
 
-> **来源**: [Hackers leak personnel data of 41,000+ Homeland Security staff, including ICE and border agents](https://www.bitdefender.com/en-us/blog/hotforsecurity/hackers-leak-41-000-dhs-staff-data)  #Graham Cluley
+> **来源**: [Chainalysis Warns Customers After “Offensive Agentic” Security Incident](https://www.infosecurity-magazine.com/news/chainalysis-customers-offensive/)  #Infosecurity Magazine
 
-### 📰 7. Massive Leak Exposes 41,000 Homeland Security Workers—Including Undercover ICE Agents
+### ⚠️ 7. CVE-2026-63377 [CRITICAL 9.8]
 
-The leaked records include the locations of ICE and CBP facilities, workers’ cell phone numbers, and the members of groups tied to wiretap programs, Palantir software, and xAI’s Grok chatbot.
+TAKO AI Agent for Okta is a local-first AI agent that helps Okta administrators query tenant data using natural language. Prior to 3.0.1-beta, `POST /api/auth/setup` in `src/api/routers/auth.py` allows an unauthenticated network attacker to create the first administrator account before the legitimat
 
-> **来源**: [Massive Leak Exposes 41,000 Homeland Security Workers—Including Undercover ICE Agents](https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/)  #Wired Security
+> **来源**: [CVE-2026-63377 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-63377)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 8. ICE Is Running One of the Largest Anti-Left Surveillance Operations in US History
+### 📰 8. Bitter Deploys PapRAT in Asian Cyber-Espionage Campaign
 
-ICE’s Homeland Security Investigations is engaged in far-reaching spying against left-wing activists that rivals the FBI and CIA crackdowns on the Civil Rights and anti-war movements.
+Bitter used three infection chains against South and Southeast Asian targets, one with no malware executable
 
-> **来源**: [ICE Is Running One of the Largest Anti-Left Surveillance Operations in US History](https://www.wired.com/story/ice-is-running-one-of-the-largest-anti-left-surveillance-operations-in-us-history/)  #Wired Security
+> **来源**: [Bitter Deploys PapRAT in Asian Cyber-Espionage Campaign](https://www.infosecurity-magazine.com/news/paprat-bitter-cyberespionage/)  #Infosecurity Magazine
 
-### 📰 9. BYOD cyberattack diverts ambulances and cancels classes at University of New Mexico health center
+### 📰 9. Google shuts down global botnet running on certified Android devices
 
-Ambulances were diverted, surgeries cancelled, and medical students sent home from classes after a ransomware group attacked the University of New Mexico's Health Sciences Center (HSC) this week. Read more in my article on the Fortra blog.
+Videostrong sold TV set-top boxes and other devices with pre-installed malware. The yearslong operation evaded Google’s security tests and established a botnet for cybercriminals. The post Google shuts down global botnet running on certified Android devices appeared first on CyberScoop.
 
-> **来源**: [BYOD cyberattack diverts ambulances and cancels classes at University of New Mexico health center](https://www.fortra.com/blog/byod-cyberattack-diverts-ambulances-and-cancels-classes-university-new-mexico-health-center)  #Graham Cluley
+> **来源**: [Google shuts down global botnet running on certified Android devices](https://cyberscoop.com/google-disrupts-xcpe-botnet-videostrong-android-devices/)  #CyberScoop
 
-### 📰 10. Online Scam Volumes Double to Overtake Phishing
+### 📰 10. FBI Attributes Binance Heist to North Korea’s TraderTraitor
 
-Akamai research reveals that scam detections topped six million in Q2 2026
+The FBI has blamed North Korean APT group TraderTraitor for the world’s biggest cyber heist
 
-> **来源**: [Online Scam Volumes Double to Overtake Phishing](https://www.infosecurity-magazine.com/news/online-scam-volumes-double/)  #Infosecurity Magazine
+> **来源**: [FBI Attributes Binance Heist to North Korea’s TraderTraitor](https://www.infosecurity-magazine.com/news/fbi-attributes-binance-north/)  #Infosecurity Magazine
 
 ---
 
