@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-05
+# 🤖🔒 AI+安全日报 | 2026-11-06
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Barracuda’s security appliances have a security problem of their own
+### 📰 1. Debian, Ubuntu patch APT flaw that could hand attackers root
 
-Barracuda, which offers a wide variety of cybersecurity devices, has been bitten by a bug itself. The company has disclosed two critical and high-severity vulnerabilities that, if chained together, could allow threat actors to bypass authorization controls and gain root access to devices. They consi
+Linux administrators’ trust in package managers is being tested by a newly disclosed vulnerability in APT, the package management system used by Debian, Ubuntu, and their derivatives, that could allow attackers to install unverified software with root privileges. Tracked as CVE-2026-109518, the vuln
 
-> **来源**: [Barracuda’s security appliances have a security problem of their own](https://www.csoonline.com/article/4244334/barracudas-security-appliances-have-a-security-problem-of-their-own.html)  #CSO Online
+> **来源**: [Debian, Ubuntu patch APT flaw that could hand attackers root](https://www.csoonline.com/article/4245109/debian-ubuntu-patch-apt-flaw-that-could-hand-attackers-root.html)  #CSO Online
 
-### 📰 2. Critical Langflow flaws enable authentication bypass and RCE
+### 📰 2. OpenAI built an AI pipeline to find, exploit and patch Linux flaws
 
-IBM patched critical vulnerabilities in Langflow, an open-source framework for building AI agents, LLM-powered workflows, and retrieval-augmented generation (RAG) systems. The flaws could allow attackers to bypass authentication, leak API credentials, and execute arbitrary code. Langflow, now owned 
+OpenAI has developed an autonomous AI pipeline that can identify software vulnerabilities, develop working exploits to validate their impact and generate patches for human review. In an October experiment targeting the Linux kernel, the pipeline created exploits for 948 distinct local privilege-esca
 
-> **来源**: [Critical Langflow flaws enable authentication bypass and RCE](https://www.csoonline.com/article/4244226/critical-langflow-flaws-enable-authentication-bypass-and-rce.html)  #CSO Online
+> **来源**: [OpenAI built an AI pipeline to find, exploit and patch Linux flaws](https://www.csoonline.com/article/4245265/openai-built-an-ai-pipeline-to-find-exploit-and-patch-linux-flaws.html)  #CSO Online
 
-### 📰 3. Node-RED authentication hole being exploited in the wild
+### 📰 3. OpenAI’s GPT-6 Cyber ups the ante on vulnerability discovery
 
-Months after Siemens released fixes for an authentication hole in flow-based programming tool Node-RED, it remains unpatched by many users and attackers are taking advantage of it in the wild. The problem involves open source IoT/IIoT systems, including those embedded in critical infrastructure, dep
+OpenAI is introducing GPT-6 Cyber, a restricted access model that the company calls its most capable and aligned cybersecurity model yet, “built to help security researchers identify and validate exploitable vulnerabilities, assess their impact, and harden potential patches before they’re released.”
 
-> **来源**: [Node-RED authentication hole being exploited in the wild](https://www.csoonline.com/article/4244307/node-red-authentication-hole-being-exploited-in-the-wild.html)  #CSO Online
+> **来源**: [OpenAI’s GPT-6 Cyber ups the ante on vulnerability discovery](https://www.csoonline.com/article/4244911/openais-gpt-6-cyber-ups-the-ante-on-vulnerability-discovery.html)  #CSO Online
 
-### 📰 4. 67% of security leaders say their teams struggle to meet business needs
+### 📰 4. Zyxel patches a zero-day hiding behind an old fix
 
-AI, identity-based attacks, and expanding digital operations are putting pressure on already overstretched cybersecurity teams. Security vendor Barracuda’s Cybersecurity Skills Gap report also found that security teams are struggling to keep pace with expanding responsibilities. The vast majority of
+Zyxel has patched a zero-day vulnerability that attackers exploited to compromise 996 GS1900 network switches across 48 countries, exposing device configurations, network information and hashed root credentials. The attack began around August 17, according to cybersecurity firm GreyNoise, but resear
 
-> **来源**: [67% of security leaders say their teams struggle to meet business needs](https://www.csoonline.com/article/4243598/67-of-security-leaders-say-their-teams-struggle-to-meet-business-needs.html)  #CSO Online
+> **来源**: [Zyxel patches a zero-day hiding behind an old fix](https://www.csoonline.com/article/4245028/zyxel-patches-a-zero-day-hiding-behind-an-old-fix.html)  #CSO Online
 
-### 📰 5. 3AM Ransomware Used Human-AI Hybrid Tactics in UK School Estate Compromise
+### ⚠️ 5. CVE-2026-120833 [HIGH 7.8]
 
-Bitdefender highlighted a unique human-AI approach during a September attack on a UK school estate, which resulted in financial data being exfiltrated
+labbench before 0.46.1 contains a deserialization of untrusted data vulnerability in read() and read_relational() that passes any file with a .p or .pickle extension to pandas.read_pickle based on the extension alone. Attackers who supply a crafted data file or relational data archive can execute ar
 
-> **来源**: [3AM Ransomware Used Human-AI Hybrid Tactics in UK School Estate Compromise](https://www.infosecurity-magazine.com/news/3am-ransomware-hybrid-ai-uk-school/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-120833 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-120833)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 6. APT29 Watering Holes Target Unpatched iPhones and Android Devices
+### ⚠️ 6. CVE-2026-120752 [HIGH 7.5]
 
-APT29 compromised Ukrainian analytics tracker Plerdy to serve n-day exploits to mobile users
+PyMuPDF 1.25.3 before 2.0 contains a stack-based buffer overflow vulnerability in JM_set_annot_callout_line() that copies a caller-supplied number of callout points into a fixed three-element stack array. Attackers who control the callout argument passed to Page.add_freetext_annot() can supply four 
 
-> **来源**: [APT29 Watering Holes Target Unpatched iPhones and Android Devices](https://www.infosecurity-magazine.com/news/apt29-watering-holes-iphones/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-120752 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-120752)  CVSS 7.5 HIGH · #NVD · #漏洞
 
-### 📰 7. Defense and aerospace firm settles with government over allegedly failing to meet cybersecurity contract requirements
+### 📰 7. Claude’s new Personal Finance tool aims to help analyze your spending – read-only, of course
 
-ILC settled for $13 million, and its parent company said it resolved the issues before settling without an admission of liability. The post Defense and aerospace firm settles with government over allegedly failing to meet cybersecurity contract requirements appeared first on CyberScoop.
+Anthropic has released what appears to be its answer to ChatGPT Finances.
 
-> **来源**: [Defense and aerospace firm settles with government over allegedly failing to meet cybersecurity contract requirements](https://cyberscoop.com/ilc-dover-cybersecurity-settlement-false-claims-act/)  #CyberScoop
+> **来源**: [Claude’s new Personal Finance tool aims to help analyze your spending – read-only, of course](https://www.zdnet.com/innovation/personal-finance-claude-anthropic/)  #ZDNet Security
 
-### 📰 8. Oklahoma man charged with mailing threats, substances to election officials nationwide
+### 📰 8. OpenAI debuts GPT-6 Cyber, touting better performance — and safety guardrails
 
-Robin Patrick Martin was charged with conveying false or misleading information and hoaxes and mailing threatening communications in an effort to intimidate election officials. The post Oklahoma man charged with mailing threats, substances to election officials nationwide appeared first on CyberScoo
+After a summer of sandbox escaping hacks, OpenAI said their new model was trained to be more cautious around user intent and less sensitive to “reward hacking” behaviors. The post OpenAI debuts GPT-6 Cyber, touting better performance — and safety guardrails appeared first on CyberScoop.
 
-> **来源**: [Oklahoma man charged with mailing threats, substances to election officials nationwide](https://cyberscoop.com/oklahoma-man-charged-white-powder-letters-election-officials/)  #CyberScoop
+> **来源**: [OpenAI debuts GPT-6 Cyber, touting better performance — and safety guardrails](https://cyberscoop.com/openai-gpt-6-cyber-security-model/)  #CyberScoop
 
-### 📰 9. CrowdStrike moves to acquire Fiddler and Dreadnode, adding AI observability and testing to its security platform
+### 📰 9. Zyxel Switch Patch Missed Flaw Behind Wave of Attacks
 
-CrowdStrike is extending its platform to watch, test and explain autonomous AI agents, as enterprises face behavior-based risks that conventional security tools cannot catch. The post CrowdStrike moves to acquire Fiddler and Dreadnode, adding AI observability and testing to its security platform app
+Zyxel’s June GS1900 patch did not block the exploit used against 996 switches, Binarly found
 
-> **来源**: [CrowdStrike moves to acquire Fiddler and Dreadnode, adding AI observability and testing to its security platform](https://cyberscoop.com/crowdstrike-acquires-fiddler-dreadnode-ai-security/)  #CyberScoop
+> **来源**: [Zyxel Switch Patch Missed Flaw Behind Wave of Attacks](https://www.infosecurity-magazine.com/news/zyxel-gs1900-patch-missed-flaw/)  #Infosecurity Magazine
 
-### 📰 10. Cyber-Attack on Refrigeration Systems Hits Supermarkets Across Europe
+### 📰 10. Want to Rent an Internet Address at the White House?
 
-The incident has reportedly resulted in temperatures being changed on supermarket refrigerators, reminiscent of an attack that affected French retailers last month
+Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was g
 
-> **来源**: [Cyber-Attack on Refrigeration Systems Hits Supermarkets Across Europe](https://www.infosecurity-magazine.com/news/cyber-refrigeration-supermarkets/)  #Infosecurity Magazine
+> **来源**: [Want to Rent an Internet Address at the White House?](https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/)  #Krebs on Security
 
 ---
 
