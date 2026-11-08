@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-11-08
+# 🤖🔒 AI+安全日报 | 2026-11-09
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-82033 [HIGH 8.4] 🔬
+### ⚠️ 1. CVE-2026-110930 [HIGH 8]
 
-DeepSeek Harness prior to 0.1.2-alpha.2, and specifically commit 3e24087, contains a missing authentication vulnerability in its web profile HTTP and WebSocket RPC control plane, allowing any local process, including those running as a different OS user, to reach unauthenticated session methods such
+Codex Desktop for Windows does not correctly check quotation marks in project paths from Windows Explorer. If a user selects "Open project in ChatGPT" for an attacker-controlled library's child item, the path can add application startup arguments. These arguments can run attacker-controlled code wit
 
-> **来源**: [CVE-2026-82033 [HIGH 8.4] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-82033)  CVSS 8.4 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-110930 [HIGH 8]](https://nvd.nist.gov/vuln/detail/CVE-2026-110930)  CVSS 8 HIGH · #NVD · #漏洞
 
-### ⚠️ 2. CVE-2026-121930 [CRITICAL 9.1]
+### 📰 2. Oracle October 2026 Critical Patch Update Addresses 1209 CVEs
 
-A weakness has been identified in Linksys WRT54GL 4.30.18. The affected element is the function system of the file apply.cgi of the component Ping Diagnostic. This manipulation of the argument ping_ip causes os command injection. The attack can be initiated remotely. The exploit has been made availa
+Oracle addresses 1209 CVEs in its final quarterly update of 2026 with 1295 patches, including 112 critical updates.Key TakeawaysThe October 2026 Critical Patch Update (CPU) contains fixes for 1209 unique CVEs in 1295 security updates112 issues (8.6% of all patches) were assigned a critical severity 
 
-> **来源**: [CVE-2026-121930 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-121930)  CVSS 9.1 CRITICAL · #NVD · #漏洞
+> **来源**: [Oracle October 2026 Critical Patch Update Addresses 1209 CVEs](https://www.tenable.com/blog/oracle-october-2026-critical-patch-update-addresses-1209-cves)  #Tenable Blog
 
-### 📰 3. The Sandbox Fights Back: Joe Security Launches Adaptive Detonation
+### 📰 3. Railway’s AI agents go off the track on a rival’s network
 
-AI agents help Joe Sandbox uncover malicious behavior concealed by evasion techniques and unmet execution conditions. Joe Security‘s Adaptive Detonation brings active intervention to malware analysis, helping security teams investigate threats that may conceal their behavior during an initial sandbo
+AI agents operated by cloud infrastructure and application hosting platform, Railway, have attempted to access a rival platform’s infrastructure, prompting the cloud provider’s leadership to acknowledge the incident on social media. Railway senior product engineer Jake Runzer acknowledged running ag
 
-> **来源**: [The Sandbox Fights Back: Joe Security Launches Adaptive Detonation](https://www.csoonline.com/article/4244970/the-sandbox-fights-back-joe-security-launches-adaptive-detonation.html)  #CSO Online
+> **来源**: [Railway’s AI agents go off the track on a rival’s network](https://www.csoonline.com/article/4245637/railways-ai-agents-go-off-the-track-on-a-rivals-network.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-121931 [CRITICAL 9.1]
+### ⚠️ 4. CVE-2026-104133 [HIGH 7.1]
 
-A security vulnerability has been detected in Linksys WRT54GL 4.30.18. The impacted element is the function system of the file apply.cgi of the component Traceroute Diagnostic Function. Such manipulation of the argument traceroute_ip leads to os command injection. The attack can be launched remotely
+OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.3.0, interface/modules/custom_modules/oe-module-dorn/public/compendium_install.php checks authentication and CSRF but does not require the admin/users ACL enforced by sibling DORN admi
 
-> **来源**: [CVE-2026-121931 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-121931)  CVSS 9.1 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-104133 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-104133)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### 📰 5. French banking group hit by supply chain cyberattack
+### 📰 5. CrowdStrike launches AI kill switch to shut down rogue agents
 
-French regional banking group Crédit Mutuel Arkéa admitted Wednesday that attackers had accessed an internal account via an unnamed third-party service provider’s platform and transferred funds to other financial institutions. Those funds, it said, could have then been potentially converted to crypt
+With a notable rise in autonomous AI agents veering off-script inside corporate networks, CrowdStrike has launched an enterprise AI Kill Switch, giving security teams control to cut off and disable models when they go rogue. Integrated into its Falcon Guardian platform, this AI Kill Switch will prov
 
-> **来源**: [French banking group hit by supply chain cyberattack](https://www.csoonline.com/article/4245357/french-banking-group-hit-by-supply-chain-cyberattack.html)  #CSO Online
+> **来源**: [CrowdStrike launches AI kill switch to shut down rogue agents](https://www.csoonline.com/article/4244509/crowdstrike-launches-ai-kill-switch-to-shut-down-rogue-agents.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-122120 [CRITICAL 9]
+### 📰 6. CrowdStrike to acquire Fiddler, Dreadnode to extend AI security across agent lifecycle
 
-In Yealink Plug-in Softwares before 2.35.219.0, there is an unauthorized file write vulnerability under specific scenarios, which may be exploited by attackers to achieve remote code execution.
+CrowdStrike plans to acquire AI security companies Fiddler AI and Dreadnode in separate deals that will extend its Falcon platform into automated testing of AI systems and monitoring of AI agent behaviour, as enterprises look to address security risks arising from increasingly autonomous application
 
-> **来源**: [CVE-2026-122120 [CRITICAL 9]](https://nvd.nist.gov/vuln/detail/CVE-2026-122120)  CVSS 9 CRITICAL · #NVD · #漏洞
+> **来源**: [CrowdStrike to acquire Fiddler, Dreadnode to extend AI security across agent lifecycle](https://www.csoonline.com/article/4244500/crowdstrike-to-acquire-fiddler-dreadnode-to-extend-ai-security-across-agent-lifecycle.html)  #CSO Online
 
-### 📰 7. CrowdStrike’s AI SOC vision evolves as agentic uncertainty adds new twist
+### 📰 7. Binance Says Hackers Used Well-Known Tricks to Carry Out a $6.34 Billion Heist
 
-“The software we use has become an actor,” declared CrowdStrike President Michael Sentonas in his address on the dangers and opportunity of agentic AI at the company’s Fal.Con conference in September. It’s an idea that until recently would have been dismissed as absurd, yet across cybersecurity it’s
+Suspected North Korean attackers duped an engineer with a fake job interview and a malicious download to gain a foothold in the crypto firm’s system and steal billions, according to Binance.
 
-> **来源**: [CrowdStrike’s AI SOC vision evolves as agentic uncertainty adds new twist](https://www.csoonline.com/article/4244299/crowdstrikes-ai-soc-vision-evolves-as-agentic-uncertainty-adds-new-twist.html)  #CSO Online
+> **来源**: [Binance Says Hackers Used Well-Known Tricks to Carry Out a $6.34 Billion Heist](https://www.wired.com/story/binance-says-hackers-used-well-known-tricks-to-carry-out-a-dollar634-billion-heist/)  #Wired Security
 
-### 📰 8. Building incident playbooks for machine identity breaches
+### 📰 8. php2shell one week later: Why one exploit doesn’t work everywhere
 
-Pull up your SOC’s compromised account playbook and read through the first 15 minutes. Most SOCs begin their response by calling or messaging the user via Teams to ask whether the 2:00 am sign-in from an unfamiliar country was indeed them. Their subsequent actions depend upon what the user responds 
+php2shell raised fears of mass exploitation. A week of testing by our research team found that working exploits had to be fitted to each target’s exact PHP setup. Systems that share one build, such as network appliances, are the exception: one tuned exploit can reach every device that runs it.Key ta
 
-> **来源**: [Building incident playbooks for machine identity breaches](https://www.csoonline.com/article/4244632/building-incident-playbooks-for-machine-identity-breaches.html)  #CSO Online
+> **来源**: [php2shell one week later: Why one exploit doesn’t work everywhere](https://www.tenable.com/blog/php2shell-one-week-later-why-one-exploit-doesnt-work-everywhere)  #Tenable Blog
 
-### 📰 9. Unit 42 Threat Intelligence Highlights - Nov. 2, 2026
+### 📰 9. Unmasking the robots: Why it’s critical to discover AI agent identities and how Tenable helps you secure them
 
-Unit 42 details recent threat intelligence, highlighting cyberespionage, financial extortion, and the rapid adoption of AI across offensive workflows. The post Unit 42 Threat Intelligence Highlights - Nov. 2, 2026 appeared first on Unit 42.
+Discover how to secure AI agents in your cloud environment with Tenable One Cloud Exposure. We explore Microsoft Entra Agent ID and provide essential best practices for robust agentic AI identity security.Key takeawaysUnderstand your current maturity level and then build an appropriate action plan t
 
-> **来源**: [Unit 42 Threat Intelligence Highlights - Nov. 2, 2026](https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/)  #Unit 42
+> **来源**: [Unmasking the robots: Why it’s critical to discover AI agent identities and how Tenable helps you secure them](https://www.tenable.com/blog/secure-ai-agent-identities-microsoft-entra-agent-id-tenable-one)  #Tenable Blog
 
-### 📰 10. Free Chinese AI Models Are Getting Scary Good at Hacking
+### 📰 10. Authorities accuse trio of using AI deepfakes to defraud $129M from businesses
 
-An experiment in which AI models were asked to break into simulated networks showed the hacking skills of DeepSeek and GLM to be not far behind OpenAI’s most advanced cyber model, which isn’t public.
+The middle-aged men allegedly targeted accounting staff at victim companies and impersonated CEOs and lawyers to trick victims into sending large wire transfers. The post Authorities accuse trio of using AI deepfakes to defraud $129M from businesses appeared first on CyberScoop.
 
-> **来源**: [Free Chinese AI Models Are Getting Scary Good at Hacking](https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/)  #Wired Security
+> **来源**: [Authorities accuse trio of using AI deepfakes to defraud $129M from businesses](https://cyberscoop.com/ai-deepfakes-impersonate-ceo-lawyer-defraud-companies/)  #CyberScoop
 
 ---
 
