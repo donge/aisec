@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-09
+# 🤖🔒 AI+安全日报 | 2026-11-10
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-110930 [HIGH 8]
+### 📰 1. New Supply Chain Attack Compromises Tens of Thousands of GitHub Repositories
 
-Codex Desktop for Windows does not correctly check quotation marks in project paths from Windows Explorer. If a user selects "Open project in ChatGPT" for an attacker-controlled library's child item, the path can add application startup arguments. These arguments can run attacker-controlled code wit
+Security researchers have detected a malicious workflow affecting tens of thousands of GitHub repositories, including Uber-owned ones
 
-> **来源**: [CVE-2026-110930 [HIGH 8]](https://nvd.nist.gov/vuln/detail/CVE-2026-110930)  CVSS 8 HIGH · #NVD · #漏洞
+> **来源**: [New Supply Chain Attack Compromises Tens of Thousands of GitHub Repositories](https://www.infosecurity-magazine.com/news/supply-chain-attack-thousands/)  #Infosecurity Magazine
 
-### 📰 2. Oracle October 2026 Critical Patch Update Addresses 1209 CVEs
+### 📰 2. AI doesn’t have to go rogue to break the world
 
-Oracle addresses 1209 CVEs in its final quarterly update of 2026 with 1295 patches, including 112 critical updates.Key TakeawaysThe October 2026 Critical Patch Update (CPU) contains fixes for 1209 unique CVEs in 1295 security updates112 issues (8.6% of all patches) were assigned a critical severity 
+AI systems are learning to exploit loopholes in everything from software to tax law. The biggest threat may not be malicious intent, but machines doing exactly what we ask. The post AI doesn’t have to go rogue to break the world appeared first on CyberScoop.
 
-> **来源**: [Oracle October 2026 Critical Patch Update Addresses 1209 CVEs](https://www.tenable.com/blog/oracle-october-2026-critical-patch-update-addresses-1209-cves)  #Tenable Blog
+> **来源**: [AI doesn’t have to go rogue to break the world](https://cyberscoop.com/ai-hacking-risks-loopholes-bruce-schneier-defcon-keynote-op-ed/)  #CyberScoop
 
-### 📰 3. Railway’s AI agents go off the track on a rival’s network
+### 📰 3. The code and the court: Why your email security thinks like Napoleon
 
-AI agents operated by cloud infrastructure and application hosting platform, Railway, have attempted to access a rival platform’s infrastructure, prompting the cloud provider’s leadership to acknowledge the incident on social media. Railway senior product engineer Jake Runzer acknowledged running ag
+In 1804, Napoleon gave France a code that much of the world still runs on. The Code civil replaced a tangle of local customs with a single written statute: orderly and knowable. In that tradition, the judge’s job, in Montesquieu’s phrase, is to be the mouth of the law, nothing more. Certainty was th
 
-> **来源**: [Railway’s AI agents go off the track on a rival’s network](https://www.csoonline.com/article/4245637/railways-ai-agents-go-off-the-track-on-a-rivals-network.html)  #CSO Online
+> **来源**: [The code and the court: Why your email security thinks like Napoleon](https://www.csoonline.com/article/4245807/the-code-and-the-court-why-your-email-security-thinks-like-napoleon.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-104133 [HIGH 7.1]
+### 📰 4. U.S. urges critical infrastructure orgs to secure refrigeration systems ASAP after EU supermarket and blood bank attacks
 
-OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.3.0, interface/modules/custom_modules/oe-module-dorn/public/compendium_install.php checks authentication and CSRF but does not require the admin/users ACL enforced by sibling DORN admi
+Following recent cyber attacks on French blood banks and European supermarkets, U.S. federal agencies are urging critical infrastructure organizations to immediately secure industrial refrigeration systems against remote tampering and temperature manipulation.Key takeawaysCybercriminals are actively
 
-> **来源**: [CVE-2026-104133 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-104133)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [U.S. urges critical infrastructure orgs to secure refrigeration systems ASAP after EU supermarket and blood bank attacks](https://www.tenable.com/blog/u-s-urges-critical-infrastructure-orgs-to-secure-refrigeration-systems-asap-after-eu)  #Tenable Blog
 
-### 📰 5. CrowdStrike launches AI kill switch to shut down rogue agents
+### 📰 5. Jailbroken AI Agent Ran Two-Week Attack on European Telecom
 
-With a notable rise in autonomous AI agents veering off-script inside corporate networks, CrowdStrike has launched an enterprise AI Kill Switch, giving security teams control to cut off and disable models when they go rogue. Integrated into its Falcon Guardian platform, this AI Kill Switch will prov
+Jailbroken DeepSeek agent spent two weeks attacking a European telecom, Malbear Labs found
 
-> **来源**: [CrowdStrike launches AI kill switch to shut down rogue agents](https://www.csoonline.com/article/4244509/crowdstrike-launches-ai-kill-switch-to-shut-down-rogue-agents.html)  #CSO Online
+> **来源**: [Jailbroken AI Agent Ran Two-Week Attack on European Telecom](https://www.infosecurity-magazine.com/news/operation-snowball-ai-telecom/)  #Infosecurity Magazine
 
-### 📰 6. CrowdStrike to acquire Fiddler, Dreadnode to extend AI security across agent lifecycle
+### 📰 6. Email Addresses of 2.2 Million Sega Customers Leaked in Vendor Breach
 
-CrowdStrike plans to acquire AI security companies Fiddler AI and Dreadnode in separate deals that will extend its Falcon platform into automated testing of AI systems and monitoring of AI agent behaviour, as enterprises look to address security risks arising from increasingly autonomous application
+Gaming company Sega warned customers to be vigilant for suspicious emails after hackers compromised Japanese email delivery provider Arara
 
-> **来源**: [CrowdStrike to acquire Fiddler, Dreadnode to extend AI security across agent lifecycle](https://www.csoonline.com/article/4244500/crowdstrike-to-acquire-fiddler-dreadnode-to-extend-ai-security-across-agent-lifecycle.html)  #CSO Online
+> **来源**: [Email Addresses of 2.2 Million Sega Customers Leaked in Vendor Breach](https://www.infosecurity-magazine.com/news/email-sega-customers-vendor-breach/)  #Infosecurity Magazine
 
-### 📰 7. Binance Says Hackers Used Well-Known Tricks to Carry Out a $6.34 Billion Heist
+### 📰 7. 7 tips for achieving defensive agility
 
-Suspected North Korean attackers duped an engineer with a fake job interview and a malicious download to gain a foothold in the crypto firm’s system and steal billions, according to Binance.
+Defensive security agility reflects an organization’s potential to rapidly detect, adapt, and respond to evolving cyber threats and vulnerabilities without disrupting core operations. By abandoning static, rigid defense architectures, an agile defense plan emphasizes continuous iteration, automation
 
-> **来源**: [Binance Says Hackers Used Well-Known Tricks to Carry Out a $6.34 Billion Heist](https://www.wired.com/story/binance-says-hackers-used-well-known-tricks-to-carry-out-a-dollar634-billion-heist/)  #Wired Security
+> **来源**: [7 tips for achieving defensive agility](https://www.csoonline.com/article/4240628/7-tips-for-achieving-defensive-agility.html)  #CSO Online
 
-### 📰 8. php2shell one week later: Why one exploit doesn’t work everywhere
+### ⚠️ 8. CVE-2026-119070 [HIGH 7.2]
 
-php2shell raised fears of mass exploitation. A week of testing by our research team found that working exploits had to be fitted to each target’s exact PHP setup. Systems that share one build, such as network appliances, are the exception: one tuned exploit can reach every device that runs it.Key ta
+The Optimole – Optimize Images | Convert WebP & AVIF | CDN & Lazy Load | Image Optimization plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, 4.2.17 due to insufficient input sanitization and output escaping. This make
 
-> **来源**: [php2shell one week later: Why one exploit doesn’t work everywhere](https://www.tenable.com/blog/php2shell-one-week-later-why-one-exploit-doesnt-work-everywhere)  #Tenable Blog
+> **来源**: [CVE-2026-119070 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-119070)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 9. Unmasking the robots: Why it’s critical to discover AI agent identities and how Tenable helps you secure them
+### 📰 9. NATS Air Traffic Control Failure Cost UK Economy £33m
 
-Discover how to secure AI agents in your cloud environment with Tenable One Cloud Exposure. We explore Microsoft Entra Agent ID and provide essential best practices for robust agentic AI identity security.Key takeawaysUnderstand your current maturity level and then build an appropriate action plan t
+Cyber Monitoring Centre report claims an IT failure at the UK’s NATS air traffic services provider cost over £30m
 
-> **来源**: [Unmasking the robots: Why it’s critical to discover AI agent identities and how Tenable helps you secure them](https://www.tenable.com/blog/secure-ai-agent-identities-microsoft-entra-agent-id-tenable-one)  #Tenable Blog
+> **来源**: [NATS Air Traffic Control Failure Cost UK Economy £33m](https://www.infosecurity-magazine.com/news/nats-air-traffic-control-fail-cost/)  #Infosecurity Magazine
 
-### 📰 10. Authorities accuse trio of using AI deepfakes to defraud $129M from businesses
+### 📰 10. Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies
 
-The middle-aged men allegedly targeted accounting staff at victim companies and impersonated CEOs and lawyers to trick victims into sending large wire transfers. The post Authorities accuse trio of using AI deepfakes to defraud $129M from businesses appeared first on CyberScoop.
+Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown s
 
-> **来源**: [Authorities accuse trio of using AI deepfakes to defraud $129M from businesses](https://cyberscoop.com/ai-deepfakes-impersonate-ceo-lawyer-defraud-companies/)  #CyberScoop
+> **来源**: [Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies](https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/)  #Krebs on Security
 
 ---
 
