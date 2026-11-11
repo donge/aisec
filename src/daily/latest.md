@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-11
+# 🤖🔒 AI+安全日报 | 2026-11-12
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. SonicWall releases patches for 7 flaws in its firewalls, most involving unauthenticated access
+### 📰 1. November 2026 Patch Tuesday: 63 Critical Microsoft fixes, plus an Outlook zero day that allows theft of hashed credentials
 
-SonicWall on Monday updated its advisory about seven cybersecurity holes affecting its Gen 7 and Gen 8 firewalls, five of which allow unauthenticated remote attacks, to warn that it is aware of “potential” active exploitation of at least one of the bugs, CVE-2026-19868, a bypass of SAML authenticati
+A currently exploited zero-day vulnerability that can let attackers steal hashed Outlook NTLM credentials is among the 1,094 holes Microsoft fixed in its November Patch Tuesday releases. Although rated as only moderate in severity, with a CVSS score of 6.5, Windows administrators need to address CVE
 
-> **来源**: [SonicWall releases patches for 7 flaws in its firewalls, most involving unauthenticated access](https://www.csoonline.com/article/4246479/sonicwall-releases-patches-for-7-flaws-in-its-firewalls-most-involving-unauthenticated-access.html)  #CSO Online
+> **来源**: [November 2026 Patch Tuesday: 63 Critical Microsoft fixes, plus an Outlook zero day that allows theft of hashed credentials](https://www.csoonline.com/article/4247015/november-2026-patch-tuesday-63-critical-microsoft-fixes-plus-an-outlook-zero-day-that-allows-theft-of-hashed-credentials.html)  #CSO Online
 
-### 📰 2. Vanderbilt University reels following ransomware attack claimed by BYOD group
+### 📰 2. Able2Shell: Frequently asked questions for reported N-able N-central zero-day vulnerabilities
 
-Some services began returning online Tuesday following a ransomware incident detected on Monday across Vanderbilt systems and applications. The post Vanderbilt University reels following ransomware attack claimed by BYOD group appeared first on CyberScoop.
+N-able released a hotfix for N-central that fixes seven CVEs after a researcher published proof-of-concept code for 33 alleged zero-day vulnerabilities. The researcher says one attack chain needs no credentials.Key TakeawaysAble2Shell is a set of 33 alleged vulnerabilities in N-able N-central, publi
 
-> **来源**: [Vanderbilt University reels following ransomware attack claimed by BYOD group](https://cyberscoop.com/vanderbilt-university-ransomware-attack-byod/)  #CyberScoop
+> **来源**: [Able2Shell: Frequently asked questions for reported N-able N-central zero-day vulnerabilities](https://www.tenable.com/blog/able2shell-frequently-asked-questions-for-reported-n-able-n-central-zero-day-vulnerabilities)  #Tenable Blog
 
-### 📰 3. Qubole supply chain attack exposed AWS, Entra ID, and Okta credentials
+### 📰 3. Finite State Raises $27 Million to Help Device Makers Fight ‘Vulnpocalypse’ with AI-Powered Product Security
 
-An attacker has abused AWS cross-account IAM roles to access multiple customer environments, steal data, and harvest credentials in a supply-chain attack that ran between October 14 and October 26. Researchers from Wiz, working with Sentra and Mandiant, said they observed an attacker using IAM crede
+Funding Will Scale Finite State’s Autonomous Platform and International Expansion as Manufacturers Face a Surge of AI-Discovered Flaws and New Global Security Mandates Finite State, a leader in product security and software supply chain risk management, today announced a $27 million Series C funding
 
-> **来源**: [Qubole supply chain attack exposed AWS, Entra ID, and Okta credentials](https://www.csoonline.com/article/4246780/qubole-supply-chain-attack-exposed-aws-entra-id-and-okta-credentials.html)  #CSO Online
+> **来源**: [Finite State Raises $27 Million to Help Device Makers Fight ‘Vulnpocalypse’ with AI-Powered Product Security](https://www.csoonline.com/article/4247149/finite-state-raises-27-million-to-help-device-makers-fight-vulnpocalypse-with-ai-powered-product-security.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-124060 [CRITICAL 9.1]
+### 📰 4. N-able N-central gets emergency fix two days after 33 exploits published
 
-A vulnerability was detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this issue is the function UploadCustomModule of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument File results in buffer overflow. The attack may be launched remotely. The exploit is now public and may be used.
+N-able has taken its hosted N-central remote monitoring and management (RMM) platform offline worldwide and shipped an emergency hotfix after a security researcher released 33 zero-day exploits for the software, including attack chains that could let unauthenticated attackers take over servers. N-ce
 
-> **来源**: [CVE-2026-124060 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-124060)  CVSS 9.1 CRITICAL · #NVD · #漏洞
+> **来源**: [N-able N-central gets emergency fix two days after 33 exploits published](https://www.csoonline.com/article/4247028/n-able-n-central-gets-emergency-fix-two-days-after-33-exploits-published.html)  #CSO Online
 
-### 📰 5. How AI security failures are endangering your supply chain – and what you can do
+### ⚠️ 5. CVE-2026-124560 [CRITICAL 9.8]
 
-New research provides a stark look at the AI supply chain and the risks it brings to businesses.
+A vulnerability was found in D-Link DIR-878 1.20B05. This affects the function GetCAPTCHAsetting of the file bin/prog.cgi of the component HNAP Handler. Performing a manipulation of the argument uid results in heap-based buffer overflow. The attack can be initiated remotely. The exploit has been mad
 
-> **来源**: [How AI security failures are endangering your supply chain – and what you can do](https://www.zdnet.com/tech/ai-security-failures-supply-chain-risks-black-kite-research/)  #ZDNet Security
+> **来源**: [CVE-2026-124560 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-124560)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 6. Vanderbilt University Takes Systems Offline After Cyber Incident
+### ⚠️ 6. CVE-2026-124558 [HIGH 7.3]
 
-The BYOD ransomware group has claimed to have locked the university’s databases and stolen sensitive data from its systems
+A vulnerability has been found in DataLinkDC Dinky up to 1.2.5. The impacted element is the function SqlGateway.onOpen of the file SqlGateway.java of the component sql-gateway Endpoint. Such manipulation of the argument connectAddress leads to server-side request forgery. It is possible to launch th
 
-> **来源**: [Vanderbilt University Takes Systems Offline After Cyber Incident](https://www.infosecurity-magazine.com/news/vanderbilt-university-cyber/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-124558 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-124558)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 7. Anthropic sharpens AI coding and security capabilities with Mythos 5.2
+### ⚠️ 7. CVE-2026-124509 [HIGH 7.3]
 
-Anthropic has introduced Claude Fable 5.2 and Mythos 5.2, claiming significant improvements in handling complex software engineering tasks while cutting API prices by 20% compared with the previous versions. Fable 5.2 and Mythos 5.2 share the same underlying model but have different safeguards. Fabl
+A vulnerability was identified in floci-io Floci up to 2.1.0. The affected element is the function S3Destination.bucketName of the file services/firehose/model/DeliveryStreamDescription.java of the component S3 Destination Configuration Handler. Such manipulation of the argument BucketARN leads to p
 
-> **来源**: [Anthropic sharpens AI coding and security capabilities with Mythos 5.2](https://www.csoonline.com/article/4246688/anthropic-sharpens-ai-coding-and-security-capabilities-with-mythos-5-2.html)  #CSO Online
+> **来源**: [CVE-2026-124509 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-124509)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 8. Binance Investigates ShinyHunters Breach Claims
+### 📰 8. Rewriting less than 10 neurons in an LLM can turn it into a sleeper backdoor
 
-Cryptocurrency exchange Binance says ShinyHunters’ breach claims appear to be a scam
+Microsoft researchers have found that rewriting fewer than 10 rarely used neurons in an open-weight AI model can turn any agent built on it into a sleeper backdoor that runs an attacker’s commands on cue, with no retraining required. Researchers from Microsoft Research and Microsoft Red Team describ
 
-> **来源**: [Binance Investigates ShinyHunters Breach Claims](https://www.infosecurity-magazine.com/news/binance-investigates-shinyhunters/)  #Infosecurity Magazine
+> **来源**: [Rewriting less than 10 neurons in an LLM can turn it into a sleeper backdoor](https://www.csoonline.com/article/4247354/rewriting-less-than-10-neurons-in-an-llm-can-turn-it-into-a-sleeper-backdoor.html)  #CSO Online
 
-### 📰 9. Microsoft’s email security is unexpectedly blocking legitimate business mail
+### ⚠️ 9. CVE-2026-124501 [HIGH 7.3]
 
-Microsoft’s email filters meant to protect users from malicious messages appear to be rejecting legitimate ones. Over the last few days, some mail sent to Microsoft consumer addresses have bounced if they did not publish a domain-based message authentication, reporting, and conformance (DMARC) recor
+A weakness has been identified in Tidelift moto up to 5.2.4. Affected is an unknown function of the file moto/batch/models.py of the component AWS Batch Emulation. This manipulation of the argument privileged/volumes causes improper privilege management. Remote exploitation of the attack is possible
 
-> **来源**: [Microsoft’s email security is unexpectedly blocking legitimate business mail](https://www.csoonline.com/article/4246592/microsofts-email-security-is-unexpectedly-blocking-legitimate-business-mail-2.html)  #CSO Online
+> **来源**: [CVE-2026-124501 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-124501)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 10. Iranian hackers turned up the heat on French supermarket freezers, says France
+### 📰 10. Who Runs the Ransomware Group Qilin?
 
-Iran has been officially accused by France of being responsible for cyber attacks last month that meddled with supermarket freezers, causing some to catch fire. Read more in my article on the Hot for Security blog.
+The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over 
 
-> **来源**: [Iranian hackers turned up the heat on French supermarket freezers, says France](https://www.bitdefender.com/en-us/blog/hotforsecurity/iranian-hackers-supermarket-freezers-france)  #Graham Cluley
+> **来源**: [Who Runs the Ransomware Group Qilin?](https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/)  #Krebs on Security
 
 ---
 
