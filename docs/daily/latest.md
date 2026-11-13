@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-11-13
+# 🤖🔒 AI+安全日报 | 2026-11-14
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Hackers abuse SQL Server’s weak passwords to drop cryptominers and Gh0st RAT
+### 📰 1. How AI is changing the nature of cyberattacks
 
-An active threat campaign is combining port scanning, password guessing, and Transact-SQL (T-SQL) commands to compromise exposed Microsoft SQL servers and deliver malware. The attackers are using predefined username and password lists to brute-force into these servers and exploit their administrativ
+AI may be helping cyberattackers increase the speed and scale of their operations, but it is not yet changing their core objectives or the techniques they employ as part of their attack chains. Phishing, malware, and vulnerability exploitation remain the main techniques in play even as abuse of AI t
 
-> **来源**: [Hackers abuse SQL Server’s weak passwords to drop cryptominers and Gh0st RAT](https://www.csoonline.com/article/4247845/hackers-abuse-sql-servers-weak-passwords-to-drop-cryptominers-and-gh0st-rat.html)  #CSO Online
+> **来源**: [How AI is changing the nature of cyberattacks](https://www.csoonline.com/article/4248553/how-ai-is-changing-the-nature-of-cyberattacks.html)  #CSO Online
 
-### 📰 2. AI found Linux kernel bugs that remained undetected for decades
+### ⚠️ 2. CVE-2026-110091 [HIGH 7.1]
 
-A Microsoft research project combining AI agents with human security researchers uncovered 59 Linux kernel vulnerabilities, including bugs that had survived in production code for more than 20 years. While AI dramatically accelerated the discovery process, the researchers found that validating flaws
+Premiere Pro is affected by a Missing Authentication for Critical Function vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorized write access. Exploitation of this issue does not require user inte
 
-> **来源**: [AI found Linux kernel bugs that remained undetected for decades](https://www.csoonline.com/article/4247815/ai-found-linux-kernel-bugs-that-remained-undetected-for-decades.html)  #CSO Online
+> **来源**: [CVE-2026-110091 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-110091)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### 📰 3. Hackers stole AI credentials to get $740,000 in free compute; Railway picked up the bill
+### 📰 3. An AI kill switch isn’t enough. Build a fallback plan
 
-As AI model training and distillation increase, AI tokens are becoming a piping hot currency for threat actors. Cloud hosting provider Railway found out the hard way; it has confirmed a near 26-hour battle against attackers targeting AI provider credentials to sell to AI ‘transfer stations’ for use 
+On the morning of Sept. 3, ChatGPT, Claude and Grok all went down within a few hours of one another. OpenAI blamed a routing error, Anthropic cited an infrastructure issue and xAI gave no cause. Service was back by early afternoon, and most of the coverage focused on people who couldn’t write, code 
 
-> **来源**: [Hackers stole AI credentials to get $740,000 in free compute; Railway picked up the bill](https://www.csoonline.com/article/4247578/hackers-stole-ai-credentials-to-get-740000-in-free-compute-railway-picked-up-the-bill.html)  #CSO Online
+> **来源**: [An AI kill switch isn’t enough. Build a fallback plan](https://www.csoonline.com/article/4247929/an-ai-kill-switch-isnt-enough-build-a-fallback-plan.html)  #CSO Online
 
-### 📰 4. New malware doesn’t call home, it turns your Exchange server into its home
+### 📰 4. Hackers' Overreliance on AI Can Result in Weaker Cyber-Attacks, Proofpoint Researcher Says
 
-There’s a new flavor of cereal on the table, but not the appealing kind, particularly for defenders. A new report from global security company ESET describes a “sophisticated, modular, and tightly interconnected” toolset designed to run on compromised Exchange servers for long-term cyberespionage. T
+Proofpoint’s Selena Larson notes that threat actors’ reliance on AI has led to lots of mistakes being made, with little evidence of increased sophistication
 
-> **来源**: [New malware doesn’t call home, it turns your Exchange server into its home](https://www.csoonline.com/article/4247162/new-malware-doesnt-call-home-it-turns-your-exchange-server-into-its-home.html)  #CSO Online
+> **来源**: [Hackers' Overreliance on AI Can Result in Weaker Cyber-Attacks, Proofpoint Researcher Says](https://www.infosecurity-magazine.com/news/hackers-ai-weaker-cyber-attacks/)  #Infosecurity Magazine
 
-### 📰 5. WhiteArmor gang claims responsibility for latest cyber attack on shipping giant Maersk
+### 📰 5. Microsoft 365 Outage Set to Ramp up Security Risks to Organizations
 
-Shipping giant Maersk has confirmed that one of its systems was broken into by hackers who have stolen data. The WhiteArmor gang has claimed responsbility for the attack. Read more in my article on the Hot for Security blog.
+While Microsoft resolves the global M365 and Outlook outage, cybersecurity teams remain on high alert as cybercriminals prepare to exploit the chaos
 
-> **来源**: [WhiteArmor gang claims responsibility for latest cyber attack on shipping giant Maersk](https://www.bitdefender.com/en-us/blog/hotforsecurity/whitearmor-gang-cyberattack-maersk)  #Graham Cluley
+> **来源**: [Microsoft 365 Outage Set to Ramp up Security Risks to Organizations](https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/)  #Infosecurity Magazine
 
-### 📰 6. Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors
+### 📰 6. AI Set to Revolutionize Ransomware Following “Stagnant” Few Years
 
-Our analysis of how attackers used the open-source Cairn AI agent framework to autonomously breach semiconductor, defense and civic targets. The post Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors appeared first on Unit 42.
+TrendAI’s Bob McArdle said ransomware techniques will change significantly in the next year, with AI making attacks more dangerous and profitable
 
-> **来源**: [Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors](https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/)  #Unit 42
+> **来源**: [AI Set to Revolutionize Ransomware Following “Stagnant” Few Years](https://www.infosecurity-magazine.com/news/ai-revolutionize-ransomware/)  #Infosecurity Magazine
 
-### 📰 7. Security Teams Must Shift from Patching to Mitigation in the AI Era
+### 📰 7. What will it take to make VulnOps a reality?
 
-Symantec’s Dick O’Brien says the rapid closure of the patch window means organizations must move beyond patching and adopt an assume exploit mindset
+Just over a year ago, before advanced AI models began discovering software vulnerabilities at a nearly unmanageable scale in the so-called vulnpocalypse, three industry experts pioneered the concept of “VulnOps.” VulnOps, as envisioned by Heather Adkins, Gadi Evron, and Bruce Schneier, is a signific
 
-> **来源**: [Security Teams Must Shift from Patching to Mitigation in the AI Era](https://www.infosecurity-magazine.com/news/shift-patching-mitigation-ai-era/)  #Infosecurity Magazine
+> **来源**: [What will it take to make VulnOps a reality?](https://www.csoonline.com/article/4244924/what-will-it-take-to-make-vulnops-a-reality.html)  #CSO Online
 
-### ⚠️ 8. CVE-2026-114031 [HIGH 7.8]
+### ⚠️ 8. CVE-2026-110090 [HIGH 7.1]
 
-Incorrect permission assignment allows local privilege escalation to SYSTEM on affected releases of the Illumio VEN for Windows. Code execution as NT AUTHORITY\LOCAL SERVICE on the Windows host is required to exploit this vulnerability. The flaw exists within the VEN installer, which grants LOCAL SE
+Premiere Pro is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access sensitive files and directories outside the intended access scope. Exploit
 
-> **来源**: [CVE-2026-114031 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-114031)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-110090 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-110090)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### 📰 9. Hacked Asian Telcos Used to Intercept Taiwanese Calls and Texts
+### ⚠️ 9. CVE-2026-110089 [HIGH 7.8]
 
-Enea linked SilentAir and Liminal Panda to attacks on Asian mobile operators
+Premiere Pro is affected by a Buffer Underwrite ('Buffer Underflow') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a 
 
-> **来源**: [Hacked Asian Telcos Used to Intercept Taiwanese Calls and Texts](https://www.infosecurity-magazine.com/news/silentair-liminal-panda-telco/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-110089 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-110089)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### 📰 10. ARTEX and AI-Powered Red Teaming Tools: What Defenders Need to Know
+### ⚠️ 10. CVE-2026-110088 [HIGH 7.8]
 
-Learn what Unit 42 discovered about attacker use of AI-powered red team tools, and how to mitigate these attacks. The post ARTEX and AI-Powered Red Teaming Tools: What Defenders Need to Know appeared first on Unit 42.
+Premiere Pro is affected by a Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a victim must open a mali
 
-> **来源**: [ARTEX and AI-Powered Red Teaming Tools: What Defenders Need to Know](https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/)  #Unit 42
+> **来源**: [CVE-2026-110088 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-110088)  CVSS 7.8 HIGH · #NVD · #漏洞
 
 ---
 
