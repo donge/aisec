@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-11-14
+# 🤖🔒 AI+安全日报 | 2026-11-15
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. How AI is changing the nature of cyberattacks
+### 📰 1. The firewall becomes the foothold: Attackers turn Check Point gateways against customers
 
-AI may be helping cyberattackers increase the speed and scale of their operations, but it is not yet changing their core objectives or the techniques they employ as part of their attack chains. Phishing, malware, and vulnerability exploitation remain the main techniques in play even as abuse of AI t
+A firewall is intended to be a boundary attackers can’t cross. But firewalls face the web, making them just as vulnerable to attack as other systems, as evidenced by the emergency hotfixes released by Check Point Software for several of its products. The patches address a high-severity privilege esc
 
-> **来源**: [How AI is changing the nature of cyberattacks](https://www.csoonline.com/article/4248553/how-ai-is-changing-the-nature-of-cyberattacks.html)  #CSO Online
+> **来源**: [The firewall becomes the foothold: Attackers turn Check Point gateways against customers](https://www.csoonline.com/article/4248693/the-firewall-becomes-the-foothold-attackers-turn-check-point-gateways-against-customers.html)  #CSO Online
 
-### ⚠️ 2. CVE-2026-110091 [HIGH 7.1]
+### 📰 2. Thousands of GitHub repos hit with secret-stealing malware
 
-Premiere Pro is affected by a Missing Authentication for Critical Function vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorized write access. Exploitation of this issue does not require user inte
+Researchers have uncovered a campaign in which hijacked GitHub accounts spread secret-stealing malware across thousands of repositories. The payload executed in at least 1,806 repos, exfiltrating CI/CD secrets and cloud credentials. Aikido Security, which detected and documented the campaign, said t
 
-> **来源**: [CVE-2026-110091 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-110091)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [Thousands of GitHub repos hit with secret-stealing malware](https://www.csoonline.com/article/4248672/thousands-of-github-repos-hit-with-secret-stealing-malware.html)  #CSO Online
 
-### 📰 3. An AI kill switch isn’t enough. Build a fallback plan
+### 📰 3. Beware the New AI-Fueled Ransomware Boom
 
-On the morning of Sept. 3, ChatGPT, Claude and Grok all went down within a few hours of one another. OpenAI blamed a routing error, Anthropic cited an infrastructure issue and xAI gave no cause. Service was back by early afternoon, and most of the coverage focused on people who couldn’t write, code 
+Fully automated ransomware hasn’t arrived—yet. But seemingly unsophisticated attackers are using AI tools to wreak havoc.
 
-> **来源**: [An AI kill switch isn’t enough. Build a fallback plan](https://www.csoonline.com/article/4247929/an-ai-kill-switch-isnt-enough-build-a-fallback-plan.html)  #CSO Online
+> **来源**: [Beware the New AI-Fueled Ransomware Boom](https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/)  #Wired Security
 
-### 📰 4. Hackers' Overreliance on AI Can Result in Weaker Cyber-Attacks, Proofpoint Researcher Says
+### 📰 4. Microsoft 365 Crawls Back to Life After a 24-Hour Outage
 
-Proofpoint’s Selena Larson notes that threat actors’ reliance on AI has led to lots of mistakes being made, with little evidence of increased sophistication
+The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash.
 
-> **来源**: [Hackers' Overreliance on AI Can Result in Weaker Cyber-Attacks, Proofpoint Researcher Says](https://www.infosecurity-magazine.com/news/hackers-ai-weaker-cyber-attacks/)  #Infosecurity Magazine
+> **来源**: [Microsoft 365 Crawls Back to Life After a 24-Hour Outage](https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/)  #Wired Security
 
-### 📰 5. Microsoft 365 Outage Set to Ramp up Security Risks to Organizations
+### 📰 5. Suspected Chinese Malware Supplier Tied to Three Hacking Campaigns
 
-While Microsoft resolves the global M365 and Outlook outage, cybersecurity teams remain on high alert as cybercriminals prepare to exploit the chaos
+Check Point links three China-nexus clusters through a shared Sparrow malware framework
 
-> **来源**: [Microsoft 365 Outage Set to Ramp up Security Risks to Organizations](https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/)  #Infosecurity Magazine
+> **来源**: [Suspected Chinese Malware Supplier Tied to Three Hacking Campaigns](https://www.infosecurity-magazine.com/news/chinese-malware-tied-three-hacking/)  #Infosecurity Magazine
 
-### 📰 6. AI Set to Revolutionize Ransomware Following “Stagnant” Few Years
+### 📰 6. Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information
 
-TrendAI’s Bob McArdle said ransomware techniques will change significantly in the next year, with AI making attacks more dangerous and profitable
+A researcher’s trawl through publicly available code found private information was at risk across multiple departments.
 
-> **来源**: [AI Set to Revolutionize Ransomware Following “Stagnant” Few Years](https://www.infosecurity-magazine.com/news/ai-revolutionize-ransomware/)  #Infosecurity Magazine
+> **来源**: [Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information](https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/)  #Wired Security
 
-### 📰 7. What will it take to make VulnOps a reality?
+### 📰 7. International operation dismantles malware networks, exposes 6.4 million stolen credentials
 
-Just over a year ago, before advanced AI models began discovering software vulnerabilities at a nearly unmanageable scale in the so-called vulnpocalypse, three industry experts pioneered the concept of “VulnOps.” VulnOps, as envisioned by Heather Adkins, Gadi Evron, and Bruce Schneier, is a signific
+The Operation Endgame action dismantled the loaders, remote access trojans and infostealers that give ransomware gangs their way into corporate networks. The post International operation dismantles malware networks, exposes 6.4 million stolen credentials appeared first on CyberScoop.
 
-> **来源**: [What will it take to make VulnOps a reality?](https://www.csoonline.com/article/4244924/what-will-it-take-to-make-vulnops-a-reality.html)  #CSO Online
+> **来源**: [International operation dismantles malware networks, exposes 6.4 million stolen credentials](https://cyberscoop.com/operation-endgame-malware-takedown-gootloader-stealc-europol/)  #CyberScoop
 
-### ⚠️ 8. CVE-2026-110090 [HIGH 7.1]
+### 📰 8. Maersk Reveals Data Breach as Extortion Group Demands $5m
 
-Premiere Pro is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access sensitive files and directories outside the intended access scope. Exploit
+Maersk has revealed a threat actor extracted data from one of its legacy systems
 
-> **来源**: [CVE-2026-110090 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-110090)  CVSS 7.1 HIGH · #NVD · #漏洞
+> **来源**: [Maersk Reveals Data Breach as Extortion Group Demands $5m](https://www.infosecurity-magazine.com/news/maersk-data-breach-extortion-group/)  #Infosecurity Magazine
 
-### ⚠️ 9. CVE-2026-110089 [HIGH 7.8]
+### 📰 9. Microsoft Fixes Nearly 1,100 Security Vulnerabilities
 
-Premiere Pro is affected by a Buffer Underwrite ('Buffer Underflow') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a 
+Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important s
 
-> **来源**: [CVE-2026-110089 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-110089)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [Microsoft Fixes Nearly 1,100 Security Vulnerabilities](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)  #Krebs on Security
 
-### ⚠️ 10. CVE-2026-110088 [HIGH 7.8]
+### 📰 10. The US wants its quantum lead to turn into factories and supply chains
 
-Premiere Pro is affected by a Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a victim must open a mali
+There’s bipartisan support for further investment in the U.S. quantum industry, along with worries that America’s industrial capacity won’t keep up with demand. The post The US wants its quantum lead to turn into factories and supply chains appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-110088 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-110088)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [The US wants its quantum lead to turn into factories and supply chains](https://cyberscoop.com/us-quantum-computing-industry-manufacturing-push/)  #CyberScoop
 
 ---
 
