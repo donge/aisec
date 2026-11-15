@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-15
+# 🤖🔒 AI+安全日报 | 2026-11-16
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. The firewall becomes the foothold: Attackers turn Check Point gateways against customers
+### ⚠️ 1. CVE-2026-124010 [CRITICAL 9.8]
 
-A firewall is intended to be a boundary attackers can’t cross. But firewalls face the web, making them just as vulnerable to attack as other systems, as evidenced by the emergency hotfixes released by Check Point Software for several of its products. The patches address a high-severity privilege esc
+XWEB EVO before 5.6.2 contains a command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary commands as root by exploiting the setuid-root CGI xwconsole.cgi. Attackers can supply malicious input through the sh parameter, which is passed unsanitized to popen(), 
 
-> **来源**: [The firewall becomes the foothold: Attackers turn Check Point gateways against customers](https://www.csoonline.com/article/4248693/the-firewall-becomes-the-foothold-attackers-turn-check-point-gateways-against-customers.html)  #CSO Online
+> **来源**: [CVE-2026-124010 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-124010)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 2. Thousands of GitHub repos hit with secret-stealing malware
+### ⚠️ 2. CVE-2026-124009 [HIGH 7.2]
 
-Researchers have uncovered a campaign in which hijacked GitHub accounts spread secret-stealing malware across thousands of repositories. The payload executed in at least 1,806 repos, exfiltrating CI/CD secrets and cloud credentials. Aikido Security, which detected and documented the campaign, said t
+XWEB EVO 5.2.3 through 5.8.8 contains an authenticated OS command injection vulnerability that allows authenticated attackers to execute arbitrary commands as root by injecting shell metacharacters into the output device path parameter processed by backup.lua. Attackers can exploit the unescaped con
 
-> **来源**: [Thousands of GitHub repos hit with secret-stealing malware](https://www.csoonline.com/article/4248672/thousands-of-github-repos-hit-with-secret-stealing-malware.html)  #CSO Online
+> **来源**: [CVE-2026-124009 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-124009)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 3. Beware the New AI-Fueled Ransomware Boom
+### ⚠️ 3. CVE-2026-124008 [HIGH 7.2]
 
-Fully automated ransomware hasn’t arrived—yet. But seemingly unsophisticated attackers are using AI tools to wreak havoc.
+XWEB EVO 5.2.3 through 5.8.8 contains an authenticated OS command injection vulnerability in the devices.lua template handling, which allows authenticated attackers to execute arbitrary commands by injecting unescaped template source into unzip and related shell commands. Attackers can exploit this 
 
-> **来源**: [Beware the New AI-Fueled Ransomware Boom](https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/)  #Wired Security
+> **来源**: [CVE-2026-124008 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-124008)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 4. Microsoft 365 Crawls Back to Life After a 24-Hour Outage
+### ⚠️ 4. CVE-2026-124007 [HIGH 8.1]
 
-The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash.
+XWEB EVO before 5.6.2 contains a pre-authentication OS command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary commands by injecting shell metacharacters into the password field. Attackers can exploit the unescaped interpolation of the password value into th
 
-> **来源**: [Microsoft 365 Crawls Back to Life After a 24-Hour Outage](https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/)  #Wired Security
+> **来源**: [CVE-2026-124007 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-124007)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 5. Suspected Chinese Malware Supplier Tied to Three Hacking Campaigns
+### 📰 5. A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure
 
-Check Point links three China-nexus clusters through a shared Sparrow malware framework
+DeepMind researchers were able to formally verify that the widely used encryption protocol works as intended. Their stretch goal? Do the same for “all the software of the world.”
 
-> **来源**: [Suspected Chinese Malware Supplier Tied to Three Hacking Campaigns](https://www.infosecurity-magazine.com/news/chinese-malware-tied-three-hacking/)  #Infosecurity Magazine
+> **来源**: [A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure](https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/)  #Wired Security
 
-### 📰 6. Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information
+### 📰 6. Japan’s GMO Internet Urges Customers to Disconnect PCs
 
-A researcher’s trawl through publicly available code found private information was at risk across multiple departments.
+GMO Internet has told customers to unplug their PCs in advance of a possible ransomware attack
 
-> **来源**: [Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information](https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/)  #Wired Security
+> **来源**: [Japan’s GMO Internet Urges Customers to Disconnect PCs](https://www.infosecurity-magazine.com/news/japan-gmo-internet-disconnect/)  #Infosecurity Magazine
 
-### 📰 7. International operation dismantles malware networks, exposes 6.4 million stolen credentials
+### 📰 7. Watchdog Urges Police and Fire Service to Improve Cybersecurity
 
-The Operation Endgame action dismantled the loaders, remote access trojans and infostealers that give ransomware gangs their way into corporate networks. The post International operation dismantles malware networks, exposes 6.4 million stolen credentials appeared first on CyberScoop.
+UK police forces and fire and rescue services have been urged to strengthen cybersecurity as rising cyber threats outpace current defenses
 
-> **来源**: [International operation dismantles malware networks, exposes 6.4 million stolen credentials](https://cyberscoop.com/operation-endgame-malware-takedown-gootloader-stealc-europol/)  #CyberScoop
+> **来源**: [Watchdog Urges Police and Fire Service to Improve Cybersecurity](https://www.infosecurity-magazine.com/news/watchdog-police-fire-service/)  #Infosecurity Magazine
 
-### 📰 8. Maersk Reveals Data Breach as Extortion Group Demands $5m
+### 📰 8. NCSC Launches Cyber Adversary Testing to Boost Resilience
 
-Maersk has revealed a threat actor extracted data from one of its legacy systems
+The UK’s National Cyber Security Centre has launched a new Cyber Adversary Simulation (CyAS) scheme
 
-> **来源**: [Maersk Reveals Data Breach as Extortion Group Demands $5m](https://www.infosecurity-magazine.com/news/maersk-data-breach-extortion-group/)  #Infosecurity Magazine
+> **来源**: [NCSC Launches Cyber Adversary Testing to Boost Resilience](https://www.infosecurity-magazine.com/news/ncsc-cyber-adversary-testing-boost/)  #Infosecurity Magazine
 
-### 📰 9. Microsoft Fixes Nearly 1,100 Security Vulnerabilities
+### 📰 9. Smashing Security podcast #492: How hackers turned Russian cars into pumpkins
 
-Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important s
+You're driving your new Chinese SUV when the dashboard goes dark. Ten minutes later, your phone rings. A stranger says they've got the digital key to your car, and would you like it back? Of course you would. That'll be $550. Meanwhile, three men have been charged over a scheme that used deepfakes o
 
-> **来源**: [Microsoft Fixes Nearly 1,100 Security Vulnerabilities](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)  #Krebs on Security
+> **来源**: [Smashing Security podcast #492: How hackers turned Russian cars into pumpkins](https://grahamcluley.com/smashing-security-podcast-492/)  #Graham Cluley
 
-### 📰 10. The US wants its quantum lead to turn into factories and supply chains
+### 📰 10. France Blames Iran for Supermarket Fridge Hack, Requests International Arrest Warrants
 
-There’s bipartisan support for further investment in the U.S. quantum industry, along with worries that America’s industrial capacity won’t keep up with demand. The post The US wants its quantum lead to turn into factories and supply chains appeared first on CyberScoop.
+The French authorities have tied the cyber-attack targeting supermarket fridges to Iran’s Islamic Revolutionary Guard Corps
 
-> **来源**: [The US wants its quantum lead to turn into factories and supply chains](https://cyberscoop.com/us-quantum-computing-industry-manufacturing-push/)  #CyberScoop
+> **来源**: [France Blames Iran for Supermarket Fridge Hack, Requests International Arrest Warrants](https://www.infosecurity-magazine.com/news/france-blames-iran-supermarket/)  #Infosecurity Magazine
 
 ---
 
