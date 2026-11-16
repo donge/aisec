@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-16
+# 🤖🔒 AI+安全日报 | 2026-11-17
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-124010 [CRITICAL 9.8]
+### 📰 1. Tenable One Adversary View brings Claude Mythos’ adversarial reasoning to your environment
 
-XWEB EVO before 5.6.2 contains a command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary commands as root by exploiting the setuid-root CGI xwconsole.cgi. Attackers can supply malicious input through the sh parameter, which is passed unsanitized to popen(), 
+Tenable One Adversary View is now generally available. Powered by Claude Mythos, it reads your scan data like an attacker would and tells you what to fix first.Key takeawaysAdversary View is generally available. Tenable One customers with Tenable Hexa AI can run it today, with nothing new to deploy.
 
-> **来源**: [CVE-2026-124010 [CRITICAL 9.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-124010)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [Tenable One Adversary View brings Claude Mythos’ adversarial reasoning to your environment](https://www.tenable.com/blog/tenable-one-adversary-view-claude-mythos-break-attack-paths)  #Tenable Blog
 
-### ⚠️ 2. CVE-2026-124009 [HIGH 7.2]
+### 📰 2. AI-written patches are becoming attack maps for hackers
 
-XWEB EVO 5.2.3 through 5.8.8 contains an authenticated OS command injection vulnerability that allows authenticated attackers to execute arbitrary commands as root by injecting shell metacharacters into the output device path parameter processed by backup.lua. Attackers can exploit the unescaped con
+This summer, the maintainers of vm2, an open-source JavaScript sandboxing library with 1 million downloads per week, shipped fixes for 34 separate sandbox-escape vulnerabilities and Anthropic’s Claude co-wrote 19 of them. Weeks later, a security researcher pointed an AI agent at one of the advisorie
 
-> **来源**: [CVE-2026-124009 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-124009)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [AI-written patches are becoming attack maps for hackers](https://www.csoonline.com/article/4248687/ai-written-patches-are-becoming-attack-maps-for-hackers.html)  #CSO Online
 
-### ⚠️ 3. CVE-2026-124008 [HIGH 7.2]
+### 📰 3. Google says Russian-speaking hackers ran the first fully automated AI cyberattack
 
-XWEB EVO 5.2.3 through 5.8.8 contains an authenticated OS command injection vulnerability in the devices.lua template handling, which allows authenticated attackers to execute arbitrary commands by injecting unescaped template source into unzip and related shell commands. Attackers can exploit this 
+Google's Threat Intelligence Group says the tools trade stealth for speed, leaving noisy forensic traces even as they succeed on their own. The post Google says Russian-speaking hackers ran the first fully automated AI cyberattack appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-124008 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-124008)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [Google says Russian-speaking hackers ran the first fully automated AI cyberattack](https://cyberscoop.com/google-fully-automated-ai-cyberattack/)  #CyberScoop
 
-### ⚠️ 4. CVE-2026-124007 [HIGH 8.1]
+### 📰 4. The benign true positive: When trusted AI agents look like attackers
 
-XWEB EVO before 5.6.2 contains a pre-authentication OS command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary commands by injecting shell metacharacters into the password field. Attackers can exploit the unescaped interpolation of the password value into th
+A coding agent opens hundreds of files, launches command-line tools and connects to an internal service to complete a task. A support agent authenticates to several systems, retrieves customer records and updates another application. A workflow agent enumerates cloud resources in seconds, then moves
 
-> **来源**: [CVE-2026-124007 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-124007)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [The benign true positive: When trusted AI agents look like attackers](https://www.csoonline.com/article/4248451/the-benign-true-positive-when-trusted-ai-agents-look-like-attackers.html)  #CSO Online
 
-### 📰 5. A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure
+### 📰 5. Typosquatters Target New Brand Domains Within 24 Hours of Registration
 
-DeepMind researchers were able to formally verify that the widely used encryption protocol works as intended. Their stretch goal? Do the same for “all the software of the world.”
+Symantec said attackers are targeting new campaign sites registered by big name brands, with the lookalike domains enabling malicious follow-on activity
 
-> **来源**: [A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure](https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/)  #Wired Security
+> **来源**: [Typosquatters Target New Brand Domains Within 24 Hours of Registration](https://www.infosecurity-magazine.com/news/typosquatters-target-new-brand/)  #Infosecurity Magazine
 
-### 📰 6. Japan’s GMO Internet Urges Customers to Disconnect PCs
+### 📰 6. La Poste Subsidiary Maileva Breach Exposes 22 Million People
 
-GMO Internet has told customers to unplug their PCs in advance of a possible ransomware attack
+Maileva breach exposed names and postal addresses of 22 million people
 
-> **来源**: [Japan’s GMO Internet Urges Customers to Disconnect PCs](https://www.infosecurity-magazine.com/news/japan-gmo-internet-disconnect/)  #Infosecurity Magazine
+> **来源**: [La Poste Subsidiary Maileva Breach Exposes 22 Million People](https://www.infosecurity-magazine.com/news/maileva-docaposte-22-million-breach/)  #Infosecurity Magazine
 
-### 📰 7. Watchdog Urges Police and Fire Service to Improve Cybersecurity
+### 📰 7. Alibaba touts 62% lower task costs with Qwen4-Max, adds cyber safeguards
 
-UK police forces and fire and rescue services have been urged to strengthen cybersecurity as rising cyber threats outpace current defenses
+Alibaba has released Qwen4-Max, a 2.4-trillion-parameter flagship model, claiming it reduces the average cost of completing professional tasks by 62% compared with its predecessor while introducing additional safeguards against offensive cybersecurity capabilities and other high-risk uses. “Accordin
 
-> **来源**: [Watchdog Urges Police and Fire Service to Improve Cybersecurity](https://www.infosecurity-magazine.com/news/watchdog-police-fire-service/)  #Infosecurity Magazine
+> **来源**: [Alibaba touts 62% lower task costs with Qwen4-Max, adds cyber safeguards](https://www.csoonline.com/article/4249015/alibaba-touts-62-lower-task-costs-with-qwen4-max-adds-cyber-safeguards-2.html)  #CSO Online
 
-### 📰 8. NCSC Launches Cyber Adversary Testing to Boost Resilience
+### 📰 8. FBI Highlights Growing Abuse of AI-Driven Pentesting Framework ARTEX
 
-The UK’s National Cyber Security Centre has launched a new Cyber Adversary Simulation (CyAS) scheme
+The FBI warns that threat actors are increasingly using open-source AI pentesting tool ARTEX to launch fast, large-scale intrusions worldwide
 
-> **来源**: [NCSC Launches Cyber Adversary Testing to Boost Resilience](https://www.infosecurity-magazine.com/news/ncsc-cyber-adversary-testing-boost/)  #Infosecurity Magazine
+> **来源**: [FBI Highlights Growing Abuse of AI-Driven Pentesting Framework ARTEX](https://www.infosecurity-magazine.com/news/fbi-growing-abuse-ai-pentesting/)  #Infosecurity Magazine
 
-### 📰 9. Smashing Security podcast #492: How hackers turned Russian cars into pumpkins
+### 📰 9. AI Cuts Vulnerability Discovery from Nine Months to 90 Hours
 
-You're driving your new Chinese SUV when the dashboard goes dark. Ten minutes later, your phone rings. A stranger says they've got the digital key to your car, and would you like it back? Of course you would. That'll be $550. Meanwhile, three men have been charged over a scheme that used deepfakes o
+Forescout report claims to have found 66 new flaws in just 90 hours using AI
 
-> **来源**: [Smashing Security podcast #492: How hackers turned Russian cars into pumpkins](https://grahamcluley.com/smashing-security-podcast-492/)  #Graham Cluley
+> **来源**: [AI Cuts Vulnerability Discovery from Nine Months to 90 Hours](https://www.infosecurity-magazine.com/news/ai-cut-vulnerability-discover-nine/)  #Infosecurity Magazine
 
-### 📰 10. France Blames Iran for Supermarket Fridge Hack, Requests International Arrest Warrants
+### 📰 10. Palo Alto tracks a massive Chinese AI attack that sadly lives up to industry fears
 
-The French authorities have tied the cyber-attack targeting supermarket fridges to Iran’s Islamic Revolutionary Guard Corps
+Palo Alto Networks Unit 42 is reporting today that it has tracked a massive China-based attack leveraging the open-source AI penetration testing framework Cairn to autonomously conduct 25 operations against at least 19 organizations. The attackers weaponized Cairn by pairing it with Chinese AI model
 
-> **来源**: [France Blames Iran for Supermarket Fridge Hack, Requests International Arrest Warrants](https://www.infosecurity-magazine.com/news/france-blames-iran-supermarket/)  #Infosecurity Magazine
+> **来源**: [Palo Alto tracks a massive Chinese AI attack that sadly lives up to industry fears](https://www.csoonline.com/article/4247565/palo-alto-tracks-a-massive-chinese-ai-attack-that-sadly-lives-up-to-industry-fears.html)  #CSO Online
 
 ---
 

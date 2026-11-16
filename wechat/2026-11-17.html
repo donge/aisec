@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI+安全日报 2026-11-17</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #0b1120;
+    color: #e2e8f0;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 16px 60px;
+  }
+  .header {
+    text-align: center;
+    padding: 32px 0 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(56,189,248,0.5), transparent);
+  }
+  .header .logo {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+  }
+  .header .subtitle {
+    font-size: 14px;
+    color: #64748b;
+  }
+  .header .subtitle span {
+    display: inline-block;
+    background: rgba(56,189,248,0.1);
+    color: #38bdf8;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 2px;
+  }
+  .copy-btn {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 14px 0;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(56,189,248,0.25);
+    letter-spacing: 0.5px;
+  }
+  .copy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(56,189,248,0.35);
+  }
+  .copy-btn:active {
+    transform: translateY(0);
+  }
+  .copy-btn.copied {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    box-shadow: 0 4px 20px rgba(34,197,94,0.25);
+  }
+  .toast {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #22c55e;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 9999;
+    box-shadow: 0 8px 32px rgba(34,197,94,0.3);
+  }
+  .divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+    margin: 20px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 24px 0;
+    color: #475569;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 8px;
+  }
+  .footer .mono {
+    font-family: "SF Mono", "Fira Code", monospace;
+    font-size: 11px;
+    color: #334155;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .item-enter {
+    animation: fadeIn 0.5s ease-out both;
+  }
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast">✅ 已复制到剪贴板，请粘贴到公众号编辑器</div>
+
+<div class="container">
+  <div class="header">
+    <div class="logo">🛡️</div>
+    <h1>AI+安全日报</h1>
+    <div class="subtitle">
+      2026年11月17日 · 共 <span>10</span> 条
+    </div>
+  </div>
+
+  <div id="wechatContent">
+    
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#01</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Tenable One Adversary View brings Claude Mythos’ adversarial reasoning to your environment
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Tenable One Adversary View is now generally available. Powered by Claude Mythos, it reads your scan data like an attacker would and tells you what to fix first.Key takeawaysAdversary View is generally available. Tenable One customers with Tenable Hexa AI can run it today, with nothing new to deploy.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.tenable.com/blog/tenable-one-adversary-view-claude-mythos-break-attack-paths" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Tenable One Adversary View brings Claude Mythos’ adversarial reasoning to your environment ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Tenable Blog</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#02</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            AI-written patches are becoming attack maps for hackers
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        This summer, the maintainers of vm2, an open-source JavaScript sandboxing library with 1 million downloads per week, shipped fixes for 34 separate sandbox-escape vulnerabilities and Anthropic’s Claude co-wrote 19 of them. Weeks later, a security researcher pointed an AI agent at one of the advisorie
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4248687/ai-written-patches-are-becoming-attack-maps-for-hackers.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">AI-written patches are becoming attack maps for hackers ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#03</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Google says Russian-speaking hackers ran the first fully automated AI cyberattack
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Google&#39;s Threat Intelligence Group says the tools trade stealth for speed, leaving noisy forensic traces even as they succeed on their own. The post Google says Russian-speaking hackers ran the first fully automated AI cyberattack appeared first on CyberScoop.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://cyberscoop.com/google-fully-automated-ai-cyberattack/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Google says Russian-speaking hackers ran the first fully automated AI cyberattack ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CyberScoop</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#04</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            The benign true positive: When trusted AI agents look like attackers
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        A coding agent opens hundreds of files, launches command-line tools and connects to an internal service to complete a task. A support agent authenticates to several systems, retrieves customer records and updates another application. A workflow agent enumerates cloud resources in seconds, then moves
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4248451/the-benign-true-positive-when-trusted-ai-agents-look-like-attackers.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">The benign true positive: When trusted AI agents look like attackers ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#05</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Typosquatters Target New Brand Domains Within 24 Hours of Registration
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Symantec said attackers are targeting new campaign sites registered by big name brands, with the lookalike domains enabling malicious follow-on activity
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/typosquatters-target-new-brand/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Typosquatters Target New Brand Domains Within 24 Hours of Registration ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#06</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            La Poste Subsidiary Maileva Breach Exposes 22 Million People
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Maileva breach exposed names and postal addresses of 22 million people
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/maileva-docaposte-22-million-breach/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">La Poste Subsidiary Maileva Breach Exposes 22 Million People ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#07</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Alibaba touts 62% lower task costs with Qwen4-Max, adds cyber safeguards
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Alibaba has released Qwen4-Max, a 2.4-trillion-parameter flagship model, claiming it reduces the average cost of completing professional tasks by 62% compared with its predecessor while introducing additional safeguards against offensive cybersecurity capabilities and other high-risk uses. “Accordin
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4249015/alibaba-touts-62-lower-task-costs-with-qwen4-max-adds-cyber-safeguards-2.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Alibaba touts 62% lower task costs with Qwen4-Max, adds cyber safeguards ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#08</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            FBI Highlights Growing Abuse of AI-Driven Pentesting Framework ARTEX
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        The FBI warns that threat actors are increasingly using open-source AI pentesting tool ARTEX to launch fast, large-scale intrusions worldwide
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/fbi-growing-abuse-ai-pentesting/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">FBI Highlights Growing Abuse of AI-Driven Pentesting Framework ARTEX ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#09</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            AI Cuts Vulnerability Discovery from Nine Months to 90 Hours
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Forescout report claims to have found 66 new flaws in just 90 hours using AI
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/ai-cut-vulnerability-discover-nine/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">AI Cuts Vulnerability Discovery from Nine Months to 90 Hours ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#10</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Palo Alto tracks a massive Chinese AI attack that sadly lives up to industry fears
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Palo Alto Networks Unit 42 is reporting today that it has tracked a massive China-based attack leveraging the open-source AI penetration testing framework Cairn to autonomously conduct 25 operations against at least 19 organizations. The attackers weaponized Cairn by pairing it with Chinese AI model
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4247565/palo-alto-tracks-a-massive-chinese-ai-attack-that-sadly-lives-up-to-industry-fears.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Palo Alto tracks a massive Chinese AI attack that sadly lives up to industry fears ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="footer">
+    📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
+    仅供学习参考，不构成投资或决策建议<br>
+    <span class="mono">// AI+Security Daily · 10 items · 2026-11-17</span>
+  </div>
+
+  <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
+</div>
+
+<script>
+(function() {
+  function getContentHtml() {
+    var el = document.getElementById('wechatContent');
+    return el.innerHTML.trim();
+  }
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    return Promise.resolve();
+  }
+  function doCopy(btn) {
+    var html = getContentHtml();
+    copyToClipboard(html).then(function() {
+      btn.textContent = '✅ 已复制！';
+      btn.classList.add('copied');
+      var toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      setTimeout(function() {
+        toast.style.display = 'none';
+        btn.textContent = '📋 一键复制（公众号格式）';
+        btn.classList.remove('copied');
+      }, 2500);
+    }).catch(function() {
+      btn.textContent = '❌ 复制失败，请手动选择复制';
+      setTimeout(function() {
+        btn.textContent = '📋 一键复制（公众号格式）';
+      }, 2000);
+    });
+  }
+  var btns = document.querySelectorAll('.copy-btn');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function() { doCopy(this); });
+  }
+
+  // Staggered fade-in
+  var cards = document.querySelectorAll('#wechatContent > div');
+  cards.forEach(function(card, i) {
+    card.classList.add('item-enter');
+    card.style.animationDelay = (i * 0.08) + 's';
+  });
+})();
+</script>
+</body>
+</html>
