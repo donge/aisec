@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-11-17
+# 🤖🔒 AI+安全日报 | 2026-11-18
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Tenable One Adversary View brings Claude Mythos’ adversarial reasoning to your environment
+### ⚠️ 1. CVE-2026-110960 [CRITICAL 9.8] 🔬
 
-Tenable One Adversary View is now generally available. Powered by Claude Mythos, it reads your scan data like an attacker would and tells you what to fix first.Key takeawaysAdversary View is generally available. Tenable One customers with Tenable Hexa AI can run it today, with nothing new to deploy.
+The Auth Armor  WordPress plugin through 1.0.3 does not require authentication on several handlers available to logged-out users, which leak the site's stored API credentials and allow an unauthenticated attacker to reset an administrator's enrollment and take over that administrator account.
 
-> **来源**: [Tenable One Adversary View brings Claude Mythos’ adversarial reasoning to your environment](https://www.tenable.com/blog/tenable-one-adversary-view-claude-mythos-break-attack-paths)  #Tenable Blog
+> **来源**: [CVE-2026-110960 [CRITICAL 9.8] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-110960)  CVSS 9.8 CRITICAL · #NVD · #漏洞
 
-### 📰 2. AI-written patches are becoming attack maps for hackers
+### 📰 2. Google spots the first hacker AI system that finds and exploits flaws autonomously
 
-This summer, the maintainers of vm2, an open-source JavaScript sandboxing library with 1 million downloads per week, shipped fixes for 34 separate sandbox-escape vulnerabilities and Anthropic’s Claude co-wrote 19 of them. Weeks later, a security researcher pointed an AI agent at one of the advisorie
+Google said it had identified a hacker-operated AI framework designed to discover software vulnerabilities and execute exploits without human intervention, marking the first time its researchers had observed such a system being used by threat actors. The findings, published in a report by Google Thr
 
-> **来源**: [AI-written patches are becoming attack maps for hackers](https://www.csoonline.com/article/4248687/ai-written-patches-are-becoming-attack-maps-for-hackers.html)  #CSO Online
+> **来源**: [Google spots the first hacker AI system that finds and exploits flaws autonomously](https://www.csoonline.com/article/4249595/google-spots-the-first-hacker-ai-system-that-finds-and-exploits-flaws-autonomously.html)  #CSO Online
 
-### 📰 3. Google says Russian-speaking hackers ran the first fully automated AI cyberattack
+### ⚠️ 3. CVE-2026-129351 [CRITICAL 10]
 
-Google's Threat Intelligence Group says the tools trade stealth for speed, leaving noisy forensic traces even as they succeed on their own. The post Google says Russian-speaking hackers ran the first fully automated AI cyberattack appeared first on CyberScoop.
+A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly a
 
-> **来源**: [Google says Russian-speaking hackers ran the first fully automated AI cyberattack](https://cyberscoop.com/google-fully-automated-ai-cyberattack/)  #CyberScoop
+> **来源**: [CVE-2026-129351 [CRITICAL 10]](https://nvd.nist.gov/vuln/detail/CVE-2026-129351)  CVSS 10 CRITICAL · #NVD · #漏洞
 
-### 📰 4. The benign true positive: When trusted AI agents look like attackers
+### 📰 4. Hackers exploit Microsoft 365 outage to launch credential phishing campaign
 
-A coding agent opens hundreds of files, launches command-line tools and connects to an internal service to complete a task. A support agent authenticates to several systems, retrieves customer records and updates another application. A workflow agent enumerates cloud resources in seconds, then moves
+Cybercriminals are exploiting genuine cloud service disruptions to make phishing attacks more convincing. Just a day after a prolonged outage disrupted several Microsoft services, including Outlook, Exchange Online, Teams and Copilot, Microsoft Threat Intelligence identified a coordinated, high-volu
 
-> **来源**: [The benign true positive: When trusted AI agents look like attackers](https://www.csoonline.com/article/4248451/the-benign-true-positive-when-trusted-ai-agents-look-like-attackers.html)  #CSO Online
+> **来源**: [Hackers exploit Microsoft 365 outage to launch credential phishing campaign](https://www.csoonline.com/article/4249611/hackers-exploit-microsoft-365-outage-to-launch-credential-phishing-campaign-2.html)  #CSO Online
 
-### 📰 5. Typosquatters Target New Brand Domains Within 24 Hours of Registration
+### ⚠️ 5. CVE-2026-129353 [CRITICAL 10]
 
-Symantec said attackers are targeting new campaign sites registered by big name brands, with the lookalike domains enabling malicious follow-on activity
+A vulnerability was detected in D-Link DIR-600L 2.17/2.17b02. Affected by this vulnerability is the function authenticationcgi_main of the file authentication.cgi. Performing a manipulation of the argument id/password results in stack-based buffer overflow. Remote exploitation of the attack is possi
 
-> **来源**: [Typosquatters Target New Brand Domains Within 24 Hours of Registration](https://www.infosecurity-magazine.com/news/typosquatters-target-new-brand/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-129353 [CRITICAL 10]](https://nvd.nist.gov/vuln/detail/CVE-2026-129353)  CVSS 10 CRITICAL · #NVD · #漏洞
 
-### 📰 6. La Poste Subsidiary Maileva Breach Exposes 22 Million People
+### ⚠️ 6. CVE-2026-129352 [CRITICAL 9.1]
 
-Maileva breach exposed names and postal addresses of 22 million people
+A vulnerability was detected in TRENDnet TEW-657BRM 1.00.1. This issue affects some unknown processing of the file /usr/sbin/upgrade_flash.cgi. Performing a manipulation of the argument boundary results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is
 
-> **来源**: [La Poste Subsidiary Maileva Breach Exposes 22 Million People](https://www.infosecurity-magazine.com/news/maileva-docaposte-22-million-breach/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-129352 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-129352)  CVSS 9.1 CRITICAL · #NVD · #漏洞
 
-### 📰 7. Alibaba touts 62% lower task costs with Qwen4-Max, adds cyber safeguards
+### 📰 7. A vulnpocalypse bug worthy of attention: Researchers disclose critical flaw in Java with help of AI
 
-Alibaba has released Qwen4-Max, a 2.4-trillion-parameter flagship model, claiming it reduces the average cost of completing professional tasks by 62% compared with its predecessor while introducing additional safeguards against offensive cybersecurity capabilities and other high-risk uses. “Accordin
+Oracle shipped a patch this week for the flaw, which a short string of letters can trigger to corrupt memory in Java and hand attackers control of the servers running it. The post A vulnpocalypse bug worthy of attention: Researchers disclose critical flaw in Java with help of AI appeared first on Cy
 
-> **来源**: [Alibaba touts 62% lower task costs with Qwen4-Max, adds cyber safeguards](https://www.csoonline.com/article/4249015/alibaba-touts-62-lower-task-costs-with-qwen4-max-adds-cyber-safeguards-2.html)  #CSO Online
+> **来源**: [A vulnpocalypse bug worthy of attention: Researchers disclose critical flaw in Java with help of AI](https://cyberscoop.com/java4shell-critical-java-flaw-openjdk/)  #CyberScoop
 
-### 📰 8. FBI Highlights Growing Abuse of AI-Driven Pentesting Framework ARTEX
+### 📰 8. Borrowed Code, Real Consequences: What OPTIMJACK Teaches Us
 
-The FBI warns that threat actors are increasingly using open-source AI pentesting tool ARTEX to launch fast, large-scale intrusions worldwide
+The OPTIMJACK supply chain attack demonstrates how a compromised vendor script can expose websites, highlighting the need for strict segmentation. The post Borrowed Code, Real Consequences: What OPTIMJACK Teaches Us appeared first on Unit 42.
 
-> **来源**: [FBI Highlights Growing Abuse of AI-Driven Pentesting Framework ARTEX](https://www.infosecurity-magazine.com/news/fbi-growing-abuse-ai-pentesting/)  #Infosecurity Magazine
+> **来源**: [Borrowed Code, Real Consequences: What OPTIMJACK Teaches Us](https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/)  #Unit 42
 
-### 📰 9. AI Cuts Vulnerability Discovery from Nine Months to 90 Hours
+### 📰 9. Cyberattack or no, parade of tech outages highlight need for resilient systems, CISA acting director says
 
-Forescout report claims to have found 66 new flaws in just 90 hours using AI
+Nick Andersen said the AI-fueled “vulnpocalypse” might have overshadowed the need to focus on withstanding all sorts of tech issues. The post Cyberattack or no, parade of tech outages highlight need for resilient systems, CISA acting director says appeared first on CyberScoop.
 
-> **来源**: [AI Cuts Vulnerability Discovery from Nine Months to 90 Hours](https://www.infosecurity-magazine.com/news/ai-cut-vulnerability-discover-nine/)  #Infosecurity Magazine
+> **来源**: [Cyberattack or no, parade of tech outages highlight need for resilient systems, CISA acting director says](https://cyberscoop.com/cisa-nick-andersen-cyber-resilience-outages/)  #CyberScoop
 
-### 📰 10. Palo Alto tracks a massive Chinese AI attack that sadly lives up to industry fears
+### 📰 10. How to Tell If It’s a Cyberattack or Just an Outage
 
-Palo Alto Networks Unit 42 is reporting today that it has tracked a massive China-based attack leveraging the open-source AI penetration testing framework Cairn to autonomously conduct 25 operations against at least 19 organizations. The attackers weaponized Cairn by pairing it with Chinese AI model
+Email, flights, banks; network failures are piling up. Here’s how WIRED investigates if they’re the result of hacker mayhem. (Hint: usually not.)
 
-> **来源**: [Palo Alto tracks a massive Chinese AI attack that sadly lives up to industry fears](https://www.csoonline.com/article/4247565/palo-alto-tracks-a-massive-chinese-ai-attack-that-sadly-lives-up-to-industry-fears.html)  #CSO Online
+> **来源**: [How to Tell If It’s a Cyberattack or Just an Outage](https://www.wired.com/story/how-to-tell-if-its-a-cyberattack-or-just-an-outage/)  #Wired Security
 
 ---
 
