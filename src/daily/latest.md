@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-18
+# 🤖🔒 AI+安全日报 | 2026-11-19
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### ⚠️ 1. CVE-2026-110960 [CRITICAL 9.8] 🔬
+### 📰 1. OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them
 
-The Auth Armor  WordPress plugin through 1.0.3 does not require authentication on several handlers available to logged-out users, which leak the site's stored API credentials and allow an unauthenticated attacker to reset an administrator's enrollment and take over that administrator account.
+New technology monitors critical vulnerabilities and supply chain threats, automatically assessing customer exposure and guiding remediation OX Security, a leader in AI-native application protection, today announced the launch of OX Radar and Response Center, giving security teams one place to track
 
-> **来源**: [CVE-2026-110960 [CRITICAL 9.8] 🔬](https://nvd.nist.gov/vuln/detail/CVE-2026-110960)  CVSS 9.8 CRITICAL · #NVD · #漏洞
+> **来源**: [OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them](https://www.csoonline.com/article/4250228/ox-security-launches-ox-radar-and-response-center-to-show-companies-which-cyber-threats-actually-affect-them-2.html)  #CSO Online
 
-### 📰 2. Google spots the first hacker AI system that finds and exploits flaws autonomously
+### 📰 2. Attackers Used Optimizely to A/B Test Malware on Top Websites
 
-Google said it had identified a hacker-operated AI framework designed to discover software vulnerabilities and execute exploits without human intervention, marking the first time its researchers had observed such a system being used by threat actors. The findings, published in a report by Google Thr
+At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw 
 
-> **来源**: [Google spots the first hacker AI system that finds and exploits flaws autonomously](https://www.csoonline.com/article/4249595/google-spots-the-first-hacker-ai-system-that-finds-and-exploits-flaws-autonomously.html)  #CSO Online
+> **来源**: [Attackers Used Optimizely to A/B Test Malware on Top Websites](https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/)  #Krebs on Security
 
-### ⚠️ 3. CVE-2026-129351 [CRITICAL 10]
+### 📰 3. Java4Shell (CVE-2026-114938): Frequently asked questions about OpenJDK remote code execution vulnerability
 
-A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly a
+Java4Shell is a flaw in how Java decodes Base64 data. Calif, which found it, says it can let attackers run code on widely used Java applications without logging in. Oracle released fixed Java builds on November 17, and Calif is withholding its exploits for individual applications for now.Change logU
 
-> **来源**: [CVE-2026-129351 [CRITICAL 10]](https://nvd.nist.gov/vuln/detail/CVE-2026-129351)  CVSS 10 CRITICAL · #NVD · #漏洞
+> **来源**: [Java4Shell (CVE-2026-114938): Frequently asked questions about OpenJDK remote code execution vulnerability](https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability)  #Tenable Blog
 
-### 📰 4. Hackers exploit Microsoft 365 outage to launch credential phishing campaign
+### 📰 4. A new critical Java hole illustrates the enterprise IT visibility problem
 
-Cybercriminals are exploiting genuine cloud service disruptions to make phishing attacks more convincing. Just a day after a prolonged outage disrupted several Microsoft services, including Outlook, Exchange Online, Teams and Copilot, Microsoft Threat Intelligence identified a coordinated, high-volu
+When cybersecurity research firm Calif published details Tuesday of a potentially major Java security flaw, dubbed Java4Shell, it described an unauthenticated attacker’s ability to read Java heap memory, steal private keys, tokens, and session secrets, and reach remote code execution (RCE). With Jav
 
-> **来源**: [Hackers exploit Microsoft 365 outage to launch credential phishing campaign](https://www.csoonline.com/article/4249611/hackers-exploit-microsoft-365-outage-to-launch-credential-phishing-campaign-2.html)  #CSO Online
+> **来源**: [A new critical Java hole illustrates the enterprise IT visibility problem](https://www.csoonline.com/article/4250390/a-new-critical-java-hole-illustrates-the-enterprise-it-visibility-problem.html)  #CSO Online
 
-### ⚠️ 5. CVE-2026-129353 [CRITICAL 10]
+### ⚠️ 5. CVE-2026-102448 [HIGH 7.8]
 
-A vulnerability was detected in D-Link DIR-600L 2.17/2.17b02. Affected by this vulnerability is the function authenticationcgi_main of the file authentication.cgi. Performing a manipulation of the argument id/password results in stack-based buffer overflow. Remote exploitation of the attack is possi
+A vulnerability has been identified in Rexroth IndraWorks. This flaw allows an attacker to execute arbitrary code on the user’s system by parsing a manipulated file, because the file parser fails to properly sanitize the path name(s) or references embedded in the manipulated file. Exploitation requi
 
-> **来源**: [CVE-2026-129353 [CRITICAL 10]](https://nvd.nist.gov/vuln/detail/CVE-2026-129353)  CVSS 10 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-102448 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-102448)  CVSS 7.8 HIGH · #NVD · #漏洞
 
-### ⚠️ 6. CVE-2026-129352 [CRITICAL 9.1]
+### ⚠️ 6. CVE-2026-82156 [HIGH 8.8]
 
-A vulnerability was detected in TRENDnet TEW-657BRM 1.00.1. This issue affects some unknown processing of the file /usr/sbin/upgrade_flash.cgi. Performing a manipulation of the argument boundary results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is
+Dell PowerStore contains an authorization-bypass vulnerability. A low-privileged attacker could exploit it, potentially leading to elevation of privilege to administrator.
 
-> **来源**: [CVE-2026-129352 [CRITICAL 9.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-129352)  CVSS 9.1 CRITICAL · #NVD · #漏洞
+> **来源**: [CVE-2026-82156 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-82156)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 7. A vulnpocalypse bug worthy of attention: Researchers disclose critical flaw in Java with help of AI
+### 📰 7. Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials
 
-Oracle shipped a patch this week for the flaw, which a short string of letters can trigger to corrupt memory in Java and hand attackers control of the servers running it. The post A vulnpocalypse bug worthy of attention: Researchers disclose critical flaw in Java with help of AI appeared first on Cy
+Attackers briefly hijacked Microsoft’s official Agent Framework package on PyPI and used it to distribute credential-stealing malware capable of harvesting cloud tokens, developer secrets and CI/CD credentials from developer workstations and automated build systems, according to multiple security re
 
-> **来源**: [A vulnpocalypse bug worthy of attention: Researchers disclose critical flaw in Java with help of AI](https://cyberscoop.com/java4shell-critical-java-flaw-openjdk/)  #CyberScoop
+> **来源**: [Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials](https://www.csoonline.com/article/4250156/attackers-hijack-microsofts-agent-framework-package-to-steal-azure-and-ci-credentials.html)  #CSO Online
 
-### 📰 8. Borrowed Code, Real Consequences: What OPTIMJACK Teaches Us
+### 📰 8. Optimizely confirms massive cyberattack on customer websites injected stealer malware
 
-The OPTIMJACK supply chain attack demonstrates how a compromised vendor script can expose websites, highlighting the need for strict segmentation. The post Borrowed Code, Real Consequences: What OPTIMJACK Teaches Us appeared first on Unit 42.
+Attackers apparently from China used an authentication security hole within the popular Optimizely AI platform for marketers to steal from at least 178 sites owned by some of the planet’s largest companies. Named victims featured vendors including Zoom, Paychex, Equifax, and GitLab, and end-user ent
 
-> **来源**: [Borrowed Code, Real Consequences: What OPTIMJACK Teaches Us](https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/)  #Unit 42
+> **来源**: [Optimizely confirms massive cyberattack on customer websites injected stealer malware](https://www.csoonline.com/article/4249925/optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-malware.html)  #CSO Online
 
-### 📰 9. Cyberattack or no, parade of tech outages highlight need for resilient systems, CISA acting director says
+### ⚠️ 9. CVE-2026-129540 [HIGH 8.8]
 
-Nick Andersen said the AI-fueled “vulnpocalypse” might have overshadowed the need to focus on withstanding all sorts of tech issues. The post Cyberattack or no, parade of tech outages highlight need for resilient systems, CISA acting director says appeared first on CyberScoop.
+VoAPI 1.0.0 through 1.2.0 contains a sql injection vulnerability that allows authenticated users to inject SQL by supplying crafted column names as search[...] filter keys on list endpoints such as GET /api/log. Attackers can read the HS256 JWT signing secret from the option table and forge a manage
 
-> **来源**: [Cyberattack or no, parade of tech outages highlight need for resilient systems, CISA acting director says](https://cyberscoop.com/cisa-nick-andersen-cyber-resilience-outages/)  #CyberScoop
+> **来源**: [CVE-2026-129540 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-129540)  CVSS 8.8 HIGH · #NVD · #漏洞
 
-### 📰 10. How to Tell If It’s a Cyberattack or Just an Outage
+### ⚠️ 10. CVE-2026-129494 [HIGH 7.5]
 
-Email, flights, banks; network failures are piling up. Here’s how WIRED investigates if they’re the result of hacker mayhem. (Hint: usually not.)
+CloudPaste 1.1.0 through 1.9.1 contains an information disclosure vulnerability that allows unauthenticated attackers to obtain WebDAV storage credentials through the unauthenticated /api/proxy/link endpoint. Attackers who know a public share slug can retrieve the Basic Authorization header containi
 
-> **来源**: [How to Tell If It’s a Cyberattack or Just an Outage](https://www.wired.com/story/how-to-tell-if-its-a-cyberattack-or-just-an-outage/)  #Wired Security
+> **来源**: [CVE-2026-129494 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-129494)  CVSS 7.5 HIGH · #NVD · #漏洞
 
 ---
 
