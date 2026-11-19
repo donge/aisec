@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-11-19
+# 🤖🔒 AI+安全日报 | 2026-11-20
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them
+### 📰 1. AI unearths ‘internet breaker’ flaws in Nginx web server
 
-New technology monitors critical vulnerabilities and supply chain threats, automatically assessing customer exposure and guiding remediation OX Security, a leader in AI-native application protection, today announced the launch of OX Radar and Response Center, giving security teams one place to track
+Nginx, the web server estimated to power a third of the internet, has shipped fixes for multiple vulnerabilities, including a critical unauthenticated remote code execution flaw that puts millions of websites at risk and has existed in the code for over a decade. Researchers from several security fi
 
-> **来源**: [OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them](https://www.csoonline.com/article/4250228/ox-security-launches-ox-radar-and-response-center-to-show-companies-which-cyber-threats-actually-affect-them-2.html)  #CSO Online
+> **来源**: [AI unearths ‘internet breaker’ flaws in Nginx web server](https://www.csoonline.com/article/4250460/ai-unearths-internet-breaker-flaws-in-nginx-web-server.html)  #CSO Online
 
-### 📰 2. Attackers Used Optimizely to A/B Test Malware on Top Websites
+### 📰 2. Critical flaw in VMware vCenter allows authentication bypass
 
-At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw 
+Broadcom has released patches for bugs in multiple products, one of which, fixing a VMware vCenter authentication bypass vulnerability, is rated 9.8 out of 10 in severity. The company’s advisory describes the flaw, tracked as CVE-2026-123890, as “an authentication bypass vulnerability in the VMware 
 
-> **来源**: [Attackers Used Optimizely to A/B Test Malware on Top Websites](https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/)  #Krebs on Security
+> **来源**: [Critical flaw in VMware vCenter allows authentication bypass](https://www.csoonline.com/article/4251012/critical-flaw-in-vmware-vcenter-allows-authentication-bypass-2.html)  #CSO Online
 
-### 📰 3. Java4Shell (CVE-2026-114938): Frequently asked questions about OpenJDK remote code execution vulnerability
+### ⚠️ 3. CVE-2026-130351 [HIGH 7.2]
 
-Java4Shell is a flaw in how Java decodes Base64 data. Calif, which found it, says it can let attackers run code on widely used Java applications without logging in. Oracle released fixed Java builds on November 17, and Calif is withholding its exploits for individual applications for now.Change logU
+phpMyFAQ from 4.2.0-alpha before 4.2.0-RC.2 contains an authorization bypass vulnerability in the multisite Redis configuration store that is not tenant-scoped. As a result, tenant administrators can read and overwrite the master instance's effective configuration. Attackers can save configuration t
 
-> **来源**: [Java4Shell (CVE-2026-114938): Frequently asked questions about OpenJDK remote code execution vulnerability](https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability)  #Tenable Blog
+> **来源**: [CVE-2026-130351 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-130351)  CVSS 7.2 HIGH · #NVD · #漏洞
 
-### 📰 4. A new critical Java hole illustrates the enterprise IT visibility problem
+### 📰 4. Identity context is essential for exposure management: Tenable One adds ways to bring in identity security data
 
-When cybersecurity research firm Calif published details Tuesday of a potentially major Java security flaw, dubbed Java4Shell, it described an unauthenticated attacker’s ability to read Java heap memory, steal private keys, tokens, and session secrets, and reach remote code execution (RCE). With Jav
+Tenable One now ingests identity findings from third-party sources, allowing you to assess and prioritize exposures related to stale and overprivileged accounts alongside your other security data, such as vulnerabilities and misconfigurations.Key takeawaysManaging identity risk should be an essentia
 
-> **来源**: [A new critical Java hole illustrates the enterprise IT visibility problem](https://www.csoonline.com/article/4250390/a-new-critical-java-hole-illustrates-the-enterprise-it-visibility-problem.html)  #CSO Online
+> **来源**: [Identity context is essential for exposure management: Tenable One adds ways to bring in identity security data](https://www.tenable.com/blog/identity-context-is-essential-for-exposure-management-tenable-one-adds-ways-to-bring-in)  #Tenable Blog
 
-### ⚠️ 5. CVE-2026-102448 [HIGH 7.8]
+### 📰 5. CyberPower PowerPanel Exploited to Run Malicious Code on Domain Controller
 
-A vulnerability has been identified in Rexroth IndraWorks. This flaw allows an attacker to execute arbitrary code on the user’s system by parsing a manipulated file, because the file parser fails to properly sanitize the path name(s) or references embedded in the manipulated file. Exploitation requi
+Symantec found an attacker using CyberPower’s UPS software to run scripts on a domain controller
 
-> **来源**: [CVE-2026-102448 [HIGH 7.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-102448)  CVSS 7.8 HIGH · #NVD · #漏洞
+> **来源**: [CyberPower PowerPanel Exploited to Run Malicious Code on Domain Controller](https://www.infosecurity-magazine.com/news/ups-software-abused-domain/)  #Infosecurity Magazine
 
-### ⚠️ 6. CVE-2026-82156 [HIGH 8.8]
+### 📰 6. Government tech debt is a national security risk
 
-Dell PowerStore contains an authorization-bypass vulnerability. A low-privileged attacker could exploit it, potentially leading to elevation of privilege to administrator.
+With 80% of federal IT budgets spent maintaining aging legacy systems, fragmented government networks are struggling to defend against AI-accelerated cyberattacks from foreign adversaries. The post Government tech debt is a national security risk appeared first on CyberScoop.
 
-> **来源**: [CVE-2026-82156 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-82156)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [Government tech debt is a national security risk](https://cyberscoop.com/government-tech-debt-national-security-risk-op-ed/)  #CyberScoop
 
-### 📰 7. Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials
+### 📰 7. Three AI Models Agree on Just One of 121 Potential Code Flaws
 
-Attackers briefly hijacked Microsoft’s official Agent Framework package on PyPI and used it to distribute credential-stealing malware capable of harvesting cloud tokens, developer secrets and CI/CD credentials from developer workstations and automated build systems, according to multiple security re
+Echo tested Claude Mythos, GPT-5.6 Sol and GLM-5.3 on the same code and found little overlap
 
-> **来源**: [Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials](https://www.csoonline.com/article/4250156/attackers-hijack-microsofts-agent-framework-package-to-steal-azure-and-ci-credentials.html)  #CSO Online
+> **来源**: [Three AI Models Agree on Just One of 121 Potential Code Flaws](https://www.infosecurity-magazine.com/news/ai-models-vulnerability-findings/)  #Infosecurity Magazine
 
-### 📰 8. Optimizely confirms massive cyberattack on customer websites injected stealer malware
+### 📰 8. Google and Anthropic push for faster patches as AI collapses bug discovery timelines
 
-Attackers apparently from China used an authentication security hole within the popular Optimizely AI platform for marketers to steal from at least 178 sites owned by some of the planet’s largest companies. Named victims featured vendors including Zoom, Paychex, Equifax, and GitLab, and end-user ent
+AI-assisted vulnerability discovery has made it untenable for software vendors to sit on privately reported flaws for months, and Google Project Zero is responding by shrinking its vulnerability disclosure deadline from 90 to 60 days, with plans to drop it to 30 days a year from now. Anthropic is fo
 
-> **来源**: [Optimizely confirms massive cyberattack on customer websites injected stealer malware](https://www.csoonline.com/article/4249925/optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-malware.html)  #CSO Online
+> **来源**: [Google and Anthropic push for faster patches as AI collapses bug discovery timelines](https://www.csoonline.com/article/4249915/google-and-anthropic-push-for-faster-patches-as-ai-collapses-bug-discovery-timelines.html)  #CSO Online
 
-### ⚠️ 9. CVE-2026-129540 [HIGH 8.8]
+### 📰 9. European Commission Confirms AI-Driven Cyber-Attack Took Systems Offline
 
-VoAPI 1.0.0 through 1.2.0 contains a sql injection vulnerability that allows authenticated users to inject SQL by supplying crafted column names as search[...] filter keys on list endpoints such as GET /api/log. Attackers can read the HS256 JWT signing secret from the option table and forge a manage
+The European Commission said the attack targeted “individual systems”, with reports that attackers leveraged ARTEX in the campaign
 
-> **来源**: [CVE-2026-129540 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-129540)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [European Commission Confirms AI-Driven Cyber-Attack Took Systems Offline](https://www.infosecurity-magazine.com/news/commission-ai-attack-systems/)  #Infosecurity Magazine
 
-### ⚠️ 10. CVE-2026-129494 [HIGH 7.5]
+### 📰 10. A Fifth of UK Employees Share Passwords with AI
 
-CloudPaste 1.1.0 through 1.9.1 contains an information disclosure vulnerability that allows unauthenticated attackers to obtain WebDAV storage credentials through the unauthenticated /api/proxy/link endpoint. Attackers who know a public share slug can retrieve the Basic Authorization header containi
+Dashlane research reveals UK workers are sharing passwords with AI tools and granting access to sensitive data, raising major enterprise security concerns
 
-> **来源**: [CVE-2026-129494 [HIGH 7.5]](https://nvd.nist.gov/vuln/detail/CVE-2026-129494)  CVSS 7.5 HIGH · #NVD · #漏洞
+> **来源**: [A Fifth of UK Employees Share Passwords with AI](https://www.infosecurity-magazine.com/news/fifth-uk-employees-share-passwords/)  #Infosecurity Magazine
 
 ---
 
