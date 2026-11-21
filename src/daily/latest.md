@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-21
+# 🤖🔒 AI+安全日报 | 2026-11-22
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. A single pull request could have handed attackers the keys to Microsoft’s software supply chain
+### ⚠️ 1. CVE-2026-111520 [HIGH 7.3]
 
-The most dangerous actor in a software supply chain may now be an automated script with powerful credentials and no idea where it’s sending them. Researchers from pen-testing company Cycode have discovered a now patched critical zero-click supply chain vulnerability in the open-source Windows Packag
+Dell Alienware Command Center (AWCC), versions prior to 6.14.105.0, contain a Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Code Execution and Elevation of Privilege.
 
-> **来源**: [A single pull request could have handed attackers the keys to Microsoft’s software supply chain](https://www.csoonline.com/article/4251117/a-single-pull-request-could-have-handed-attackers-the-keys-to-microsofts-software-supply-chain.html)  #CSO Online
+> **来源**: [CVE-2026-111520 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-111520)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### ⚠️ 2. CVE-2026-101839 [HIGH 7.2]
+### ⚠️ 2. CVE-2026-111515 [HIGH 7.1]
 
-Vulnerability in the Oracle Contracts product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle Contracts.  Successf
+Dell Alienware Command Center (AWCC), versions prior to 6.14.105.0, contain an Improper Authorization in Handler for Custom URL Scheme vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Command Execution and Launch of Phishing Attac
 
-> **来源**: [CVE-2026-101839 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-101839)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-111515 [HIGH 7.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-111515)  CVSS 7.1 HIGH · #NVD · #漏洞
 
-### ⚠️ 3. CVE-2026-101838 [HIGH 7.2]
+### ⚠️ 3. CVE-2026-111514 [HIGH 7.3]
 
-Vulnerability in the Oracle Contracts product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle Contracts.  Successf
+Dell Alienware Command Center (AWCC), versions prior to 6.14.105.0, contain an Incorrect Default Permissions vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Arbitrary Code Execution and Elevation of Privilege.
 
-> **来源**: [CVE-2026-101838 [HIGH 7.2]](https://nvd.nist.gov/vuln/detail/CVE-2026-101838)  CVSS 7.2 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-111514 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-111514)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### ⚠️ 4. CVE-2026-101657 [HIGH 8.8]
+### ⚠️ 4. CVE-2026-111513 [HIGH 7.3]
 
-Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTPS to compromise Oracle Mobile Field Service
+Dell Alienware Command Center (AWCC), versions prior to 6.14.105.0, contain an Improper Verification of Cryptographic Signature vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Arbitrary Code Execution and Elevation of Privilege.
 
-> **来源**: [CVE-2026-101657 [HIGH 8.8]](https://nvd.nist.gov/vuln/detail/CVE-2026-101657)  CVSS 8.8 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-111513 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-111513)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 5. JPMorgan Confirms Customer Data Breach Following Third-Party Compromise
+### 📰 5. PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert
 
-Ransomware actor N0n has claimed attacks on JPMorgan, Visa and Mastercard, reportedly leaking customer data on its dark web site
+PHP continues to root out flaws in its architecture, this week releasing fixes for a slew of additional security issues in the wake of PHP2Shell. The patches address 18 vulnerabilities, including a critical request smuggling flaw that could allow unauthenticated attackers to remotely execute code on
 
-> **来源**: [JPMorgan Confirms Customer Data Breach Following Third-Party Compromise](https://www.infosecurity-magazine.com/news/jpmorgan-data-breach-third-party/)  #Infosecurity Magazine
+> **来源**: [PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert](https://www.csoonline.com/article/4251713/php2shell-aftershock-18-more-php-flaws-put-enterprise-web-admins-on-alert.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-114785 [CRITICAL 9.6]
+### 📰 6. The Outages Are Just Getting Started
 
-Vulnerability in the Oracle Hyperion Planning product of Oracle Hyperion (component: Security).   The supported version that is affected is 11.2.26.0.000. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Hyperion Planning.  Successful
+AI is forcing companies to patch their systems faster as attackers race to exploit newly discovered vulnerabilities. Welcome to internet outage hell.
 
-> **来源**: [CVE-2026-114785 [CRITICAL 9.6]](https://nvd.nist.gov/vuln/detail/CVE-2026-114785)  CVSS 9.6 CRITICAL · #NVD · #漏洞
+> **来源**: [The Outages Are Just Getting Started](https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/)  #Wired Security
 
-### 📰 7. How exposure management can help public sector prepare for PHP2Shell-like vulnerabilities
+### 📰 7. CTO of ‘RansomwareHelp’ Indicted for Wire Fraud
 
-PHP2Shell showed how fast a runtime-level flaw can go from disclosure to confirmed exploitation. Here’s how federal, state, local, and education teams can prepare for PHP2Shell-like flaws.Key takeawaysPHP2Shell went from disclosure to confirmed exploitation within days. With AI shortening the disclo
+The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use "advanced cryptographic tools" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers 
 
-> **来源**: [How exposure management can help public sector prepare for PHP2Shell-like vulnerabilities](https://www.tenable.com/blog/public-sector-exposure-management-php2shell)  #Tenable Blog
+> **来源**: [CTO of ‘RansomwareHelp’ Indicted for Wire Fraud](https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/)  #Krebs on Security
 
-### 📰 8. Do AI’s mathematical advances put PKI under threat?
+### 📰 8. Mail Bombing Attacks Fuel IT Helpdesk Impersonation Scams
 
-Warnings by a leading cryptographer that industry-wide public-key cryptography could fail because of advances in AI has sparked a debate in the security community. In a series of post on X, Johns Hopkins cryptographer Matthew Green warned that existing public-key cryptography systems were at risk be
+Researchers have uncovered a large-scale campaign in which attackers flood inboxes with emails before impersonating IT helpdesk staff to gain access to user accounts
 
-> **来源**: [Do AI’s mathematical advances put PKI under threat?](https://www.csoonline.com/article/4248694/do-ais-mathematical-advances-put-pki-under-threat.html)  #CSO Online
+> **来源**: [Mail Bombing Attacks Fuel IT Helpdesk Impersonation Scams](https://www.infosecurity-magazine.com/news/mail-bombing-attacks-it-helpdesk/)  #Infosecurity Magazine
 
-### 📰 9. European Commission HR hit by cyber attack
+### 📰 9. Sean Cairncross out as national cyber director
 
-Barely a week after the US Federal Bureau of Investigation (FBI) warned companies of the cyber attacker interest in an open source penetration testing tool called ARTEX, the European Commission has confirmed that attackers armed with that tool broke into its HR systems. The attack, which Commission 
+During his tenure, he was involved in key administration decisions on AI security and the protection of critical infrastructure. The post Sean Cairncross out as national cyber director appeared first on CyberScoop.
 
-> **来源**: [European Commission HR hit by cyber attack](https://www.csoonline.com/article/4251068/european-commission-hr-hit-by-cyber-attack.html)  #CSO Online
+> **来源**: [Sean Cairncross out as national cyber director](https://cyberscoop.com/sean-cairncross-out-national-cyber-director/)  #CyberScoop
 
-### 📰 10. Signal blocks Apple, Google AI screenshotting in response to ‘existential threat’ to privacy app
+### 📰 10. Rakuten Securities Breach Could Impact 15 Million Customers
 
-The encrypted messaging app will now block those screenshots by default, following similar steps it took with Microsoft last year. The post Signal blocks Apple, Google AI screenshotting in response to ‘existential threat’ to privacy app appeared first on CyberScoop.
+Japanese broker Rakuten Securities has revealed a data breach involving the account details of 15 million customers
 
-> **来源**: [Signal blocks Apple, Google AI screenshotting in response to ‘existential threat’ to privacy app](https://cyberscoop.com/signal-blocks-apple-google-ai-screenshots/)  #CyberScoop
+> **来源**: [Rakuten Securities Breach Could Impact 15 Million Customers](https://www.infosecurity-magazine.com/news/rakuten-securities-breach-15/)  #Infosecurity Magazine
 
 ---
 
