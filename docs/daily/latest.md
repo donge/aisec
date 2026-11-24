@@ -1,68 +1,68 @@
-# 🤖🔒 AI+安全日报 | 2026-11-24
+# 🤖🔒 AI+安全日报 | 2026-11-25
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Can AI plan terrorist attacks? The US tested ChatGPT, Claude, Gemini, and Grok
+### 📰 1. Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns
 
-Investigators tried to bypass AI safeguards to generate plans. The results exposed security gaps and raised questions about preventing misuse.
+Microsoft is warning customers that attackers exploited a flaw in Azure API Management Classic tiers to steal stored secrets, an intrusion that Norway’s National Security Authority has linked to breaches at two energy companies and says organizations should assume exposed credentials were compromise
 
-> **来源**: [Can AI plan terrorist attacks? The US tested ChatGPT, Claude, Gemini, and Grok](https://www.zdnet.com/innovation/ai-chatbots-terrorist-attack-plans-us-government-test/)  #ZDNet Security
+> **来源**: [Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns](https://www.csoonline.com/article/4252513/attackers-exploited-an-azure-api-management-flaw-to-steal-secrets-microsoft-warns.html)  #CSO Online
 
-### 📰 2. Clever AI prompt ideas every security leader should steal
+### 📰 2. UK cyber agency, threat companies tracking rise in AI-assisted hacks
 
-For all the talk of AI use by attackers and defenders, little attention is paid to ways CISOs and their security pros can leverage AI uniquely to expediate tasks, cut through the noise, facilitate decision-making, and potentially save big on auditing. Several specific AI prompts can help security le
+The National Cyber Security Centre said it is observing a “marked” increase in such attacks across sectors, as threat actors increasingly delegate to machines. The post UK cyber agency, threat companies tracking rise in AI-assisted hacks appeared first on CyberScoop.
 
-> **来源**: [Clever AI prompt ideas every security leader should steal](https://www.csoonline.com/article/4248701/clever-ai-prompt-ideas-every-security-leader-should-steal.html)  #CSO Online
+> **来源**: [UK cyber agency, threat companies tracking rise in AI-assisted hacks](https://cyberscoop.com/uk-ncsc-ai-assisted-cyberattacks/)  #CyberScoop
 
-### 📰 3. CrowdStrike buys missing network security piece in $43.9B Zscaler deal
+### 📰 3. Researchers Find a New AI Attack Path: Agent Instructions
 
-CrowdStrike agreed to acquire cloud security company Zscaler in a $43.9 billion all-stock deal on Monday, combining endpoint protection with zero-trust network security in one of the largest cybersecurity acquisitions ever and intensifying the industry’s race to build broad security platforms. The d
+Ox Security warns that agents are being manipulated without the need for executable malware
 
-> **来源**: [CrowdStrike buys missing network security piece in $43.9B Zscaler deal](https://www.csoonline.com/article/4252013/crowdstrike-buys-missing-network-security-piece-in-43-9b-zscaler-deal.html)  #CSO Online
+> **来源**: [Researchers Find a New AI Attack Path: Agent Instructions](https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/)  #Infosecurity Magazine
 
-### 📰 4. CrowdStrike agrees to buy Zscaler for $43.9 billion in network security expansion
+### ⚠️ 4. CVE-2026-134654 [HIGH 8.1]
 
-The deal would bring device protection and network access controls under one roof as CrowdStrike seeks a larger role in how companies secure AI agents. The post CrowdStrike agrees to buy Zscaler for $43.9 billion in network security expansion appeared first on CyberScoop.
+Mailflare before 48957fb contains a host header injection vulnerability in the password-reset request handler that allows unauthenticated attackers to poison reset links when APP_URL is unset. Attackers can submit a reset request for a victim's email with a malicious Host header, capturing the singl
 
-> **来源**: [CrowdStrike agrees to buy Zscaler for $43.9 billion in network security expansion](https://cyberscoop.com/crowdstrike-to-acquire-zscaler/)  #CyberScoop
+> **来源**: [CVE-2026-134654 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-134654)  CVSS 8.1 HIGH · #NVD · #漏洞
 
-### 📰 5. I’ve never hunted for a software vulnerability before. AI helped me find one in six hours.
+### 📰 5. Signal blocks AI assistants from snooping on your encrypted messages
 
-With help from two free AI models, I found and reported a real flaw in a WordPress plugin used by more than 40,000 sites. The unnerving part wasn’t just that it worked — it was how little experience I needed to get there. The post I’ve never hunted for a software vulnerability before. AI helped me f
+Signal is blocking Siri and Gemini from reading your encrypted chats off the screen, and warning that AI agents built into operating systems are an "existential threat" to privacy. Read more in my article on the Hot for Security blog.
 
-> **来源**: [I’ve never hunted for a software vulnerability before. AI helped me find one in six hours.](https://cyberscoop.com/finding-software-vulnerability-with-ai-wordpress-patchstack/)  #CyberScoop
+> **来源**: [Signal blocks AI assistants from snooping on your encrypted messages](https://www.bitdefender.com/en-us/blog/hotforsecurity/signal-ai-assistants-snooping-encrypted-messages)  #Graham Cluley
 
-### 📰 6. Critical Cisco Expressway Flaw Exploited in Attacks
+### ⚠️ 6. CVE-2026-134541 [HIGH 7.3]
 
-Researchers warn that CVE-2026-76466, with a CVSS score of 9.8, is being actively exploited
+A vulnerability was detected in Surya2Developer Online Shopping System 1.0. This impacts an unknown function of the file product.php of the component GET Parameter Handler. Performing a manipulation of the argument p results in sql injection. The attack can be initiated remotely. The exploit is now 
 
-> **来源**: [Critical Cisco Expressway Flaw Exploited in Attacks](https://www.infosecurity-magazine.com/news/critical-cisco-expressway-flaw/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-134541 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-134541)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 7. The resilience gap: Why cybersecurity investment alone is not enough
+### 📰 7. Recent Trends and Tactics of Agentic AI Attacks
 
-Death, taxes and cyber incidents. It’s not quite the original saying, but for today’s CISO, all three carry a certain inevitability, and most organizations have come to accept that reality. Protiviti’s 2027 CISO Top Risks and Opportunities study confirms that cybersecurity remains the top investment
+We tracked campaigns where attackers deployed autonomous AI agents to automate multi-platform intrusions, using standard tools while leaving distinct operational traces. The post Recent Trends and Tactics of Agentic AI Attacks appeared first on Unit 42.
 
-> **来源**: [The resilience gap: Why cybersecurity investment alone is not enough](https://www.csoonline.com/article/4249721/the-resilience-gap-why-cybersecurity-investment-alone-is-not-enough.html)  #CSO Online
+> **来源**: [Recent Trends and Tactics of Agentic AI Attacks](https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/)  #Unit 42
 
-### 📰 8. How organizations can secure their AI-generated code
+### 📰 8. Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test
 
-The IT manager didn’t know the company hired a “vibe coder” straight out of school. By the time they met a few months later, the new hire had already built a web application that operated with customer data and private contracts. The app ran under a domain the new hire controlled, stored data on Sup
+In a vulnerability discovery test, DeepSeek outperformed five American closed-source AI models while costing far less to run
 
-> **来源**: [How organizations can secure their AI-generated code](https://www.csoonline.com/article/3633403/how-organizations-can-secure-their-ai-code.html)  #CSO Online
+> **来源**: [Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test](https://www.infosecurity-magazine.com/news/chinese-ai-models-top/)  #Infosecurity Magazine
 
-### 📰 9. Cleverbridge Confirms Customers’ Payment Card Data Breached
+### 📰 9. OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems
 
-The stolen information reportedly includes card numbers and security codes stored by Cleverbridge, putting affected individuals at immediate risk of fraud
+OpenAI and Cisco’s Shirudo helps Linux users block exploitation of known vulnerabilities on live systems, buying time for patching without requiring a restart
 
-> **来源**: [Cleverbridge Confirms Customers’ Payment Card Data Breached](https://www.infosecurity-magazine.com/news/cleverbridge-payment-card-breached/)  #Infosecurity Magazine
+> **来源**: [OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems](https://www.infosecurity-magazine.com/news/openai-cisco-shirudo-linux-shields/)  #Infosecurity Magazine
 
-### 📰 10. n0n extortion gang leaks data of JPMorgan Chase, Visa, and Mastercard customers
+### 📰 10. Database Leaks Expose 3.5 Billion Usernames, Passwords, and Documents
 
-Data belonging to customers of three of the biggest companies in global finance has been leaked online, after hackers breached third-party service providers working for JPMorgan Chase, Visa, and Mastercard. Read more in my article on the Hot for Security blog.
+A pair of unsecured databases exposed sensitive information about hundreds of millions of people—including data that could let attackers “own” a victim’s digital life.
 
-> **来源**: [n0n extortion gang leaks data of JPMorgan Chase, Visa, and Mastercard customers](https://www.bitdefender.com/en-us/blog/hotforsecurity/n0n-extortion-leaks-data-jpmorgan-chase-visa-mastercard)  #Graham Cluley
+> **来源**: [Database Leaks Expose 3.5 Billion Usernames, Passwords, and Documents](https://www.wired.com/story/3-billion-usernames-passwords-and-documents-leaked-online/)  #Wired Security
 
 ---
 

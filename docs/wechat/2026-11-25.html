@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI+安全日报 2026-11-25</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #0b1120;
+    color: #e2e8f0;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 16px 60px;
+  }
+  .header {
+    text-align: center;
+    padding: 32px 0 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(56,189,248,0.5), transparent);
+  }
+  .header .logo {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+  }
+  .header .subtitle {
+    font-size: 14px;
+    color: #64748b;
+  }
+  .header .subtitle span {
+    display: inline-block;
+    background: rgba(56,189,248,0.1);
+    color: #38bdf8;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 2px;
+  }
+  .copy-btn {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 14px 0;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(56,189,248,0.25);
+    letter-spacing: 0.5px;
+  }
+  .copy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(56,189,248,0.35);
+  }
+  .copy-btn:active {
+    transform: translateY(0);
+  }
+  .copy-btn.copied {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    box-shadow: 0 4px 20px rgba(34,197,94,0.25);
+  }
+  .toast {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #22c55e;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 9999;
+    box-shadow: 0 8px 32px rgba(34,197,94,0.3);
+  }
+  .divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+    margin: 20px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 24px 0;
+    color: #475569;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 8px;
+  }
+  .footer .mono {
+    font-family: "SF Mono", "Fira Code", monospace;
+    font-size: 11px;
+    color: #334155;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .item-enter {
+    animation: fadeIn 0.5s ease-out both;
+  }
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast">✅ 已复制到剪贴板，请粘贴到公众号编辑器</div>
+
+<div class="container">
+  <div class="header">
+    <div class="logo">🛡️</div>
+    <h1>AI+安全日报</h1>
+    <div class="subtitle">
+      2026年11月25日 · 共 <span>10</span> 条
+    </div>
+  </div>
+
+  <div id="wechatContent">
+    
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#01</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Microsoft is warning customers that attackers exploited a flaw in Azure API Management Classic tiers to steal stored secrets, an intrusion that Norway’s National Security Authority has linked to breaches at two energy companies and says organizations should assume exposed credentials were compromise
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.csoonline.com/article/4252513/attackers-exploited-an-azure-api-management-flaw-to-steal-secrets-microsoft-warns.html" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CSO Online</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#02</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            UK cyber agency, threat companies tracking rise in AI-assisted hacks
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        The National Cyber Security Centre said it is observing a “marked” increase in such attacks across sectors, as threat actors increasingly delegate to machines. The post UK cyber agency, threat companies tracking rise in AI-assisted hacks appeared first on CyberScoop.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://cyberscoop.com/uk-ncsc-ai-assisted-cyberattacks/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">UK cyber agency, threat companies tracking rise in AI-assisted hacks ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">CyberScoop</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#03</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Researchers Find a New AI Attack Path: Agent Instructions
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Ox Security warns that agents are being manipulated without the need for executable malware
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Researchers Find a New AI Attack Path: Agent Instructions ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#04</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            CVE-2026-134654 [HIGH 8.1]
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Mailflare before 48957fb contains a host header injection vulnerability in the password-reset request handler that allows unauthenticated attackers to poison reset links when APP_URL is unset. Attackers can submit a reset request for a victim&#39;s email with a malicious Host header, capturing the singl
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-134654" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-134654 [HIGH 8.1] ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#05</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Signal blocks AI assistants from snooping on your encrypted messages
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        Signal is blocking Siri and Gemini from reading your encrypted chats off the screen, and warning that AI agents built into operating systems are an &quot;existential threat&quot; to privacy. Read more in my article on the Hot for Security blog.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/signal-ai-assistants-snooping-encrypted-messages" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Signal blocks AI assistants from snooping on your encrypted messages ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Graham Cluley</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">⚠️</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 10px;border-radius:4px;background:#ea580c;color:#fff;border:1px solid #f97316;margin-right:8px;">HIGH</span>
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#06</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            CVE-2026-134541 [HIGH 7.3]
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        A vulnerability was detected in Surya2Developer Online Shopping System 1.0. This impacts an unknown function of the file product.php of the component GET Parameter Handler. Performing a manipulation of the argument p results in sql injection. The attack can be initiated remotely. The exploit is now 
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-134541" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">CVE-2026-134541 [HIGH 7.3] ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(239,68,68,0.15);color:#fca5a5;">NVD</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#07</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Recent Trends and Tactics of Agentic AI Attacks
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        We tracked campaigns where attackers deployed autonomous AI agents to automate multi-platform intrusions, using standard tools while leaving distinct operational traces. The post Recent Trends and Tactics of Agentic AI Attacks appeared first on Unit 42.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Recent Trends and Tactics of Agentic AI Attacks ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(34,211,238,0.15);color:#67e8f9;">Unit 42</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#08</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        In a vulnerability discovery test, DeepSeek outperformed five American closed-source AI models while costing far less to run
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/chinese-ai-models-top/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#09</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        OpenAI and Cisco’s Shirudo helps Linux users block exploitation of known vulnerabilities on live systems, buying time for patching without requiring a restart
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.infosecurity-magazine.com/news/openai-cisco-shirudo-linux-shields/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(52,211,153,0.15);color:#6ee7b7;">Infosecurity Magazine</span>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;transition:border-color 0.3s;">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;">
+        <span style="font-size:20px;flex-shrink:0;margin-top:1px;">📰</span>
+        <div>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px;">
+            
+            <span style="font-size:13px;color:#64748b;font-weight:500;">#10</span>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin:0;line-height:1.5;">
+            Database Leaks Expose 3.5 Billion Usernames, Passwords, and Documents
+          </h3>
+        </div>
+      </div>
+      <p style="font-size:15px;line-height:1.8;color:#94a3b8;margin:0 0 12px 32px;text-indent:2em;">
+        A pair of unsecured databases exposed sensitive information about hundreds of millions of people—including data that could let attackers “own” a victim’s digital life.
+      </p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-left:32px;">
+        <a href="https://www.wired.com/story/3-billion-usernames-passwords-and-documents-leaked-online/" style="font-size:13px;color:#38bdf8;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;">Database Leaks Expose 3.5 Billion Usernames, Passwords, and Documents ↗</a>
+        <span style="display:inline-block;font-size:12px;padding:2px 10px;border-radius:12px;background:rgba(255,255,255,0.06);color:#94a3b8;">Wired Security</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="footer">
+    📮 本日报由 AI 自动生成 · 数据来源：RSS/arXiv/NVD<br>
+    仅供学习参考，不构成投资或决策建议<br>
+    <span class="mono">// AI+Security Daily · 10 items · 2026-11-25</span>
+  </div>
+
+  <button class="copy-btn" id="copyBtn">📋 一键复制（公众号格式）</button>
+</div>
+
+<script>
+(function() {
+  function getContentHtml() {
+    var el = document.getElementById('wechatContent');
+    return el.innerHTML.trim();
+  }
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    return Promise.resolve();
+  }
+  function doCopy(btn) {
+    var html = getContentHtml();
+    copyToClipboard(html).then(function() {
+      btn.textContent = '✅ 已复制！';
+      btn.classList.add('copied');
+      var toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      setTimeout(function() {
+        toast.style.display = 'none';
+        btn.textContent = '📋 一键复制（公众号格式）';
+        btn.classList.remove('copied');
+      }, 2500);
+    }).catch(function() {
+      btn.textContent = '❌ 复制失败，请手动选择复制';
+      setTimeout(function() {
+        btn.textContent = '📋 一键复制（公众号格式）';
+      }, 2000);
+    });
+  }
+  var btns = document.querySelectorAll('.copy-btn');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function() { doCopy(this); });
+  }
+
+  // Staggered fade-in
+  var cards = document.querySelectorAll('#wechatContent > div');
+  cards.forEach(function(card, i) {
+    card.classList.add('item-enter');
+    card.style.animationDelay = (i * 0.08) + 's';
+  });
+})();
+</script>
+</body>
+</html>
