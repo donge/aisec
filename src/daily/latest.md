@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-25
+# 🤖🔒 AI+安全日报 | 2026-11-26
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns
+### 📰 1. Check Point security management servers hit in global cyberattack campaign
 
-Microsoft is warning customers that attackers exploited a flaw in Azure API Management Classic tiers to steal stored secrets, an intrusion that Norway’s National Security Authority has linked to breaches at two energy companies and says organizations should assume exposed credentials were compromise
+An active intrusion campaign targeting Check Point security management servers has been uncovered, with confirmed attack activity observed between October 17 and November 2, 2026, impacting 22 organizations globally. Tracked by cybersecurity firm GreyNoise as GreyNoise Threat 13 (GT13), the campaign
 
-> **来源**: [Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns](https://www.csoonline.com/article/4252513/attackers-exploited-an-azure-api-management-flaw-to-steal-secrets-microsoft-warns.html)  #CSO Online
+> **来源**: [Check Point security management servers hit in global cyberattack campaign](https://www.csoonline.com/article/4253068/check-point-security-management-servers-hit-in-global-cyberattack-campaign.html)  #CSO Online
 
-### 📰 2. UK cyber agency, threat companies tracking rise in AI-assisted hacks
+### 📰 2. Broadcom issues fixes for 23 new VMware flaws, three critical
 
-The National Cyber Security Centre said it is observing a “marked” increase in such attacks across sectors, as threat actors increasingly delegate to machines. The post UK cyber agency, threat companies tracking rise in AI-assisted hacks appeared first on CyberScoop.
+Broadcom on Tuesday reported almost two dozen new security vulnerabilities in VMware, adding to a lengthy list of fixes from this month alone. The most serious of the flaws in the current advisory is a vCenter authentication bypass vulnerability, CVE-2026-123903, assigned a CVSSv3 base score of 9.8 
 
-> **来源**: [UK cyber agency, threat companies tracking rise in AI-assisted hacks](https://cyberscoop.com/uk-ncsc-ai-assisted-cyberattacks/)  #CyberScoop
+> **来源**: [Broadcom issues fixes for 23 new VMware flaws, three critical](https://www.csoonline.com/article/4253329/broadcom-issues-fixes-for-23-new-vmware-flaws-three-critical.html)  #CSO Online
 
-### 📰 3. Researchers Find a New AI Attack Path: Agent Instructions
+### 📰 3. Despite doom and gloom headlines, AI attacks are thin on the ground
 
-Ox Security warns that agents are being manipulated without the need for executable malware
+When Anthropic announced its Mythos AI model, it was touted as being so cyber capable that only a handful of organizations could have early access to harden their defenses before the public — and attackers — got their hands on the technology. Soon after, AI companies, one after the other, warned tha
 
-> **来源**: [Researchers Find a New AI Attack Path: Agent Instructions](https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/)  #Infosecurity Magazine
+> **来源**: [Despite doom and gloom headlines, AI attacks are thin on the ground](https://www.csoonline.com/article/4250533/despite-doom-and-gloom-headlines-ai-attacks-are-thin-on-the-ground.html)  #CSO Online
 
-### ⚠️ 4. CVE-2026-134654 [HIGH 8.1]
+### 📰 4. The AI Threat Horizon: Why Speed, Edge AI and Baselines Are Our Best Defense
 
-Mailflare before 48957fb contains a host header injection vulnerability in the password-reset request handler that allows unauthenticated attackers to poison reset links when APP_URL is unset. Attackers can submit a reset request for a victim's email with a malicious Host header, capturing the singl
+Unit 42 examines the evolution of AI-driven cyberattacks and outlines proactive defense strategies for security teams. The post The AI Threat Horizon: Why Speed, Edge AI and Baselines Are Our Best Defense appeared first on Unit 42.
 
-> **来源**: [CVE-2026-134654 [HIGH 8.1]](https://nvd.nist.gov/vuln/detail/CVE-2026-134654)  CVSS 8.1 HIGH · #NVD · #漏洞
+> **来源**: [The AI Threat Horizon: Why Speed, Edge AI and Baselines Are Our Best Defense](https://unit42.paloaltonetworks.com/ai-threat-horizon/)  #Unit 42
 
-### 📰 5. Signal blocks AI assistants from snooping on your encrypted messages
+### 📰 5. Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive
 
-Signal is blocking Siri and Gemini from reading your encrypted chats off the screen, and warning that AI agents built into operating systems are an "existential threat" to privacy. Read more in my article on the Hot for Security blog.
+Autonomous AI agents are rapidly and dramatically transforming the cybersecurity landscape for both defenders and adversaries. In hopes of giving security teams a head start and pitting machine against machine, Cisco and OpenAI have released a new open source project, dubbed Shirudo (Japanese for “s
 
-> **来源**: [Signal blocks AI assistants from snooping on your encrypted messages](https://www.bitdefender.com/en-us/blog/hotforsecurity/signal-ai-assistants-snooping-encrypted-messages)  #Graham Cluley
+> **来源**: [Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive](https://www.csoonline.com/article/4252893/cisco-and-openai-dispatch-ai-agents-to-shield-vulnerable-systems-before-permanent-patches-arrive-2.html)  #CSO Online
 
-### ⚠️ 6. CVE-2026-134541 [HIGH 7.3]
+### ⚠️ 6. CVE-2026-134850 [HIGH 7.3]
 
-A vulnerability was detected in Surya2Developer Online Shopping System 1.0. This impacts an unknown function of the file product.php of the component GET Parameter Handler. Performing a manipulation of the argument p results in sql injection. The attack can be initiated remotely. The exploit is now 
+A security vulnerability has been detected in aceberg WatchYourLAN up to 2.1.4. Affected by this issue is the function getPortState of the file backend/internal/api/api-network.go of the component Web API. The manipulation of the argument addr leads to server-side request forgery. The attack is poss
 
-> **来源**: [CVE-2026-134541 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-134541)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [CVE-2026-134850 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-134850)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 7. Recent Trends and Tactics of Agentic AI Attacks
+### 📰 7. Palo Alto Fixes Fragnesia Kernel Bug Chained With PHP2Shell in Firewall Attacks
 
-We tracked campaigns where attackers deployed autonomous AI agents to automate multi-platform intrusions, using standard tools while leaving distinct operational traces. The post Recent Trends and Tactics of Agentic AI Attacks appeared first on Unit 42.
+Palo Alto fixed Fragnesia after attackers chained it with PHP2Shell to root firewalls
 
-> **来源**: [Recent Trends and Tactics of Agentic AI Attacks](https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/)  #Unit 42
+> **来源**: [Palo Alto Fixes Fragnesia Kernel Bug Chained With PHP2Shell in Firewall Attacks](https://www.infosecurity-magazine.com/news/palo-alto-fragnesia-php2shell-fix/)  #Infosecurity Magazine
 
-### 📰 8. Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test
+### 📰 8. FinCEN investigates cybersecurity incident, takes systems offline
 
-In a vulnerability discovery test, DeepSeek outperformed five American closed-source AI models while costing far less to run
+The Treasury financial intelligence unit said the filing portal remains operational, and deadlines for affected filers have been extended. The post FinCEN investigates cybersecurity incident, takes systems offline appeared first on CyberScoop.
 
-> **来源**: [Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test](https://www.infosecurity-magazine.com/news/chinese-ai-models-top/)  #Infosecurity Magazine
+> **来源**: [FinCEN investigates cybersecurity incident, takes systems offline](https://cyberscoop.com/fincen-investigates-cybersecurity-incident-systems-offline/)  #CyberScoop
 
-### 📰 9. OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems
+### ⚠️ 9. CVE-2026-134851 [HIGH 7.3]
 
-OpenAI and Cisco’s Shirudo helps Linux users block exploitation of known vulnerabilities on live systems, buying time for patching without requiring a restart
+A vulnerability was detected in leonkhoo123 self-hosting-file-uploader up to 473e38ff8fba494f33a485730c6d95c5d8c536ea. This affects an unknown part of the file routes/generator.js of the component Admin Generator API. The manipulation results in missing authentication. The attack may be performed fr
 
-> **来源**: [OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems](https://www.infosecurity-magazine.com/news/openai-cisco-shirudo-linux-shields/)  #Infosecurity Magazine
+> **来源**: [CVE-2026-134851 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-134851)  CVSS 7.3 HIGH · #NVD · #漏洞
 
-### 📰 10. Database Leaks Expose 3.5 Billion Usernames, Passwords, and Documents
+### 📰 10. Ransomware Attacks Surge 23% in October Following Record Quarter
 
-A pair of unsecured databases exposed sensitive information about hundreds of millions of people—including data that could let attackers “own” a victim’s digital life.
+The continued rise in ransomware attacks may reflect a new cyber environment, NCC Group researchers have warned
 
-> **来源**: [Database Leaks Expose 3.5 Billion Usernames, Passwords, and Documents](https://www.wired.com/story/3-billion-usernames-passwords-and-documents-leaked-online/)  #Wired Security
+> **来源**: [Ransomware Attacks Surge 23% in October Following Record Quarter](https://www.infosecurity-magazine.com/news/ransomware-surge-october-record/)  #Infosecurity Magazine
 
 ---
 
