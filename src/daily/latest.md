@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-26
+# 🤖🔒 AI+安全日报 | 2026-11-27
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Check Point security management servers hit in global cyberattack campaign
+### 📰 1. Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks
 
-An active intrusion campaign targeting Check Point security management servers has been uncovered, with confirmed attack activity observed between October 17 and November 2, 2026, impacting 22 organizations globally. Tracked by cybersecurity firm GreyNoise as GreyNoise Threat 13 (GT13), the campaign
+Palo Alto Networks has confirmed that attackers exploited Fragnesia, a Linux kernel flaw, to gain root on PAN-OS firewalls through the PHP2Shell vulnerabilities, and has shipped fixes six months after the bug was patched in Linux. The vulnerability allows a locally authenticated, low-privileged atta
 
-> **来源**: [Check Point security management servers hit in global cyberattack campaign](https://www.csoonline.com/article/4253068/check-point-security-management-servers-hit-in-global-cyberattack-campaign.html)  #CSO Online
+> **来源**: [Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks](https://www.csoonline.com/article/4253600/palo-alto-confirms-fragnesia-exploitation-against-firewalls-in-php2shell-attacks.html)  #CSO Online
 
-### 📰 2. Broadcom issues fixes for 23 new VMware flaws, three critical
+### 📰 2. New GeoServer RCE exploit chain seen in the wild two days after disclosure
 
-Broadcom on Tuesday reported almost two dozen new security vulnerabilities in VMware, adding to a lengthy list of fixes from this month alone. The most serious of the flaws in the current advisory is a vCenter authentication bypass vulnerability, CVE-2026-123903, assigned a CVSSv3 base score of 9.8 
+Attackers have begun probing a chain of five GeoServer vulnerabilities that enables unauthenticated remote code execution, just two days after the open source geospatial server project disclosed the flaws. Security firm watchTowr, which operates a global network of honeypot servers, reported that it
 
-> **来源**: [Broadcom issues fixes for 23 new VMware flaws, three critical](https://www.csoonline.com/article/4253329/broadcom-issues-fixes-for-23-new-vmware-flaws-three-critical.html)  #CSO Online
+> **来源**: [New GeoServer RCE exploit chain seen in the wild two days after disclosure](https://www.csoonline.com/article/4253667/new-geoserver-rce-exploit-chain-seen-in-the-wild-two-days-after-disclosure.html)  #CSO Online
 
-### 📰 3. Despite doom and gloom headlines, AI attacks are thin on the ground
+### 📰 3. New York bans AI chatbot toys – but not in time for Christmas
 
-When Anthropic announced its Mythos AI model, it was touted as being so cyber capable that only a handful of organizations could have early access to harden their defenses before the public — and attackers — got their hands on the technology. Soon after, AI companies, one after the other, warned tha
+Talking teddies that describe massacres and help kids break bedtime rules? New York has had enough, and has banned AI chatbot toys for five years. Just not in time for Christmas. Read more in my article on the Hot for Security blog.
 
-> **来源**: [Despite doom and gloom headlines, AI attacks are thin on the ground](https://www.csoonline.com/article/4250533/despite-doom-and-gloom-headlines-ai-attacks-are-thin-on-the-ground.html)  #CSO Online
+> **来源**: [New York bans AI chatbot toys – but not in time for Christmas](https://www.bitdefender.com/en-us/blog/hotforsecurity/new-york-bans-ai-chatbot-toys)  #Graham Cluley
 
-### 📰 4. The AI Threat Horizon: Why Speed, Edge AI and Baselines Are Our Best Defense
+### 📰 4. Chinese, North Korean Hackers Adopt ARTEX AI Offensive Framework
 
-Unit 42 examines the evolution of AI-driven cyberattacks and outlines proactive defense strategies for security teams. The post The AI Threat Horizon: Why Speed, Edge AI and Baselines Are Our Best Defense appeared first on Unit 42.
+Microsoft has confirmed nation-state actors’ deployment of the ARTEX in their tooling, while the CSA described the emergence of the tool as part of a “third wave” of AI-driven threats
 
-> **来源**: [The AI Threat Horizon: Why Speed, Edge AI and Baselines Are Our Best Defense](https://unit42.paloaltonetworks.com/ai-threat-horizon/)  #Unit 42
+> **来源**: [Chinese, North Korean Hackers Adopt ARTEX AI Offensive Framework](https://www.infosecurity-magazine.com/news/chinese-north-korea-artex/)  #Infosecurity Magazine
 
-### 📰 5. Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive
+### 📰 5. Smashing Security podcast #494: The Russian accused of spying on Palantir from Starbucks
 
-Autonomous AI agents are rapidly and dramatically transforming the cybersecurity landscape for both defenders and adversaries. In hopes of giving security teams a head start and pitting machine against machine, Cisco and OpenAI have released a new open source project, dubbed Shirudo (Japanese for “s
+A would-be spy is recruited on Telegram for $15,000 and sent halfway around the world to snoop on Palantir. His cover story when he's caught? He wanted to ask a woman out on a date. Meanwhile, Carl Miller investigates a think tank with 300 experts on its books, one of whom is the inconveniently dead
 
-> **来源**: [Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive](https://www.csoonline.com/article/4252893/cisco-and-openai-dispatch-ai-agents-to-shield-vulnerable-systems-before-permanent-patches-arrive-2.html)  #CSO Online
+> **来源**: [Smashing Security podcast #494: The Russian accused of spying on Palantir from Starbucks](https://grahamcluley.com/smashing-security-podcast-494/)  #Graham Cluley
 
-### ⚠️ 6. CVE-2026-134850 [HIGH 7.3]
+### 📰 6. The ‘True Crime Community’ Is Inspiring Violent Attacks Through TikTok
 
-A security vulnerability has been detected in aceberg WatchYourLAN up to 2.1.4. Affected by this issue is the function getPortState of the file backend/internal/api/api-network.go of the component Web API. The manipulation of the argument addr leads to server-side request forgery. The attack is poss
+Attacks linked to a network of young people obsessed with mass shooters are greatly increasing, research shared with WIRED shows, as the nihilistic group uses TikTok and AI to spread its message.
 
-> **来源**: [CVE-2026-134850 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-134850)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [The ‘True Crime Community’ Is Inspiring Violent Attacks Through TikTok](https://www.wired.com/story/the-true-crime-community-is-inspiring-violent-attacks-through-tiktok/)  #Wired Security
 
-### 📰 7. Palo Alto Fixes Fragnesia Kernel Bug Chained With PHP2Shell in Firewall Attacks
+### 📰 7. Phishers Abuse Hugging Face's AI Site Builder to Spoof Big Brands
 
-Palo Alto fixed Fragnesia after attackers chained it with PHP2Shell to root firewalls
+Aikido found 42 phishing pages on Hugging Face Spaces, two-thirds made with its AI site builder
 
-> **来源**: [Palo Alto Fixes Fragnesia Kernel Bug Chained With PHP2Shell in Firewall Attacks](https://www.infosecurity-magazine.com/news/palo-alto-fragnesia-php2shell-fix/)  #Infosecurity Magazine
+> **来源**: [Phishers Abuse Hugging Face's AI Site Builder to Spoof Big Brands](https://www.infosecurity-magazine.com/news/hugging-face-ai-builder-phishing/)  #Infosecurity Magazine
 
-### 📰 8. FinCEN investigates cybersecurity incident, takes systems offline
+### 📰 8. 1Password Hit by Backend Breach via Hijacked Employee GitHub Account
 
-The Treasury financial intelligence unit said the filing portal remains operational, and deadlines for affected filers have been extended. The post FinCEN investigates cybersecurity incident, takes systems offline appeared first on CyberScoop.
+An attacker used a 1Password employee's GitHub account to take customer data, but not vaults
 
-> **来源**: [FinCEN investigates cybersecurity incident, takes systems offline](https://cyberscoop.com/fincen-investigates-cybersecurity-incident-systems-offline/)  #CyberScoop
+> **来源**: [1Password Hit by Backend Breach via Hijacked Employee GitHub Account](https://www.infosecurity-magazine.com/news/1password-github-account-backend/)  #Infosecurity Magazine
 
-### ⚠️ 9. CVE-2026-134851 [HIGH 7.3]
+### 📰 9. NCSC Shares Guidance to Tackle Agentic Threat From ARTEX-Like Tools
 
-A vulnerability was detected in leonkhoo123 self-hosting-file-uploader up to 473e38ff8fba494f33a485730c6d95c5d8c536ea. This affects an unknown part of the file routes/generator.js of the component Admin Generator API. The manipulation results in missing authentication. The attack may be performed fr
+UK’s National Cyber Security Centre urges “strong operational discipline” to manage agentic offensive frameworks
 
-> **来源**: [CVE-2026-134851 [HIGH 7.3]](https://nvd.nist.gov/vuln/detail/CVE-2026-134851)  CVSS 7.3 HIGH · #NVD · #漏洞
+> **来源**: [NCSC Shares Guidance to Tackle Agentic Threat From ARTEX-Like Tools](https://www.infosecurity-magazine.com/news/ncsc-tips-tackle-agentic-threat/)  #Infosecurity Magazine
 
-### 📰 10. Ransomware Attacks Surge 23% in October Following Record Quarter
+### 📰 10. QUIC and Covert: Novel HTTP/3-Powered RATs Target Southeast Asian Governments
 
-The continued rise in ransomware attacks may reflect a new cyber environment, NCC Group researchers have warned
+We uncover a Southeast Asian cyberespionage campaign deploying PerfectPioneer RAT, modular KUKURAT and stealth HTTP/3 C2 communication channels. The post QUIC and Covert: Novel HTTP/3-Powered RATs Target Southeast Asian Governments appeared first on Unit 42.
 
-> **来源**: [Ransomware Attacks Surge 23% in October Following Record Quarter](https://www.infosecurity-magazine.com/news/ransomware-surge-october-record/)  #Infosecurity Magazine
+> **来源**: [QUIC and Covert: Novel HTTP/3-Powered RATs Target Southeast Asian Governments](https://unit42.paloaltonetworks.com/custom-rats-target-southeast-asia-governments/)  #Unit 42
 
 ---
 
