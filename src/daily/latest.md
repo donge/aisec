@@ -1,69 +1,69 @@
 # 今日日报
-# 🤖🔒 AI+安全日报 | 2026-11-27
+# 🤖🔒 AI+安全日报 | 2026-11-28
 
 > 今日共收录 **10** 条，AI+安全领域重要动态速览
 
 ---
 
-### 📰 1. Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks
+### 📰 1. Flaw in Linux NFS file sharing exposes servers to remote takeover
 
-Palo Alto Networks has confirmed that attackers exploited Fragnesia, a Linux kernel flaw, to gain root on PAN-OS firewalls through the PHP2Shell vulnerabilities, and has shipped fixes six months after the bug was patched in Linux. The vulnerability allows a locally authenticated, low-privileged atta
+Researchers have found a critical flaw in the Linux kernel’s NFS file-sharing server that lets unauthenticated attackers obtain a root shell on affected systems. The flaw remained undetected in the kernel for 12 years, until two researchers, one using an AI agent, discovered it independently. NFS is
 
-> **来源**: [Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks](https://www.csoonline.com/article/4253600/palo-alto-confirms-fragnesia-exploitation-against-firewalls-in-php2shell-attacks.html)  #CSO Online
+> **来源**: [Flaw in Linux NFS file sharing exposes servers to remote takeover](https://www.csoonline.com/article/4254114/flaw-in-linux-nfs-file-sharing-exposes-servers-to-remote-takeover.html)  #CSO Online
 
-### 📰 2. New GeoServer RCE exploit chain seen in the wild two days after disclosure
+### 📰 2. NGINX2Root (CVE-2026-123007): Frequently asked questions about five critical NGINX vulnerabilities
 
-Attackers have begun probing a chain of five GeoServer vulnerabilities that enables unauthenticated remote code execution, just two days after the open source geospatial server project disclosed the flaws. Security firm watchTowr, which operates a global network of honeypot servers, reported that it
+Frequently asked questions about five critical NGINX remote code execution vulnerabilities and five additional flaws fixed in F5’s November 18 out-of-band release.Change logUpdate November 19: Added the Censys exposure data, test and lab reproductions and refined proof-of-concept details and added T
 
-> **来源**: [New GeoServer RCE exploit chain seen in the wild two days after disclosure](https://www.csoonline.com/article/4253667/new-geoserver-rce-exploit-chain-seen-in-the-wild-two-days-after-disclosure.html)  #CSO Online
+> **来源**: [NGINX2Root (CVE-2026-123007): Frequently asked questions about five critical NGINX vulnerabilities](https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx)  #Tenable Blog
 
-### 📰 3. New York bans AI chatbot toys – but not in time for Christmas
+### 📰 3. Fix Tenable One findings where developers work: Tenable and OpenAI Daybreak Defense Factory
 
-Talking teddies that describe massacres and help kids break bedtime rules? New York has had enough, and has banned AI chatbot toys for five years. Just not in time for Christmas. Read more in my article on the Hot for Security blog.
+Tenable One customers can now bring selected findings into OpenAI Daybreak Defense Factory through a local Codex Security CLI import with Tenable’s description and solution attached, so developers can fix them where they already work. OpenAI built the connector, one of the select supported integrati
 
-> **来源**: [New York bans AI chatbot toys – but not in time for Christmas](https://www.bitdefender.com/en-us/blog/hotforsecurity/new-york-bans-ai-chatbot-toys)  #Graham Cluley
+> **来源**: [Fix Tenable One findings where developers work: Tenable and OpenAI Daybreak Defense Factory](https://www.tenable.com/blog/openai-connector-tenable-one-codex-security)  #Tenable Blog
 
-### 📰 4. Chinese, North Korean Hackers Adopt ARTEX AI Offensive Framework
+### 📰 4. UK Welfare and Pension Services Taken Offline Following Cyber Incident
 
-Microsoft has confirmed nation-state actors’ deployment of the ARTEX in their tooling, while the CSA described the emergence of the tool as part of a “third wave” of AI-driven threats
+The DWP said that online services had been taken offline as a precaution following a cyber-incident, regular pension and benefit payments have not been affected
 
-> **来源**: [Chinese, North Korean Hackers Adopt ARTEX AI Offensive Framework](https://www.infosecurity-magazine.com/news/chinese-north-korea-artex/)  #Infosecurity Magazine
+> **来源**: [UK Welfare and Pension Services Taken Offline Following Cyber Incident](https://www.infosecurity-magazine.com/news/uk-welfare-services-offline/)  #Infosecurity Magazine
 
-### 📰 5. Smashing Security podcast #494: The Russian accused of spying on Palantir from Starbucks
+### 📰 5. CyberStrikeAI Creator Shuts Down Open-Source AI Offensive Framework
 
-A would-be spy is recruited on Telegram for $15,000 and sent halfway around the world to snoop on Palantir. His cover story when he's caught? He wanted to ask a woman out on a date. Meanwhile, Carl Miller investigates a think tank with 300 experts on its books, one of whom is the inconveniently dead
+The open source version of CyberStrikeAI has been permanently removed from, but an enterprise version of the AI pentesting tool is still accessible
 
-> **来源**: [Smashing Security podcast #494: The Russian accused of spying on Palantir from Starbucks](https://grahamcluley.com/smashing-security-podcast-494/)  #Graham Cluley
+> **来源**: [CyberStrikeAI Creator Shuts Down Open-Source AI Offensive Framework](https://www.infosecurity-magazine.com/news/cyberstrikeai-shut-down-threatbook/)  #Infosecurity Magazine
 
-### 📰 6. The ‘True Crime Community’ Is Inspiring Violent Attacks Through TikTok
+### 📰 6. Virginia, Oregon hit SpaceX with fresh lawsuits over Grok-created CSAM
 
-Attacks linked to a network of young people obsessed with mass shooters are greatly increasing, research shared with WIRED shows, as the nihilistic group uses TikTok and AI to spread its message.
+The lawsuit alleges that weak safeguards around nudification were a primary selling point for Musk’s business strategy to differentiate Grok and other competing AI models. The post Virginia, Oregon hit SpaceX with fresh lawsuits over Grok-created CSAM appeared first on CyberScoop.
 
-> **来源**: [The ‘True Crime Community’ Is Inspiring Violent Attacks Through TikTok](https://www.wired.com/story/the-true-crime-community-is-inspiring-violent-attacks-through-tiktok/)  #Wired Security
+> **来源**: [Virginia, Oregon hit SpaceX with fresh lawsuits over Grok-created CSAM](https://cyberscoop.com/virginia-oregon-sue-spacex-grok-deepfakes/)  #CyberScoop
 
-### 📰 7. Phishers Abuse Hugging Face's AI Site Builder to Spoof Big Brands
+### 📰 7. Indicted Kosovo credit card theft suspect extradited to US
 
-Aikido found 42 phishing pages on Hugging Face Spaces, two-thirds made with its AI site builder
+Authorities say a hard drive in the possession of Hektor Avdyli contained millions of payment card numbers. The post Indicted Kosovo credit card theft suspect extradited to US appeared first on CyberScoop.
 
-> **来源**: [Phishers Abuse Hugging Face's AI Site Builder to Spoof Big Brands](https://www.infosecurity-magazine.com/news/hugging-face-ai-builder-phishing/)  #Infosecurity Magazine
+> **来源**: [Indicted Kosovo credit card theft suspect extradited to US](https://cyberscoop.com/hektor-avdyli-kosovo-credit-card-fraud-extradition/)  #CyberScoop
 
-### 📰 8. 1Password Hit by Backend Breach via Hijacked Employee GitHub Account
+### 📰 8. Kirsten Davies to become national cyber director nominee, Jay Clayton takes acting director job
 
-An attacker used a 1Password employee's GitHub account to take customer data, but not vaults
+After a brief stint as acting director, Davies will become the pick to succeed Sean Cairncross and National Cyber Director Clayton will do double duty. The post Kirsten Davies to become national cyber director nominee, Jay Clayton takes acting director job appeared first on CyberScoop.
 
-> **来源**: [1Password Hit by Backend Breach via Hijacked Employee GitHub Account](https://www.infosecurity-magazine.com/news/1password-github-account-backend/)  #Infosecurity Magazine
+> **来源**: [Kirsten Davies to become national cyber director nominee, Jay Clayton takes acting director job](https://cyberscoop.com/kirsten-davies-jay-clayton-national-cyber-director/)  #CyberScoop
 
-### 📰 9. NCSC Shares Guidance to Tackle Agentic Threat From ARTEX-Like Tools
+### 📰 9. Java4Shell Vulnerability Allows Remote Attacks on Major Java Apps
 
-UK’s National Cyber Security Centre urges “strong operational discipline” to manage agentic offensive frameworks
+A critical OpenJDK vulnerability could expose major Java applications to remote code execution, prompting CISA to urge organizations implement mitigations
 
-> **来源**: [NCSC Shares Guidance to Tackle Agentic Threat From ARTEX-Like Tools](https://www.infosecurity-magazine.com/news/ncsc-tips-tackle-agentic-threat/)  #Infosecurity Magazine
+> **来源**: [Java4Shell Vulnerability Allows Remote Attacks on Major Java Apps](https://www.infosecurity-magazine.com/news/java4shell-vulnerability-remote/)  #Infosecurity Magazine
 
-### 📰 10. QUIC and Covert: Novel HTTP/3-Powered RATs Target Southeast Asian Governments
+### 📰 10. Optimizely Flaw Exploited to Serve Malicious Code to Visitors of 178 Organizations
 
-We uncover a Southeast Asian cyberespionage campaign deploying PerfectPioneer RAT, modular KUKURAT and stealth HTTP/3 C2 communication channels. The post QUIC and Covert: Novel HTTP/3-Powered RATs Target Southeast Asian Governments appeared first on Unit 42.
+An attacker abused an Optimizely flaw to plant malicious code on websites of 178 organizations
 
-> **来源**: [QUIC and Covert: Novel HTTP/3-Powered RATs Target Southeast Asian Governments](https://unit42.paloaltonetworks.com/custom-rats-target-southeast-asia-governments/)  #Unit 42
+> **来源**: [Optimizely Flaw Exploited to Serve Malicious Code to Visitors of 178 Organizations](https://www.infosecurity-magazine.com/news/optimizely-hack-malware-178-orgs/)  #Infosecurity Magazine
 
 ---
 
